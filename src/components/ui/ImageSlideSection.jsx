@@ -116,7 +116,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
 
   return (
     <section
-      className={`section-padding gray-section position-relative {className}`}
+      className={`section-padding gray-section position-relative ${className}`}
       id={id}
       style={{ background: bgColor }}
     >

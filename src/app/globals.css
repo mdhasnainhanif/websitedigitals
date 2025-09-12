@@ -7569,11 +7569,16 @@ section.home-banner .height-100 {
   padding: 0.75rem 2rem;
   font-family: "Poppins", sans-serif;
   z-index: 1;
+  background-color: transparent !important;
 }
-.custom-tabs2 {
+
+ .custom-tabs2 {
   position: relative;
   border-bottom: 0;
   z-index: 1;
+}
+.blue-section1 .custom-tabs2 button {
+  color: #fff !important;
 }
 .custom-tabs2 .nav-link.active {
   border: 0;
@@ -7635,7 +7640,11 @@ section.home-banner .height-100 {
 
 .blue-section1 {
   position: relative;
-  background: #204de3;
+  background: #204de3 !important;
+  color: #fff !important;
+}
+.blue-section1 span {
+  color: #fff !important;
 }
 .blue-section1 .scrollanimation-bar {
   background-color: #638dee;
@@ -7753,4 +7762,10 @@ section.home-banner .height-100 {
 
 .custom-tabs2 .nav-link {
   border: none !important;
+}
+
+
+
+.dark-section .single-testimonial {
+  color: var(--text-color);
 }

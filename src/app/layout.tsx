@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
+import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* <link rel="stylesheet" href="/assets/css/style.css" /> */}
+        <link rel="stylesheet" href="/assets/css/style.css" />
         <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
         <script src="/assets/js/jquery-3.7.1.min.js"></script>
         <script src="/assets/js/owl.carousel.min.js"></script>

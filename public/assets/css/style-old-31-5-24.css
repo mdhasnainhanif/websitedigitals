@@ -899,7 +899,7 @@ p:last-child {
   width: 100%;
 }
 
-.single-webPortfolio.static-portfolio::before,
+/* .single-webPortfolio.static-portfolio::before,
 .single-webPortfolio.static-portfolio::after {
   position: absolute;
   cursor: pointer;
@@ -915,14 +915,14 @@ p:last-child {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .single-webPortfolio.static-portfolio:hover::before,
 .single-webPortfolio.static-portfolio:hover::after {
   opacity: 1;
 }
 
-.single-webPortfolio.static-portfolio::after {
+/* .single-webPortfolio.static-portfolio::after {
   content: "View Project";
   top: 50%;
   left: 50%;
@@ -931,7 +931,7 @@ p:last-child {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 5rem;
   font-size: 0.875rem;
-}
+} */
 
 .single-webPortfolio > .webPortfolio-imageArea {
   position: relative;
