@@ -1,0 +1,779 @@
+/* HeroBanner CSS Module - Extracted from globals.css and style.css */
+
+/* Main container styles */
+.homeBannerArea {
+  position: relative;
+  background: var(--primary-light-bg);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.homeBannerArea .gradientCircle {
+  overflow: initial;
+  z-index: initial;
+}
+
+.homeBanner {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+  min-height: 40rem;
+}
+
+.gradientCircle {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.gradientCircle::after {
+  --bg-color: #3cb8ff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 22.5rem;
+  height: 22.5rem;
+  background: radial-gradient(var(--bg-color) -30%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.325;
+  z-index: -1;
+}
+
+.leftCenterGradient::after {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Banner center container */
+.bannerCenterContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.bannerCenterContainer.homeBannerSlider {
+  top: 31%;
+  z-index: -1;
+}
+
+.height100 {
+  height: 100%;
+}
+
+/* Banner content styles */
+.bannerColWd1 {
+  margin: 1.5rem auto 0;
+}
+
+.bannerColWd1 p {
+  max-width: none;
+}
+
+.bannerColWd1 form {
+  margin: 1.5rem auto 0;
+}
+
+.bannerColWd1 form > img {
+  filter: brightness(0);
+}
+
+.bannerColWd1 > img {
+  max-width: 45rem;
+  margin: 1rem auto 0;
+}
+
+/* Banner heading */
+.bannerHeading > p {
+  font-size: 1.12rem;
+  max-width: 30rem;
+  text-transform: capitalize;
+}
+
+.bannerHeading > h5 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.bannerHeading > h1 {
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  display: block;
+  max-width: 50rem;
+  font-size: 3.125rem;
+  font-weight: 700;
+  min-height: 20px;
+  color: #fff;
+}
+
+/* Banner form */
+.bannerForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1.75rem 0;
+  border-radius: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.625rem;
+  max-width: 36rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.bannerForm > img {
+  position: relative;
+  height: 1.25rem;
+  filter: brightness(0);
+  transform: translate(0, -12%);
+}
+
+.bannerForm > input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0.875rem;
+  height: 3rem;
+  background-color: transparent;
+}
+
+.bannerForm > button,
+.linkArea > :is(a, button) {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  border-radius: 4rem;
+  background-color: var(--primary);
+  color: var(--background);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.bannerForm > button:hover,
+.linkArea > :is(a, button):hover {
+  background-color: var(--primary);
+}
+
+.bannerForm > button,
+.linkArea > :is(a, button).primary {
+  background: var(--primary);
+  transition: 0.3s;
+}
+
+.bannerForm > button:after,
+.linkArea > a.primary:after,
+.linkArea > button.primary:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--text-color);
+  border-radius: 4rem;
+  transition: 0.7s;
+}
+
+.bannerForm > button:hover:after,
+.linkArea > a.primary:hover:after,
+.linkArea > button.primary:hover:after {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  width: 119%;
+}
+
+.bannerForm > button > span,
+.linkArea > :is(a, button) > span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transform: translateY(150%);
+  transition: 0.7s;
+  z-index: -1;
+}
+
+.bannerForm > button > span,
+.linkArea > :is(a, button).primary > span {
+  background: var(--text-color);
+}
+
+.bannerForm > button > span:first-child,
+.linkArea > :is(a, button) > span:first-child {
+  --n: 1;
+}
+
+.bannerForm > button > span:nth-child(2),
+.linkArea > :is(a, button) > span:nth-child(2) {
+  --n: 2;
+}
+
+.bannerForm > button > span:nth-child(3),
+.linkArea > :is(a, button) > span:nth-child(3) {
+  --n: 3;
+}
+
+.bannerForm > button > span:nth-child(4),
+.linkArea > :is(a, button) > span:nth-child(4) {
+  --n: 4;
+}
+
+.bannerForm > button:hover > span,
+.linkArea > :is(a, button):hover > span {
+  transform: translateY(0) scale(2);
+}
+
+/* Parallax effect styles */
+.parallexEffect {
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.objectOne {
+  position: absolute;
+  top: 16%;
+  left: 0%;
+}
+
+.objectOne > img {
+  max-width: 11rem;
+}
+
+.objectTwo {
+  position: absolute;
+  bottom: 1%;
+  left: -11%;
+}
+
+.objectTwo > img {
+  max-width: 18rem;
+}
+
+.objectThree {
+  position: absolute;
+  top: 9%;
+  right: 0%;
+}
+
+.objectThree > img {
+  max-width: 16rem;
+}
+
+.objectFour {
+  position: absolute;
+  bottom: -4%;
+  right: 0%;
+}
+
+.objectFour > img {
+  max-width: 11rem;
+}
+
+/* Mobile parallax effect */
+.mobileParallexEffect {
+  position: relative;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.mobileParallexEffect > img {
+  max-width: 75%;
+}
+
+.leftImg,
+.rightImg {
+  position: absolute;
+  filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.1));
+}
+
+.mobileParallexEffect > .leftImg {
+  top: 14rem;
+  max-width: 42%;
+  left: -1rem;
+}
+
+.mobileParallexEffect > .rightImg {
+  max-width: 34%;
+  right: -1rem;
+  top: 4rem;
+}
+
+/* Logos carousel */
+.homebannerLogos2 {
+  display: block;
+}
+
+.homebannerLogos2 .owlStage {
+  display: flex;
+  align-items: center;
+}
+
+.homebannerLogos2 .owlItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallLogos2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.smallLogos2 img {
+  max-width: 200px;
+  height: auto;
+  /* object-fit: contain; */
+}
+
+/* Owl Carousel specific styles */
+.homebannerLogos2.owlCarousel .owlStageOuter {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.homebannerLogos2.owlCarousel .owlStage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.homebannerLogos2.owlCarousel .owlItem {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.homebannerLogos2.owlCarousel .owlItem img {
+  display: block;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 650px) {
+  .homeBanner {
+    min-height: 5rem;
+    max-height: 45rem;
+  }
+
+  .bannerCenterContainer {
+    top: 38%;
+  }
+
+  .bannerCenterContainer.homeBannerSlider {
+    bottom: 4% !important;
+  }
+
+  .bannerColWd1 {
+    margin-top: 9rem !important;
+  }
+
+  .mobileParallexEffect {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .homebannerLogos2 .owlItem {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .homeBanner .mobileParallexEffect {
+    display: none;
+  }
+
+  .homebannerLogos2 .owlItem {
+    padding: 0 10px;
+  }
+
+  .smallLogos2 img {
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 651px) {
+  .mobileParallexEffect {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .bannerCenterContainer.homeBannerSlider {
+    top: 44%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+  .bannerHeading > h1 {
+    font-size: 3.625rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .bannerHeading > h1 {
+    font-size: 3.5rem;
+  }
+
+  .bannerCenterContainer.homeBannerSlider {
+    top: auto;
+    bottom: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .bannerHeading > h1 {
+    font-size: 2.75rem;
+  }
+
+  .homeBanner {
+    max-height: 40rem;
+  }
+
+  .bannerCenterContainer.homeBannerSlider {
+    top: auto;
+    bottom: -13%;
+  }
+
+  .bannerForm {
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .bannerForm > button,
+  .basicTabs > .navTabs > .navItem,
+  .meshShapes::after,
+  .meshShapes::before {
+    width: 100%;
+  }
+
+  .bannerForm > img {
+    margin: 0 0 0 1rem;
+  }
+
+  .homeBannerArea > .homeBanner .bannerHeading > h1 {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .bannerCenterContainer.homeBannerSlider {
+    top: auto;
+    bottom: -19% !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .bannerHeading > h1 {
+    font-size: 2.625rem;
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 1199px) {
+  .homeBanner {
+    max-height: 50rem;
+  }
+}
+
+@media (min-width: 1199px) {
+  .bannerCenterContainer.homeBannerSlider {
+    top: 22.5%;
+    z-index: -1;
+  }
+
+  .bannerHeading > h1 {
+    margin-left: -0.1875rem;
+  }
+}
+
+@media (min-width: 1399px) {
+  .bannerForm .niceSelect:after {
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+  }
+}
+
+@media (min-width: 576px) {
+  .bannerForm > button {
+    padding: 0.75rem 3rem 0.625rem;
+  }
+}
+
+/* Section specific styles */
+.homeBannerArea > section::after {
+  background: radial-gradient(#ffffff -30%, transparent 70%);
+}
+
+.homeBanner {
+  min-height: 51rem;
+}
+
+/* Glow effect */
+.glow001 {
+  position: absolute;
+  left: 0px;
+  top: 30%;
+  width: 42px;
+  height: 300px;
+  border-radius: 200px;
+  box-shadow: 0 0 13px 2px #3c7cff;
+  background: #3c7cff;
+  filter: blur(50px);
+}
+
+.banner-heading > h1 {
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  display: block;
+  max-width: 50rem;
+  font-size: 3.125rem;
+  font-weight: 700;
+  min-height: 20px;
+  color: #fff;
+}
+
+.bannerForm {
+  padding: 0.5rem 0.5rem 0.5rem 1.625rem;
+  border-radius: 5rem;
+  background-color: var(--background);
+}
+
+.bannerForm > input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0.875rem;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+.bannerColWd1 p {
+    max-width: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.banner-heading > p {
+    text-transform: capitalize;
+}
+
+.bannerForm > button,
+.link-area > :is(a, button) {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  border-radius: 4rem;
+  min-height: 3rem;
+  border: 0;
+  outline: 0;
+  background: var(--text-color);
+  color: var(--text-light-color);
+  font-weight: 600;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.bannerForm > button:hover,
+.link-area > :is(a, button):hover {
+  background-color: var(--primary);
+}
+@-moz-document url-prefix() {
+  .bannerForm > button,
+  .link-area > :is(a, button) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .bannerForm > button:hover > span,
+  .link-area > :is(a, button):hover > span {
+    transform: translateY(0) scale(3) !important;
+  }
+}
+.bannerForm > button,
+.link-area > :is(a, button).primary {
+  background: var(--primary);
+  transition: 0.3s;
+}
+.bannerForm > button,
+.link-area > a.primary,
+.link-area > button.primary {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  border-radius: 4rem;
+  min-height: 3rem;
+  border: 0;
+  outline: 0;
+  background: var(--primary);
+  color: var(--text-light-color);
+  font-weight: 600;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+.bannerForm > button:after,
+.link-area > a.primary:after,
+.link-area > button.primary:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #15dba8;
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  top: 0;
+  right: 100%;
+  opacity: 0;
+  transition: 0.7s;
+}
+.bannerForm > button:hover:after,
+.link-area > a.primary:hover:after,
+.link-area > button.primary:hover:after {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  width: 119%;
+}
+.bannerForm > button > span,
+.link-area > :is(a, button) > span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.bannerForm > button > span,
+.link-area > :is(a, button).primary > span {
+  background: var(--text-color);
+}
+.bannerForm > button > span:first-child,
+.link-area > :is(a, button) > span:first-child {
+  --n: 1;
+}
+.bannerForm > button > span:nth-child(2),
+.link-area > :is(a, button) > span:nth-child(2) {
+  --n: 2;
+}
+.bannerForm > button > span:nth-child(3),
+.link-area > :is(a, button) > span:nth-child(3) {
+  --n: 3;
+}
+.bannerForm > button > span:nth-child(4),
+.link-area > :is(a, button) > span:nth-child(4) {
+  --n: 4;
+}
+.bannerForm > button:hover > span,
+.link-area > :is(a, button):hover > span {
+  transform: translateY(0) scale(2);
+}
+
+.bannerForm > button:hover:after,
+.link-area > a.primary:hover:after,
+.link-area > button.primary:hover:after {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  width: 119%;
+}
+.bannerForm > button > span,
+.link-area > :is(a, button) > span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.bannerForm > button > span,
+.link-area > :is(a, button).primary > span {
+  background: var(--text-color);
+}
+.bannerForm > button > span:first-child,
+.link-area > :is(a, button) > span:first-child {
+  --n: 1;
+}
+.bannerForm > button > span:nth-child(2),
+.link-area > :is(a, button) > span:nth-child(2) {
+  --n: 2;
+}
+.bannerForm > button > span:nth-child(3),
+.link-area > :is(a, button) > span:nth-child(3) {
+  --n: 3;
+}
+.bannerForm > button > span:nth-child(4),
+.link-area > :is(a, button) > span:nth-child(4) {
+  --n: 4;
+}
+.bannerForm > button:hover > span,
+.link-area > :is(a, button):hover > span {
+  transform: translateY(0) scale(2);
+}
+
+.bannerHeading > h1 {
+  margin: 0.5rem auto;
+  display: block;
+  max-width: 60rem;
+  font-size: 3.688rem;
+  font-weight: 700;
+  min-height: 20px;
+  color: #fff;
+}
+
+.bannerHeading {
+  margin: 0 auto;
+}
+
+@media (min-width: 1199px) {
+  .banner-heading > h1 {
+    margin-left: -0.1875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bannerForm > button,
+  .link-area > :is(a, button) {
+    padding: 0.875rem 3rem;
+  }
+  .bannerForm {
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+    gap: 0.5rem;
+  }
+  .bannerform > button,
+  .basic-tabs > .nav-tabs > .nav-item,
+  .mesh-shapes::after,
+  .mesh-shapes::before {
+    width: 100%;
+  }
+  .bannerform > img {
+    margin: 0 0 0 1rem;
+  }
+}
