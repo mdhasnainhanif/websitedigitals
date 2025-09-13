@@ -6450,18 +6450,23 @@ body {
   opacity: 1;
   transition: all 0.3s ease;
 }
-.blog-slider .owl-nav button:hover,
 .casestudyslider .owl-nav button:hover,
 .badges-slider .owl-nav button:hover {
   background-color: var(--primary) !important;
   color: #fff !important;
 }
-.blog-slider .owl-nav .owl-prev,
+.blog-slider .owl-nav .owl-prev{
+  left: -3%;
+}
+.blog-slider .owl-nav .owl-next{
+  right: -5%;
+}
+
 .casestudyslider .owl-nav .owl-prev,
 .badges-slider .owl-nav .owl-prev {
   left: -3%;
 }
-.blog-slider .owl-nav .owl-next,
+
 .casestudyslider .owl-nav .owl-next,
 .badges-slider .owl-nav .owl-next {
   right: -8%;
@@ -7768,4 +7773,33 @@ section.home-banner .height-100 {
 
 .dark-section .single-testimonial {
   color: var(--text-color);
+}
+
+
+/* Owl overrides */
+.owl-theme .owl-dots .owl-dot > span{
+  display: none !important;
+  /* *display: inline;  <-- don't include this old IE hack */
+}
+
+
+
+div.blog-slider .owl-nav > button {
+  border: 0 !important;
+}
+div.blog-slider .owl-nav > button:hover{
+  background: none !important;
+}
+
+div.blog-slider .owl-nav > button > span{
+    font-size: 20px !important;
+    padding: 6px 8px !important;
+    background: transparent !important;
+    border-radius: 50% !important;
+    color: var(--primary) !important;
+    border: 2px solid var(--primary);
+}
+div.blog-slider .owl-nav > button:hover > span{
+  color: #fff !important;
+  background: var(--primary) !important;
 }

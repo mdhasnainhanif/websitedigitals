@@ -40,6 +40,15 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/assets/css/style.css" />
         <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfAmvG6T1XlXH5wR6sdrP+YtS3M8xZJQpQ2cN5G3OZ7rXq8gG6Vx4W8w=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+
         <script src="/assets/js/jquery-3.7.1.min.js"></script>
         <script src="/assets/js/owl.carousel.min.js"></script>
       </head>
