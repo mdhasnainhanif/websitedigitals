@@ -1698,10 +1698,21 @@ ul.count-ul > li::before {
 }
 .accordion-button.collapsed::after {
   content: "\2b";
+  content: "\2b";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .accordion-button:not(.collapsed)::after {
-  content: "\f068";
+  content: "−";
+  transform: none;
+  font-size: 2rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .single-blog {
   display: flex;
   flex-direction: column;
@@ -3299,6 +3310,7 @@ button.primary:hover {
   display: flex;
   align-items: center;
 }
+
 .webPortfolio-caseStudyTabs {
   width: 25%;
 }
