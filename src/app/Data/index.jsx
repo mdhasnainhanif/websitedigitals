@@ -939,3 +939,91 @@ export const testimonialsData = {
     },
   },
 };
+
+
+// /data/blueCounterData.js
+
+const blueCounterData = [
+  {
+    countTo: 105,
+    label: "Qualified Customers",
+    className: "single-caseStudy-stats3",
+  },
+  {
+    countTo: 200,
+    label: "Honors Awards",
+    className: "single-caseStudy-stats4",
+  },
+  {
+    countTo: 400,
+    label: "Successful Cases",
+    className: "single-caseStudy-stats5",
+  },
+  {
+    countTo: 600,
+    label: "Trusted Clients",
+    className: "counterLastElem",
+  },
+];
+
+export default blueCounterData;
+
+
+export const awardBadgesData = [
+  {
+    href: 'https://www.rightfirms.co/company/website-digitals',
+    src: `/assets/images-webp/award-logo/1.png`,
+    alt: 'Right Firms Top Service Provider 2025',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://upcity.com/profiles/website-digitals',
+    src: '/assets/images-webp/award-logo/2.webp',
+    alt: 'Featured On Upcity',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://www.softwareworld.co/service/website-digitals-reviews/',
+    src: '/assets/images-webp/award-logo/3.jpg',
+    alt: 'Software World Highly Recommended',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://clutch.co/profile/website-digitals',
+    src: '/assets/images-webp/award-logo/4.jpg',
+    alt: 'Client Say We Deliver On Clutch',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://www.sortlist.com/agency/website-digitals',
+    src: '/assets/images-webp/award-logo/5.jpg',
+    alt: 'Sortlist Certified Member',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://techbehemoths.com/company/website-digitals',
+    src: '/assets/images-webp/award-logo/6.png',
+    alt: 'Trusted On Tech Behemoths',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://www.crunchbase.com/organization/website-digitals',
+    src: '/assets/images-webp/award-logo/7.png',
+    alt: 'Crunchbase',
+    width: 178,
+    height: 120,
+  },
+  {
+    href: 'https://www.goodfirms.co/company/website-digitals',
+    src: '/assets/images-webp/award-logo/8.png',
+    alt: 'Goodfirms',
+    width: 178,
+    height: 120,
+  },
+];
