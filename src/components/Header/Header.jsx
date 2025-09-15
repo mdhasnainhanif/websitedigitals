@@ -112,22 +112,22 @@ export default function Header() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-3">
-                <Link className="navbar-brand" href="/">
+                <Link className={styles.navbar_brand} href="/">
                   <img loading="lazy" src="/assets/images-webp/website-digitals.webp" alt="Website Digitals" />
                 </Link>
               </div>
 
               <div className="col-md-7">
-                <ul className={`navbar-nav ${styles.new_header_links} py-0`}>
-                  <li className="nav-item">
-                    <Link className="nav-link" aria-current="page" href="/">Home</Link>
+                <ul className={`${styles.new_header_links} ${styles.navbar_nav} py-0`}>
+                  <li className={`${styles.nav_item}`}>
+                    <Link className={styles.nav_link} aria-current="page" href="/">Home</Link>
                   </li>
 
                   {/* Web Development */}
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Development</a>
-                    <ul className={`dropdown-menu ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop2} ${styles.webBuilderDrop3}`}>
-                      <li className="w-100 p-0">
+                  <li className={`${styles.nav_item} ${styles.dropdown}`}>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Development</a>
+                    <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop2} ${styles.webBuilderDrop3}`}>
+                      <li className={`${styles.w_100} p-0`}>
                         <div className="container-fluid p-0">
                           <div className="row m-0">
                             <div className="col-md-4 p-0">
@@ -138,7 +138,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/12.webp', title: 'Shopify Development', desc: 'Top-notch Shopify solutions to launch and scale your stor.' },
                                   { img: '/assets/images/menu/13.webp', title: 'Wix Development', desc: 'Easy-to-manage Wix websites designed for impact.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -156,7 +156,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/16.webp', title: 'Web Portal Development', desc: 'Secure, scalable portals for business and communities.' },
                                   { img: '/assets/images/menu/17.webp', title: 'Web Application Development', desc: 'Ineractive and custom web apps built to perform.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -167,12 +167,12 @@ export default function Header() {
                             </div>
 
                             <div className="col-md-4 p-0">
-                              <div className="${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}">
+                              <div className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}>
                                 {[
                                   { img: '/assets/images/menu/18.webp', title: 'Web Speed Optimization', desc: 'Faster load times, better experience, and higher conversion.' },
                                   { img: '/assets/images/menu/19.png', title: 'Web Maintenance', desc: 'Keep your website secure , updated, and error-free.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -188,9 +188,9 @@ export default function Header() {
                   </li>
 
                   {/* Web Design */}
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Design</a>
-                    <ul className={`dropdown-menu ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop2} ${styles.webBuilderDrop3}`}>
+                  <li className={`${styles.nav_item} ${styles.dropdown}`}>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Design</a>
+                    <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop2} ${styles.webBuilderDrop3}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
                           <div className="row m-0">
@@ -202,7 +202,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/3.png', title: 'Website Redesign', desc: 'Refresh your website for modern appeal and performance.' },
                                   { img: '/assets/images/menu/4.png', title: 'B2B Web Design', desc: 'Professional B2B designs that build trust and authority.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -219,7 +219,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/6.png', title: 'Amazon Store Setup', desc: 'Optimized Amazon stores to boost your eCommerce success.' },
                                   { img: '/assets/images/menu/7.png', title: 'Logo Design', desc: 'Creative logos that define and enhance your brand identity.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -230,12 +230,12 @@ export default function Header() {
                             </div>
 
                             <div className="col-md-4 p-0">
-                              <div className="${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}">
+                              <div className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}>
                                 {[
                                   { img: '/assets/images/menu/8.png', title: 'Video Animation', desc: 'Compelling animations to tell your story with impact.' },
                                   { img: '/assets/images/menu/9.png', title: 'Graphic Design', desc: 'Visual designs that engage and communicate effectively.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -251,9 +251,9 @@ export default function Header() {
                   </li>
 
                   {/* Digital Marketing */}
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onClick={go('/')}>Digital Marketing</a>
-                    <ul className={`dropdown-menu ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop4}`}>
+                  <li className={`${styles.nav_item} ${styles.dropdown}`}>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Digital Marketing</a>
+                    <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop4}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
                           <div className="row m-0">
@@ -265,7 +265,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/22.webp', title: 'Social Media Marketing', desc: 'Engage, grow, and convert through social channels.' },
                                   { img: '/assets/images/menu/23.webp', title: 'Digital PR', desc: 'Build authority and visibility with impactful PR campaigns.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -283,7 +283,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/26.webp', title: 'Guest Post/Outreach', desc: 'Expand reach with strategic guest posting and outreach.' },
                                   { img: '/assets/images/menu/27.webp', title: 'Link Building', desc: 'High-quality backlinks to strengthen your SEO.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -294,13 +294,13 @@ export default function Header() {
                             </div>
 
                             <div className="col-md-4 p-0">
-                              <div className="${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}">
+                              <div className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}>
                                 {[
                                   { img: '/assets/images/menu/28.webp', title: 'Local SEO', desc: 'Dominate local searches and grow neighborhood visibility.' },
                                   { img: '/assets/images/menu/29.webp', title: 'Online Reputation Management', desc: 'Protect and enhance your brand’s online presence.' },
                                   { img: '/assets/images/menu/30.webp', title: 'App Store Optimization', desc: 'Get your app discovered and downloaded more often.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -316,9 +316,9 @@ export default function Header() {
                   </li>
 
                   {/* Web Hosting */}
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Hosting</a>
-                    <ul className={`dropdown-menu ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop9}`}>
+                  <li className={`${styles.nav_item} ${styles.dropdown}`}>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Hosting</a>
+                    <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop9}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
                           <div className="row m-0">
@@ -330,7 +330,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/32.webp', title: 'Dedicated Hosting', desc: 'Enterprise-level hosting with maximum resources' },
                                   { img: '/assets/images/menu/33.webp', title: 'Cloud Hosting', desc: 'Scalable cloud hosting built for speed and reliability.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -340,13 +340,13 @@ export default function Header() {
                               </div>
                             </div>
                             <div className="col-md-6 p-0">
-                              <div className="${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}">
+                              <div className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}>
                                 {[
                                   { img: '/assets/images/menu/34.webp', title: 'Managed Hosting', desc: 'Worry-free hosting with complete expert management.' },
                                   { img: '/assets/images/menu/35.webp', title: 'Reseller Hosting', desc: 'Grow your business with flexible reseller hosting plans.' },
                                   { img: '/assets/images/menu/36.webp', title: 'Domain Registration', desc: 'Secure the perfect domain for your brand identity.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -362,20 +362,20 @@ export default function Header() {
                   </li>
 
                   {/* Web Builder */}
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Builder</a>
-                    <ul className={`dropdown-menu ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop7}`}>
+                  <li className={`${styles.nav_item} ${styles.dropdown}`}>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Builder</a>
+                    <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop7}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
                           <div className="row">
                             <div className="col-md-3">
-                              <div className="bgLight p-0 py-4 ps-3">
-                                <p className="${styles.megamenu_heading} iconNone text_primary"> Industries</p>
+                              <div className={`${styles.bgLight} p-0 py-4 ps-3`}>
+                                <p className={`${styles.megamenu_heading} ${styles.iconNone} text-primary`}> Industries</p>
                                 <div className={`nav nav-pills me-3 ${styles.navDropTabs}`} role="tablist" aria-orientation="vertical">
                                   {industryData.map((industry, idx) => (
                                     <button 
                                       key={idx} 
-                                      className={`nav-link ${idx === activeIndustryTab ? 'active' : ''}`}
+                                      className={`${styles.nav_link} ${idx === activeIndustryTab ? 'active' : ''}`}
                                       onClick={(e) => {
                                         e.preventDefault()
                                         setActiveIndustryTab(idx)
@@ -401,7 +401,7 @@ export default function Header() {
                                       <ul className={styles.ulcustom_megamenu}>
                                         {industry.services.map((service, serviceIdx) => (
                                           <li key={serviceIdx}>
-                                            <a className="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">
+                                            <a className={styles.dropdown_item} href="#" target="_blank" rel="noopener noreferrer">
                                               {service}
                                             </a>
                                           </li>
@@ -419,9 +419,9 @@ export default function Header() {
                   </li>
 
                   {/* Insight */}
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" onClick={go('/')}>Insight</a>
-                    <ul className={`dropdown-menu ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop10}`}>
+                  <li className={`${styles.nav_item} ${styles.dropdown}`}>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Insight</a>
+                    <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop10}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
                           <div className="row m-0">
@@ -432,8 +432,8 @@ export default function Header() {
                                   { img: '/assets/images/menu/37.webp', title: 'Webfolio' },
                                   { img: '/assets/images/menu/38.webp', title: 'Blog' },
                                 ].map((item, i) => (
-                                  <Link key={i} className="nav-link padding-left" href="#">
-                                    <div className="${styles.menu_icon1_wrapper} ${styles.menu_icon1_wrapper}2">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                    <div className={`${styles.menu_icon1_wrapper} ${styles.menu_icon1_wrapper}2`}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p></div>
                                     </div>
@@ -654,6 +654,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
+
     </>
   )
 }
