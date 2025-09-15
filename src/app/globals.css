@@ -1093,12 +1093,6 @@ ul.scrollable-tabs {
   font-size: 1.25rem;
 }
 
-#website-caseStudy2 .webPortfolio-caseStudyImage,
-#website-caseStudy3 .webPortfolio-caseStudyImage,
-#website-caseStudy4 .webPortfolio-caseStudyImage {
-  transition: background-position 2.8s;
-}
-
 @media (max-width: 576px) {
   .prev-portfolio,
   .next-portfolio {
@@ -1581,12 +1575,6 @@ ul.scrollable-tabs {
   font-size: 1.25rem;
 }
 
-#website-caseStudy2 .webPortfolio-caseStudyImage,
-#website-caseStudy3 .webPortfolio-caseStudyImage,
-#website-caseStudy4 .webPortfolio-caseStudyImage {
-  transition: background-position 2.8s;
-}
-
 @media (max-width: 576px) {
   .prev-portfolio,
   .next-portfolio {
@@ -1956,12 +1944,6 @@ ul.scrollable-tabs {
 .prev-portfolio i,
 .next-portfolio i {
   font-size: 1.25rem;
-}
-
-#website-caseStudy2 .webPortfolio-caseStudyImage,
-#website-caseStudy3 .webPortfolio-caseStudyImage,
-#website-caseStudy4 .webPortfolio-caseStudyImage {
-  transition: background-position 2.8s;
 }
 
 @media (max-width: 576px) {
@@ -2914,12 +2896,6 @@ ul.scrollable-tabs {
 .prev-portfolio i,
 .next-portfolio i {
   font-size: 1.25rem;
-}
-
-#website-caseStudy2 .webPortfolio-caseStudyImage,
-#website-caseStudy3 .webPortfolio-caseStudyImage,
-#website-caseStudy4 .webPortfolio-caseStudyImage {
-  transition: background-position 2.8s;
 }
 
 @media (max-width: 576px) {
@@ -7803,3 +7779,15 @@ div.blog-slider .owl-nav > button:hover > span{
   color: #fff !important;
   background: var(--primary) !important;
 }
+
+
+/* today css */
+
+
+.webPortfolio-caseStudyClose p{
+  transform: rotate(45deg);
+}
+
+
+
+

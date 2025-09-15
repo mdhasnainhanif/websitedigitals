@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import styles from "./PortfolioSection.module.css";
 
 export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
@@ -54,15 +55,15 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
     const rightSide = (() => {
       if (item.variant === "v2") {
         return (
-          <div className="webPortfolio-caseStudyDetailArea">
+          <div className={`${styles.webPortfolioCaseStudyDetailArea}`}>
             {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
-            <div className="webPortfolio-caseStudyDetail">
+            <div className={styles.webPortfolioCaseStudyDetail}>
               <div
                 dangerouslySetInnerHTML={{
                   __html: item.caseStudy?.detailHTML || "",
                 }}
               />
-              <div className="link-area">
+              <div className="linkArea">
                 <a
                   href="#"
                   className="primary offer-btn"
@@ -82,7 +83,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
 
       if (item.variant === "v5") {
         return (
-          <div className="webPortfolio-caseStudyDetailArea">
+          <div className={`${styles.webPortfolioCaseStudyDetailArea}`}>
             {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
             {item.caseStudy?.dynamicIntroHTML && (
               <p
@@ -96,7 +97,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
                 }}
               />
             )}
-            <div className="webPortfolio-caseStudyDetail">
+            <div className={`${styles.webPortfolioCaseStudyDetail}`}>
               <div
                 dangerouslySetInnerHTML={{
                   __html: item.caseStudy?.detailHTML || "",
@@ -154,9 +155,9 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
 
       // default: home/static
       return (
-        <div className="webPortfolio-caseStudyDetailArea">
+        <div className={`${styles.webPortfolioCaseStudyDetailArea}`}>
           {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
-          <div className="webPortfolio-caseStudyDetail">
+          <div className={`${styles.webPortfolioCaseStudyDetail}`}>
             <div
               dangerouslySetInnerHTML={{
                 __html: item.caseStudy?.detailHTML || "",
@@ -164,7 +165,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
             />
             {(item.caseStudy?.links?.launchHref ||
               item.caseStudy?.links?.briefHref) && (
-              <div className="link-area">
+              <div className={`${styles.linkArea}`}>
                 {item.caseStudy.links.launchHref && (
                   <a
                     href={item.caseStudy.links.launchHref}
@@ -201,18 +202,18 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
     })();
 
     return (
-      <div className="row webPortfolio-caseStudyArea">
+      <div className={`row ${styles.webPortfolioCaseStudyArea}`}>
         <div
-          className="webPortfolio-caseStudyClose"
+          className={`${styles.webPortfolioCaseStudyClose}`}
           role="button"
           onClick={closeCaseStudy}
         >
-          <i className="fa-solid fa-xmark" />
+          <p>+</p>
         </div>
 
         <div className="col-md-8">
-          <div className="webPortfolio-caseStudyTabsArea">
-            <div className="webPortfolio-caseStudyTabs">
+          <div className={`${styles.webPortfolioCaseStudyTabsArea} webPortfolioCaseStudyTabsArea`}>
+            <div className={`${styles.webPortfolioCaseStudyTabs} webPortfolio-caseStudyTabs`}>
               <ul className="nav nav-tabs">
                 {tabsThumbs.map((src, i) => (
                   <li className="nav-item" key={`thumb-${i}`}>
@@ -222,7 +223,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
                       onClick={(e) => {
                         e.preventDefault();
                         const area = e.currentTarget.closest(
-                          ".webPortfolio-caseStudyTabsArea"
+                          ".webPortfolioCaseStudyTabsArea"
                         );
                         const panes = area.querySelectorAll(".tab-pane");
                         const links = area.querySelectorAll(".nav-link");
@@ -241,7 +242,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
               </ul>
             </div>
 
-            <div className="tab-content webPortfolio-caseStudy-content">
+            <div className={`tab-content ${styles.webPortfolioCaseStudyContent}`}>
               {tabsThumbs.map((src, i) => (
                 <div
                   key={`pane-${i}`}
@@ -249,7 +250,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
                   id={`website-caseStudy${i + 1}`}
                 >
                   <div
-                    className="webPortfolio-caseStudyImage"
+                    className="webPortfolioCaseStudyImage"
                     style={{ backgroundImage: `url('${src}')` }}
                   />
                 </div>
