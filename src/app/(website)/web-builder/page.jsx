@@ -1,5 +1,9 @@
 // app/about/page.jsx
+import blueCounterData from '@/app/Data/index';
 import WebBuilderBanner from '@/components/WebBuilder/WebBuilderBanner';
+import BlueCounterSection from '@/components/WebBuilder/BlueCounterSection';
+import AwardSliderSection from '../../../components/AwardSliderSection';
+import { awardBadgesData } from '@/app/Data/index';
 
 export const metadata = {
   title: 'Website Digitals | Web Builder to Build Your Dream Website Today',
@@ -11,7 +15,8 @@ export default function WebBuilderPage() {
     <>
      
       <WebBuilderBanner />
-      {/* Add more sections below if needed */}
+      <BlueCounterSection data={blueCounterData} />
+      <AwardSliderSection items={awardBadgesData} />
     </>
   );
 }
