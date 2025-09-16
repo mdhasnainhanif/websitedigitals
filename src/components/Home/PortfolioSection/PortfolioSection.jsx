@@ -241,7 +241,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
               </ul>
             </div>
 
-            <div className={`tab-content ${styles.webPortfolio_CaseStudyContent}`}>
+            <div className={`${styles.tab_content} ${styles.webPortfolio_CaseStudy_Content}`}>
               {tabsThumbs.map((src, i) => (
                 <div
                   key={`pane-${i}`}

@@ -136,7 +136,7 @@
 }
 .webPortfolio_caseStudyTabsArea {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 .webPortfolio_caseStudyImage 
 {
@@ -148,11 +148,13 @@
     transition: background-position 25s;
 }
 .webPortfolio_caseStudyTabs {
-    width: 25%
+    width: 25%;
 }
-
+.tab_content>.active {
+    display: block;
+}
 .webPortfolio_caseStudy_content {
-    width: 75%
+    width: 75%;
 }
 .basic_tabs>.nav_tabs>.nav_item>.nav_link.active::before,.stepArea.active {
     transform: translate(0,0);
@@ -239,7 +241,22 @@
     -ms-flex-align: stretch;
     align-items: stretch;
 }
-
+.webPortfolio_caseStudyTabs>.nav_tabs {
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    border: 0;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, .1);
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.webPortfolio_caseStudyTabs>.nav_tabs>li>a>img {
+    width: 100%;
+    max-height: 6.5rem;
+    object-fit: cover;
+    object-position: top center;
+    transition: .3s;
+}
 .single_webPortfolio>.webPortfolio_imageArea>.main_imageArea>.backImage {
     will-change: transform;
     min-width: .75rem;
@@ -463,4 +480,9 @@
 }
 .webPortfolio-caseStudyArea>* {
     padding: 0;
+}
+.webPortfolio_caseStudyDetail {
+    background: var(--primary-extra-light-bg);
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, .1);
+    padding: 1.25rem 2rem;
 }
