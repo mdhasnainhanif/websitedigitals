@@ -2,29 +2,14 @@
 
 import Link from 'next/link'
 import { useMemo } from 'react'
-// Optional: if you have React components to replace Blade tags
-// import PopupForm from '@/components/PopupForm'
-// import SolutionForm from '@/components/SolutionForm'
-
-/**
- * Footer component converted from Blade/HTML to Next.js JSX
- * - Replaces Blade env/asset helpers with NEXT_PUBLIC_IMAGE_PATH fallback
- * - Replaces Laravel route() links with plausible Next.js paths — adjust as needed
- * - Adds rel="noopener noreferrer" to external links
- * - Converts inline styles to objects
- * - Keeps class names as-is so your existing CSS works
- * - Custom element <lottie-player> works in React, but ensure its script is loaded globally
- *   e.g., add to <head>: <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
- */
+import styles from './Footer.module.css'
 
 export default function Footer() {
-  // Normalize a base for image paths similar to Blade env('IMAGE_PATH')/asset('frontend') logic
-
   const year = new Date().getFullYear()
 
   return (
-    <footer className="footer">
-      <div className="footer-bgLines">
+    <footer className={styles.footer}>
+      <div className={styles.footer_bgLines}>
         <span></span>
         <span></span>
         <span></span>
@@ -32,10 +17,10 @@ export default function Footer() {
         <span></span>
       </div>
       <div className="container">
-        <div className="footer-top">
+        <div className={styles.footer_top}>
           <div className="row">
             <div className="col-lg-4">
-              <div className="footer-logoArea">
+              <div className={styles.footer_logoArea}>
                 <Link aria-label="Website Digitals" href="/">
                   <img
                     src={`/assets/images-webp/website-digitals-white.webp`}
@@ -49,7 +34,7 @@ export default function Footer() {
                 </p>
               </div>
 
-              <ul className="partners-rating">
+              <ul className={styles.partners_rating}>
                 <li>
                   <a href="https://clutch.co/profile/website-digitals" target="_blank" rel="noopener noreferrer">
                     <img
@@ -72,10 +57,10 @@ export default function Footer() {
             </div>
 
             <div className="col-lg-8">
-              <div className="row footer_links_div">
+              <div className={`row ${styles.footer_links_div}`}>
                 {/* Company */}
                 <div className="col-md-4">
-                  <div className="footer-linksArea">
+                  <div className={styles.footer_linksArea}>
                     <p>Company</p>
                     <ul>
                       <li>
@@ -119,7 +104,7 @@ export default function Footer() {
 
                 {/* Services */}
                 <div className="col-md-4">
-                  <div className="footer-linksArea">
+                  <div className={styles.footer_linksArea}>
                     <p>Services</p>
                     <ul>
                       <li>
@@ -163,7 +148,7 @@ export default function Footer() {
 
                 {/* Contacts & Inquires */}
                 <div className="col-md-4">
-                  <div className="footer-linksArea">
+                  <div className={styles.footer_linksArea}>
                     <p>Contacts</p>
                     <ul>
                       <li>
@@ -185,7 +170,7 @@ export default function Footer() {
                     </ul>
                   </div>
 
-                  <div className="footer-linksArea">
+                  <div className={styles.footer_linksArea}>
                     <p>Inquires</p>
                     <ul>
                       <li>
@@ -196,7 +181,7 @@ export default function Footer() {
                       </li>
                     </ul>
 
-                    <ul className="footer-social">
+                    <ul className={styles.footer_social}>
                       <li>
                         <a
                           href="https://www.facebook.com/webdigitals/"
@@ -256,13 +241,13 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="footer-bottom">
+        <div className={styles.footer_bottom}>
           <div className="row">
             <div className="col-md-6">
-              <p className="copyright">Copyright @ {year} - All Rights Reserved</p>
+              <p className={styles.copyright}>Copyright @ {year} - All Rights Reserved</p>
             </div>
             <div className="col-md-6">
-              <ul className="social-links">
+              <ul className={styles.social_links}>
                 <li>
                   <img
                     src={`/assets/images-webp/payment/cards.webp`}
