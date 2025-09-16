@@ -2535,12 +2535,6 @@ button.primary:hover {
   width: 5.75rem;
   height: 2.25rem;
 }
-.single-whyChooseUs > img {
-  width: 5.75rem;
-  height: 5.75rem;
-  object-fit: contain;
-  margin-bottom: 1.25rem;
-}
 .single-whyChooseUs > h3 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -2638,7 +2632,7 @@ button.primary:hover {
   z-index: 2;
 }
 .owl-carousel .owl-nav button {
-  border: 1px solid !important;
+  /* border: 1px solid !important; */
   opacity: 0.6;
   width: 2rem;
   height: 2rem;
@@ -2745,6 +2739,9 @@ button.primary:hover {
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .videoAnimation-imageArea > img {
   height: 18.75rem;
@@ -4956,10 +4953,6 @@ ul.count-ul > li > span {
   .homeBanner-sliders:first-child {
     position: relative;
     left: 32%;
-  }
-  .single-whyChooseUs > img {
-    width: 4.75rem;
-    height: 4.75rem;
   }
   .single-whyChooseUs > h3 {
     font-size: 1.375rem;

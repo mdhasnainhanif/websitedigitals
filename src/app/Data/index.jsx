@@ -1027,3 +1027,288 @@ export const awardBadgesData = [
     height: 120,
   },
 ];
+
+
+// data/industryTabsData.js
+export const industryTabsData = [
+  {
+    id: "ecommerce",
+    title: "E-commerce & Dropshipping",
+    items: [
+      {
+        title: "Dropshipping Website Builder",
+        href: "/dropshipping", // was: route('front.dropshipping')
+        normalImg: "/assets/images/services/two-2.webp",
+        whiteImg: "/assets/images/services/one-1.webp",
+        alt: "Dropshipping Website Builder",
+        desc: "Launch and manage a visually impressive store that supports disruption-free supplier integration and efficient order handling."
+      },
+      {
+        title: "Ecommerce Website Builder",
+        href: "/ecommerce", // was: route('front.ecommerce')
+        normalImg: "/assets/images/services/four-4.webp",
+        whiteImg: "/assets/images/services/three-3.webp",
+        alt: "Ecommerce Website Builder",
+        desc: "From product listings to checkout, every aspect of your online store is designed for conversion."
+      },
+      {
+        title: "Auction Website Builder",
+        href: "/auction-website-builder", // was: route('front.online.auction.website.builder')
+        normalImg: "/assets/images/services/six-6.webp",
+        whiteImg: "/assets/images/services/five-5.webp",
+        alt: "Auction Website Builder",
+        desc: "Create real-time bidding platforms with full customization, perfect for niche eCommerce needs."
+      },
+      {
+        title: "Shopping",
+        href: "/shopping-cart-website", // was: route('front.website.builder.with.shopping.cart')
+        normalImg: "/assets/images/services/eight-8.webp",
+        whiteImg: "/assets/images/services/seven-7.webp",
+        alt: "Shopping",
+        desc: "Engage users with smooth navigation, intuitive design, and an easy-to-use interface."
+      }
+    ]
+  },
+
+  {
+    id: "construction",
+    title: "Construction & Real Estate",
+    items: [
+      {
+        title: "Real Estate Website Builder",
+        href: "/real-estate", // was: route('front.real.estate')
+        normalImg: "/assets/images/services/fourteen-14.webp",
+        whiteImg: "/assets/images/services/thirteen-13.webp",
+        alt: "Real Estate Website Builder",
+        desc: "Showcase properties with high-quality galleries, map views, and listing filters."
+      },
+      {
+        title: "Property Management Website Builder",
+        href: "/property-management", // was: route('front.property.management')
+        normalImg: "/assets/images/services/twelve-12.webp",
+        whiteImg: "/assets/images/services/eleven-11.webp",
+        alt: "Property Management Website Builder",
+        desc: "Manage portfolios and tenant communication from one platform tailored to your operations."
+      },
+      {
+        title: "Website Builder For Construction",
+        href: "/construction-company", // was: route('front.construction.company')
+        normalImg: "/assets/images/services/ten-10.webp",
+        whiteImg: "/assets/images/services/nine-9.webp",
+        alt: "Website Builder For Construction",
+        desc: "Display completed projects, manage leads and highlight your services with ease."
+      },
+      {
+        title: "Realtors",
+        href: "/realtors", // was: route('front.realtors')
+        normalImg: "/assets/images/services/sixteen-16.webp",
+        whiteImg: "/assets/images/services/fifteen-15.webp",
+        alt: "Realtors",
+        desc: "Build trust with visually engaging and mobile-responsive pages that turn visitors into clients."
+      }
+    ]
+  },
+
+  {
+    id: "healthcare",
+    title: "Healthcare",
+    items: [
+      {
+        title: "Website Builder For Medical Practice",
+        href: "/medical-website-builder", // was: route('front.medical.website.builder')
+        normalImg: "/assets/images/services/twentytwo-22.webp",
+        whiteImg: "/assets/images/services/twentyone-21.webp",
+        alt: "Website Builder For Medical Practice",
+        desc: "Set appointments, share resources, and build credibility with a secure, professional platform."
+      },
+      {
+        title: "Dental Website Builder",
+        href: "/dental-website-builder", // was: route('front.dental.website.builder')
+        normalImg: "/assets/images/services/twenty-20.webp",
+        whiteImg: "/assets/images/services/nineteen-19.webp",
+        alt: "Dental Website Builder",
+        desc: "Provide service menus, testimonials, and online booking through a clean and modern interface."
+      }
+    ]
+  },
+
+  {
+    id: "smallbusiness",
+    title: "Small Business",
+    items: [
+      {
+        title: "Wedding Website Builder",
+        href: "/wedding-website-builder", // was: route('front.wedding.website.builder')
+        normalImg: "/assets/images/services/twentyeight-28.webp",
+        whiteImg: "/assets/images/services/twentyseven-27.webp",
+        alt: "Wedding Website Builder",
+        desc: "From portfolios to booking forms, help planners, photographers, and venues create their presence online."
+      },
+      {
+        title: "Restaurant Website Builder",
+        href: "/restaurant-website-builder", // was: route('front.restaurant.website.builder')
+        normalImg: "/assets/images/services/twentysiz-26.webp",
+        whiteImg: "/assets/images/services/twentyfive-25.webp",
+        alt: "Restaurant Website Builder",
+        desc: "Add menus, take orders, and accept reservations using tools tailored for food businesses."
+      },
+      {
+        title: "Website Builder For Cleaning Business",
+        href: "/cleaning-business-website-builder", // was: route('front.cleaning.business.website.builder')
+        normalImg: "/assets/images/services/twentyfour-24.webp",
+        whiteImg: "/assets/images/services/twentythree-23.webp",
+        alt: "Website Builder For Cleaning Business",
+        desc: "Set schedules, capture leads, and rank in local searches with optimized layouts."
+      },
+      {
+        title: "Marketing Agency",
+        href: "/marketing-agency-website-builder", // was: route('front.website.builder.for.marketing.agency')
+        normalImg: "/assets/images/services/thirty-30.png",
+        whiteImg: "/assets/images/services/thirty-31.png",
+        alt: "Marketing Agency",
+        desc: "Highlight case studies, showcase services, and drive lead generation with a high-performing site."
+      },
+      {
+        title: "Booking System",
+        href: "/booking-website-builder", // was: route('front.booking.website.builder')
+        normalImg: "/assets/images/services/twentynine-29.png",
+        whiteImg: "/assets/images/services/thirty-32.png",
+        alt: "Booking System",
+        desc: "Let your clients schedule appointments anytime using a system that syncs with your calendar."
+      }
+    ]
+  },
+
+  {
+    id: "automotive",
+    title: "Automotive",
+    items: [
+      {
+        title: "Car Dealer Website Builder",
+        href: "/car-dealer-website-builder", // was: route('front.car.dealer.website.builder')
+        normalImg: "/assets/images/services/thirty-48.webp",
+        whiteImg: "/assets/images/services/thirty-47.webp",
+        alt: "Car Dealer Website Builder",
+        desc: "Promote listings, streamline financing applications, and engage buyers with a ready-to-use digital solution."
+      }
+    ]
+  },
+
+  {
+    id: "tech",
+    title: "Tech",
+    items: [
+      {
+        title: "Website Builder For Affiliate Marketing",
+        href: "/affiliate-marketing-website-builder", // was: route('front.website.builder.for.affiliate.marketing')
+        normalImg: "/assets/images/services/thirty-34.webp",
+        whiteImg: "/assets/images/services/thirty-33.webp",
+        alt: "Website Builder For Affiliate Marketing",
+        desc: "Maximize conversions with fast-loading landing pages built for performance."
+      },
+      {
+        title: "B2B Website Builder",
+        href: "/b2b-website-builder", // was: route('front.b2b.website.builder')
+        normalImg: "/assets/images/services/thirty-36.webp",
+        whiteImg: "/assets/images/services/thirty-35.webp",
+        alt: "B2B Website Builder",
+        desc: "Create credibility and drive lead generation with tools designed to showcase your value."
+      },
+      {
+        title: "Blog Website Builder",
+        href: "/blog-website-builder", // was: route('front.blog.website.builder')
+        normalImg: "/assets/images/services/thirty-38.webp",
+        whiteImg: "/assets/images/services/thirty-37.webp",
+        alt: "Blog Website Builder",
+        desc: "Start publishing insights and ranking online with templates and built-in SEO features."
+      }
+    ]
+  },
+
+  {
+    id: "travel",
+    title: "Travel & Entertainment",
+    items: [
+      {
+        title: "Website Builder For Artists",
+        href: "/artist-website-builder", // was: route('front.artist.website.builder')
+        normalImg: "/assets/images/services/thirty-40.webp",
+        whiteImg: "/assets/images/services/thirty-39.webp",
+        alt: "Website Builder For Artists",
+        desc: "Display your portfolio using elegantly crafted templates designed specifically for visual narrators."
+      },
+      {
+        title: "Website Builder For Photographers",
+        href: "/photographers-website-builder", // was: route('front.website.builder.for.photographers')
+        normalImg: "/assets/images/services/thirty-44.webp",
+        whiteImg: "/assets/images/services/thirty-43.webp",
+        alt: "Website Builder For Photographers",
+        desc: "Display galleries, take inquiries, and sell prints with a platform tailored to your needs."
+      },
+      {
+        title: "Hotel Website Builder",
+        href: "/hotel-website-builder", // was: route('front.hotel.website.builder')
+        normalImg: "/assets/images/services/thirty-42.webp",
+        whiteImg: "/assets/images/services/thirty-41.webp",
+        alt: "Hotel Website Builder",
+        desc: "Enable direct bookings, highlight amenities, and integrate third-party booking systems effortlessly."
+      },
+      {
+        title: "Vacation Rental",
+        href: "/vacation-rental-website-builder", // was: route('front.vacation.rental.website.builder')
+        normalImg: "/assets/images/services/thirty-46.webp",
+        whiteImg: "/assets/images/services/thirty-45.webp",
+        alt: "Vacation Rental",
+        desc: "List properties, sync calendars, and accept payments through a mobile-optimized platform."
+      }
+    ]
+  }
+];
+
+
+export const webBuilderIndustriesHeading = 'One Website Builder Company, Solutions for All Industries';
+export const webBuilderIndustriesColumnCount = 2;
+export const webBuilderIndustriesClassName = "cc1";
+
+export const webBuilderIndustriesCards = [
+  {
+    title: 'Made for Local and Global Brands',
+    description:
+      'With our flexible web building platforms, you can grow your online presence step by step and reach your local audience with the same ease as a global one.',
+    imgOriginal: '/assets/images/c01.png',
+    imgWhite: '/assets/images/c5.png',
+    alt: 'Made for Local and Global Brands',
+    width: 100,
+    height: 100,
+  },
+  {
+    title: 'We Are Trusted By All',
+    description:
+      'Our web building platforms are trusted by all! <br/> From solo creators to growing companies, our platform is used by thousands who want to take control of their website without relying on outside developers.',
+    imgOriginal: '/assets/images/c02.png',
+    imgWhite: '/assets/images/c6.png',
+    alt: 'We Are Trusted By All',
+    width: 100,
+    height: 100,
+  },
+  {
+    title: 'Full eCommerce Capabilities',
+    description:
+      'Our built-in eCommerce tools are perfect for any scale, whether you\'re starting small or running a full storefront. It’s all part of what makes Website Digitals a go-to business web builder for sellers.',
+    imgOriginal: '/assets/images/c03.png',
+    imgWhite: '/assets/images/c7.png',
+    alt: 'Full eCommerce Capabilities',
+    width: 100,
+    height: 100,
+  },
+  {
+    title: 'SEO Tools That Help You Rank',
+    description:
+      'Your website should do more than just look good; it should get found. Thats why our platform includes built-in SEO features to help your pages show up in search results.<br/>From custom meta tags to fast-loading pages and clean URLs, we give you the tools to compete online, no plugins required.',
+    imgOriginal: '/assets/images/c04.png',
+    imgWhite: '/assets/images/c8.png',
+    alt: 'SEO Tools That Help You Rank',
+    width: 100,
+    height: 100,
+  },
+];

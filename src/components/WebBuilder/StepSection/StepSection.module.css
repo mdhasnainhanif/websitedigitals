@@ -1,0 +1,21 @@
+.professionalWebsiteCost .websiteCostCard {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section.professionalWebsiteCost .websiteCostCard h3 span {
+  color: #185ae9;
+}
+
+section.professionalWebsiteCost .websiteCostCard h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+section.professionalWebsiteCost .websiteCostCard p {
+    font-size: 15px;
+}

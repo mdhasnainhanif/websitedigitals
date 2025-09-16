@@ -151,3 +151,36 @@ export const ContactPageFAQs = [
     answer: 'Our office is open from 9 AM to 6 PM, Monday to Friday. Kindly go to our Contact Us page for additional details.'
   }
 ];
+
+export const WebBuilderPageFAQs = [
+  {
+    id: 'faq-1',
+    question: 'Can I use your platform to build a website for my business?',
+    answer:
+      'Of course! You can build a website for your business with service pages, contact forms, product showcases, and more without the need of a developer.',
+  },
+  {
+    id: 'faq-2',
+    question: 'What makes your platform better than other web builder sites?',
+    answer:
+      'Website Digitals keeps things simple without sacrificing flexibility, unlike other web builders. You get clean designs, performance optimization, and built-in SEO without unnecessary extras.',
+  },
+  {
+    id: 'faq-3',
+    question: 'How do I build a website?',
+    answer:
+      "Simply select a template, add your text, and use our drag-and-drop editor to put everything in order.",
+  },
+  {
+    id: 'faq-4',
+    question: 'Is it really possible to build your own website without coding?',
+    answer:
+      'Yes, it is. You can build your own website using our visual tools, ready-made sections, and customizable features with no coding required.',
+  },
+  {
+    id: 'faq-5',
+    question: 'Can I use Website Digitals for personal projects too?',
+    answer:
+      'Yes, our platform works for portfolios, blogs, and event sites, not just businesses. You can build a clean, professional site for fun or a side gig that fits your style and needs.',
+  },
+];

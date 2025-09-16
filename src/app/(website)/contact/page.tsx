@@ -18,9 +18,7 @@ export default function ContactPage() {
       <ContactBanner />
       <PartnerSection />
       <GlobalDeliverySection />
-      <div className='section-padding pb-0'>
         <Faqs faqs={ContactPageFAQs as any} />
-      </div>
       {/* Add more sections below if needed */}
     </>
   );

@@ -1,0 +1,35 @@
+.assisstancelink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.assisstancelink:hover {
+  color: var(--text-light-color);
+}
+
+.assisstancelink .center {
+  flex: 1;
+  font-size: 0.825rem;
+  font-weight: 400;
+}
+
+.assisstancelink .left {
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+.assisstancelink .right {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
