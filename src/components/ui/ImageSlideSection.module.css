@@ -1,4 +1,4 @@
-.section-padding 
+.section_padding 
 {
     padding: var(--sectionPadding-top) 0 var(--sectionPadding-bottom)
 }
