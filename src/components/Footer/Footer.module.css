@@ -112,3 +112,29 @@
     justify-content: flex-end;
     line-height: 1;
 }
+.footer_linksArea+.footer_linksArea {
+    margin-top: 2.25rem;
+}
+.footer-linksArea>ul
+{
+        display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    font-weight: 300;
+}
+.footer_social {
+    margin-top: 20px;
+    flex-direction: row !important;
+    width: 100%;
+}
+.footer_social > li > a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
