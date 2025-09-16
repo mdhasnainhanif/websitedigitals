@@ -7789,5 +7789,53 @@ div.blog-slider .owl-nav > button:hover > span{
 }
 
 
+/*Web Builder Inner Pages CSS*/
+.single-caseStudy-whyChoose > .imgArea
+    {
+        border:none;
+        width: 2.75rem;
+        min-width: 2.75rem;
+        height: 2.75rem;
+    }
+    .single-caseStudy-whyChoose:hover
+    {
+        background:transparent;
+        box-shadow:0 0 0.625rem rgba(0, 0, 0, 0.2);
+        transform:scale(1.01);
+    }
+    .single-caseStudy-whyChoose .detail > h3
+    {
+        color:#000;
+    }
+    .single-caseStudy-whyChoose .detail > p
+    {
+        color:#000;
+    }
+    .single-caseStudy-whyChoose:hover .detail > h3
+    {
+        color:#000 !important;
+    }
+    .single-caseStudy-whyChoose:hover .detail > p
+    {
+        color:#000 !important;
+    }
+    .hover-img
+    {
+        display:none;
+    }
+    .single-caseStudy-whyChoose > .imgArea img
+    {
+        width: 2.75rem;
+        height: 2.75rem;        
+    }
+    
+    .tabsecheading{
+        font-weight: 600;
+    }
+    .basic-tabs > .nav-tabs > .nav-item > .nav-link
+    {
+        font-size:0.9rem;
+    }
+
 
 
