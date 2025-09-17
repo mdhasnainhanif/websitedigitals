@@ -20,22 +20,20 @@ export default function CTASection({ title, description, image, cta }: CTASectio
   return (
     <section className="section-padding primary-extra-light-bg">
       <div className="container">
-        <div className="row mt-5">
+        <div className="row">
           <div className="col-lg-6 col-sm-12 my-auto">
             <div className="section-heading">
-              <h2>
-                {title.split(' ').map((word, index) => 
-                  word === 'Ecommerce' ? (
-                    <span key={index} className="color-primary">Ecommerce</span>
-                  ) : word === 'Website' ? (
-                    <span key={index} className="color-primary">Website</span>
-                  ) : word === 'Builder' ? (
-                    <span key={index} className="color-primary">Builder</span>
-                  ) : (
-                    ` ${word}`
-                  )
-                )}
-              </h2>
+            <h2>
+              {title.split(' ').map((word, index) => 
+                word === 'Ecommerce' || word === 'Website' || word === 'Builder' ? (
+                  <span key={index} className="color-primary">
+                    {word === 'Ecommerce' ? ' Ecommerce Website Builder' : ''}
+                  </span>
+                ) : (
+                  ` ${word}`
+                )
+              )}
+            </h2>
               <p>{description}</p>
               <div className="link-area">
                 <a href={cta.href} className="primary">

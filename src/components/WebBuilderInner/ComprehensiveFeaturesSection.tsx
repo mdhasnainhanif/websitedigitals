@@ -5,6 +5,7 @@ import Image from 'next/image';
 interface TabContent {
   title: string;
   description: string;
+  bullets: string[];
   image: {
     src: string;
     alt: string;
@@ -77,6 +78,13 @@ export default function ComprehensiveFeaturesSection({
                         <div className="section-heading">
                           <h3 className="tabsecheading">{tab.content.title}</h3>
                           <p>{tab.content.description}</p>
+                          {tab.content.bullets && tab.content.bullets.length > 0 && (
+                            <ul className="feature-list">
+                              {tab.content.bullets.map((bullet, index) => (
+                                <li key={index}>{bullet}</li>
+                              ))}
+                            </ul>
+                          )}
                         </div>
                       </div>
                     </div>

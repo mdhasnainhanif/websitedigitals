@@ -7,6 +7,8 @@ import AdvantagesSection from '@/components/WebBuilderInner/AdvantageSection';
 import CTASection from '@/components/WebBuilderInner/CTASection';
 import FinalCTASection from '@/components/WebBuilderInner/FinalCTASection';
 import { ecommercePageData } from '@/app/Data/webBuilderData';
+import Faqs from '@/components/FAQs/Faqs';
+import { WebEcommercePageFAQs } from '@/components/FAQs/data';
 
 export const metadata: Metadata = {
   title: 'Best Ecommerce Website Builder for All Business Sizes',
@@ -63,6 +65,10 @@ export default function EcommercePage() {
         image={ecommercePageData.finalCta.image}
         cta={ecommercePageData.finalCta.cta}
       />
+      
+      <Faqs faqs={WebEcommercePageFAQs as any} sectionClassName='pt-0'/>
+      
+
     </>
   );
 }
