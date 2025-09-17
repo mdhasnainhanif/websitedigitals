@@ -1,10 +1,15 @@
 // app/about/page.jsx
-import ContactBanner from '@/components/Contact/ContactForm';
+import dynamic from 'next/dynamic';
 import PartnerSection from '@/components/Contact/PartnerSection';
 import GlobalDeliverySection from '@/components/Contact/GlobalDelivery';
 import Faqs from '@/components/FAQs/Faqs';
 import { ContactPageFAQs } from '@/components/FAQs/data';
 
+// Dynamically import ContactBanner to prevent prerendering issues
+const ContactBanner = dynamic(() => import('@/components/Contact/ContactForm'), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 
 export const metadata = {
   title: 'Contact Us | Website Digitals',
