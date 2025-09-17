@@ -3,6 +3,7 @@ export default function WebBuilderCardSection({
   items = [],
   columnCount = 3,
   className,
+  button,
 }) {
   // Calculate Bootstrap column class based on columnCount
   const getColumnClass = (count) => {
@@ -26,7 +27,7 @@ export default function WebBuilderCardSection({
           {items.map((item, idx) => (
             <div className={getColumnClass(columnCount)} key={idx}>
               <div
-                className={`single-whyChooseUs single-whyChooseUs1 ${className}`}
+                className={`single-whyChooseUs single-whyChooseUs1 ${className || ''}`}
               >
                 <div>
                   <img
@@ -48,13 +49,16 @@ export default function WebBuilderCardSection({
                     decoding="async"
                   />
                 </div>
-                <h3>{item.title}</h3>
+                <h3 className="mt-2">{item.title}</h3>
                 <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {button? <div className="link-area text-center mt-5">
+        <button className="primary book-your-call">Get Started - It's Free</button>
+      </div> : null}
     </section>
   );
 }

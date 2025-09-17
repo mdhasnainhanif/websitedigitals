@@ -10,19 +10,19 @@ export const imageSlideSectionData = {
       {
         key: 'signup',
         title: 'Sign Up Simplified',
-        text: 'See how easy it is to start...',
+        text: 'See how easy it is to start',
         image: { src: '/assets/images-webp/platform-opportunities.webp', alt: 'Sign Up Simplified', width: 669, height: 631 },
       },
       {
         key: 'design',
         title: 'Intuitive Design Tools',
-        text: 'Create and customize your site...',
+        text: 'Create and customize your site',
         image: { src: '/assets/images-webp/banner.webp', alt: 'Intuitive Design Tools', width: 669, height: 631 },
       },
       {
         key: 'payments',
         title: 'Simplified Payments',
-        text: 'Benefit from our straightforward and secure payment process...',
+        text: 'Benefit from our straightforward and secure payment process',
         image: { src: '/assets/images-webp/platform-opportunities.webp', alt: 'Simplified Payments', width: 669, height: 631 },
       },
     ],
@@ -1263,7 +1263,7 @@ export const industryTabsData = [
       }
     ]
   }
-];
+];  
 
 
 export const webBuilderIndustriesHeading = 'One Website Builder Company, Solutions for All Industries';

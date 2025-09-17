@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
@@ -14,14 +14,10 @@ const wfFont = localFont({
   variable: "--wfFont",
 });  
 
-const geistSans = Geist({ 
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -52,7 +48,7 @@ export default function RootLayout({
         <script src="/assets/js/jquery-3.7.1.min.js"></script>
         <script src="/assets/js/owl.carousel.min.js"></script>
       </head>
-      <body className={`${wfFont.variable}`}>
+      <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
       </body>
     </html>

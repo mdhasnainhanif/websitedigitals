@@ -3,7 +3,7 @@
 import { useEffect, useRef, useMemo } from "react";
 import { StarIcon } from "../../icons";
 
-export default function TestimonialsSection({ data }) {
+export default function TestimonialsSection({ data, className }) {
   const { sectionClass, heading, stats = [], items = [], carouselOptions = {} } = data || {};
   const carouselRef = useRef(null);
   const initialized = useRef(false);
@@ -48,7 +48,7 @@ export default function TestimonialsSection({ data }) {
   }, [options, items]);
 
   return (
-    <section className={sectionClass}>
+    <section className={`${sectionClass} ${className || ''}`}>
       <div className="container">
         <div className="row">
           <div className="col-12">

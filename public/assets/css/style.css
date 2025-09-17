@@ -3718,10 +3718,6 @@ ul.count-ul {
   margin: 0;
   max-width: 14.625rem;
 }
-.caseStudy-partners-carousel .item > img {
-  max-height: 2rem !important;
-  object-fit: contain;
-}
 .caseStudy-bannerDetail > h3 {
   font-size: 1.3625rem;
   font-weight: 600;

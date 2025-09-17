@@ -1,6 +1,5 @@
 // app/about/page.jsx
 import blueCounterData from "@/app/Data/index";
-import WebBuilderBanner from "@/components/WebBuilder/WebBuilderBanner";
 import BlueCounterSection from "@/components/WebBuilder/BlueCounterSection";
 import AwardSliderSection from "../../../components/AwardSliderSection";
 import { awardBadgesData, industryTabsData } from "@/app/Data/index";
@@ -26,7 +25,7 @@ import CtaForm from "../../../components/WebBuilder/CtaForm/CtaForm";
 import WhyChooseSection from "../../../components/WebBuilder/WhyChooseSection/WhyChooseSection";
 import { whyChooseData } from "../../../components/WebBuilder/WhyChooseSection/WhyChooseSectionData";
 import ScrollSection from "../../../components/ScrollSection/ScrollSection";
-import { scrollCTA, scrollHeading, scrollItems } from "../../../components/ScrollSection/ScrollSectionData";
+import { scrollSectionData } from "../../../components/ScrollSection/ScrollSectionData";
 import DesignCustomizeCardSection from "../../../components/WebBuilder/DesignCustomizeCardSection/DesignCustomizeCardSection";
 import { designCustomizeHeading, designCustomizeItems } from "../../../components/WebBuilder/DesignCustomizeCardSection/DesignCustomizeCardSectionData";
 import StepSection from "../../../components/WebBuilder/StepSection/StepSection";
@@ -36,6 +35,8 @@ import { assistanceBackground, assistanceHeading, assistanceItems } from "../../
 import FAQ from "../../../components/FAQs/Faqs";
 import { WebBuilderPageFAQs } from "../../../components/FAQs/data";
 import BlogCard from "../../../components/Blog/BlogCard";
+import { webBannerData } from "../../../components/WebBuilder/WebBanner/WebBannerData";
+import WebBanner from "../../../components/WebBuilder/WebBanner/WebBanner";
 
 export const metadata = {
   title: "Website Digitals | Web Builder to Build Your Dream Website Today",
@@ -46,7 +47,8 @@ export const metadata = {
 export default function WebBuilderPage() {
   return (
     <>
-      <WebBuilderBanner />
+      {/* <WebBuilderBanner /> */}
+      <WebBanner data={webBannerData} />
       <BlueCounterSection data={blueCounterData} />
       <AwardSliderSection items={awardBadgesData} />
       <IndustryTabs data={industryTabsData} />
@@ -66,15 +68,10 @@ export default function WebBuilderPage() {
         heading={webBuilderIndustriesHeading}
         items={webBuilderIndustriesCards}
         columnCount={webBuilderIndustriesColumnCount}
-        className={webBuilderIndustriesClassName}
+        className={webBuilderIndustriesClassName} 
       />
       <WhyChooseSection {...whyChooseData} />
-      <ScrollSection
-        heading={scrollHeading} 
-        items={scrollItems} 
-        ctaHref={scrollCTA.href} 
-        ctaLabel={scrollCTA.label} 
-      />
+      <ScrollSection data={scrollSectionData} />
       <DesignCustomizeCardSection
         heading={designCustomizeHeading}
         items={designCustomizeItems}

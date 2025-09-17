@@ -35,9 +35,16 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--wfFont) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--wfFont) !important ;
+}
+
+p , a , button , input , select , textarea , span{
+  font-family: var(--poppins) !important ;
 }
 
 * {
@@ -7755,6 +7762,10 @@ section.home-banner .height-100 {
   color: var(--text-color);
 }
 
+.dark-section.bg-light {
+  color: var(--foreground);
+}
+
 /* Owl overrides */
 .owl-theme .owl-dots .owl-dot > span {
   display: none !important;
@@ -8002,7 +8013,7 @@ div.blog-slider .owl-nav > button:hover > span {
 }
 .industryTabsSlider .owl-nav button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   border: 0 !important;
   font-size: 1.5rem;
@@ -8022,6 +8033,32 @@ div.blog-slider .owl-nav > button:hover > span {
 }
 .industryTabsSlider .owl-nav .owl-prev {
   left: 0;
+}
+.caseStudySlider .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0 !important;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 1 !important;
+  background-color: var(--text-light-color) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.owl-carousel .owl-stage{
+  padding-bottom: 1rem;
+}
+.caseStudySlider.owl-carousel {
+  opacity: 1 !important;
+}
+.caseStudySlider .owl-nav .owl-next {
+  right: -3rem;
+}
+.caseStudySlider .owl-nav .owl-prev {
+  left: -3rem;
 }
 .section-padding.reviews-section {
   background: radial-gradient(
@@ -8234,4 +8271,24 @@ div.blog-slider .owl-nav > button:hover > span {
 
 .websiteCostCard3, .websiteCostCard4 {
   border-bottom: 2px solid #185AE9;
+}
+
+.bgLight{
+  background: #ECF9FF;
+}
+
+.caseStudy-partners-carousel2 .item>img {
+  max-height: 5rem !important;
+  object-fit: contain;
+}
+
+.filterInvert{
+  filter: invert(1);
+}
+
+.transform-data {
+  background-color: hsl(221.32deg 91.38% 54.51%);
+  color: white;
+  border-radius: 2rem;
+  padding: 50px;
 }

@@ -3,12 +3,13 @@
 
 import { useEffect } from 'react';
 
-export default function ScrollSection({
-  heading = 'Limited Time? Launch Faster with Designer-Built Templates',
-  items = [], // [{ id, step?, title, paragraphs:[...], image:{ src, alt, width, height } }]
-  ctaHref = '/portfolio',
-  ctaLabel = 'View More Templates',
-}) {
+export default function ScrollSection({ data }) {
+  const {
+    sectionClass = "scroller-section pb-5",
+    heading = 'Limited Time? Launch Faster with Designer-Built Templates',
+    items = [], // [{ id, step?, title, paragraphs:[...], image:{ src, alt, width, height } }]
+    cta = ""
+  } = data || {};
   // Keep left-list "active" state in sync with scroll (no class name changes)
   useEffect(() => {
     if (!items.length) return;
@@ -43,7 +44,7 @@ export default function ScrollSection({
   const two = (n) => String(n).padStart(2, '0');
 
   return (
-    <section className="scroller-section pb-5">
+    <section className={sectionClass}>
       <div className="container">
         <div className="row">
           {/* LEFT column (sticky list) */}
@@ -99,12 +100,12 @@ export default function ScrollSection({
         </div>
 
         {/* CTA row */}
-        {ctaHref && ctaLabel ? (
+        {cta?.href && cta?.label ? (
           <div className="row">
             <div className="col-lg-12 col-sm-12 text-center">
               <div className="link-area">
-                <a href={ctaHref} className="primary">
-                  {ctaLabel}
+                <a href={cta.href} className="primary">
+                  {cta.label}
                 </a>
               </div>
             </div>

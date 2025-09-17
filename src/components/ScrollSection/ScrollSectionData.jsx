@@ -1,8 +1,8 @@
 
-export const scrollHeading =
-  'Limited Time? Launch Faster with Designer-Built Templates';
-
-export const scrollItems = [
+export const scrollSectionData = {
+  sectionClass: "scroller-section pb-5",
+  heading: "Limited Time? Launch Faster with Designer-Built Templates",
+  items: [
   {
     id: 'web-firstScroller',
     step: 1,
@@ -80,6 +80,6 @@ export const scrollItems = [
       height: 376,
     },
   },
-];
-
-export const scrollCTA = { href: '/portfolio', label: 'View More Templates' };
+  ],
+  cta: { href: '/portfolio', label: 'View More Templates' }
+};

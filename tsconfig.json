@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/(website)/web-development/page.jsx", "src/components/WebBuilder/BlueCounterSection.jsx", "src/app/(website)/web-builder/page.jsx", "src/components/WebBuilder/BlueCounterSection.jsx"],
   "exclude": ["node_modules"]
 }
