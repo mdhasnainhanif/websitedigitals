@@ -7,7 +7,6 @@ import { ContactPageFAQs } from '@/components/FAQs/data';
 
 // Dynamically import ContactBanner to prevent prerendering issues
 const ContactBanner = dynamic(() => import('@/components/Contact/ContactForm'), {
-  ssr: false,
   loading: () => <div>Loading...</div>
 });
 
