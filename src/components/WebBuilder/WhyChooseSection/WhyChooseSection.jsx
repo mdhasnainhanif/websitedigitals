@@ -1,6 +1,13 @@
 import Link from 'next/link';
 
-export default function WhyChooseSection({ heading, image, features = [], cta }) {
+export default function WhyChooseSection({
+  heading,
+  image,
+  features = [],
+  paragraphs = [],
+  bullets = [],
+  cta,
+}) {
   return (
     <section className="section-padding split-section gradient-circle light-gradient rightCenter-gradient">
       <div className="container">
@@ -26,12 +33,28 @@ export default function WhyChooseSection({ heading, image, features = [], cta })
               <div className="section-heading">
                 {heading ? <h2>{heading}</h2> : null}
 
+                {/* Optional intro paragraphs */}
+                {Array.isArray(paragraphs) &&
+                  paragraphs.map((para, i) => (
+                    <p key={`para-${i}`}>{typeof para === 'string' ? para : para?.text}</p>
+                  ))}
+
+                {/* Optional bullets list */}
+                {Array.isArray(bullets) && bullets.length > 0 ? (
+                  <ul>
+                    {bullets.map((li, i) => (
+                      <li key={`bullet-${i}`}>{li}</li>
+                    ))}
+                  </ul>
+                ) : null}
+
+                {/* Optional feature blocks (title + paragraphs) */}
                 {features.map((block, i) => (
-                  <div key={i}>
+                  <div key={`feat-${i}`}>
                     {block.title ? <h3 className="subheading-text fw-bold">{block.title}</h3> : null}
                     {(block.paragraphs || []).map((para, j) => (
-                      <p key={j} className={para?.isTight ? 'mb-0' : undefined}>
-                        {typeof para === 'string' ? para : para.text}
+                      <p key={`feat-p-${i}-${j}`} className={para?.isTight ? 'mb-0' : undefined}>
+                        {typeof para === 'string' ? para : para?.text}
                       </p>
                     ))}
                   </div>
@@ -40,7 +63,7 @@ export default function WhyChooseSection({ heading, image, features = [], cta })
 
               {cta?.href && cta?.label ? (
                 <div className="link-area">
-                  <Link href={cta.href} className="primary">
+                  <Link href={cta.href} className={cta.className || 'primary'}>
                     {cta.label}
                   </Link>
                 </div>
