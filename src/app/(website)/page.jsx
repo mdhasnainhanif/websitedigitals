@@ -19,8 +19,7 @@ export default function Home() {
       <TestimonialsSection data={testimonialsData} />
       <GetStartedCta />
       <Faqs faqs={homePageFAQs} />
-      <BlogCard />
-    
+      <BlogCard />    
     </div>
   )
 }

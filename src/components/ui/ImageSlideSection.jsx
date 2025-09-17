@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import styles from './ImageSlideSection.module.css'
 
 export default function ImageSlideSection({ imageSlideSectionData = {} , className = "" }) {
   const {
@@ -116,7 +117,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
 
   return (
     <section
-      className={`section-padding gray-section position-relative ${className}`}
+      className={`${styles.section_padding} ${styles.gray_section} ${styles.position_relative}`}
       id={id}
       style={{ background: bgColor }}
     >
@@ -124,7 +125,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
         <div className="row">
           {/* Left: copy + tabs */}
           <div className="col-lg-6 col-md-6 col-12 my-auto">
-            <div className="section-heading">
+            <div className={styles.section_heading}>
               {headingHTML ? (
                 <h2 dangerouslySetInnerHTML={{ __html: headingHTML }} />
               ) : null}
@@ -132,21 +133,18 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
             </div>
 
             {cta?.label ? (
-              <div className="link-area mb-5">
+              <div className={`${styles.link_area}`}>
                 {cta.href ? (
                   <Link
                     href={cta.href}
-                    className={
-                      cta.className || "offer-btn primary business-report-btn"
-                    }
-                  >
+                    className={`${styles.link_area} mt-0 ${styles.offer_btn} ${styles.primary} ${styles.business_report_btn}`}>
                     {cta.label}
                   </Link>
                 ) : (
                   <button
                     type="button"
                     className={
-                      cta.className || "offer-btn primary business-report-btn"
+                      cta.className || `${styles.offer_btn} ${styles.primary} ${styles.business_report_btn}`
                     }
                     onClick={cta.onClick}
                   >
@@ -159,7 +157,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
             {/* React-driven tabs (no Bootstrap JS) */}
             <nav className="mt-5">
               <div
-                className="custom-tabs2 nav nav-tabs border-0"
+                className={`${styles.custom_tabs2} nav nav-tabs ${styles.border_0}`}
                 role="tablist"
                 style={{
                   ["--duration"]: `${
@@ -171,8 +169,8 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
                   tabs.map((t, i) => (
                     <button
                       key={t.key || i}
-                      className={`nav-link ${
-                        i === active ? "active activeAnimation" : ""
+                      className={`${styles.nav_link} ${
+                        i === active ? `${styles.active} ${styles.activeAnimation}` : ""
                       }`}
                       type="button"
                       role="tab"
@@ -181,11 +179,8 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
                     >
                       <h3>{t.title}</h3>
                       {t.text ? <p>{t.text}</p> : null}
-                      <div className="scrollanimation-bar">
-                        <div
-                          className="scrollanimation-bar-timer"
-                          key={i === active ? `timer-${active}` : `idle-${i}`}
-                        />
+                      <div className={styles.scrollanimation_bar}>
+                        <div className={styles.scrollanimation_bar_timer}></div>
                       </div>
                     </button>
                   ))}
@@ -212,7 +207,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
                 {currSrc ? (
                   <img
                     src={currSrc}
-                    className="img-fluid fader-img is-active"
+                    className={`img-fluid ${styles.fader_img} is-active`}
                     width={imgDims.w}
                     height={imgDims.h}
                     alt={tabs[active]?.image?.alt || tabs[active]?.title || ""}
@@ -224,7 +219,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
         </div>
       </div>
 
-      <div className="glow001"></div>
+      <div className={styles.glow001}></div>
     </section>
   );
 }

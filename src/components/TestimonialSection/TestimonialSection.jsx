@@ -1,14 +1,12 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useMemo } from "react";
+import { useEffect, useRef, useMemo } from "react";
 import { StarIcon } from "../../icons";
-
-// SSR-safe import
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
 
 export default function TestimonialsSection({ data }) {
   const { sectionClass, heading, stats = [], items = [], carouselOptions = {} } = data || {};
+  const carouselRef = useRef(null);
+  const initialized = useRef(false);
 
   const options = useMemo(
     () => ({
@@ -17,7 +15,7 @@ export default function TestimonialsSection({ data }) {
       nav: false,
       items: 3,
       dots: true,
-    //   autoplay: true,
+      autoplay: true,
       autoplayTimeout: 3500,
       smartSpeed: 700,
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 1200: { items: 3 } },
@@ -25,6 +23,29 @@ export default function TestimonialsSection({ data }) {
     }),
     [carouselOptions]
   );
+
+  // Initialize Owl Carousel
+  useEffect(() => {
+    const initializeCarousel = () => {
+      if (window.$ && window.$.fn.owlCarousel && carouselRef.current && !initialized.current) {
+        $(carouselRef.current).owlCarousel(options);
+        initialized.current = true;
+      } else if (!initialized.current) {
+        // If scripts are not ready, try again after a short delay
+        setTimeout(initializeCarousel, 100);
+      }
+    };
+
+    initializeCarousel();
+
+    // Cleanup function to destroy the carousel when the component unmounts
+    return () => {
+      if (window.$ && window.$.fn.owlCarousel && carouselRef.current && initialized.current) {
+        $(carouselRef.current).owlCarousel('destroy');
+        initialized.current = false;
+      }
+    };
+  }, [options, items]);
 
   return (
     <section className={sectionClass}>
@@ -56,7 +77,7 @@ export default function TestimonialsSection({ data }) {
           {/* Carousel */}
           <div className="col-lg-9 col-md-8">
             <div className="testimonial-carousel">
-              <OwlCarousel className="owl-theme" {...options}>
+              <div ref={carouselRef} className="owl-carousel owl-theme">
                 {items.map((t, i) => (
                   <div className="item" key={i}>
                     <div className="single-testimonial">
@@ -95,7 +116,7 @@ export default function TestimonialsSection({ data }) {
                     </div>
                   </div>
                 ))}
-              </OwlCarousel>
+              </div>
             </div>
           </div>
         </div>
