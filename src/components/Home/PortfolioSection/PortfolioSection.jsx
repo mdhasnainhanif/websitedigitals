@@ -55,10 +55,10 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
     const rightSide = (() => {
       if (item.variant === "v2") {
         return (
-          <div className={`${styles.webPortfolio_caseStudyDetailArea}`}>
-            {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
+          <div className={styles.webPortfolio_caseStudyDetailArea}>
+             {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
             <div className={styles.webPortfolio_caseStudyDetail}>
-              <div
+              <p
                 dangerouslySetInnerHTML={{
                   __html: item.caseStudy?.detailHTML || "",
                 }}
@@ -83,10 +83,10 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
 
       if (item.variant === "v5") {
         return (
-          <div className={`${styles.webPortfolio_caseStudyDetailArea}`}>
+          <div className={styles.webPortfolio_caseStudyDetailArea}>
             {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
             {item.caseStudy?.dynamicIntroHTML && (
-              <p
+              <div
                 style={{
                   fontSize: ".9rem",
                   marginBottom: "3rem",
@@ -155,9 +155,9 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
 
       // default: home/static
       return (
-        <div className={`${styles.webPortfolio_CaseStudyDetailArea}`}>
-          {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
-          <div className={`${styles.webPortfolio_CaseStudyDetail}`}>
+        <div className={`${styles.webPortfolio_caseStudyDetailArea}`}>
+          {item.card?.titleImg && <img src={`${item.card.titleImg}`} alt="" />}
+          <div className={styles.webPortfolio_caseStudyDetail}>
             <div
               dangerouslySetInnerHTML={{
                 __html: item.caseStudy?.detailHTML || "",
@@ -202,37 +202,39 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
     })();
 
     return (
-      <div className={`row ${styles.webPortfolio_CaseStudyArea}`}>
+       <div className={`row ${styles.webPortfolio_caseStudyArea}`}>
         <div
-          className={`${styles.webPortfolio_CaseStudyClose}`}
+          className={styles.webPortfolio_caseStudyClose}
           role="button"
           onClick={closeCaseStudy}
-        >
-        </div>
+        />
 
         <div className="col-md-8">
-          <div className={styles.webPortfolio_caseStudyTabsArea}>
+          {/* add a stable hook to scope queries */}
+          <div className={styles.webPortfolio_caseStudyTabsArea} data-case-study>
             <div className={styles.webPortfolio_caseStudyTabs}>
-              <ul className={`${styles.nav} ${styles.nav_tabs}`}>
+              <ul className={`nav nav-tabs ${styles.nav_tabs}`}>
                 {tabsThumbs.map((src, i) => (
                   <li className={styles.nav_item} key={`thumb-${i}`}>
                     <a
+                      href="#"
                       className={`${styles.nav_link} ${i === 0 ? "active" : ""}`}
-                      href={`#website-caseStudy${i + 1}`}
                       onClick={(e) => {
-                        e.preventDefault();
-                        const area = e.currentTarget.closest(
-                          ".webPortfolioCaseStudyTabsArea"
-                        );
-                        const panes = area.querySelectorAll(".tab-pane");
-                        const links = area.querySelectorAll(".nav-link");
-                        links.forEach((l) => l.classList.remove("active"));
-                        e.currentTarget.classList.add("active");
-                        panes.forEach((p, idx) => {
-                          p.classList.remove("show", "active");
-                          if (idx === i) p.classList.add("show", "active");
-                        });
-                      }}
+                          e.preventDefault();
+                          const area = e.currentTarget.closest('[data-case-study]');
+                          if (!area) return;
+
+                          const links = area.querySelectorAll(`.${styles.nav_link}`);
+                          const panes = area.querySelectorAll(':scope .tab-pane');
+
+                          links.forEach((l) => l.classList.remove('active'));
+                          e.currentTarget.classList.add('active');
+
+                          panes.forEach((p, idx) => {
+                            p.classList.toggle('active', idx === i);
+                            p.classList.toggle('show', idx === i);
+                          });
+                        }}
                     >
                       <img src={src} alt="" />
                     </a>
@@ -241,7 +243,8 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
               </ul>
             </div>
 
-            <div className={`${styles.tab_content} ${styles.webPortfolio_CaseStudy_Content}`}>
+            {/* use the exact CSS-module name that exists in your CSS */}
+            <div className={`${styles.tab_content} ${styles.webPortfolio_caseStudy_content}`}>
               {tabsThumbs.map((src, i) => (
                 <div
                   key={`pane-${i}`}
@@ -259,7 +262,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
         </div>
 
         <div className="col-md-4">{rightSide}</div>
-      </div>
+        </div>
     );
   };
 
