@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import styles from './Faq.module.css'
 
 const FAQ = ({ 
   title = "FAQ", 
@@ -14,21 +15,24 @@ const FAQ = ({
   };
 
   return (
-    <section className={`${sectionClassName} ${className}`}>
+    <section className={`${styles.section_padding} ${styles.gradient_circle} ${styles.rightCenter_gradient} pt-0`}>
       <div className="container">
+
         <div className="row justify-content-center">
           <div className="col-12">
-            <div className="section-heading text-center">
+            <div className={`${styles.section_heading} ${styles.text_center}`}>
               <h2>{title}</h2>
             </div>
           </div>
+        </div>
+          
           <div className="col-lg-11">
-            <div className="accordion faq-accordion" id="faq-accordion">
+            <div className={`accordion ${styles.faq_accordion}`} id="faq-accordion">
               {faqs.map((faq, index) => (
-                <div key={index} className="accordion-item">
-                  <h3 className="accordion-header" id={`faq-heading-${index + 1}`}>
+                <div key={index} className={`accordion-item ${styles.accordion_item}`}>
+                  <h2 className="accordion-header" id={`faq-heading-${index + 1}`}>
                     <button
-                      className={`accordion-button ${openItem !== index ? 'collapsed' : ''}`}
+                      className={`accordion-button ${styles.accordion_button} ${openItem !== index ? 'collapsed' : ''}`}
                       type="button"
                       onClick={() => handleToggle(index)}
                       aria-expanded={openItem === index}
@@ -36,14 +40,14 @@ const FAQ = ({
                     >
                       {faq.question}
                     </button>
-                  </h3>
+                  </h2>
                   <div
                     id={`faq-${index + 1}`}
-                    className={`accordion-collapse collapse ${openItem === index ? 'show' : ''}`}
+                    className={`accordion-collapse collapse ${styles.accordion_collapse} ${openItem === index ? 'show' : ''}`}
                     aria-labelledby={`faq-heading-${index + 1}`}
                     data-bs-parent="#faq-accordion"
                   >
-                    <div className="accordion-body">
+                    <div className={`accordion-body ${styles.accordion_body}`}>
                       {faq.answer}
                     </div>
                   </div>
@@ -51,7 +55,6 @@ const FAQ = ({
               ))}
             </div>
           </div>
-        </div>
       </div>
     </section>
   );
