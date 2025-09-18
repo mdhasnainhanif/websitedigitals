@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState } from 'react';
 
 interface AdvantageItem {
@@ -15,10 +16,14 @@ interface AdvantagesSectionProps {
 }
 
 export default function AdvantagesSection({ title, description, items }: AdvantagesSectionProps) {
-  const [activeItem, setActiveItem] = useState(items[0].id);
+  const [activeItem, setActiveItem] = useState(items[0]?.id || '');
 
-  const toggleParagraph = (itemId: string) => {
-    setActiveItem(itemId);
+  const toggleItem = (itemId: string) => {
+    // Only set the new item as active if it's different from the current active item
+    // This prevents closing when clicking the same open item
+    if (activeItem !== itemId) {
+      setActiveItem(itemId);
+    }
   };
 
   return (
@@ -39,23 +44,40 @@ export default function AdvantagesSection({ title, description, items }: Advanta
               <p>{description}</p>
             </div>
             
-            <div className="heading-para-div">
-              {items.map((item) => (
-                <div key={item.id}>
-                  <h3 
-                    className={`${item.id}-heading ${activeItem === item.id ? 'active' : ''}`}
-                    onClick={() => toggleParagraph(item.id)}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    <span className="color-primary">{item.number}</span> {item.title}
-                  </h3>
-                  <p className={`${item.id}-para ${activeItem === item.id ? '' : 'hidden'}`}>
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+            <div className="accordion advantageaccordion mt-4" id="advantagesAccordion">
+              {items.map((item, index) => {
+                const isActive = activeItem === item.id;
+                const itemId = `accordion-${item.id}`;
+                
+                return (
+                  <div key={item.id} className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className={`accordion-button ${isActive ? '' : 'collapsed'}`}
+                        type="button"
+                        onClick={() => toggleItem(item.id)}
+                        aria-expanded={isActive}
+                        aria-controls={itemId}
+                      >
+                        <span className="color-primary me-3">{item.number}</span>
+                        {item.title}
+                      </button>
+                    </h3>
+                    <div
+                      id={itemId}
+                      className={`accordion-collapse collapse ${isActive ? 'show' : ''}`}
+                      aria-labelledby={`heading-${item.id}`}
+                    >
+                      <div className="accordion-body p-0 pt-2 pb-2">
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
+          
           <div className="col-lg-6 col-sm-12">
             <form method="post" action="" className="contactPage-formArea" id="contactformsec">
               <div className="row">

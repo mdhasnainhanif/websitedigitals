@@ -6,29 +6,36 @@ import Link from "next/link";
 
 /**
  * Props:
- * - data: Array of { id, title, items: [{ title, href, normalImg, whiteImg, alt, desc }] }
+ * - data: Array<{ id, title, items: Array<{
+ *      title, href, desc,
+ *      // EITHER provide one image:
+ *      icon?,
+ *      // OR provide two images for hover-swap:
+ *      normalImg?, whiteImg?,
+ *      alt?
+ *   }> }>
  * - heading?: string
  * - subheading?: string
- * - grayBgVar?: string  (CSS var name or color for background; default 'var(--gray-bg)')
+ * - grayBgVar?: string  (CSS var name or color)
+ * - imgSize?: number    (default 67)
  */
 export default function IndustryTabs({
   data = [],
   heading = "Launch Your Industry Website Today, Don’t Get Left Behind!",
   subheading = "Our user-friendly platform helps you create a website that perfectly suits your unique business and industry requirements.",
   grayBgVar = "var(--gray-bg)",
+  imgSize = 67,
 }) {
-  const initial = useMemo(() => data?.[0]?.id ?? "", [data]);
-  const [active, setActive] = useState(initial);
+  const firstId = useMemo(() => data?.[0]?.id ?? "", [data]);
+  const [active, setActive] = useState(firstId);
   const scrollRef = useRef(null);
   const carouselRef = useRef(null);
   const initialized = useRef(false);
 
-  const handleScroll = (dir = "right") => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const delta = Math.max(200, el.clientWidth * 0.6);
-    el.scrollBy({ left: dir === "right" ? delta : -delta, behavior: "smooth" });
-  };
+  // keep active in sync if data changes
+  useEffect(() => {
+    setActive((prev) => (data.some((t) => t.id === prev) ? prev : firstId));
+  }, [data, firstId]);
 
   const onKeyActivate = (e, id) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -37,16 +44,25 @@ export default function IndustryTabs({
     }
   };
 
-  // Initialize Owl Carousel
+  // Initialize Owl Carousel (no-op if not present)
   useEffect(() => {
     const initializeCarousel = () => {
-      if (window.$ && window.$.fn.owlCarousel && carouselRef.current && !initialized.current) {
-        $(carouselRef.current).owlCarousel({
+      if (
+        typeof window !== "undefined" &&
+        window.$ &&
+        window.$.fn?.owlCarousel &&
+        carouselRef.current &&
+        !initialized.current
+      ) {
+        window.$(carouselRef.current).owlCarousel({
           items: 4,
           loop: false,
           autoplay: false,
           nav: true,
-          navText: ['<svg width="26" height="26" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" style="fill:#4448FF"/></svg>', '<svg width="26" height="26" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="m21.71 11.29-7-7a1 1 0 0 0-1.42 1.42l5.3 5.29H3a1 1 0 0 0 0 2h15.59l-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l7-7a1 1 0 0 0 0-1.42" style="fill:#4448FF"/></svg>'],
+          navText: [
+            '<svg width="26" height="26" viewBox="0 0 24 24" class="icon"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2"/></svg>',
+            '<svg width="26" height="26" viewBox="0 0 24 24" class="icon"><path d="m21.71 11.29-7-7a1 1 0 0 0-1.42 1.42l5.3 5.29H3a1 1 0 0 0 0 2h15.59l-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l7-7a1 1 0 0 0 0-1.42"/></svg>',
+          ],
           dots: false,
           margin: 15,
           slideBy: 1,
@@ -58,36 +74,78 @@ export default function IndustryTabs({
             0: { items: 1 },
             576: { items: 2 },
             768: { items: 3 },
-            992: { items: 4 }
-          }
+            992: { items: 4 },
+          },
         });
         initialized.current = true;
       } else if (!initialized.current) {
-        // If scripts are not ready, try again after a short delay
-        setTimeout(initializeCarousel, 100);
+        // Try again shortly if scripts aren't ready
+        setTimeout(initializeCarousel, 120);
       }
     };
 
     initializeCarousel();
 
-    // Cleanup function to destroy the carousel when the component unmounts
+    // Cleanup
     return () => {
-      if (window.$ && window.$.fn.owlCarousel && carouselRef.current && initialized.current) {
-        $(carouselRef.current).owlCarousel('destroy');
+      if (
+        typeof window !== "undefined" &&
+        window.$ &&
+        window.$.fn?.owlCarousel &&
+        carouselRef.current &&
+        initialized.current
+      ) {
+        try {
+          window.$(carouselRef.current).owlCarousel("destroy");
+        } catch {}
         initialized.current = false;
       }
     };
   }, [data]);
 
-  // Handle carousel navigation
-  const handleCarouselNav = (direction) => {
-    if (window.$ && carouselRef.current && initialized.current) {
-      if (direction === 'left') {
-        $(carouselRef.current).trigger('prev.owl.carousel');
-      } else {
-        $(carouselRef.current).trigger('next.owl.carousel');
-      }
+  const renderIconBlock = (item) => {
+    const alt = item.alt || item.title || "Service icon";
+
+    // Two-image (hover swap) mode
+    if (item.normalImg && item.whiteImg) {
+      return (
+        <>
+          <img
+            src={item.normalImg}
+            width={imgSize}
+            height={imgSize}
+            className="service-normal-img"
+            alt={alt}
+            loading="lazy"
+          />
+          <img
+            src={item.whiteImg}
+            width={imgSize}
+            height={imgSize}
+            className="service-white-img"
+            alt={alt}
+            loading="lazy"
+          />
+        </>
+      );
     }
+
+    // Single-image mode (icon)
+    if (item.icon) {
+      return (
+        <img
+          src={item.icon}
+          width={imgSize}
+          height={imgSize}
+          className="service-icon-single"
+          alt={alt}
+          loading="lazy"
+        />
+      );
+    }
+
+    // Fallback: nothing (or you can render a placeholder)
+    return null;
   };
 
   return (
@@ -112,16 +170,18 @@ export default function IndustryTabs({
                 role="tablist"
                 aria-label="Industry tabs"
               >
-                <div ref={carouselRef} className="owl-carousel nav-tabs industryTabsSlider border-0">
+                <div
+                  ref={carouselRef}
+                  className="owl-carousel nav-tabs industryTabsSlider border-0"
+                >
                   {data.map((tab) => (
                     <div className="item nav-item" key={tab.id}>
                       <button
                         type="button"
-                        className={`nav-link ${
-                          active === tab.id ? "active" : ""
-                        }`}
+                        className={`nav-link ${active === tab.id ? "active" : ""}`}
                         role="tab"
                         aria-selected={active === tab.id}
+                        aria-controls={tab.id}
                         tabIndex={0}
                         onClick={() => setActive(tab.id)}
                         onKeyDown={(e) => onKeyActivate(e, tab.id)}
@@ -139,49 +199,40 @@ export default function IndustryTabs({
               {data.map((tab) => (
                 <div
                   key={tab.id}
-                  className={`tab-pane fade ${
-                    active === tab.id ? "show active" : ""
-                  }`}
+                  className={`tab-pane fade ${active === tab.id ? "show active" : ""}`}
                   role="tabpanel"
                   aria-labelledby={`${tab.id}-tab`}
                   id={tab.id}
                 >
                   <div className="row gy-3">
-                    {tab.items.map((item, idx) => (
-                      <div
-                        className="col-lg-4 col-sm-12"
-                        key={`${tab.id}-${idx}`}
-                      >
+                    {tab.items?.map((item, idx) => (
+                      <div className="col-lg-4 col-sm-12" key={`${tab.id}-${idx}`}>
                         <div className="single-contentWriting-card">
                           <div className="head">
-                            {/* Normal and white images swap on hover using CSS */}
-                            <img
-                              src={item.normalImg}
-                              width="67"
-                              height="67"
-                              className="service-normal-img"
-                              alt={item.alt}
-                              loading="lazy"
-                            />
-                            <img
-                              src={item.whiteImg}
-                              width="67"
-                              height="67"
-                              className="service-white-img"
-                              alt={item.alt}
-                              loading="lazy"
-                            />
+                            {renderIconBlock(item)}
                             <p>
-                              <Link href={item.href}>{item.title}</Link>
+                              <Link href={item.href ?? "#"}>{item.title}</Link>
                             </p>
                           </div>
                           <p>{item.desc}</p>
                         </div>
                       </div>
                     ))}
+
+                    {/* Graceful empty state */}
+                    {!tab.items?.length && (
+                      <div className="col-12 text-center text-muted py-4">
+                        No items available.
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
+
+              {/* Graceful empty state for tabs */}
+              {!data?.length && (
+                <div className="text-center text-muted py-5">No categories found.</div>
+              )}
             </div>
           </div>
         </div>

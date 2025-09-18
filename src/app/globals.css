@@ -6027,9 +6027,41 @@ li.nav-item:hover.dropdown::after {
   font-weight: 500;
 }
 
-.heading-para-div p:first-of-type {
-  display: block; /* Show the first paragraph by default */
+/* .heading-para-div p:first-of-type {
+  display: block; 
+} */
+
+.advantageaccordion, .advantageaccordion > div{
+  border: 0;
 }
+.advantageaccordion > div > h3 > button{
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.5;
+}
+.advantageaccordion > div > h3 > button:focus{
+  box-shadow: none;
+}
+.advantageaccordion > div > h3 > button[aria-expanded="true"]{
+  opacity: 1;
+  color: #000;
+  box-shadow: none;
+}
+.advantageaccordion > div > h3 > button::after{
+  display: none !important;
+}
+.advantageaccordion h3 > button{
+  padding: 0;
+}
+.advantageaccordion .accordion-body p{
+  font-size: .85rem;
+  font-weight: 400;
+}
+
 .first-webdesign-logos-slider img,
 .second-webdesign-logos-slider img {
   border: 1px solid #838383;
@@ -7857,6 +7889,11 @@ div.blog-slider .owl-nav > button:hover > span {
         font-size:0.9rem;
     }
 
+.bg-blue1 {
+  background: #185ae9;
+  border-radius: 35px;
+  padding: 30px;
+}
 
 .single-caseStudy-stats3 {
   position: relative;
