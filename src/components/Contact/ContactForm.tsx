@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 interface ContactFormData {
@@ -30,13 +30,27 @@ export default function ContactBanner() {
     companyname: '',
     service: '',
     message: '',
-    gclid: searchParams.get('gclid') || '',
-    fbclid: searchParams.get('fbclid') || '',
-    igclid: searchParams.get('igclid') || '',
-    ttclid: searchParams.get('ttclid') || '',
-    fingerprint: searchParams.get('fingerprint') || '',
+    gclid: '',
+    fbclid: '',
+    igclid: '',
+    ttclid: '',
+    fingerprint: '',
     chat: '',
   });
+
+  // Update form data with search params after component mounts
+  useEffect(() => {
+    if (searchParams) {
+      setFormData(prev => ({
+        ...prev,
+        gclid: searchParams.get('gclid') || '',
+        fbclid: searchParams.get('fbclid') || '',
+        igclid: searchParams.get('igclid') || '',
+        ttclid: searchParams.get('ttclid') || '',
+        fingerprint: searchParams.get('fingerprint') || '',
+      }));
+    }
+  }, [searchParams]);
 
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);

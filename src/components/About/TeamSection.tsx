@@ -2,14 +2,7 @@
 'use client';
 
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import { useEffect, useMemo } from 'react';
-
-// Owl Carousel (client-only)
-const OwlCarousel = dynamic(
-  () => import('react-owl-carousel').then((m) => m.default),
-  { ssr: false }
-);
+import { useEffect, useMemo, useRef } from 'react';
 
 // Inject Owl CSS via <link> tags (no bundling issues)
 function useOwlCss() {
@@ -36,11 +29,13 @@ const TEAM = [
   { src: '/assets/images/team/4.webp', name: 'John Maxwell',    role: 'CQO' },
   { src: '/assets/images/team/5.webp', name: 'Sarah Anderson',  role: 'CEO' },
   { src: '/assets/images/team/6.webp', name: 'James Mitchell',  role: 'HOD' },
-  { src: '/assets/images/team/7.webp', name: 'Jennifer Roberts',role: 'COO' },
+  { src: '/assets/images/team/7.webp', name: 'Jennifer Roberts',role: 'COO' }, 
 ];
 
 export default function TeamSection() {
   useOwlCss();
+  const carouselRef = useRef(null);
+  const initialized = useRef(false);
 
   const options = useMemo(() => ({
     loop: true,
@@ -78,8 +73,31 @@ export default function TeamSection() {
       1194: { items: 3, nav: true,  dots: false }, // iPad Pro 11" landscape
       1366: { items: 3, nav: true,  dots: false }, // iPad Pro 12.9" & desktops
     },
-  }), []);  
+  }), []);
 
+  // Initialize Owl Carousel
+  useEffect(() => {
+    const initializeCarousel = () => {
+      if ((window as any).$ && (window as any).$.fn.owlCarousel && carouselRef.current && !initialized.current) {
+        (window as any).$(carouselRef.current).owlCarousel(options);
+        initialized.current = true;
+      } else if (!initialized.current) {
+        // If scripts are not ready, try again after a short delay
+        setTimeout(initializeCarousel, 100);
+      }
+    };
+
+    initializeCarousel();
+
+    // Cleanup function to destroy the carousel when the component unmounts
+    return () => {
+      if ((window as any).$ && (window as any).$.fn.owlCarousel && carouselRef.current && initialized.current) {
+        (window as any).$(carouselRef.current).owlCarousel('destroy');
+        initialized.current = false;
+      }
+    };
+  }, [options]);
+  
   return (
     <section className="section-padding dark-section">
       <div className="container">
@@ -95,7 +113,7 @@ export default function TeamSection() {
           </div>
 
           <div className="col-12">
-            <OwlCarousel className="teams-carousel owl-carousel" {...options}>
+            <div ref={carouselRef} className="teams-carousel owl-carousel">
               {TEAM.map((member, i) => (
                 <div className="item" key={i}>
                   <div className="single-team">
@@ -114,7 +132,7 @@ export default function TeamSection() {
                   </div>
                 </div>
               ))}
-            </OwlCarousel>
+            </div>
           </div>
         </div>
       </div>

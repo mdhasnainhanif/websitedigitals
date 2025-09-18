@@ -151,3 +151,122 @@ export const ContactPageFAQs = [
     answer: 'Our office is open from 9 AM to 6 PM, Monday to Friday. Kindly go to our Contact Us page for additional details.'
   }
 ];
+
+export const WebBuilderPageFAQs = [
+  {
+    id: 'faq-1',
+    question: 'Can I use your platform to build a website for my business?',
+    answer:
+      'Of course! You can build a website for your business with service pages, contact forms, product showcases, and more without the need of a developer.',
+  },
+  {
+    id: 'faq-2',
+    question: 'What makes your platform better than other web builder sites?',
+    answer:
+      'Website Digitals keeps things simple without sacrificing flexibility, unlike other web builders. You get clean designs, performance optimization, and built-in SEO without unnecessary extras.',
+  },
+  {
+    id: 'faq-3',
+    question: 'How do I build a website?',
+    answer:
+      "Simply select a template, add your text, and use our drag-and-drop editor to put everything in order.",
+  },
+  {
+    id: 'faq-4',
+    question: 'Is it really possible to build your own website without coding?',
+    answer:
+      'Yes, it is. You can build your own website using our visual tools, ready-made sections, and customizable features with no coding required.',
+  },
+  {
+    id: 'faq-5',
+    question: 'Can I use Website Digitals for personal projects too?',
+    answer:
+      'Yes, our platform works for portfolios, blogs, and event sites, not just businesses. You can build a clean, professional site for fun or a side gig that fits your style and needs.',
+  },
+];
+
+export const WebEcommercePageFAQs = [
+  {
+    question: 'Can I use your platform to build a website for my business?',
+    answer:
+      'Of course! You can build a website for your business with service pages, contact forms, product showcases, and more without the need of a developer.',
+  },
+  {
+    question: 'What makes your platform better than other web builder sites?',
+    answer:
+      'Website Digitals keeps things simple without sacrificing flexibility, unlike other web builders. You get clean designs, performance optimization, and built-in SEO without unnecessary extras.',
+  },
+  {
+    question: 'How do I build a website?',
+    answer:
+      'Simply select a template, add your text, and use our drag-and-drop editor to put everything in order.',
+  },
+  {
+    question: 'Is it really possible to build your own website without coding?',
+    answer:
+      'Yes, it is. You can build your own website using our visual tools, ready-made sections, and customizable features with no coding required.',
+  },
+  {
+    question: 'Can I use Website Digitals for personal projects too?',
+    answer:
+      'Yes, our platform works for portfolios, blogs, and event sites, not just businesses. You can build a clean, professional site for fun or a side gig that fits your style and needs.',
+  },
+];
+
+export const WebDropshippingPageFAQs = [
+  {
+    question: 'How can I build a website for dropshipping?',
+    answer:
+      'To build a website for dropshipping, you need a reliable website builder that offers integrations with suppliers, customizable themes, and secure payment gateways. Our platform provides all the tools needed to launch your dropshipping store efficiently.',
+  },
+  {
+    question: 'Can I design a website for dropshipping that reflects my brand?',
+    answer:
+      'Our website builder allows you to design a website for dropshipping with customized themes and adjustable features that match your brand identity and business goals.',
+  },
+  {
+    question: 'What features should a dropshipping website have?',
+    answer:
+      'A good dropshipping website should include supplier integration, mobile optimization, secure payment options, and easy navigation to ensure a smooth shopping experience for customers.',
+  },
+  {
+    question: 'How long does it take to launch a dropshipping website?',
+    answer:
+      'The time to launch depends on your specific requirements and customizations. With our fast-launch processes, you can have a fully functional website up and running in a matter of days.',
+  },
+  {
+    question: 'Do you offer post-launch support for dropshipping websites?',
+    answer:
+      'We provide comprehensive post-launch support, including maintenance, updates, and assistance with any challenges you may face to ensure your dropshipping business runs smoothly.',
+  },
+];
+
+// app/(wherever)/auction.faqs.ts
+export const WebAuctionPageFAQs = [
+  {
+    question: 'How can I build an online auction website using your platform?',
+    answer:
+      'Our platform simplifies the process to build online auction website by offering customizable templates, user-friendly tools, and advanced features like bidding systems and payment integrations. You can launch your auction website quickly and efficiently with minimal technical expertise.',
+  },
+  {
+    question: 'Can I design a professional online auction website without technical skills?',
+    answer:
+      'Our platform is tailored to help users design an online auction website with ease. With drag-and-drop functionality and pre-designed layouts, you can create a professional-looking website without any coding knowledge.',
+  },
+  {
+    question: 'What features does the online auction website builder offer?',
+    answer:
+      'Our builder includes features such as real-time bidding, secure payment integration, customizable themes, and mobile responsiveness. These tools ensure a seamless experience for both you and your users.',
+  },
+  {
+    question: 'Is the platform scalable for growing businesses?',
+    answer:
+      "Our solution is designed to grow with your business. Whether you're starting small or managing a high-traffic auction site, the platform can scale to meet your increasing demands while maintaining performance.",
+  },
+  {
+    question: 'How secure is the platform for hosting auctions?',
+    answer:
+      'We prioritize security by offering robust hosting solutions with SSL encryption, secure payment gateways, and data protection measures. Your users can confidently participate in auctions without concerns about data breaches.',
+  },
+];
+

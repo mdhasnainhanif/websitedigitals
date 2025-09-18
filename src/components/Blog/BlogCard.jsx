@@ -1,13 +1,7 @@
 // src/components/Blog/BlogCard.jsx
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
-import dynamic from 'next/dynamic';
-
-const OwlCarousel = dynamic(
-  () => import('react-owl-carousel').then(m => m.default),
-  { ssr: false }
-);
+import { useEffect, useMemo, useState, useRef } from 'react';
 
 // Load Owl CSS via <link> tags (avoids Next's CSS parser)
 function useOwlCss() {
@@ -49,6 +43,8 @@ export default function BlogCard({
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
+  const carouselRef = useRef(null);
+  const initialized = useRef(false);
 
   useEffect(() => {
     let alive = true;
@@ -130,7 +126,30 @@ export default function BlogCard({
       1366: { items: 4, nav: true,  dots: false }, // iPad Pro 12.9" landscape + desktop
     },
     ...(carouselOptions || {}),
-  }), [carouselOptions]);  
+  }), [carouselOptions]);
+
+  // Initialize Owl Carousel
+  useEffect(() => {
+    const initializeCarousel = () => {
+      if (window.$ && window.$.fn.owlCarousel && carouselRef.current && !initialized.current && posts.length > 0) {
+        $(carouselRef.current).owlCarousel(options);
+        initialized.current = true;
+      } else if (!initialized.current && posts.length > 0) {
+        // If scripts are not ready, try again after a short delay
+        setTimeout(initializeCarousel, 100);
+      }
+    };
+
+    initializeCarousel();
+
+    // Cleanup function to destroy the carousel when the component unmounts
+    return () => {
+      if (window.$ && window.$.fn.owlCarousel && carouselRef.current && initialized.current) {
+        $(carouselRef.current).owlCarousel('destroy');
+        initialized.current = false;
+      }
+    };
+  }, [options, posts]);
 
   return (
     <section className="section-padding gray-section">
@@ -152,7 +171,7 @@ export default function BlogCard({
             )}
 
             {!loading && !err && posts.length > 0 && (
-              <OwlCarousel className="owl-theme blog-slider" {...options}>
+              <div ref={carouselRef} className="owl-carousel owl-theme blog-slider">
                 {posts.map(post => {
                   // Title
                   const rawTitle = stripHTML(post?.title?.rendered || '');
@@ -199,7 +218,7 @@ export default function BlogCard({
                     </div>
                   );
                 })}
-              </OwlCarousel>
+              </div>
             )}
           </div>
         </div>

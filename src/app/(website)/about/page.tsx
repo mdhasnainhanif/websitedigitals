@@ -27,7 +27,7 @@ export default function AboutPage() {
       <TeamSection />
       <SupportSection />
       <Cta/>
-      <TestimonialsSection data={testimonialsData} />
+      <TestimonialsSection className="bg-dark" data={testimonialsData} />
       <div className='section-padding pb-0'>
       <Faqs faqs={AboutPageFAQs as any} />
       </div>

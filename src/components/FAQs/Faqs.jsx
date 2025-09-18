@@ -6,7 +6,7 @@ const FAQ = ({
   title = "FAQ", 
   faqs = [], 
   className = "",
-  sectionClassName = "section-padding gradient-circle rightCenter-gradient pt-0"
+  sectionClassName = "section-padding gradient-circle rightCenter-gradient"
 }) => {
   const [openItem, setOpenItem] = useState(0); // Track which item is open
 
@@ -15,7 +15,7 @@ const FAQ = ({
   };
 
   return (
-    <section className={`${styles.section_padding} ${styles.gradient_circle} ${styles.rightCenter_gradient} pt-0`}>
+    <section className={`section-padding ${sectionClassName} ${className}`}>
       <div className="container">
 
         <div className="row justify-content-center">

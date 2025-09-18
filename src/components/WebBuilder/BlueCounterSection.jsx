@@ -24,14 +24,17 @@ export default function BlueCounterSection({ data = [] }) {
       if (el.dataset.done === '1') return
       el.dataset.done = '1'
 
-      let current = 0
-      // duration ~1s for 0-100, scales with target
-      const duration = Math.max(700, Math.min(2000, (target / 100) * 1000))
+      // Ultra smooth easing function (ease-out-quart)
+      const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4)
+      
+      // Longer duration for ultra smooth animation
+      const duration = Math.max(2000, Math.min(3500, (target / 100) * 2000))
       const start = performance.now()
 
       const step = (now) => {
         const progress = Math.min((now - start) / duration, 1)
-        const value = Math.floor(progress * target)
+        const easedProgress = easeOutQuart(progress)
+        const value = Math.floor(easedProgress * target)
         el.textContent = String(value)
         if (progress < 1) requestAnimationFrame(step)
         else el.textContent = String(target)

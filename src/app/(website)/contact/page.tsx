@@ -1,10 +1,14 @@
 // app/about/page.jsx
-import ContactBanner from '@/components/Contact/ContactForm';
+import dynamic from 'next/dynamic';
 import PartnerSection from '@/components/Contact/PartnerSection';
 import GlobalDeliverySection from '@/components/Contact/GlobalDelivery';
 import Faqs from '@/components/FAQs/Faqs';
 import { ContactPageFAQs } from '@/components/FAQs/data';
 
+// Dynamically import ContactBanner to prevent prerendering issues
+const ContactBanner = dynamic(() => import('@/components/Contact/ContactForm'), {
+  loading: () => <div>Loading...</div>
+});
 
 export const metadata = {
   title: 'Contact Us | Website Digitals',
@@ -18,9 +22,7 @@ export default function ContactPage() {
       <ContactBanner />
       <PartnerSection />
       <GlobalDeliverySection />
-      <div className='section-padding pb-0'>
         <Faqs faqs={ContactPageFAQs as any} />
-      </div>
       {/* Add more sections below if needed */}
     </>
   );
