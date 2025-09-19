@@ -125,7 +125,7 @@ export default function Header() {
 
                   {/* Web Development */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
-                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Development</a>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/web-development')}>Web Development</a> 
                     <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop2} ${styles.webBuilderDrop3}`}>
                       <li className={`${styles.w_100} p-0`}>
                         <div className="container-fluid p-0">
@@ -189,7 +189,7 @@ export default function Header() {
 
                   {/* Web Design */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
-                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Design</a>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/web-design')}>Web Design</a>
                     <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop2} ${styles.webBuilderDrop3}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
@@ -252,7 +252,7 @@ export default function Header() {
 
                   {/* Digital Marketing */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
-                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Digital Marketing</a>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/digital-marketing')}>Digital Marketing</a>
                     <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop4}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
@@ -317,7 +317,7 @@ export default function Header() {
 
                   {/* Web Hosting */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
-                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Hosting</a>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/web-hosting')}>Web Hosting</a>
                     <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop9}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
@@ -363,7 +363,7 @@ export default function Header() {
 
                   {/* Web Builder */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
-                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/')}>Web Builder</a>
+                    <a className={`${styles.nav_link} dropdown-toggle`} href="#" role="button" aria-expanded="false" onClick={go('/web-builder')}>Web Builder</a>
                     <ul className={`${styles.dropdown_menu} ${styles.webfolio_mega_menu} p-0 ${styles.webBuilderDrop} ${styles.webBuilderDrop7}`}>
                       <li className="w-100 p-0">
                         <div className="container-fluid p-0">
@@ -428,11 +428,11 @@ export default function Header() {
                             <div className="col-md-12 p-0">
                               <div className={`${styles.vertical_bordersperator} ${styles.p04}`}>
                                 {[
-                                  { img: '/assets/images/menu/036.webp', title: 'About Us' },
-                                  { img: '/assets/images/menu/37.webp', title: 'Webfolio' },
-                                  { img: '/assets/images/menu/38.webp', title: 'Blog' },
-                                ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  { img: '/assets/images/menu/036.webp', title: 'About Us' , href: '/about' },
+                                  { img: '/assets/images/menu/37.webp', title: 'Webfolio' , href: '/portfolio' },
+                                  { img: '/assets/images/menu/38.webp', title: 'Blog' , href: '/blogs' },
+                                ].map((item, i) => (      
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href}>
                                     <div className={`${styles.menu_icon1_wrapper} ${styles.menu_icon1_wrapper}2`}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p></div>
@@ -451,7 +451,7 @@ export default function Header() {
 
               <div className="col-md-2 text-end">
                 <div className="link-area pt-1 contact-btn">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="primary btn_black">Contact Us</a>
+                  <a href="/contact" target="_blank" rel="noopener noreferrer" className="primary btn_black">Contact Us</a>
                 </div>
               </div>
             </div>

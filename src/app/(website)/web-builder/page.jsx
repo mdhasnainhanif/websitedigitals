@@ -34,7 +34,7 @@ import AssistanceSection from "../../../components/WebBuilder/AssistanceSection/
 import { assistanceBackground, assistanceHeading, assistanceItems } from "../../../components/WebBuilder/AssistanceSection/AssistanceSectionData";
 import FAQ from "../../../components/FAQs/Faqs";
 import { WebBuilderPageFAQs } from "../../../components/FAQs/data";
-import BlogCard from "../../../components/Blog/BlogCard";
+import Blog from "@/components/Blog/Blog"; 
 import { webBannerData } from "../../../components/WebBuilder/WebBanner/WebBannerData";
 import WebBanner from "../../../components/WebBuilder/WebBanner/WebBanner";
 
@@ -87,7 +87,7 @@ export default function WebBuilderPage() {
         items={assistanceItems}
       />
       <FAQ faqs={WebBuilderPageFAQs} />
-      <BlogCard/>
+      <Blog/>
     </>
   );
 }

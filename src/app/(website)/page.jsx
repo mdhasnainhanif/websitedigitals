@@ -6,7 +6,7 @@ import { imageSlideSectionData, itemsByTab, tabs, testimonialsData } from "../Da
 import GetStartedCta from "../../components/CTA/cta";
 import Faqs from "../../components/FAQs/Faqs";
 import { homePageFAQs } from "../../components/FAQs/data";
-import BlogCard from "../../components/Blog/BlogCard";
+import Blog from "@/components/Blog/Blog";
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <TestimonialsSection data={testimonialsData} />
       <GetStartedCta />
       <Faqs faqs={homePageFAQs} />
-      <BlogCard />    
+      <Blog />    
     </div>
   )
 }

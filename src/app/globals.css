@@ -8353,5 +8353,34 @@ section.withoutImg.inner-banner .row nav{
   margin: 0 auto;
 }
 section.portfolioSection .section-heading{
-  text-align: center;
+  display: none;
+}
+section.portfolioSection{
+  margin-top: -9rem;
+  z-index: 9;
+  position: relative;
+}
+
+section.blogBanner{
+  padding-bottom: 0rem;
+  background-color: #F0F3F8;
+}
+section.blogTab{
+  background-color: #F0F3F8;
+  padding-top: 0rem;
+}
+section.notHero{
+ background-color: var(--background);
+}
+
+.notHero.bg-blue{
+  background-color: var(--primary-extra-light-bg);
+}
+
+.notHero.order2 .contentWriting-imageArea > img:not(.circle-img){
+  left: 50%; 
+}
+
+.notHero.order2 .col-md-6:nth-child(1){
+  order: 2;
 }

@@ -6,7 +6,7 @@ import IndustryTabs from '@/components/WebBuilder/IndustryTabs/IndustryTabs'
 import { industryTabsWebDesignData, WebDesignPageFAQs } from '../../Data/webDesignPageData'
 import FAQ from '@/components/FAQs/Faqs'
 import GetStartedCta from '../../../components/CTA/cta'
-import BlogCard from '../../../components/Blog/BlogCard'
+import Blog from "@/components/Blog/Blog";
 
 const page = () => {
   return (
@@ -20,7 +20,7 @@ const page = () => {
       />
       <FAQ faqs={WebDesignPageFAQs} />
       <GetStartedCta/>
-      <BlogCard/>
+      <Blog/>
     </div>  
   )
 }

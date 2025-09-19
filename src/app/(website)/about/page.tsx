@@ -10,6 +10,7 @@ import { testimonialsData } from '@/app/Data';
 import Faqs from '@/components/FAQs/Faqs';
 import { AboutPageFAQs } from '@/components/FAQs/data';
 import ContactSection from '@/components/InnerPageContact/Contact';
+import { roiSectionData } from '@/app/Data/aboutPageData';
 
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
-      <RoiSection />
+      <RoiSection data={roiSectionData} />
       <DesignerSection />
       <TeamSection />
       <SupportSection />

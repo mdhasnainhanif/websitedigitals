@@ -19,7 +19,7 @@ import StepSection from "@/components/WebBuilder/StepSection/StepSection";
 import AssistanceSection from "@/components/WebBuilder/AssistanceSection/AssistanceSection";
 import { assistanceBackground, assistanceHeading, assistanceItems } from "@/components/WebBuilder/AssistanceSection/AssistanceSectionData";
 import FAQ from "@/components/FAQs/Faqs";
-import BlogCard from "@/components/Blog/BlogCard";
+import Blog from "@/components/Blog/Blog"; 
 
 const page = () => {
   return (
@@ -66,7 +66,7 @@ const page = () => {
         items={assistanceItems}
       />
       <FAQ faqs={WebDevFAQs} />
-      <BlogCard/>
+      <Blog/>
     </div>
   );
 };
