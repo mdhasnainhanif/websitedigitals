@@ -5,6 +5,8 @@ import WhyChooseSection from '@/components/WebBuilder/WhyChooseSection/WhyChoose
 import IndustryTabs from '@/components/WebBuilder/IndustryTabs/IndustryTabs'
 import { industryTabsWebDesignData, WebDesignPageFAQs } from '../../Data/webDesignPageData'
 import FAQ from '@/components/FAQs/Faqs'
+import GetStartedCta from '../../../components/CTA/cta'
+import BlogCard from '../../../components/Blog/BlogCard'
 
 const page = () => {
   return (
@@ -17,6 +19,8 @@ const page = () => {
         subheading="We create websites that reflect your industry's uniqueness, regardless of your niche."
       />
       <FAQ faqs={WebDesignPageFAQs} />
+      <GetStartedCta/>
+      <BlogCard/>
     </div>  
   )
 }

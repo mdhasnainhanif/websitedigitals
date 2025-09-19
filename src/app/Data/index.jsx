@@ -50,13 +50,13 @@ export const tabs = [
   },
   {
     id: 'portal-portfolio',
-    label: 'personal brand',
+    label: 'Personal Brand',
     whiteIcon: '/assets/images/portfolio/web/tabs/personalbrandingw.png',
     colorIcon: '/assets/images/portfolio/web/tabs/personalbranding.png',
   },
   {
     id: 'non-profit',
-    label: 'nonprofit',
+    label: 'Non Profit',
     whiteIcon: '/assets/images/portfolio/web/tabs/nonprofitw.png',
     colorIcon: '/assets/images/portfolio/web/tabs/nonprofit.png',
   },

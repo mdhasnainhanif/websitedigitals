@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./PortfolioSection.module.css";
 
-export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
+export default function PortfolioSection({ tabs = [], itemsByTab = {} , className }) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
   const [openBlock, setOpenBlock] = useState(null); // { tabId, anchorIndex, content }
   const headerHeightRef = useRef(0);
@@ -395,13 +395,13 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} }) {
 
   return (
     <>
-      <section className={styles.section_padding}>
+      <section className={`${styles.section_padding} section-padding ${className}`}>
       <div className='container-fluid'>
           <div className="container">
         <div className="row">
           <div className="col-12">
-          <div className={`${styles.section_heading} ${styles.text_center}`}>
-              <h2>Proven <span className={styles.color_primary}>Success</span> in Every <span className={styles.color_primary}> Project</span></h2>
+          <div className={`${styles.section_heading} ${styles.text_center} section-heading`}>
+              <h2>Proven <span className={`${styles.color_primary} color-primary`}>Success</span> in Every <span className={`${styles.color_primary} color-primary`}> Project</span></h2>
               <p className={styles.max_54rem}>At Website Digitals, we are dedicated to providing solutions that not only meet but exceed client expectations. Our best DIY website builder is a testament to our commitment 
               to excellence, enabling users to create professional-grade websites with ease.</p>
             </div>
