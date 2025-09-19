@@ -608,10 +608,9 @@ ul.count_ul>li::before {
 .home_portfolio_tabs .nav_link.active {
   background: #3c7cff;
 }
-:global(.webPortfolio_caseStudyTabs .nav_tabs .nav_link.active img) {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.activeImg {
+.anchoractive.active .activeImg {
   box-shadow: .3125rem .3125rem 0 0 #3c7cff;
+}
+:global([data-case-study] .nav-tabs > li > a.active img) {
+  box-shadow: .3125rem .3125rem 0 0 #3c7cff !important;
 }

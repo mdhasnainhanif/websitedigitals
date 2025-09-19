@@ -216,31 +216,42 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
           {/* add a stable hook to scope queries */}
           <div className={styles.webPortfolio_caseStudyTabsArea} data-case-study>
             <div className={styles.webPortfolio_caseStudyTabs}>
-              <ul className={`nav nav-tabs ${styles.nav_tabs} ${styles.custom_tabs}`}>
+              <ul className={`nav nav-tabs ${styles.nav_tabs}`}>
                 {tabsThumbs.map((src, i) => (
                   <li className={styles.nav_item} key={`thumb-${i}`}>
                     <a
-                      href="#"
-                      className={`${styles.nav_link} ${i === 0 ? "active" : ""}`}
-                      onClick={(e) => {
+                        href="#"
+                        className={`${styles.nav_link} ${i === 0 ? "active" : ""}`}
+                        onClick={(e) => {
                           e.preventDefault();
                           const area = e.currentTarget.closest('[data-case-study]');
                           if (!area) return;
 
                           const links = area.querySelectorAll(`.${styles.nav_link}`);
+                          const imgs = area.querySelectorAll(`.${styles.tabImg}`);
                           const panes = area.querySelectorAll(':scope .tab-pane');
 
+                          // Reset all
                           links.forEach((l) => l.classList.remove('active'));
-                          e.currentTarget.classList.add('active');
+                          imgs.forEach((img) => img.classList.remove(styles.activeImg));
 
+                          // Set current
+                          e.currentTarget.classList.add('active');
+                          e.currentTarget.querySelector('img')?.classList.add(styles.activeImg);
+
+                          // Show correct pane
                           panes.forEach((p, idx) => {
                             p.classList.toggle('active', idx === i);
                             p.classList.toggle('show', idx === i);
                           });
                         }}
-                    >
-                      <img src={src} alt="" className={`${styles.tabImg} ${i === 0 ? styles.activeImg : ""}`} />
-                    </a>
+                      >
+                        <img
+                          src={src}
+                          alt=""
+                          className={`${styles.tabImg} ${i === 0 ? styles.activeImg : ""}`}
+                        />
+                      </a>
                   </li>
                 ))}
               </ul>
