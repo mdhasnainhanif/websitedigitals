@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import styles from "./PortfolioSection.module.css";
+import { CrossIcon } from "../../../../src/icons";
 
 export default function PortfolioSection({ tabs = [], itemsByTab = {} , className }) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
@@ -204,16 +205,18 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
     return (
        <div className={`row ${styles.webPortfolio_caseStudyArea}`}>
         <div
-          className={styles.webPortfolio_caseStudyClose}
-          role="button"
-          onClick={closeCaseStudy}
-        />
+            className={styles.webPortfolio_caseStudyClose}
+            role="button"
+            onClick={closeCaseStudy}
+          >
+            <CrossIcon />
+          </div>
 
         <div className="col-md-8">
           {/* add a stable hook to scope queries */}
           <div className={styles.webPortfolio_caseStudyTabsArea} data-case-study>
             <div className={styles.webPortfolio_caseStudyTabs}>
-              <ul className={`nav nav-tabs ${styles.nav_tabs}`}>
+              <ul className={`nav nav-tabs ${styles.nav_tabs} ${styles.custom_tabs}`}>
                 {tabsThumbs.map((src, i) => (
                   <li className={styles.nav_item} key={`thumb-${i}`}>
                     <a
@@ -236,7 +239,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                           });
                         }}
                     >
-                      <img src={src} alt="" />
+                      <img src={src} alt="" className={`${styles.tabImg} ${i === 0 ? styles.activeImg : ""}`} />
                     </a>
                   </li>
                 ))}
@@ -410,7 +413,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                 {tabs.map((t) => (
                   <li className={styles.nav_item} key={t.id}>
                     <a
-                      className={`${styles.nav_link} ${activeTab === t.id ? "active" : ""}`}
+                      className={`${styles.nav_link} ${activeTab === t.id ? styles.active : ""}`}
                       href={`#${t.id}`}
                       onClick={(e) => {
                         e.preventDefault();

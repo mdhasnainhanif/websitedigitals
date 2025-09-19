@@ -21,3 +21,48 @@ export const RightArrowIcon = () => (
 export const LeftArrowIcon = () => (
     <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" fill="#000"/></svg>
 )
+
+
+export const CrossIcon = () => (
+<svg
+    fill="#fff"
+    width="30"
+    height="30"
+    viewBox="0 0 24 24"
+    id="cross"
+    data-name="Line Color"
+    xmlns="http://www.w3.org/2000/svg"
+    className="icon line-color"
+  >
+    <line
+      id="primary"
+      x1="19"
+      y1="19"
+      x2="5"
+      y2="5"
+      style={{
+        fill: "none",
+        stroke: "#fff",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: 2,
+      }}
+    />
+    <line
+      id="primary-2"
+      data-name="primary"
+      x1="19"
+      y1="5"
+      x2="5"
+      y2="19"
+      style={{
+        fill: "none",
+        stroke: "#fff",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: 2,
+      }}
+    />
+  </svg>
+)
+
