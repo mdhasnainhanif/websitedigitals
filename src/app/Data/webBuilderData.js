@@ -100,7 +100,13 @@ export const webBuilderPages = {
               alt: 'Online Maker for ecommerce Website',
               width: 669,
               height: 459
-            }
+            },
+            bullets: [
+              'Real-time sales tracking and reporting',
+              'Customer behavior analytics',
+              'Performance insights and recommendations',
+              'Customizable dashboard views'
+            ]
           }
         },
         {
@@ -114,7 +120,13 @@ export const webBuilderPages = {
               alt: 'create an ecommerce website',
               width: 669,
               height: 459
-            }
+            },
+            bullets: [
+              'Multiple payment gateway integrations',
+              'SSL encryption for secure transactions',
+              'PCI compliance standards',
+              'Mobile payment support'
+            ]
           }
         },
         {
@@ -128,7 +140,13 @@ export const webBuilderPages = {
               alt: 'design an ecommerce website',
               width: 669,
               height: 459
-            }
+            },
+            bullets: [
+              'High-quality image galleries',
+              'Video product demonstrations',
+              'Interactive zoom and pan features',
+              'Mobile-optimized product views'
+            ]
           }
         }
       ]
