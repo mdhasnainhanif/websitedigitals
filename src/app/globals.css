@@ -965,6 +965,14 @@ input {
 }
 
 @media (max-width: 576px) {
+  section.homeFaqs{
+    padding-top: 0;
+  }
+  .owl-carousel.heroLogoSlider{
+    margin-top: 5rem;
+    opacity: 1 !important;
+    display: block;
+  }
   .cta-section .banner-form {
     width: 90%;
   }

@@ -18,7 +18,7 @@ export default function Home() {
       <ImageSlideSection imageSlideSectionData={imageSlideSectionData} className="blue-section1" />
       <TestimonialsSection data={testimonialsData} />
       <GetStartedCta />
-      <Faqs faqs={homePageFAQs} />
+      <Faqs faqs={homePageFAQs} className="homeFaqs" />
       <Blog />    
     </div>
   )
