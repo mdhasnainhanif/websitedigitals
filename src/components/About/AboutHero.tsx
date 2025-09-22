@@ -3,26 +3,28 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './About.module.css';
+
 
 export default function AboutHero() {
   return (
-    <section className="inner-banner gradient-circle leftCenter-gradient">
+    <section className={`${styles.inner_banner} ${styles.gradient_circle} ${styles.leftCenter_gradient}`}>
       <div className="container">
         <div className="row align-items-center">
           {/* Left */}
           <div className="col-md-6">
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
+            <nav aria-label={styles.breadcrumb}>
+              <ol className={styles.breadcrumb}>
+                <li className={styles.breadcrumb_item}>
                   <Link href="/">Home</Link>
                 </li>
-                <li className="breadcrumb-item active" aria-current="page">
+                <li className={`${styles.breadcrumb_item} ${styles.active}`} aria-current="page">
                   About Us
                 </li>
               </ol>
             </nav>
 
-            <div className="inner-bannerHeading">
+            <div className={styles.inner_bannerHeading}>
               <h1>About Us</h1>
               <p>
                 Are you looking for professional website building services to boost your online presence?
@@ -35,17 +37,17 @@ export default function AboutHero() {
               </ul>
             </div>
 
-            <div className="link-area">
+            <div className={styles.link_area}>
               <Link href="/brief">Get Started Now</Link>
             </div>
           </div>
 
           {/* Right */}
           <div className="col-md-6">
-            <div className="about-imageArea">
+            <div className={styles.about_imageArea}>
               <Image
                 src="/assets/images/about/banner/circle.png"
-                className="circle-img rotation-animation"
+                className={`${styles.circle_img} ${styles.rotation_animation}`}
                 width={475}
                 height={482}
                 alt="About Us"
@@ -53,7 +55,7 @@ export default function AboutHero() {
               />
               <Image
                 src="/assets/images/about/banner/banner-img.webp"
-                className="banner-img"
+                className={styles.banner_img}
                 width={669}
                 height={607}
                 alt="About Us"

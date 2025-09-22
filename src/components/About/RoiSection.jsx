@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import styles from './About.module.css'
 
 // jQuery "swing" ≈ easeInOutSine
 const easeInOutSine = (t) => 0.5 - Math.cos(Math.PI * t) / 2;
@@ -78,18 +79,18 @@ export default function RoiSection({ data, className = "" }) {
   }, [options?.durationMs, options?.threshold]);
 
   return (
-    <section className={`section-padding pb-half overflow-hidden ${className}`}>
+    <section className={`${styles.section_padding} ${styles.pb_half} ${styles.overflow_hidden} ${className}`}>
       <div className="container">
         <div className="row">
           {/* Left column (copy + partner logos) */}
           <div className="col-md-5">
-            <div className="section-heading">
+            <div className={styles.section_heading}>
               <h2>{heading}</h2>
               <p>{description}</p>
             </div>
 
             {bullets && bullets.length > 0 ? (
-              <ul className="partnersUl" style={{ listStyle: "disc", paddingLeft: 18 }}>
+              <ul className={styles.partnersUl} style={{ listStyle: "disc", paddingLeft: 18 }}>
                 {bullets.map((b, i) => (
                   <li key={`b-${i}`}>{b}</li>
                 ))}
@@ -97,7 +98,7 @@ export default function RoiSection({ data, className = "" }) {
             ) : null}
 
             {partners && partners.length > 0 ? (
-              <ul className="partnersUl">
+              <ul className={styles.partnersUl}>
                 {partners.map((p, i) => (
                   <li key={`partner-${i}`}>
                     <Image
@@ -114,7 +115,7 @@ export default function RoiSection({ data, className = "" }) {
 
           {/* Middle column (progress meters) */}
           <div className="col-md-6">
-            <div className="progress-containerArea" ref={areaRef}>
+            <div className={styles.progress_containerArea} ref={areaRef}>
               {(metrics && metrics.length > 0
                 ? metrics
                 : [
@@ -125,23 +126,23 @@ export default function RoiSection({ data, className = "" }) {
               ).map((m, i) => (
                 <div
                   key={`metric-${i}`}
-                  className="progress-container"
+                  className={styles.progress_container}
                   data-countto={m.target}
                   style={{ "--percent": "0%" }}
                 >
                   <h3>{m.label}</h3>
                   <div
-                    className={`progress-area ${m.barClass || "primary"}`}
+                    className={`${styles.progress_area} ${styles[m.barClass] || styles.primary}`}
                     role="progressbar"
                     aria-valuemin={0}
                     aria-valuemax={100}
                     aria-valuenow={0}
                   >
-                    <div className="progress-inner">
-                      <div className="progress-fill"></div>
+                    <div className={styles.progress_inner}>
+                      <div className={styles.progress_fill}></div>
                     </div>
-                    <div className="progress-count">
-                      <span className="count"></span>%
+                    <div className={styles.progress_count}>
+                      <span className={styles.count}></span>%
                     </div>
                   </div>
                 </div>
@@ -151,7 +152,7 @@ export default function RoiSection({ data, className = "" }) {
 
           {/* Right column (badge) */}
           <div className="col-md-1">
-            <div className="top-one">
+            <div className={styles.top_one}>
               <p>{badgeText}</p>
             </div>
           </div>
