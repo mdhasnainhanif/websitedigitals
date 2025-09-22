@@ -303,4 +303,361 @@ const digitalMarketingRoiSectionData = {
   };
   
   
-  
+// /src/app/Data/digitalMarketingPageData.js
+
+const stats = (
+  a,
+  b,
+  c,
+  labels = [
+    "Increase in Organic Sessions",
+    "Increase in Organic Traffic",
+    "Increase in Organic Visitors",
+  ]
+) => [
+  {
+    img: "/assets/images/services/digital-marketing/case-study/1/stats/1.png",
+    value: a,
+    label: labels[0],
+  },
+  {
+    img: "/assets/images/services/digital-marketing/case-study/1/stats/2.png",
+    value: b,
+    label: labels[1],
+  },
+  {
+    img: "/assets/images/services/digital-marketing/case-study/1/stats/3.png",
+    value: c,
+    label: labels[2],
+  },
+];
+
+const digitalMarketingPageData = {
+  heading: "Digital Marketing Services",
+  tabs: [
+    {
+      id: "seo-digitalMarketing-service",
+      label: "SEO",
+      items: [
+        {
+          brand: "ZAD",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/1/main.webp",
+          mainImageAlt: "ZAD",
+          kpiHeading: "45% increase in organic revenue in the first year!",
+          stats: stats("56%", "38%", "57%"),
+          details: {
+            challenges:
+              "The fitness website faced low visibility and engagement due to outdated SEO practices and lack of targeted content, resulting in minimal organic traffic and user interaction.",
+            solutions:
+              "Implementing a comprehensive digital marketing strategy, including modern SEO techniques, targeted content creation, and active social media campaigns, addressed the engagement and visibility issues.",
+            results:
+              "The big changes we made helped us get a lot more people visiting our website without needing to pay for ads. Our total earnings went up by 42% in the first year, showing that the new marketing plans really worked.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+        {
+          brand: "Metro",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/2/main.webp",
+          mainImageAlt: "Metro",
+          kpiHeading:
+            "<strong>43%</strong> increase in organic revenue in the first year!",
+          stats: stats("60%", "40%", "51%", [
+            "Increase in Organic Sessions",
+            "Increase in Web Traffic",
+            "Increase in Visitor Engagement",
+          ]),
+          details: {
+            challenges:
+              "The website struggled with low organic visibility and minimal user engagement due to outdated SEO practices and a lack of targeted content, resulting in poor organic traffic.",
+            solutions:
+              "Implementing a comprehensive digital marketing strategy, including advanced SEO techniques, targeted content creation, and robust social media campaigns, effectively addressed these challenges.",
+            results:
+              "These efforts led to significant improvements, with a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+      ],
+    },
+    {
+      id: "ppc-digitalMarketing-service",
+      label: "PPC",
+      items: [
+        {
+          brand: "Radiant",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/3/main.webp",
+          mainImageAlt: "Radiant",
+          kpiHeading: "<strong>48%</strong> Increase in Google Shopping Revenue",
+          stats: stats("53%", "37%", "54%"),
+          details: {
+            challenges:
+              "Radiant faced significant issues with low visibility and user engagement, primarily due to outdated SEO methods and a lack of relevant content, leading to minimal organic traffic.",
+            solutions:
+              "Adopting a holistic digital marketing approach, including modern SEO techniques, targeted content creation, and robust social media campaigns, effectively addressed these challenges.",
+            results:
+              "These strategies led to remarkable improvements, with a significant rise in organic sessions and a substantial boost in overall revenue, demonstrating the success of the marketing initiatives.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+        {
+          brand: "Beauty BD",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/4/main.webp",
+          mainImageAlt: "Beauty BD",
+          kpiHeading: "<strong>41%</strong> Increase in Google Shopping Revenue",
+          stats: stats("53%", "35%", "54%", [
+            "Increase in Organic Sessions",
+            "Increase in Organic Traffic",
+            "Increase in User Engagement",
+          ]),
+          details: {
+            challenges:
+              "Beauty BD faced challenges with low visibility and minimal user engagement due to outdated SEO techniques and lack of targeted content, resulting in poor organic traffic.",
+            solutions:
+              "Implementing a comprehensive digital marketing strategy, including modern SEO practices, targeted content creation, and robust social media marketing, effectively addressed these challenges.",
+            results:
+              "These efforts resulted in significant improvements, with a marked increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+      ],
+    },
+    {
+      id: "content-writing-digitalMarketing-service",
+      label: "Content Writing",
+      items: [
+        {
+          brand: "Shop Fisher",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/5/main.webp",
+          mainImageAlt: "Shop Fisher",
+          kpiHeading:
+            "Customized Content Solutions Tailored to Increase 100% Effectiveness",
+          stats: stats("56%", "38%", "61%", [
+            "Increase in Organic Sessions",
+            "Increase in Organic Traffic",
+            "Increase in Visitor Engagement",
+          ]),
+          details: {
+            challenges:
+              "Shop Fisher faced challenges related to low organic visibility and minimal user engagement, primarily due to outdated SEO practices and insufficiently targeted content, leading to reduced organic traffic and site interaction.",
+            solutions:
+              "To overcome these issues, a comprehensive digital marketing strategy was implemented. This included modern SEO techniques, creating targeted and engaging content, and leveraging robust social media marketing campaigns to increase visibility and attract more visitors.",
+            results:
+              "These efforts resulted in a significant improvement in site performance, with a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the effectiveness of the new marketing strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+        {
+          brand: "Take chef",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/6/main.webp",
+          mainImageAlt: "Take chef",
+          kpiHeading:
+            "Customized Content Solutions Tailored to Increase 100% Effectiveness",
+          stats: stats("58%", "40%", "35%", [
+            "Increase in Organic Sessions",
+            "Increase in Website Traffic",
+            "Increase in User Engagement",
+          ]),
+          details: {
+            challenges:
+              "Take Chef faced challenges with low visibility and engagement due to outdated SEO practices and lack of targeted content, resulting in minimal organic traffic.",
+            solutions:
+              "Implementing modern SEO techniques, targeted content creation, and robust social media strategies effectively addressed these issues, enhancing site visibility and user engagement.",
+            results:
+              "These strategic efforts led to significant improvements, including a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented marketing strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+      ],
+    },
+    {
+      id: "smm-digitalMarketing-service",
+      label: "SMM",
+      items: [
+        {
+          brand: "Social",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/7/main.webp",
+          mainImageAlt: "Social",
+          kpiHeading:
+            "Attract 70% More Qualified Leads and Prospects Through Strategic SMM Efforts, Fueling Your Sales Pipeline For Growth",
+          stats: stats("40%", "46%", "60%", [
+            "Increase in Organic Sessions",
+            "Increase in Website Traffic",
+            "Increase in User Engagement",
+          ]),
+          details: {
+            challenges:
+              "Social faced challenges related to low organic visibility and minimal user engagement due to outdated SEO practices and insufficiently targeted content, leading to reduced organic traffic.",
+            solutions:
+              "Implementing modern SEO techniques, creating targeted and engaging content, and leveraging robust social media marketing campaigns effectively addressed these issues, improving visibility and user engagement.",
+            results:
+              "These efforts led to significant improvements, with a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented marketing strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+        {
+          brand: "Dashboard",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/8/main.webp",
+          mainImageAlt: "Dashboard",
+          kpiHeading:
+            "Drive a 70% Increase in Qualified Leads with Expert Social Media Marketing Strategies",
+          stats: stats("62%", "72%", "40%", [
+            "Increase in Organic Sessions",
+            "Increase in Website Traffic",
+            "Increase in User Engagement",
+          ]),
+          details: {
+            challenges:
+              "The main challenges included low organic visibility and minimal user engagement due to outdated SEO practices and lack of targeted content, resulting in reduced organic traffic.",
+            solutions:
+              "Implementing modern SEO techniques, creating targeted and engaging content, and leveraging robust social media marketing campaigns effectively addressed these issues, improving visibility and user engagement.",
+            results:
+              "These efforts led to significant improvements, with a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented marketing strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+      ],
+    },
+    {
+      id: "email-marketing-digitalMarketing-service",
+      label: "Email Marketing",
+      items: [
+        {
+          brand: "Coffee Shop",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/9/main.webp",
+          mainImageAlt: "Coffee Shop",
+          kpiHeading:
+            "Enhance Customer Relationships Through Personalized Emails, Increasing Loyalty and Engagement Rates by 70%",
+          stats: stats("39%", "56%", "60%", [
+            "Increase in Organic Sessions",
+            "Increase in Website Traffic",
+            "Increase in User Engagement",
+          ]),
+          details: {
+            challenges:
+              "The coffee shop faced challenges with low visibility and minimal user engagement due to outdated SEO practices and lack of targeted content, resulting in poor organic traffic.",
+            solutions:
+              "By adopting modern SEO techniques, creating engaging content, and leveraging robust social media campaigns, the visibility and user engagement issues were effectively addressed.",
+            results:
+              "These strategic efforts led to significant improvements, including a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented marketing strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+        {
+          brand: "Buoux Eclore",
+          mainImage:
+            "/assets/images/services/digital-marketing/case-study/10/main.webp",
+          mainImageAlt: "Buoux Eclore",
+          kpiHeading:
+            "Boost 65% Sales with Targeted Email Campaigns, Driving Conversions and Maximizing ROI",
+          stats: stats("60%", "42%", "58%", [
+            "Increase in Organic Sessions",
+            "Increase in Website Traffic",
+            "Increase in User Engagement",
+          ]),
+          details: {
+            challenges:
+              "Buoux Eclore faced challenges with low visibility and minimal user engagement due to outdated SEO practices and lack of targeted content, resulting in poor organic traffic.",
+            solutions:
+              "Adopting modern SEO techniques, creating targeted and engaging content, and leveraging robust social media campaigns effectively addressed these challenges.",
+            results:
+              "These efforts led to significant improvements, including a notable increase in organic sessions and a substantial boost in overall revenue, demonstrating the success of the implemented marketing strategies.",
+            resultsImg:
+              "/assets/images/services/digital-marketing/case-study/1/result.png",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+export { digitalMarketingPageData };
+
+
+
+
+
+
+
+export const webBannerParallaxDigitalMarketingLastData = {
+  sectionClass: "section-padding gradient-circle rightCenter-gradient",
+  headingArea: {
+    topHeading: "Elevate Your Social Media Presence",
+    heading: "Engage and Convert with Innovative Digital Marketing Approaches",
+    description:
+      "At Website Digitals, effective digital marketing goes beyond visibility. It's about building meaningful connections and driving real engagement. Our innovative approaches captivate your audience and convert visitors into loyal customers. By leveraging advanced techniques and creative strategies, we ensure your brand stands out with bespoke engagement, compelling content, and continuous optimization. Let us transform your online presence into a dynamic, engaging platform, encouraging connections that drive sustained business growth.",
+  },
+
+  partners: [
+    { src: "/assets/images/partners/1.png", alt: "Google Partner", width: 112, height: 52 },
+    { src: "/assets/images/partners/2.png", alt: "Clutch" },
+    { src: "/assets/images/partners/3.png", alt: "Trustpilot", height: 52 },
+  ],
+
+  image: {
+    src: "/assets/images/convert-customer/ipad.png",
+    width: 468,
+    height: 613,
+    alt: "Engage and Convert with Innovative Digital Marketing Approaches",
+    className: "main-img",
+  },
+
+  // 3 floating items (mouse + scroll parallax)
+  decor: [
+    {
+      key: "iphone",
+      src: "/assets/images/convert-customer/iphone.png",
+      width: 104,
+      height: 473,
+      alt: "Phone",
+      className: "bottom-left",
+      parallax: true,
+      speedX: 18, // px per normalized mouse X
+      speedY: 12, // px per normalized mouse Y
+      rotate: 1.2,
+      scrollSpeed: 0.12,
+      priority: true,
+    },
+    {
+      key: "graph",
+      src: "/assets/images/convert-customer/graph.png",
+      width: 100,
+      height: 131,
+      alt: "Growth Graph",
+      className: "top-left",
+      parallax: true,
+      speed: 10, // same for x & y
+      rotate: 0.6,
+      scrollSpeed: 0.08,
+    },
+    {
+      key: "editbar",
+      src: "/assets/images/convert-customer/editBar.png",
+      width: 101,
+      height: 53,
+      alt: "Edit Toolbar",
+      className: "bottom-right",
+      parallax: true,
+      speedX: 20,
+      speedY: 16,
+      rotate: 0,
+      scrollSpeed: 0.1,
+    },
+  ],
+};

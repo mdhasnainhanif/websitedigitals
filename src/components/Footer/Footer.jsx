@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useMemo } from 'react'
 import styles from './Footer.module.css'
-import { FacebookIcon, InstagramIcon, PinterestIcon } from '../../icons'
+import { FacebookIcon, InstagramIcon, LinkedinIcon, PinterestIcon, YoutubeIcon } from '../../icons'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -220,7 +220,7 @@ export default function Footer() {
                           rel="noopener noreferrer"
                           data-text="Linkedin"
                         >
-                          <i className="fa-brands fa-linkedin-in"></i>
+                          <LinkedinIcon/>
                         </a>
                       </li>
                       <li>
@@ -230,7 +230,7 @@ export default function Footer() {
                           rel="noopener noreferrer"
                           data-text="Youtube"
                         >
-                          <i className="fa-brands fa-youtube"></i>
+                          <YoutubeIcon/>
                         </a>
                       </li>
                     </ul>

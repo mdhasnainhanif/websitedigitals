@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from './cta.module.css'
 
 export default function GetStartedCta({
   title = "Are you still scrolling?",
@@ -11,24 +12,24 @@ export default function GetStartedCta({
   className = "",
 }) {
   return (
-    <section className={`section-padding pt-double pt-default-mob ${className}`}>
+    <section className={`${styles.section_padding} ${styles.pt_double} ${styles.pt_default_mob}} ${className}`}>
       <div className="container">
-        <div className="getStartedCTA">
+        <div className={styles.getStartedCTA}>
           <div className="row">
             <div className="col-md-6">
-              <div className="section-heading">
+              <div className={styles.section_heading}>
                 <h2>{title}</h2>
                 <p>{description}</p>
               </div>
-              <div className="link-area">
-                <Link href={buttonHref} className="offer-btn">
+              <div className={styles.link_area}>
+                <Link href={buttonHref} className={styles.offer_btn}>
                   {buttonText}
                 </Link>
               </div>
             </div>
 
             <div className="col-md-6">
-              <div className="ctaImageArea">
+              <div className={styles.ctaImageArea}>
                 <Image
                   src={imageSrc}
                   alt={imageAlt}
