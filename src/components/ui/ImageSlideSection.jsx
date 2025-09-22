@@ -191,7 +191,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
           {/* Right: cross-fade images */}
           <div className="col-lg-6 col-md-6 col-12">
             <div className="tab-content">
-              <div className="image-fader" style={{ minHeight: imgDims.h }}>
+              <div className="image-fader">
                 {prevSrc ? (
                   <img
                     src={prevSrc}

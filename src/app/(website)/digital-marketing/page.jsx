@@ -1,9 +1,10 @@
 import React from 'react'
 import { digitalMarketingBannerData } from '@/app/Data/digitalMarketingPageData'
 import WebBanner from '@/components/WebBuilder/WebBanner/WebBanner'
-import { digitalMarketingAfterBannerData, digitalMarketingRoiSectionData, digitalMarketingThirdBannerData, digitalMarketingFourthBannerData, digitalMarketingFifthBannerData, digitalMarketingSixthBannerData, digitalMarketingScrollSectionData } from '../../Data/digitalMarketingPageData'
+import { digitalMarketingAfterBannerData, digitalMarketingRoiSectionData, digitalMarketingThirdBannerData, digitalMarketingFourthBannerData, digitalMarketingFifthBannerData, digitalMarketingSixthBannerData, digitalMarketingScrollSectionData, whyChooseDigitalMarketingData } from '../../Data/digitalMarketingPageData'
 import RoiSection from '@/components/About/RoiSection'
 import ScrollSection from '@/components/ScrollSection/ScrollSection'
+import WhyChooseSection from '@/components/WebBuilder/WhyChooseSection/WhyChooseSection'
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <WebBanner data={digitalMarketingFifthBannerData} className="notHero order2 bg-blue" colImgClass="boxes-bgArea leftBottom" />
       <WebBanner data={digitalMarketingSixthBannerData} className="notHero" colImgClass="boxes-bgArea leftBottom" />
       <ScrollSection data={digitalMarketingScrollSectionData} />
+      <WhyChooseSection {...whyChooseDigitalMarketingData} colCount1={6} colCount2={6} bothImgClass="digitalMarketing-splitArea" />
     </div>
   )
 }

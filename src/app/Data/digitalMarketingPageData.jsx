@@ -268,4 +268,39 @@ const digitalMarketingRoiSectionData = {
   };
   
   export { digitalMarketingScrollSectionData };
+
+
+  
+  export const whyChooseDigitalMarketingData = {
+    heading: 'Professional SEO Services',
+    images: [
+      {
+        src: '/assets/images/banner/circle.png',
+        alt: 'SEO circle background',
+        width: 570,
+        height: 570,
+        className: 'circle-img rotation-animation',
+      },
+      {
+        src: '/assets/images/services/digital-marketing/seo-circle.png',
+        alt: 'Professional SEO Services Banner',
+        width: 570,
+        height: 491,
+        className: 'banner-img',
+      },
+    ],
+    paragraphs: [
+        'Our professional SEO services help your business achieve higher rankings and more visibility online. As one of the top digital marketing companies in USA, we use proven techniques to drive organic traffic and improve your search engine presence.',
+    ],
+    bullets: [
+      'Comprehensive SEO audits',
+      'Content creation and optimization',
+      'Local SEO for targeted visibility',
+      'Technical SEO improvements',
+      'Ongoing performance monitoring',
+    ],
+    cta: { label: 'Get Started Now', href: '/brief' },
+  };
+  
+  
   

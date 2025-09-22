@@ -5577,9 +5577,9 @@ ul.count-ul > li > span {
   .single-mega-pricing .pricing-price {
     margin-top: 1rem;
   }
-  .home-banner-area > .home-banner .banner-heading > h1 {
+  /* .home-banner-area > .home-banner .banner-heading > h1 {
     padding-right: 2rem;
-  }
+  } */
 }
 @media (max-width: 390px) {
   .banner-heading > h1 {

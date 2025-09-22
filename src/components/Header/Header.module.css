@@ -583,11 +583,12 @@ li.nav_item:hover.dropdown::after {
   .mobile_menu ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     text-align: left;
     align-items: baseline;
     justify-content: space-between;
+    align-items: center;
   }
 
   .mobile_menu ul li a > i {
