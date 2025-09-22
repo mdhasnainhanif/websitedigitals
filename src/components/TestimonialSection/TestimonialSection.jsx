@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useMemo } from "react";
 import { StarIcon } from "../../icons";
+import styles from "./Testimonial.module.css";
 
 export default function TestimonialsSection({ data, className }) {
   const { sectionClass, heading, stats = [], items = [], carouselOptions = {} } = data || {};
@@ -52,7 +53,7 @@ export default function TestimonialsSection({ data, className }) {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading text-center">
+            <div className={`${styles.section_heading} ${styles.text_center}`}>
               <h2>{heading}</h2>
             </div>
           </div>
@@ -61,11 +62,11 @@ export default function TestimonialsSection({ data, className }) {
         <div className="row">
           {/* Stats */}
           <div className="col-lg-3 col-md-4">
-            <ul className="testimonials-statsUl">
+            <ul className={styles.testimonials_statsUl}>
               {stats.map((s, i) => (
                 <li key={i}>
                   <img src={s.icon} width={s.width} height={s.height} alt={s.alt || ""} />
-                  <div className="testimonials-stats-details">
+                  <div className={styles.testimonials_stats_details}>
                     <p>{s.title}</p>
                     <p>{s.desc}</p>
                   </div>
@@ -80,8 +81,8 @@ export default function TestimonialsSection({ data, className }) {
               <div ref={carouselRef} className="owl-carousel owl-theme">
                 {items.map((t, i) => (
                   <div className="item" key={i}>
-                    <div className="single-testimonial">
-                      <div className="testimonial-imageArea">
+                    <div className={styles.single_testimonial}>
+                      <div className={styles.testimonial_imageArea}>
                         <img
                           src={t.image?.src}
                           width={t.image?.width}
@@ -90,22 +91,22 @@ export default function TestimonialsSection({ data, className }) {
                         />
                       </div>
 
-                      <div className="testimonial-detail">
-                        <div className="stars">
+                      <div className={styles.testimonial_detail}>
+                        <div className={styles.stars}>
                           {Array.from({ length: t.rating || 0 }).map((_, idx) => (
                             <StarIcon key={idx} />
                           ))}
                         </div>
                         <p>{t.text}</p>
 
-                        <div className="testimoinal-userArea">
+                        <div className={styles.testimoinal_userArea}>
                           <img
                             src={t.user?.avatar}
                             width={t.user?.width || 48}
                             height={t.user?.height || 48}
                             alt={t.user?.name || ""}
                           />
-                          <div className="testimoinal-userDetail">
+                          <div className={styles.testimoinal_userDetail}>
                             <p>
                               <strong>{t.user?.name}</strong>
                             </p>

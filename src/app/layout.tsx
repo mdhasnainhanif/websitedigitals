@@ -39,10 +39,7 @@ export default function RootLayout({
 
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfAmvG6T1XlXH5wR6sdrP+YtS3M8xZJQpQ2cN5G3OZ7rXq8gG6Vx4W8w=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"          
         />
 
         <script src="/assets/js/jquery-3.7.1.min.js"></script>
