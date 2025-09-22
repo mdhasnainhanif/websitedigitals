@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import styles from './Header.module.css'
@@ -25,6 +25,20 @@ export default function Header() {
   
   // Web Builder tab state
   const [activeIndustryTab, setActiveIndustryTab] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header?.classList.add("fixed-header");
+      } else {
+        header?.classList.remove("fixed-header");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Industry data for Web Builder tabs
   const industryData = [
