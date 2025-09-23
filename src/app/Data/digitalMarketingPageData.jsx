@@ -595,7 +595,8 @@ export { digitalMarketingPageData };
 
 
 
-export const webBannerParallaxDigitalMarketingLastData = {
+// /src/app/Data/webBannerParallaxData.js
+export const webBannerParallaxData = {
   sectionClass: "section-padding gradient-circle rightCenter-gradient",
   headingArea: {
     topHeading: "Elevate Your Social Media Presence",
@@ -603,61 +604,139 @@ export const webBannerParallaxDigitalMarketingLastData = {
     description:
       "At Website Digitals, effective digital marketing goes beyond visibility. It's about building meaningful connections and driving real engagement. Our innovative approaches captivate your audience and convert visitors into loyal customers. By leveraging advanced techniques and creative strategies, we ensure your brand stands out with bespoke engagement, compelling content, and continuous optimization. Let us transform your online presence into a dynamic, engaging platform, encouraging connections that drive sustained business growth.",
   },
-
   partners: [
-    { src: "/assets/images/partners/1.png", alt: "Google Partner", width: 112, height: 52 },
-    { src: "/assets/images/partners/2.png", alt: "Clutch" },
-    { src: "/assets/images/partners/3.png", alt: "Trustpilot", height: 52 },
+    { src: "/assets/images/partners/1.png", alt: "google partner" },
+    { src: "/assets/images/partners/2.png", alt: "clutch" },
+    { src: "/assets/images/partners/3.png", alt: "trustpilot" },
   ],
-
   image: {
     src: "/assets/images/convert-customer/ipad.png",
-    width: 468,
-    height: 613,
     alt: "Engage and Convert with Innovative Digital Marketing Approaches",
-    className: "main-img",
+    className: "main-ipad",
   },
-
-  // 3 floating items (mouse + scroll parallax)
   decor: [
     {
       key: "iphone",
       src: "/assets/images/convert-customer/iphone.png",
-      width: 104,
-      height: 473,
-      alt: "Phone",
+      alt: "iPhone",
       className: "bottom-left",
       parallax: true,
-      speedX: 18, // px per normalized mouse X
-      speedY: 12, // px per normalized mouse Y
+      speedX: 18,
+      speedY: 12,
       rotate: 1.2,
       scrollSpeed: 0.12,
-      priority: true,
+      style: {}, // optional absolute offsets if needed
     },
     {
       key: "graph",
       src: "/assets/images/convert-customer/graph.png",
-      width: 100,
-      height: 131,
-      alt: "Growth Graph",
+      alt: "Graph",
       className: "top-left",
       parallax: true,
-      speed: 10, // same for x & y
+      speed: 10,
       rotate: 0.6,
       scrollSpeed: 0.08,
     },
     {
       key: "editbar",
       src: "/assets/images/convert-customer/editBar.png",
-      width: 101,
-      height: 53,
       alt: "Edit Toolbar",
       className: "bottom-right",
+
       parallax: true,
       speedX: 20,
       speedY: 16,
       rotate: 0,
       scrollSpeed: 0.1,
+    },
+  ],
+};
+
+
+export const momentumDataDigitalMarketing = {
+  sectionClass: "section-padding dark-section",
+  heading: "The Momentum Process",  
+  steps: [
+    {
+      img: "/assets/images/process/1.svg",
+      alt: "Strategic Planning",
+      width: 85,
+      height: 86,
+      title: "Strategic Planning",
+      description:
+        "We start with strategic planning to understand your business goals and target audience. This helps us create a comprehensive digital marketing plan specified to your needs.",
+      svg: {
+        code: `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 41">
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M2,2c0,16.8,12.1,22.7,26.5,27.5C48.5,36.2,72.2,34,93,34c29.8,0,59.3-2,89-2"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M183,31c-3-2-6-3.8-9-6"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M169,39c4.3-2.2,8.7-3.9,12-8"/>
+          </svg>
+        `,
+      },
+    },
+    {
+      img: "/assets/images/process/2.svg",
+      alt: "Content Creation & Optimization",
+      width: 85,
+      height: 86,
+      title: "Content Creation & Optimization",
+      description:
+        "Our team develops high-quality content that engages your audience and is optimized for search engines. This includes blog posts, social media updates, and other digital assets.",
+      svg: {
+        code: `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187 89">
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M2,2c37.9,0.9,75.9,2.3,113.9,3.8c15.7,0.6,36.6,0.4,50.4,8.9c14.5,8.9,21,29.1,18.2,45c-1.2,6.6-4.3,12.2-7.6,17.9c-1.2,2-3.2,6.6-5,7.4"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M170,76v11"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M170,87c3.4-0.7,6.5-1,10-1"/>
+          </svg>
+        `,
+      },
+    },
+    {
+      img: "/assets/images/process/3.svg",
+      alt: "Campaign Management",
+      width: 86,
+      height: 86,
+      title: "Campaign Management",
+      description:
+        "We manage your digital marketing campaigns across various platforms to ensure consistent and compelling messaging. Increasing engagement and conversions is our main goal.",
+      svg: {
+        code: `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 96">
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M82.5,1.5c0,16.9,1,34,1,50.6c0,7.1-1.6,14.2-2,21.4C81.1,80.2,74,84,68.4,85.9C55,90.7,39,86.2,25.5,85.5c-7.5-0.4-14.5-2-22-2"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M1.5,83.5c1.2,3.5,5.7,7.8,8,11"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M9.5,75.5c0,3.6-5.6,6.3-8,8"/>
+          </svg>
+        `,
+      },
+    },
+    {
+      img: "/assets/images/process/4.svg",
+      alt: "Performance Tracking Analysis",
+      width: 86,
+      height: 86,
+      title: "Performance Tracking & Analysis",
+      description:
+        "We use advanced analytics tools to track the performance of your digital marketing efforts. This allows us to make data-driven decisions and continuously optimize your campaigns.",
+      svg: {
+        code: `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187 89">
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M2,2c37.9,0.9,75.9,2.3,113.9,3.8c15.7,0.6,36.6,0.4,50.4,8.9c14.5,8.9,21,29.1,18.2,45c-1.2,6.6-4.3,12.2-7.6,17.9c-1.2,2-3.2,6.6-5,7.4"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M170,76v11"/>
+            <path fill="none" stroke="#00b0fb" stroke-width="3" stroke-linecap="round" d="M170,87c3.4-0.7,6.5-1,10-1"/>
+          </svg>
+        `,
+      },
+    },
+    {
+      img: "/assets/images/process/5.svg",
+      alt: "Continuous Improvement",
+      width: 62,
+      height: 86,
+      title: "Continuous Improvement",
+      description:
+        "Our process involves continuous improvement based on performance data and feedback. We refine strategies and tactics to ensure your digital marketing efforts remain effective and aligned with your goals.",
     },
   ],
 };

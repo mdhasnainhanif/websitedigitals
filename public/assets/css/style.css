@@ -1515,8 +1515,8 @@ ul.count-ul > li::before {
 }
 .convertCustomer-area > img {
   display: block;
-  width: 70%;
-  max-width: 100%;
+  /* width: 70%; */
+  max-width: 1rem;
   margin: 0 auto;
 }
 .convertCustomer-images > img {

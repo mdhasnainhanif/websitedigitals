@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useRef } from "react";
-import Image from "next/image";
 
 /**
- * WebBannerParallaxEffect
- * - data-driven content + parallax decor
- * - mouse parallax on desktop, gentle scroll drift fallback
- * - respects prefers-reduced-motion
+ * WebBannerParallaxEffect (no width/height required on images)
+ * - Accepts data: { sectionClass, headingArea, partners[], image, decor[] }
+ * - Mouse parallax (desktop) + gentle scroll fallback (touch)
+ * - Respects prefers-reduced-motion
+ * - Uses native <img> (no Next/Image width/height needed)
  */
 export default function WebBannerParallaxEffect({
   data,
@@ -23,16 +23,17 @@ export default function WebBannerParallaxEffect({
     sectionClass = "section-padding gradient-circle rightCenter-gradient",
     headingArea = {},
     partners = [],
-    image = {},
-    decor = [],
+    image = {},         // { src, alt, className, style }
+    decor = [],         // [{ key, src, alt, className, style, parallax, speed, speedX, speedY, rotate, scrollSpeed }]
   } = data || {};
 
-  // only parallax-enabled decor
+  // parallax-enabled decor only
   const parallaxDecor = useMemo(
     () => (Array.isArray(decor) ? decor.filter((d) => d?.parallax) : []),
     [decor]
   );
 
+  // map speeds for each item
   useEffect(() => {
     speedsRef.current = {};
     parallaxDecor.forEach((d, i) => {
@@ -46,15 +47,14 @@ export default function WebBannerParallaxEffect({
     });
   }, [parallaxDecor]);
 
-  // Mouse + scroll parallax (reduced motion safe)
+  // Mouse + scroll parallax
   useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+    const el = containerRef.current;
+    if (!el) return;
 
     const reduce =
       typeof window !== "undefined" &&
-      window.matchMedia &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
 
     if (reduce) return;
 
@@ -62,7 +62,7 @@ export default function WebBannerParallaxEffect({
     let raf;
 
     const onMouseMove = (e) => {
-      const rect = container.getBoundingClientRect();
+      const rect = el.getBoundingClientRect();
       const cx = rect.left + rect.width / 2;
       const cy = rect.top + rect.height / 2;
       state.nx = (e.clientX - cx) / (rect.width / 2); // -1..1
@@ -71,7 +71,7 @@ export default function WebBannerParallaxEffect({
       schedule();
     };
     const onMouseLeave = () => {
-      state.hasMouse = false;
+      state.hasMouse = false; // drift back to center
       schedule();
     };
 
@@ -80,11 +80,11 @@ export default function WebBannerParallaxEffect({
       raf = requestAnimationFrame(() => {
         const tx = state.hasMouse ? state.nx : 0;
         const ty = state.hasMouse ? state.ny : 0;
-        Object.entries(itemsRef.current).forEach(([key, el]) => {
-          if (!el) return;
+        Object.entries(itemsRef.current).forEach(([key, node]) => {
+          if (!node) return;
           const s = speedsRef.current[key] || {};
-          el.style.transform = `translate3d(${tx * s.x}px, ${ty * s.y}px, 0) rotate(${tx * (s.rotate || 0)}deg)`;
-          el.style.willChange = "transform";
+          node.style.transform = `translate3d(${tx * s.x}px, ${ty * s.y}px, 0) rotate(${tx * (s.rotate || 0)}deg)`;
+          node.style.willChange = "transform";
         });
       });
     };
@@ -92,21 +92,21 @@ export default function WebBannerParallaxEffect({
     const onScroll = () => {
       if (state.hasMouse) return; // mouse wins
       const y = window.scrollY || 0;
-      Object.entries(itemsRef.current).forEach(([key, el]) => {
-        if (!el) return;
+      Object.entries(itemsRef.current).forEach(([key, node]) => {
+        if (!node) return;
         const s = speedsRef.current[key] || {};
         const dy = (y * (s.scroll || 0.1)) % 24;
-        el.style.transform = `translate3d(0, ${dy}px, 0)`;
+        node.style.transform = `translate3d(0, ${dy}px, 0)`;
       });
     };
 
-    container.addEventListener("mousemove", onMouseMove);
-    container.addEventListener("mouseleave", onMouseLeave);
+    el.addEventListener("mousemove", onMouseMove);
+    el.addEventListener("mouseleave", onMouseLeave);
     window.addEventListener("scroll", onScroll, { passive: true });
 
     return () => {
-      container.removeEventListener("mousemove", onMouseMove);
-      container.removeEventListener("mouseleave", onMouseLeave);
+      el.removeEventListener("mousemove", onMouseMove);
+      el.removeEventListener("mouseleave", onMouseLeave);
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf);
     };
@@ -128,12 +128,13 @@ export default function WebBannerParallaxEffect({
               <ul className="partnersUl d-flex gap-3 align-items-center flex-wrap">
                 {partners.map((p, i) => (
                   <li key={`partner-${i}`}>
-                    <Image
+                    <img
                       src={p.src}
                       alt={p.alt || "partner"}
-                      width={p.width || 112}
-                      height={p.height || 52}
-                      priority={!!p.priority}
+                      loading="lazy"
+                      decoding="async"
+                      className={p.className || ""}
+                      style={{ maxWidth: "100%", height: "auto", ...(p.style || {}) }}
                     />
                   </li>
                 ))}
@@ -147,32 +148,43 @@ export default function WebBannerParallaxEffect({
               {/* Decor (behind/around) */}
               {decor?.map((d, i) => {
                 const key = d.key || `decor-${i}`;
-                const baseStyle = { position: "absolute", ...(d.style || {}) };
+                const baseStyle = {
+                  position: "absolute",
+                  ...(d.style || {}),
+                };
                 return (
-                  <Image
+                  <img
                     key={key}
-                    ref={(el) => {
-                      if (d.parallax) itemsRef.current[key] = el;
+                    ref={(node) => {
+                      if (d.parallax) itemsRef.current[key] = node || undefined;
                     }}
                     src={d.src}
                     alt={d.alt || ""}
-                    width={d.width || 1}
-                    height={d.height || 1}
+                    loading={d.loading || "lazy"}
+                    decoding="async"
                     className={`decor ${d.className || ""}`.trim()}
-                    priority={!!d.priority}
-                    style={baseStyle}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      ...baseStyle,
+                    }}
                   />
                 );
               })}
 
-              {/* Main */}
-              <Image
+              {/* Main image */}
+              <img
                 src={image?.src || "/assets/images/convert-customer/ipad.png"}
                 alt={image?.alt || "Banner image"}
-                width={image?.width || 468}
-                height={image?.height || 613}
+                loading={image?.loading || "eager"}
+                decoding="async"
                 className={image?.className || "main-img"}
-                priority
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  height: "auto",
+                  ...(image?.style || {}),
+                }}
               />
             </div>
           </div>
@@ -182,7 +194,7 @@ export default function WebBannerParallaxEffect({
       {/* scoped styles */}
       <style jsx>{`
         .convertCustomer-area {
-          min-height: ${Math.max(image?.height || 613, 420)}px;
+          /* no fixed height; let image size define flow */
         }
         .main-img {
           position: relative;
@@ -193,8 +205,10 @@ export default function WebBannerParallaxEffect({
         .decor {
           transition: transform 0.18s ease-out;
           will-change: transform;
+          max-width: 11rem !important;
         }
-        /* default positions (can be overridden via item.style or className) */
+
+        /* default positions (override via data.decor[i].className or .style) */
         .decor.top-left    { top: -8px; left: -8px; }
         .decor.bottom-left { bottom: -10px; left: -16px; }
         .decor.bottom-right{ bottom: -12px; right: -12px; }

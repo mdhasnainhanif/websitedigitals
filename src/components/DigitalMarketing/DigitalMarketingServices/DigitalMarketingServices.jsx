@@ -1,35 +1,77 @@
 // /src/components/DigitalMarketingServices/DigitalMarketingServices.jsx
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { digitalMarketingPageData as defaultData } from "../../../app/Data/digitalMarketingPageData"; // relative import (no alias)
+import { digitalMarketingPageData as defaultData } from "../../../app/Data/digitalMarketingPageData";
+
 
 export default function DigitalMarketingServices({ data = defaultData }) {
   const { heading = "Digital Marketing Services", tabs = [] } = data || {};
   if (!tabs.length) return null;
 
-  // remember slide per tab
-  const initialIndices = useMemo(() => {
-    const obj = {};
-    tabs.forEach((t) => (obj[t.id] = 0));
-    return obj;
-  }, [tabs]);
-
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
-  const [indices, setIndices] = useState(initialIndices);
+  const containerRef = useRef(null);
 
-  const go = (tabId, dir) => {
-    setIndices((prev) => {
-      const max = (tabs.find((t) => t.id === tabId)?.items?.length || 1) - 1;
-      const next = Math.max(0, Math.min(max, (prev[tabId] || 0) + dir));
-      return { ...prev, [tabId]: next };
-    });
-  };
+  // ✅ Initialize Owl Carousel (arrows only) for the active tab
+  useEffect(() => {
+    let cleanupFns = [];
+
+    (async () => {
+      if (typeof window === "undefined" || !containerRef.current) return;
+
+      // Ensure jQuery & Owl are loaded on client
+      const $ = (await import("jquery")).default;
+      window.$ = window.jQuery = $;
+      await import("owl.carousel");
+
+      // Find the carousel inside the active tab only
+      const $activePanel = $(`#${CSS.escape(activeTab)}`, containerRef.current);
+      const $carousel = $activePanel.find(".owl-carousel");
+
+      // If already initialized, skip
+      if ($carousel.length && !$carousel.hasClass("owl-loaded")) {
+        $carousel.owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,  
+          dots: false,
+          navText: [
+            // LEFT (chevron)
+            '<span className="owl-prev-btn" aria-hidden="true" title="Previous">' +
+              '<svg width="20" height="20" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="M21 11H5.41l5.3-5.29a1 1 0 1 0-1.42-1.42l-7 7a1 1 0 0 0 0 1.42l7 7a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42L5.41 13H21a1 1 0 0 0 0-2" style="fill:#000"/></svg>' +
+            '</span>',
+            // RIGHT (chevron)
+            '<svg width="20" height="20" viewBox="0 0 24 24" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path d="m21.71 11.29-7-7a1 1 0 0 0-1.42 1.42l5.3 5.29H3a1 1 0 0 0 0 2h15.59l-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l7-7a1 1 0 0 0 0-1.42" style="fill:#000"/></svg>' +
+            '</span>',
+          ],
+          responsive: {
+            // You can change these like your example; keeping 1 per slide makes sense for this layout
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 },
+          },
+        });
+
+        // Cleanup for this specific instance
+        cleanupFns.push(() => {
+          try {
+            $carousel.trigger("destroy.owl.carousel");
+          } catch (_) {}
+        });
+      }
+    })();
+
+    return () => {
+      // destroy any initialized instances when tab changes/unmounts
+      cleanupFns.forEach((fn) => fn());
+      cleanupFns = [];
+    };
+  }, [activeTab]);
 
   return (
     <section className="section-padding pb-0">
-      <div className="container">
+      <div className="container" ref={containerRef}>
         {/* Heading */}
         <div className="row">
           <div className="col-12">
@@ -71,7 +113,6 @@ export default function DigitalMarketingServices({ data = defaultData }) {
             <div className="tab-content digitalMarketing-caseStudy">
               {tabs.map((tab) => {
                 const active = activeTab === tab.id;
-                const slideIndex = indices[tab.id] || 0;
 
                 return (
                   <div
@@ -81,132 +122,94 @@ export default function DigitalMarketingServices({ data = defaultData }) {
                     className={`tab-pane fade ${active ? "active show" : ""}`}
                     aria-hidden={!active}
                   >
-                    <div className="digital-marketing-carousel position-relative" data-slider>
-                      <div className="slider-rail">
-                        {tab.items.map((item, i) => (
-                          <div
-                            className={`item ${i === slideIndex ? "is-active" : ""}`}
-                            key={`${tab.id}-${i}`}
-                            aria-hidden={i !== slideIndex}
-                            style={{ display: i === slideIndex ? "block" : "none" }}
-                          >
-                            <div className="row align-items-center">
-                              <div className="col-md-6">
-                                <div className="digitalMarketing-caseStudy-imageArea">
-                                  <h2>{item.brand}</h2>
-                                  <Image
-                                    src={item.mainImage}
-                                    alt={item.mainImageAlt || item.brand}
-                                    width={669}
-                                    height={641}
-                                    priority={active && i === slideIndex}
-                                  />
-                                </div>
+                    <div className="owl-carousel owl-theme digitalMarketingCarousel">
+                      {tab.items.map((item, i) => (
+                        <div className="item" key={`${tab.id}-${i}`}>
+                          <div className="row align-items-center">
+                            <div className="col-md-6">
+                              <div className="digitalMarketing-caseStudy-imageArea">
+                                <h2>{item.brand}</h2>
+                                <Image
+                                  src={item.mainImage}
+                                  alt={item.mainImageAlt || item.brand}
+                                  width={669}
+                                  height={641}
+                                  // priority only matters when visible; Owl handles visibility
+                                  priority={active}
+                                />
                               </div>
+                            </div>
 
-                              <div className="col-md-6">
-                                <div className="digitalMarketing-caseStudy-detailArea">
-                                  <h3 dangerouslySetInnerHTML={{ __html: item.kpiHeading }} />
-                                  <ul className="list-unstyled d-flex flex-wrap gap-3">
-                                    {item.stats?.map((s, idx) => (
-                                      <li key={`stat-${idx}`} style={{ minWidth: 200 }}>
-                                        <Image src={s.img} alt={s.label} width={213} height={119} />
-                                        <h3>{s.value}</h3>
-                                        <p>{s.label}</p>
-                                      </li>
-                                    ))}
-                                  </ul>
+                            <div className="col-md-6">
+                              <div className="digitalMarketing-caseStudy-detailArea">
+                                <h3 dangerouslySetInnerHTML={{ __html: item.kpiHeading }} />
+                                <ul className="list-unstyled d-flex flex-wrap gap-3">
+                                  {item.stats?.map((s, idx) => (
+                                    <li key={`stat-${idx}`} style={{ minWidth: 200 }}>
+                                      <Image src={s.img} alt={s.label} width={213} height={119} />
+                                      <h3>{s.value}</h3>
+                                      <p>{s.label}</p>
+                                    </li>
+                                  ))}
+                                </ul>
 
-                                  <div className="digitalMarketing-caseStudy-details">
-                                    <div className="row rowGap2">
-                                      <div className="col-md-4">
-                                        <h3>Challenges</h3>
-                                        <p>{item.details?.challenges}</p>
-                                      </div>
-                                      <div className="col-md-4">
-                                        <h3>Solutions</h3>
-                                        <p>{item.details?.solutions}</p>
-                                      </div>
-                                      <div className="col-md-4">
-                                        <h3>Results</h3>
-                                        <p>{item.details?.results}</p>
-                                        {!!item.details?.resultsImg && (
-                                          <Image
-                                            src={item.details.resultsImg}
-                                            alt="Results"
-                                            width={175}
-                                            height={55}
-                                          />
-                                        )}
-                                      </div>
+                                <div className="digitalMarketing-caseStudy-details">
+                                  <div className="row rowGap2">
+                                    <div className="col-md-4">
+                                      <h3>Challenges</h3>
+                                      <p>{item.details?.challenges}</p>
+                                    </div>
+                                    <div className="col-md-4">
+                                      <h3>Solutions</h3>
+                                      <p>{item.details?.solutions}</p>
+                                    </div>
+                                    <div className="col-md-4">
+                                      <h3>Results</h3>
+                                      <p>{item.details?.results}</p>
+                                      {!!item.details?.resultsImg && (
+                                        <Image
+                                          src={item.details.resultsImg}
+                                          alt="Results"
+                                          width={175}
+                                          height={55}
+                                        />
+                                      )}
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        ))}
-                      </div>
-
-                      {/* Controls */}
-                      <div className="slider-controls d-flex gap-2 mt-3">
-                        <button
-                          type="button"
-                          className="btn btn-outline-secondary"
-                          onClick={() => go(tab.id, -1)}
-                          disabled={(indices[tab.id] || 0) <= 0}
-                          aria-label="Previous"
-                        >
-                          ‹
-                        </button>
-                        <button
-                          type="button"
-                          className="btn btn-outline-secondary"
-                          onClick={() => go(tab.id, +1)}
-                          disabled={(indices[tab.id] || 0) >= tab.items.length - 1}
-                          aria-label="Next"
-                        >
-                          ›
-                        </button>
-
-                        <div className="ms-2 d-flex align-items-center gap-1">
-                          {tab.items.map((_, dotIdx) => (
-                            <button
-                              key={`dot-${dotIdx}`}
-                              type="button"
-                              className={`dot ${dotIdx === (indices[tab.id] || 0) ? "active" : ""}`}
-                              onClick={() =>
-                                setIndices((prev) => ({ ...prev, [tab.id]: dotIdx }))
-                              }
-                              aria-label={`Go to slide ${dotIdx + 1}`}
-                            />
-                          ))}
                         </div>
-                      </div>
+                      ))}
                     </div>
+                    {/* /owl-carousel */}
                   </div>
                 );
               })}
             </div>
-
-            {/* tiny styles for dots/animation */}
-            <style jsx>{`
-              .slider-controls .dot {
-                width: 8px;
-                height: 8px;
-                border-radius: 999px;
-                border: 1px solid #999;
-                background: transparent;
-              }
-              .slider-controls .dot.active { background: #333; }
-              [data-slider] .item.is-active { animation: fadeIn 280ms ease; }
-              @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(4px); }
-                to { opacity: 1; transform: translateY(0); }
-              }
-            `}</style>
           </div>
         </div>
+
+        {/* (Optional) tiny style touch-ups if needed */}
+        <style jsx>{`
+          /* Hide dots globally just in case some theme adds them */
+          :global(.owl-dots) {
+            display: none !important;
+          }
+          /* Make owl nav (arrows) nicely spaced */
+          :global(.owl-nav) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+          }
+          :global(.owl-nav button.owl-prev),
+          :global(.owl-nav button.owl-next) {
+            border: 1px solid #ddd;
+            padding: 6px 12px;
+            border-radius: 6px;
+          }
+        `}</style>
       </div>
     </section>
   );

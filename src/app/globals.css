@@ -8402,3 +8402,35 @@ section.notHero{
 #mobile-menu.open{
   width: 100%;
 }
+
+.digitalMarketingCarousel{
+  position: relative;
+}
+
+.digitalMarketingCarousel{
+  position: relative;
+}
+
+.digitalMarketingCarousel .owl-nav button{
+  position: absolute;
+  top: 50%;
+  border: 2px solid gray !important;
+  border-radius: 50% !important;
+}
+
+.digitalMarketingCarousel .owl-nav button svg{
+  width: 20px;
+  height: 20px;
+}
+.digitalMarketingCarousel .owl-nav .owl-prev {
+  left: -3%;
+}
+.digitalMarketingCarousel .owl-nav .owl-next {
+  right: -5%;
+}
+
+.convertCustomer-images>img.top-left {
+  top: -8%;
+  left: 5%;
+  width: 22.5%;
+}

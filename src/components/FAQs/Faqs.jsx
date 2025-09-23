@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from './Faq.module.css'
 
 const FAQ = ({ 
-  title = "FAQ", 
+  title = "Frequently Asked Questions", 
   faqs = [], 
   className = "",
   sectionClassName = "section-padding gradient-circle rightCenter-gradient"

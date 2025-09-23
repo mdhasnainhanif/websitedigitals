@@ -43,6 +43,7 @@
 }
 .pt_double 
 {
+    padding: var(--sectionPadding-top) 0 var(--sectionPadding-bottom);
     padding-top: calc(var(--sectionPadding-top) * 2)
 }
 .pt_default_mob 
