@@ -229,7 +229,7 @@ export default function HeroBanner() {
             </div>
             {/* Logos carousel */}
             <div className="row">
-              <div className={`owl-carousel ${styles.homebannerLogos2}`}>
+              <div className={`owl-carousel heroLogoSlider ${styles.homebannerLogos2}`}>
                 {[1, 2, 3, 4, 5].map((n) => (
                   <div className="item" key={n}>
                     <div className={styles.smallLogos2}>

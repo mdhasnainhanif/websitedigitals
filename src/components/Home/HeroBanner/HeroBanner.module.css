@@ -394,6 +394,9 @@
 }
 
 @media (max-width: 576px) {
+  .parallexEffect{
+    display: none;
+  }
   .homeBanner .mobileParallexEffect {
     display: none;
   }
@@ -469,9 +472,9 @@
     margin: 0 0 0 1rem;
   }
 
-  .homeBannerArea > .homeBanner .bannerHeading > h1 {
+  /* .homeBannerArea > .homeBanner .bannerHeading > h1 {
     padding-right: 2rem;
-  }
+  } */
 }
 
 @media (max-width: 400px) {

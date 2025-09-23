@@ -614,3 +614,16 @@ ul.count_ul>li::before {
 :global([data-case-study] .nav-tabs > li > a.active img) {
   box-shadow: .3125rem .3125rem 0 0 #3c7cff !important;
 }
+@media (max-width: 768px) {
+    .basic_tabs>.nav_tabs {
+        border-radius: 4rem;
+    }
+    .single_webPortfolio>.webPortfolio_imageArea>.main_imageArea>.frontImage>img {
+        left: -.625rem;
+        width: 103%;
+        object-fit: cover;
+    }
+    .single_webPortfolio>.webPortfolio_imageArea>.main_imageArea>.backImage{
+        min-width: unset;
+    }
+}

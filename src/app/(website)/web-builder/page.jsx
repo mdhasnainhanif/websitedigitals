@@ -70,7 +70,7 @@ export default function WebBuilderPage() {
         columnCount={webBuilderIndustriesColumnCount}
         className={webBuilderIndustriesClassName} 
       />
-      <WhyChooseSection {...whyChooseData} />
+      <WhyChooseSection {...whyChooseData} colCount1={7} colCount2={5} />
       <ScrollSection data={scrollSectionData} />
       <DesignCustomizeCardSection
         heading={designCustomizeHeading}

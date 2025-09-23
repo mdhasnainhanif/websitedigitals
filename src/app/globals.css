@@ -967,6 +967,14 @@ input {
 }
 
 @media (max-width: 576px) {
+  section.homeFaqs{
+    padding-top: 0;
+  }
+  .owl-carousel.heroLogoSlider{
+    margin-top: 5rem;
+    opacity: 1 !important;
+    display: block;
+  }
   .cta-section .banner-form {
     width: 90%;
   }
@@ -8385,4 +8393,12 @@ section.notHero{
 
 .notHero.order2 .col-md-6:nth-child(1){
   order: 2;
+}
+
+.filterInvert svg{
+  fill: #000;
+}
+
+#mobile-menu.open{
+  width: 100%;
 }

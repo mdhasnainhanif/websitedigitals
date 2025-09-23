@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import styles from './Header.module.css'
-import { EmailIcon, LocationIcon, PhoneIcon } from '../../icons'
+import { CrossIcon, EmailIcon, HamburgerIcon, LocationIcon, PhoneIcon, RoundLeftIcon, RoundRightIcon } from '../../icons'
 
 /**
  * Converted from provided HTML to JSX for Next.js
@@ -484,15 +484,15 @@ export default function Header() {
 
         {/* Hamburger */}
         <button id="menu-toggle" className={styles.menu_toggle} aria-label="Open menu" onClick={() => { setMobileOpen(true); setMobileLevel1(null); setMobileInner(null) }}>
-          <i className="fas fa-bars" />
+          <HamburgerIcon />
         </button>
 
         {/* Sliding Menu */}
         <nav id="mobile-menu" className={`${styles.mobile_menu} ${mobileOpen ? 'open' : ''}`} aria-hidden={!mobileOpen}>
           <div className={styles.inner_logo_close}>
-            <img src="/assets/images-webp/website-digitals.webp" alt="Logo" className="logo-img" />
-            <button id="close-menu" className={styles.close_menu} aria-label="Close menu" onClick={() => setMobileOpen(false)}>
-              <i className="fa-solid fa-xmark" />
+            <img width={150} src="/assets/images-webp/website-digitals.webp" alt="Logo" className="logo-img" />
+            <button id="close-menu" className={`${styles.close_menu} filterInvert ${mobileOpen ? 'close-menu' : ''}`} aria-label="Close menu" onClick={() => setMobileOpen(false)}>
+              <CrossIcon />
             </button>
           </div>
 
@@ -511,7 +511,7 @@ export default function Header() {
                 <li key={item.key}>
                   <a href="#" onClick={(e) => { e.preventDefault(); setMobileLevel1(item.key); }}>
                     <div>{item.label}</div>
-                    <i className="fa-solid fa-angle-right" />
+                    <RoundRightIcon />
                   </a>
                 </li>
               ))}
@@ -526,7 +526,7 @@ export default function Header() {
             <ul>
               <li>
                 <a href="#" onClick={(e)=>{e.preventDefault(); setMobileLevel1(null)}}>
-                  <i className="fa-solid fa-angle-left" />&emsp;Back
+                  <RoundLeftIcon />&emsp;Back
                 </a>
               </li>
 
@@ -601,7 +601,7 @@ export default function Header() {
                     <li key={label}>
                       <a href="#" onClick={(e)=>{e.preventDefault(); setMobileInner(label)}}>
                         {label}
-                        <i className="fa-solid fa-angle-right" />
+                        <RoundRughtIcon />
                       </a>
                     </li>
                   ))}
@@ -614,7 +614,7 @@ export default function Header() {
                     <li key={label}>
                       <a href="#" onClick={(e)=>{e.preventDefault(); setMobileInner(label)}}>
                         {label}
-                        <i className="fa-solid fa-angle-right" />
+                        <RoundRightIcon />
                       </a>
                     </li>
                   ))}
@@ -628,7 +628,7 @@ export default function Header() {
             <ul>
               <li>
                 <a href="#" onClick={(e)=>{e.preventDefault(); setMobileInner(null)}}>
-                  <i className="fa-solid fa-angle-left" />&emsp;Back
+                  <RoundLeftIcon />&emsp;Back
                 </a>
               </li>
               {/* Example static items; replace with your routes */}
