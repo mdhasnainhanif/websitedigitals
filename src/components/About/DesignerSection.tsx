@@ -1,5 +1,6 @@
 // components/DesignerSection.jsx
 import Image from 'next/image';
+import styles from './About.module.css'
 
 const items = [
   {
@@ -48,20 +49,20 @@ const items = [
 
 export default function DesignerSection() {
   return (
-    <section className="section-padding gradient-circle leftCenter-gradient">
+    <section className={`${styles.section_padding} ${styles.gradient_circle} ${styles.leftCenter_gradient}`}>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading text-center">
+            <div className={`${styles.section_heading} ${styles.text_center}`}>
               <h2>Build Your Own Website Without a Designer</h2>
             </div>
           </div>
         </div>
 
-        <div className="row rowGap4">
+        <div className={`row ${styles.rowGap4}`}>
           {items.map((item, i) => (
             <div className="col-md-4" key={i}>
-              <div className="single-whyChooseUs">
+              <div className={`${styles.single_whyChooseUs}`}>
                 <Image
                   src={item.src}
                   width={109}

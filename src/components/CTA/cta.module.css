@@ -1,3 +1,7 @@
+.section_padding 
+{
+    padding: var(--sectionPadding-top) 0 var(--sectionPadding-bottom);
+}
 .section_heading.text_center
 {
     margin-bottom: 3.75rem;

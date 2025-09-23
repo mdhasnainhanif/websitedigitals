@@ -1,3 +1,21 @@
+.section_heading.text_center>h2
+{
+    max-width: 45.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.125rem;
+}
+.section_heading>h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.125rem;
+}
+.text_center
+{
+    text-align: center;
+}
 .inner_banner,
 .nice_select .option.focus,
 .nice_select .option.selected.focus,
@@ -229,7 +247,7 @@ ol.breadcrumb {
 .progress_container>h3, .scroller_list>li>a>h3, body {
     font-family: Poppins, sans-serif;
 }
-.progress-area.primary {
+.progress_area.primary {
     --progress-color: var(--primary);
 }
 .about_imageArea,
@@ -263,20 +281,22 @@ ol.breadcrumb {
     border-radius: 10rem;
 }
 .progress_fill {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: var(--percent);
-    height: 100%;
-    background: var(--progress-color);
-    transition: width .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--percent, 0%);
+  height: 100%;
+  background: #3c7cff;
+  transition: width .3s;
+  border-radius: 10rem;
 }
+
 .progress_fill, .progress_inner {
     border-radius: 10rem;
 }
 .progress_area>.progress_count {
     position: absolute;
-    border: 3px solid var(--progress-color);
+    border: 3px solid #3cb8ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,29 +306,140 @@ ol.breadcrumb {
     font-size: 1.625rem;
     background: rgba(255, 255, 255, .7);
     transform: translate(0, -50%);
-    left: var(--percent);
+    left: 77%;
     border-radius: 50%;
     transition: left .3s, transform .3s;
 }
-.top_one>p {
+.fill99 {
+  background-color: #3c7cff; 
+}
+
+.fill77 {
+  background-color: #3cb8ff; 
+}
+
+.fill89 {
+  background-color: #3cb8ff;
+}
+.progress_container+.progress_container {
+    padding-top: 1.875rem;
+}
+.top_one {
+    position: relative;
+    height: 100%;
+}
+.top_one > p {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: .2;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
     font-size: 6rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    -webkit-writing-mode: vertical-rl;
-    -webkit-text-orientation: mixed;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    transform: translate(-100%, 0);
 }
-.ctaImageArea, .top_one {
-    position: relative;
-    height: 100%;
+
+.section_padding {
+    padding: 4.75rem 5.3125rem;
 }
-.section-padding {
-    padding: var(--sectionPadding-top) 0 var(--sectionPadding-bottom);
+.single_whyChooseUs>img {
+    width: 5.75rem;
+    height: 5.75rem;
+    object-fit: contain;
+    margin-bottom: 1.25rem;
+}
+.single_whyChooseUs>h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .625rem;
+}
+.blogPage_card>.detailArea>.blog_timeAuthor>li, 
+.contact_featureContent>p, 
+.single_whyChooseUs>p {
+    font-size: .9375rem;
+}
+.offer_left>.head, .pricing_price>.link_area, .single_team, .single_whyChooseUs, .steps_footer {
+    text-align: center;
+}
+.rowGap4
+{
+        row-gap: 1.5rem;
+}
+.basic_tabs, .mb-3_75, .section_heading.text_center {
+    margin-bottom: 3.75rem;
+}
+.teams_carousel .single_team {
+    padding: 0 1rem;
+}
+.teams_carousel .single_team {
+    padding: 0 1rem
+}
+
+.single_team>img {
+    max-width: 18rem;
+    margin: 0 auto 1.5rem
+}
+
+.team_content>h3 {
+    font-size: 1.375rem;
+    margin-bottom: .375rem;
+    font-weight: 600
+}
+.offer_left>.head, .pricing_price>.link_area, .single_team, .single_whyChooseUs, .steps_footer {
+    text-align: center;
+}
+.team_content>h3 {
+    font-size: 1.375rem;
+    margin-bottom: .375rem;
+    font-weight: 600;
+}
+.caseStudy_resultCard>p, 
+.caseStudy_serviceDetail>.top>p, 
+.digitalMarketing_caseStudy_detailArea>ul>li>p, 
+.single_contentWriting_card>ul, 
+.single_step_cardDetail>p, 
+.team_content>p, 
+.webPortfolio_caseStudyDetail>p
+{
+    font-size: .875rem;
+}
+.teams_carousel :global(.owl-nav button) {
+  border: 1px solid currentColor !important; /* use currentColor or set a color explicitly */
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.caseStudy-form .basic-inputArea>.link_area>button, 
+.caseStudy-mobileHolderArea>img, 
+.caseStudy-windowArea>img, 
+.caseStudy-windowHolderArea>img, 
+.digitalMarketing-caseStudy-details img, 
+.header, 
+.iti, 
+.logoDesign-sliders>ul>li>img, 
+.mapImage, 
+.megaMenuArea, 
+.menu>li:hover>a::before, 
+.menu>li>a.active::before, 
+.single-blog>.blog-cardDetail>a:hover>span::before, 
+.single-caseStudy-feature>img, 
+.single-caseStudy-service>img, 
+.single-webPortfolio img, 
+.single-webPortfolio.static_portfolio>.webPortfolio-content>.webPortfolio-contentArea, 
+.width_100
+{
+    width:100%;
+}
+.primary_extra_light_bg, .split_section
+{
+
 }

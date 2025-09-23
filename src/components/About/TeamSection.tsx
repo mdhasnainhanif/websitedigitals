@@ -3,6 +3,7 @@
 
 import Image from 'next/image';
 import { useEffect, useMemo, useRef } from 'react';
+import styles from './About.module.css'
 
 // Inject Owl CSS via <link> tags (no bundling issues)
 function useOwlCss() {
@@ -103,7 +104,7 @@ export default function TeamSection() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading text-center">
+            <div className={`${styles.section_heading} ${styles.text_center}`}>
               <h2>Meet Dedicated Team</h2>
               <p>
                 Our team is composed of passionate professionals who are experts in their fields.
@@ -113,10 +114,10 @@ export default function TeamSection() {
           </div>
 
           <div className="col-12">
-            <div ref={carouselRef} className="teams-carousel owl-carousel">
+            <div ref={carouselRef} className={`${styles.teams_carousel} teams-carousel owl-carousel`}>
               {TEAM.map((member, i) => (
                 <div className="item" key={i}>
-                  <div className="single-team">
+                  <div className={styles.single_team}>
                     <Image
                       src={member.src}
                       width={342}
@@ -125,7 +126,7 @@ export default function TeamSection() {
                       // style match: keep object-fit cover if your CSS expects it
                       className=""
                     />
-                    <div className="team-content">
+                    <div className={`${styles.team_content}`}>
                       <h3>{member.name}</h3>
                       <p>{member.role}</p>
                     </div>

@@ -18,6 +18,7 @@
   --small-section-padding: 3rem;
   --header-height: 4.625rem;
   --animation-multiplier: 3.125s;
+  --primary-extra-light-bg:#e0f5fe;
 }
 
 /* @media (prefers-color-scheme: dark) {

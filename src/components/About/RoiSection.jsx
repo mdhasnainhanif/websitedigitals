@@ -22,61 +22,60 @@ export default function RoiSection({ data, className = "" }) {
   } = data || {};
 
   useEffect(() => {
-    if (!areaRef.current || hasRunRef.current) return;
+  if (!areaRef.current || hasRunRef.current) return;
+  hasRunRef.current = true;
 
-    const areaEl = areaRef.current;
-    const duration = options && typeof options.durationMs === "number" ? options.durationMs : 2000;
+  const areaEl = areaRef.current;
+  const duration = options?.durationMs || 2000;
 
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (!entries.some((e) => e.isIntersecting)) return;
-        io.disconnect();
-        hasRunRef.current = true;
-        startAnimation();
-      },
-      { threshold: options && typeof options.threshold === "number" ? options.threshold : 0.25 }
-    );
+  const containers = Array.from(areaEl.querySelectorAll("[class*='progress_container']"));
 
-    io.observe(areaEl);
-    return () => io.disconnect();
+  containers.forEach((container) => {
+    const target = Number(container.getAttribute("data-countto") || 0);
+    const countSpan = container.querySelector("[class*='count']");
+    const barEl = container.querySelector("[class*='progress_area']");
+    const countBox = container.querySelector("[class*='progress_count']");
 
-    function startAnimation() {
-      const containers = Array.from(areaEl.querySelectorAll(".progress-container"));
+    // 1️⃣ fixed positions for circle
+    let fixedLeft = 0;
+    if (target === 99) fixedLeft = 84;
+    else if (target === 77) fixedLeft = 62;
+    else if (target === 89) fixedLeft = 74;
 
-      containers.forEach((container) => {
-        const target = Number(container.getAttribute("data-countto") || 0);
-        const currentCss = getComputedStyle(container).getPropertyValue("--percent") || "0%";
-        const startVal = parseFloat(currentCss) || 0;
-
-        const countSpan = container.querySelector(".progress-count .count");
-        const barEl = container.querySelector(".progress-area");
-        const countBox = container.querySelector(".progress-count");
-
-        let startTs = 0;
-        const step = (ts) => {
-          if (!startTs) startTs = ts;
-          const rawP = Math.min(1, (ts - startTs) / duration);
-          const p = easeInOutSine(rawP);
-          const now = Math.floor(startVal + (target - startVal) * p);
-
-          container.style.setProperty("--percent", `${now}%`);
-          if (countSpan) countSpan.textContent = String(now);
-          if (barEl) barEl.setAttribute("aria-valuenow", String(now));
-
-          // move % badge along the bar (same logic as your jQuery)
-          if (countBox) {
-            const n = target ? Math.floor((now / target) * 115) : 0;
-            const x = n ? -1 * n : 0;
-            countBox.style.transform = `translate(${x}%, -50%)`;
-          }
-
-          if (rawP < 1) requestAnimationFrame(step);
-        };
-
-        requestAnimationFrame(step);
-      });
+    // 2️⃣ set circle immediately (before animation)
+    if (countBox) {
+      const offset = 12;
+      countBox.style.left = `${fixedLeft}%`;
+      countBox.style.transform = `translate(calc(-50% + ${offset}px), -50%)`;
     }
-  }, [options?.durationMs, options?.threshold]);
+
+    // 3️⃣ animate number and bar fill
+    let startTs = 0;
+const step = (ts) => {
+  if (!startTs) startTs = ts;
+  const rawP = Math.min(1, (ts - startTs) / duration);
+  const p = easeInOutSine(rawP);
+  const now = Math.floor(target * p);
+
+  // update bar fill
+  container.style.setProperty("--percent", `${now}%`);
+  if (countSpan) countSpan.textContent = `${now}%`;  // <-- yaha % add
+  if (barEl) barEl.setAttribute("aria-valuenow", String(now));
+
+  // animate circle left with easing
+  if (countBox) {
+    const offset = 12;
+    const circleLeft = Math.floor(p * fixedLeft); // start 0 → fixedLeft
+    countBox.style.left = `${circleLeft}%`;
+    countBox.style.transform = `translate(calc(-50% + ${offset}px), -50%)`;
+  }
+
+  if (rawP < 1) requestAnimationFrame(step);
+};
+
+requestAnimationFrame(step);
+  });
+}, [options?.durationMs]);
 
   return (
     <section className={`${styles.section_padding} ${styles.pb_half} ${styles.overflow_hidden} ${className}`}>
@@ -139,10 +138,16 @@ export default function RoiSection({ data, className = "" }) {
                     aria-valuenow={0}
                   >
                     <div className={styles.progress_inner}>
-                      <div className={styles.progress_fill}></div>
+                      <div
+                        className={`${styles.progress_fill} ${
+                          m.target === 99 ? styles.fill99 :
+                          m.target === 77 ? styles.fill77 :
+                          m.target === 89 ? styles.fill89 : ""
+                        }`}
+                      ></div>
                     </div>
                     <div className={styles.progress_count}>
-                      <span className={styles.count}></span>%
+                      <span className={styles.count}></span>
                     </div>
                   </div>
                 </div>
