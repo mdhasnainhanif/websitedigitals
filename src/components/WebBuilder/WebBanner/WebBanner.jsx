@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LandingPageForm from "@/components/LandingPage/LandingPageForm";
+import BannerImageSlider from "@/components/BannerImageSlider/BannerImageSlider";
+import TechnologyNameSlider from "@/components/TechnologyNameSlider/TechnologyNameSlider";
 
 export default function WebBuilderBanner({
   data,
@@ -159,61 +161,13 @@ export default function WebBuilderBanner({
             )}
           </div>
         </div>
+        {islandingPage && (
+          <>
+            <BannerImageSlider />
+            <TechnologyNameSlider />
+          </>
+        )}
       </section>
-      {islandingPage && (
-        <div className="imgSlideRow tech-track">
-          <div className="imgLeftSlider">
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide1.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide2.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide3.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide4.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide1.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide2.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide3.webp"
-                alt="slideImg"
-              />
-            </div>
-            <div className="slideImg">
-              <img
-                src="/assets/images/landingpage/imgslide4.webp"
-                alt="slideImg"
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 }
