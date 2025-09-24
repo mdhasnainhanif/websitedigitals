@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* <link rel="stylesheet" href="/assets/css/style.css" /> */}
+        <link rel="stylesheet" href="/assets/css/style.css" />
         <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
 
         <link
