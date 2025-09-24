@@ -8455,6 +8455,8 @@ section.landingPageBanner h1 span {
 .landingPageLink {
   font-weight: 600;
   color: #00c8ff !important;
+  display: block;
+  margin: 0 auto;
 }
 
 .landingPageBanner .setUsApart p {
@@ -8544,15 +8546,16 @@ section.landingPageBanner h1 span {
   animation: 30s linear infinite scrollLeft;
 }
 
-.imgSlideRow .imgLeftSlider img{
+.imgSlideRow .imgLeftSlider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: 17rem;
+  max-width: 16rem;
 }
 
-
-
+.imgSlideRow.tech-track .imgLeftSlider {
+  animation: 20s linear infinite scrollLeft;
+}
 
 @keyframes scrollLeft {
   0% {
@@ -8561,4 +8564,9 @@ section.landingPageBanner h1 span {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.imgSlideRow {
+  position: relative;
+  mask-image: linear-gradient(to right, #fff0 0%, #000000 25%, #000000 75%, #fff0 100%);
 }
