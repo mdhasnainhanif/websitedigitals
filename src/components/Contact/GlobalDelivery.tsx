@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import styles  from './Contact.module.css'
 
 interface CounterData {
   id: string;
@@ -95,22 +96,22 @@ export default function GlobalDeliverySection() {
   return (
     <section 
       ref={sectionRef}
-      className="section-padding primary-extra-light-bg"
+      className={`${styles.section_padding} primary-extra-light-bg`}
     >
       <div className="container">
-        <div className="row align-items-center rowGap4">
+        <div className={`row align-items-center ${styles.rowGap4}`}>
           {/* Left Column - Stats */}
           <div className="col-md-6">
-            <div className="section-heading pb-half">
+            <div className={`${styles.section_heading} ${styles.pb_half}`}>
               <h2>We Delivered Globally</h2>
               <p>Years of dedication and experience helped us serve:</p>
             </div>
             
-            <div className="row rowGap2 counter-container">
+            <div className={`row ${styles.rowGap2} ${styles.counter_container}`}>
               {counterData.map((counter) => (
                 <div key={counter.id} className="col-6">
-                  <div className="contact-featureArea">
-                    <div className="contact-featureImage">
+                  <div className={styles.contact_featureArea}>
+                    <div className={styles.contact_featureImage}>
                       <Image
                         src={counter.icon}
                         width={43}
@@ -118,9 +119,9 @@ export default function GlobalDeliverySection() {
                         alt={counter.alt}
                       />
                     </div>
-                    <div className="contact-featureContent">
+                    <div className={styles.contact_featureContent}>
                       <h3>
-                        <span className="simple-counter">
+                        <span className={styles.simple_counter}>
                           {counters[counter.id] || 0}
                         </span>
                         {counter.suffix}

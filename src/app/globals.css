@@ -19,6 +19,8 @@
   --header-height: 4.625rem;
   --animation-multiplier: 3.125s;
   --primary-extra-light-bg:#e0f5fe;
+  --primary: #3c7cff;
+  --primary_light_bg:#ecf9ff;
 }
 
 /* @media (prefers-color-scheme: dark) {

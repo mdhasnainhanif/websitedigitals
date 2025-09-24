@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import styles from './BlogTab.module.css';
 
 function BlogCard({ post }) {
   const {
@@ -13,18 +14,18 @@ function BlogCard({ post }) {
   } = post;
 
   return (
-    <div className="single-blog">
-      <div className="blog-imageArea">
+    <div className={styles.single_blog}>
+      <div className={styles.blog_imageArea}>
         <img
           loading="lazy"
           src={imgSrc}
-          className="card-img-top"
+          className={styles.card_img_top}
           alt={imgAlt}
           style={{ maxHeight: 300, objectFit: "cover", width: "100%" }}
         />
       </div>
-      <div className="blog-cardDetail">
-        <ul className="blog-tags"><li>{category}</li></ul>
+      <div className={styles.blog_cardDetail}>
+        <ul className={styles.blog_tags}><li>{category}</li></ul>
         <h3>{title}</h3>
         <p>{excerpt}</p>
         {external ? (
@@ -48,15 +49,15 @@ export default function BlogTab({ tabs = [], postsByTab = {}, className }) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
 
   return (
-    <section className={`section-padding ${className || ""}`}>
+    <section className={`${styles.section_padding} ${className || ""}`}>
       <div className="container">
         <div className="row">
           <div className="col-12">
             {/* TABS — exact classes/structure you provided */}
-            <div className="basic-tabs home-portfolio-tabs">
-              <ul className="nav nav-tabs" id="outerTabs" role="tablist">
+            <div className={`${styles.basic_tabs} ${styles.small_tabs}`}>
+              <ul className={`nav nav-tabs ${styles.nav_tabs}`} id="outerTabs" role="tablist">
                 {tabs.map((t) => (
-                  <li className="nav-item" key={t.id}>
+                  <li className={`nav-item ${styles.nav_item}`} key={t.id}>
                     <a
                       className={`nav-link ${activeTab === t.id ? "active" : ""}`}
                       data-bs-toggle="tab"
@@ -69,7 +70,7 @@ export default function BlogTab({ tabs = [], postsByTab = {}, className }) {
                       }}
                     >
                       {t.whiteIcon && (
-                        <img src={t.whiteIcon} alt={t.label} className="white-img" />
+                        <img src={t.whiteIcon} alt={t.label} className={styles.white_img} />
                       )}
                       {t.colorIcon && (
                         <img src={t.colorIcon} alt={t.label} />

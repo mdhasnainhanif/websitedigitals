@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './Contact.module.css';
 
 const partners = [
   {
@@ -36,9 +37,9 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="afterBanner-partnersSection dark-section">
+    <section className={`${styles.afterBanner_partnersSection} ${styles.dark_section}`}>
       <div className="container">
-        <ul className="afterBanner-partners">
+        <ul className={`${styles.afterBanner_partners}`}>
           {partners.map((partner, index) => (
             <li key={index}>
               <Image

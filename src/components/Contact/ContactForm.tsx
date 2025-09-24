@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
+import styles from './Contact.module.css';
 
 interface ContactFormData {
   fname: string;
@@ -79,17 +80,17 @@ export default function ContactBanner() {
   };
 
   return (
-    <section className="inner-banner">
+    <section className={styles.inner_banner}>
       <div className="container">
-        <div className="row rowGap4 col-reverse-mob">
+        <div className={`${styles.rowGap4} row ${styles.col_reverse_mob}`}>
           {/* Left Column - Contact Form */}
           <div className="col-md-6">
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
+            <nav aria-label={styles.breadcrumb}>
+              <ol className={styles.breadcrumb}>
+                <li className={styles.breadcrumb_item}>
                   <a href="#">Home</a>
                 </li>
-                <li className="breadcrumb-item active" aria-current="page">
+                <li className={`${styles.breadcrumb_item} ${styles.active}`} aria-current="page">
                   Contact Us
                 </li>
               </ol>
@@ -98,17 +99,17 @@ export default function ContactBanner() {
             <form 
               method="post" 
               action="" 
-              className="contactPage-formArea" 
+              className={styles.contactPage_formArea} 
               id="contactformsec"
               onSubmit={handleSubmit}
             >
-              <div className="row">
+              <div className={`row ${styles.rowGap5}`}>
                 <div className="col-12">
                   <h3>Fill Out The Form And We&apos;ll Get in Touch With You Shortly.</h3>
                 </div>
                 
-                <div className="col-md-6">
-                  <div className="basic-inputArea">
+                <div className={`col-md-6 ${styles.p_1}`}>
+                  <div className={styles.basic_inputArea}>
                     <input
                       type="text"
                       placeholder="First Name"
@@ -116,13 +117,14 @@ export default function ContactBanner() {
                       id="contactsec_fname"
                       value={formData.fname}
                       onChange={handleInputChange}
+                      className={styles.inpt}
                       required
                     />
                   </div>
                 </div>
                 
-                <div className="col-md-6">
-                  <div className="basic-inputArea">
+                <div className={`col-md-6 ${styles.p_1}`}>
+                  <div className={styles.basic_inputArea}>
                     <input
                       type="text"
                       placeholder="Last Name"
@@ -130,13 +132,14 @@ export default function ContactBanner() {
                       id="contactsec_lname"
                       value={formData.lname}
                       onChange={handleInputChange}
+                      className={styles.inpt}
                       required
                     />
                   </div>
                 </div>
                 
-                <div className="col-md-6">
-                  <div className="basic-inputArea">
+                <div className={`col-md-6 ${styles.p_1}`}>
+                  <div className={styles.basic_inputArea}>
                     <input
                       type="email"
                       placeholder="Business Email"
@@ -144,16 +147,17 @@ export default function ContactBanner() {
                       id="contactsec_businessemail"
                       value={formData.businessemail}
                       onChange={handleInputChange}
+                      className={styles.inpt}
                       required
                     />
                   </div>
                 </div>
                 
-                <div className="col-md-6">
+                <div className={`col-md-6 ${styles.p_1}`}>
                   <div className="basic-inputArea">
                     <input
                       type="text"
-                      className="phone-number"
+                      className={`${styles.phone_number} ${styles.inpt}`}
                       placeholder="Phone Number"
                       name="phone"
                       id="contactsec_phone"
@@ -165,7 +169,7 @@ export default function ContactBanner() {
                 </div>
                 
                 <div className="col-md-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <input
                       type="text"
                       placeholder="Company Name"
@@ -173,18 +177,20 @@ export default function ContactBanner() {
                       id="contactsec_companyname"
                       value={formData.companyname}
                       onChange={handleInputChange}
+                      className={styles.inpt}
                       required
                     />
                   </div>
                 </div>
                 
                 <div className="col-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <select
                       name="service"
                       id="contactsec_service"
                       value={formData.service}
                       onChange={handleInputChange}
+                      className={styles.inpt}
                       required
                     >
                       <option value="" disabled hidden>
@@ -204,7 +210,7 @@ export default function ContactBanner() {
                 </div>
                 
                 <div className="col-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <textarea
                       placeholder="Your Project Details"
                       name="message"
@@ -226,7 +232,7 @@ export default function ContactBanner() {
                 </div>
                 
                 <div className="col-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     {/* Hidden tracking fields */}
                     <input name="gclid" type="hidden" value={formData.gclid} />
                     <input name="fbclid" type="hidden" value={formData.fbclid} />
@@ -243,7 +249,7 @@ export default function ContactBanner() {
               </div>
             </form>
             
-            <div className="contactsecnpagealert mt-3">
+            <div className={`${styles.contactsecnpagealert} mt-3`}>
               {showSuccess && (
                 <div className="alert alert-success" role="alert">
                   <p className="mb-0">Congratulations!!! Your form has been submitted.</p>
@@ -259,7 +265,7 @@ export default function ContactBanner() {
 
           {/* Right Column - Contact Info */}
           <div className="col-md-6">
-            <div className="contactPage-heading">
+            <div className={styles.contactPage_heading}>
               <h1>Talk To An Expert</h1>
               <p>
                 At Website Digitals, we are committed to providing expert guidance and personalized solutions for all your digital needs. 
@@ -268,24 +274,24 @@ export default function ContactBanner() {
                 vision to life. Your success is our priority, and we look forward to working with you to achieve your goals.
               </p>
               
-              <ul className="contactPage-list">
+              <ul className={styles.contactPage_list}>
                 <li>
                   <i className="fa fa-phone"></i>
-                  <div className="contactPage-listDetail">
+                  <div className={styles.contactPage_listDetail}>
                     <h2>Book a Call</h2>
                     <p>(646)-222-3598</p>
                   </div>
                 </li>
                 <li>
                   <i className="fa fa-envelope"></i>
-                  <div className="contactPage-listDetail">
+                  <div className={styles.contactPage_listDetail}>
                     <h2>Email Us</h2>
                     <p>info@websitedigitals.com</p>
                   </div>
                 </li>
                 <li>
                   <i className="fa fa-map-marker-alt"></i>
-                  <div className="contactPage-listDetail">
+                  <div className={styles.contactPage_listDetail}>
                     <h2>Location</h2>
                     <p>175 Pearl Street Dumbo, 1st, 2nd and 3rd Floor, Dumbo, NY 11201</p>
                   </div>
