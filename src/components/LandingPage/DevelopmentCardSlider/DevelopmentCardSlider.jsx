@@ -1,0 +1,86 @@
+"use client";
+
+import React from "react";
+import { webDevelopmentServicesData } from "../../../app/Data/landingPageData";
+import { useOwlCarousel } from "../../../app/hooks/useOwlCarousel";
+import styles from "./DevelopmentCardSlider.module.css";
+
+const DevelopmentCardSlider = () => {
+  // Initialize Owl Carousel
+  useOwlCarousel(`.${styles.developmentCardSlider}`, {
+    items: 3,
+    margin: 30,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 600,
+    dots: true,
+    nav: true,
+    navText: [
+      '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    ],
+    responsive: {
+      0: { items: 1, margin: 12 },
+      640: { items: 1, margin: 16 },
+      768: { items: 2, margin: 20 },
+      1024: { items: 3, margin: 24 },
+    },
+  });
+
+  return (
+    <section className={styles.sliderSection}>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="section-heading text-center text-white">
+              <h2>
+                Our Comprehensive Web Development Services to Grow Your Business
+              </h2>
+              <p className={styles.sliderDescription}>
+                We provide professional web development solutions for businesses
+                across the United States, combining proven practices, industry
+                certifications, and modern technologies to deliver results that
+                drive growth. Explore our specialized services below.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.sliderContainer}>
+          <div className={`owl-carousel owl-theme ${styles.developmentCardSlider}`}>
+            {webDevelopmentServicesData.map((service) => (
+              <div key={service.id} className={`item ${styles.serviceCard}`}>
+                <div className={styles.cardIcon}>
+                  <div className={styles.iconWrapper}>{service.icon}</div>
+                </div>
+
+                <div className={styles.cardContent}>
+                  <h3 className={styles.cardTitle}>{service.title}</h3>
+                  <p className={styles.cardDescription}>
+                    {service.description}
+                  </p>
+                </div>
+
+                <div className={styles.cardPlus}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 5V19M5 12H19"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default DevelopmentCardSlider;

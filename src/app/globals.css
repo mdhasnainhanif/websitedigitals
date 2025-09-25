@@ -8552,6 +8552,7 @@ section.landingPageBanner h1 span {
   margin-bottom: 1.5rem;
   overflow: hidden;
   margin: 0 auto;
+  background: red;
 }
 
 .imgSlideRow .imgLeftSlider {
@@ -8563,6 +8564,10 @@ section.landingPageBanner h1 span {
   height: 100%;
   object-fit: cover;
   max-width: 20rem;
+}
+
+.imgSlideRow.reviewsSlider {
+  background-color: var(--dark-bg);
 }
 
 .imgSlideRow.tech-track {
@@ -8592,4 +8597,143 @@ section.landingPageBanner h1 span {
     #000000 75%,
     #fff0 100%
   );
+}
+
+span.colorPrimaryDark {
+  color: #003fc4;
+}
+
+.developmentCardSlider .owl-stage-outer {
+  padding: 1rem 0rem;
+}
+
+.landingPageScrollSection {
+  clip-path: polygon(0 2.5%, 100% 0, 100% 95%, 0% 100%);
+  margin-top: -4rem;
+  padding-top: 4rem;
+}
+
+section.landingPageScrollSection {
+  padding-bottom: 6rem;
+}
+
+.landingPageScrollSection .scroller-item > img {
+  display: none;
+}
+
+.landingPageScrollSection .scroller-item {
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 4px #00000033;
+  border: 3px solid #185ae9;
+  border-radius: 1.225rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+.landingPageScrollSection .scroller-item:first-child {
+  margin-top: 0rem;
+}
+.landingPageScrollSection .scroller-item p {
+  padding: 0rem;
+  color: var(--gray);
+}
+
+.landingPageScrollSection .scroller-item .scrollIcon {
+  width: 3.5rem;
+  display: block;
+}
+
+.reviewsSlider {
+  transform: rotate(-2.7deg) !important;
+  margin-top: -2rem;
+  padding: 0.425rem 0rem;
+}
+
+.reviewsSlider .imgLeftSlider {
+  gap: 7rem;
+  overflow-x: hidden;
+}
+
+.reviewsSlider .imgLeftSlider img{
+  max-width: 7rem;
+}
+
+.technologies-container {
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.tech-row {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.tech-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  padding-bottom: 1px;
+}
+
+.tech-card {
+  border: 0.6px solid #393456;
+  background: rgb(255 255 255 / 0.05);
+  border-radius: 12px;
+  padding: 0.725rem 2rem;
+  min-width: 200px;
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefit-icon,
+.counter-grid {
+  background: linear-gradient(135deg, #6366f1 0, #8b5cf6 100%);
+}
+
+.tech-card div:last-child {
+  text-align: start;
+}
+
+.tech-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+
+.tech-name {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tech-description {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.tech-row-left .tech-track {
+  animation: 30s linear infinite scrollLeft;
+}
+
+.tech-row-right .tech-track {
+  animation: 25s linear infinite scrollRight;
+}
+
+.tech-row-left:nth-child(5) .tech-track {
+  animation: 35s linear infinite scrollLeft;
+}
+
+.technologySliderMain{
+  background: var(--dark-bg);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  overflow-x: hidden;
+  padding-top: 4rem;
+  margin-top: -2rem;
+  padding-bottom: 6rem;
 }

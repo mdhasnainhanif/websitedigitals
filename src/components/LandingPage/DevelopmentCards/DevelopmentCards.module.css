@@ -55,7 +55,23 @@
 .card.highlighted {
   background: #002e8c;
   color: white;
+  position: relative;
+  overflow: hidden;
 }
+
+.card.highlighted::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: -3rem;
+  width: 100%;
+  max-width: 25rem;
+  height: 20rem;
+  background: url(../../../../public/assets/images/logo-watermark.svg) no-repeat center center;
+  background-size: contain;
+}
+
+
 
 .card.highlighted .cardTitle {
   color: white;
