@@ -122,7 +122,7 @@ const TechnologiesSlider = ({
   const row3 = technologies.slice(12); // Remaining - scroll left
 
   return (
-    <div className="sectionPadding technologySliderMain">
+    <section className="section-padding technologySliderMain">
       <div className="container-fluid p-0">
         <div className="row justify-content-center">
           <div className="col-lg-10 text-center section-heading">
@@ -203,7 +203,7 @@ const TechnologiesSlider = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

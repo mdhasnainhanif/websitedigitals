@@ -129,16 +129,15 @@ export default function WebBuilderBanner({
                   ))}
 
                 {/* Main image */}
-                <Image
+                <img
                   className={data?.image?.className || "width-100"}
                   src={
                     data?.image?.src ||
                     "/assets/images-webp/web-builder-Banner.webp"
                   }
-                  width={data?.image?.width || 669}
-                  height={data?.image?.height || 473}
+                  width={data?.image?.width}
+                  height={data?.image?.height}
                   alt={data?.image?.alt || "Default Image"}
-                  priority
                 />
               </div>
             </div>

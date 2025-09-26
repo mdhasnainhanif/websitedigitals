@@ -267,3 +267,32 @@ export const stepSectionData = {
     }
   ]
 };
+
+export const landingPageBannerData2 = {
+  isBreadcrumb: false,
+  breadcrumb: {
+    home: { label: "", href: "/" },
+    current: { label: "Web Development", href: "/web-development" },
+  },
+  heading: "Get a Website Developed to Convert",
+  description: [
+    "Your website should do more than look good. It should attract visitors, keep them engaged, and turn them into customers. We create scalable, secure, and high-performing websites built for long-term business growth."
+  ],
+  bullets: [], // no bullets shown in the image
+  cta: { 
+    text: "Start Your Web Development Now", 
+    href: "#", 
+    className: "offer-btn primary", 
+    show: true 
+  },
+  image: {
+    src: "/assets/images/everything-you-need.png",
+    // width: 712,
+    // height: 428,
+    alt: "Website Development Banner",
+    className: "width-100",
+  },
+  imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
+};
+
+export { landingPageBannerData2 };

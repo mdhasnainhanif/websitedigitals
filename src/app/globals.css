@@ -8590,13 +8590,6 @@ section.landingPageBanner h1 span {
 
 .imgSlideRow {
   position: relative;
-  mask-image: linear-gradient(
-    to right,
-    #fff0 0%,
-    #000000 25%,
-    #000000 75%,
-    #fff0 100%
-  );
 }
 
 span.colorPrimaryDark {
@@ -8647,6 +8640,8 @@ section.landingPageScrollSection {
   transform: rotate(-2.7deg) !important;
   margin-top: -2rem;
   padding: 0.425rem 0rem;
+  overflow-x: hidden;
+  max-width: 99.9%;
 }
 
 .reviewsSlider .imgLeftSlider {
@@ -8729,6 +8724,18 @@ section.landingPageScrollSection {
   animation: 35s linear infinite scrollLeft;
 }
 
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 .technologySliderMain{
   background: var(--dark-bg);
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
@@ -8736,4 +8743,20 @@ section.landingPageScrollSection {
   padding-top: 4rem;
   margin-top: -2rem;
   padding-bottom: 6rem;
+}
+
+section.landingPageBanner2{
+  background-color: #001135;
+  color: var(--text-light-color);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+}
+
+section.landingPageFaqs .accordion-header .accordion-button{
+  font-size: 1rem;
+}
+
+section.landingPageBanner2 img{
+  width: 100%;
 }

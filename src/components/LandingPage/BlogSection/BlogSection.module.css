@@ -1,0 +1,263 @@
+/* Blog Section */
+.blogSection {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.blogSection::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 74px;
+  height: 74px;
+  max-width: 4rem;
+  aspect-ratio: 1/1;
+  background: url(../../../../public/assets/images/blue_star.svg) no-repeat center center;
+  background-size: contain;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #003FC4, #1d4ed8);
+  border-radius: 2px;
+}
+
+/* Blog Grid */
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog Card */
+.blogCard {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.blogCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #003FC4;
+}
+
+/* Image Container */
+.imageContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.blogImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blogCard:hover .blogImage {
+  transform: scale(1.05);
+}
+
+/* Blog Content */
+.blogContent {
+  padding: 1.5rem;
+}
+
+/* Category Tag */
+.categoryTag {
+  display: inline-block;
+  background: #003FC4;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+/* Blog Title */
+.blogTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.blogCard:hover .blogTitle {
+  color: #003FC4;
+}
+
+/* Read Time */
+.readTime {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.readTime::before {
+  content: '⏱️';
+  font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .blogGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .blogCard {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .imageContainer {
+    height: 180px;
+  }
+
+  
+  .blogContent {
+    padding: 1.25rem;
+  }
+  
+  .blogTitle {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .blogGrid {
+    padding: 0 0.5rem;
+  }
+  
+  .imageContainer {
+    height: 160px;
+  }
+  
+  
+  .blogContent {
+    padding: 1rem;
+  }
+  
+  .blogTitle {
+    font-size: 1rem;
+    -webkit-line-clamp: 3;
+  }
+  
+  .categoryTag {
+    font-size: 0.7rem;
+    padding: 4px 12px;
+  }
+  
+  .readTime {
+    font-size: 0.8rem;
+  }
+}
+
+/* Special styling for the third card (if needed) */
+.blogCard:nth-child(3) {
+  position: relative;
+}
+
+.blogCard:nth-child(3)::after {
+  content: '400 Fill x 219.09';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 63, 196, 0.1);
+  color: #003FC4;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: 1px dashed #003FC4;
+}
+
+/* Animation for cards appearing */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blogCard {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.blogCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.blogCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.blogCard:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Pause animation on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .blogCard {
+    animation: none;
+  }
+  
+  .blogCard:hover {
+    transform: none;
+  }
+  
+  .blogCard:hover .blogImage {
+    transform: none;
+  }
+}
