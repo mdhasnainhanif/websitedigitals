@@ -7,7 +7,7 @@ const FAQ = ({
   faqs = [],
   className = "",
   sectionClassName = "section-padding gradient-circle rightCenter-gradient",
-  isTwoCol,
+  isTwoCol = false,
 }) => {
   const [openItem, setOpenItem] = useState(0); // Track which item is open
 
