@@ -29,7 +29,7 @@ const OurWorkSection = () => {
                     <h4 className={styles.workCardTitle}>{item.title}</h4>
                     <p className={styles.workCardTag}>{item.tag}</p>
                   </div>
-                  <img className="my-5" src={item?.image} alt="" />
+                  <img className="my-5 img-fluid" src={item?.image} alt="" />
                   <p className="mt-1">{item.desc}</p>
                   <button className={`btn btn-dark rounded-pill ${styles.viewCaseStudyButton}`}>
                     <Link href={item.href || "#"}>View Case Study</Link>

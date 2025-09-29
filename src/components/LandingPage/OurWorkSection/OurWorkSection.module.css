@@ -1,6 +1,6 @@
 .section{
     background-color: #001135;
-    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 4%, 100% 0, 100% 95%, 0% 100%);
     margin-top: -4rem;
 }
 .workCard{
