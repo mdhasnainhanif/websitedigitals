@@ -213,3 +213,7 @@ ol.breadcrumb {
     width: 7.5rem;
     object-fit: contain;
 }
+.inner_banner
+{
+    background: var(--primary-light-bg);
+}

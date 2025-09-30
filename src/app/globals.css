@@ -7,6 +7,7 @@
   --primary: #3c7cff;
   --primary-light-bg: #ecf9ff;
   --primary-extra-light-bg: #e0f5fe;
+  --primary-light-bg: #ecf9ff;
   --secondary: #4448ff;
   --secondary-light-bg: #e4e5ff;
   --gray-bg: #f0f3f8;
@@ -16,7 +17,6 @@
   --small-section-padding: 3rem;
   --header-height: 4.625rem;
   --animation-multiplier: 3.125s;
-  --primary-extra-light-bg: #e0f5fe;
   --gray: #808080;
   --dark-bg: #1e1e1e;
 }
