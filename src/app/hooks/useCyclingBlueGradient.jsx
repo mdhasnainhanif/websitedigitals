@@ -6,6 +6,16 @@ export function useCyclingBlueGradient(targetId = 'bg-change', intervalMs = 3000
     const el = document.getElementById(targetId);
     if (!el) return;
 
+    // Check if device is mobile
+    const isMobile = () => {
+      return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    };
+
+    // Don't apply color change effect on mobile devices
+    if (isMobile()) {
+      return;
+    }
+
     const primaryColor = '#3c7cff';
 
     const getRandomBlueShade = () => {

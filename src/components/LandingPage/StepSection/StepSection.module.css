@@ -1,0 +1,254 @@
+/* Step Section */
+.stepSection {
+  background: #185ae9;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 2%, 100% 0, 100% 99%, 0% 100%);
+  padding-top: 6rem !important;
+  margin-top: -2rem;
+
+}
+
+.stepSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../../../public/assets/images/logo-watermark.svg")
+    no-repeat center center;
+  background-size: 60% auto;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+/* Section Header */
+.sectionHeader {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sectionTitle span {
+  color: #60a5fa;
+}
+
+/* Steps Container */
+.stepsContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.stepRow {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.stepRow:last-child {
+  margin-bottom: 0;
+}
+
+/* Step Content */
+.stepContent {
+  padding: 40px 20px;
+  position: relative;
+}
+
+.stepNumber {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.stepTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
+.stepDescription {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 500px;
+}
+
+/* Step Image */
+.stepImageContainer {
+  position: relative;
+  padding: 20px;
+}
+
+.stepImage {
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.stepImage:hover {
+  transform: translateY(-10px);
+}
+
+/* Arrow Container */
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.connectingArrow {
+  width: 25rem;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .stepTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .stepRow {
+    margin-bottom: 60px;
+  }
+
+  .stepContent {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .stepDescription {
+    max-width: 100%;
+  }
+
+  .stepImageContainer {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .stepImage {
+    max-width: 400px;
+  }
+
+  .arrowContainer {
+    margin: 30px 0;
+  }
+
+  .connectingArrow {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeader {
+    margin-bottom: 60px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .stepTitle {
+    font-size: 1.8rem;
+  }
+
+  .stepDescription {
+    font-size: 1rem;
+  }
+
+  .stepRow {
+    margin-bottom: 50px;
+  }
+
+  .stepContent {
+    padding: 20px 10px;
+  }
+
+  .stepImageContainer {
+    padding: 10px;
+  }
+
+  .stepImage {
+    max-width: 300px;
+  }
+
+  .arrowContainer {
+    margin: 25px 0;
+  }
+
+  .connectingArrow {
+    width: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .stepTitle {
+    font-size: 1.6rem;
+  }
+
+  .stepNumber {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .stepDescription {
+    font-size: 0.95rem;
+  }
+
+  .stepImage {
+    max-width: 250px;
+  }
+
+  .arrowContainer {
+    margin: 20px 0;
+  }
+
+  .connectingArrow {
+    width: 35px;
+  }
+}
+
+/* Animation for step appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stepRow {
+  animation: fadeInUp 0.6s ease-out;
+}

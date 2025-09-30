@@ -1,0 +1,43 @@
+.technologyNameSlider {
+  background: #003fc4;
+  transform: rotate(-2deg);
+  position: relative;
+  z-index: 999;
+}
+.technologyNameSliderContainer {
+  display: flex;
+  gap: 4rem;
+  overflow: hidden;
+  width: max-content;
+  margin-top: 3rem;
+  animation: 20s linear infinite scrollLeft;
+  padding: 1rem 0rem;
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.technologyNameSliderContainer .slideItem {
+  position: relative;
+}
+.technologyNameSliderContainer .slideItem p {
+  margin: 0rem;
+}
+.technologyNameSliderContainer .slideItem::before {
+  content: "";
+  position: absolute;
+  background: url("../../../public/assets/images/right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -2.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10rem;
+  height: 10rem;
+  z-index: 1;
+  border-radius: 50%;
+}

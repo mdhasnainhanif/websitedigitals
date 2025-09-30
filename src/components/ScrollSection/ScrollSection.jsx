@@ -1,15 +1,17 @@
 // /components/ScrollSection.jsx
-'use client';
+"use client";
 
-import { useEffect } from 'react';
+import { RightArrowIcon } from "@/icons";
+import { useEffect } from "react";
 
-export default function ScrollSection({ data }) {
+export default function ScrollSection({ data, className, isIconShow }) {
   const {
     sectionClass = "scroller-section pb-5",
-    heading = 'Limited Time? Launch Faster with Designer-Built Templates',
-    items = [], // [{ id, step?, title, paragraphs:[...], image:{ src, alt, width, height } }]
-    cta = ""
+    heading = "Limited Time? Launch Faster with Designer-Built Templates",
+    items = [],
+    cta = "",
   } = data || {};
+
   // Keep left-list "active" state in sync with scroll (no class name changes)
   useEffect(() => {
     if (!items.length) return;
@@ -18,33 +20,68 @@ export default function ScrollSection({ data }) {
       .map((it, i) => document.getElementById(it.id || `item-${i}`))
       .filter(Boolean);
 
-    const links = Array.from(
-      document.querySelectorAll('.scroller-list a')
-    );
+    const links = Array.from(document.querySelectorAll(".scroller-list a"));
 
     const setActive = (id) => {
       links.forEach((a) => {
-        a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+        a.classList.toggle("active", a.getAttribute("href") === `#${id}`);
       });
     };
 
+    // ----- IntersectionObserver that picks the most visible section -----
+    let lastActiveId = null;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
+        // keep only visible entries
+        const visibles = entries
+          .filter((e) => e.isIntersecting || e.intersectionRatio > 0)
+          // highest intersectionRatio first
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visibles.length) {
+          const top = visibles[0].target.id;
+          if (top && top !== lastActiveId) {
+            lastActiveId = top;
+            setActive(top);
+          }
+        }
       },
-      { rootMargin: '-35% 0px -45% 0px', threshold: [0.2, 0.6] }
+      // make the "active window" taller so the last card can intersect
+      {
+        root: null,
+        rootMargin: "-30% 0px -30% 0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      }
     );
 
     sections.forEach((sec) => observer.observe(sec));
-    return () => observer.disconnect();
+
+    // ----- Bottom-of-page fallback: force the last item active -----
+    const onScrollBottomCheck = () => {
+      const nearBottom =
+        window.innerHeight + window.scrollY >= document.body.scrollHeight - 2;
+      if (nearBottom && sections.length) {
+        const lastId = sections[sections.length - 1].id;
+        if (lastId && lastId !== lastActiveId) {
+          lastActiveId = lastId;
+          setActive(lastId);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", onScrollBottomCheck, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScrollBottomCheck);
+    };
   }, [items]);
 
-  const two = (n) => String(n).padStart(2, '0');
+  const two = (n) => String(n).padStart(2, "0");
 
   return (
-    <section className={sectionClass}>
+    <section className={`${sectionClass} ${className}`}>
       <div className="container">
         <div className="row">
           {/* LEFT column (sticky list) */}
@@ -59,7 +96,7 @@ export default function ScrollSection({ data }) {
                   <li key={it.id || i}>
                     <a
                       href={`#${it.id || `item-${i}`}`}
-                      className={i === 0 ? 'active' : undefined}
+                      className={i === 0 ? "active" : undefined}
                     >
                       <span>{two(it.step ?? i + 1)}</span>
                       <p>{it.title}</p>
@@ -87,10 +124,29 @@ export default function ScrollSection({ data }) {
                   loading="lazy"
                   decoding="async"
                 />
-                <h3>
-                  <span>{two(it.step ?? i + 1)}</span>
-                  <strong>{it.title}</strong>
-                </h3>
+                {!isIconShow && (
+                  <h3>
+                    <span>{two(it.step ?? i + 1)}</span>
+                    <strong>{it.title}</strong>
+                  </h3>
+                )}
+                {isIconShow && (
+                  <>
+                    <div className="d-flex align-items-center justify-content-between">
+                      <span className="h1 text-dark">
+                        {two(it.step ?? i + 1)}
+                      </span>
+                      <img
+                        className="scrollIcon"
+                        src={it.icon}
+                        alt={it.title}
+                      />
+                    </div>
+                    <h3>
+                      <strong>{it.title}</strong>
+                    </h3>
+                  </>
+                )}
                 {(it.paragraphs || []).map((p, j) => (
                   <p key={j}>{p}</p>
                 ))}

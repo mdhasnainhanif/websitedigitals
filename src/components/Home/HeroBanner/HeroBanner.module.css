@@ -3,7 +3,7 @@
 /* Main container styles */
 .homeBannerArea {
   position: relative;
-  background: var(--primary-light-bg);
+  background: #1F25FF;
   overflow: hidden;
   z-index: 1;
 }
