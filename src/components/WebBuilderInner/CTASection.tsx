@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './WebBuilderinner.module.css';
 
 interface CTASectionProps {
   title: string;
@@ -18,11 +19,11 @@ interface CTASectionProps {
 
 export default function CTASection({ title, description, image, cta }: CTASectionProps) {
   return (
-    <section className="section-padding primary-extra-light-bg">
+    <section className={`${styles.section_padding} ${styles.primary_extra_light_bg}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-sm-12 my-auto">
-            <div className="section-heading">
+            <div className={styles.section_heading}>
             <h2>
               {title.split(' ').map((word, index) => 
                 word === 'Ecommerce' || word === 'Website' || word === 'Builder' ? (
@@ -35,8 +36,8 @@ export default function CTASection({ title, description, image, cta }: CTASectio
               )}
             </h2>
               <p>{description}</p>
-              <div className="link-area">
-                <a href={cta.href} className="primary">
+              <div className={styles.link_area}>
+                <a href={cta.href} className={styles.primary}>
                   {cta.text}
                 </a>
               </div>

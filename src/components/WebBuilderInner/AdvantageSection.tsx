@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import styles from './WebBuilderinner.module.css';
 
 interface AdvantageItem {
   id: string;
@@ -27,11 +28,11 @@ export default function AdvantagesSection({ title, description, items }: Advanta
   };
 
   return (
-    <section className="section-padding">
+    <section className={styles.section_padding}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-sm-12 my-auto">
-            <div className="section-heading">
+            <div className={styles.section_heading}>
               <h2>
                 {title.split(' ').map((word, index) => 
                   word === 'Ecommerce' ? (
@@ -86,27 +87,27 @@ export default function AdvantagesSection({ title, description, items }: Advanta
                   <p>Avail 75% Discount</p>
                 </div>
                 <div className="col-md-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <input type="text" placeholder="Your Name" name="name" required />
                   </div>
                 </div>
                 <div className="col-md-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <input type="email" placeholder="Email Address" name="email" required />
                   </div>
                 </div>
                 <div className="col-md-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <input type="text" className="phone-number" placeholder="Phone Number" name="phone" required />
                   </div>
                 </div>
                 <div className="col-12">
-                  <div className="basic-inputArea">
+                  <div className={styles.basic_inputArea}>
                     <textarea placeholder="How Can We Help?" name="message"></textarea>
                   </div>
                 </div>
                 <div className="col-12 text-center">
-                  <div className="link-area">
+                  <div className={styles.link_area}>
                     <button type="submit" name="submit">Talk To Our Design Consultant</button>
                   </div>
                 </div>

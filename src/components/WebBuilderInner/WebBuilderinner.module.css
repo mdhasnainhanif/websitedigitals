@@ -1,6 +1,11 @@
 .section_padding {
     padding: var(--sectionPadding-top) 0 var(--sectionPadding-bottom);
 }
+.section_heading>h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.125rem;
+}
 .inner_banner
 {
     padding: var(--sectionPadding-top) 0;
@@ -163,4 +168,74 @@ ol.breadcrumb {
     transform: translate(0, 100%);
     transition: .3s;
     z-index: 1;
+}
+.industry_imageArea
+{
+    position: relative;
+}
+.industry_imageArea img {
+    position: relative;
+    left: 50%;
+    max-height: 32.3125rem;
+    transform: translate(-50%, 0);
+}
+.w_100 {
+    width: 100% !important;
+}
+.primary_extra_light_bg, .split_section 
+{
+    background: var(--primary-extra-light-bg);
+}
+.dark_area {
+    position: relative;
+    color: var(--text-light-color);
+    padding: 0 0 0 2rem;
+}
+.dark_area::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--sectionPadding-top) * -2);
+    left: -.75rem;
+    right: -50vw;
+    bottom: calc(var(--sectionPadding-bottom) * -2);
+    background: var(--dark-bg);
+    z-index: -2;
+}
+.link_area > a.primary 
+{
+    background: radial-gradient(49.53% 384.62% at 50.47% 391.61%, #3975FF 49.53%, #1429FF 100%) !important;
+}
+.basic_inputArea > :is(input, select, textarea, button, .nice-select) {
+    padding: 0.5625rem 1.25rem;
+}
+.basic_inputArea .iti > input, .basic_inputArea > :is(input, select, textarea, .nice-select) {
+    border: 1px solid rgb(153, 153, 153);
+    background-color: transparent;
+}
+.basic_inputArea .iti > input, .basic_inputArea > :is(input, select, textarea, button, .nice-select) {
+    width: 100%;
+    border-radius: 3rem;
+    outline: 0px;
+}
+.basic_inputArea > textarea 
+{
+    height: 8rem;
+    resize: none;
+    border-radius: 0.75rem !important;
+}
+.about_imageArea, .benefits_imagesArea, .blog_cardDetail > a > span, .blogPage_rightCard > form, .boxes_bgArea, .caseStudy_holderArea, .caseStudy-mobileArea, .caseStudy-windowArea, .contentWriting-imageArea, .convertCustomer-area, .digitalMarketing-splitArea, .industry-imageArea, .mesh-shapes .home-portfolio-tabs, .position-relative, .process-area > li > .process-detail, .progress_area, .progressvinner, .single_webPortfolio > .webPortfoliov_imageArea, .videoAnimation_splitArea, .webDesign_imageArea {
+    position: relative;
+}
+.benefits_images > img.right_center {
+    width: 35%;
+    top: 27.5%;
+    right: 2.5%;
+}
+.benefits_images > img {
+    position: absolute;
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 0.5rem);
+}
+.benefits_images > img {
+    position: absolute;
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 0.5rem);
 }

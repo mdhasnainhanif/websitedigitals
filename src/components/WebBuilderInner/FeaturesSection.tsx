@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import styles from './WebBuilderinner.module.css';
 
 interface TabContent {
   title: string;
@@ -29,24 +30,23 @@ export default function FeaturesSection({ title, description, tabs }: FeaturesSe
   const [activeTab, setActiveTab] = useState(tabs[0].id);
 
   return (
-    <section className="section-padding gradient-circle rightCenter-gradient">
+    <section className={`${styles.section_padding} ${styles.gradient_circle} ${styles.rightCenter_gradient}`}>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading text-center">
+            <div className={`${styles.section_heading} ${styles.text_center}`}>
               <h2>{title}</h2>
               <p>{description}</p>
             </div>
           </div>
         </div>
-        <div className="row rowGap2">
+        <div className={`row ${styles.rowGap2}`}>
           <div className="col-md-3">
-            <div className="basic-tabs vertical-tabs">
-              <ul className="nav nav-tabs">
+            <div className={`${styles.basic_tabs} ${styles.vertical_tabs}`}>
+              <ul className={`nav ${styles.nav_tabs}`}>
                 {tabs.map((tab) => (
-                  <li key={tab.id} className="nav-item">
-                    <a
-                      className={`nav-link ${activeTab === tab.id ? 'active' : ''}`}
+                  <li key={tab.id} className={styles.nav_item}>
+                    <a className={`${styles.nav_link} ${activeTab === tab.id ? styles.active : ''}`}
                       data-bs-toggle="tab"
                       href={`#${tab.id}-featureDetail`}
                       onClick={(e) => {
@@ -69,23 +69,23 @@ export default function FeaturesSection({ title, description, tabs }: FeaturesSe
                   className={`tab-pane fade ${activeTab === tab.id ? 'active show' : ''}`}
                   id={`${tab.id}-featureDetail`}
                 >
-                  <div className="row align-items-center rowGap4 col-reverse-mob">
+                  <div className={`row align-items-center ${styles.rowGap4} ${styles.col_reverse_mob}`}>
                     <div className="col-md-7">
-                      <div className="section-heading">
-                        <h3 className="tabsecheading">{tab.content.title}</h3>
+                      <div className={styles.section_heading}>
+                        <h3 className={styles.tabsecheading}>{tab.content.title}</h3>
                         <p>{tab.content.description}</p>
                       </div>
-                      <div className="link-area">
-                        <a href="#" className="book-your-call">
+                      <div className={styles.link_area}>
+                        <a href="#" className={styles.book_your_call}>
                           Get Started Now
                         </a>
                       </div>
                     </div>
                     <div className="col-md-5">
-                      <div className="boxes-bgArea leftBottom web-design-imageArea">
+                      <div className={`${styles.boxes_bgArea} ${styles.leftBottom} ${styles.web_design_imageArea}`}>
                         <Image
                           src={tab.content.image.src}
-                          className="width-100"
+                          className={styles.width_100}
                           alt={tab.content.image.alt}
                           width={tab.content.image.width}
                           height={tab.content.image.height}
