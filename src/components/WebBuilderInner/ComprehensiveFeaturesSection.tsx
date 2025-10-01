@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import styles from './WebBuilderinner.module.css';
 
 interface TabContent {
   title: string;
@@ -34,22 +35,21 @@ export default function ComprehensiveFeaturesSection({
   const [activeTab, setActiveTab] = useState(tabs[0].id);
 
   return (
-    <section className="section-padding pt-0">
+    <section className={`${styles.section_padding} pt-0`}>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading text-center">
+            <div className={`${styles.section_heading} ${styles.text_center}`}>
               <h2>{title}</h2>
               <p>{description}</p>
             </div>
           </div>
           <div className="col-12">
-            <div className="basic-tabs">
-              <ul className="nav nav-tabs">
+            <div className={styles.basic_tabs}>
+              <ul className={`nav ${styles.nav_tabs}`}>
                 {tabs.map((tab) => (
-                  <li key={tab.id} className="nav-item">
-                    <a
-                      className={`nav-link ${activeTab === tab.id ? 'active' : ''}`}
+                  <li key={tab.id} className={styles.nav_item}>
+                    <a className={`${styles.nav_link} ${activeTab === tab.id ? styles.active : ''}`}
                       data-bs-toggle="tab"
                       href={`#${tab.id}-pricing`}
                       onClick={(e) => {
@@ -65,7 +65,7 @@ export default function ComprehensiveFeaturesSection({
             </div>
           </div>
           <div className="col-12">
-            <div className="tab-content pricing-content">
+            <div className={`tab-content ${styles.pricing_content}`}>
               {tabs.map((tab) => (
                 <div
                   key={tab.id}
@@ -74,12 +74,12 @@ export default function ComprehensiveFeaturesSection({
                 >
                   <div className="row">
                     <div className="col-md-6">
-                      <div className="inner-bannerHeading">
-                        <div className="section-heading">
-                          <h3 className="tabsecheading">{tab.content.title}</h3>
+                      <div className={styles.inner_bannerHeading}>
+                        <div className={styles.section_heading}>
+                          <h3 className={styles.tabsecheading}>{tab.content.title}</h3>
                           <p>{tab.content.description}</p>
                           {tab.content.bullets && tab.content.bullets.length > 0 && (
-                            <ul className="feature-list">
+                            <ul className={styles.feature_list}>
                               {tab.content.bullets.map((bullet, index) => (
                                 <li key={index}>{bullet}</li>
                               ))}
@@ -89,9 +89,9 @@ export default function ComprehensiveFeaturesSection({
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <div className="industry-imageArea">
+                      <div className={styles.industry_imageArea}>
                         <Image
-                          className="w-100"
+                          className={styles.w_100}
                           src={tab.content.image.src}
                           alt={tab.content.image.alt}
                           width={tab.content.image.width}

@@ -27,6 +27,7 @@ body {
   --small-section-padding: 3rem;
   --header-height: 4.625rem;
   --animation-multiplier: 3.125s;
+  --secondary: #4448ff;
 }
 ::-webkit-scrollbar {
   width: 8px;
