@@ -4,6 +4,7 @@ import Link from "next/link";
 import LandingPageForm from "@/components/LandingPage/LandingPageForm";
 import BannerImageSlider from "@/components/BannerImageSlider/BannerImageSlider";
 import TechnologyNameSlider from "@/components/TechnologyNameSlider/TechnologyNameSlider";
+import styles from "./WebBanner.module.css";
 
 export default function WebBuilderBanner({
   data,
@@ -23,7 +24,7 @@ export default function WebBuilderBanner({
   return (
     <>
       <section
-        className={`inner-banner gradient-circle leftCenter-gradient ${className}`}
+        className={`${styles.inner_banner} ${styles.gradient_circle} ${styles.leftCenter_gradient}`}
       >
         <div className="container">
           <div className="row align-items-center mb-5">
@@ -31,20 +32,20 @@ export default function WebBuilderBanner({
             <div className={`col-md-6 ${col}`}>
               {data?.isBreadcrumb && (
                 <nav aria-label="breadcrumb">
-                  <ol className="breadcrumb">
-                    <li className="breadcrumb-item">
+                  <ol className={styles.breadcrumb}>
+                    <li className={styles.breadcrumb_item}>
                       <Link href={data?.breadcrumb?.home?.href || "/"}>
                         {data?.breadcrumb?.home?.label || "Home"}
                       </Link>
                     </li>
-                    <li className="breadcrumb-item active" aria-current="page">
+                    <li className={`${styles.breadcrumb_item} active`} aria-current="page">
                       {data?.breadcrumb?.current?.label || "Page"}
                     </li>
                   </ol>
                 </nav>
               )}
 
-              <div className="inner-bannerHeading">
+              <div className={styles.inner_bannerHeading}>
                 <h1>
                   {typeof data?.heading === "string"
                     ? data.heading.split(/(\[\[.*?\]\])/).map((chunk, i) =>
@@ -97,7 +98,7 @@ export default function WebBuilderBanner({
               </div>
 
               {/* CTA (optional, safe) */}
-              <div className="link-area">
+              <div className={styles.link_area}>
                 {showCta && data?.cta?.href && data?.cta?.text ? (
                   <Link
                     href={data.cta.href}
@@ -112,7 +113,7 @@ export default function WebBuilderBanner({
             {/* Right Column - Image + optional decor */}
             <div className={`col-md-6 ${col}`}>
               <div
-                className={`contentWriting-imageArea position-relative ${colImgClass}`}
+                className={`${styles.contentWriting_imageArea} position-relative ${colImgClass}`}
               >
                 {/* Decor images (behind/around main image) */}
                 {Array.isArray(data?.decor) &&
@@ -129,8 +130,7 @@ export default function WebBuilderBanner({
                   ))}
 
                 {/* Main image */}
-                <img
-                  className={data?.image?.className || "width-100"}
+                <img className={`${data?.image?.className || ''} ${styles.width_100}`}
                   src={
                     data?.image?.src ||
                     "/assets/images-webp/web-builder-Banner.webp"
@@ -144,16 +144,16 @@ export default function WebBuilderBanner({
             {islandingPage && (
               <div className="row">
                 <div className="col-md-12">
-                  <a className="landingPageLink" href="#">
+                  <a className={styles.landingPageLink} href="#">
                     Here’s what sets us apart:
                   </a>
                 </div>
-                <div className="row setUsApart">
+                <div className={`row ${styles.setUsApart}`}>
                   <p>Fast, secure, and up-to-date websites</p>
                   <p>Optimized for all devices</p>
                   <p>Complete development from idea to launch</p>
                 </div>
-                <div className="row landingPageForm mt-5">
+                <div className={`row ${styles.landingPageForm} mt-5`}>
                   <LandingPageForm />
                 </div>
               </div>

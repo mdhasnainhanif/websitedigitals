@@ -149,7 +149,8 @@ export default function IndustryTabs({
   };
 
   return (
-    <section className="section-padding" style={{ background: grayBgVar }}>
+    <>
+      <section className="section-padding" style={{ background: grayBgVar }}>
       <div className="container">
         <div className="row justify-content-center mb-4">
           <div className="col-lg-8 col-sm-12 text-center">
@@ -238,5 +239,6 @@ export default function IndustryTabs({
         </div>
       </div>
     </section>
+    </>
   );
 }
