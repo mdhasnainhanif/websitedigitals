@@ -42,14 +42,21 @@ export default function BenefitsSection({
       <div className="container">
         <div className={`row align-items-center ${styles.mobile_col_order_change}`}>
           <div className="col-lg-7 col-md-6 position-relative">
-            <div className={`${styles.lightBlue_area} ${styles.benefits_imagesArea} ${styles.parallax_container}`}>
-              <Image loading="lazy" src={image.main.src} width={image.main.width}
-                height={image.main.height} alt={image.main.alt}
+            <div className={`lightBlue-area benefits-imagesArea parallax-container ${styles.lightBlue_area} ${styles.benefits_imagesArea} ${styles.parallax_container}`}>
+              <Image
+                loading="lazy"
+                src={image.main.src}
+                width={image.main.width}
+                height={image.main.height}
+                alt={image.main.alt}
               />
-              <div className={styles.benefits_images}>
+              <div className="benefits-images">
                 {image.parallax.map((parallaxImg, index) => (
-                  <Image key={index} loading="lazy"
-                    src={parallaxImg.src} alt={parallaxImg.alt}
+                  <Image
+                    key={index}
+                    loading="lazy"
+                    src={parallaxImg.src}
+                    alt={parallaxImg.alt}
                     className={parallaxImg.className}
                     width={parallaxImg.width}
                     height={parallaxImg.height}
