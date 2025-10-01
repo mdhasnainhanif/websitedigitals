@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './WebBuilderinner.module.css';
 
 interface Breadcrumb {
   label: string;
@@ -36,16 +37,16 @@ export default function WebBuilderBanner({
   cta
 }: WebBuilderBannerProps) {
   return (
-    <section className="inner-banner gradient-circle leftCenter-gradient">
+    <section className={`${styles.inner_banner} ${styles.gradient_circle} ${styles.leftCenter_gradient}`}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
+            <nav aria-label={styles.breadcrumb}>
+              <ol className={styles.breadcrumb}>
                 {breadcrumbs.map((breadcrumb, index) => (
                   <li 
                     key={index}
-                    className={`breadcrumb-item ${breadcrumb.active ? 'active' : ''}`}
+                    className={`${styles.breadcrumb_item} ${breadcrumb.active ? 'active' : ''}`}
                     aria-current={breadcrumb.active ? 'page' : undefined}
                   >
                     {breadcrumb.active ? (
@@ -58,22 +59,22 @@ export default function WebBuilderBanner({
               </ol>
             </nav>
             
-            <div className="inner-bannerHeading">
+            <div className={styles.inner_bannerHeading}>
               <h1>{title}</h1>
               <p>{description}</p>
             </div>
             
-            <div className="link-area">
-              <Link href={cta.href} className="book-your-call">
+            <div className={styles.link_area}>
+              <Link href={cta.href} className={styles.book_your_call}>
                 {cta.text}
               </Link>
             </div>
           </div>
 
           <div className="col-md-6">
-            <div className="industry-imageArea">
+            <div className={styles.industry_imageArea}>
               <Image
-                className="w-100"
+                className={styles.w_100}
                 src={image.src}
                 width={image.width}
                 height={image.height}

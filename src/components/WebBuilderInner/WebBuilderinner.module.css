@@ -1,0 +1,103 @@
+.inner_banner
+{
+    padding: var(--sectionPadding-top) 0;
+    background: var(--primary-light-bg);
+}
+.gradient_circle {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.leftCenter_gradient::after {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.gradient_circle::after {
+    --bg-color: #3cb8ff;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 22.5rem;
+    height: 22.5rem;
+    opacity: .325;
+    background: radial-gradient(var(--bg-color) -30%, transparent 70%);
+    z-index: -1;
+}
+ol.breadcrumb {
+    font-size: .8rem;
+}
+.breadcrumb 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.breadcrumb li a
+{
+    color: #0d6efd;
+    text-decoration: underline;
+    text-decoration: none;
+}
+.breadcrumb_item+.breadcrumb_item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+.breadcrumb_item+.breadcrumb_item {
+    padding-left: .5rem;
+}
+.link_area>:is(a,button) {
+    position: relative;
+    display: inline-block;
+    padding: .75rem 3rem;
+    border-radius: 4rem;
+    min-height: 3rem;
+    border: 0;
+    outline: 0;
+    background: var(--text-color);
+    color: var(--text-light-color);
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+.link_area>a:hover:before
+{
+    content: "";
+    position: absolute;
+    top: -133%;
+    left: -50%;
+    width: 22%;
+    height: 410%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .4), rgba(255, 255, 255, 0));
+    animation: 1.1s linear infinite shine;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.banner_form>button:hover, .link_area>:is(a,button):hover {
+    background-color: var(--primary);
+}
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.link_area{
+    margin-top: 2rem;
+}
+.basic_tabs > .nav_tabs
+{
+    width:100%;    
+    text-align: center;
+    justify-content: center;
+}
+.basic_tabs > .nav_tabs > .nav_item > .nav_link
+{
+    min-width: fit-content;
+}

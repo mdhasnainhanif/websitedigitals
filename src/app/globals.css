@@ -19,6 +19,7 @@
   --animation-multiplier: 3.125s;
   --gray: #808080;
   --dark-bg: #1e1e1e;
+  --bg-color: #3cb8ff;
 }
 
 /* @media (prefers-color-scheme: dark) {
