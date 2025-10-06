@@ -1,3 +1,31 @@
+.inner_banner
+{
+    position: relative;
+    background: var(--primary-light-bg);
+}
+.gradient_circle {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.gradient_circle::after {
+    --bg-color: #3cb8ff;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 22.5rem;
+    height: 22.5rem;
+    opacity: .325;
+    background: radial-gradient(var(--bg-color) -30%, transparent 70%);
+    z-index: -1;
+}
+.leftCenter_gradient::after {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.inner_bannerHeading p{
+    margin-bottom:1rem !important;
+}
 .inner_banner 
 {
     padding: var(--sectionPadding-top) 0;

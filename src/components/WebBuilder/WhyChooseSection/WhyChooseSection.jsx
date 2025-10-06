@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from './WhyChooseSection.module.css'
 
 export default function WhyChooseSection({
   heading,
@@ -20,12 +21,12 @@ export default function WhyChooseSection({
   const imageList = images.length > 0 ? images : image ? [image] : [];
 
   return (
-    <section className="section-padding split-section gradient-circle light-gradient rightCenter-gradient">
+    <section className={`${styles.section_padding} ${styles.gradient_circle} ${styles.light_gradient} ${styles.rightCenter_gradient}`}>
       <div className="container">
-        <div className="row align-items-center mobile-col-order-change">
+        <div className={`row align-items-center ${styles.mobile_col_order_change}`}>
           {/* Image column */}
           <div className={`col-lg-${colCount1} col-md-6 position-relative`}>
-            <div className={`lightBlue-area benefits-imagesArea parallax-container ${bothImgClass || ""}`}>
+            <div className={`${styles.lightBlue_area} ${styles.benefits_imagesArea} ${parallax_container} ${bothImgClass || ""}`}>
               {imageList.map((img, i) => (
                 <img
                   key={`img-${i}`}
@@ -67,7 +68,7 @@ export default function WhyChooseSection({
                   features.map((block, i) => (
                     <div key={`feat-${i}`}>
                       {block.title ? (
-                        <h3 className="subheading-text fw-bold">{block.title}</h3>
+                        <h3 className={`${styles.styles.subheading_text} ${styles.fw_bold}`}>{block.title}</h3>
                       ) : null}
                       {(block.paragraphs || []).map((para, j) => (
                         <p key={`feat-p-${i}-${j}`} className={para?.isTight ? "mb-0" : undefined}>
