@@ -26,7 +26,7 @@ export default function WebBuilderBanner({
         className={`inner-banner gradient-circle leftCenter-gradient ${className}`}
       >
         <div className="container">
-          <div className="row align-items-center mb-5">
+          <div className="row align-items-center mb-5 justify-content-start">
             {/* Left Column - Content */}
             <div className={`col-md-6 ${col}`}>
               {data?.isBreadcrumb && (
@@ -44,18 +44,18 @@ export default function WebBuilderBanner({
                 </nav>
               )}
 
-              <div className="inner-bannerHeading">
+              <div className="inner-bannerHeading landingInnerHeading">
                 <h1>
                   {typeof data?.heading === "string"
                     ? data.heading.split(/(\[\[.*?\]\])/).map((chunk, i) =>
-                        chunk.startsWith("[[") && chunk.endsWith("]]") ? (
-                          <span key={i} style={{ color: "var(--primary)" }}>
-                            {chunk.slice(2, -2)}
-                          </span>
-                        ) : (
-                          chunk
-                        )
+                      chunk.startsWith("[[") && chunk.endsWith("]]") ? (
+                        <span key={i} style={{ color: "var(--primary)" }}>
+                          {chunk.slice(2, -2)}
+                        </span>
+                      ) : (
+                        chunk
                       )
+                    )
                     : data?.heading}
                 </h1>
 
@@ -139,30 +139,18 @@ export default function WebBuilderBanner({
                   height={data?.image?.height}
                   alt={data?.image?.alt || "Default Image"}
                 />
+                {islandingPage && (
+                  <>
+                    <LandingPageForm />
+                  </>
+                )}
               </div>
             </div>
-            {islandingPage && (
-              <div className="row">
-                <div className="col-md-12">
-                  <a className="landingPageLink" href="#">
-                    Here’s what sets us apart:
-                  </a>
-                </div>
-                <div className="row setUsApart">
-                  <p>Fast, secure, and up-to-date websites</p>
-                  <p>Optimized for all devices</p>
-                  <p>Complete development from idea to launch</p>
-                </div>
-                <div className="row landingPageForm mt-5">
-                  <LandingPageForm />
-                </div>
-              </div>
-            )}
+
           </div>
         </div>
         {islandingPage && (
           <>
-            <BannerImageSlider />
             <TechnologyNameSlider />
           </>
         )}
@@ -170,3 +158,4 @@ export default function WebBuilderBanner({
     </>
   );
 }
+

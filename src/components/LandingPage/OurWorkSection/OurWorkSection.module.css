@@ -1,24 +1,28 @@
-.section{
+.section {
     background-color: #001135;
     clip-path: polygon(0 4%, 100% 0, 100% 95%, 0% 100%);
-    margin-top: -4rem;
+    padding-bottom: 8rem !important;
 }
-.workCard{
+
+.workCard {
     background: #324233;
     padding: 1rem;
     border-radius: 1.5rem;
     color: #fff;
 }
-.workCardTitle{
+
+.workCardTitle {
     margin: 0rem;
 }
-.workCardTag{
+
+.workCardTag {
     border: 2px solid #FFFFFF80;
     background-color: var(--primary);
     padding: 0.275rem 0.945rem;
     border-radius: 2rem;
     font-size: 0.875rem;
 }
-.viewCaseStudyButton{
+
+.viewCaseStudyButton {
     font-size: 0.875rem;
 }

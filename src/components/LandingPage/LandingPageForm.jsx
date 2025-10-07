@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const LandingPageForm = () => {
   return (
-    <div className="row">
+    <div>
       <Input name="name" id="name" placeholder="Name" required />
 
       <Input name="email" id="email" placeholder="Email" required />

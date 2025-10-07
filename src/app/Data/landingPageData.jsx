@@ -2,26 +2,26 @@ import { BagIcon } from "@/icons";
 import { PenToolIcon } from "../../icons";
 
 export const landingPageBannerData = {
-    breadcrumb: {
-      home: { label: "Home", href: "/" },
-      current: { label: "Landing Page", href: "/landing-page" },
+  breadcrumb: {
+    home: { label: "Home", href: "/" },
+    current: { label: "Landing Page", href: "/landing-page" },
+  },
+  heading: "Plan, [[Create]], And [[Succeed]] With A Web Development Company",
+  description: ["An expensive or outdated website can drain your budget, cost you leads, and weaken customer trust. To solve this,\n Website Digitals provides custom web development built for speed, security, scalability, and affordability.\nWe create websites that look exceptional, load fast, and work flawlessly on every device, handled \n start to finish by our experienced full-stack team.\nFrom business websites to ecommerce platforms, we deliver digital experiences that keep \n visitors engaged and ready to act.",
+    {
+      text: "",
+      link: { text: "", href: "/", target: "_blank" },
+      afterText:
+        "",
     },
-    heading: "Plan, [[Create]], And [[Succeed]] With A Web Development Company",
-    description: ["An expensive or outdated website can drain your budget, cost you leads, and weaken customer trust. To solve this,\n Website Digitals provides custom web development built for speed, security, scalability, and affordability.\nWe create websites that look exceptional, load fast, and work flawlessly on every device, handled \n start to finish by our experienced full-stack team.\nFrom business websites to ecommerce platforms, we deliver digital experiences that keep \n visitors engaged and ready to act.",
-      {
-        text: "",
-        link: { text: "", href: "/", target: "_blank" },
-        afterText:
-          "",
-      },
-    ],
-    isCta: false,
-    cta: {
-      text: "Get Started Now",
-      href: "/brief"
-    },
-    image: null, // no image in this section
-  };
+  ],
+  isCta: false,
+  cta: {
+    text: "Get Started Now",
+    href: "/brief"
+  },
+  image: null,
+};
 
 export const developmentCardsData = [
   {
@@ -29,36 +29,33 @@ export const developmentCardsData = [
     title: "Supports Your Goals",
     description: "An effective website is built to align with your business objectives from day one. Scalable and secure development ensures your platform can expand with your growth while safeguarding sensitive data. By applying responsive design and mobile-first principles, your site stays accessible to users on any device, enabling business expansion without costly rebuilds.",
     icon: "target",
-    isHighlighted: false
+    isHighlighted: false,
+    col: "col-12 col-md-6 col-lg-6",
   },
   {
     id: 2,
     title: "Builds Trust",
     description: "Visitors are more likely to engage with brands that offer a fast, secure, and visually consistent online experience. Certified developers who follow quality assurance standards such as ISO 9001 for process reliability and WCAG accessibility guidelines for inclusivity create platforms that inspire confidence. Beyond technical compliance, being featured in respected directories like Clutch and GoodFirms further reinforces credibility and professionalism",
     icon: "target",
-    isHighlighted: true
+    isHighlighted: true,
+    col: "col-12 col-md-6 col-lg-6",
   },
   {
     id: 3,
     title: "Drives Results",
     description: "Modern web development focuses on more than visual appeal. SEO-driven practices that emphasize web accessibility, performance optimization, and adherence to search engine best practices make your site easier to discover and faster to navigate. These enhancements are commonly associated with higher engagement and improved conversion rates, turning more visitors into customers.",
     icon: "target",
-    isHighlighted: false
+    isHighlighted: false,
+    col: "col-12 col-md-6 col-lg-6",
   },
   {
     id: 4,
     title: "Leverages Advanced Technologies",
     description: "Staying competitive means choosing the right tools for your needs. Modern frameworks such as React, Angular, and Node.js are the latest technologies that support fast, interactive, and maintainable websites, helping ensure your platform delivers strong performance today while remaining flexible for future advancements.",
     icon: "target",
-    isHighlighted: false
+    isHighlighted: false,
+    col: "col-12 col-md-6 col-lg-6",
   },
-  {
-    id: 5,
-    title: "Creates a Better User Experience",
-    description: "Professional web development companies carefully consider how every design element, feature, and functionality impacts the end user. This attention to detail results in intuitive navigation, consistent branding, and seamless interaction that encourage visitors to stay longer, explore more, and take meaningful action.",
-    icon: "target",
-    isHighlighted: false
-  }
 ];
 
 export const webDevelopmentServicesData = [
@@ -66,21 +63,21 @@ export const webDevelopmentServicesData = [
     id: 1,
     title: "Ecommerce Development",
     description: "We build secure, scalable, and conversion-focused online stores. Our ecommerce website development services cover secure payment integration, online store development, and platforms such as Magento, WooCommerce, and Shopify Plus. Every project meets PCI DSS compliance and includes SSL certificates to ensure safe transactions, helping businesses launch robust, high-performance ecommerce solutions.",
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     isActive: false
   },
   {
     id: 2,
     title: "WordPress Development",
     description: "We offer custom WordPress development for businesses of all sizes, including WordPress theme customization, plugin development, and ecommerce builds with WooCommerce. Our team works with the Gutenberg editor, Elementor, and WPBakery to deliver functional, user-friendly websites.",
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     isActive: true
   },
   {
     id: 3,
     title: "Shopify Development",
     description: "We deliver complete Shopify store development services, from Shopify theme customization to Shopify app integration. Our expertise includes Shopify Liquid, dropshipping setup, and subscription ecommerce models. Certified Shopify Partner status (if applicable) ensures your store meets the highest standards.",
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     isActive: false
   }
 ];
@@ -235,7 +232,7 @@ export const stepSectionData = {
     },
     {
       id: 2,
-      number: "02", 
+      number: "02",
       title: "Design & Prototyping",
       description: "Our design team creates UX/UI design concepts that focus on both aesthetics and usability. We produce responsive layouts to ensure your website looks and functions seamlessly across all devices. Before development begins, you'll see interactive prototypes that bring your vision to life.",
       image: "/assets/images/work/step2.png",
@@ -244,7 +241,7 @@ export const stepSectionData = {
     {
       id: 3,
       number: "03",
-      title: "Development & Integration", 
+      title: "Development & Integration",
       description: "Once designs are approved, our developers bring them to life with clean, efficient code. This phase includes API integration for third-party services, database setup, and any required custom features. The result is a fully functional platform tailored to your specifications.",
       image: "/assets/images/work/step3.png",
       alignment: "right"
@@ -254,7 +251,7 @@ export const stepSectionData = {
       number: "04",
       title: "Testing & Launch",
       description: "Before going live, we conduct thorough QA testing to identify and fix any issues. This includes performance checks to ensure fast load times, mobile responsiveness, and browser compatibility. Once testing is complete, we coordinate a smooth, secure launch.",
-      image: "/assets/images/work/step4.png", 
+      image: "/assets/images/work/step4.png",
       alignment: "left"
     },
     {
@@ -279,11 +276,11 @@ export const landingPageBannerData2 = {
     "Your website should do more than look good. It should attract visitors, keep them engaged, and turn them into customers. We create scalable, secure, and high-performing websites built for long-term business growth."
   ],
   bullets: [], // no bullets shown in the image
-  cta: { 
-    text: "Start Your Web Development Now", 
-    href: "#", 
-    className: "offer-btn primary", 
-    show: true 
+  cta: {
+    text: "Start Your Web Development Now",
+    href: "#",
+    className: "offer-btn primary",
+    show: true
   },
   image: {
     src: "/assets/images/everything-you-need.png",
@@ -296,3 +293,48 @@ export const landingPageBannerData2 = {
 };
 
 export { landingPageBannerData2 };
+
+export const platformsData = [
+  {
+    id: 1,
+    icon: "/assets/images/technologyIcons.png",
+    title: "WordPress",
+    description:
+      "Our landing page design services for WordPress focus on custom themes, SEO-friendly layouts, and flexible integrations that help brands scale with ease.",
+  },
+  {
+    id: 2,
+    icon: "/assets/images/technologyIcons.png",
+    title: "Shopify",
+    description:
+      "We offer landing page design service for Shopify that optimize product showcases, checkout experiences, and app integrations to maximize e-commerce conversions.",
+  },
+  {
+    id: 3,
+    icon: "/assets/images/technologyIcons.png",
+    title: "Wix",
+    description:
+      "Our landing page design services for Wix deliver user-friendly, drag-and-drop pages crafted to engage visitors and help small businesses grow online.",
+  },
+  {
+    id: 4,
+    icon: "/assets/images/technologyIcons.png",
+    title: "Squarespace",
+    description:
+      "We provide landing page design service for Squarespace tailored to creative professionals, ensuring elegant and brand-focused layouts that convert.",
+  },
+  {
+    id: 5,
+    icon: "/assets/images/technologyIcons.png",
+    title: "Drupal",
+    description:
+      "Our landing page design services for Drupal emphasize enterprise-level security, advanced integrations, and scalable performance for high-traffic businesses.",
+  },
+  {
+    id: 6,
+    icon: "/assets/images/technologyIcons.png",
+    title: "Elementor",
+    description:
+      "With our landing page design service for Elementor, businesses gain CRO-focused, drag-and-drop flexibility to create visually dynamic pages that convert.",
+  },
+];

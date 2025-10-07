@@ -1,10 +1,11 @@
 /* Slider Section */
 .sliderSection {
-  padding: 80px 0;
+  padding: 100px 0 80px 0;
   background: #185ae9;
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
   position: relative;
   overflow: hidden;
+  margin-top: -4.2rem;
 }
 
 .sliderSection::before {
@@ -14,8 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../../../../public/assets/images/logo-watermark.svg")
-    no-repeat center center;
+  background: url("../../../../public/assets/images/logo-watermark.svg") no-repeat center center;
   background-size: 60% auto;
   opacity: 0.03;
   z-index: 0;
@@ -108,7 +108,8 @@
 .cardsWrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%; /* 3 cards = 300% */
+  width: 300%;
+  /* 3 cards = 300% */
 }
 
 /* Service Card */
@@ -128,8 +129,7 @@
 
 .serviceCard::before {
   content: "";
-  background: url(../../../../public/assets/images/ellipse.svg) center / contain
-    no-repeat;
+  background: url(../../../../public/assets/images/ellipse.svg) center / contain no-repeat;
   width: 85%;
   height: 70%;
   position: absolute;

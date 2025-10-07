@@ -1,5 +1,6 @@
   export const webBuilderHeading = 'Build Your Own Website Without a Designer';
   export const webBuilderColumnCount = 3; // Number of columns to display
+    export const webBuilderSectionClass = 'Landing-section'; // new class to apply to the section
 
   export const webBuilderCards = [
     {

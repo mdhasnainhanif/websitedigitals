@@ -4,6 +4,7 @@ export default function WebBuilderCardSection({
   columnCount = 3,
   className,
   button,
+  sectionClass, // additional class for the section passed from data
 }) {
   // Calculate Bootstrap column class based on columnCount
   const getColumnClass = (count) => {
@@ -12,8 +13,16 @@ export default function WebBuilderCardSection({
     return `col-md-${colSize}`;
   };
 
+  // Combine default section classes with any additional class passed via props
+  const sectionClasses = [
+    'section-padding gradient-circle leftCenter-gradient',
+    sectionClass,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <section className="section-padding gradient-circle leftCenter-gradient">
+    <section className={sectionClasses}>
       <div className="container">
         <div className="row">
           <div className="col-12">

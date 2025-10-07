@@ -14,6 +14,17 @@ import Faqs from '../../../components/FAQs/Faqs'
 import { homePageFAQs } from '../../../components/FAQs/data'
 import BlogSection from '../../../components/LandingPage/BlogSection/BlogSection'
 import ContactSection from '../../../components/LandingPage/ContactSection/ContactSection'
+import LandingPageCounter from '../../../components/LandingPage/LandingPageCounter/LandingPageCounter'
+import WebBuilderCardSection from '../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection'
+import {
+  webBuilderCards,
+  webBuilderHeading,
+  webBuilderColumnCount,
+  webBuilderSectionClass,
+} from "../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSectionData";
+import PlatformsSpecialize from '../../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize'
+import { platformsData } from '../../Data/landingPageData';
+import LandingBannerForm from '../../../components/LandingPage/LandingBannerForm/LandingBannerForm'
 
 
 
@@ -21,14 +32,22 @@ import ContactSection from '../../../components/LandingPage/ContactSection/Conta
 const page = () => {
   return (
     <div>
-      <WebBanner islandingPage={true} data={landingPageBannerData} className="withoutImg landingPageBanner" col="col-md-11" />
+      <WebBanner islandingPage={true} data={landingPageBannerData} className="withoutImg landingPageBanner" col="col-md-6" />
+      <LandingPageCounter />
       <DevelopmentCards />
-      <DevelopmentCardSlider webDevelopmentServicesData={webDevelopmentServicesData} />
       <OurWorkSection />
-      <ScrollSection data={landingPageScrollSectionData} className="landingPageScrollSection" isIconShow={true} />
+      <DevelopmentCardSlider webDevelopmentServicesData={webDevelopmentServicesData} />
+      <WebBuilderCardSection
+        heading={webBuilderHeading}
+        items={webBuilderCards}
+        columnCount={webBuilderColumnCount}
+        sectionClass={webBuilderSectionClass}
+      />
       <ReviewsSlider />
+      <ScrollSection data={landingPageScrollSectionData} className="landingPageScrollSection" isIconShow={true} />
       <StepSection />
-      <TechnologiesSlider />
+      <PlatformsSpecialize data={platformsData} />
+      {/* <TechnologiesSlider /> */}
       <TestimonialSlider />
       <WebBanner data={landingPageBannerData2} className="notHero order2 landingPageBanner2" />
       <Faqs faqs={homePageFAQs} isTwoCol={true} className="landingPageFaqs" />
