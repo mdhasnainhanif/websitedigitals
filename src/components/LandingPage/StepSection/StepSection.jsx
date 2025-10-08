@@ -6,6 +6,7 @@ import styles from "./StepSection.module.css";
 
 const StepSection = ({ sectionData = null }) => {
   const data = sectionData || stepSectionData;
+  const showDescription = data.showDescription !== false; // Default to true if not specified
   return (
     <section className={`section-padding ${styles.stepSection}`}>
       <div className="container">
@@ -15,6 +16,11 @@ const StepSection = ({ sectionData = null }) => {
               <h2 className={styles.sectionTitle}>
                 {data.title}
               </h2>
+              {showDescription && data.description && (
+                <p className={`${styles.sectionDescription} mt-3`}>
+                  {data.description}
+                </p>
+              )}
             </div>
           </div>
         </div>

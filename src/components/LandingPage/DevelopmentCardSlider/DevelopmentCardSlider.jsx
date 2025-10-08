@@ -8,7 +8,8 @@ import styles from "./DevelopmentCardSlider.module.css";
 const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
   const defaultSectionData = {
     heading: "Our Comprehensive Web Development Services to Grow Your Business",
-    description: "We provide professional web development solutions for businesses across the United States, combining proven practices, industry certifications, and modern technologies to deliver results that drive growth. Explore our specialized services below."
+    description: "We provide professional web development solutions for businesses across the United States, combining proven practices, industry certifications, and modern technologies to deliver results that drive growth. Explore our specialized services below.",
+    showDescription: true
   };
   
   const section = sectionData || defaultSectionData;
@@ -45,9 +46,11 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
               <h2>
                 {section.heading}
               </h2>
-              <p className={styles.sliderDescription}>
-                {section.description}
-              </p>
+              {section.showDescription && section.description && (
+                <p className={styles.sliderDescription}>
+                  {section.description}
+                </p>
+              )}
             </div>
           </div>
         </div>

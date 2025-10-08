@@ -8,6 +8,8 @@ export default function ScrollSection({ data, className, isIconShow }) {
   const {
     sectionClass = "scroller-section pb-5",
     heading = "Limited Time? Launch Faster with Designer-Built Templates",
+    description = [],
+    showDescription = true, // Boolean flag to control description display
     items = [],
     cta = "",
   } = data || {};
@@ -87,9 +89,20 @@ export default function ScrollSection({ data, className, isIconShow }) {
           {/* LEFT column (sticky list) */}
           <div className="col-md-6">
             <div className="scroller-sticky">
-              <div className="section-heading">
-                <h2>{heading}</h2>
-              </div>
+                  <div className="section-heading">
+                    <h2>{heading}</h2>
+                    {showDescription && Array.isArray(description) && description.length > 0 && (
+                      <div className="mt-3">
+                        {description.map((para, idx) => (
+                          para.trim() ? (
+                            <p key={idx} className="mb-2">{para}</p>
+                          ) : (
+                            <br key={idx} />
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </div>
 
               <ul className="scroller-list">
                 {items.map((it, i) => (

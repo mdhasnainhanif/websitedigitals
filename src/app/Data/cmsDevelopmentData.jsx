@@ -56,7 +56,11 @@ export const cmsDevelopmentServicesData = [
 export const cmsDevelopmentScrollSectionData = {
   sectionClass: "scroller-section gray-section",
   heading: "Why Partner With Us for Your CMS Development Needs",
-  description: "When it comes to selecting the best CMS development companies, choosing a partner with a proven track record and the right technical capabilities can make all the difference.\n\nOur approach combines innovation, compliance, and performance to deliver CMS platforms that not only meet your current needs but also scale with your future growth. Here's what sets us apart:",
+  description: [
+    "When it comes to selecting the best CMS development companies, choosing a partner with a proven track record and the right technical capabilities can make all the difference.",
+    "",
+    "Our approach combines innovation, compliance, and performance to deliver CMS platforms that not only meet your current needs but also scale with your future growth. Here's what sets us apart:"
+  ],
   items: [
     {
       id: "cms-firstScroller",
@@ -323,6 +327,7 @@ export const cmsDevelopmentTechnologiesData = [
 // Workflow Data (for StepSection component)
 export const cmsDevelopmentWorkflowData = {
   title: "Our Workflow for CMS Development",
+  description: "Delivering a secure, scalable, and user-friendly CMS requires a clear, proven process. We combine structured planning with technical precision to ensure every build meets your business needs today and adapts for tomorrow. Our process includes:",
   steps: [
     {
       id: 1,
@@ -563,7 +568,13 @@ export const cmsDevelopmentWorkflowSectionData = {
 // Technologies Section Data (Section 9) - for PlatformsSpecialize
 export const cmsDevelopmentTechnologiesSectionData = {
   heading: "Innovative Technologies We Apply",
-  description: "Our team leverages industry-leading platforms and frameworks to deliver secure, scalable, and future-ready digital experiences. We choose the right technology stack for your business, ensuring reliable performance, smooth integrations, and a solution that grows with you."
+  description: "Our team leverages industry-leading platforms and frameworks to deliver secure, scalable, and future-ready digital experiences. We choose the right technology stack for your business, ensuring reliable performance, smooth integrations, and a solution that grows with you.",
+  cta: {
+    text: "See Tech in Action",
+    href: "#",
+    className: "primary book-your-call",
+    show: true
+  }
 };
 
 // Final CTA Section Data (Section 11)

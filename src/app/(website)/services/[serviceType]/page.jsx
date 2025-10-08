@@ -46,10 +46,75 @@ import {
   cmsDevelopmentImpactSectionData,
   cmsDevelopmentIndustriesCardsData
 } from '../../../Data/cmsDevelopmentData'
-import { webPortalDevelopmentBannerData, webPortalDevelopmentBannerData2, webPortalDevelopmentScrollSectionData, webPortalDevelopmentServicesData } from '../../../Data/webPortalDevelopmentData'
-import { webApplicationDevelopmentBannerData, webApplicationDevelopmentBannerData2, webApplicationDevelopmentScrollSectionData, webApplicationDevelopmentServicesData } from '../../../Data/webApplicationDevelopmentData'
-import { websiteMaintenanceBannerData, websiteMaintenanceBannerData2, websiteMaintenanceScrollSectionData, websiteMaintenanceServicesData } from '../../../Data/websiteMaintenanceData'
-import { websiteSpeedOptimizationBannerData, websiteSpeedOptimizationBannerData2, websiteSpeedOptimizationScrollSectionData, websiteSpeedOptimizationServicesData } from '../../../Data/websiteSpeedOptimizationData'
+import { 
+  webPortalDevelopmentBannerData, 
+  webPortalDevelopmentBannerData2, 
+  webPortalDevelopmentScrollSectionData, 
+  webPortalDevelopmentServicesData,
+  webPortalDevelopmentStatsData,
+  webPortalDevelopmentImpactSectionData,
+  webPortalDevelopmentImpactCardsData,
+  webPortalDevelopmentServicesSectionData,
+  webPortalDevelopmentIndustriesSectionData,
+  webPortalDevelopmentIndustriesCardsData,
+  webPortalDevelopmentWorkflowData,
+  webPortalDevelopmentTechnologiesSectionData,
+  webPortalDevelopmentTechnologiesData,
+  webPortalDevelopmentFinalCTAData,
+  webPortalDevelopmentFAQsData
+} from '../../../Data/webPortalDevelopmentData'
+import { 
+  webApplicationDevelopmentBannerData, 
+  webApplicationDevelopmentBannerData2, 
+  webApplicationDevelopmentScrollSectionData, 
+  webApplicationDevelopmentServicesData,
+  webApplicationDevelopmentStatsData,
+  webApplicationDevelopmentImpactSectionData,
+  webApplicationDevelopmentImpactCardsData,
+  webApplicationDevelopmentServicesSectionData,
+  webApplicationDevelopmentIndustriesSectionData,
+  webApplicationDevelopmentIndustriesCardsData,
+  webApplicationDevelopmentWorkflowData,
+  webApplicationDevelopmentTechnologiesSectionData,
+  webApplicationDevelopmentTechnologiesData,
+  webApplicationDevelopmentFinalCTAData,
+  webApplicationDevelopmentFAQsData
+} from '../../../Data/webApplicationDevelopmentData'
+import { 
+  websiteMaintenanceBannerData, 
+  websiteMaintenanceBannerData2, 
+  websiteMaintenanceScrollSectionData, 
+  websiteMaintenanceServicesData,
+  websiteMaintenanceStatsData,
+  websiteMaintenanceImpactSectionData,
+  websiteMaintenanceImpactCardsData,
+  websiteMaintenanceServicesSectionData,
+  websiteMaintenanceIndustriesSectionData,
+  websiteMaintenanceIndustriesCardsData,
+  websiteMaintenanceWorkflowData,
+  websiteMaintenanceTechnologiesSectionData,
+  websiteMaintenanceTechnologiesData,
+  websiteMaintenanceFinalCTAData,
+  websiteMaintenanceFAQsData
+} from '../../../Data/websiteMaintenanceData';
+
+import { 
+  websiteSpeedOptimizationBannerData, 
+  websiteSpeedOptimizationBannerData2, 
+  websiteSpeedOptimizationScrollSectionData,
+  websiteSpeedOptimizationServicesData,
+  websiteSpeedOptimizationStatsData,
+  websiteSpeedOptimizationImpactSectionData,
+  websiteSpeedOptimizationImpactCardsData,
+  websiteSpeedOptimizationServicesSectionData,
+  websiteSpeedOptimizationIndustriesSectionData,
+  websiteSpeedOptimizationIndustriesCardsData,
+  websiteSpeedOptimizationWorkflowData,
+  websiteSpeedOptimizationTechnologiesSectionData,
+  websiteSpeedOptimizationTechnologiesData,
+  websiteSpeedOptimizationFinalCTAData,
+  websiteSpeedOptimizationFAQsData
+} from '../../../Data/websiteSpeedOptimizationData'
 
 // Service data mapping
 const serviceDataMap = {
@@ -79,50 +144,70 @@ const serviceDataMap = {
     bannerData2: webPortalDevelopmentBannerData2,
     scrollSectionData: webPortalDevelopmentScrollSectionData,
     servicesData: webPortalDevelopmentServicesData,
-    statsData: null,
-    industriesData: null,
-    technologiesData: null,
-    workflowData: null,
-    whyChooseUsData: null,
-    faqsData: null
+    statsData: webPortalDevelopmentStatsData,
+    impactSectionData: webPortalDevelopmentImpactSectionData,
+    impactCardsData: webPortalDevelopmentImpactCardsData,
+    servicesSectionData: webPortalDevelopmentServicesSectionData,
+    industriesSectionData: webPortalDevelopmentIndustriesSectionData,
+    industriesCardsData: webPortalDevelopmentIndustriesCardsData,
+    workflowData: webPortalDevelopmentWorkflowData,
+    technologiesSectionData: webPortalDevelopmentTechnologiesSectionData,
+    technologiesData: webPortalDevelopmentTechnologiesData,
+    finalCTAData: webPortalDevelopmentFinalCTAData,
+    faqsData: webPortalDevelopmentFAQsData
   },
   'web-application-development-services': {
     bannerData: webApplicationDevelopmentBannerData,
     bannerData2: webApplicationDevelopmentBannerData2,
     scrollSectionData: webApplicationDevelopmentScrollSectionData,
     servicesData: webApplicationDevelopmentServicesData,
-    statsData: null,
-    industriesData: null,
-    technologiesData: null,
-    workflowData: null,
-    whyChooseUsData: null,
-    faqsData: null
+    statsData: webApplicationDevelopmentStatsData,
+    impactSectionData: webApplicationDevelopmentImpactSectionData,
+    impactCardsData: webApplicationDevelopmentImpactCardsData,
+    servicesSectionData: webApplicationDevelopmentServicesSectionData,
+    industriesSectionData: webApplicationDevelopmentIndustriesSectionData,
+    industriesCardsData: webApplicationDevelopmentIndustriesCardsData,
+    workflowData: webApplicationDevelopmentWorkflowData,
+    technologiesSectionData: webApplicationDevelopmentTechnologiesSectionData,
+    technologiesData: webApplicationDevelopmentTechnologiesData,
+    finalCTAData: webApplicationDevelopmentFinalCTAData,
+    faqsData: webApplicationDevelopmentFAQsData
   },
-  'website-maintenance-services': {
-    bannerData: websiteMaintenanceBannerData,
-    bannerData2: websiteMaintenanceBannerData2,
-    scrollSectionData: websiteMaintenanceScrollSectionData,
-    servicesData: websiteMaintenanceServicesData,
-    statsData: null,
-    industriesData: null,
-    technologiesData: null,
-    workflowData: null,
-    whyChooseUsData: null,
-    faqsData: null
-  },
-  'website-speed-optimization-services': {
-    bannerData: websiteSpeedOptimizationBannerData,
-    bannerData2: websiteSpeedOptimizationBannerData2,
-    scrollSectionData: websiteSpeedOptimizationScrollSectionData,
-    servicesData: websiteSpeedOptimizationServicesData,
-    statsData: null,
-    industriesData: null,
-    technologiesData: null,
-    workflowData: null,
-    whyChooseUsData: null,
-    faqsData: null
-  }
-}
+      'website-maintenance-services': {
+        bannerData: websiteMaintenanceBannerData,
+        bannerData2: websiteMaintenanceBannerData2,
+        scrollSectionData: websiteMaintenanceScrollSectionData,
+        servicesData: websiteMaintenanceServicesData,
+        statsData: websiteMaintenanceStatsData,
+        impactSectionData: websiteMaintenanceImpactSectionData,
+        impactCardsData: websiteMaintenanceImpactCardsData,
+        servicesSectionData: websiteMaintenanceServicesSectionData,
+        industriesSectionData: websiteMaintenanceIndustriesSectionData,
+        industriesCardsData: websiteMaintenanceIndustriesCardsData,
+        workflowData: websiteMaintenanceWorkflowData,
+        technologiesSectionData: websiteMaintenanceTechnologiesSectionData,
+        technologiesData: websiteMaintenanceTechnologiesData,
+        finalCTAData: websiteMaintenanceFinalCTAData,
+        faqsData: websiteMaintenanceFAQsData
+      },
+      'website-speed-optimization-services': {
+        bannerData: websiteSpeedOptimizationBannerData,
+        bannerData2: websiteSpeedOptimizationBannerData2,
+        scrollSectionData: websiteSpeedOptimizationScrollSectionData,
+        servicesData: websiteSpeedOptimizationServicesData,
+        statsData: websiteSpeedOptimizationStatsData,
+        impactSectionData: websiteSpeedOptimizationImpactSectionData,
+        impactCardsData: websiteSpeedOptimizationImpactCardsData,
+        servicesSectionData: websiteSpeedOptimizationServicesSectionData,
+        industriesSectionData: websiteSpeedOptimizationIndustriesSectionData,
+        industriesCardsData: websiteSpeedOptimizationIndustriesCardsData,
+        workflowData: websiteSpeedOptimizationWorkflowData,
+        technologiesSectionData: websiteSpeedOptimizationTechnologiesSectionData,
+        technologiesData: websiteSpeedOptimizationTechnologiesData,
+        finalCTAData: websiteSpeedOptimizationFinalCTAData,
+        faqsData: websiteSpeedOptimizationFAQsData
+      }
+};
 
 const ServicePage = ({ params }) => {
   const { serviceType } = params
@@ -160,6 +245,8 @@ const ServicePage = ({ params }) => {
       />
       <WebBuilderCardSection
         heading={serviceData.industriesSectionData?.heading || webBuilderHeading}
+        description={serviceData.industriesSectionData?.description}
+        showDescription={serviceData.industriesSectionData?.showDescription}
         items={serviceData.industriesCardsData || webBuilderCards}
         columnCount={3}
         sectionClass={webBuilderSectionClass}

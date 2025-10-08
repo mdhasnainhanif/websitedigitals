@@ -8,7 +8,8 @@ import styles from "./DevelopmentCards.module.css";
 const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
   const defaultSectionData = {
     heading: "Why Landing Page Design Matters for Business Growth",
-    description: "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success. Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results."
+    description: "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success. Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results.",
+    showDescription: true
   };
   
   const section = sectionData || defaultSectionData;
@@ -25,9 +26,11 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
               <h2 className="fw-bolder fs-1">
                 {section.heading}
               </h2>
-              <p className="text-muted mx-auto">
-                {section.description}
-              </p>
+              {section.showDescription && section.description && (
+                <p className="text-muted mx-auto">
+                  {section.description}
+                </p>
+              )}
             </div></div>
         </div>
 

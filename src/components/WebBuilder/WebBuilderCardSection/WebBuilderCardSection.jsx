@@ -1,5 +1,7 @@
 export default function WebBuilderCardSection({
   heading,
+  description,
+  showDescription = true, // Boolean flag to control description display
   items = [],
   columnCount = 3,
   className,
@@ -28,6 +30,7 @@ export default function WebBuilderCardSection({
           <div className="col-12">
             <div className="section-heading text-center">
               {heading ? <h2>{heading}</h2> : null}
+              {showDescription && description ? <p className="mt-3">{description}</p> : null}
             </div>
           </div>
         </div>
