@@ -129,16 +129,18 @@ export default function WebBuilderBanner({
                   ))}
 
                 {/* Main image */}
-                <img
-                  className={data?.image?.className || "width-100"}
-                  src={
-                    data?.image?.src ||
-                    "/assets/images-webp/web-builder-Banner.webp"
-                  }
-                  width={data?.image?.width}
-                  height={data?.image?.height}
-                  alt={data?.image?.alt || "Default Image"}
-                />
+                {data?.image && data?.image !== false && (
+                  <img
+                    className={data?.image?.className || "width-100"}
+                    src={
+                      data?.image?.src ||
+                      "/assets/images-webp/web-builder-Banner.webp"
+                    }
+                    width={data?.image?.width}
+                    height={data?.image?.height}
+                    alt={data?.image?.alt || "Default Image"}
+                  />
+                )}
                 {islandingPage && (
                   <>
                     <LandingBannerForm />
