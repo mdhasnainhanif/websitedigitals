@@ -2,13 +2,15 @@
 
 import React, { useEffect, useState, useRef } from "react";
 
-const LandingPageCounter = () => {
-    const counters = [
+const LandingPageCounter = ({ statsData = null }) => {
+    const defaultCounters = [
         { id: 1, value: 250, suffix: "+", label: "Pages Built" },
         { id: 2, value: 40, suffix: "%", label: "Conversion Lift" },
         { id: 3, value: 15, suffix: "+", label: "Industries" },
         { id: 4, value: 95, suffix: "%", label: "Retention Rate" },
     ];
+    
+    const counters = statsData || defaultCounters;
     const [counts, setCounts] = useState(counters.map(() => 0));
     const [startCount, setStartCount] = useState(false);
     const counterRef = useRef(null);
@@ -56,7 +58,7 @@ const LandingPageCounter = () => {
     return (
         <div ref={counterRef} className="container text-center my-5">
             <div
-                className="row justify-content-center align-items-center text-white py-5 rounded-4 shadow-sm"
+                className="row justify-content-center align-items-center text-white section-padding rounded-4 shadow-sm"
                 style={{
                     backgroundImage: 'url("../assets/images/counterbg.webp")',
                     backgroundSize: "cover",
@@ -69,10 +71,10 @@ const LandingPageCounter = () => {
                         key={counter.id}
                         className="col-6 col-md-3 d-flex flex-column align-items-center position-relative mb-md-0"
                     >
-                        <h3 className="fw-bold">
+                        <h2 className="fw-bold">
                             {counts[index]}
                             {counter.suffix}
-                        </h3>
+                        </h2>
                         <p className="mb-0 small">{counter.label}</p>
                         {index !== counters.length - 1 && (
                             <div

@@ -5,7 +5,14 @@ import { webDevelopmentServicesData } from "../../../app/Data/landingPageData";
 import { useOwlCarousel } from "../../../app/hooks/useOwlCarousel";
 import styles from "./DevelopmentCardSlider.module.css";
 
-const DevelopmentCardSlider = () => {
+const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
+  const defaultSectionData = {
+    heading: "Our Comprehensive Web Development Services to Grow Your Business",
+    description: "We provide professional web development solutions for businesses across the United States, combining proven practices, industry certifications, and modern technologies to deliver results that drive growth. Explore our specialized services below."
+  };
+  
+  const section = sectionData || defaultSectionData;
+  const services = servicesData || webDevelopmentServicesData;
   // Initialize Owl Carousel
   useOwlCarousel(`.${styles.developmentCardSlider}`, {
     items: 3,
@@ -16,7 +23,7 @@ const DevelopmentCardSlider = () => {
     autoplayHoverPause: true,
     smartSpeed: 600,
     dots: true,
-    nav: true,
+    nav: false,
     navText: [
       '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
       '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -36,13 +43,10 @@ const DevelopmentCardSlider = () => {
           <div className="col-md-6">
             <div className="section-heading text-center text-white">
               <h2>
-                Our Comprehensive Web Development Services to Grow Your Business
+                {section.heading}
               </h2>
               <p className={styles.sliderDescription}>
-                We provide professional web development solutions for businesses
-                across the United States, combining proven practices, industry
-                certifications, and modern technologies to deliver results that
-                drive growth. Explore our specialized services below.
+                {section.description}
               </p>
             </div>
           </div>
@@ -50,7 +54,7 @@ const DevelopmentCardSlider = () => {
 
         <div className={styles.sliderContainer}>
           <div className={`owl-carousel owl-theme ${styles.developmentCardSlider}`}>
-            {webDevelopmentServicesData.map((service) => (
+            {services.map((service) => (
               <div key={service.id} className={`item ${styles.serviceCard}`}>
                 <div className={styles.cardIcon}>
                   <div className={styles.iconWrapper}>{service.icon}</div>

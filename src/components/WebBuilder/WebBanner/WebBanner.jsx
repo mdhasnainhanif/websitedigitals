@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import LandingPageForm from "@/components/LandingPage/LandingPageForm";
+import LandingBannerForm from "@/components/LandingPage/LandingBannerForm/LandingBannerForm";
 import BannerImageSlider from "@/components/BannerImageSlider/BannerImageSlider";
 import TechnologyNameSlider from "@/components/TechnologyNameSlider/TechnologyNameSlider";
 
@@ -141,7 +141,7 @@ export default function WebBuilderBanner({
                 />
                 {islandingPage && (
                   <>
-                    <LandingPageForm />
+                    <LandingBannerForm />
                   </>
                 )}
               </div>

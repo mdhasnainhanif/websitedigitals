@@ -4,7 +4,8 @@ import React from "react";
 import { stepSectionData } from "../../../app/Data/landingPageData";
 import styles from "./StepSection.module.css";
 
-const StepSection = () => {
+const StepSection = ({ sectionData = null }) => {
+  const data = sectionData || stepSectionData;
   return (
     <section className={`section-padding ${styles.stepSection}`}>
       <div className="container">
@@ -12,14 +13,14 @@ const StepSection = () => {
           <div className="col-12">
             <div className={`text-center ${styles.sectionHeader}`}>
               <h2 className={styles.sectionTitle}>
-                {stepSectionData.title}
+                {data.title}
               </h2>
             </div>
           </div>
         </div>
 
         <div className={styles.stepsContainer}>
-          {stepSectionData.steps.map((step, index) => (
+          {data.steps.map((step, index) => (
             <React.Fragment key={step.id}>
               <div className={`row align-items-center ${styles.stepRow}`}>
                 <div className={`col-md-6 ${step.alignment === 'right' ? 'order-md-1' : 'order-md-2'}`}>
@@ -42,7 +43,7 @@ const StepSection = () => {
               </div>
               
               {/* Arrow between steps */}
-              {index < stepSectionData.steps.length - 1 && (
+              {index < data.steps.length - 1 && (
                 <div className={styles.arrowContainer}>
                   <img
                     src={`/assets/images/work/arrow${index + 1}.svg`}

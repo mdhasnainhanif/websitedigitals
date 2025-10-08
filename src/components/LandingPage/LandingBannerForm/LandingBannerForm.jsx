@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import styles from "./LandingBannerForm.module.css";
+import { VideoIcon } from "@/icons";
+import Link from "next/link";
 
 const LandingBannerForm = () => {
     const [formData, setFormData] = useState({
@@ -32,7 +34,7 @@ const LandingBannerForm = () => {
                         <Row className="gy-4">
                             <Col md={6}>
                                 <Form.Group>
-                                    <Form.Label>Name</Form.Label>
+                                    <Form.Label className={styles.label}>Name</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="name"
@@ -46,7 +48,7 @@ const LandingBannerForm = () => {
 
                             <Col md={6}>
                                 <Form.Group>
-                                    <Form.Label>Email Address</Form.Label>
+                                    <Form.Label className={styles.label}>Email Address</Form.Label>
                                     <Form.Control
                                         type="email"
                                         name="email"
@@ -60,7 +62,7 @@ const LandingBannerForm = () => {
 
                             <Col md={6}>
                                 <Form.Group>
-                                    <Form.Label>How We Can Help?</Form.Label>
+                                    <Form.Label className={styles.label}>How We Can Help?</Form.Label>
                                     <Form.Select
                                         name="help"
                                         value={formData.help}
@@ -77,7 +79,7 @@ const LandingBannerForm = () => {
 
                             <Col md={6}>
                                 <Form.Group>
-                                    <Form.Label>What’s Your Budget?</Form.Label>
+                                    <Form.Label className={styles.label}>What’s Your Budget?</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="budget"
@@ -91,7 +93,7 @@ const LandingBannerForm = () => {
 
                             <Col md={12}>
                                 <Form.Group>
-                                    <Form.Label>Message</Form.Label>
+                                    <Form.Label className={styles.label}>Message</Form.Label>
                                     <Form.Control
                                         as="textarea"
                                         name="message"
@@ -105,9 +107,11 @@ const LandingBannerForm = () => {
                             </Col>
 
                             <Col md={12} className="text-center mt-3">
+                                <Link className='link-area' href="#">
                                 <Button type="submit" className={styles.submitBtn}>
-                                    Submit and Book a call <span>📞</span>
+                                    Submit and Book a Call &nbsp; <VideoIcon/>
                                 </Button>
+                                </Link>
                             </Col>
                         </Row>
                     </Form>

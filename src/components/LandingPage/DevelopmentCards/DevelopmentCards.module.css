@@ -20,11 +20,11 @@
   content: "";
   position: absolute;
   top: 1rem;
-  right: -3rem;
-  width: 100%;
-  max-width: 25rem;
-  height: 20rem;
+  right: 1rem;
+  width: 15rem;
+  height: 15rem;
   background: url(../../../../public/assets/images/logo-watermark.svg) no-repeat center center;
   background-size: contain;
   opacity: 0.1;
+  overflow: hidden;
 }

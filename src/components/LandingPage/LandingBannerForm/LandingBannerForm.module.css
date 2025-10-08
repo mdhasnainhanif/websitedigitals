@@ -54,6 +54,13 @@
     background: #008ed6;
 }
 
+.label{
+    color: #000;
+    display: block;
+    font-size: 0.925rem;
+    text-align: start;
+}
+
 @media (max-width: 768px) {
     .formWrapper {
         padding: 25px;

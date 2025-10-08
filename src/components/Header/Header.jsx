@@ -152,7 +152,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/12.webp', title: 'Shopify Development', desc: 'Top-notch Shopify solutions to launch and scale your stor.' },
                                   { img: '/assets/images/menu/13.webp', title: 'Wix Development', desc: 'Easy-to-manage Wix websites designed for impact.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -166,11 +166,11 @@ export default function Header() {
                               <div className={`${styles.vertical_bordersperator} ${styles.p04}`}>
                                 {[
                                   { img: '/assets/images/menu/14.webp', title: 'Squarespace Development', desc: 'Elegant Squarespace design for modern business.' },
-                                  { img: '/assets/images/menu/15.webp', title: 'CMS Development', desc: 'Smart CMS solutions to simplify content management.' },
-                                  { img: '/assets/images/menu/16.webp', title: 'Web Portal Development', desc: 'Secure, scalable portals for business and communities.' },
-                                  { img: '/assets/images/menu/17.webp', title: 'Web Application Development', desc: 'Ineractive and custom web apps built to perform.' },
+                                  { img: '/assets/images/menu/15.webp', title: 'CMS Development', desc: 'Smart CMS solutions to simplify content management.', href: '/services/cms-development-company' },
+                                  { img: '/assets/images/menu/16.webp', title: 'Web Portal Development', desc: 'Secure, scalable portals for business and communities.', href: '/services/web-portal-development-company' },
+                                  { img: '/assets/images/menu/17.webp', title: 'Web Application Development', desc: 'Ineractive and custom web apps built to perform.', href: '/services/web-application-development-services' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -183,10 +183,10 @@ export default function Header() {
                             <div className="col-md-4 p-0">
                               <div className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}>
                                 {[
-                                  { img: '/assets/images/menu/18.webp', title: 'Web Speed Optimization', desc: 'Faster load times, better experience, and higher conversion.' },
-                                  { img: '/assets/images/menu/19.png', title: 'Web Maintenance', desc: 'Keep your website secure , updated, and error-free.' },
+                                  { img: '/assets/images/menu/18.webp', title: 'Web Speed Optimization', desc: 'Faster load times, better experience, and higher conversion.', href: '/services/website-speed-optimization-services' },
+                                  { img: '/assets/images/menu/19.png', title: 'Web Maintenance', desc: 'Keep your website secure , updated, and error-free.', href: '/services/website-maintenance-services' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -216,7 +216,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/3.png', title: 'Website Redesign', desc: 'Refresh your website for modern appeal and performance.' },
                                   { img: '/assets/images/menu/4.png', title: 'B2B Web Design', desc: 'Professional B2B designs that build trust and authority.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -233,7 +233,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/6.png', title: 'Amazon Store Setup', desc: 'Optimized Amazon stores to boost your eCommerce success.' },
                                   { img: '/assets/images/menu/7.png', title: 'Logo Design', desc: 'Creative logos that define and enhance your brand identity.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -249,7 +249,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/8.png', title: 'Video Animation', desc: 'Compelling animations to tell your story with impact.' },
                                   { img: '/assets/images/menu/9.png', title: 'Graphic Design', desc: 'Visual designs that engage and communicate effectively.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -279,7 +279,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/22.webp', title: 'Social Media Marketing', desc: 'Engage, grow, and convert through social channels.' },
                                   { img: '/assets/images/menu/23.webp', title: 'Digital PR', desc: 'Build authority and visibility with impactful PR campaigns.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -297,7 +297,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/26.webp', title: 'Guest Post/Outreach', desc: 'Expand reach with strategic guest posting and outreach.' },
                                   { img: '/assets/images/menu/27.webp', title: 'Link Building', desc: 'High-quality backlinks to strengthen your SEO.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -314,7 +314,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/29.webp', title: 'Online Reputation Management', desc: 'Protect and enhance your brand’s online presence.' },
                                   { img: '/assets/images/menu/30.webp', title: 'App Store Optimization', desc: 'Get your app discovered and downloaded more often.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -344,7 +344,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/32.webp', title: 'Dedicated Hosting', desc: 'Enterprise-level hosting with maximum resources' },
                                   { img: '/assets/images/menu/33.webp', title: 'Cloud Hosting', desc: 'Scalable cloud hosting built for speed and reliability.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>
@@ -360,7 +360,7 @@ export default function Header() {
                                   { img: '/assets/images/menu/35.webp', title: 'Reseller Hosting', desc: 'Grow your business with flexible reseller hosting plans.' },
                                   { img: '/assets/images/menu/36.webp', title: 'Domain Registration', desc: 'Secure the perfect domain for your brand identity.' },
                                 ].map((item, i) => (
-                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href="#">
+                                  <Link key={i} className={`${styles.nav_link} ${styles.padding_left}`} href={item.href || "#"}>
                                     <div className={styles.menu_icon1_wrapper}>
                                       <div className={styles.menu_icon1}><img src={item.img} alt="Logo" className="logo-img" loading="lazy" /></div>
                                       <div className={styles.menu_content1}><p className={styles.menu_title}>{item.title}</p><p className={styles.desc1}>{item.desc}</p></div>

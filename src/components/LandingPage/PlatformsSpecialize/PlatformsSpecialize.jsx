@@ -4,19 +4,22 @@ import React from "react";
 import styles from "./PlatformsSpecialize.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-const PlatformsSpecialize = ({ data }) => {
+const PlatformsSpecialize = ({ data, sectionData = null }) => {
+    const defaultSectionData = {
+        heading: "Platforms We Specialize In",
+        description: "We design high-converting landing pages across today's most trusted platforms. Our expertise ensures every business, whether e-commerce, service-based, or enterprise, gets a tailored solution built for performance, scalability, and growth."
+    };
+    
+    const section = sectionData || defaultSectionData;
     return (
         <section className={styles.platformSection}>
             <Container>
                 <div className={styles.heading}>
                     <h2>
-                        Platforms We <span>Specialize In</span>
+                        {section.heading}
                     </h2>
                     <p>
-                        We design high-converting landing pages across today’s most trusted
-                        platforms. Our expertise ensures every business, whether e-commerce,
-                        service-based, or enterprise, gets a tailored solution built for
-                        performance, scalability, and growth.
+                        {section.description}
                     </p>
                 </div>
 
