@@ -63,7 +63,7 @@ export const websiteSpeedOptimizationStatsData = [
 export const websiteSpeedOptimizationImpactSectionData = {
   heading: "What Impact Does Website Speed Optimization Make",
   description:
-    "Slow sites push visitors away and reduce trust. Website performance optimization improves engagement, visibility, and sales. The benefits of faster website load times span user experience, search rankings, and business growth.",
+    "SloMakesites push visitors away and reduce trust. Website performance optimization improves engagement, visibility, and sales. The benefits of faster website load times span user experience, search rankings, and business growth.",
   showDescription: true,
 };
 
