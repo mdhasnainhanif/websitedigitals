@@ -166,7 +166,7 @@ export const customLogoDesignServicesData = [
     title: "Scalable Vector Logo Design",
     description:
       "Your business logo needs to look sharp everywhere, from a business card to a billboard. We deliver vector logo files (AI, EPS, SVG) so your brand remains crisp and professional in every format.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -174,7 +174,7 @@ export const customLogoDesignServicesData = [
     title: "Logo Redesign & Refresh",
     description:
       "If your current logo feels dated, we provide a full logo redesign service to modernize your look while retaining the equity your brand has built. This keeps you relevant and appealing to today's market.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -182,7 +182,7 @@ export const customLogoDesignServicesData = [
     title: "Marketing Collateral Design",
     description:
       "Custom-designed templates and branded assets for Instagram, LinkedIn, and Facebook to ensure your brand identity is instantly recognizable across your digital channels.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -190,7 +190,7 @@ export const customLogoDesignServicesData = [
     title: "Brand Guidelines & Visual Identity",
     description:
       "We create comprehensive brand guidelines that define how your logo, fonts, and colors work together across platforms. This ensures your visual identity design stays consistent, no matter who is creating content for your business.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -198,7 +198,7 @@ export const customLogoDesignServicesData = [
     title: "Digital & Print-Ready Assets",
     description:
       "Beyond logo creation, we prepare ready-to-use assets for both digital design services (social media, websites) and print formats (business cards, brochures). You'll get everything you need for a consistent brand experience.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
   },
 ];
@@ -459,7 +459,7 @@ export const customLogoDesignTechnologiesData = [
 export const customLogoDesignFinalCTAData = {
   heading: "Build a Brand Identity With Custom Logo Design Services",
   description: [
-    "First impressions matter. With our custom logo design services, you get a logo that fits your brand and works across every platform."
+    "First impressions matter. With our custom logo design services, you get a logo that fits your brand and works across every platform.",
   ],
   isCta: true,
   cta: {

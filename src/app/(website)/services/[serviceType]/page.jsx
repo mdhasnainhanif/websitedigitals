@@ -1,28 +1,28 @@
-import React from 'react'
-import WebBanner from '@/components/WebBuilder/WebBanner/WebBanner'
-import DevelopmentCards from '@/components/LandingPage/DevelopmentCards/DevelopmentCards'
-import DevelopmentCardSlider from '../../../../components/LandingPage/DevelopmentCardSlider/DevelopmentCardSlider'
-import OurWorkSection from '../../../../components/LandingPage/OurWorkSection/OurWorkSection'
-import ScrollSection from '../../../../components/ScrollSection/ScrollSection'
-import ReviewsSlider from '../../../../components/LandingPage/ReviewsSlider/ReviewsSlider'
-import StepSection from '../../../../components/LandingPage/StepSection/StepSection'
-import TechnologiesSlider from '../../../../components/LandingPage/TechnologySlider/TechnologySlider'
-import TestimonialSlider from '../../../../components/LandingPage/TestimonialSlider/TestimonialSlider'
-import Faqs from '../../../../components/FAQs/Faqs'
-import { homePageFAQs } from '../../../../components/FAQs/data'
-import BlogSection from '../../../../components/LandingPage/BlogSection/BlogSection'
-import ContactSection from '../../../../components/LandingPage/ContactSection/ContactSection'
-import LandingPageCounter from '../../../../components/LandingPage/LandingPageCounter/LandingPageCounter'
-import WebBuilderCardSection from '../../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection'
+import React from "react";
+import WebBanner from "@/components/WebBuilder/WebBanner/WebBanner";
+import DevelopmentCards from "@/components/LandingPage/DevelopmentCards/DevelopmentCards";
+import DevelopmentCardSlider from "../../../../components/LandingPage/DevelopmentCardSlider/DevelopmentCardSlider";
+import OurWorkSection from "../../../../components/LandingPage/OurWorkSection/OurWorkSection";
+import ScrollSection from "../../../../components/ScrollSection/ScrollSection";
+import ReviewsSlider from "../../../../components/LandingPage/ReviewsSlider/ReviewsSlider";
+import StepSection from "../../../../components/LandingPage/StepSection/StepSection";
+import TechnologiesSlider from "../../../../components/LandingPage/TechnologySlider/TechnologySlider";
+import TestimonialSlider from "../../../../components/LandingPage/TestimonialSlider/TestimonialSlider";
+import Faqs from "../../../../components/FAQs/Faqs";
+import { homePageFAQs } from "../../../../components/FAQs/data";
+import BlogSection from "../../../../components/LandingPage/BlogSection/BlogSection";
+import ContactSection from "../../../../components/LandingPage/ContactSection/ContactSection";
+import LandingPageCounter from "../../../../components/LandingPage/LandingPageCounter/LandingPageCounter";
+import WebBuilderCardSection from "../../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection";
 import {
   webBuilderCards,
   webBuilderHeading,
   webBuilderColumnCount,
   webBuilderSectionClass,
 } from "../../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSectionData";
-import PlatformsSpecialize from '../../../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize'
-import { platformsData } from '../../../Data/landingPageData';
-import LandingBannerForm from '../../../../components/LandingPage/LandingBannerForm/LandingBannerForm'
+import PlatformsSpecialize from "../../../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize";
+import { platformsData } from "../../../Data/landingPageData";
+import LandingBannerForm from "../../../../components/LandingPage/LandingBannerForm/LandingBannerForm";
 
 // Import all service data
 import {
@@ -45,8 +45,8 @@ import {
   cmsDevelopmentImpactCardsData,
   cmsDevelopmentImpactSectionData,
   cmsDevelopmentIndustriesCardsData,
-  cmsDevelopmentMetadata
-} from '../../../Data/cmsDevelopmentData'
+  cmsDevelopmentMetadata,
+} from "../../../Data/cmsDevelopmentData";
 import {
   webPortalDevelopmentBannerData,
   webPortalDevelopmentBannerData2,
@@ -63,8 +63,8 @@ import {
   webPortalDevelopmentTechnologiesData,
   webPortalDevelopmentFinalCTAData,
   webPortalDevelopmentFAQsData,
-  webPortalDevelopmentMetadata
-} from '../../../Data/webPortalDevelopmentData'
+  webPortalDevelopmentMetadata,
+} from "../../../Data/webPortalDevelopmentData";
 import {
   webApplicationDevelopmentBannerData,
   webApplicationDevelopmentBannerData2,
@@ -81,8 +81,8 @@ import {
   webApplicationDevelopmentTechnologiesData,
   webApplicationDevelopmentFinalCTAData,
   webApplicationDevelopmentFAQsData,
-  webApplicationDevelopmentMetadata
-} from '../../../Data/webApplicationDevelopmentData'
+  webApplicationDevelopmentMetadata,
+} from "../../../Data/webApplicationDevelopmentData";
 import {
   websiteMaintenanceBannerData,
   websiteMaintenanceBannerData2,
@@ -99,8 +99,8 @@ import {
   websiteMaintenanceTechnologiesData,
   websiteMaintenanceFinalCTAData,
   websiteMaintenanceFAQsData,
-  websiteMaintenanceMetadata
-} from '../../../Data/websiteMaintenanceData';
+  websiteMaintenanceMetadata,
+} from "../../../Data/websiteMaintenanceData";
 
 import {
   websiteSpeedOptimizationBannerData,
@@ -118,8 +118,8 @@ import {
   websiteSpeedOptimizationTechnologiesData,
   websiteSpeedOptimizationFinalCTAData,
   websiteSpeedOptimizationFAQsData,
-  websiteSpeedOptimizationMetadata
-} from '../../../Data/websiteSpeedOptimizationData'
+  websiteSpeedOptimizationMetadata,
+} from "../../../Data/websiteSpeedOptimizationData";
 import {
   customLogoDesignBannerData,
   customLogoDesignBannerData2,
@@ -138,8 +138,8 @@ import {
   customLogoDesignFAQsData,
   customLogoDesignWhyChooseUsSectionData,
   customLogoDesignWhyChooseUsData,
-  customLogoDesignMetadata
-} from '../../../Data/customLogoDesignData'
+  customLogoDesignMetadata,
+} from "../../../Data/customLogoDesignData";
 import {
   customGraphicDesignBannerData,
   customGraphicDesignBannerData2,
@@ -156,8 +156,8 @@ import {
   customGraphicDesignTechnologiesData,
   customGraphicDesignFinalCTAData,
   customGraphicDesignFAQsData,
-  customGraphicDesignMetadata
-} from '../../../Data/customGraphicDesignData'
+  customGraphicDesignMetadata,
+} from "../../../Data/customGraphicDesignData";
 
 import {
   digitalMarketingBannerData,
@@ -175,8 +175,8 @@ import {
   digitalMarketingTechnologiesData,
   digitalMarketingFinalCTAData,
   digitalMarketingFAQsData,
-  digitalMarketingMetadata
-} from '../../../Data/digitalMarketingCompanyData'
+  digitalMarketingMetadata,
+} from "../../../Data/digitalMarketingCompanyData";
 import {
   videoAnimationBannerData,
   videoAnimationBannerData2,
@@ -193,13 +193,52 @@ import {
   videoAnimationTechnologiesData,
   videoAnimationFinalCTAData,
   videoAnimationFAQsData,
-  videoAnimationMetadata
-} from '../../../Data/videoAnimationData'
-
+  videoAnimationMetadata,
+} from "../../../Data/videoAnimationData";
+import {
+  seoAgencyBannerData,
+  seoAgencyBannerData2,
+  seoAgencyScrollSectionData,
+  seoAgencyServicesData,
+  seoAgencyStatsData,
+  seoAgencyImpactSectionData,
+  seoAgencyImpactCardsData,
+  seoAgencyServicesSectionData,
+  seoAgencyIndustriesSectionData,
+  seoAgencyIndustriesCardsData,
+  seoAgencyWorkflowData,
+  seoAgencyTechnologiesSectionData,
+  seoAgencyTechnologiesData,
+  seoAgencyFinalCTAData,
+  seoAgencyFAQsData,
+  seoAgencyWhyChooseUsSectionData,
+  seoAgencyWhyChooseUsData,
+  seoAgencyMetadata,
+} from "../../../Data/seoAgencyData";
+import {
+  payPerClickAgencyBannerData,
+  payPerClickAgencyBannerData2,
+  payPerClickAgencyScrollSectionData,
+  payPerClickAgencyServicesData,
+  payPerClickAgencyStatsData,
+  payPerClickAgencyImpactSectionData,
+  payPerClickAgencyImpactCardsData,
+  payPerClickAgencyServicesSectionData,
+  payPerClickAgencyIndustriesSectionData,
+  payPerClickAgencyIndustriesCardsData,
+  payPerClickAgencyWorkflowData,
+  payPerClickAgencyTechnologiesSectionData,
+  payPerClickAgencyTechnologiesData,
+  payPerClickAgencyFinalCTAData,
+  payPerClickAgencyFAQsData,
+  payPerClickAgencyWhyChooseUsSectionData,
+  payPerClickAgencyWhyChooseUsData,
+  payPerClickAgencyMetadata,
+} from "../../../Data/payPerClickAgencyData";
 
 // Service data mapping
 const serviceDataMap = {
-  'cms-development-company': {
+  "cms-development-company": {
     bannerData: cmsDevelopmentBannerData,
     bannerData2: cmsDevelopmentBannerData2,
     scrollSectionData: cmsDevelopmentScrollSectionData,
@@ -219,9 +258,9 @@ const serviceDataMap = {
     impactCardsData: cmsDevelopmentImpactCardsData,
     impactSectionData: cmsDevelopmentImpactSectionData,
     industriesCardsData: cmsDevelopmentIndustriesCardsData,
-    metadata: cmsDevelopmentMetadata
+    metadata: cmsDevelopmentMetadata,
   },
-  'web-portal-development-company': {
+  "web-portal-development-company": {
     bannerData: webPortalDevelopmentBannerData,
     bannerData2: webPortalDevelopmentBannerData2,
     scrollSectionData: webPortalDevelopmentScrollSectionData,
@@ -237,9 +276,9 @@ const serviceDataMap = {
     technologiesData: webPortalDevelopmentTechnologiesData,
     finalCTAData: webPortalDevelopmentFinalCTAData,
     faqsData: webPortalDevelopmentFAQsData,
-    metadata: webPortalDevelopmentMetadata
+    metadata: webPortalDevelopmentMetadata,
   },
-  'web-application-development-services': {
+  "web-application-development-services": {
     bannerData: webApplicationDevelopmentBannerData,
     bannerData2: webApplicationDevelopmentBannerData2,
     scrollSectionData: webApplicationDevelopmentScrollSectionData,
@@ -255,9 +294,9 @@ const serviceDataMap = {
     technologiesData: webApplicationDevelopmentTechnologiesData,
     finalCTAData: webApplicationDevelopmentFinalCTAData,
     faqsData: webApplicationDevelopmentFAQsData,
-    metadata: webApplicationDevelopmentMetadata
+    metadata: webApplicationDevelopmentMetadata,
   },
-  'website-maintenance-services': {
+  "website-maintenance-services": {
     bannerData: websiteMaintenanceBannerData,
     bannerData2: websiteMaintenanceBannerData2,
     scrollSectionData: websiteMaintenanceScrollSectionData,
@@ -273,9 +312,9 @@ const serviceDataMap = {
     technologiesData: websiteMaintenanceTechnologiesData,
     finalCTAData: websiteMaintenanceFinalCTAData,
     faqsData: websiteMaintenanceFAQsData,
-    metadata: websiteMaintenanceMetadata
+    metadata: websiteMaintenanceMetadata,
   },
-  'website-speed-optimization-services': {
+  "website-speed-optimization-services": {
     bannerData: websiteSpeedOptimizationBannerData,
     bannerData2: websiteSpeedOptimizationBannerData2,
     scrollSectionData: websiteSpeedOptimizationScrollSectionData,
@@ -291,9 +330,9 @@ const serviceDataMap = {
     technologiesData: websiteSpeedOptimizationTechnologiesData,
     finalCTAData: websiteSpeedOptimizationFinalCTAData,
     faqsData: websiteSpeedOptimizationFAQsData,
-    metadata: websiteSpeedOptimizationMetadata
+    metadata: websiteSpeedOptimizationMetadata,
   },
-  'custom-logo-design-services': {
+  "custom-logo-design-services": {
     bannerData: customLogoDesignBannerData,
     bannerData2: customLogoDesignBannerData2,
     scrollSectionData: null,
@@ -311,9 +350,9 @@ const serviceDataMap = {
     faqsData: customLogoDesignFAQsData,
     whyChooseUsSectionData: customLogoDesignWhyChooseUsSectionData,
     whyChooseUsData: customLogoDesignWhyChooseUsData,
-    metadata: customLogoDesignMetadata
+    metadata: customLogoDesignMetadata,
   },
-  'custom-graphic-design-services': {
+  "custom-graphic-design-services": {
     bannerData: customGraphicDesignBannerData,
     bannerData2: customGraphicDesignBannerData2,
     scrollSectionData: customGraphicDesignScrollSectionData,
@@ -329,9 +368,9 @@ const serviceDataMap = {
     technologiesData: customGraphicDesignTechnologiesData,
     finalCTAData: customGraphicDesignFinalCTAData,
     faqsData: customGraphicDesignFAQsData,
-    metadata: customGraphicDesignMetadata
+    metadata: customGraphicDesignMetadata,
   },
-  'digital-marketing-company': {
+  "digital-marketing-company": {
     bannerData: digitalMarketingBannerData,
     bannerData2: digitalMarketingBannerData2,
     scrollSectionData: digitalMarketingScrollSectionData,
@@ -347,9 +386,9 @@ const serviceDataMap = {
     technologiesData: digitalMarketingTechnologiesData,
     finalCTAData: digitalMarketingFinalCTAData,
     faqsData: digitalMarketingFAQsData,
-    metadata: digitalMarketingMetadata
+    metadata: digitalMarketingMetadata,
   },
-  'video-animation-services': {
+  "video-animation-services": {
     bannerData: videoAnimationBannerData,
     bannerData2: videoAnimationBannerData2,
     scrollSectionData: videoAnimationScrollSectionData,
@@ -365,8 +404,48 @@ const serviceDataMap = {
     technologiesData: videoAnimationTechnologiesData,
     finalCTAData: videoAnimationFinalCTAData,
     faqsData: videoAnimationFAQsData,
-    metadata: videoAnimationMetadata
-  }
+    metadata: videoAnimationMetadata,
+  },
+  "search-engine-optimization-agency": {
+    bannerData: seoAgencyBannerData,
+    bannerData2: seoAgencyBannerData2,
+    scrollSectionData: seoAgencyScrollSectionData,
+    servicesData: seoAgencyServicesData,
+    statsData: seoAgencyStatsData,
+    impactSectionData: seoAgencyImpactSectionData,
+    impactCardsData: seoAgencyImpactCardsData,
+    servicesSectionData: seoAgencyServicesSectionData,
+    industriesSectionData: seoAgencyIndustriesSectionData,
+    industriesCardsData: seoAgencyIndustriesCardsData,
+    workflowData: seoAgencyWorkflowData,
+    technologiesSectionData: seoAgencyTechnologiesSectionData,
+    technologiesData: seoAgencyTechnologiesData,
+    finalCTAData: seoAgencyFinalCTAData,
+    faqsData: seoAgencyFAQsData,
+    whyChooseUsSectionData: seoAgencyWhyChooseUsSectionData,
+    whyChooseUsData: seoAgencyWhyChooseUsData,
+    metadata: seoAgencyMetadata,
+  },
+  "pay-per-click-agency": {
+    bannerData: payPerClickAgencyBannerData,
+    bannerData2: payPerClickAgencyBannerData2,
+    scrollSectionData: payPerClickAgencyScrollSectionData,
+    servicesData: payPerClickAgencyServicesData,
+    statsData: payPerClickAgencyStatsData,
+    impactSectionData: payPerClickAgencyImpactSectionData,
+    impactCardsData: payPerClickAgencyImpactCardsData,
+    servicesSectionData: payPerClickAgencyServicesSectionData,
+    industriesSectionData: payPerClickAgencyIndustriesSectionData,
+    industriesCardsData: payPerClickAgencyIndustriesCardsData,
+    workflowData: payPerClickAgencyWorkflowData,
+    technologiesSectionData: payPerClickAgencyTechnologiesSectionData,
+    technologiesData: payPerClickAgencyTechnologiesData,
+    finalCTAData: payPerClickAgencyFinalCTAData,
+    faqsData: payPerClickAgencyFAQsData,
+    whyChooseUsSectionData: payPerClickAgencyWhyChooseUsSectionData,
+    whyChooseUsData: payPerClickAgencyWhyChooseUsData,
+    metadata: payPerClickAgencyMetadata,
+  },
 };
 
 // Generate metadata for each service page
@@ -376,8 +455,8 @@ export async function generateMetadata({ params }) {
 
   if (!serviceData || !serviceData.metadata) {
     return {
-      title: 'Service Not Found | Website Digitals',
-      description: 'The requested service page could not be found.',
+      title: "Service Not Found | Website Digitals",
+      description: "The requested service page could not be found.",
     };
   }
 
@@ -385,10 +464,10 @@ export async function generateMetadata({ params }) {
 }
 
 const ServicePage = ({ params }) => {
-  const { serviceType } = params
+  const { serviceType } = params;
 
   // Get service data based on the serviceType parameter
-  const serviceData = serviceDataMap[serviceType]
+  const serviceData = serviceDataMap[serviceType];
 
   // If service type not found, return 404 or redirect
   if (!serviceData) {
@@ -397,7 +476,7 @@ const ServicePage = ({ params }) => {
         <h1>Service Not Found</h1>
         <p>The requested service page could not be found.</p>
       </div>
-    )
+    );
   }
 
   return (
@@ -418,18 +497,22 @@ const ServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      <WebBuilderCardSection
-        heading={serviceData.industriesSectionData?.heading || webBuilderHeading}
-        description={serviceData.industriesSectionData?.description}
-        showDescription={serviceData.industriesSectionData?.showDescription}
-        items={serviceData.industriesCardsData || webBuilderCards}
-        columnCount={3}
-        sectionClass={webBuilderSectionClass}
-        button={serviceData.industriesSectionData?.cta?.show || false}
-        buttonText={serviceData.industriesSectionData?.cta?.text}
-        buttonHref={serviceData.industriesSectionData?.cta?.href}
-        buttonClassName={serviceData.industriesSectionData?.cta?.className}
-      />
+      {serviceType !== "digital-marketing-company" && (
+        <WebBuilderCardSection
+          heading={
+            serviceData.industriesSectionData?.heading || webBuilderHeading
+          }
+          description={serviceData.industriesSectionData?.description}
+          showDescription={serviceData.industriesSectionData?.showDescription}
+          items={serviceData.industriesCardsData || webBuilderCards}
+          columnCount={3}
+          sectionClass={webBuilderSectionClass}
+          button={serviceData.industriesSectionData?.cta?.show || false}
+          buttonText={serviceData.industriesSectionData?.cta?.text}
+          buttonHref={serviceData.industriesSectionData?.cta?.href}
+          buttonClassName={serviceData.industriesSectionData?.cta?.className}
+        />
+      )}
       <ReviewsSlider />
       {serviceData.scrollSectionData && (
         <ScrollSection
@@ -449,20 +532,27 @@ const ServicePage = ({ params }) => {
         />
       )}
       <StepSection sectionData={serviceData.workflowData} />
-      <PlatformsSpecialize
-        data={serviceData.technologiesData || platformsData}
-        sectionData={serviceData.technologiesSectionData}
-      />
+      {serviceType !== "search-engine-optimization-agency" &&
+        serviceType !== "digital-marketing-company" && (
+          <PlatformsSpecialize
+            data={serviceData.technologiesData || platformsData}
+            sectionData={serviceData.technologiesSectionData}
+          />
+        )}
       <TestimonialSlider />
       <WebBanner
         data={serviceData.finalCTAData || serviceData.bannerData2}
         className="notHero order2 landingPageBanner2"
       />
-      <Faqs faqs={serviceData.faqsData || homePageFAQs} isTwoCol={true} className="landingPageFaqs" />
+      <Faqs
+        faqs={serviceData.faqsData || homePageFAQs}
+        isTwoCol={true}
+        className="landingPageFaqs"
+      />
       <BlogSection />
       <ContactSection />
     </div>
-  )
-}
+  );
+};
 
-export default ServicePage
+export default ServicePage;
