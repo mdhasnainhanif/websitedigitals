@@ -1,5 +1,49 @@
 import { BagIcon } from "@/icons";
 
+// Metadata for Web Portal Development Service
+export const webPortalDevelopmentMetadata = {
+  title: "Hire #1 Web Portal Development Company in USA for ROI",
+  description: "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
+  keywords: "",
+  canonical: "https://www.websitedigitals.com/web-development/web-portal-development-company/",
+  openGraph: {
+    title: "Hire #1 Web Portal Development Company in USA for ROI",
+    description: "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
+    url: "https://www.websitedigitals.com/web-development/web-portal-development-company/",
+    siteName: "Website Digitals",
+    images: [
+      {
+        url: "https://websitedigitals.com/assets/images/web-portal-development-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Web Portal Development Services by Website Digitals",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hire #1 Web Portal Development Company in USA for ROI",
+    description: "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
+    images: ["https://websitedigitals.com/assets/images/web-portal-development-twitter-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://www.websitedigitals.com/web-development/web-portal-development-company/",
+  },
+};
+
 // Banner Data (Section 1)
 export const webPortalDevelopmentBannerData = {
   breadcrumb: {

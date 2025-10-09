@@ -6,6 +6,9 @@ export default function WebBuilderCardSection({
   columnCount = 3,
   className,
   button,
+  buttonText = "Get Started - It's Free", // CTA button text
+  buttonHref = "#", // CTA button href
+  buttonClassName = "primary book-your-call", // CTA button className
   sectionClass, // additional class for the section passed from data
 }) {
   // Calculate Bootstrap column class based on columnCount
@@ -69,7 +72,9 @@ export default function WebBuilderCardSection({
         </div>
       </div>
       {button? <div className="link-area text-center mt-5">
-        <button className="primary book-your-call">Get Started - It's Free</button>
+        <a href={buttonHref} className={buttonClassName}>
+          {buttonText}
+        </a>
       </div> : null}
     </section>
   );

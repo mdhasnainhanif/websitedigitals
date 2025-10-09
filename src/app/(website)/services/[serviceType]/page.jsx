@@ -44,7 +44,8 @@ import {
   cmsDevelopmentFinalCTAData,
   cmsDevelopmentImpactCardsData,
   cmsDevelopmentImpactSectionData,
-  cmsDevelopmentIndustriesCardsData
+  cmsDevelopmentIndustriesCardsData,
+  cmsDevelopmentMetadata
 } from '../../../Data/cmsDevelopmentData'
 import { 
   webPortalDevelopmentBannerData, 
@@ -61,7 +62,8 @@ import {
   webPortalDevelopmentTechnologiesSectionData,
   webPortalDevelopmentTechnologiesData,
   webPortalDevelopmentFinalCTAData,
-  webPortalDevelopmentFAQsData
+  webPortalDevelopmentFAQsData,
+  webPortalDevelopmentMetadata
 } from '../../../Data/webPortalDevelopmentData'
 import { 
   webApplicationDevelopmentBannerData, 
@@ -78,7 +80,8 @@ import {
   webApplicationDevelopmentTechnologiesSectionData,
   webApplicationDevelopmentTechnologiesData,
   webApplicationDevelopmentFinalCTAData,
-  webApplicationDevelopmentFAQsData
+  webApplicationDevelopmentFAQsData,
+  webApplicationDevelopmentMetadata
 } from '../../../Data/webApplicationDevelopmentData'
 import { 
   websiteMaintenanceBannerData, 
@@ -95,7 +98,8 @@ import {
   websiteMaintenanceTechnologiesSectionData,
   websiteMaintenanceTechnologiesData,
   websiteMaintenanceFinalCTAData,
-  websiteMaintenanceFAQsData
+  websiteMaintenanceFAQsData,
+  websiteMaintenanceMetadata
 } from '../../../Data/websiteMaintenanceData';
 
 import { 
@@ -113,8 +117,66 @@ import {
   websiteSpeedOptimizationTechnologiesSectionData,
   websiteSpeedOptimizationTechnologiesData,
   websiteSpeedOptimizationFinalCTAData,
-  websiteSpeedOptimizationFAQsData
+  websiteSpeedOptimizationFAQsData,
+  websiteSpeedOptimizationMetadata
 } from '../../../Data/websiteSpeedOptimizationData'
+import { 
+  customLogoDesignBannerData, 
+  customLogoDesignBannerData2, 
+  customLogoDesignScrollSectionData, 
+  customLogoDesignServicesData,
+  customLogoDesignStatsData,
+  customLogoDesignImpactSectionData,
+  customLogoDesignImpactCardsData,
+  customLogoDesignServicesSectionData,
+  customLogoDesignIndustriesSectionData,
+  customLogoDesignIndustriesCardsData,
+  customLogoDesignWorkflowData,
+  customLogoDesignTechnologiesSectionData,
+  customLogoDesignTechnologiesData,
+  customLogoDesignFinalCTAData,
+  customLogoDesignFAQsData,
+  customLogoDesignWhyChooseUsSectionData,
+  customLogoDesignWhyChooseUsData,
+  customLogoDesignMetadata
+} from '../../../Data/customLogoDesignData'
+import { 
+  customGraphicDesignBannerData,
+  customGraphicDesignBannerData2,
+  customGraphicDesignScrollSectionData,
+  customGraphicDesignServicesData,
+  customGraphicDesignStatsData,
+  customGraphicDesignImpactSectionData,
+  customGraphicDesignImpactCardsData,
+  customGraphicDesignServicesSectionData,
+  customGraphicDesignIndustriesSectionData,
+  customGraphicDesignIndustriesCardsData,
+  customGraphicDesignWorkflowData,
+  customGraphicDesignTechnologiesSectionData,
+  customGraphicDesignTechnologiesData,
+  customGraphicDesignFinalCTAData,
+  customGraphicDesignFAQsData,
+  customGraphicDesignMetadata
+} from '../../../Data/customGraphicDesignData'
+
+import {
+  videoAnimationBannerData,
+  videoAnimationBannerData2,
+  videoAnimationScrollSectionData,
+  videoAnimationServicesData,
+  videoAnimationStatsData,
+  videoAnimationImpactSectionData,
+  videoAnimationImpactCardsData,
+  videoAnimationServicesSectionData,
+  videoAnimationIndustriesSectionData,
+  videoAnimationIndustriesCardsData,
+  videoAnimationWorkflowData,
+  videoAnimationTechnologiesSectionData,
+  videoAnimationTechnologiesData,
+  videoAnimationFinalCTAData,
+  videoAnimationFAQsData,
+  videoAnimationMetadata
+} from '../../../Data/videoAnimationData'
 
 // Service data mapping
 const serviceDataMap = {
@@ -137,7 +199,8 @@ const serviceDataMap = {
     finalCTAData: cmsDevelopmentFinalCTAData,
     impactCardsData: cmsDevelopmentImpactCardsData,
     impactSectionData: cmsDevelopmentImpactSectionData,
-    industriesCardsData: cmsDevelopmentIndustriesCardsData
+    industriesCardsData: cmsDevelopmentIndustriesCardsData,
+    metadata: cmsDevelopmentMetadata
   },
   'web-portal-development-company': {
     bannerData: webPortalDevelopmentBannerData,
@@ -154,7 +217,8 @@ const serviceDataMap = {
     technologiesSectionData: webPortalDevelopmentTechnologiesSectionData,
     technologiesData: webPortalDevelopmentTechnologiesData,
     finalCTAData: webPortalDevelopmentFinalCTAData,
-    faqsData: webPortalDevelopmentFAQsData
+    faqsData: webPortalDevelopmentFAQsData,
+    metadata: webPortalDevelopmentMetadata
   },
   'web-application-development-services': {
     bannerData: webApplicationDevelopmentBannerData,
@@ -171,7 +235,8 @@ const serviceDataMap = {
     technologiesSectionData: webApplicationDevelopmentTechnologiesSectionData,
     technologiesData: webApplicationDevelopmentTechnologiesData,
     finalCTAData: webApplicationDevelopmentFinalCTAData,
-    faqsData: webApplicationDevelopmentFAQsData
+    faqsData: webApplicationDevelopmentFAQsData,
+    metadata: webApplicationDevelopmentMetadata
   },
       'website-maintenance-services': {
         bannerData: websiteMaintenanceBannerData,
@@ -188,7 +253,8 @@ const serviceDataMap = {
         technologiesSectionData: websiteMaintenanceTechnologiesSectionData,
         technologiesData: websiteMaintenanceTechnologiesData,
         finalCTAData: websiteMaintenanceFinalCTAData,
-        faqsData: websiteMaintenanceFAQsData
+        faqsData: websiteMaintenanceFAQsData,
+        metadata: websiteMaintenanceMetadata
       },
       'website-speed-optimization-services': {
         bannerData: websiteSpeedOptimizationBannerData,
@@ -205,9 +271,81 @@ const serviceDataMap = {
         technologiesSectionData: websiteSpeedOptimizationTechnologiesSectionData,
         technologiesData: websiteSpeedOptimizationTechnologiesData,
         finalCTAData: websiteSpeedOptimizationFinalCTAData,
-        faqsData: websiteSpeedOptimizationFAQsData
-      }
+        faqsData: websiteSpeedOptimizationFAQsData,
+        metadata: websiteSpeedOptimizationMetadata
+      },
+      'custom-logo-design-services': {
+        bannerData: customLogoDesignBannerData,
+        bannerData2: customLogoDesignBannerData2,
+        scrollSectionData: null,
+        servicesData: customLogoDesignServicesData,
+        statsData: customLogoDesignStatsData,
+        impactSectionData: customLogoDesignImpactSectionData,
+        impactCardsData: customLogoDesignImpactCardsData,
+        servicesSectionData: customLogoDesignServicesSectionData,
+        industriesSectionData: customLogoDesignIndustriesSectionData,
+        industriesCardsData: customLogoDesignIndustriesCardsData,
+        workflowData: customLogoDesignWorkflowData,
+        technologiesSectionData: customLogoDesignTechnologiesSectionData,
+        technologiesData: customLogoDesignTechnologiesData,
+        finalCTAData: customLogoDesignFinalCTAData,
+        faqsData: customLogoDesignFAQsData,
+        whyChooseUsSectionData: customLogoDesignWhyChooseUsSectionData,
+        whyChooseUsData: customLogoDesignWhyChooseUsData,
+        metadata: customLogoDesignMetadata
+      },
+  'custom-graphic-design-services': {
+    bannerData: customGraphicDesignBannerData,
+    bannerData2: customGraphicDesignBannerData2,
+    scrollSectionData: customGraphicDesignScrollSectionData,
+    servicesData: customGraphicDesignServicesData,
+    statsData: customGraphicDesignStatsData,
+    impactSectionData: customGraphicDesignImpactSectionData,
+    impactCardsData: customGraphicDesignImpactCardsData,
+    servicesSectionData: customGraphicDesignServicesSectionData,
+    industriesSectionData: customGraphicDesignIndustriesSectionData,
+    industriesCardsData: customGraphicDesignIndustriesCardsData,
+    workflowData: customGraphicDesignWorkflowData,
+    technologiesSectionData: customGraphicDesignTechnologiesSectionData,
+    technologiesData: customGraphicDesignTechnologiesData,
+    finalCTAData: customGraphicDesignFinalCTAData,
+    faqsData: customGraphicDesignFAQsData,
+    metadata: customGraphicDesignMetadata
+  },
+  'video-animation-services': {
+    bannerData: videoAnimationBannerData,
+    bannerData2: videoAnimationBannerData2,
+    scrollSectionData: videoAnimationScrollSectionData,
+    servicesData: videoAnimationServicesData,
+    statsData: videoAnimationStatsData,
+    impactSectionData: videoAnimationImpactSectionData,
+    impactCardsData: videoAnimationImpactCardsData,
+    servicesSectionData: videoAnimationServicesSectionData,
+    industriesSectionData: videoAnimationIndustriesSectionData,
+    industriesCardsData: videoAnimationIndustriesCardsData,
+    workflowData: videoAnimationWorkflowData,
+    technologiesSectionData: videoAnimationTechnologiesSectionData,
+    technologiesData: videoAnimationTechnologiesData,
+    finalCTAData: videoAnimationFinalCTAData,
+    faqsData: videoAnimationFAQsData,
+    metadata: videoAnimationMetadata
+  }
 };
+
+// Generate metadata for each service page
+export async function generateMetadata({ params }) {
+  const { serviceType } = params;
+  const serviceData = serviceDataMap[serviceType];
+  
+  if (!serviceData || !serviceData.metadata) {
+    return {
+      title: 'Service Not Found | Website Digitals',
+      description: 'The requested service page could not be found.',
+    };
+  }
+  
+  return serviceData.metadata;
+}
 
 const ServicePage = ({ params }) => {
   const { serviceType } = params
@@ -251,13 +389,28 @@ const ServicePage = ({ params }) => {
         columnCount={3}
         sectionClass={webBuilderSectionClass}
         button={serviceData.industriesSectionData?.cta?.show || false}
+        buttonText={serviceData.industriesSectionData?.cta?.text}
+        buttonHref={serviceData.industriesSectionData?.cta?.href}
+        buttonClassName={serviceData.industriesSectionData?.cta?.className}
       />
       <ReviewsSlider />
-      <ScrollSection 
-        data={serviceData.scrollSectionData} 
-        className="landingPageScrollSection" 
-        isIconShow={true} 
-      />
+      {serviceData.scrollSectionData && (
+        <ScrollSection 
+          data={serviceData.scrollSectionData} 
+          className="landingPageScrollSection" 
+          isIconShow={true} 
+        />
+      )}
+      {serviceData.whyChooseUsData && serviceData.whyChooseUsSectionData && (
+        <WebBuilderCardSection
+          heading={serviceData.whyChooseUsSectionData.heading}
+          description={serviceData.whyChooseUsSectionData.description}
+          showDescription={serviceData.whyChooseUsSectionData.showDescription}
+          items={serviceData.whyChooseUsData}
+          columnCount={2}
+          sectionClass="bg-light"
+        />
+      )}
       <StepSection sectionData={serviceData.workflowData} />
       <PlatformsSpecialize 
         data={serviceData.technologiesData || platformsData} 

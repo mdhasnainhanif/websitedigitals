@@ -1,5 +1,49 @@
 import { BagIcon } from "@/icons";
 
+// Metadata for Website Maintenance Service
+export const websiteMaintenanceMetadata = {
+  title: "Hire Expert Website Maintenance Services for Business Growth",
+  description: "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
+  keywords: "",
+  canonical: "https://www.websitedigitals.com/web-development/website-maintenance-services/",
+  openGraph: {
+    title: "Hire Expert Website Maintenance Services for Business Growth",
+    description: "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
+    url: "https://www.websitedigitals.com/web-development/website-maintenance-services/",
+    siteName: "Website Digitals",
+    images: [
+      {
+        url: "https://websitedigitals.com/assets/images/website-maintenance-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Website Maintenance Services by Website Digitals",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hire Expert Website Maintenance Services for Business Growth",
+    description: "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
+    images: ["https://websitedigitals.com/assets/images/website-maintenance-twitter-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://www.websitedigitals.com/web-development/website-maintenance-services/",
+  },
+};
+
 // Banner Data (Section 1)
 export const websiteMaintenanceBannerData = {
   breadcrumb: {
