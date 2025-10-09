@@ -384,9 +384,8 @@ export const videoAnimationWorkflowData = {
 
 // Technologies Section Data (Section 9)
 export const videoAnimationTechnologiesSectionData = {
-  heading: "Animation Tools and Technologies We Use",
-  description: "We leverage industry-leading animation software and creative tools to deliver professional, high-quality video animations that meet modern standards and exceed client expectations.",
-  showDescription: true,
+  heading: "How Our Video Animation Process Works",
+  showDescription: false,
   cta: {
     text: "Get My Animation Quote",
     href: "#",
@@ -469,25 +468,20 @@ export const videoAnimationFinalCTAData = {
 // Scroll Section Data (Section 4 - Case Study)
 export const videoAnimationScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "Case Study: How We Transformed Brand Stories",
-  description: [
-    "See how our video animation services have helped businesses across various industries tell their stories more effectively.",
-    "",
-    "From startups to established enterprises, our strategic approach to video animation has helped brands build recognition, increase engagement, and drive business growth. Here are some of our success stories:"
-  ],
-  showDescription: true,
+  heading: "Why Businesses Trust Our Animation Services",
+  showDescription: false,
   items: [
     {
       id: "video-case-study-1",
       step: 1,
-      title: "SaaS Product Launch Success",
+      title: "Creative Brand Flexibility",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "A SaaS startup needed an explainer video to launch their new product. We created a 90-second animated video that simplified their complex software into an engaging story. The result: 300% increase in product sign-ups and 150% improvement in user onboarding completion rates."
+        "Many providers offer generic animations that feel templated. Our focus is on animated marketing videos built to reflect brand identity, tone, and messaging. Each project is tailored so the final animation feels unique to your business and resonates with the right audience."
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "SaaS Product Launch Success",
+        alt: "Creative Brand Flexibility",
         width: 669,
         height: 376
       }
@@ -495,14 +489,14 @@ export const videoAnimationScrollSectionData = {
     {
       id: "video-case-study-2",
       step: 2,
-      title: "Healthcare Education Breakthrough",
+      title: "Transparent Pricing",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "A healthcare company needed to explain a complex medical procedure to patients. We developed a 3D animated video that made the process clear and less intimidating. Patient understanding increased by 85% and procedure acceptance rates rose by 40%."
+        "Cost often becomes a barrier when businesses look for quality animations. We address this by offering affordable video animation services with clear packages and no hidden charges. This ensures you know exactly what you are investing in while still receiving top-quality results."
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/2.png",
-        alt: "Healthcare Education Breakthrough",
+        alt: "Transparent Pricing",
         width: 669,
         height: 376
       }
@@ -510,14 +504,14 @@ export const videoAnimationScrollSectionData = {
     {
       id: "video-case-study-3",
       step: 3,
-      title: "Real Estate Virtual Tour Innovation",
+      title: "Faster Turnarounds",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "A real estate agency wanted to showcase properties during the pandemic. We created animated virtual tours with 3D floor plans and neighborhood highlights. Property inquiries increased by 200% and virtual tour engagement rose by 180%."
+        "Time matters in digital campaigns, and delays can stall growth. Our workflow for animated video production services is structured to deliver high-quality animations quickly, without cutting corners or affecting creative standards."
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/3.png",
-        alt: "Real Estate Virtual Tour Innovation",
+        alt: "Faster Turnarounds",
         width: 669,
         height: 376
       }
@@ -525,14 +519,29 @@ export const videoAnimationScrollSectionData = {
     {
       id: "video-case-study-4",
       step: 4,
-      title: "E-learning Platform Growth",
+      title: "Full Production Support",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "An online education platform needed engaging content for their courses. We produced a series of animated educational videos with character animation and interactive elements. Course completion rates increased by 60% and student satisfaction scores improved by 45%."
+        "Instead of outsourcing parts of the process, we handle everything in-house. Our explainer video services include scripting, storyboarding, animation, voiceovers, and final delivery, keeping the process smooth and ensuring consistency at every stage."
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/4.png",
-        alt: "E-learning Platform Growth",
+        alt: "Full Production Support",
+        width: 669,
+        height: 376
+      }
+    },
+    {
+      id: "video-case-study-5",
+      step: 5,
+      title: "Industry-Specific Expertise",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Experience across industries helps us understand how different businesses communicate. Unlike general providers, our team works like specialized animation studios in the US, offering insights that align with sector-specific needs, whether it’s technology, healthcare, or retail."
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/4.png",
+        alt: "Industry-Specific Expertise",
         width: 669,
         height: 376
       }
