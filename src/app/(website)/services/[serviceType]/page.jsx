@@ -160,25 +160,6 @@ import {
 } from '../../../Data/customGraphicDesignData'
 
 import {
-  videoAnimationBannerData,
-  videoAnimationBannerData2,
-  videoAnimationScrollSectionData,
-  videoAnimationServicesData,
-  videoAnimationStatsData,
-  videoAnimationImpactSectionData,
-  videoAnimationImpactCardsData,
-  videoAnimationServicesSectionData,
-  videoAnimationIndustriesSectionData,
-  videoAnimationIndustriesCardsData,
-  videoAnimationWorkflowData,
-  videoAnimationTechnologiesSectionData,
-  videoAnimationTechnologiesData,
-  videoAnimationFinalCTAData,
-  videoAnimationFAQsData,
-  videoAnimationMetadata
-} from '../../../Data/videoAnimationData'
-
-import {
   digitalMarketingBannerData,
   digitalMarketingBannerData2,
   digitalMarketingScrollSectionData,
@@ -330,24 +311,6 @@ const serviceDataMap = {
     finalCTAData: customGraphicDesignFinalCTAData,
     faqsData: customGraphicDesignFAQsData,
     metadata: customGraphicDesignMetadata
-  },
-  'video-animation-services': {
-    bannerData: videoAnimationBannerData,
-    bannerData2: videoAnimationBannerData2,
-    scrollSectionData: videoAnimationScrollSectionData,
-    servicesData: videoAnimationServicesData,
-    statsData: videoAnimationStatsData,
-    impactSectionData: videoAnimationImpactSectionData,
-    impactCardsData: videoAnimationImpactCardsData,
-    servicesSectionData: videoAnimationServicesSectionData,
-    industriesSectionData: videoAnimationIndustriesSectionData,
-    industriesCardsData: videoAnimationIndustriesCardsData,
-    workflowData: videoAnimationWorkflowData,
-    technologiesSectionData: videoAnimationTechnologiesSectionData,
-    technologiesData: videoAnimationTechnologiesData,
-    finalCTAData: videoAnimationFinalCTAData,
-    faqsData: videoAnimationFAQsData,
-    metadata: videoAnimationMetadata
   },
   'digital-marketing-company': {
     bannerData: digitalMarketingBannerData,
