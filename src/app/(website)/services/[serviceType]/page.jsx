@@ -178,6 +178,25 @@ import {
   videoAnimationMetadata
 } from '../../../Data/videoAnimationData'
 
+import {
+  digitalMarketingBannerData,
+  digitalMarketingBannerData2,
+  digitalMarketingScrollSectionData,
+  digitalMarketingServicesData,
+  digitalMarketingStatsData,
+  digitalMarketingImpactSectionData,
+  digitalMarketingImpactCardsData,
+  digitalMarketingServicesSectionData,
+  digitalMarketingIndustriesSectionData,
+  digitalMarketingIndustriesCardsData,
+  digitalMarketingWorkflowData,
+  digitalMarketingTechnologiesSectionData,
+  digitalMarketingTechnologiesData,
+  digitalMarketingFinalCTAData,
+  digitalMarketingFAQsData,
+  digitalMarketingMetadata
+} from '../../../Data/digitalMarketingCompanyData'
+
 // Service data mapping
 const serviceDataMap = {
   'cms-development-company': {

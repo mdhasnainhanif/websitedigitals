@@ -29,6 +29,101 @@ export const digitalMarketingMetadata = {
   },
 };
 
+// Banner Data 2 (for second banner section)
+export const digitalMarketingBannerData2 = {
+  heading: "Your Trusted Digital Marketing Company Starts Here",
+  description: [
+    "Stop losing leads to strategies that don't work. A trusted digital marketing company can help you attract the right audience, convert them into customers, and grow with confidence."
+  ],
+  isCta: true,
+  cta: {
+    text: "Work With Us Now",
+    href: "#contact",
+    className: "offer-btn primary",
+  },
+  image: null,
+};
+
+// Scroll Section Data (Case Study)
+export const digitalMarketingScrollSectionData = {
+  sectionClass: "scroller-section gray-section",
+  heading: "Case Study: How We Transformed Digital Marketing Results",
+  description: [
+    "See how our digital marketing services have helped businesses across various industries achieve remarkable growth.",
+    "",
+    "From startups to established enterprises, our strategic approach to digital marketing has helped brands build recognition, increase engagement, and drive business growth. Here are some of our success stories:"
+  ],
+  showDescription: true,
+  items: [
+    {
+      id: "digital-case-study-1",
+      step: 1,
+      title: "E-commerce SEO Success",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "An e-commerce startup needed to increase organic traffic and sales. We implemented a comprehensive SEO strategy with keyword optimization, technical improvements, and content marketing. The result: 400% increase in organic traffic and 250% growth in online sales within 6 months."
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/1.png",
+        alt: "E-commerce SEO Success",
+        width: 669,
+        height: 376
+      }
+    },
+    {
+      id: "digital-case-study-2",
+      step: 2,
+      title: "Local Business PPC Transformation",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "A local service business struggled with expensive PPC campaigns that weren't converting. We redesigned their ad strategy with better targeting and landing pages. Cost per lead decreased by 60% while lead volume increased by 180%."
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/2.png",
+        alt: "Local Business PPC Transformation",
+        width: 669,
+        height: 376
+      }
+    },
+    {
+      id: "digital-case-study-3",
+      step: 3,
+      title: "B2B Content Marketing Breakthrough",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "A B2B software company needed to establish thought leadership and generate qualified leads. We created a content marketing strategy with whitepapers, case studies, and blog content. Lead generation increased by 300% and brand authority improved significantly."
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/3.png",
+        alt: "B2B Content Marketing Breakthrough",
+        width: 669,
+        height: 376
+      }
+    },
+    {
+      id: "digital-case-study-4",
+      step: 4,
+      title: "Social Media ROI Success",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "A retail brand wanted to improve their social media presence and drive sales. We developed a comprehensive social media strategy with engaging content and targeted advertising. Social media revenue increased by 200% and follower engagement rose by 150%."
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/4.png",
+        alt: "Social Media ROI Success",
+        width: 669,
+        height: 376
+      }
+    }
+  ],
+  cta: {
+    text: "See More Case Studies",
+    href: "#",
+    className: "offer-btn primary",
+    show: true
+  }
+};
+
 // Banner Section
 export const digitalMarketingBannerData = {
   breadcrumb: {
