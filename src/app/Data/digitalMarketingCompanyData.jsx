@@ -44,11 +44,21 @@ export const digitalMarketingBannerData = {
     "",
     "With deep SEO expertise and proven content strategies, our team makes your business stand out. From SEO-optimized property websites to paid campaigns that deliver instant impact, we create a clear path to long-term success.",
   ],
-  isCta: true,
-  cta: {
-    text: "Talk to an Expert Now",
-    href: "#contact",
-    className: "offer-btn primary",
+  isCta: false,
+  formConfig: {
+    buttonText: "Talk to an Expert Now",
+    heading: "Ready to Generate More Leads?",
+    helpOptions: [
+      { value: "seo", label: "SEO Services" },
+      { value: "ppc", label: "Pay-Per-Click Advertising" },
+      { value: "social-media", label: "Social Media Marketing" },
+      { value: "content-marketing", label: "Content Marketing" },
+      { value: "email-marketing", label: "Email Marketing" },
+      { value: "marketing-strategy", label: "Marketing Strategy" },
+    ],
+    initialValues: {
+      help: "seo",
+    },
   },
 };
 
@@ -261,9 +271,7 @@ export const digitalMarketingStatsData = [
 // Impact / USPs
 export const digitalMarketingImpactSectionData = {
   heading: "Why a Professional Digital Marketing Company Delivers ROI",
-  description:
-    "We focus on strategies that generate measurable growth — from brand building and conversion-focused websites to campaigns that reach the right customers.",
-  showDescription: true,
+  showDescription: false,
 };
 
 export const digitalMarketingImpactCardsData = [

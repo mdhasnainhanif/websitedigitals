@@ -3,12 +3,15 @@ import { BagIcon } from "@/icons";
 // Metadata for Web Application Development Service
 export const webApplicationDevelopmentMetadata = {
   title: "Hire Web Application Development Services That Drive Growth",
-  description: "Website Digitals is a web app development company offering customized solutions focused on security, scalability, and driving business growth.",
+  description:
+    "Website Digitals is a web app development company offering customized solutions focused on security, scalability, and driving business growth.",
   keywords: "",
-  canonical: "https://www.websitedigitals.com/web-development/web-application-development-services/",
+  canonical:
+    "https://www.websitedigitals.com/web-development/web-application-development-services/",
   openGraph: {
     title: "Hire Web Application Development Services That Drive Growth",
-    description: "Website Digitals is a web app development company offering customized solutions focused on security, scalability, and driving business growth.",
+    description:
+      "Website Digitals is a web app development company offering customized solutions focused on security, scalability, and driving business growth.",
     url: "https://www.websitedigitals.com/web-development/web-application-development-services/",
     siteName: "Website Digitals",
     images: [
@@ -25,8 +28,11 @@ export const webApplicationDevelopmentMetadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hire Web Application Development Services That Drive Growth",
-    description: "Website Digitals is a web app development company offering customized solutions focused on security, scalability, and driving business growth.",
-    images: ["https://websitedigitals.com/assets/images/web-application-development-twitter-image.jpg"],
+    description:
+      "Website Digitals is a web app development company offering customized solutions focused on security, scalability, and driving business growth.",
+    images: [
+      "https://websitedigitals.com/assets/images/web-application-development-twitter-image.jpg",
+    ],
   },
   robots: {
     index: true,
@@ -40,7 +46,8 @@ export const webApplicationDevelopmentMetadata = {
     },
   },
   alternates: {
-    canonical: "https://www.websitedigitals.com/web-development/web-application-development-services/",
+    canonical:
+      "https://www.websitedigitals.com/web-development/web-application-development-services/",
   },
 };
 
@@ -67,12 +74,23 @@ export const webApplicationDevelopmentBannerData = {
     "• Optimized Performance and User Experience",
   ],
   isCta: true,
-  cta: {
-    text: "Start Web App Project",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  cta: false,
   image: null,
+  formConfig: {
+    buttonText: "Start Web App Project",
+    heading: "Get In Touch With Us",
+    helpOptions: [
+      { value: "custom-web-app", label: "Custom Web Application" },
+      { value: "progressive-web-app", label: "Progressive Web App (PWA)" },
+      { value: "ecommerce-app", label: "E-commerce Application" },
+      { value: "saas-platform", label: "SaaS Platform" },
+      { value: "dashboard-app", label: "Dashboard Application" },
+      { value: "api-integration", label: "API Integration" },
+    ],
+    initialValues: {
+      help: "custom-web-app",
+    },
+  },
 };
 
 // Stats Counter Data (Section 2)
@@ -108,6 +126,7 @@ export const webApplicationDevelopmentImpactSectionData = {
   heading: "Why Businesses Invest in Web App Development",
   description:
     "Modern web applications drive growth, strengthen security, and build lasting brand trust while helping businesses scale, expand reach, and deliver seamless customer experiences. Key areas of impact:",
+  showDescription: true,
 };
 
 export const webApplicationDevelopmentImpactCardsData = [
@@ -150,6 +169,11 @@ export const webApplicationDevelopmentServicesSectionData = {
   heading: "Web App Development Services We Provide to Businesses",
   description:
     "We provide end-to-end solutions built to meet the needs of modern businesses. Each service is designed for adaptability, scalability, and long-term value. Our key service areas:",
+  showDescription: true,
+  cta: {
+    href: "#",
+    label: "Get Started Today",
+  },
 };
 
 export const webApplicationDevelopmentServicesData = [
@@ -347,7 +371,10 @@ export const webApplicationDevelopmentScrollSectionData = {
       },
     },
   ],
-  cta: null,
+  cta: {
+    href: "#",
+    label: "Build My Web App",
+  },
 };
 
 // Workflow Data (Section 9) - for StepSection
@@ -400,6 +427,7 @@ export const webApplicationDevelopmentTechnologiesSectionData = {
   heading: "Our Technologies for Web Apps",
   description:
     "Our certified developers use trusted frameworks and modern stacks to deliver scalable, high-performing web applications aligned with your business goals.",
+  showDescription: true,
   cta: {
     text: "Launch a Future-Ready App",
     href: "#",

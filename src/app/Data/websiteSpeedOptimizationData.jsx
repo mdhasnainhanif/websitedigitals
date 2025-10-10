@@ -46,33 +46,44 @@ alternates: {
 
 // Banner Data (Section 1)
 export const websiteSpeedOptimizationBannerData = {
-breadcrumb: {
-  home: { label: "Home", href: "/" },
-  current: {
-    label: "Website Speed Optimization Services",
-    href: "/services/website-speed-optimization-services",
+  breadcrumb: {
+    home: { label: "Home", href: "/" },
+    current: {
+      label: "Website Speed Optimization Services",
+      href: "/services/website-speed-optimization-services",
+    },
   },
-},
-heading: "Secure & Grow with [[Website Speed Optimization Services]]",
-description: [
-  "A slow website drives visitors away and reduces conversions.",
-  "",
-  "Website Digitals delivers expert website speed optimization services that provide measurable site speed improvement.",
-  "",
-  "Our tailored website loading speed optimization ensures faster page load speed, smarter performance tuning, and consistent load time reduction.",
-  "",
-  "Key benefits include:",
-  "• Faster websites",
-  "• Higher rankings",
-  "• Better conversions",
-],
-isCta: true,
-cta: {
-  text: "Optimize Website Speed",
-  href: "#",
-  className: "offer-btn primary",
-},
-image: null,
+  heading: "Secure & Grow with [[Website Speed Optimization Services]]",
+  description: [
+    "A slow website drives visitors away and reduces conversions.",
+    "",
+    "Website Digitals delivers expert website speed optimization services that provide measurable site speed improvement.",
+    "",
+    "Our tailored website loading speed optimization ensures faster page load speed, smarter performance tuning, and consistent load time reduction.",
+    "",
+    "Key benefits include:",
+    "• Faster websites",
+    "• Higher rankings",
+    "• Better conversions",
+  ],
+  isCta: true,
+  cta:false,
+  image: null,
+  formConfig: {
+    buttonText: "Optimize Website Speed",
+    heading: "Ready to Boost Your Website Performance?",
+    helpOptions: [
+      { value: "speed-audit", label: "Website Speed Audit" },
+      { value: "core-web-vitals", label: "Core Web Vitals Optimization" },
+      { value: "image-optimization", label: "Image Optimization" },
+      { value: "code-optimization", label: "Code Optimization" },
+      { value: "caching-setup", label: "Caching Setup" },
+      { value: "cdn-setup", label: "CDN Setup" }
+    ],
+    initialValues: {
+      help: "speed-audit"
+    }
+  },
 };
 
 // Stats Counter Data (Section 2)

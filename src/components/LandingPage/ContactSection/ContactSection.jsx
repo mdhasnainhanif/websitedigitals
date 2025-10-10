@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styles from './ContactSection.module.css'
 
-const ContactSection = ({ contactData = {} }) => {
+const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call" }) => {
   // Default contact data if none provided
   const defaultContactData = {
     title: "Let's create something out of this world together.",
@@ -215,7 +215,7 @@ const ContactSection = ({ contactData = {} }) => {
 
                 <a className='link-area' href="">
                 <button type="submit" className="offer-btn primary ">
-                  Submit and Book a call
+                  {buttonText}
                   <i className="fas fa-video ms-2"></i>
                 </button>
                 </a>

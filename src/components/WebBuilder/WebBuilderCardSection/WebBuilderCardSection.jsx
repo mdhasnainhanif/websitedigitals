@@ -39,7 +39,7 @@ export default function WebBuilderCardSection({
         </div>
 
         <div className="row justify-content-center gy-4">
-          {items.map((item, idx) => (
+          {items && Array.isArray(items) && items.map((item, idx) => (
             <div className={getColumnClass(columnCount)} key={idx}>
               <div
                 className={`single-whyChooseUs single-whyChooseUs1 ${className || ''}`}
@@ -71,11 +71,11 @@ export default function WebBuilderCardSection({
           ))}
         </div>
       </div>
-      {button? <div className="link-area text-center mt-5">
+      {button && <div className="link-area text-center mt-5">
         <a href={buttonHref} className={buttonClassName}>
           {buttonText}
         </a>
-      </div> : null}
+      </div>}
     </section>
   );
 }

@@ -7,7 +7,7 @@ export const webDesignBannerData = {
   },
   heading: "Best Web Design Company for Brands Looking for Success",
   description: [
-    "You invested in a website, but the leads just aren’t coming. It’s not your offer, but the lack of strategy behind the design.",
+    "You invested in a website, but the leads just aren't coming. It's not your offer, but the lack of strategy behind the design.",
     {
       text: "",
       link: { text: "Website Digitals", href: "/", target: "_blank" },
@@ -26,6 +26,21 @@ export const webDesignBannerData = {
     width: 598,
     height: 351,
     alt: "Website design illustration",
+  },
+  formConfig: {
+    buttonText: "Design My Website",
+    heading: "Ready to Transform Your Online Presence?",
+    helpOptions: [
+      { value: "custom-web-design", label: "Custom Web Design" },
+      { value: "responsive-design", label: "Responsive Design" },
+      { value: "ecommerce-design", label: "E-commerce Design" },
+      { value: "landing-page-design", label: "Landing Page Design" },
+      { value: "ui-ux-design", label: "UI/UX Design" },
+      { value: "redesign", label: "Website Redesign" }
+    ],
+    initialValues: {
+      help: "custom-web-design"
+    }
   },
 };
 

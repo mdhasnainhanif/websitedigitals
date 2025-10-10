@@ -735,7 +735,7 @@ ul.count-ul > li::before {
   transform: translate(0, -15%);
 }
 .section-heading > h2 {
-  font-size: 2.725rem;
+  font-size: 2.267rem;
   font-weight: 700;
   margin-bottom: 1.125rem;
 }
@@ -754,12 +754,10 @@ ul.count-ul > li::before {
   margin-bottom: 0.5rem;
 }
 .section-heading.text-center > h2 {
-  max-width: 45.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 .section-heading.text-center > p {
-  max-width: 39rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1225,9 +1223,9 @@ ul.count-ul > li::before {
 .scroller-item {
   padding-top: var(--sectionPadding-top);
 }
-.scroller-item:last-child {
+/* .scroller-item:last-child {
   padding-bottom: var(--sectionPadding-bottom);
-}
+} */
 .scroller-list > li > a {
   font-size: 1.375rem;
   font-weight: 600;

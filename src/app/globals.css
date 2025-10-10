@@ -9432,12 +9432,13 @@ span.colorPrimaryDark {
 }
 
 .landingPageScrollSection {
-  clip-path: polygon(0 2.5%, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 2.5%, 100% 0, 100% 100%, 0% 100%);
   padding-top: 4rem;
 }
 
 section.landingPageScrollSection {
   padding-bottom: 6rem;
+  margin-top: -1.2rem;
 }
 
 .landingPageScrollSection .scroller-item>img {
@@ -9469,7 +9470,7 @@ section.landingPageScrollSection {
 }
 
 .reviewsSlider {
-  transform: rotate(-2.8deg) !important;
+  transform: rotate(-1.8deg) !important;
   margin-top: -2rem;
   padding: 0.425rem 0rem;
   overflow-x: hidden;

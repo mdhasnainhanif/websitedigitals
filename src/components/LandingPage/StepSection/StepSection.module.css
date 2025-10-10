@@ -3,10 +3,7 @@
   background: #185ae9;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 2%, 100% 0, 100% 99%, 0% 100%);
   padding-top: 6rem !important;
-  margin-top: -2rem;
-
 }
 
 .stepSection::before {

@@ -64,12 +64,23 @@ export const seoAgencyBannerData = {
   description: [
     "Most websites rank but rarely convert.\n\nAt Website Digitals, our search engine optimization agency strategies are designed to do both: attract the right audience and turn them into customers.\n\nNo matter your market, we deliver results with responsive websites, optimized landing pages, and data-driven SEO campaigns that capture targeted traffic.",
   ],
-  isCta: true,
-  cta: {
-    text: "Let's Grow With SEO",
-    href: "/brief",
-  },
+  isCta: false,
   image: null,
+  formConfig: {
+    buttonText: "Let's Grow With SEO",
+    heading: "Ready to Dominate Search Results?",
+    helpOptions: [
+      { value: "local-seo", label: "Local SEO" },
+      { value: "technical-seo", label: "Technical SEO" },
+      { value: "content-seo", label: "Content SEO" },
+      { value: "ecommerce-seo", label: "E-commerce SEO" },
+      { value: "seo-audit", label: "SEO Audit" },
+      { value: "link-building", label: "Link Building" }
+    ],
+    initialValues: {
+      help: "local-seo"
+    }
+  },
 };
 
 export const seoAgencyServicesData = [
@@ -125,20 +136,20 @@ export const seoAgencyServicesData = [
 
 export const seoAgencyScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "Why Partnering With a Trusted SEO Agency Matters",
+  heading: "Why Businesses Trust Our SEO Services",
   showDescription: false,
   items: [
     {
       id: "seo-firstScroller",
       step: 1,
-      title: "Higher Visibility & Credibility",
+      title: "Transparent SEO Reporting",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "With keyword mapping and search intent analysis, we make sure your website appears for the terms your customers actively search. This builds strong visibility and positions your brand as a trusted solution in your industry.",
+        "We believe clients should always know where their investment is going. With clear dashboards and ongoing performance tracking, progress is measured against real goals, not vanity metrics.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "Higher Visibility & Credibility",
+        alt: "Transparent SEO Reporting",
         width: 669,
         height: 376,
       },
@@ -146,14 +157,14 @@ export const seoAgencyScrollSectionData = {
     {
       id: "seo-secondScroller",
       step: 2,
-      title: "Qualified Leads & More Sales",
+      title: "Customized SEO Strategies",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Through topical relevance and semantic optimization, your content is aligned with customer needs, attracting visitors who are ready to engage. This increases qualified leads and creates more opportunities to convert clicks into paying customers.",
+        "No two businesses are the same, and neither are our SEO solutions. Through tailored campaigns designed around your industry and audience, we ensure strategies align with your unique growth objectives.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/2.png",
-        alt: "Qualified Leads & More Sales",
+        alt: "Customized SEO Strategies",
         width: 669,
         height: 376,
       },
@@ -161,14 +172,14 @@ export const seoAgencyScrollSectionData = {
     {
       id: "seo-thirdScroller",
       step: 3,
-      title: "Cost-Effective Growth",
+      title: "Dedicated Support",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "By optimizing site architecture and improving crawlability, we make it easier for search engines to find and index your pages. These improvements compound over time and deliver consistent traffic growth without heavy reliance on paid ads.",
+        "Every client has access to a client success manager who ensures your SEO campaigns run smoothly. This personalized approach guarantees questions are answered and progress is always on track.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/3.png",
-        alt: "Cost-Effective Growth",
+        alt: "Dedicated Support",
         width: 669,
         height: 376,
       },
@@ -176,14 +187,29 @@ export const seoAgencyScrollSectionData = {
     {
       id: "seo-forthScroller",
       step: 4,
-      title: "Expertise & Time Savings",
+      title: "SEO Built for Conversions",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Our team secures authority backlinks and executes strategic digital PR campaigns that strengthen your online reputation. While we manage the technical and strategic work, you save time and focus on running your business.",
+        "Rankings mean little without results. Our work goes beyond visibility with conversion optimization built into every strategy, turning search visitors into customers.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/4.png",
-        alt: "Expertise & Time Savings",
+        alt: "SEO Built for Conversions",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "seo-fifthScroller",
+      step: 5,
+      title: "Sustainable Growth",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "We don’t rely on shortcuts that fade fast. Our approach is centered on sustainable growth, ensuring your rankings, authority, and traffic continue to deliver long after campaigns launch.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/5.png",
+        alt: "Sustainable Growth",
         width: 669,
         height: 376,
       },
@@ -191,6 +217,7 @@ export const seoAgencyScrollSectionData = {
   ],
   cta: null,
 };
+
 
 export const seoAgencyBannerData2 = {
   isBreadcrumb: false,
@@ -390,7 +417,7 @@ export const seoAgencyTechnologiesData = [
 export const seoAgencyWorkflowData = {
   title: "How Our SEO Process Works",
   description:
-    "Our proven SEO process combines research, strategy, implementation, and optimization to deliver sustainable growth and measurable results for your business. Here's how we work:",
+    "",
   steps: [
     {
       id: 1,
@@ -670,7 +697,7 @@ export const seoAgencyWhyChooseUsSectionData = {
 export const seoAgencyWorkflowSectionData = {
   heading: "How Our SEO Process Works",
   description:
-    "Our proven SEO process combines research, strategy, implementation, and optimization to deliver sustainable growth and measurable results for your business. Here's how we work:",
+    "",
 };
 
 // Technologies Section Data (Section 9) - for PlatformsSpecialize

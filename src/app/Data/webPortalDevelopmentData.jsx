@@ -3,12 +3,15 @@ import { BagIcon } from "@/icons";
 // Metadata for Web Portal Development Service
 export const webPortalDevelopmentMetadata = {
   title: "Hire #1 Web Portal Development Company in USA for ROI",
-  description: "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
+  description:
+    "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
   keywords: "",
-  canonical: "https://www.websitedigitals.com/web-development/web-portal-development-company/",
+  canonical:
+    "https://www.websitedigitals.com/web-development/web-portal-development-company/",
   openGraph: {
     title: "Hire #1 Web Portal Development Company in USA for ROI",
-    description: "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
+    description:
+      "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
     url: "https://www.websitedigitals.com/web-development/web-portal-development-company/",
     siteName: "Website Digitals",
     images: [
@@ -25,8 +28,11 @@ export const webPortalDevelopmentMetadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hire #1 Web Portal Development Company in USA for ROI",
-    description: "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
-    images: ["https://websitedigitals.com/assets/images/web-portal-development-twitter-image.jpg"],
+    description:
+      "Boost growth with expert web portal development services. Website Digitals delivers secure, scalable portals designed for ROI across the USA.",
+    images: [
+      "https://websitedigitals.com/assets/images/web-portal-development-twitter-image.jpg",
+    ],
   },
   robots: {
     index: true,
@@ -40,7 +46,8 @@ export const webPortalDevelopmentMetadata = {
     },
   },
   alternates: {
-    canonical: "https://www.websitedigitals.com/web-development/web-portal-development-company/",
+    canonical:
+      "https://www.websitedigitals.com/web-development/web-portal-development-company/",
   },
 };
 
@@ -67,12 +74,23 @@ export const webPortalDevelopmentBannerData = {
     "• Intuitive designs for better engagement",
   ],
   isCta: true,
-  cta: {
-    text: "Get Started Instantly",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  cta: false,
   image: null,
+  formConfig: {
+    buttonText: "Get Started Instantly",
+    heading: "Get In Touch With Us",
+    helpOptions: [
+      { value: "customer-portal", label: "Customer Portal" },
+      { value: "employee-portal", label: "Employee Portal" },
+      { value: "partner-portal", label: "Partner Portal" },
+      { value: "ecommerce-portal", label: "E-commerce Portal" },
+      { value: "data-portal", label: "Data Management Portal" },
+      { value: "custom-portal", label: "Custom Portal Solution" },
+    ],
+    initialValues: {
+      help: "customer-portal",
+    },
+  },
 };
 
 // Stats Counter Data (Section 2)
@@ -114,6 +132,7 @@ export const webPortalDevelopmentImpactSectionData = {
   heading: "Why Web Portal Development Matters for Businesses",
   description:
     "Businesses depend on digital platforms to connect, manage data, and deliver services. Web portals centralize information, enhance collaboration, and ensure access. Gartner and Forrester see them as transformation drivers, with W3C and OWASP ensuring usability and security. Consider the following areas:",
+  showDescription: true,
 };
 
 export const webPortalDevelopmentImpactCardsData = [
@@ -156,6 +175,7 @@ export const webPortalDevelopmentServicesSectionData = {
   heading: "Our Web Portal Development Services to Scale Your Business",
   description:
     "Every business has unique digital needs, so our solutions are built to be flexible, secure, and scalable. From niche platforms to enterprise systems, we deliver portals focused on usability, security, and growth. Here's how we structure our services:",
+  showDescription: true,
 };
 
 export const webPortalDevelopmentServicesData = [
@@ -407,7 +427,8 @@ export const webPortalDevelopmentTechnologiesSectionData = {
   heading: "Tech Stack We Rely On",
   description:
     "We use proven technologies and expertise to build secure, scalable portals with seamless integration, great user experience, and lasting value.",
-  cta: {
+  showDescription: true,
+    cta: {
     text: "Supercharge My Business",
     href: "#",
     className: "primary book-your-call",

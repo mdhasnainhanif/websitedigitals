@@ -3,12 +3,15 @@ import { BagIcon } from "@/icons";
 // Metadata for Website Maintenance Service
 export const websiteMaintenanceMetadata = {
   title: "Hire Expert Website Maintenance Services for Business Growth",
-  description: "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
+  description:
+    "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
   keywords: "",
-  canonical: "https://www.websitedigitals.com/web-development/website-maintenance-services/",
+  canonical:
+    "https://www.websitedigitals.com/web-development/website-maintenance-services/",
   openGraph: {
     title: "Hire Expert Website Maintenance Services for Business Growth",
-    description: "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
+    description:
+      "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
     url: "https://www.websitedigitals.com/web-development/website-maintenance-services/",
     siteName: "Website Digitals",
     images: [
@@ -25,8 +28,11 @@ export const websiteMaintenanceMetadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hire Expert Website Maintenance Services for Business Growth",
-    description: "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
-    images: ["https://websitedigitals.com/assets/images/website-maintenance-twitter-image.jpg"],
+    description:
+      "Website Digitals is the best website maintenance company that ensures security, updates, and support to keep your business growing.",
+    images: [
+      "https://websitedigitals.com/assets/images/website-maintenance-twitter-image.jpg",
+    ],
   },
   robots: {
     index: true,
@@ -40,7 +46,8 @@ export const websiteMaintenanceMetadata = {
     },
   },
   alternates: {
-    canonical: "https://www.websitedigitals.com/web-development/website-maintenance-services/",
+    canonical:
+      "https://www.websitedigitals.com/web-development/website-maintenance-services/",
   },
 };
 
@@ -66,12 +73,23 @@ export const websiteMaintenanceBannerData = {
     "• Get tailored ongoing support",
   ],
   isCta: true,
-  cta: {
-    text: "Start Maintenance Today",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  cta: false,
   image: null,
+  formConfig: {
+    buttonText: "Start Maintenance Today",
+    heading: "Ready to Protect Your Website?",
+    helpOptions: [
+      { value: "monthly-maintenance", label: "Monthly Maintenance" },
+      { value: "security-updates", label: "Security Updates" },
+      { value: "performance-monitoring", label: "Performance Monitoring" },
+      { value: "backup-services", label: "Backup Services" },
+      { value: "plugin-updates", label: "Plugin Updates" },
+      { value: "emergency-support", label: "Emergency Support" },
+    ],
+    initialValues: {
+      help: "monthly-maintenance",
+    },
+  },
 };
 
 // Stats Counter Data (Section 2)
@@ -406,6 +424,7 @@ export const websiteMaintenanceTechnologiesSectionData = {
   heading: "Technologies Behind Our Maintenance",
   description:
     "Whether it's a CMS, custom app, or ecommerce store, we work with leading platforms to deliver secure, scalable, and high-performing websites tailored to each technology.",
+  showDescription: true,
   cta: {
     text: "Start My Maintenance Plan",
     href: "#",

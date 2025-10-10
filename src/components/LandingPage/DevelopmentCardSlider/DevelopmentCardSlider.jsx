@@ -41,9 +41,9 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
     <section className={styles.sliderSection}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-6">
+          <div className="col-lg-9">
             <div className="section-heading text-center text-white">
-              <h2>
+              <h2 className="mb-0">
                 {section.heading}
               </h2>
               {section.showDescription && section.description && (

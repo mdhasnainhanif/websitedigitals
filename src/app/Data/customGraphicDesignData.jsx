@@ -3,12 +3,16 @@ import { BagIcon } from "@/icons";
 // Metadata for Custom Graphic Design Service
 export const customGraphicDesignMetadata = {
   title: "Hire Best Custom Graphic Design Services | Website Digitals",
-  description: "Get affordable, professional custom graphic design services for logos, branding, packaging, and digital assets tailored to your business.",
-  keywords: "custom graphic design services, professional graphic design services, graphic design services USA, custom logo and branding design, freelance custom graphic designer, online graphic design services, affordable custom graphic design, best custom graphic design services in the US, hire a custom graphic designer online, custom graphic design for small businesses, custom packaging and print design services, tailored digital graphics for businesses, what are custom graphic design services, benefits of hiring a professional graphic designer, difference between freelance vs agency graphic design, how much does custom graphic design cost in the US, hire custom graphic design services near me, order affordable custom logo design, subscribe to online graphic design service US, book a consultation with a professional graphic designer, best custom graphic design companies in the US, top-rated custom logo design services reviews, freelance vs agency graphic design pricing, affordable vs premium custom design packages, custom graphics, branding design, logo design, digital illustration, marketing materials, business branding, creative services, visual identity, print design, design agency, creative agency, business cards design, typography design, packaging design, website graphics, social media graphics, brand guidelines, visual storytelling, design consultation, custom graphic design, graphic design company, graphic design agency, visual design services, brand design services, creative design solutions, professional design services, custom design packages, design consultation services, graphic design for business, brand identity design, marketing design services, print design services, digital design services, packaging design services, logo design services, social media design, presentation design, custom illustration services, visual communication design, creative branding services, design strategy services, brand visual identity, corporate design services, business design solutions, creative design agency, professional graphic designer, custom design solutions, visual brand identity, creative design packages, design services USA, graphic design near me, custom design consultation, brand design consultation, creative design consultation, professional design consultation, design services consultation, graphic design consultation, custom design services consultation, brand design services consultation, creative design services consultation, professional design services consultation, visual design consultation, marketing design consultation, print design consultation, digital design consultation, packaging design consultation, logo design consultation, social media design consultation, presentation design consultation, custom illustration consultation, visual communication consultation, creative branding consultation, design strategy consultation, brand visual identity consultation, corporate design consultation, business design consultation, creative design agency consultation, professional graphic designer consultation, custom design solutions consultation, visual brand identity consultation, creative design packages consultation, design services USA consultation, graphic design near me consultation, custom design services near me, brand design services near me, creative design services near me, professional design services near me, visual design services near me, marketing design services near me, print design services near me, digital design services near me, packaging design services near me, logo design services near me, social media design services near me, presentation design services near me, custom illustration services near me, visual communication services near me, creative branding services near me, design strategy services near me, brand visual identity services near me, corporate design services near me, business design solutions near me, creative design agency near me, professional graphic designer near me, custom design solutions near me, visual brand identity near me, creative design packages near me, design services USA near me, graphic design consultation near me",
-  canonical: "https://www.websitedigitals.com/web-development/custom-graphic-design-services/",
+  description:
+    "Get affordable, professional custom graphic design services for logos, branding, packaging, and digital assets tailored to your business.",
+  keywords:
+    "custom graphic design services, professional graphic design services, graphic design services USA, custom logo and branding design, freelance custom graphic designer, online graphic design services, affordable custom graphic design, best custom graphic design services in the US, hire a custom graphic designer online, custom graphic design for small businesses, custom packaging and print design services, tailored digital graphics for businesses, what are custom graphic design services, benefits of hiring a professional graphic designer, difference between freelance vs agency graphic design, how much does custom graphic design cost in the US, hire custom graphic design services near me, order affordable custom logo design, subscribe to online graphic design service US, book a consultation with a professional graphic designer, best custom graphic design companies in the US, top-rated custom logo design services reviews, freelance vs agency graphic design pricing, affordable vs premium custom design packages, custom graphics, branding design, logo design, digital illustration, marketing materials, business branding, creative services, visual identity, print design, design agency, creative agency, business cards design, typography design, packaging design, website graphics, social media graphics, brand guidelines, visual storytelling, design consultation, custom graphic design, graphic design company, graphic design agency, visual design services, brand design services, creative design solutions, professional design services, custom design packages, design consultation services, graphic design for business, brand identity design, marketing design services, print design services, digital design services, packaging design services, logo design services, social media design, presentation design, custom illustration services, visual communication design, creative branding services, design strategy services, brand visual identity, corporate design services, business design solutions, creative design agency, professional graphic designer, custom design solutions, visual brand identity, creative design packages, design services USA, graphic design near me, custom design consultation, brand design consultation, creative design consultation, professional design consultation, design services consultation, graphic design consultation, custom design services consultation, brand design services consultation, creative design services consultation, professional design services consultation, visual design consultation, marketing design consultation, print design consultation, digital design consultation, packaging design consultation, logo design consultation, social media design consultation, presentation design consultation, custom illustration consultation, visual communication consultation, creative branding consultation, design strategy consultation, brand visual identity consultation, corporate design consultation, business design consultation, creative design agency consultation, professional graphic designer consultation, custom design solutions consultation, visual brand identity consultation, creative design packages consultation, design services USA consultation, graphic design near me consultation, custom design services near me, brand design services near me, creative design services near me, professional design services near me, visual design services near me, marketing design services near me, print design services near me, digital design services near me, packaging design services near me, logo design services near me, social media design services near me, presentation design services near me, custom illustration services near me, visual communication services near me, creative branding services near me, design strategy services near me, brand visual identity services near me, corporate design services near me, business design solutions near me, creative design agency near me, professional graphic designer near me, custom design solutions near me, visual brand identity near me, creative design packages near me, design services USA near me, graphic design consultation near me",
+  canonical:
+    "https://www.websitedigitals.com/web-development/custom-graphic-design-services/",
   openGraph: {
     title: "Hire Best Custom Graphic Design Services | Website Digitals",
-    description: "Get affordable, professional custom graphic design services for logos, branding, packaging, and digital assets tailored to your business.",
+    description:
+      "Get affordable, professional custom graphic design services for logos, branding, packaging, and digital assets tailored to your business.",
     url: "https://www.websitedigitals.com/web-development/custom-graphic-design-services/",
     siteName: "Website Digitals",
     images: [
@@ -25,8 +29,11 @@ export const customGraphicDesignMetadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hire Best Custom Graphic Design Services | Website Digitals",
-    description: "Get affordable, professional custom graphic design services for logos, branding, packaging, and digital assets tailored to your business.",
-    images: ["https://websitedigitals.com/assets/images/custom-graphic-design-twitter-image.jpg"],
+    description:
+      "Get affordable, professional custom graphic design services for logos, branding, packaging, and digital assets tailored to your business.",
+    images: [
+      "https://websitedigitals.com/assets/images/custom-graphic-design-twitter-image.jpg",
+    ],
   },
   robots: {
     index: true,
@@ -40,7 +47,8 @@ export const customGraphicDesignMetadata = {
     },
   },
   alternates: {
-    canonical: "https://www.websitedigitals.com/web-development/custom-graphic-design-services/",
+    canonical:
+      "https://www.websitedigitals.com/web-development/custom-graphic-design-services/",
   },
 };
 
@@ -61,13 +69,23 @@ export const customGraphicDesignBannerData = {
     "",
     "From logo design and branding to digital illustrations, print design, and social media graphics, we craft tailored solutions that fit your business.",
   ],
-  isCta: true,
-  cta: {
-    text: "Let's Design It Now",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  isCta: false,
   image: null,
+  formConfig: {
+    buttonText: "Let’s Design It Now",
+    heading: "Ready to Elevate Your Brand?",
+    helpOptions: [
+      { value: "logo-design", label: "Logo Design" },
+      { value: "brand-identity", label: "Brand Identity" },
+      { value: "print-design", label: "Print Design" },
+      { value: "digital-illustration", label: "Digital Illustration" },
+      { value: "social-media-graphics", label: "Social Media Graphics" },
+      { value: "marketing-materials", label: "Marketing Materials" },
+    ],
+    initialValues: {
+      help: "logo-design",
+    },
+  },
 };
 
 // Stats Counter Data (Section 2)
@@ -533,8 +551,7 @@ export const customGraphicDesignFAQsData = [
       "The cost of custom graphic design varies depending on the scope of the project. Freelancers may charge hourly or per-project rates, while agencies typically offer affordable to premium custom design packages that scale with business needs.",
   },
   {
-    question:
-      "How can I hire custom graphic design services near me?",
+    question: "How can I hire custom graphic design services near me?",
     answer:
       "Businesses can hire custom graphic design services near them by connecting with agencies or trusted professionals online. Many agencies, including top-rated custom graphic design companies in the US, offer nationwide services with virtual consultations.",
   },
@@ -555,8 +572,7 @@ export const customGraphicDesignFAQsData = [
       "Booking a consultation with a professional graphic designer is simple. Most agencies and freelancers provide online scheduling, where businesses can discuss their goals, review design options, and receive recommendations for custom solutions.",
   },
   {
-    question:
-      "Where can I find top-rated custom logo design services reviews?",
+    question: "Where can I find top-rated custom logo design services reviews?",
     answer:
       "Top-rated custom logo design services reviews are available on platforms like Google, Clutch, or Trustpilot. Reading verified client feedback ensures businesses choose a provider known for quality, reliability, and customer satisfaction.",
   },

@@ -62,12 +62,23 @@ export const payPerClickAgencyBannerData = {
   description: [
     "Many businesses face ad campaigns that drain budgets without delivering real results.\n\nAt Website Digitals, we run high-performing campaigns that turn clicks into customers. Our team manages smart keyword bidding, precise ad copywriting, and data-driven campaign optimization to keep every dollar working to maximize ROI.\n\nAs a trusted PPC agency, we turn your paid search advertising into a reliable growth engine that drives measurable sales and leads.",
   ],
-  isCta: true,
-  cta: {
-    text: "Generate Revenue Now",
-    href: "/brief",
-  },
+  isCta: false,
   image: null,
+  formConfig: {
+    buttonText: "Generate Revenue Now",
+    heading: "Ready to Boost Your Revenue?",
+    helpOptions: [
+      { value: "google-ads", label: "Google Ads Management" },
+      { value: "facebook-ads", label: "Facebook Ads" },
+      { value: "linkedin-ads", label: "LinkedIn Ads" },
+      { value: "shopping-ads", label: "Shopping Ads" },
+      { value: "display-ads", label: "Display Advertising" },
+      { value: "ppc-audit", label: "PPC Audit & Optimization" }
+    ],
+    initialValues: {
+      help: "google-ads"
+    }
+  },
 };
 
 export const payPerClickAgencyServicesData = [

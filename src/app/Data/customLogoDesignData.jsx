@@ -69,12 +69,23 @@ export const customLogoDesignBannerData = {
     "Our designers focus on blending creativity with strategy so your business isn't just remembered, it's trusted.",
   ],
   isCta: true,
-  cta: {
-    text: "Let's Create Your Logo",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  cta: false,
   image: null,
+  formConfig: {
+    buttonText: "Let’s Create Your Logo",
+    heading: "Ready to Create Your Perfect Logo?",
+    helpOptions: [
+      { value: "logo-design", label: "Logo Design" },
+      { value: "brand-identity", label: "Brand Identity" },
+      { value: "logo-redesign", label: "Logo Redesign" },
+      { value: "business-card", label: "Business Card Design" },
+      { value: "stationery", label: "Stationery Design" },
+      { value: "brand-guidelines", label: "Brand Guidelines" },
+    ],
+    initialValues: {
+      help: "logo-design",
+    },
+  },
 };
 
 // Stats Counter Data (Section 2)

@@ -235,6 +235,63 @@ import {
   payPerClickAgencyWhyChooseUsData,
   payPerClickAgencyMetadata,
 } from "../../../Data/payPerClickAgencyData";
+import {
+  socialMediaMarketingAgencyBannerData,
+  socialMediaMarketingAgencyBannerData2,
+  socialMediaMarketingAgencyScrollSectionData,
+  socialMediaMarketingAgencyServicesData,
+  socialMediaMarketingAgencyStatsData,
+  socialMediaMarketingAgencyImpactSectionData,
+  socialMediaMarketingAgencyImpactCardsData,
+  socialMediaMarketingAgencyServicesSectionData,
+  socialMediaMarketingAgencyIndustriesSectionData,
+  socialMediaMarketingAgencyIndustriesCardsData,
+  socialMediaMarketingAgencyWorkflowData,
+  socialMediaMarketingAgencyWorkflowSectionData,
+  socialMediaMarketingAgencyWhyChooseUsData,
+  socialMediaMarketingAgencyWhyChooseUsSectionData,
+  socialMediaMarketingAgencyFinalCTAData,
+  socialMediaMarketingAgencyFAQsData,
+  socialMediaMarketingAgencyMetadata,
+} from "../../../Data/socialMediaMarketingAgencyData";
+import {
+  digitalPRServicesBannerData,
+  digitalPRServicesBannerData2,
+  digitalPRServicesScrollSectionData,
+  digitalPRServicesServicesData,
+  digitalPRServicesStatsData,
+  digitalPRServicesImpactSectionData,
+  digitalPRServicesImpactCardsData,
+  digitalPRServicesServicesSectionData,
+  digitalPRServicesIndustriesSectionData,
+  digitalPRServicesIndustriesCardsData,
+  digitalPRServicesWorkflowData,
+  digitalPRServicesWorkflowSectionData,
+  digitalPRServicesWhyChooseUsData,
+  digitalPRServicesWhyChooseUsSectionData,
+  digitalPRServicesFinalCTAData,
+  digitalPRServicesFAQsData,
+  digitalPRServicesMetadata,
+} from "../../../Data/digitalPRServicesData";
+import {
+  contentWritingServicesBannerData,
+  contentWritingServicesBannerData2,
+  contentWritingServicesScrollSectionData,
+  contentWritingServicesServicesData,
+  contentWritingServicesStatsData,
+  contentWritingServicesImpactSectionData,
+  contentWritingServicesImpactCardsData,
+  contentWritingServicesServicesSectionData,
+  contentWritingServicesIndustriesSectionData,
+  contentWritingServicesIndustriesCardsData,
+  contentWritingServicesWorkflowData,
+  contentWritingServicesWorkflowSectionData,
+  contentWritingServicesWhyChooseUsData,
+  contentWritingServicesWhyChooseUsSectionData,
+  contentWritingServicesFinalCTAData,
+  contentWritingServicesFAQsData,
+  contentWritingServicesMetadata,
+} from "../../../Data/contentWritingServicesData";
 
 // Service data mapping
 const serviceDataMap = {
@@ -446,6 +503,63 @@ const serviceDataMap = {
     whyChooseUsData: payPerClickAgencyWhyChooseUsData,
     metadata: payPerClickAgencyMetadata,
   },
+  "social-media-marketing-agency": {
+    bannerData: socialMediaMarketingAgencyBannerData,
+    bannerData2: socialMediaMarketingAgencyBannerData2,
+    scrollSectionData: socialMediaMarketingAgencyScrollSectionData,
+    servicesData: socialMediaMarketingAgencyServicesData,
+    statsData: socialMediaMarketingAgencyStatsData,
+    impactSectionData: socialMediaMarketingAgencyImpactSectionData,
+    impactCardsData: socialMediaMarketingAgencyImpactCardsData,
+    servicesSectionData: socialMediaMarketingAgencyServicesSectionData,
+    industriesSectionData: socialMediaMarketingAgencyIndustriesSectionData,
+    industriesCardsData: socialMediaMarketingAgencyIndustriesCardsData,
+    workflowData: socialMediaMarketingAgencyWorkflowData,
+    workflowSectionData: socialMediaMarketingAgencyWorkflowSectionData,
+    whyChooseUsSectionData: socialMediaMarketingAgencyWhyChooseUsSectionData,
+    whyChooseUsData: socialMediaMarketingAgencyWhyChooseUsData,
+    finalCTAData: socialMediaMarketingAgencyFinalCTAData,
+    faqsData: socialMediaMarketingAgencyFAQsData,
+    metadata: socialMediaMarketingAgencyMetadata,
+  },
+  "digital-pr-services": {
+    bannerData: digitalPRServicesBannerData,
+    bannerData2: digitalPRServicesBannerData2,
+    scrollSectionData: digitalPRServicesScrollSectionData,
+    servicesData: digitalPRServicesServicesData,
+    statsData: digitalPRServicesStatsData,
+    impactSectionData: digitalPRServicesImpactSectionData,
+    impactCardsData: digitalPRServicesImpactCardsData,
+    servicesSectionData: digitalPRServicesServicesSectionData,
+    industriesSectionData: digitalPRServicesIndustriesSectionData,
+    industriesCardsData: digitalPRServicesIndustriesCardsData,
+    workflowData: digitalPRServicesWorkflowData,
+    workflowSectionData: digitalPRServicesWorkflowSectionData,
+    whyChooseUsSectionData: digitalPRServicesWhyChooseUsSectionData,
+    whyChooseUsData: digitalPRServicesWhyChooseUsData,
+    finalCTAData: digitalPRServicesFinalCTAData,
+    faqsData: digitalPRServicesFAQsData,
+    metadata: digitalPRServicesMetadata,
+  },
+  "content-writing-services": {
+    bannerData: contentWritingServicesBannerData,
+    bannerData2: contentWritingServicesBannerData2,
+    scrollSectionData: contentWritingServicesScrollSectionData,
+    servicesData: contentWritingServicesServicesData,
+    statsData: contentWritingServicesStatsData,
+    impactSectionData: contentWritingServicesImpactSectionData,
+    impactCardsData: contentWritingServicesImpactCardsData,
+    servicesSectionData: contentWritingServicesServicesSectionData,
+    industriesSectionData: contentWritingServicesIndustriesSectionData,
+    industriesCardsData: contentWritingServicesIndustriesCardsData,
+    workflowData: contentWritingServicesWorkflowData,
+    workflowSectionData: contentWritingServicesWorkflowSectionData,
+    whyChooseUsSectionData: contentWritingServicesWhyChooseUsSectionData,
+    whyChooseUsData: contentWritingServicesWhyChooseUsData,
+    finalCTAData: contentWritingServicesFinalCTAData,
+    faqsData: contentWritingServicesFAQsData,
+    metadata: contentWritingServicesMetadata,
+  },
 };
 
 // Generate metadata for each service page
@@ -468,6 +582,10 @@ const ServicePage = ({ params }) => {
 
   // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];
+  
+  // Debug logging
+  console.log("Service Type:", serviceType);
+  console.log("Service Data:", serviceData);
 
   // If service type not found, return 404 or redirect
   if (!serviceData) {
@@ -507,10 +625,10 @@ const ServicePage = ({ params }) => {
           items={serviceData.industriesCardsData || webBuilderCards}
           columnCount={3}
           sectionClass={webBuilderSectionClass}
-          button={serviceData.industriesSectionData?.cta?.show || false}
-          buttonText={serviceData.industriesSectionData?.cta?.text}
-          buttonHref={serviceData.industriesSectionData?.cta?.href}
-          buttonClassName={serviceData.industriesSectionData?.cta?.className}
+          button={serviceData.industriesSectionData?.cta?.show || true}
+          buttonText={serviceData.industriesSectionData?.cta?.text || "Build My Custom Portal"}
+          buttonHref={serviceData.industriesSectionData?.cta?.href || "#"}
+          buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
       )}
       <ReviewsSlider />
@@ -521,19 +639,29 @@ const ServicePage = ({ params }) => {
           isIconShow={true}
         />
       )}
-      {serviceData.whyChooseUsData && serviceData.whyChooseUsSectionData && (
+      {/* Debug: Check if scroll section data exists */}
+      {console.log("Scroll Section Data:", serviceData.scrollSectionData)}
+      {serviceData.whyChooseUsData && serviceData.whyChooseUsSectionData && 
+       serviceType !== "cms-development-company" && 
+       serviceType !== "pay-per-click-agency" && 
+       serviceType !== "social-media-marketing-agency" && 
+       serviceType !== "digital-pr-services" && 
+       serviceType !== "search-engine-optimization-agency" && (
         <WebBuilderCardSection
-          heading={serviceData.whyChooseUsSectionData.heading}
-          description={serviceData.whyChooseUsSectionData.description}
-          showDescription={serviceData.whyChooseUsSectionData.showDescription}
-          items={serviceData.whyChooseUsData}
+          heading={serviceData.whyChooseUsSectionData?.heading}
+          description={serviceData.whyChooseUsSectionData?.description}
+          showDescription={serviceData.whyChooseUsSectionData?.showDescription}
+          items={serviceData.whyChooseUsData || []}
           columnCount={2}
           sectionClass="bg-light"
         />
       )}
       <StepSection sectionData={serviceData.workflowData} />
       {serviceType !== "search-engine-optimization-agency" &&
-        serviceType !== "digital-marketing-company" && (
+        serviceType !== "digital-marketing-company" && 
+        serviceType !== "digital-pr-services" && 
+        serviceType !== "social-media-marketing-agency" && 
+        serviceType !== "custom-graphic-design-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}

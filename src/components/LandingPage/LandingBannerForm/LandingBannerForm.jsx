@@ -6,13 +6,24 @@ import styles from "./LandingBannerForm.module.css";
 import { VideoIcon } from "@/icons";
 import Link from "next/link";
 
-const LandingBannerForm = () => {
+const LandingBannerForm = ({ 
+    formConfig = {},
+    buttonText = "Submit and Book a Call",
+    heading = "Get In Touch With Us",
+    helpOptions = [
+        { value: "web", label: "Web Development" },
+        { value: "design", label: "UI/UX Design" },
+        { value: "marketing", label: "Digital Marketing" }
+    ],
+    onSubmit = null
+}) => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         help: "",
         budget: "",
         message: "",
+        ...formConfig.initialValues
     });
 
     const handleChange = (e) => {
@@ -21,14 +32,18 @@ const LandingBannerForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
+        if (onSubmit) {
+            onSubmit(formData);
+        } else {
+            console.log("Form submitted:", formData);
+        }
     };
 
     return (
         <section className={styles.formSection}>
             <Container>
                 <div className={styles.formWrapper}>
-                    <h2 className={styles.heading}>Get In Touch With Us</h2>
+                    <h2 className={styles.heading}>{heading}</h2>
 
                     <Form onSubmit={handleSubmit}>
                         <Row className="gy-4">
@@ -70,9 +85,11 @@ const LandingBannerForm = () => {
                                         className={styles.input}
                                     >
                                         <option value="">Select</option>
-                                        <option value="web">Web Development</option>
-                                        <option value="design">UI/UX Design</option>
-                                        <option value="marketing">Digital Marketing</option>
+                                        {helpOptions.map((option) => (
+                                            <option key={option.value} value={option.value}>
+                                                {option.label}
+                                            </option>
+                                        ))}
                                     </Form.Select>
                                 </Form.Group>
                             </Col>
@@ -109,7 +126,7 @@ const LandingBannerForm = () => {
                             <Col md={12} className="text-center mt-3">
                                 <Link className='link-area' href="#">
                                 <Button type="submit" className={styles.submitBtn}>
-                                    Submit and Book a Call &nbsp; <VideoIcon/>
+                                    {buttonText} &nbsp; <VideoIcon/>
                                 </Button>
                                 </Link>
                             </Col>

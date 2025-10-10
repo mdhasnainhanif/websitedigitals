@@ -61,13 +61,23 @@ export const videoAnimationBannerData = {
     "",
     "Our team creates custom animations for businesses that want to stand out. From corporate videos and motion graphics to 2D and 3D animation services, we design visuals that capture attention and build trust.",
   ],
-  isCta: true,
-  cta: {
-    text: "Let's Create Your Story",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  isCta: false,
   image: null,
+  formConfig: {
+    buttonText: "Create Your Video",
+    heading: "Ready to Tell Your Story?",
+    helpOptions: [
+      { value: "2d-animation", label: "2D Animation" },
+      { value: "3d-animation", label: "3D Animation" },
+      { value: "motion-graphics", label: "Motion Graphics" },
+      { value: "explainer-videos", label: "Explainer Videos" },
+      { value: "corporate-videos", label: "Corporate Videos" },
+      { value: "social-media-videos", label: "Social Media Videos" }
+    ],
+    initialValues: {
+      help: "2d-animation"
+    }
+  },
 };
 
 // Stats Counter Data (Section 2)

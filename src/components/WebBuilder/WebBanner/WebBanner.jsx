@@ -143,7 +143,13 @@ export default function WebBuilderBanner({
                 )}
                 {islandingPage && (
                   <>
-                    <LandingBannerForm />
+                    <LandingBannerForm 
+                      buttonText={data?.formConfig?.buttonText}
+                      heading={data?.formConfig?.heading}
+                      helpOptions={data?.formConfig?.helpOptions}
+                      formConfig={data?.formConfig}
+                      onSubmit={data?.formConfig?.onSubmit}
+                    />
                   </>
                 )}
               </div>
