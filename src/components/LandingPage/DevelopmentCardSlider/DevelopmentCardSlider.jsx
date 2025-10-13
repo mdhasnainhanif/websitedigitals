@@ -68,6 +68,18 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
                   <p className={styles.cardDescription}>
                     {service.description}
                   </p>
+                  
+                  {/* Individual Service Button */}
+                  {service.button && service.button.show && (
+                    <div className="link-area">
+                      <a 
+                        href={service.button.href || "#"} 
+                        className={`${service.button.className || "offer-btn primary" } ${styles.cardButton}`}
+                      >
+                        {service.button.text}
+                      </a>
+                    </div>
+                  )}
                 </div>
 
                 <div className={styles.cardPlus}>
