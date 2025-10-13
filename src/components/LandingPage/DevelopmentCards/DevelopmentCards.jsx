@@ -14,7 +14,8 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
   
   const section = sectionData || defaultSectionData;
   const cards = cardsData || developmentCardsData;
-  const defaultActiveId = cards[1]?.id;
+  const getCardId = (item, idx) => (item && (item.id !== undefined && item.id !== null) ? item.id : idx);
+  const defaultActiveId = getCardId(cards[1] || cards[0] || {}, 1);
   const [activeCard, setActiveCard] = useState(defaultActiveId);
 
   return (
@@ -35,14 +36,15 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
         </div>
 
         <div className="row justify-content-center g-0">
-          {cards.map((item, index) => (
-            <div key={index} className={`${item.col} d-flex`}>
-              <div
-                className={`${styles.card} rounded-4 shadow-sm text-center flex-fill ${activeCard === item.id ? styles.highlighted : ""
-                  }`}
-                onMouseEnter={() => setActiveCard(item.id)}
-                onMouseLeave={() => setActiveCard(defaultActiveId)}
-              >
+          {cards.map((item, index) => {
+            const cardId = getCardId(item, index);
+            return (
+              <div key={cardId} className={`${item.col} d-flex`}>
+                <div
+                  className={`${styles.card} rounded-4 shadow-sm text-center flex-fill ${activeCard === cardId ? styles.highlighted : ""}`}
+                  onMouseEnter={() => setActiveCard(cardId)}
+                  onMouseLeave={() => setActiveCard(defaultActiveId)}
+                >
                 <div className="p-4 position-relative">
                   <div className={`${styles.iconCircle} mb-3 mx-auto`}>
                     <GoalIcon />
@@ -52,7 +54,8 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
                 </div>
               </div>
             </div>
-          ))}
+          );
+        })}
         </div>
       </div>
     </section>

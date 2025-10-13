@@ -15,15 +15,11 @@ export const linkBuildingServicesBannerData = {
     "",
     "At Website Digitals, we provide professional link building services that strengthen domain authority, deliver conversion-focused backlinks, and make SEO growth accessible through affordable link building services and white-hat strategies."
   ],
-  isCta: true,
-  cta: {
-    text: "Grow Authority Today",
-    href: "#contact",
-  },
+  isCta: false,
   image: null,
   formConfig: {
-    buttonText: "Start My Link Building Campaign",
-    heading: "Ready to Build Authority with Link Building?",
+    buttonText: "Grow Authority Today",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "blogger-outreach", label: "Blogger Outreach & Guest Posts" },
       { value: "white-hat", label: "White Hat Backlink Services" },
@@ -54,7 +50,7 @@ export const linkBuildingServicesScrollSectionData = {
   description: [
     "The right link building partner makes a lasting impact on SEO. Our safe, transparent, and results-driven approach ensures every backlink strengthens rankings, traffic, and growth.",
   ],
-  showDescription: false,
+  showDescription: true,
   items: [
     {
       id: "link-building-firstScroller",
@@ -136,7 +132,7 @@ export const linkBuildingServicesScrollSectionData = {
 
 export const linkBuildingServicesServicesData = [
   {
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     title: "Blogger Outreach & Guest Posts",
     description: "We secure placements on high-authority websites through targeted guest post link building and blogger outreach services. Each placement is carefully selected to provide contextual backlinks that enhance visibility, credibility, and keyword relevance.",
     features: [
@@ -147,7 +143,7 @@ export const linkBuildingServicesServicesData = [
     ]
   },
   {
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     title: "White Hat Backlink Services",
     description: "Our white hat link building practices follow Google's Webmaster Guidelines and recognized SEO best practices. By prioritizing ethical methods, we ensure sustainable growth that avoids penalties while strengthening rankings over time.",
     features: [
@@ -158,7 +154,7 @@ export const linkBuildingServicesServicesData = [
     ]
   },
   {
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     title: "Tailored SEO Link Building Packages",
     description: "No two businesses are the same. From affordable link building services for small businesses to enterprise SEO link building solutions for large-scale campaigns, our packages are customized to meet specific industry requirements and long-term growth objectives.",
     features: [
@@ -169,7 +165,7 @@ export const linkBuildingServicesServicesData = [
     ]
   },
   {
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     title: "Niche & Regional Link Building",
     description: "We design strategies for businesses targeting specific industries or geographic markets. Whether it's niche directories, regional publications, or sector-focused blogs, our campaigns deliver relevant backlinks that directly connect with your audience.",
     features: [
@@ -180,7 +176,7 @@ export const linkBuildingServicesServicesData = [
     ]
   },
   {
-    icon: <BagIcon/>,
+    icon: <BagIcon />,
     title: "E-Commerce & SaaS Link Building",
     description: "For e-commerce brands and SaaS companies, we craft specialized campaigns aimed at product-driven keywords, software directories, and respected industry reviewers. These backlinks improve visibility in competitive markets where rankings strongly influence conversions.",
     features: [
@@ -239,30 +235,35 @@ export const linkBuildingServicesImpactCardsData = [
     title: "Improve Search Rankings",
     description: "With relevant backlinks, your website builds stronger domain authority. As that authority grows, your site gains a higher chance of appearing in organic search results for competitive keywords.",
     col: "col-12 col-md-4 col-lg-4",
+    isHighlighted: false,
   },
   {
     icon: "/assets/images/icons/icon_technology.svg",
     title: "Build Trust & Authority",
     description: "Through white hat link building strategies, your site is connected with reputable authority sites. These connections not only strengthen rankings but also improve brand credibility in the eyes of search engines and users alike.",
     col: "col-12 col-md-4 col-lg-4",
+    isHighlighted: true,
   },
   {
     icon: "/assets/images/icons/icon_Solutions.svg",
     title: "Sustainable SEO Growth",
     description: "Unlike risky short-term link schemes, sustainable SEO growth comes from consistent practices such as content outreach, guest posting on industry-relevant sites, and earning links from high-quality referring domains. These methods ensure your backlinks remain valuable and penalty-free over time.",
     col: "col-12 col-md-4 col-lg-4",
+    isHighlighted: false,
   },
   {
     icon: "/assets/images/icons/icon_Industries.svg",
     title: "Support Your Conversion Goals",
     description: "Links should not only improve rankings but also contribute to conversions. By securing placements that direct qualified traffic, you gain conversion-focused backlinks that support lead generation and sales objectives.",
     col: "col-12 col-md-4 col-lg-4",
+    isHighlighted: false,
   },
   {
     icon: "/assets/images/icons/icon_Services.svg",
     title: "Balanced SEO Strategy",
     description: "Effective link building works hand-in-hand with on-page SEO, strengthens content marketing campaigns, and supports ROI from both paid and organic channels. When balanced with a broader digital strategy, it delivers measurable impact across your marketing funnel.",
     col: "col-12 col-md-4 col-lg-4",
+    isHighlighted: false,
   }
 ];
 
