@@ -330,6 +330,22 @@ import {
   guestPostingServicesFAQsData,
   guestPostingServicesMetadata,
 } from "../../../Data/guestPostingServicesData";
+import {
+  linkBuildingServicesBannerData,
+  linkBuildingServicesBannerData2,
+  linkBuildingServicesScrollSectionData,
+  linkBuildingServicesServicesData,
+  linkBuildingServicesStatsData,
+  linkBuildingServicesImpactSectionData,
+  linkBuildingServicesImpactCardsData,
+  linkBuildingServicesServicesSectionData,
+  linkBuildingServicesIndustriesSectionData,
+  linkBuildingServicesIndustriesCardsData,
+  linkBuildingServicesWorkflowData,
+  linkBuildingServicesFinalCTAData,
+  linkBuildingServicesFAQsData,
+  linkBuildingServicesMetadata,
+} from "../../../Data/linkBuildingServicesData";
 
 // Service data mapping
 const serviceDataMap = {
@@ -636,6 +652,22 @@ const serviceDataMap = {
     faqsData: guestPostingServicesFAQsData,
     metadata: guestPostingServicesMetadata,
   },
+  "link-building-services": {
+    bannerData: linkBuildingServicesBannerData,
+    bannerData2: linkBuildingServicesBannerData2,
+    scrollSectionData: linkBuildingServicesScrollSectionData,
+    servicesData: linkBuildingServicesServicesData,
+    statsData: linkBuildingServicesStatsData,
+    impactSectionData: linkBuildingServicesImpactSectionData,
+    impactCardsData: linkBuildingServicesImpactCardsData,
+    servicesSectionData: linkBuildingServicesServicesSectionData,
+    industriesSectionData: linkBuildingServicesIndustriesSectionData,
+    industriesCardsData: linkBuildingServicesIndustriesCardsData,
+    workflowData: linkBuildingServicesWorkflowData,
+    finalCTAData: linkBuildingServicesFinalCTAData,
+    faqsData: linkBuildingServicesFAQsData,
+    metadata: linkBuildingServicesMetadata,
+  },
 };
 
 // Generate metadata for each service page
@@ -691,7 +723,7 @@ const ServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && (
+      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && (
         <WebBuilderCardSection
           heading={
             serviceData.industriesSectionData?.heading || webBuilderHeading
@@ -707,7 +739,7 @@ const ServicePage = ({ params }) => {
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
       )}
-      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services") && (
+      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services") && (
         <WebBuilderCardSection
           heading={serviceData.industriesSectionData?.heading}
           description={serviceData.industriesSectionData?.description}
@@ -716,7 +748,7 @@ const ServicePage = ({ params }) => {
           columnCount={3}
           sectionClass={webBuilderSectionClass}
           button={serviceData.industriesSectionData?.cta?.show || true}
-          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : "Build Links Now")}
+          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : serviceType === "guest-posting-services" ? "Build Links Now" : "Grow Website Authority Now")}
           buttonHref={serviceData.industriesSectionData?.cta?.href || "#contact"}
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
@@ -738,7 +770,8 @@ const ServicePage = ({ params }) => {
        serviceType !== "digital-pr-services" && 
        serviceType !== "search-engine-optimization-agency" && 
        serviceType !== "content-marketing-services" && 
-       serviceType !== "guest-posting-services" && (
+       serviceType !== "guest-posting-services" && 
+       serviceType !== "link-building-services" && (
         <WebBuilderCardSection
           heading={serviceData.whyChooseUsSectionData?.heading}
           description={serviceData.whyChooseUsSectionData?.description}
@@ -755,7 +788,8 @@ const ServicePage = ({ params }) => {
         serviceType !== "social-media-marketing-agency" && 
         serviceType !== "custom-graphic-design-services" && 
         serviceType !== "content-marketing-services" && 
-        serviceType !== "guest-posting-services" && (
+        serviceType !== "guest-posting-services" && 
+        serviceType !== "link-building-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}

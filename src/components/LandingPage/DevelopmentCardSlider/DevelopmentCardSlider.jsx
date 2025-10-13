@@ -57,8 +57,8 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
 
         <div className={styles.sliderContainer}>
           <div className={`owl-carousel owl-theme ${styles.developmentCardSlider}`}>
-            {services.map((service) => (
-              <div key={service.id} className={`item ${styles.serviceCard}`}>
+            {services.map((service, index) => (
+              <div key={index} className={`item ${styles.serviceCard}`}>
                 <div className={styles.cardIcon}>
                   <div className={styles.iconWrapper}>{service.icon}</div>
                 </div>
@@ -85,6 +85,16 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
             ))}
           </div>
         </div>
+
+        {section.cta && (
+          <div className="row justify-content-center mt-5">
+            <div className="link-area">
+              <a href={section.cta.href} className="book-your-call d-block mx-auto w_fit">
+                {section.cta.label}
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
