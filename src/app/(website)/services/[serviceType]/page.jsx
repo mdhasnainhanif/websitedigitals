@@ -741,8 +741,6 @@ const serviceDataMap = {
     metadata: onlineReputationManagementMetadata,
   },
 };
-
-// Generate metadata for each service page
 export async function generateMetadata({ params }) {
   const { serviceType } = params;
   const serviceData = serviceDataMap[serviceType];
@@ -760,14 +758,11 @@ export async function generateMetadata({ params }) {
 const ServicePage = ({ params }) => {
   const { serviceType } = params;
 
-  // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];
 
-  // Debug logging
   console.log("Service Type:", serviceType);
   console.log("Service Data:", serviceData);
 
-  // If service type not found, return 404 or redirect
   if (!serviceData) {
     return (
       <div className="container text-center py-5">
