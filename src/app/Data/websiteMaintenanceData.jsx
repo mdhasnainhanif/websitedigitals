@@ -77,7 +77,7 @@ export const websiteMaintenanceBannerData = {
   image: null,
   formConfig: {
     buttonText: "Start Maintenance Today",
-    heading: "Ready to Protect Your Website?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "monthly-maintenance", label: "Monthly Maintenance" },
       { value: "security-updates", label: "Security Updates" },

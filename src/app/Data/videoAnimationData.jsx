@@ -64,8 +64,8 @@ export const videoAnimationBannerData = {
   isCta: false,
   image: null,
   formConfig: {
-    buttonText: "Create Your Video",
-    heading: "Ready to Tell Your Story?",
+    buttonText: "Let’s Create Your Story",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "2d-animation", label: "2D Animation" },
       { value: "3d-animation", label: "3D Animation" },

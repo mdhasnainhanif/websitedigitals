@@ -29,7 +29,7 @@ export const webDesignBannerData = {
   },
   formConfig: {
     buttonText: "Design My Website",
-    heading: "Ready to Transform Your Online Presence?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "custom-web-design", label: "Custom Web Design" },
       { value: "responsive-design", label: "Responsive Design" },

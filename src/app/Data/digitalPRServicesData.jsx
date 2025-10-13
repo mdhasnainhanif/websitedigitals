@@ -73,7 +73,7 @@ export const digitalPRServicesBannerData = {
   image: null,
   formConfig: {
     buttonText: "Get Featured Today",
-    heading: "Ready to Build Your Authority?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "media-outreach", label: "Media Outreach & Press Coverage" },
       { value: "influencer-partnerships", label: "Influencer Partnerships" },

@@ -66,7 +66,7 @@ export const payPerClickAgencyBannerData = {
   image: null,
   formConfig: {
     buttonText: "Generate Revenue Now",
-    heading: "Ready to Boost Your Revenue?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "google-ads", label: "Google Ads Management" },
       { value: "facebook-ads", label: "Facebook Ads" },

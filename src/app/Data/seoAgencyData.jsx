@@ -68,7 +68,7 @@ export const seoAgencyBannerData = {
   image: null,
   formConfig: {
     buttonText: "Let's Grow With SEO",
-    heading: "Ready to Dominate Search Results?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "local-seo", label: "Local SEO" },
       { value: "technical-seo", label: "Technical SEO" },

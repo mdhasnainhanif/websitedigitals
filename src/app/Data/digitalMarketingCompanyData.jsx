@@ -47,7 +47,7 @@ export const digitalMarketingBannerData = {
   isCta: false,
   formConfig: {
     buttonText: "Talk to an Expert Now",
-    heading: "Ready to Generate More Leads?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "seo", label: "SEO Services" },
       { value: "ppc", label: "Pay-Per-Click Advertising" },

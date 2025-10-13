@@ -73,7 +73,7 @@ export const customLogoDesignBannerData = {
   image: null,
   formConfig: {
     buttonText: "Let’s Create Your Logo",
-    heading: "Ready to Create Your Perfect Logo?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "logo-design", label: "Logo Design" },
       { value: "brand-identity", label: "Brand Identity" },

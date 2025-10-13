@@ -68,7 +68,7 @@ export const socialMediaMarketingAgencyBannerData = {
   image: null,
   formConfig: {
     buttonText: "Start Driving Sales Today",
-    heading: "Ready to Build Your Social Presence?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "facebook-ads", label: "Facebook Ads" },
       { value: "instagram-marketing", label: "Instagram Marketing" },
