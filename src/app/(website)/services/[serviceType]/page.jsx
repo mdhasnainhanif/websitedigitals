@@ -364,6 +364,24 @@ import {
   localSEOServicesFAQsData,
   localSEOServicesMetadata,
 } from "../../../Data/localSEOServicesData";
+import {
+  onlineReputationManagementBannerData,
+  onlineReputationManagementBannerData2,
+  onlineReputationManagementScrollSectionData,
+  onlineReputationManagementServicesData,
+  onlineReputationManagementStatsData,
+  onlineReputationManagementImpactSectionData,
+  onlineReputationManagementImpactCardsData,
+  onlineReputationManagementServicesSectionData,
+  onlineReputationManagementIndustriesSectionData,
+  onlineReputationManagementIndustriesCardsData,
+  onlineReputationManagementWorkflowData,
+  onlineReputationManagementWhyChooseUsSectionData,
+  onlineReputationManagementWhyChooseUsData,
+  onlineReputationManagementFinalCTAData,
+  onlineReputationManagementFAQsData,
+  onlineReputationManagementMetadata,
+} from "../../../Data/onlineReputationManagementData";
 
 // Service data mapping
 const serviceDataMap = {
@@ -704,6 +722,24 @@ const serviceDataMap = {
     faqsData: localSEOServicesFAQsData,
     metadata: localSEOServicesMetadata,
   },
+  "online-reputation-management-services": {
+    bannerData: onlineReputationManagementBannerData,
+    bannerData2: onlineReputationManagementBannerData2,
+    scrollSectionData: onlineReputationManagementScrollSectionData,
+    servicesData: onlineReputationManagementServicesData,
+    statsData: onlineReputationManagementStatsData,
+    impactSectionData: onlineReputationManagementImpactSectionData,
+    impactCardsData: onlineReputationManagementImpactCardsData,
+    servicesSectionData: onlineReputationManagementServicesSectionData,
+    industriesSectionData: onlineReputationManagementIndustriesSectionData,
+    industriesCardsData: onlineReputationManagementIndustriesCardsData,
+    workflowData: onlineReputationManagementWorkflowData,
+    whyChooseUsData: onlineReputationManagementWhyChooseUsData,
+    whyChooseUsSectionData: onlineReputationManagementWhyChooseUsSectionData,
+    finalCTAData: onlineReputationManagementFinalCTAData,
+    faqsData: onlineReputationManagementFAQsData,
+    metadata: onlineReputationManagementMetadata,
+  },
 };
 
 // Generate metadata for each service page
@@ -759,7 +795,7 @@ const ServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && serviceType !== "local-seo-services" && (
+      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && serviceType !== "local-seo-services" && serviceType !== "online-reputation-management-services" && (
         <WebBuilderCardSection
           heading={
             serviceData.industriesSectionData?.heading || webBuilderHeading
@@ -775,7 +811,7 @@ const ServicePage = ({ params }) => {
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
       )}
-      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services" || serviceType === "local-seo-services") && (
+      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services" || serviceType === "local-seo-services" || serviceType === "online-reputation-management-services") && (
         <WebBuilderCardSection
           heading={serviceData.industriesSectionData?.heading}
           description={serviceData.industriesSectionData?.description}
@@ -784,7 +820,7 @@ const ServicePage = ({ params }) => {
           columnCount={3}
           sectionClass={webBuilderSectionClass}
           button={serviceData.industriesSectionData?.cta?.show || true}
-          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : serviceType === "guest-posting-services" ? "Build Links Now" : serviceType === "link-building-services" ? "Grow Website Authority Now" : "Claim My SEO Strategy")}
+          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : serviceType === "guest-posting-services" ? "Build Links Now" : serviceType === "link-building-services" ? "Grow Website Authority Now" : serviceType === "online-reputation-management-services" ? "Secure My Reputation Today" : "Claim My SEO Strategy")}
           buttonHref={serviceData.industriesSectionData?.cta?.href || "#contact"}
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
@@ -808,7 +844,8 @@ const ServicePage = ({ params }) => {
        serviceType !== "content-marketing-services" && 
        serviceType !== "guest-posting-services" && 
        serviceType !== "link-building-services" && 
-       serviceType !== "local-seo-services" && (
+       serviceType !== "local-seo-services" && 
+       serviceType !== "online-reputation-management-services" && (
         <WebBuilderCardSection
           heading={serviceData.whyChooseUsSectionData?.heading}
           description={serviceData.whyChooseUsSectionData?.description}
@@ -827,7 +864,8 @@ const ServicePage = ({ params }) => {
         serviceType !== "content-marketing-services" && 
         serviceType !== "guest-posting-services" && 
         serviceType !== "link-building-services" && 
-        serviceType !== "local-seo-services" && (
+        serviceType !== "local-seo-services" && 
+        serviceType !== "online-reputation-management-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}

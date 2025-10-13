@@ -27,7 +27,7 @@ const StepSection = ({ sectionData = null }) => {
 
         <div className={styles.stepsContainer}>
           {data.steps.map((step, index) => (
-            <React.Fragment key={step.id}>
+            <React.Fragment key={index}>
               <div className={`row align-items-center ${styles.stepRow}`}>
                 <div className={`col-md-6 ${step.alignment === 'right' ? 'order-md-1' : 'order-md-2'}`}>
                   <div className={styles.stepContent}>
