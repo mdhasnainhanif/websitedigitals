@@ -54,6 +54,17 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
             </div>
           ))}
         </div>
+
+        {/* CTA Button */}
+        {section.cta && section.cta.show && (
+          <div className="row justify-content-center mt-5">
+            <div className="link-area text-center">
+              <a href={section.cta.href || "#"} className={section.cta.className || "offer-btn primary"}>
+                {section.cta.text || section.cta.label}
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

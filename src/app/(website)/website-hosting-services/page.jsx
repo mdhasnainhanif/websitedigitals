@@ -60,23 +60,38 @@ const WebsiteHostingServicesPage = () => {
         sectionData={websiteHostingServicesSectionData}
         servicesData={websiteHostingServicesData}
       />
-      <WebBuilderCardSection
-        sectionData={websiteHostingServicesIndustriesSectionData}
-        cardsData={websiteHostingServicesIndustriesCardsData}
-      />
+      <ReviewsSlider />
+      {/* <WebBuilderCardSection
+        heading={websiteHostingServicesIndustriesSectionData?.heading}
+        description={websiteHostingServicesIndustriesSectionData?.description}
+        showDescription={websiteHostingServicesIndustriesSectionData?.showDescription}
+        items={websiteHostingServicesIndustriesCardsData || []}
+        columnCount={3}
+        button={websiteHostingServicesIndustriesSectionData?.cta?.show || true}
+        buttonText={websiteHostingServicesIndustriesSectionData?.cta?.text || "Get My Hosting Plan"}
+        buttonHref={websiteHostingServicesIndustriesSectionData?.cta?.href || "#"}
+        buttonClassName={websiteHostingServicesIndustriesSectionData?.cta?.className || "offer-btn primary"}
+      /> */}
       <ScrollSection 
         data={websiteHostingServicesScrollSectionData} 
         className="landingPageScrollSection"
         isIconShow={true}
       />
-      <StepSection workflowData={websiteHostingServicesWorkflowData} />
-      <PlatformsSpecialize
+      <StepSection sectionData={websiteHostingServicesWorkflowData} />
+      {/* <PlatformsSpecialize
         sectionData={websiteHostingServicesTechnologiesSectionData}
         data={websiteHostingServicesTechnologiesData}
-      />
+      /> */}
       <TestimonialSlider />
-      <LandingBannerForm bannerData={websiteHostingServicesFinalCTAData} />
-      <Faqs faqsData={websiteHostingServicesFAQsData} />
+      <WebBanner
+        data={websiteHostingServicesFinalCTAData || websiteHostingServicesBannerData2}
+        className="notHero order2 landingPageBanner2"
+      />
+      <Faqs 
+        title="Frequently Asked Questions"
+        faqs={websiteHostingServicesFAQsData} 
+        isTwoCol={true}
+      />
       <BlogSection />
       <ContactSection />
     </div>

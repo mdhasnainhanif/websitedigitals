@@ -6,8 +6,7 @@ export const websiteHostingServicesMetadata = {
   description:
     "Get reliable hosting from Website Digitals, a trusted website hosting company. Fast servers, 99.9% uptime, and 24/7 support. Start today.",
   keywords: "",
-  canonical:
-    "https://www.websitedigitals.com/website-hosting-services/",
+  canonical: "https://www.websitedigitals.com/website-hosting-services/",
   openGraph: {
     title: "Get Fast, Affordable & Secure Website Hosting Services",
     description:
@@ -46,8 +45,7 @@ export const websiteHostingServicesMetadata = {
     },
   },
   alternates: {
-    canonical:
-      "https://www.websitedigitals.com/website-hosting-services/",
+    canonical: "https://www.websitedigitals.com/website-hosting-services/",
   },
 };
 
@@ -187,22 +185,22 @@ export const websiteHostingServicesData = [
 
 export const websiteHostingServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "Why the Right Website Hosting Matters for Your Business",
+  heading: "Why Businesses Trust Our Web Hosting Company",
   description: [
-    "Choosing the right hosting affects your site's speed, security, and ability to grow. A reliable platform keeps visitors engaged and data protected while ensuring your business stays online. Here's what strong hosting delivers:",
+    "Our customers choose us for reliability, security, and growth-ready infrastructure. Here’s why:",
   ],
   items: [
     {
       id: "hosting-firstScroller",
       step: 1,
-      title: "Speed & Performance",
+      title: "Industry-Leading Uptime",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Fast website hosting reduces bounce rates and enhances user engagement. Quality web hosting ensures robust server performance and low latency, resulting in faster page load times and improved search rankings. Continuous performance optimization ensures your site operates efficiently as traffic grows.",
+        "We back every plan with an uptime guarantee and infrastructure designed for 99.9% availability, so visitors can consistently access your website.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "Speed & Performance",
+        alt: "Industry-Leading Uptime",
         width: 669,
         height: 376,
       },
@@ -210,14 +208,14 @@ export const websiteHostingServicesScrollSectionData = {
     {
       id: "hosting-secondScroller",
       step: 2,
-      title: "Security & Reliability",
+      title: "24/7 Expert Support",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Professional hosting services for websites come with built-in safeguards to protect your data. Secure hosting with firewalls, scans, and an uptime guarantee provides peace of mind. Regular backups, data protection protocols, and free SSL certificates build trust, while proactive site protection minimizes threats.",
+        "Our team is available around the clock with technical support and live chat hosting help, resolving issues quickly before they affect your business.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/2.png",
-        alt: "Security & Reliability",
+        alt: "24/7 Expert Support",
         width: 669,
         height: 376,
       },
@@ -225,14 +223,44 @@ export const websiteHostingServicesScrollSectionData = {
     {
       id: "hosting-thirdScroller",
       step: 3,
-      title: "Scalability & Growth",
+      title: "Scalable Infrastructure",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Scalable hosting allows you to add resources without downtime. With cloud hosting solutions, performance stays consistent even during traffic spikes. Adequate bandwidth and growth-ready infrastructure ensure your website remains stable and ready for future demand.",
+        "Our platform delivers cloud hosting scalability to grow with your needs. You can confidently handle traffic surges without downtime or performance loss.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/3.png",
-        alt: "Scalability & Growth",
+        alt: "Scalable Infrastructure",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "hosting-fourthScroller",
+      step: 4,
+      title: "Security-First Approach",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Your data and users stay protected with SSL encryption, firewall protection, and ongoing malware monitoring that guard against threats.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/4.png",
+        alt: "Security-First Approach",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "hosting-fifthScroller",
+      step: 5,
+      title: "Transparent Pricing",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "You get clear hosting plans with no hidden fees, so your costs stay predictable and transparent.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/1.png",
+        alt: "Transparent Pricing",
         width: 669,
         height: 376,
       },
@@ -601,13 +629,15 @@ export const websiteHostingServicesFAQsData = [
   },
   {
     id: 6,
-    question: "What types of website hosting services does Website Digitals offer?",
+    question:
+      "What types of website hosting services does Website Digitals offer?",
     answer:
       "Website Digitals offers a full range of hosting options to fit different needs and budgets. Our services include shared hosting for small websites, VPS hosting with dedicated resources, dedicated hosting for maximum performance, cloud hosting for scalability, and managed hosting for businesses that want updates, backups, and security handled for them.",
   },
   {
     id: 7,
-    question: "What is the difference between shared, VPS, and dedicated hosting?",
+    question:
+      "What is the difference between shared, VPS, and dedicated hosting?",
     answer:
       "Shared hosting is the most affordable option, with multiple sites sharing one server. It's best for small sites and blogs. VPS hosting allocates dedicated resources within a shared environment, offering enhanced performance and security, making it an ideal solution for growing businesses. Dedicated hosting, on the other hand, provides an entire server, delivering optimal speed, reliability, and full customization, making it well-suited for large, high-traffic websites.",
   },
