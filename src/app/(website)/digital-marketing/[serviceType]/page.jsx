@@ -1,13 +1,15 @@
 import React from 'react'
 import { digitalMarketingBannerData } from '@/app/Data/digitalMarketingPageData'
 import WebBanner from '@/components/WebBuilder/WebBanner/WebBanner'
-import { digitalMarketingAfterBannerData, digitalMarketingRoiSectionData, 
-  digitalMarketingThirdBannerData, digitalMarketingFourthBannerData, digitalMarketingFifthBannerData, 
-  digitalMarketingSixthBannerData, digitalMarketingScrollSectionData, whyChooseDigitalMarketingData, 
-  digitalMarketingPageData, 
+import {
+  digitalMarketingAfterBannerData, digitalMarketingRoiSectionData,
+  digitalMarketingThirdBannerData, digitalMarketingFourthBannerData, digitalMarketingFifthBannerData,
+  digitalMarketingSixthBannerData, digitalMarketingScrollSectionData, whyChooseDigitalMarketingData,
+  digitalMarketingPageData,
   webBannerParallaxDigitalMarketingLastData,
   webBannerParallaxData,
-  momentumDataDigitalMarketing} from '../../../Data/digitalMarketingPageData'
+  momentumDataDigitalMarketing
+} from '../../../Data/digitalMarketingPageData'
 import RoiSection from '@/components/About/RoiSection'
 import ScrollSection from '@/components/ScrollSection/ScrollSection'
 import WhyChooseSection from '@/components/WebBuilder/WhyChooseSection/WhyChooseSection'
@@ -134,10 +136,10 @@ export async function generateMetadata({ params }) {
 
 const DigitalMarketingServicePage = ({ params }) => {
   const { serviceType } = params;
-  
+
   // Get service data based on the serviceType parameter
   const serviceData = digitalMarketingServiceDataMap[serviceType];
-  
+
   // If service type is digital-marketing-company, show the main digital marketing page
   if (serviceType === "digital-marketing-company") {
     return (
@@ -156,7 +158,7 @@ const DigitalMarketingServicePage = ({ params }) => {
         <MomentumSection data={momentumDataDigitalMarketing} />
         <Cta />
         <TestimonialsSection className="bg-light" data={testimonialsData} />
-        <FAQs faqs={homePageFAQs}/>
+        <FAQs faqs={homePageFAQs} />
         <ContactSection />
       </div>
     );
@@ -211,14 +213,16 @@ const DigitalMarketingServicePage = ({ params }) => {
           className="landingPageScrollSection"
           isIconShow={true}
         />
-        <WebBuilderCardSection
-          heading={serviceData.whyChooseUsSectionData?.heading}
-          description={serviceData.whyChooseUsSectionData?.description}
-          showDescription={serviceData.whyChooseUsSectionData?.showDescription}
-          items={serviceData.whyChooseUsData || []}
-          columnCount={2}
-          sectionClass="bg-light"
-        />
+        {serviceType !== "online-reputation-management-services" && (
+          <WebBuilderCardSection
+            heading={serviceData.whyChooseUsSectionData?.heading}
+            description={serviceData.whyChooseUsSectionData?.description}
+            showDescription={serviceData.whyChooseUsSectionData?.showDescription}
+            items={serviceData.whyChooseUsData || []}
+            columnCount={2}
+            sectionClass="bg-light"
+          />
+        )}
         <StepSection sectionData={serviceData.workflowData} />
         <TestimonialSlider />
         <WebBanner
