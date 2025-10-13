@@ -346,6 +346,24 @@ import {
   linkBuildingServicesFAQsData,
   linkBuildingServicesMetadata,
 } from "../../../Data/linkBuildingServicesData";
+import {
+  localSEOServicesBannerData,
+  localSEOServicesBannerData2,
+  localSEOServicesScrollSectionData,
+  localSEOServicesData,
+  localSEOServicesStatsData,
+  localSEOServicesImpactSectionData,
+  localSEOServicesImpactCardsData,
+  localSEOServicesServicesSectionData,
+  localSEOServicesIndustriesSectionData,
+  localSEOServicesIndustriesCardsData,
+  localSEOServicesWorkflowData,
+  localSEOServicesWhyChooseUsData,
+  localSEOServicesWhyChooseUsSectionData,
+  localSEOServicesFinalCTAData,
+  localSEOServicesFAQsData,
+  localSEOServicesMetadata,
+} from "../../../Data/localSEOServicesData";
 
 // Service data mapping
 const serviceDataMap = {
@@ -668,6 +686,24 @@ const serviceDataMap = {
     faqsData: linkBuildingServicesFAQsData,
     metadata: linkBuildingServicesMetadata,
   },
+  "local-seo-services": {
+    bannerData: localSEOServicesBannerData,
+    bannerData2: localSEOServicesBannerData2,
+    scrollSectionData: localSEOServicesScrollSectionData,
+    servicesData: localSEOServicesData,
+    statsData: localSEOServicesStatsData,
+    impactSectionData: localSEOServicesImpactSectionData,
+    impactCardsData: localSEOServicesImpactCardsData,
+    servicesSectionData: localSEOServicesServicesSectionData,
+    industriesSectionData: localSEOServicesIndustriesSectionData,
+    industriesCardsData: localSEOServicesIndustriesCardsData,
+    workflowData: localSEOServicesWorkflowData,
+    whyChooseUsData: localSEOServicesWhyChooseUsData,
+    whyChooseUsSectionData: localSEOServicesWhyChooseUsSectionData,
+    finalCTAData: localSEOServicesFinalCTAData,
+    faqsData: localSEOServicesFAQsData,
+    metadata: localSEOServicesMetadata,
+  },
 };
 
 // Generate metadata for each service page
@@ -723,7 +759,7 @@ const ServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && (
+      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && serviceType !== "local-seo-services" && (
         <WebBuilderCardSection
           heading={
             serviceData.industriesSectionData?.heading || webBuilderHeading
@@ -739,7 +775,7 @@ const ServicePage = ({ params }) => {
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
       )}
-      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services") && (
+      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services" || serviceType === "local-seo-services") && (
         <WebBuilderCardSection
           heading={serviceData.industriesSectionData?.heading}
           description={serviceData.industriesSectionData?.description}
@@ -748,7 +784,7 @@ const ServicePage = ({ params }) => {
           columnCount={3}
           sectionClass={webBuilderSectionClass}
           button={serviceData.industriesSectionData?.cta?.show || true}
-          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : serviceType === "guest-posting-services" ? "Build Links Now" : "Grow Website Authority Now")}
+          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : serviceType === "guest-posting-services" ? "Build Links Now" : serviceType === "link-building-services" ? "Grow Website Authority Now" : "Claim My SEO Strategy")}
           buttonHref={serviceData.industriesSectionData?.cta?.href || "#contact"}
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
@@ -771,7 +807,8 @@ const ServicePage = ({ params }) => {
        serviceType !== "search-engine-optimization-agency" && 
        serviceType !== "content-marketing-services" && 
        serviceType !== "guest-posting-services" && 
-       serviceType !== "link-building-services" && (
+       serviceType !== "link-building-services" && 
+       serviceType !== "local-seo-services" && (
         <WebBuilderCardSection
           heading={serviceData.whyChooseUsSectionData?.heading}
           description={serviceData.whyChooseUsSectionData?.description}
@@ -789,7 +826,8 @@ const ServicePage = ({ params }) => {
         serviceType !== "custom-graphic-design-services" && 
         serviceType !== "content-marketing-services" && 
         serviceType !== "guest-posting-services" && 
-        serviceType !== "link-building-services" && (
+        serviceType !== "link-building-services" && 
+        serviceType !== "local-seo-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}
