@@ -73,7 +73,7 @@ export const customGraphicDesignBannerData = {
   image: null,
   formConfig: {
     buttonText: "Let’s Design It Now",
-    heading: "Ready to Elevate Your Brand?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "logo-design", label: "Logo Design" },
       { value: "brand-identity", label: "Brand Identity" },
@@ -220,7 +220,7 @@ export const customGraphicDesignIndustriesSectionData = {
   description:
     "At Website Digitals, we create versatile designs tailored to each industry, ensuring clear communication, trust, and measurable results.",
   cta: {
-    text: "Get Started - It's Free",
+    text: "Design My Brand Now",
     href: "#",
     className: "offer-btn primary",
     show: true,

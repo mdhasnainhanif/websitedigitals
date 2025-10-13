@@ -77,7 +77,7 @@ export const contentWritingServicesBannerData = {
   image: null,
   formConfig: {
     buttonText: "Start Winning with Words",
-    heading: "Ready to Transform Your Content?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "white-paper-writing", label: "White Paper Writing Services" },
       { value: "case-study-writing", label: "Case Study Content Writing" },

@@ -741,8 +741,6 @@ const serviceDataMap = {
     metadata: onlineReputationManagementMetadata,
   },
 };
-
-// Generate metadata for each service page
 export async function generateMetadata({ params }) {
   const { serviceType } = params;
   const serviceData = serviceDataMap[serviceType];
@@ -760,14 +758,11 @@ export async function generateMetadata({ params }) {
 const ServicePage = ({ params }) => {
   const { serviceType } = params;
 
-  // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];
-  
-  // Debug logging
+
   console.log("Service Type:", serviceType);
   console.log("Service Data:", serviceData);
 
-  // If service type not found, return 404 or redirect
   if (!serviceData) {
     return (
       <div className="container text-center py-5">
@@ -835,36 +830,36 @@ const ServicePage = ({ params }) => {
       )}
       {/* Debug: Check if scroll section data exists */}
       {console.log("Scroll Section Data:", serviceData.scrollSectionData)}
-      {serviceData.whyChooseUsData && serviceData.whyChooseUsSectionData && 
-       serviceType !== "cms-development-company" && 
-       serviceType !== "pay-per-click-agency" && 
-       serviceType !== "social-media-marketing-agency" && 
-       serviceType !== "digital-pr-services" && 
-       serviceType !== "search-engine-optimization-agency" && 
-       serviceType !== "content-marketing-services" && 
-       serviceType !== "guest-posting-services" && 
-       serviceType !== "link-building-services" && 
-       serviceType !== "local-seo-services" && 
-       serviceType !== "online-reputation-management-services" && (
-        <WebBuilderCardSection
-          heading={serviceData.whyChooseUsSectionData?.heading}
-          description={serviceData.whyChooseUsSectionData?.description}
-          showDescription={serviceData.whyChooseUsSectionData?.showDescription}
-          items={serviceData.whyChooseUsData || []}
-          columnCount={2}
-          sectionClass="bg-light"
-        />
-      )}
+      {serviceData.whyChooseUsData && serviceData.whyChooseUsSectionData &&
+        serviceType !== "cms-development-company" &&
+        serviceType !== "pay-per-click-agency" &&
+        serviceType !== "social-media-marketing-agency" &&
+        serviceType !== "digital-pr-services" &&
+        serviceType !== "search-engine-optimization-agency" &&
+        serviceType !== "content-marketing-services" &&
+        serviceType !== "guest-posting-services" &&
+        serviceType !== "link-building-services" &&
+        serviceType !== "local-seo-services" &&
+        serviceType !== "online-reputation-management-services" && (
+          <WebBuilderCardSection
+            heading={serviceData.whyChooseUsSectionData?.heading}
+            description={serviceData.whyChooseUsSectionData?.description}
+            showDescription={serviceData.whyChooseUsSectionData?.showDescription}
+            items={serviceData.whyChooseUsData || []}
+            columnCount={2}
+            sectionClass="bg-light"
+          />
+        )}
       <StepSection sectionData={serviceData.workflowData} />
       {serviceType !== "search-engine-optimization-agency" &&
-        serviceType !== "digital-marketing-company" && 
-        serviceType !== "digital-pr-services" && 
-        serviceType !== "social-media-marketing-agency" && 
-        serviceType !== "custom-graphic-design-services" && 
-        serviceType !== "content-marketing-services" && 
-        serviceType !== "guest-posting-services" && 
-        serviceType !== "link-building-services" && 
-        serviceType !== "local-seo-services" && 
+        serviceType !== "digital-marketing-company" &&
+        serviceType !== "digital-pr-services" &&
+        serviceType !== "social-media-marketing-agency" &&
+        serviceType !== "custom-graphic-design-services" &&
+        serviceType !== "content-marketing-services" &&
+        serviceType !== "guest-posting-services" &&
+        serviceType !== "link-building-services" &&
+        serviceType !== "local-seo-services" &&
         serviceType !== "online-reputation-management-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}

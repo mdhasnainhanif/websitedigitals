@@ -71,7 +71,7 @@ export const websiteSpeedOptimizationBannerData = {
   image: null,
   formConfig: {
     buttonText: "Optimize Website Speed",
-    heading: "Ready to Boost Your Website Performance?",
+    heading: "Get In Touch With Us",
     helpOptions: [
       { value: "speed-audit", label: "Website Speed Audit" },
       { value: "core-web-vitals", label: "Core Web Vitals Optimization" },

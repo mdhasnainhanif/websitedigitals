@@ -756,6 +756,7 @@ ul.count-ul > li::before {
 .section-heading.text-center > h2 {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0rem ;
 }
 .section-heading.text-center > p {
   margin-left: auto;

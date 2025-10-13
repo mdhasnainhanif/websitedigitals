@@ -136,22 +136,23 @@ export const onlineReputationManagementServicesData = [
 
 export const onlineReputationManagementScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "Why Your Online Reputation Matters More Than Ever",
+  heading: "What Makes Our ORM Company the Right Choice",
   description: [
-    "Your online presence shapes how customers and search engines view your business. Negative reviews and outdated or harmful content can hurt authority and lower conversions. A clear reputation strategy keeps you visible for positive reasons and builds trust with your audience. Here's why it matters:",
+    "Choosing the right partner is crucial when your brand’s reputation is at stake. Our approach combines data, transparency, and proven strategies to deliver measurable results and long-term protection.",
   ],
+  showDescription: true,
   items: [
     {
       id: "orm-firstScroller",
       step: 1,
-      title: "Protect Your Brand Image",
+      title: "Data-Driven Reputation Audits",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Strong brand reputation management ensures your audience sees the best version of your business. Through online reputation defense and regular digital footprint cleanup, harmful content is kept out of view, and your business maintains a professional and reliable image across search results.",
+        "Every project begins with a detailed reputation audit to evaluate your online presence. Using advanced sentiment analysis and a clear reputation score, we uncover risks and opportunities, then create a targeted roadmap for improvement.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "Protect Your Brand Image",
+        alt: "Data-Driven Reputation Audits",
         width: 669,
         height: 376,
       },
@@ -159,14 +160,14 @@ export const onlineReputationManagementScrollSectionData = {
     {
       id: "orm-secondScroller",
       step: 2,
-      title: "Increase Customer Trust & Conversions",
+      title: "Transparent & Ethical Strategies",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Building consumer trust requires consistent engagement and credibility signals such as verified profiles and review responses. Managing public perception with positive content improves online reviews' impact on buyer decisions and encourages customers to choose your business with confidence.",
+        "We strengthen brand trust with strategies that are transparent and compliant with Google guidelines. Our focus on ethical ORM ensures sustainable improvements that align with industry best practices.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/2.png",
-        alt: "Increase Customer Trust & Conversions",
+        alt: "Transparent & Ethical Strategies",
         width: 669,
         height: 376,
       },
@@ -174,14 +175,14 @@ export const onlineReputationManagementScrollSectionData = {
     {
       id: "orm-thirdScroller",
       step: 3,
-      title: "Monitor & Respond in Real Time",
+      title: "Proactive Crisis Management",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Effective reputation management depends on staying aware of conversations about your brand. Using reputation monitoring tools, social listening, and policy-based review management allows you to detect issues early and respond quickly to protect credibility.",
+        "Our team acts quickly with tailored crisis communication plans that stop issues from escalating. Through effective damage control and clear messaging, we protect relationships and maintain stakeholder trust during critical moments.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/3.png",
-        alt: "Monitor & Respond in Real Time",
+        alt: "Proactive Crisis Management",
         width: 669,
         height: 376,
       },
@@ -189,14 +190,29 @@ export const onlineReputationManagementScrollSectionData = {
     {
       id: "orm-forthScroller",
       step: 4,
-      title: "Safeguard Long-Term Growth",
+      title: "Personalized Solutions",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "A healthy online reputation supports lasting business growth. Positive search presence and strong reviews attract customers and partners while keeping your business competitive and trusted. Maintaining this presence builds growth momentum and consistent confidence from your audience.",
+        "No two reputations are alike. We offer personal reputation management and a custom ORM plan designed around your goals, audience, and industry, ensuring strategies are precise and relevant.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/4.png",
-        alt: "Safeguard Long-Term Growth",
+        alt: "Personalized Solutions",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "orm-fifthScroller",
+      step: 5,
+      title: "Expert-Led Methodology",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Our work is guided by recognized best practices and supported by expert analysis. Each campaign is continually refined through performance reviews and data insights, delivering consistent, measurable outcomes you can rely on.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/4.png",
+        alt: "Expert-Led Methodology",
         width: 669,
         height: 376,
       },
@@ -270,7 +286,7 @@ export const onlineReputationManagementImpactCardsData = [
       "Strong brand reputation management ensures your audience sees the best version of your business. Through online reputation defense and regular digital footprint cleanup, harmful content is kept out of view, and your business maintains a professional and reliable image across search results.",
     icon: "protection",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 2,
@@ -279,7 +295,7 @@ export const onlineReputationManagementImpactCardsData = [
       "Building consumer trust requires consistent engagement and credibility signals such as verified profiles and review responses. Managing public perception with positive content improves online reviews' impact on buyer decisions and encourages customers to choose your business with confidence.",
     icon: "trust",
     isHighlighted: true,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-6 col-lg-6",
   },
   {
     id: 3,
@@ -288,7 +304,7 @@ export const onlineReputationManagementImpactCardsData = [
       "Effective reputation management depends on staying aware of conversations about your brand. Using reputation monitoring tools, social listening, and policy-based review management allows you to detect issues early and respond quickly to protect credibility.",
     icon: "monitoring",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-6 col-lg-6",
   },
   {
     id: 4,
@@ -297,19 +313,16 @@ export const onlineReputationManagementImpactCardsData = [
       "A healthy online reputation supports lasting business growth. Positive search presence and strong reviews attract customers and partners while keeping your business competitive and trusted. Maintaining this presence builds growth momentum and consistent confidence from your audience.",
     icon: "growth",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-6 col-lg-6",
   },
 ];
 
-// Impact Section Data (for DevelopmentCards component)
 export const onlineReputationManagementImpactSectionData = {
-  heading: "What Impact Does Online Reputation Management Create?",
+  heading: "Why Your Online Reputation Matters More Than Ever",
   showDescription: true,
-  description:
-    "Your online presence shapes how customers and search engines view your business. Negative reviews and outdated or harmful content can hurt authority and lower conversions. A clear reputation strategy keeps you visible for positive reasons and builds trust with your audience. Here's why it matters:",
+  description: "Your online presence shapes how customers and search engines view your business. Negative reviews and outdated or harmful content can hurt authority and lower conversions. A clear reputation strategy keeps you visible for positive reasons and builds trust with your audience. Here’s why it matters:",
 };
 
-// Industries Data
 export const onlineReputationManagementIndustriesData = [
   {
     id: 1,

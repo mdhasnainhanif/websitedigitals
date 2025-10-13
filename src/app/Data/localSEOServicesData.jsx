@@ -63,13 +63,7 @@ export const localSEOServicesBannerData = {
   description: [
     "Many local businesses struggle to show up where customers are searching because their local listing isn't optimized.\n\nWith Website Digitals, you get affordable local SEO services built for results. Our local business SEO services optimize your Google My Business profile, boost your Google Maps ranking, and help you attract more calls and nearby customers.\n\nClear calls to action, then turn that local traffic into new customers.",
   ],
-  isCta: true,
-  cta: {
-    text: "Get Found Locally",
-    href: "#",
-    className: "offer-btn primary",
-    show: true,
-  },
+  isCta: false,
   image: null,
   formConfig: {
     buttonText: "Get Found Locally",
