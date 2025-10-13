@@ -35,8 +35,8 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
         </div>
 
         <div className="row justify-content-center g-0">
-          {cards.map((item) => (
-            <div key={item.id} className={`${item.col} d-flex`}>
+          {cards.map((item, index) => (
+            <div key={index} className={`${item.col} d-flex`}>
               <div
                 className={`${styles.card} rounded-4 shadow-sm text-center flex-fill ${activeCard === item.id ? styles.highlighted : ""
                   }`}
