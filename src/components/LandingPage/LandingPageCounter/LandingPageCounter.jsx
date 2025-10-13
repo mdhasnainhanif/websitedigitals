@@ -68,7 +68,7 @@ const LandingPageCounter = ({ statsData = null }) => {
             >
                 {counters.map((counter, index) => (
                     <div
-                        key={counter.id}
+                        key={index}
                         className="col-6 col-md-3 d-flex flex-column align-items-center position-relative mb-md-0"
                     >
                         <h2 className="fw-bold">

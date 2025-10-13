@@ -292,6 +292,44 @@ import {
   contentWritingServicesFAQsData,
   contentWritingServicesMetadata,
 } from "../../../Data/contentWritingServicesData";
+import {
+  contentMarketingServicesBannerData,
+  contentMarketingServicesBannerData2,
+  contentMarketingServicesScrollSectionData,
+  contentMarketingServicesServicesData,
+  contentMarketingServicesStatsData,
+  contentMarketingServicesImpactSectionData,
+  contentMarketingServicesImpactCardsData,
+  contentMarketingServicesServicesSectionData,
+  contentMarketingServicesIndustriesSectionData,
+  contentMarketingServicesIndustriesCardsData,
+  contentMarketingServicesWorkflowData,
+  contentMarketingServicesTechnologiesSectionData,
+  contentMarketingServicesTechnologiesData,
+  contentMarketingServicesWhyChooseUsData,
+  contentMarketingServicesWhyChooseUsSectionData,
+  contentMarketingServicesFinalCTAData,
+  contentMarketingServicesFAQsData,
+  contentMarketingServicesMetadata,
+} from "../../../Data/contentMarketingServicesData";
+import {
+  guestPostingServicesBannerData,
+  guestPostingServicesBannerData2,
+  guestPostingServicesScrollSectionData,
+  guestPostingServicesServicesData,
+  guestPostingServicesStatsData,
+  guestPostingServicesImpactSectionData,
+  guestPostingServicesImpactCardsData,
+  guestPostingServicesServicesSectionData,
+  guestPostingServicesIndustriesSectionData,
+  guestPostingServicesIndustriesCardsData,
+  guestPostingServicesWorkflowData,
+  guestPostingServicesWhyChooseUsData,
+  guestPostingServicesWhyChooseUsSectionData,
+  guestPostingServicesFinalCTAData,
+  guestPostingServicesFAQsData,
+  guestPostingServicesMetadata,
+} from "../../../Data/guestPostingServicesData";
 
 // Service data mapping
 const serviceDataMap = {
@@ -560,6 +598,44 @@ const serviceDataMap = {
     faqsData: contentWritingServicesFAQsData,
     metadata: contentWritingServicesMetadata,
   },
+  "content-marketing-services": {
+    bannerData: contentMarketingServicesBannerData,
+    bannerData2: contentMarketingServicesBannerData2,
+    scrollSectionData: contentMarketingServicesScrollSectionData,
+    servicesData: contentMarketingServicesServicesData,
+    statsData: contentMarketingServicesStatsData,
+    impactSectionData: contentMarketingServicesImpactSectionData,
+    impactCardsData: contentMarketingServicesImpactCardsData,
+    servicesSectionData: contentMarketingServicesServicesSectionData,
+    industriesSectionData: contentMarketingServicesIndustriesSectionData,
+    industriesCardsData: contentMarketingServicesIndustriesCardsData,
+    workflowData: contentMarketingServicesWorkflowData,
+    technologiesSectionData: contentMarketingServicesTechnologiesSectionData,
+    technologiesData: contentMarketingServicesTechnologiesData,
+    whyChooseUsSectionData: contentMarketingServicesWhyChooseUsSectionData,
+    whyChooseUsData: contentMarketingServicesWhyChooseUsData,
+    finalCTAData: contentMarketingServicesFinalCTAData,
+    faqsData: contentMarketingServicesFAQsData,
+    metadata: contentMarketingServicesMetadata,
+  },
+  "guest-posting-services": {
+    bannerData: guestPostingServicesBannerData,
+    bannerData2: guestPostingServicesBannerData2,
+    scrollSectionData: guestPostingServicesScrollSectionData,
+    servicesData: guestPostingServicesServicesData,
+    statsData: guestPostingServicesStatsData,
+    impactSectionData: guestPostingServicesImpactSectionData,
+    impactCardsData: guestPostingServicesImpactCardsData,
+    servicesSectionData: guestPostingServicesServicesSectionData,
+    industriesSectionData: guestPostingServicesIndustriesSectionData,
+    industriesCardsData: guestPostingServicesIndustriesCardsData,
+    workflowData: guestPostingServicesWorkflowData,
+    whyChooseUsSectionData: guestPostingServicesWhyChooseUsSectionData,
+    whyChooseUsData: guestPostingServicesWhyChooseUsData,
+    finalCTAData: guestPostingServicesFinalCTAData,
+    faqsData: guestPostingServicesFAQsData,
+    metadata: guestPostingServicesMetadata,
+  },
 };
 
 // Generate metadata for each service page
@@ -615,7 +691,7 @@ const ServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      {serviceType !== "digital-marketing-company" && (
+      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && (
         <WebBuilderCardSection
           heading={
             serviceData.industriesSectionData?.heading || webBuilderHeading
@@ -628,6 +704,20 @@ const ServicePage = ({ params }) => {
           button={serviceData.industriesSectionData?.cta?.show || true}
           buttonText={serviceData.industriesSectionData?.cta?.text || "Build My Custom Portal"}
           buttonHref={serviceData.industriesSectionData?.cta?.href || "#"}
+          buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
+        />
+      )}
+      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services") && (
+        <WebBuilderCardSection
+          heading={serviceData.industriesSectionData?.heading}
+          description={serviceData.industriesSectionData?.description}
+          showDescription={serviceData.industriesSectionData?.showDescription}
+          items={serviceData.industriesCardsData || []}
+          columnCount={3}
+          sectionClass={webBuilderSectionClass}
+          button={serviceData.industriesSectionData?.cta?.show || true}
+          buttonText={serviceData.industriesSectionData?.cta?.text || (serviceType === "content-marketing-services" ? "Make My Content Work" : "Build Links Now")}
+          buttonHref={serviceData.industriesSectionData?.cta?.href || "#contact"}
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
       )}
@@ -646,7 +736,9 @@ const ServicePage = ({ params }) => {
        serviceType !== "pay-per-click-agency" && 
        serviceType !== "social-media-marketing-agency" && 
        serviceType !== "digital-pr-services" && 
-       serviceType !== "search-engine-optimization-agency" && (
+       serviceType !== "search-engine-optimization-agency" && 
+       serviceType !== "content-marketing-services" && 
+       serviceType !== "guest-posting-services" && (
         <WebBuilderCardSection
           heading={serviceData.whyChooseUsSectionData?.heading}
           description={serviceData.whyChooseUsSectionData?.description}
@@ -661,7 +753,9 @@ const ServicePage = ({ params }) => {
         serviceType !== "digital-marketing-company" && 
         serviceType !== "digital-pr-services" && 
         serviceType !== "social-media-marketing-agency" && 
-        serviceType !== "custom-graphic-design-services" && (
+        serviceType !== "custom-graphic-design-services" && 
+        serviceType !== "content-marketing-services" && 
+        serviceType !== "guest-posting-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}
