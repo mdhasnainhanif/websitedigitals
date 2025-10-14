@@ -840,7 +840,8 @@ const ServicePage = ({ params }) => {
         serviceType !== "guest-posting-services" &&
         serviceType !== "link-building-services" &&
         serviceType !== "local-seo-services" &&
-        serviceType !== "online-reputation-management-services" && (
+        serviceType !== "online-reputation-management-services" && 
+        serviceType !== "content-writing-services" && (
           <WebBuilderCardSection
             heading={serviceData.whyChooseUsSectionData?.heading}
             description={serviceData.whyChooseUsSectionData?.description}
@@ -861,7 +862,8 @@ const ServicePage = ({ params }) => {
         serviceType !== "link-building-services" &&
         serviceType !== "local-seo-services" &&
         serviceType !== "online-reputation-management-services" && 
-        serviceType !== "video-animation-services" && (
+        serviceType !== "video-animation-services" && 
+        serviceType !== "content-writing-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}

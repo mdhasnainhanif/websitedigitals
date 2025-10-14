@@ -61,7 +61,7 @@ export const vpsHostingServicesBannerData = {
   },
   heading: "Secure, Scalable, and [[Fast]] VPS Hosting Services",
   description: [
-    "Slow shared hosting and downtime can hold your website back and frustrate your visitors.\n\nAt Website Digitals, our VPS hosting service delivers dedicated resources, full root access, and fast, secure performance with 24/7 expert support. Choose managed VPS hosting or cloud VPS hosting to scale as your traffic grows.",
+    "Slow shared hosting and downtime can hold your website back and frustrate your visitors.\n\nAt Website Digitas, our VPS hosting service delivers dedicated resources, full root access, and fast, secure performance with 24/7 expert support. Choose managed VPS hosting or cloud VPS hosting to scale as your traffic grows.",
   ],
   isCta: true,
 //   cta: false,

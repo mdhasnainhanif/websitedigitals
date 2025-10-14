@@ -311,8 +311,7 @@ export const managedHostingServicesTechnologiesData = [
 
 export const managedHostingServicesWorkflowData = {
   title: "Our End-to-End Hosting Approach",
-  description:
-    "Our comprehensive managed hosting process ensures your website or application receives the highest level of care, from initial consultation to ongoing optimization and support.",
+  showDescription: false,
   steps: [
     {
       id: 1,
@@ -563,8 +562,8 @@ export const managedHostingServicesIndustriesCardsData = [
 export const managedHostingServicesWhyChooseUsSectionData = {
   heading: "Exclusive Features of Our Managed Hosting..",
   description:
-    "", 
-    isDescription: false,
+    "",
+  isDescription: false,
 };
 
 export const managedHostingServicesWorkflowSectionData = {
@@ -617,11 +616,7 @@ export const managedHostingServicesFinalCTAData = {
 export const managedHostingServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
   heading: "Exclusive Features of Our Managed Hosting",
-  description: [
-    "Our managed hosting services come with exclusive features that set us apart from the competition, providing you with enterprise-grade infrastructure and comprehensive support.",
-    "",
-    "Our approach combines innovation, compliance, and performance to deliver managed hosting solutions that not only meet your current needs but also scale with your future growth. Here's what sets us apart:",
-  ],
+  showDescription: false,
   items: [
     {
       id: "managed-firstScroller",
