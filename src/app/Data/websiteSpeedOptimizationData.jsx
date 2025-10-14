@@ -163,6 +163,15 @@ heading: "Our End-to-End Website Speed Optimization Services for Businesses",
 description:
   "Our professional website speed services cover everything from web performance tuning services to platform-specific fixes that make websites faster, more efficient, and more reliable.",
 showDescription: true,
+
+cta: {
+    href: "#",
+    className: "offer-btn primary",
+    show: true,
+    label: " Improve My Website",
+  },
+
+
 };
 
 export const websiteSpeedOptimizationServicesData = [
@@ -560,7 +569,7 @@ export const websiteSpeedOptimizationFAQsData = [
     "Yes. Our professional WordPress speed optimization focuses on plugin management, caching, script minification, and theme adjustments to ensure WordPress sites load quickly and perform reliably.",
 },
 {
-  question: "How does the website optimization service cost comparison work?",
+  question: "How does the website of the optimization service cost comparison work?",
   answer:
     "A website optimization service cost comparison depends on project size, complexity, and provider expertise. Packages typically vary between freelancers and agencies, with different levels of support and reporting.",
 },

@@ -284,7 +284,7 @@ export const seoAgencyImpactCardsData = [
       "With keyword mapping and search intent analysis, we make sure your website appears for the terms your customers actively search. This builds strong visibility and positions your brand as a trusted solution in your industry.",
     icon: "reporting",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 2,
@@ -293,7 +293,7 @@ export const seoAgencyImpactCardsData = [
       "Through topical relevance and semantic optimization, your content is aligned with customer needs, attracting visitors who are ready to engage. This increases qualified leads and creates more opportunities to convert clicks into paying customers.",
     icon: "strategy",
     isHighlighted: true,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 3,
@@ -302,7 +302,7 @@ export const seoAgencyImpactCardsData = [
       "By optimizing site architecture and improving crawlability, we make it easier for search engines to find and index your pages. These improvements compound over time and deliver consistent traffic growth without heavy reliance on paid ads.",
     icon: "support",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 4,
@@ -311,7 +311,7 @@ export const seoAgencyImpactCardsData = [
       "Our team secures authority backlinks and executes strategic digital PR campaigns that strengthen your online reputation. While we manage the technical and strategic work, you save time and focus on running your business.",
     icon: "conversion",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
 ];
 

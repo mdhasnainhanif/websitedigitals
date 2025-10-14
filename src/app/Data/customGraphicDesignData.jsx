@@ -163,12 +163,7 @@ export const customGraphicDesignServicesSectionData = {
   heading: "Our Custom Graphic Design Services",
   description: "",
   showDescription: false,
-  cta: {
-    text: "Boost My Brand Now",
-    href: "#",
-    className: "offer-btn primary",
-    show: true,
-  },
+  
 };
 
 export const customGraphicDesignServicesData = [

@@ -263,9 +263,9 @@ export const digitalMarketingServicesSectionData = {
 // Stats
 export const digitalMarketingStatsData = [
   { id: 1, value: 98, suffix: "%", label: "Client Retention Rate" },
-  { id: 2, value: 500, suffix: "+", label: "Projects Completed" },
-  { id: 3, value: 4.9, suffix: "/5", label: "Average Client Rating" },
-  { id: 4, value: 100, suffix: "+", label: "Industries Served" },
+  { id: 2, value: 500, suffix: "+", label: "Projects Completed Successfully" },
+  { id: 3, value: 4.9, suffix: "/5", label: "Average Client Satisfaction Rating" },
+  { id: 4, value: 100, suffix: "+", label: "Industries Served Nationwide" },
 ];
 
 // Impact / USPs

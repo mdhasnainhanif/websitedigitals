@@ -172,7 +172,7 @@ export const webApplicationDevelopmentServicesSectionData = {
   showDescription: true,
   cta: {
     href: "#",
-    label: "Get Started Today",
+    label: "Build My Web App",
   },
 };
 
@@ -371,10 +371,10 @@ export const webApplicationDevelopmentScrollSectionData = {
       },
     },
   ],
-  cta: {
-    href: "#",
-    label: "Build My Web App",
-  },
+  // cta: {
+  //   href: "#",
+  //   label: "Build My Web App",
+  // },
 };
 
 // Workflow Data (Section 9) - for StepSection
