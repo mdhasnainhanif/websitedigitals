@@ -16,7 +16,6 @@ import WebBuilderCardSection from "../../../components/WebBuilder/WebBuilderCard
 import PlatformsSpecialize from "../../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize";
 import LandingBannerForm from "../../../components/LandingPage/LandingBannerForm/LandingBannerForm";
 
-// Import website hosting services data
 import {
   websiteHostingServicesBannerData,
   websiteHostingServicesBannerData2,

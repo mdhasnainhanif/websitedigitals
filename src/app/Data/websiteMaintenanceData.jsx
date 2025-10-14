@@ -167,6 +167,13 @@ export const websiteMaintenanceServicesSectionData = {
   heading: "Our End-to-End Website Maintenance Services for Your Business",
   description: "",
   showDescription: false,
+  cta: {
+    href: "#",
+    className: "offer-btn primary",
+    show: true,
+    label: "Optimize My Site",
+  },
+
 };
 
 export const websiteMaintenanceServicesData = [

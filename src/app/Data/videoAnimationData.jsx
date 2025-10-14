@@ -155,12 +155,7 @@ export const videoAnimationServicesSectionData = {
   heading: "Creative Solutions for Every Animation Need",
   description: "",
   showDescription: false,
-  cta: {
-    text: "Let's Animate My Story",
-    href: "#",
-    className: "offer-btn primary",
-    show: true,
-  },
+  
 };
 
 export const videoAnimationServicesData = [

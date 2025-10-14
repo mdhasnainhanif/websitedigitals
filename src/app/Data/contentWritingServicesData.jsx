@@ -70,10 +70,7 @@ export const contentWritingServicesBannerData = {
     "Every piece we create is deeply researched, strategically structured, and crafted to support your business goals, so your content doesn't just fill space but drives measurable growth.",
   ],
   isCta: true,
-  cta: {
-    text: "Get Your Content Strategy",
-    href: "#",
-  },
+  cta: false,
   image: null,
   formConfig: {
     buttonText: "Start Winning with Words",

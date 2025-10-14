@@ -176,6 +176,14 @@ export const webPortalDevelopmentServicesSectionData = {
   description:
     "Every business has unique digital needs, so our solutions are built to be flexible, secure, and scalable. From niche platforms to enterprise systems, we deliver portals focused on usability, security, and growth. Here's how we structure our services:",
   showDescription: true,
+
+  cta: {
+    href: "#",
+    className: "offer-btn primary",
+    show: true,
+    label: "Take My Business Higher Now",
+  },
+
 };
 
 export const webPortalDevelopmentServicesData = [

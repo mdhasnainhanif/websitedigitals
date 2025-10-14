@@ -860,7 +860,8 @@ const ServicePage = ({ params }) => {
         serviceType !== "guest-posting-services" &&
         serviceType !== "link-building-services" &&
         serviceType !== "local-seo-services" &&
-        serviceType !== "online-reputation-management-services" && (
+        serviceType !== "online-reputation-management-services" && 
+        serviceType !== "video-animation-services" && (
           <PlatformsSpecialize
             data={serviceData.technologiesData || platformsData}
             sectionData={serviceData.technologiesSectionData}

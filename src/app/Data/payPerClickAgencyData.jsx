@@ -582,6 +582,14 @@ export const payPerClickAgencyServicesSectionData = {
   description:
     "Our goal is to make every click count. As a full-service PPC management company, we handle keyword research, ad group setup, ongoing bid adjustments, ad copywriting, and performance tracking to keep campaigns focused and profitable.",
   showDescription: true,
+
+ cta: {
+    href: "#",
+    className: "offer-btn primary",
+    show: true,
+    label: "Get Leads Now",
+  },
+
 };
 
 // Industries Section Data (Section 6) - for WebBuilderCardSection

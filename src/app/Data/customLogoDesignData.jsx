@@ -163,12 +163,21 @@ export const customLogoDesignServicesSectionData = {
   heading: "Custom Logo Design Services That Fit Your Market",
   description: "",
   showDescription: false,
-  cta: {
-    text: "Boost My Brand Now",
+  // cta: {
+  //   text: "Boost My Brand Now",
+  //   href: "#",
+  //   className: "offer-btn primary",
+  //   show: true,
+  // },
+
+ cta: {
     href: "#",
     className: "offer-btn primary",
     show: true,
+    label: "Boost My Brand Now",
   },
+
+
 };
 
 export const customLogoDesignServicesData = [

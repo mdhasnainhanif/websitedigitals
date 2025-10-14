@@ -240,10 +240,7 @@ export const digitalPRServicesServicesData = [
 export const digitalPRServicesServicesSectionData = {
   heading: "Explore Our Full Suite of Digital PR Services",
   showDescription: false,
-  cta: {
-    href: "#",
-    label: "Get Started Today",
-  },
+ 
 };
 
 // Industries Section Data (Section 6)
@@ -368,9 +365,8 @@ export const digitalPRServicesWhyChooseUsData = [
 
 // Workflow Data (Section 8)
 export const digitalPRServicesWorkflowData = {
-  title: "Our Workflow for Digital PR Services",
-  description:
-    "Building brand authority and visibility through digital PR requires a strategic and transparent approach. Our proven workflow ensures every campaign delivers measurable impact and long-term results. The process includes:",
+  title: "How Our Digital PR Process Works",
+  description:false,
   steps: [
     {
       id: 1,

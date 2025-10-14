@@ -272,7 +272,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
       "Through audience segmentation and carefully built customer personas, your brand shows up where it matters most. A clear message across channels makes your business easy to recognize and trust.",
     icon: "brand",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 2,
@@ -281,7 +281,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
       "Cross-channel marketing and social scheduling tools keep your brand active every day. This helps you respond quickly, build real conversations, and stay top-of-mind with your audience.",
     icon: "engagement",
     isHighlighted: true,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 3,
@@ -290,7 +290,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
       "With conversion tracking and ongoing A/B testing, agencies focus on what actually drives results. This means faster campaign adjustments and more qualified leads without wasted ad spend.",
     icon: "targeting",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
   {
     id: 4,
@@ -299,7 +299,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
       "Branded content and visual storytelling give your posts stopping power. When your audience relates, they share and turn simple posts into powerful moments that grow your reach naturally.",
     icon: "viral",
     isHighlighted: false,
-    col: "col-12 col-md-4 col-lg-4",
+    col: "col-12 col-md-4 col-lg-6",
   },
 ];
 
