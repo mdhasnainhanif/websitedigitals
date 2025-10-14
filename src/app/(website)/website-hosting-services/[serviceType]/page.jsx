@@ -38,6 +38,94 @@ import {
   sharedWebHostingServicesMetadata,
 } from "../../../Data/sharedWebHostingServicesData";
 
+// Import VPS hosting services data
+import {
+  vpsHostingServicesBannerData,
+  vpsHostingServicesBannerData2,
+  vpsHostingServicesScrollSectionData,
+  vpsHostingServicesData,
+  vpsHostingServicesStatsData,
+  vpsHostingServicesWorkflowData,
+  vpsHostingServicesWhyChooseUsData,
+  vpsHostingServicesFAQsData,
+  vpsHostingServicesSectionData,
+  vpsHostingServicesWhyChooseUsSectionData,
+  vpsHostingServicesWorkflowSectionData,
+  vpsHostingServicesFinalCTAData,
+  vpsHostingServicesImpactCardsData,
+  vpsHostingServicesImpactSectionData,
+  vpsHostingServicesIndustriesSectionData,
+  vpsHostingServicesIndustriesCardsData,
+  vpsHostingServicesIndustriesData,
+  vpsHostingServicesMetadata,
+} from "../../../Data/vpsHostingServicesData";
+
+// Import Dedicated hosting services data
+import {
+  dedicatedHostingServicesBannerData,
+  dedicatedHostingServicesBannerData2,
+  dedicatedHostingServicesScrollSectionData,
+  dedicatedHostingServicesData,
+  dedicatedHostingServicesStatsData,
+  dedicatedHostingServicesWorkflowData,
+  dedicatedHostingServicesWhyChooseUsData,
+  dedicatedHostingServicesFAQsData,
+  dedicatedHostingServicesSectionData,
+  dedicatedHostingServicesWhyChooseUsSectionData,
+  dedicatedHostingServicesWorkflowSectionData,
+  dedicatedHostingServicesFinalCTAData,
+  dedicatedHostingServicesImpactCardsData,
+  dedicatedHostingServicesImpactSectionData,
+  dedicatedHostingServicesIndustriesSectionData,
+  dedicatedHostingServicesIndustriesCardsData,
+  dedicatedHostingServicesIndustriesData,
+  dedicatedHostingServicesMetadata,
+} from "../../../Data/dedicatedHostingServicesData";
+
+// Import Cloud hosting services data
+import {
+  cloudHostingServicesBannerData,
+  cloudHostingServicesBannerData2,
+  cloudHostingServicesScrollSectionData,
+  cloudHostingServicesData,
+  cloudHostingServicesStatsData,
+  cloudHostingServicesWorkflowData,
+  cloudHostingServicesWhyChooseUsData,
+  cloudHostingServicesFAQsData,
+  cloudHostingServicesSectionData,
+  cloudHostingServicesWhyChooseUsSectionData,
+  cloudHostingServicesWorkflowSectionData,
+  cloudHostingServicesFinalCTAData,
+  cloudHostingServicesImpactCardsData,
+  cloudHostingServicesImpactSectionData,
+  cloudHostingServicesIndustriesSectionData,
+  cloudHostingServicesIndustriesCardsData,
+  cloudHostingServicesIndustriesData,
+  cloudHostingServicesMetadata,
+} from "../../../Data/cloudHostingServicesData";
+
+// Import Managed hosting services data
+import {
+  managedHostingServicesBannerData,
+  managedHostingServicesBannerData2,
+  managedHostingServicesScrollSectionData,
+  managedHostingServicesData,
+  managedHostingServicesStatsData,
+  managedHostingServicesWorkflowData,
+  managedHostingServicesWhyChooseUsData,
+  managedHostingServicesFAQsData,
+  managedHostingServicesSectionData,
+  managedHostingServicesWhyChooseUsSectionData,
+  managedHostingServicesWorkflowSectionData,
+  managedHostingServicesFinalCTAData,
+  managedHostingServicesImpactCardsData,
+  managedHostingServicesImpactSectionData,
+  managedHostingServicesIndustriesSectionData,
+  managedHostingServicesIndustriesCardsData,
+  managedHostingServicesIndustriesData,
+  managedHostingServicesMetadata,
+} from "../../../Data/managedHostingServicesData";
+
 // Service data mapping
 const serviceDataMap = {
   "shared-web-hosting-services": {
@@ -58,6 +146,82 @@ const serviceDataMap = {
     finalCTAData: sharedWebHostingServicesFinalCTAData,
     faqsData: sharedWebHostingServicesFAQsData,
     metadata: sharedWebHostingServicesMetadata,
+  },
+  "vps-hosting-services": {
+    bannerData: vpsHostingServicesBannerData,
+    bannerData2: vpsHostingServicesBannerData2,
+    scrollSectionData: vpsHostingServicesScrollSectionData,
+    servicesData: vpsHostingServicesData,
+    statsData: vpsHostingServicesStatsData,
+    impactSectionData: vpsHostingServicesImpactSectionData,
+    impactCardsData: vpsHostingServicesImpactCardsData,
+    servicesSectionData: vpsHostingServicesSectionData,
+    industriesSectionData: vpsHostingServicesIndustriesSectionData,
+    industriesCardsData: vpsHostingServicesIndustriesCardsData,
+    industriesData: vpsHostingServicesIndustriesData,
+    workflowData: vpsHostingServicesWorkflowData,
+    whyChooseUsData: vpsHostingServicesWhyChooseUsData,
+    whyChooseUsSectionData: vpsHostingServicesWhyChooseUsSectionData,
+    finalCTAData: vpsHostingServicesFinalCTAData,
+    faqsData: vpsHostingServicesFAQsData,
+    metadata: vpsHostingServicesMetadata,
+  },
+  "dedicated-hosting-service": {
+    bannerData: dedicatedHostingServicesBannerData,
+    bannerData2: dedicatedHostingServicesBannerData2,
+    scrollSectionData: dedicatedHostingServicesScrollSectionData,
+    servicesData: dedicatedHostingServicesData,
+    statsData: dedicatedHostingServicesStatsData,
+    impactSectionData: dedicatedHostingServicesImpactSectionData,
+    impactCardsData: dedicatedHostingServicesImpactCardsData,
+    servicesSectionData: dedicatedHostingServicesSectionData,
+    industriesSectionData: dedicatedHostingServicesIndustriesSectionData,
+    industriesCardsData: dedicatedHostingServicesIndustriesCardsData,
+    industriesData: dedicatedHostingServicesIndustriesData,
+    workflowData: dedicatedHostingServicesWorkflowData,
+    whyChooseUsData: dedicatedHostingServicesWhyChooseUsData,
+    whyChooseUsSectionData: dedicatedHostingServicesWhyChooseUsSectionData,
+    finalCTAData: dedicatedHostingServicesFinalCTAData,
+    faqsData: dedicatedHostingServicesFAQsData,
+    metadata: dedicatedHostingServicesMetadata,
+  },
+  "cloud-hosting-services": {
+    bannerData: cloudHostingServicesBannerData,
+    bannerData2: cloudHostingServicesBannerData2,
+    scrollSectionData: cloudHostingServicesScrollSectionData,
+    servicesData: cloudHostingServicesData,
+    statsData: cloudHostingServicesStatsData,
+    impactSectionData: cloudHostingServicesImpactSectionData,
+    impactCardsData: cloudHostingServicesImpactCardsData,
+    servicesSectionData: cloudHostingServicesSectionData,
+    industriesSectionData: cloudHostingServicesIndustriesSectionData,
+    industriesCardsData: cloudHostingServicesIndustriesCardsData,
+    industriesData: cloudHostingServicesIndustriesData,
+    workflowData: cloudHostingServicesWorkflowData,
+    whyChooseUsData: cloudHostingServicesWhyChooseUsData,
+    whyChooseUsSectionData: cloudHostingServicesWhyChooseUsSectionData,
+    finalCTAData: cloudHostingServicesFinalCTAData,
+    faqsData: cloudHostingServicesFAQsData,
+    metadata: cloudHostingServicesMetadata,
+  },
+  "managed-hosting-services": {
+    bannerData: managedHostingServicesBannerData,
+    bannerData2: managedHostingServicesBannerData2,
+    scrollSectionData: managedHostingServicesScrollSectionData,
+    servicesData: managedHostingServicesData,
+    statsData: managedHostingServicesStatsData,
+    impactSectionData: managedHostingServicesImpactSectionData,
+    impactCardsData: managedHostingServicesImpactCardsData,
+    servicesSectionData: managedHostingServicesSectionData,
+    industriesSectionData: managedHostingServicesIndustriesSectionData,
+    industriesCardsData: managedHostingServicesIndustriesCardsData,
+    industriesData: managedHostingServicesIndustriesData,
+    workflowData: managedHostingServicesWorkflowData,
+    whyChooseUsData: managedHostingServicesWhyChooseUsData,
+    whyChooseUsSectionData: managedHostingServicesWhyChooseUsSectionData,
+    finalCTAData: managedHostingServicesFinalCTAData,
+    faqsData: managedHostingServicesFAQsData,
+    metadata: managedHostingServicesMetadata,
   },
 };
 
@@ -114,7 +278,6 @@ const HostingServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      <ReviewsSlider />
       <WebBuilderCardSection
         heading={serviceData.industriesSectionData?.heading}
         description={serviceData.industriesSectionData?.description}
@@ -126,6 +289,7 @@ const HostingServicePage = ({ params }) => {
         buttonHref={serviceData.industriesSectionData?.cta?.href || "#"}
         buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
       />
+      <ReviewsSlider />
       <ScrollSection 
         data={serviceData.scrollSectionData} 
         className="landingPageScrollSection"
