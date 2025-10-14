@@ -126,6 +126,50 @@ import {
   managedHostingServicesMetadata,
 } from "../../../Data/managedHostingServicesData";
 
+// Import Reseller hosting services data
+import {
+  resellerHostingServicesBannerData,
+  resellerHostingServicesBannerData2,
+  resellerHostingServicesScrollSectionData,
+  resellerHostingServicesData,
+  resellerHostingServicesStatsData,
+  resellerHostingServicesWorkflowData,
+  resellerHostingServicesWhyChooseUsData,
+  resellerHostingServicesFAQsData,
+  resellerHostingServicesSectionData,
+  resellerHostingServicesWhyChooseUsSectionData,
+  resellerHostingServicesWorkflowSectionData,
+  resellerHostingServicesFinalCTAData,
+  resellerHostingServicesImpactCardsData,
+  resellerHostingServicesImpactSectionData,
+  resellerHostingServicesIndustriesSectionData,
+  resellerHostingServicesIndustriesCardsData,
+  resellerHostingServicesIndustriesData,
+  resellerHostingServicesMetadata,
+} from "../../../Data/resellerHostingServicesData";
+
+// Import Domain registration services data
+import {
+  domainRegistrationBannerData,
+  domainRegistrationBannerData2,
+  domainRegistrationScrollSectionData,
+  domainRegistrationServicesData,
+  domainRegistrationStatsData,
+  domainRegistrationWorkflowData,
+  domainRegistrationWhyChooseUsData,
+  domainRegistrationFAQsData,
+  domainRegistrationServicesSectionData,
+  domainRegistrationWhyChooseUsSectionData,
+  domainRegistrationWorkflowSectionData,
+  domainRegistrationFinalCTAData,
+  domainRegistrationImpactCardsData,
+  domainRegistrationImpactSectionData,
+  domainRegistrationIndustriesSectionData,
+  domainRegistrationIndustriesCardsData,
+  domainRegistrationIndustriesData,
+  domainRegistrationMetadata,
+} from "../../../Data/domainRegistrationServicesData";
+
 // Service data mapping
 const serviceDataMap = {
   "shared-web-hosting-services": {
@@ -222,6 +266,44 @@ const serviceDataMap = {
     finalCTAData: managedHostingServicesFinalCTAData,
     faqsData: managedHostingServicesFAQsData,
     metadata: managedHostingServicesMetadata,
+  },
+  "reseller-hosting-services": {
+    bannerData: resellerHostingServicesBannerData,
+    bannerData2: resellerHostingServicesBannerData2,
+    scrollSectionData: resellerHostingServicesScrollSectionData,
+    servicesData: resellerHostingServicesData,
+    statsData: resellerHostingServicesStatsData,
+    impactSectionData: resellerHostingServicesImpactSectionData,
+    impactCardsData: resellerHostingServicesImpactCardsData,
+    servicesSectionData: resellerHostingServicesSectionData,
+    industriesSectionData: resellerHostingServicesIndustriesSectionData,
+    industriesCardsData: resellerHostingServicesIndustriesCardsData,
+    industriesData: resellerHostingServicesIndustriesData,
+    workflowData: resellerHostingServicesWorkflowData,
+    whyChooseUsData: resellerHostingServicesWhyChooseUsData,
+    whyChooseUsSectionData: resellerHostingServicesWhyChooseUsSectionData,
+    finalCTAData: resellerHostingServicesFinalCTAData,
+    faqsData: resellerHostingServicesFAQsData,
+    metadata: resellerHostingServicesMetadata,
+  },
+  "domain-registration-services": {
+    bannerData: domainRegistrationBannerData,
+    bannerData2: domainRegistrationBannerData2,
+    scrollSectionData: domainRegistrationScrollSectionData,
+    servicesData: domainRegistrationServicesData,
+    statsData: domainRegistrationStatsData,
+    impactSectionData: domainRegistrationImpactSectionData,
+    impactCardsData: domainRegistrationImpactCardsData,
+    servicesSectionData: domainRegistrationServicesSectionData,
+    industriesSectionData: domainRegistrationIndustriesSectionData,
+    industriesCardsData: domainRegistrationIndustriesCardsData,
+    industriesData: domainRegistrationIndustriesData,
+    workflowData: domainRegistrationWorkflowData,
+    whyChooseUsData: domainRegistrationWhyChooseUsData,
+    whyChooseUsSectionData: domainRegistrationWhyChooseUsSectionData,
+    finalCTAData: domainRegistrationFinalCTAData,
+    faqsData: domainRegistrationFAQsData,
+    metadata: domainRegistrationMetadata,
   },
 };
 

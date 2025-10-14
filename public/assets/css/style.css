@@ -799,9 +799,11 @@ ul.count-ul > li::before {
   background-position-y: 15%;
 }
 .inner-bannerHeading + .link-area,
-.scroller-list,
 .section-heading + .link-area {
   margin-top: 2rem;
+}
+.scroller-list {
+  margin-top: 1rem !important;
 }
 .about-banner-bottom,
 .mesh-shapes,
