@@ -182,9 +182,7 @@ export const resellerHostingServicesImpactCardsData = [
 // Impact Section Data (for DevelopmentCards component)
 export const resellerHostingServicesImpactSectionData = {
   heading: "Why Reseller Hosting Services Matter for Your Business",
-  showDescription: true,
-  description:
-    "Reseller hosting services provide agencies and entrepreneurs with the infrastructure and tools needed to build a successful hosting business. Here's why it matters:",
+  showDescription: false,
 };
 
 // Services Data
