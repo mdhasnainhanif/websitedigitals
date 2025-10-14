@@ -20,13 +20,10 @@ export const contentMarketingServicesBannerData = {
     "Every campaign is tracked and optimized so you know exactly how your investment performs."
   ],
   isCta: true,
-  cta: {
-    text: "Plan My Content Now",
-    href: "#contact",
-  },
+  cta: false,
   image: null,
   formConfig: {
-    buttonText: "Start My Content Strategy",
+    buttonText: "Plan My Content Now",
     heading: "Ready to Transform Your Content Marketing?",
     helpOptions: [
       { value: "content-strategy", label: "Content Strategy & Planning" },
@@ -130,6 +127,12 @@ export const contentMarketingServicesImpactCardsData = [
 export const contentMarketingServicesServicesSectionData = {
   heading: "Explore Our Content Marketing Services",
   showDescription: false,
+   cta: {
+    href: "#",
+    className: "offer-btn primary",
+    show: true,
+    label: "Boost My Reach",
+  },
 };
 
 export const contentMarketingServicesServicesData = [
@@ -504,15 +507,15 @@ export const contentMarketingServicesFAQsData = [
   },
   {
     question: "What are full-service content marketing services?",
-    answer: "Full-service content marketing services cover the entire process—strategy, creation, distribution, and performance tracking. This approach ensures your campaigns are fully managed under one roof, saving time while delivering consistent, measurable results."
+    answer: "Full-service content marketing services cover the entire process—strategy, creation, distribution, and performance tracking. This approach ensures your campaigns are fully managed under one roof, saving time while delivering consistent, measurable results. Learn more about our end-to-end process."
   },
   {
     question: "How do I choose the best content marketing services firm?",
-    answer: "The best content marketing services firm demonstrates proven results, strong industry expertise, and transparent reporting. When selecting a partner, look for case studies, client testimonials, and clear ROI measurement practices."
+    answer: "The best content marketing services firm demonstrates proven results, strong industry expertise, and transparent reporting. When selecting a partner, look for case studies, client testimonials, and clear ROI measurement practices. Explore our client success stories."
   },
   {
     question: "What are the benefits of using the best professional content marketing services?",
-    answer: "The best professional content marketing services provide expert-led strategies, optimized content, and multichannel promotion. They help brands build long-term authority, attract qualified leads, and achieve growth backed by data and clear reporting."
+    answer: " The best professional content marketing services provide expert-led strategies, optimized content, and multichannel promotion. They help brands build long-term authority, attract qualified leads, and achieve growth backed by data and clear reporting. See how our team drives professional results."
   }
 ];
 
