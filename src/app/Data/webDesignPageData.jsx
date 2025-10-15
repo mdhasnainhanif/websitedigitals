@@ -1,32 +1,22 @@
 // /data/webBannerData.js
 
+import { BagIcon } from "../../icons";
+
 export const webDesignBannerData = {
   breadcrumb: {
     home: { label: "Home", href: "/" },
     current: { label: "Web Design", href: "/web-design" },
   },
-  heading: "Best Web Design Company for Brands Looking for Success",
+  heading: "Web Design Company Offering Custom Design Solutions",
   description: [
-    "You invested in a website, but the leads just aren't coming. It's not your offer, but the lack of strategy behind the design.",
-    {
-      text: "",
-      link: { text: "Website Digitals", href: "/", target: "_blank" },
-      afterText:
-        " is the best web design company trusted by growth-driven brands that need more than a digital placeholder.",
-    },
-    "Our custom web design services focus on strategy, storytelling, and conversion to turn your site into a sales asset that actually works.",
-    "Whether you're a coach, agency, or eCommerce brand, we create purpose-built websites designed to position you as an authority and increase your bottom line.",
+    "Most business websites struggle to convert visitors into clients due to weak design and poor user experience",
+    "At Website Digitals, we build performance-driven websites that integrate responsive design, intuitive UX, and modern branding to enhance your online presence.",
+    "As a trusted web design company, we deliver custom web design services that are mobile-friendly, SEO-ready, and tailored to the needs of both small businesses and large enterprises.",
+    "• Convert more leads with engaging & action-driven designs.",
+    "• SEO & mobile-ready for visibility on search and all devices.",
+    "• Built for growth with scalable & custom web solutions."
   ],
-  cta: {
-    text: "Turn Clicks Into Clients",
-    href: "#",
-  },
-  image: {
-    src: "/assets/images-webp/web-design/web-design/best-web-design-company-for-brands-looking-for-success.webp",
-    width: 598,
-    height: 351,
-    alt: "Website design illustration",
-  },
+  
   formConfig: {
     buttonText: "Design My Website",
     heading: "Get In Touch With Us",
@@ -45,6 +35,326 @@ export const webDesignBannerData = {
 };
 
 export { webDesignBannerData };
+
+// Stats Counter Data
+export const webDesignStatsData = [
+  {
+    id: "websites-launched",
+    value: 250,
+    label: "Websites Launched",
+    icon: "/assets/images/icons/websites-icon.svg",
+    suffix: "+",
+  },
+  {
+    id: "client-retention",
+    value: 98,
+    label: "Client Retention",
+    icon: "/assets/images/icons/retention-icon.svg",
+    suffix: "%",
+  },
+  {
+    id: "traffic-growth",
+    value: 400,
+    label: "Organic Traffic Growth",
+    icon: "/assets/images/icons/traffic-icon.svg",
+    suffix: "%",
+  },
+  {
+    id: "ecommerce-sites",
+    value: 300,
+    label: "Ecommerce & WordPress Sites",
+    icon: "/assets/images/icons/ecommerce-icon.svg",
+    suffix: "+",
+  }
+];
+
+// Why Choose Section Data
+export const webDesignWhyChooseData = {
+  heading: "Why Choosing the Right Web Design Company Matters",
+  items: [
+    {
+      title: "Responsive Design That Engages",
+      description: "A website design company ensures your site adapts to smartphones, tablets, and desktops. This means faster load times for stronger SEO, consistent branding across every screen, and a user experience that keeps visitors engaged longer.",
+      icon: "/assets/images/icons/responsive-icon.svg",
+      col: "col-12 col-md-6 col-lg-6",
+    },
+    {
+      title: "UX That Drives Conversions",
+      description: "With smart UX design, businesses benefit from clear navigation that reduces bounce rates, optimized landing page design that turns visitors into leads, and intuitive layouts that guide customers naturally toward action.",
+      icon: "/assets/images/icons/ux-icon.svg",
+      col: "col-12 col-md-6 col-lg-6",
+    },
+    {
+      title: "Branding That Builds Trust",
+      description: "Your website is often the first impression of your brand. A professional web design agency creates a visual identity that resonates with your audience, blending cohesive design elements, professional aesthetics that inspire credibility, and consistency across all digital platforms.",
+      icon: "/assets/images/icons/branding-icon.svg",
+      col: "col-12 col-md-6 col-lg-6",
+    },
+    {
+      title: "Scalable Design for Growth",
+      description: "A top web design company builds websites that grow with your business. Flexible architecture and easy updates ensure your site stays effective as you add new products, services, or features.",
+      icon: "/assets/images/icons/scalable-icon.svg",
+      col: "col-12 col-md-6 col-lg-6",
+    }
+  ]
+};
+
+// Services Data
+export const webDesignServicesData = [
+  {
+    id: "landing-page-design",
+    title: "Landing Page Design",
+    description: "Turn ad clicks into paying customers with high-converting landing pages. We focus on clear UX design, fast load times, and persuasive layouts that improve ROI for your campaigns.",
+    button: {
+      text: "Get Landing Page Design",
+      href: "/landing-page-design",
+      className: "offer-btn primary",
+      show: true
+    },
+    icon: <BagIcon/>
+  },
+  {
+    id: "responsive-web-design",
+    title: "Responsive Web Design",
+    description: "As a leading responsive website design company, we create websites that adapt flawlessly to smartphones, tablets, and desktops. Expect faster load speeds, better SEO performance, and consistent branding across every device.",
+    button: {
+      text: "Get Responsive Web Design",
+      href: "/responsive-web-design",
+      className: "offer-btn primary",
+      show: true
+    },
+    icon: <BagIcon/>
+  },
+  {
+    id: "website-redesign",
+    title: "Website Redesign",
+    description: "If your current site feels outdated, our website redesign services transform it into a modern, scalable platform. With a fresh visual identity and improved user flow, you'll re-engage your audience and generate more leads.",
+    button: {
+      text: "Get Website Redesign",
+      href: "/website-redesign",
+      className: "offer-btn primary",
+      show: true
+    },
+    icon: <BagIcon/>
+  },
+  {
+    id: "b2b-web-design",
+    title: "B2B Web Design",
+    description: "Our B2B website design firm specializes in creating professional, trust-building websites for corporate clients. From thought-leadership landing pages to lead capture forms, we help you attract and nurture high-value business clients.",
+    button: {
+      text: "Get B2B Web Design",
+      href: "/b2b-web-design",
+      className: "offer-btn primary",
+      show: true
+    },
+    icon: <BagIcon/>
+  },
+  {
+    id: "custom-web-design",
+    title: "Custom Web Design",
+    description: "For businesses with unique needs, we offer fully custom web design and development services. Our team builds scalable architectures, integrates advanced features, and ensures your website grows alongside your business.",
+    button: {
+      text: "Get Custom Web Design",
+      href: "/custom-web-design",
+      className: "offer-btn primary",
+      show: true
+    },
+    icon: <BagIcon/>
+  }
+];
+
+// USP Section Data (ScrollSection)
+export const webDesignUSPData = {
+  sectionClass: "scroller-section gray-section",
+  heading: "Why Partner With Our Web Design Company",
+  description: [
+    "Our customers choose us for professional design, user experience, and growth-ready websites. Here's why:",
+  ],
+  items: [
+    {
+      id: "webdesign-firstScroller",
+      step: 1,
+      title: "Smart UI Design",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Designing a website is not just about aesthetics; it's about usability. With a strong focus on UI design, every page is crafted for clarity, efficiency, and engagement, ensuring visitors can interact with your site without confusion.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/1.png",
+        alt: "Smart UI Design",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "webdesign-secondScroller",
+      step: 2,
+      title: "Creative Web Solutions",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Every business faces different challenges online. Through creative web solutions, websites are built to meet those needs, whether it's lead generation, eCommerce conversions, or strengthening brand visibility.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/2.png",
+        alt: "Creative Web Solutions",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "webdesign-thirdScroller",
+      step: 3,
+      title: "Digital Marketing Integration",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Web design does not exist in isolation. By integrating digital marketing strategies from the start, your website is positioned to attract the right audience, convert leads, and support wider growth objectives.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/3.png",
+        alt: "Digital Marketing Integration",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "webdesign-fourthScroller",
+      step: 4,
+      title: "Mobile-First Design",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Modern users spend more time on mobile devices than on desktops. That's why every site is built with a mobile-friendly design in mind, ensuring consistent performance and accessibility across all screen sizes.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/4.png",
+        alt: "Mobile-First Design",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "webdesign-fifthScroller",
+      step: 5,
+      title: "Front-End Expertise",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "A seamless user experience depends on the strength of the build. With advanced front-end development, websites load faster, function smoothly, and support the technical requirements needed to scale with your business.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/5.png",
+        alt: "Front-End Expertise",
+        width: 669,
+        height: 376,
+      },
+    }
+  ]
+};
+
+// Process Data
+export const webDesignProcessData = {
+  title: "Our Step-by-Step Web Design Process",
+  steps: [
+    {
+      id: 1,
+      number: "01",
+      title: "Discovery & Planning",
+      description: "At this stage, we gather requirements, define the target audience, and create a roadmap that ensures the approach stays aligned with overall business objectives.",
+      image: "/assets/images/work/step1.png",
+      alignment: "right"
+    },
+    {
+      id: 2,
+      number: "02",
+      title: "Wireframing & User Experience",
+      description: "Wireframes establish structure and flow. By focusing on UX design, the layout is shaped to simplify navigation, reduce friction, and guide users toward conversion.",
+      image: "/assets/images/work/step2.png",
+      alignment: "left"
+    },
+    {
+      id: 3,
+      number: "03",
+      title: "Creative Design & Visual Identity",
+      description: "Concepts take shape in this phase. Using the brand's visual identity, designs are crafted to be visually compelling, user-friendly, and consistent with modern standards.",
+      image: "/assets/images/work/step3.png",
+      alignment: "right"
+    },
+    {
+      id: 4,
+      number: "04",
+      title: "Development & Front-End Build",
+      description: "With designs approved, coding begins. Through expert web development services, the site becomes fully responsive, optimized for speed, and compatible across devices.",
+      image: "/assets/images/work/step4.png",
+      alignment: "left"
+    },
+    {
+      id: 5,
+      number: "05",
+      title: "Testing & Launch",
+      description: "Before launch, every function is tested for responsiveness, SEO readiness, and performance. Once approved, the site goes live, delivering a reliable platform to strengthen online presence.",
+      image: "/assets/images/work/step5.png",
+      alignment: "right"
+    }
+  ]
+};
+
+// Technologies Data
+export const webDesignTechnologiesData = {
+  heading: "Technologies We Use",
+  categories: [
+    {
+      title: "Magento",
+      description: "As the best Magento ecommerce website development company, we create enterprise-ready stores with multi-store support, advanced catalog management, and PCI-compliant checkout to drive growth and handle large-scale operations.",
+      icon: "/assets/images/technologyIcons.png"
+    },
+    {
+      title: "WooCommerce",
+      description: "Our WooCommerce ecommerce development agency builds flexible WordPress stores with custom themes, plugin integrations, and SEO-friendly architecture for easy management and better visibility for small to mid-sized businesses.",
+      icon: "/assets/images/technologyIcons.png"
+    },
+    {
+      title: "Salesforce",
+      description: "We are a Salesforce Commerce Cloud development firm helping brands deliver personalized shopping journeys powered by Einstein AI, unified CRM data, and seamless omnichannel integrations.",
+      icon: "/assets/images/technologyIcons.png"
+    },
+    {
+      title: "Drupal",
+      description: "As a Drupal commerce development company, we build content-rich ecommerce sites with editorial-friendly workflows, custom modules, and robust performance for businesses prioritizing content and commerce together.",
+      icon: "/assets/images/technologyIcons.png"
+    },
+    {
+      title: "Headless",
+      description: "Our headless ecommerce development company builds lightning-fast, API-first storefronts using React or Vue, enabling omnichannel selling, faster load times, and future-proof scalability.",
+      icon: "/assets/images/technologyIcons.png"
+    },
+    {
+      title: "Laravel",
+      description: "We are a Laravel ecommerce development company delivering secure, custom-built online stores with clean code architecture, rapid development cycles, and powerful API integrations for complex business needs.",
+      icon: "/assets/images/technologyIcons.png"
+    }
+  ]
+};
+
+// Final CTA Data
+export const webDesignFinalCTAData = {
+  heading: "Transform Your Website Into a Sales Engine",
+  description: ["Don't let weak design hold your business back. With a trusted web design company, you get a site that's responsive, search-friendly, and built to convert visitors into clients."],
+  cta: {
+    text: "Let's Start Building",
+    href: "/contact"
+  },
+  imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
+  image: {
+    src: "/assets/images/everything-you-need.png",
+    alt: "Web Design Services",
+    width: 500,
+    height: 400,
+  },
+  isCta: true,
+  cta: {
+    text: "Launch My Ecommerce Site",
+    href: "#",
+    className: "offer-btn primary",
+  },
+};
 
 // /data/whyChooseData.js
 
@@ -411,35 +721,54 @@ export const industryTabsWebDesignData = [
 export const WebDesignPageFAQs = [
   {
     id: "faq-1",
-    question:
-      "What makes Website Digitals the best web design company for growing brands?",
-    answer:
-      "We combine strategy, storytelling, and performance-focused design to deliver websites that attract, engage, and convert. This makes us the trusted and reliable web design firm for businesses that want measurable growth, not just visuals.",
+    question: "Why should I hire Website Digitals as my web design company?",
+    answer: "Website Digitals builds responsive, SEO-ready websites that combine UX, UI, and branding to drive conversions. From small business sites to corporate and ecommerce platforms, we deliver professional web design services across the U.S. So if you're searching for a web design company near me, our team is ready to help nationwide."
   },
   {
     id: "faq-2",
-    question:
-      "How does working with a web design agency give me better results than a DIY tool?",
-    answer:
-      "An agency focuses on more than just looks. With expert guidance, custom design, and strategic development, your website is built to attract leads, convert visitors, and support long-term growth.",
+    question: "How much do Website Digitals web design services cost?",
+    answer: "Pricing varies by project scope, but Website Digitals offers affordable website design packages for startups and advanced eCommerce development solutions for enterprises. If you're evaluating eCommerce web design services pricing, we provide clear and transparent options and offer a custom website design consultation to align with your goals and budget."
   },
   {
     id: "faq-3",
-    question:
-      "Do you offer affordable web design services for startups or small businesses?",
-    answer:
-      "Yes, we provide low-cost web design services without compromising on quality. Our flexible packages are designed to meet your goals and budget while building a strong online presence.",
+    question: "What does a web design company do?",
+    answer: "A web design company creates websites that are visually appealing, user-friendly, and optimized for conversions. Services often include responsive design, user experience (UX) improvements, branding, content structuring, and SEO-ready development. Many also provide ongoing support to keep your site performing at its best."
   },
   {
     id: "faq-4",
-    question: "How long does it take to complete a custom web design project?",
-    answer:
-      "Timelines vary depending on the scope of work. Most custom websites are completed within 3 to 6 weeks with a focus on quality, responsiveness, and clear communication.",
+    question: "How much does it cost to hire a web design company?",
+    answer: "The cost of hiring a web design company varies depending on project size, complexity, and required features. Small business websites may start at a few thousand dollars, while custom enterprise projects or ecommerce sites with advanced integrations can range much higher. Most agencies provide tailored quotes based on your specific goals."
   },
   {
     id: "faq-5",
-    question: "Will my website be mobile-friendly and SEO-optimized?",
-    answer:
-      "Yes. Every website we build is mobile-responsive, fast-loading, and structured to meet SEO best practices for visibility across all devices.",
+    question: "What is the best CMS for web design?",
+    answer: "The best CMS for web design depends on your business needs. WordPress is flexible for blogs and service-based sites, Shopify is ideal for eCommerce businesses, and a custom CMS is often chosen by enterprises requiring highly specific functionality. A professional agency can help you decide which platform aligns with your goals."
   },
+  {
+    id: "faq-6",
+    question: "Can I hire a web design company near me now?",
+    answer: "Yes, you can hire a web design company near you for local collaboration and support. Many US-based agencies also work remotely, offering the same quality of service regardless of location. The key is choosing a company with proven results, transparent pricing, and industry expertise."
+  },
+  {
+    id: "faq-7",
+    question: "Where can I buy affordable website design packages in the USA?",
+    answer: "Many agencies offer affordable website design packages tailored for startups and small businesses. These packages often include responsive layouts, SEO-ready builds, and essential features at a budget-friendly price. Always review what's included to ensure the package meets your long-term growth needs."
+  },
+  {
+    id: "faq-8",
+    question: "How much do eCommerce web design services cost?",
+    answer: "eCommerce web design services pricing depends on the platform, number of products, and level of customization required. A basic Shopify or WooCommerce store may cost less, while large-scale ecommerce projects with custom integrations, advanced filters, and secure payment systems typically require a higher investment."
+  },
+  {
+    id: "faq-9",
+    question: "Can I request a custom website design consultation?",
+    answer: "Yes, most agencies offer a custom website design consultation to discuss your goals, audience, and technical requirements. This session helps outline the right approach, estimate costs, and ensure your project starts with a clear strategy."
+  }
 ];
+
+// Metadata for SEO
+export const webDesignMetadata = {
+  title: "Web Design Company | Affordable & Custom Solutions",
+  description: "Partner with a trusted web design company delivering responsive, SEO-ready websites for small businesses and enterprises across the US.",
+  keywords: "web design company, web design agency US, professional web design services, custom web design firm, corporate website design company, small business web design services, web development and design company, top web design companies in the US, responsive website design company, ecommerce web design services, WordPress web design company, affordable web design services USA, B2B website design firm"
+};
