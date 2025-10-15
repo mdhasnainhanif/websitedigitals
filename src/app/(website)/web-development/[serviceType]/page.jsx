@@ -81,6 +81,50 @@ import {
   shopifyDevelopmentMetadata,
 } from "../../../Data/shopifyDevelopmentServicesData";
 
+// Import Wix development services data
+import {
+  wixDevelopmentBannerData,
+  wixDevelopmentBannerData2,
+  wixDevelopmentScrollSectionData,
+  wixDevelopmentServicesData,
+  wixDevelopmentStatsData,
+  wixDevelopmentWorkflowData,
+  wixDevelopmentWhyChooseUsData,
+  wixDevelopmentFAQsData,
+  wixDevelopmentServicesSectionData,
+  wixDevelopmentWhyChooseUsSectionData,
+  wixDevelopmentFinalCTAData,
+  wixDevelopmentImpactCardsData,
+  wixDevelopmentImpactSectionData,
+  wixDevelopmentIndustriesSectionData,
+  wixDevelopmentIndustriesCardsData,
+  wixDevelopmentTechnologiesSectionData,
+  wixDevelopmentTechnologiesData,
+  wixDevelopmentMetadata,
+} from "../../../Data/wixDevelopmentData";
+
+// Import Squarespace development services data
+import {
+  squarespaceDevelopmentBannerData,
+  squarespaceDevelopmentBannerData2,
+  squarespaceDevelopmentScrollSectionData,
+  squarespaceDevelopmentServicesData,
+  squarespaceDevelopmentStatsData,
+  squarespaceDevelopmentWorkflowData,
+  squarespaceDevelopmentWhyChooseUsData,
+  squarespaceDevelopmentFAQsData,
+  squarespaceDevelopmentServicesSectionData,
+  squarespaceDevelopmentWhyChooseUsSectionData,
+  squarespaceDevelopmentFinalCTAData,
+  squarespaceDevelopmentImpactCardsData,
+  squarespaceDevelopmentImpactSectionData,
+  squarespaceDevelopmentIndustriesSectionData,
+  squarespaceDevelopmentIndustriesCardsData,
+  squarespaceDevelopmentTechnologiesSectionData,
+  squarespaceDevelopmentTechnologiesData,
+  squarespaceDevelopmentMetadata,
+} from "../../../Data/squarespaceDevelopmentData";
+
 // Service data mapping
 const serviceDataMap = {
   "ecommerce-development-company": {
@@ -142,6 +186,46 @@ const serviceDataMap = {
     finalCTAData: shopifyDevelopmentFinalCTAData,
     faqsData: shopifyDevelopmentFAQsData,
     metadata: shopifyDevelopmentMetadata,
+  },
+  "wix-development-services": {
+    bannerData: wixDevelopmentBannerData,
+    bannerData2: wixDevelopmentBannerData2,
+    scrollSectionData: wixDevelopmentScrollSectionData,
+    servicesData: wixDevelopmentServicesData,
+    statsData: wixDevelopmentStatsData,
+    impactSectionData: wixDevelopmentImpactSectionData,
+    impactCardsData: wixDevelopmentImpactCardsData,
+    servicesSectionData: wixDevelopmentServicesSectionData,
+    industriesSectionData: wixDevelopmentIndustriesSectionData,
+    industriesCardsData: wixDevelopmentIndustriesCardsData,
+    technologiesSectionData: wixDevelopmentTechnologiesSectionData,
+    technologiesData: wixDevelopmentTechnologiesData,
+    workflowData: wixDevelopmentWorkflowData,
+    whyChooseUsData: wixDevelopmentWhyChooseUsData,
+    whyChooseUsSectionData: wixDevelopmentWhyChooseUsSectionData,
+    finalCTAData: wixDevelopmentFinalCTAData,
+    faqsData: wixDevelopmentFAQsData,
+    metadata: wixDevelopmentMetadata,
+  },
+  "squarespace-development-services": {
+    bannerData: squarespaceDevelopmentBannerData,
+    bannerData2: squarespaceDevelopmentBannerData2,
+    scrollSectionData: squarespaceDevelopmentScrollSectionData,
+    servicesData: squarespaceDevelopmentServicesData,
+    statsData: squarespaceDevelopmentStatsData,
+    impactSectionData: squarespaceDevelopmentImpactSectionData,
+    impactCardsData: squarespaceDevelopmentImpactCardsData,
+    servicesSectionData: squarespaceDevelopmentServicesSectionData,
+    industriesSectionData: squarespaceDevelopmentIndustriesSectionData,
+    industriesCardsData: squarespaceDevelopmentIndustriesCardsData,
+    technologiesSectionData: squarespaceDevelopmentTechnologiesSectionData,
+    technologiesData: squarespaceDevelopmentTechnologiesData,
+    workflowData: squarespaceDevelopmentWorkflowData,
+    whyChooseUsData: squarespaceDevelopmentWhyChooseUsData,
+    whyChooseUsSectionData: squarespaceDevelopmentWhyChooseUsSectionData,
+    finalCTAData: squarespaceDevelopmentFinalCTAData,
+    faqsData: squarespaceDevelopmentFAQsData,
+    metadata: squarespaceDevelopmentMetadata,
   },
 };
 

@@ -291,7 +291,7 @@ export const domainRegistrationImpactCardsData = [
     id: 2,
     title: "Stay Secure and Compliant",
     description:
-      "Security and compliance are critical for building online trust. WHOIS privacy protection hides sensitive ownership data, and DNSSEC strengthens the domain lifecycle by ensuring data integrity.",
+      "Security and compliance are critical for building online trust. WHOIS privacy protection hides sensitive ownership data, and DNSSEC strengthens the domain lifecycle by ensuring data integrity. Processes follow ICANN policy and align with NIST DNS security guidelines, providing a safe and reliable experience for users.",
     icon: "security",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
@@ -300,7 +300,7 @@ export const domainRegistrationImpactCardsData = [
     id: 3,
     title: "Plan for the Long Run",
     description:
-      "Your domain is a valuable digital asset. Using a defined renewal grace period prevents accidental loss of ownership, and enabling auto-renewals keeps your website live.",
+      "Your domain is a valuable digital asset. Using a defined renewal grace period prevents accidental loss of ownership, and enabling auto-renewals keeps your website live. A well-organized portfolio makes monitoring and managing multiple domains simple and efficient.",
     icon: "planning",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
@@ -309,7 +309,7 @@ export const domainRegistrationImpactCardsData = [
     id: 4,
     title: "Simplify Domain Transfers",
     description:
-      "Switching providers should be stress-free. A clear domain transfer policy ensures a smooth, secure process with registrar locks and authorization codes.",
+      "Switching providers should be stress-free. A clear domain transfer policy ensures a smooth, secure process with registrar locks and authorization codes, which are additional security steps designed to maintain uptime during the transfer process.",
     icon: "transfer",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
@@ -318,7 +318,7 @@ export const domainRegistrationImpactCardsData = [
     id: 5,
     title: "Expand With Future-Ready Options",
     description:
-      "Domain strategy grows with your business. A wide range of TLD choices, including ccTLDs for regional targeting, lets you protect your brand across multiple extensions.",
+      "Domain strategy grows with your business. A wide range of TLD (top-level domain) choices, including ccTLDs for regional targeting, lets you protect your brand across multiple extensions. Bulk registration helps scale your presence as you grow.",
     icon: "expand",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",

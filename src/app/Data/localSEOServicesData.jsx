@@ -296,7 +296,7 @@ export const localSEOServicesImpactCardsData = [
     id: 3,
     title: "Drive More Sales From Nearby Traffic",
     description:
-      "Local SEO helps nearby customers find you and convert them into leads and sales. By using SEO for local businesses and aligning with key local ranking factors, your business stays visible in the right places.",
+      "Local SEO helps nearby customers find you and convert them into leads and sales. By using SEO for local businesses and aligning with key local ranking factors, your business stays visible in the right places. Adding service area business optimization further increases calls and measurable growth.",
     icon: "sales",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",

@@ -561,6 +561,11 @@ export const onlineReputationManagementServicesSectionData = {
   description:
     "Our approach addresses the most critical aspects of online reputation management so you can stay in control, protect your image, and resolve issues before they harm your business.",
   showDescription: true,
+cta: {
+    label: "Secure My Brand",
+    href: "#contact",
+  },
+
 };
 
 // Industries Section Data (Section 6) - for WebBuilderCardSection

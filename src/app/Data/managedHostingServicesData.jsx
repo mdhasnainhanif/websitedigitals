@@ -220,7 +220,7 @@ export const managedHostingServicesData = [
     id: 5,
     title: "Performance Optimization",
     description:
-      "We optimize your servers with advanced caching, load balancing, and CDN integration to minimize latency and improve response times, even during traffic spikes.",
+      "Through caching, database optimization, CDN integration, and scalable architecture, we eliminate bottlenecks and ensure fast, reliable performance, even during high traffic.",
     icon: <BagIcon />,
     isActive: false,
   },

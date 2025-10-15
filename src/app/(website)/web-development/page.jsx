@@ -1,72 +1,98 @@
 import React from "react";
 import WebBanner from "@/components/WebBuilder/WebBanner/WebBanner";
-import { webBannerData } from "@/components/WebBuilder/WebBanner/WebBannerData";
-import blueCounterData from "@/app/Data";
-import BlueCounterSection from "@/components/WebBuilder/BlueCounterSection";
-import AwardSliderSection from "@/components/AwardSliderSection";
-import { awardBadgesData } from "@/app/Data";
-import ScrollSection from "@/components/ScrollSection/ScrollSection";
-import { BlueCtaSectionData, caseStudies, webDevCards, webDevClassName, webDevColumnCount, webDevelopmentCards, webDevelopmentColumnCount, webDevelopmentScrollSectionData, WebDevStepHeading, WebDevStepItems, WebDevStepCTA, WebDevFAQs } from "../../Data/web-development";
-import { industryTabsData, testimonialsData } from "../../Data";
-import IndustryTabs from "../../../components/WebBuilder/IndustryTabs/IndustryTabs";
-import CaseStudySection from "../../../components/WebBuilder/CaseStudySection/CaseStudySection";
-import TestimonialsSection from "../../../components/TestimonialSection/TestimonialSection";
-import TrustpilotSection from "@/components/TrustpilotSection/TrustpilotSection";
-import WebBuilderCardSection from "@/components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection";
-import TechnologiesSlider from "@/components/TechnologiesSlider/TechnologiesSlider";
-import BlueCtaSection from "@/components/BlueCtaSection/BlueCtaSection";
-import StepSection from "@/components/WebBuilder/StepSection/StepSection";
-import AssistanceSection from "@/components/WebBuilder/AssistanceSection/AssistanceSection";
-import { assistanceBackground, assistanceHeading, assistanceItems } from "@/components/WebBuilder/AssistanceSection/AssistanceSectionData";
-import FAQ from "@/components/FAQs/Faqs";
-import Blog from "@/components/Blog/Blog"; 
+import DevelopmentCards from "@/components/LandingPage/DevelopmentCards/DevelopmentCards";
+import DevelopmentCardSlider from "../../../components/LandingPage/DevelopmentCardSlider/DevelopmentCardSlider";
+import OurWorkSection from "../../../components/LandingPage/OurWorkSection/OurWorkSection";
+import ScrollSection from "../../../components/ScrollSection/ScrollSection";
+import ReviewsSlider from "../../../components/LandingPage/ReviewsSlider/ReviewsSlider";
+import StepSection from "../../../components/LandingPage/StepSection/StepSection";
+import TechnologiesSlider from "../../../components/LandingPage/TechnologySlider/TechnologySlider";
+import TestimonialSlider from "../../../components/LandingPage/TestimonialSlider/TestimonialSlider";
+import Faqs from "../../../components/FAQs/Faqs";
+import BlogSection from "../../../components/LandingPage/BlogSection/BlogSection";
+import ContactSection from "../../../components/LandingPage/ContactSection/ContactSection";
+import LandingPageCounter from "../../../components/LandingPage/LandingPageCounter/LandingPageCounter";
+import WebBuilderCardSection from "../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection";
+import PlatformsSpecialize from "../../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize";
+import LandingBannerForm from "../../../components/LandingPage/LandingBannerForm/LandingBannerForm";
+
+import {
+  webDevelopmentServicesBannerData,
+  webDevelopmentServicesBannerData2,
+  webDevelopmentServicesScrollSectionData,
+  webDevelopmentServicesData,
+  webDevelopmentServicesStatsData,
+  webDevelopmentServicesWorkflowData,
+  webDevelopmentServicesWhyChooseUsData,
+  webDevelopmentServicesFAQsData,
+  webDevelopmentServicesSectionData,
+  webDevelopmentServicesWhyChooseUsSectionData,
+  webDevelopmentServicesWorkflowSectionData,
+  webDevelopmentServicesTechnologiesSectionData,
+  webDevelopmentServicesTechnologiesData,
+  webDevelopmentServicesFinalCTAData,
+  webDevelopmentServicesImpactCardsData,
+  webDevelopmentServicesImpactSectionData,
+  webDevelopmentServicesIndustriesSectionData,
+  webDevelopmentServicesIndustriesCardsData,
+  webDevelopmentServicesMetadata,
+} from "../../Data/webDevelopmentServicesData"; 
+
+export const metadata = webDevelopmentServicesMetadata;
 
 const page = () => {
   return (
     <div>
-      <WebBanner data={webBannerData} />
-      <BlueCounterSection data={blueCounterData} />
-      <AwardSliderSection items={awardBadgesData} />
-      <ScrollSection data={webDevelopmentScrollSectionData} />
-      <IndustryTabs
-        data={industryTabsData}
-        heading="Professional Web Development Services That Fit All Industries"
-        subheading="We create websites that reflect your industry's uniqueness, regardless of your niche."
+      <WebBanner
+        islandingPage={true}
+        data={webDevelopmentServicesBannerData}
+        className="withoutImg landingPageBanner"
+        col="col-md-6"
       />
-      <CaseStudySection
-        className="bgLight"
-        heading="Read What Our Client Has To Say About Working With Us!"
-        items={caseStudies}
+      <LandingPageCounter statsData={webDevelopmentServicesStatsData} />
+      <DevelopmentCards
+        sectionData={webDevelopmentServicesImpactSectionData}
+        cardsData={webDevelopmentServicesImpactCardsData}
       />
-      <TestimonialsSection data={testimonialsData} className="bg-light" />
-      <TrustpilotSection />
-      <WebBuilderCardSection 
-        heading="Custom Website Development Company That Delivers What You Want"
-        items={webDevelopmentCards}
-        columnCount={webDevelopmentColumnCount}
-        className="border-0"
+      <OurWorkSection />
+      <DevelopmentCardSlider
+        sectionData={webDevelopmentServicesSectionData}
+        servicesData={webDevelopmentServicesData}
       />
-      <TechnologiesSlider />
       <WebBuilderCardSection
-        heading="Design, Customize, and Publish While Everyone Else Is Planning"
-        items={webDevCards}
-        className={webDevClassName}
-        columnCount={webDevColumnCount}
-        button="Get Started - It's Free"
+        heading={webDevelopmentServicesIndustriesSectionData?.heading}
+        description={webDevelopmentServicesIndustriesSectionData?.description}
+        showDescription={webDevelopmentServicesIndustriesSectionData?.showDescription}
+        items={webDevelopmentServicesIndustriesCardsData || []}
+        columnCount={3}
+        button={webDevelopmentServicesIndustriesSectionData?.cta?.show || true}
+        buttonText={webDevelopmentServicesIndustriesSectionData?.cta?.text || "Start Building Your Website Today"}
+        buttonHref={webDevelopmentServicesIndustriesSectionData?.cta?.href || "#"}
+        buttonClassName={webDevelopmentServicesIndustriesSectionData?.cta?.className || "offer-btn primary"}
       />
-      <BlueCtaSection data={BlueCtaSectionData} />
-      <StepSection
-        heading={WebDevStepHeading}
-        items={WebDevStepItems}
-        cta={WebDevStepCTA}
+      <ReviewsSlider />
+      <ScrollSection 
+        data={webDevelopmentServicesScrollSectionData} 
+        className="landingPageScrollSection"
+        isIconShow={true}
       />
-      <AssistanceSection
-        heading={assistanceHeading}
-        background={assistanceBackground}
-        items={assistanceItems}
+      <StepSection sectionData={webDevelopmentServicesWorkflowData} />
+      <PlatformsSpecialize
+        sectionData={webDevelopmentServicesTechnologiesSectionData}
+        data={webDevelopmentServicesTechnologiesData}
       />
-      <FAQ faqs={WebDevFAQs} />
-      <Blog/>
+      <TestimonialSlider />
+      <WebBanner
+        data={webDevelopmentServicesFinalCTAData || webDevelopmentServicesBannerData2}
+        className="notHero order2 landingPageBanner2"
+      />
+      <Faqs 
+        title="Frequently Asked Questions"
+        faqs={webDevelopmentServicesFAQsData} 
+        isTwoCol={true}
+      />
+      <BlogSection />
+      <ContactSection />
     </div>
   );
 };

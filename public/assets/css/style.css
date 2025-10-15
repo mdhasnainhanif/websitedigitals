@@ -1221,7 +1221,7 @@ ul.count-ul > li::before {
 .scroller-sticky {
   position: sticky;
   top: var(--header-height);
-  padding: var(--sectionPadding-top) 0 var(--sectionPadding-bottom);
+  padding: 1.525rem 0 var(--sectionPadding-bottom);
 }
 .scroller-item {
   padding-top: var(--sectionPadding-top);
