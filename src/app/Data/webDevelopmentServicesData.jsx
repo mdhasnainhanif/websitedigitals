@@ -98,15 +98,15 @@ export const webDevelopmentServicesData = [
     id: 2,
     title: "WordPress Development",
     description:
-      "We offer custom WordPress development for businesses of all sizes, including WordPress theme customization, plugin development, and ecommerce builds with WooCommerce. Our team works with the Gutenberg editor, Elementor, and WPBakery to deliver functional, user-friendly websites.",
+      "We offer custom WordPress development for businesses of all sizes, including WordPress theme customization, plugin development, and ecommerce builds with WooCommerce. Our team works with the Gutenberg editor, Elementor, and WPBakery to deliver functional, user-friendly websites.  We provide custom WordPress development solutions for businesses of all sizes, including theme customization, plugin development, and WooCommerce-based eCommerce builds. Our team leverages the Gutenberg editor, Elementor, and WPBakery to deliver scalable, high-performing, and user-friendly websites.",
     icon: <BagIcon />,
-    isActive: false,
+     isActive: false,
   },
   {
     id: 3,
     title: "Shopify Development",
     description:
-      "We deliver complete Shopify store development services, from Shopify theme customization to Shopify app integration. Our expertise includes Shopify Liquid, dropshipping setup, and subscription ecommerce models. Certified Shopify Partner status ensures your store meets the highest standards.",
+      "We deliver complete Shopify store development services, from Shopify theme customization to Shopify app integration. Our expertise includes Shopify Liquid, dropshipping setup, and subscription ecommerce models. Certified Shopify Partner status (if applicable) ensures your store meets the highest standards.",
     icon: <BagIcon />,
     isActive: false,
   },
@@ -114,7 +114,7 @@ export const webDevelopmentServicesData = [
     id: 4,
     title: "Wix Development",
     description:
-      "Our Wix website development services cater to small businesses, startups, and entrepreneurs looking for flexibility and visual appeal. We offer Wix SEO optimization, Wix ecommerce integration, and customization using the drag-and-drop builder with responsive templates from the Wix App Market integration.",
+      "Our Wix website development services cater to small businesses, startups, and entrepreneurs looking for flexibility and visual appeal. We offer Wix SEO optimization, Wix ecommerce integration, and customization using the drag-and-drop builder with responsive templates from the Wix App Market integration. As a certified Wix Partner, we’ve delivered tailored Wix sites for clients across multiple industries.",
     icon: <BagIcon />,
     isActive: false,
   },
@@ -415,44 +415,44 @@ export const webDevelopmentServicesIndustriesData = [
 export const webDevelopmentServicesTechnologiesData = [
   {
     id: 1,
-    title: "React",
+    title: "Front-End Development",
     description:
-      "Modern front-end development with React for building interactive, responsive user interfaces with component-based architecture and optimal performance.",
+      "React, Angular, Vue.js, HTML5/CSS3",
     icon: "/assets/images/technologyIcons.png",
   },
   {
     id: 2,
-    title: "Angular",
+    title: "Back-End Development",
     description:
-      "Enterprise-grade web applications with Angular framework, providing robust TypeScript support and comprehensive tooling for large-scale projects.",
+      "Node.js, PHP, Laravel, .NET",
     icon: "/assets/images/technologyIcons.png",
   },
   {
     id: 3,
-    title: "Node.js",
+    title: "Content Management Systems",
     description:
-      "Server-side JavaScript development with Node.js for scalable, high-performance web applications and real-time features with event-driven architecture.",
+      "WordPress, Drupal, Joomla, Shopify, Magento, Squarespace",
     icon: "/assets/images/technologyIcons.png",
   },
   {
     id: 4,
-    title: "WordPress",
+    title: "eCommerce Solutions",
     description:
-      "Content management system development with WordPress, including custom themes, plugins, and WooCommerce e-commerce solutions for content-driven websites.",
+      "WooCommerce, Shopify Plus, Magento Commerce",
     icon: "/assets/images/technologyIcons.png",
   },
   {
     id: 5,
-    title: "Shopify",
+    title: "Database & API Integration",
     description:
-      "E-commerce platform development with Shopify, including custom themes, app integration, and Liquid templating for online store optimization.",
+      "MySQL, PostgreSQL, MongoDB",
     icon: "/assets/images/technologyIcons.png",
   },
   {
     id: 6,
-    title: "Magento",
+    title: "Performance & Optimization Tools",
     description:
-      "Enterprise e-commerce development with Magento, providing scalable solutions for large online stores with advanced customization and performance optimization.",
+      "CDN integration, image compression tools, lazy loading, Google PageSpeed Insights",
     icon: "/assets/images/technologyIcons.png",
   },
 ];
@@ -727,12 +727,7 @@ export const webDevelopmentServicesTechnologiesSectionData = {
   description:
     "",
   showDescription: false,
-  cta: {
-    text: "See Our Technology Stack",
-    href: "#",
-    className: "primary book-your-call",
-    show: true,
-  },
+  cta: false,
 };
 
 // Final CTA Section Data (Section 11)
