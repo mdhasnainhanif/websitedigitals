@@ -125,27 +125,7 @@ import {
   squarespaceDevelopmentMetadata,
 } from "../../../Data/squarespaceDevelopmentData";
 
-// Import Landing Page Design Services data
-import {
-  landingPageDesignServicesBannerData,
-  landingPageDesignServicesBannerData2,
-  landingPageDesignServicesScrollSectionData,
-  landingPageDesignServicesData,
-  landingPageDesignServicesStatsData,
-  landingPageDesignServicesWorkflowData,
-  landingPageDesignServicesWhyChooseUsData,
-  landingPageDesignServicesFAQsData,
-  landingPageDesignServicesServicesSectionData,
-  landingPageDesignServicesWhyChooseUsSectionData,
-  landingPageDesignServicesFinalCTAData,
-  landingPageDesignServicesImpactCardsData,
-  landingPageDesignServicesImpactSectionData,
-  landingPageDesignServicesIndustriesSectionData,
-  landingPageDesignServicesIndustriesCardsData,
-  landingPageDesignServicesTechnologiesSectionData,
-  landingPageDesignServicesTechnologiesData,
-  landingPageDesignServicesMetadata,
-} from "../../../Data/landingPageDesignServicesData";
+
 
 // Service data mapping
 const serviceDataMap = {
@@ -248,26 +228,6 @@ const serviceDataMap = {
     finalCTAData: squarespaceDevelopmentFinalCTAData,
     faqsData: squarespaceDevelopmentFAQsData,
     metadata: squarespaceDevelopmentMetadata,
-  },
-  "landing-page-design-services": {
-    bannerData: landingPageDesignServicesBannerData,
-    bannerData2: landingPageDesignServicesBannerData2,
-    scrollSectionData: landingPageDesignServicesScrollSectionData,
-    servicesData: landingPageDesignServicesData,
-    statsData: landingPageDesignServicesStatsData,
-    impactSectionData: landingPageDesignServicesImpactSectionData,
-    impactCardsData: landingPageDesignServicesImpactCardsData,
-    servicesSectionData: landingPageDesignServicesServicesSectionData,
-    industriesSectionData: landingPageDesignServicesIndustriesSectionData,
-    industriesCardsData: landingPageDesignServicesIndustriesCardsData,
-    technologiesSectionData: landingPageDesignServicesTechnologiesSectionData,
-    technologiesData: landingPageDesignServicesTechnologiesData,
-    workflowData: landingPageDesignServicesWorkflowData,
-    whyChooseUsData: landingPageDesignServicesWhyChooseUsData,
-    whyChooseUsSectionData: landingPageDesignServicesWhyChooseUsSectionData,
-    finalCTAData: landingPageDesignServicesFinalCTAData,
-    faqsData: landingPageDesignServicesFAQsData,
-    metadata: landingPageDesignServicesMetadata,
   },
 };
 
