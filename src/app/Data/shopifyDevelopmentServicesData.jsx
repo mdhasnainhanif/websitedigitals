@@ -214,6 +214,38 @@ export const shopifyDevelopmentScrollSectionData = {
     {
       id: "shopify-fifthScroller",
       step: 5,
+      title: "End-to-End Shopify Development Services",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "From Shopify store setup to custom functionality, enterprise-grade customization, and headless commerce implementation, we manage the complete development cycle under one roof.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/1.png",
+        alt: "End-to-End Shopify Development Services",
+        width: 669,
+        height: 376,
+      },
+    },
+
+     {
+      id: "shopify-sixthScroller",
+      step: 6,
+      title: "Bug-Free & High-Quality",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "We ensure testing and quality assurance at every stage, deliver mobile responsiveness, resolve issues through error debugging, and maintain peak performance through performance optimization.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/1.png",
+        alt: "Bug-Free & High-Quality",
+        width: 669,
+        height: 376,
+      },
+    },
+
+     {
+      id: "shopify-seventhScroller",
+      step: 7,
       title: "24/7 Support & Maintenance",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
@@ -226,6 +258,8 @@ export const shopifyDevelopmentScrollSectionData = {
         height: 376,
       },
     },
+
+
   ],
   cta: null,
 };
@@ -292,7 +326,7 @@ export const shopifyDevelopmentImpactCardsData = [
     id: 1,
     title: "Increased Sales",
     description:
-      "Investing in Shopify development services ensures that every aspect of the store is designed to convert visitors into buyers. Strategic SEO optimization improves visibility in search results, while conversion rate optimization (CRO) tactics streamline the path from product page to checkout.",
+      "Investing in Shopify development services ensures that every aspect of the store is designed to convert visitors into buyers. Strategic SEO optimization improves visibility in search results, while conversion rate optimization (CRO) tactics streamline the path from product page to checkout. Incorporating custom Shopify themes allows for branding that resonates with the target audience, making it easier to stand out in a crowded market.",
     icon: "sales",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
@@ -301,7 +335,7 @@ export const shopifyDevelopmentImpactCardsData = [
     id: 2,
     title: "Better Customer Experience",
     description:
-      "A store built through professional Shopify store development offers shoppers a smooth and enjoyable journey from the homepage to purchase. Mobile responsiveness ensures that the experience remains consistent on any device, while intuitive UI/UX design simplifies navigation.",
+      "A store built through professional Shopify store development offers shoppers a smooth and enjoyable journey from the homepage to purchase. Mobile responsiveness ensures that the experience remains consistent on any device, while intuitive UI/UX design simplifies navigation. For growing businesses, Shopify Plus provides enhanced capabilities to manage higher order volumes and complex workflows.",
     icon: "experience",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
@@ -310,7 +344,7 @@ export const shopifyDevelopmentImpactCardsData = [
     id: 3,
     title: "Simplified Store Management",
     description:
-      "With tailored Shopify app development services, managing daily operations becomes far more efficient. Integrated API integrations connect essential tools, from inventory management to CRM platforms.",
+      "With tailored Shopify app development services, managing daily operations becomes far more efficient. Integrated API integrations connect essential tools, from inventory management to CRM platforms. The use of Liquid templating language enables precise customization, while additional app integrations extend store functionality without disrupting performance.",
     icon: "management",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
@@ -319,7 +353,7 @@ export const shopifyDevelopmentImpactCardsData = [
     id: 4,
     title: "Room for Growth",
     description:
-      "Scalability is critical for long-term success, and Shopify Plus development offers the flexibility to adapt as the business expands. Leveraging headless commerce allows for future-ready architecture.",
+      "Scalability is critical for long-term success, and Shopify Plus development offers the flexibility to adapt as the business expands. Leveraging headless commerce allows for future-ready architecture, enabling faster updates and unique front-end experiences. Whether through custom Shopify development or building on scalable infrastructure, the store remains prepared for traffic surges and new sales channels.",
     icon: "growth",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
@@ -477,42 +511,75 @@ export const shopifyDevelopmentWorkflowData = {
       image: "/assets/images/work/step1.png",
       alignment: "right",
     },
-    {
+
+   {
       id: 6,
       number: "06",
+      title: "Implement Custom Functionality and Feature",
+      description:
+        "We add custom functionality and enterprise-grade customization to meet complex needs. Our team leverages API integration and headless commerce frameworks for flexible and scalable store performance.",
+      image: "/assets/images/work/step2.png",
+      alignment: "left",
+    },
+
+    {
+      id: 7,
+      number: "07",
       title: "Payment Gateway Integration",
       description:
         "We configure secure transactions through API integrations and Shopify Plus features. Our team sets up a secure payment setup backed by scalable infrastructure to handle high-volume sales.",
       image: "/assets/images/work/step2.png",
-      alignment: "left",
-    },
-    {
-      id: 7,
-      number: "07",
-      title: "Testing and Quality Assurance",
-      description:
-        "We validate mobile responsiveness, ensure performance optimization, and apply conversion rate optimization (CRO) techniques. Thorough error debugging guarantees smooth functionality before launch.",
-      image: "/assets/images/work/step3.png",
       alignment: "right",
     },
     {
       id: 8,
       number: "08",
-      title: "Launch and Deployment",
+      title: "Security Implementation",
       description:
-        "Our launch plan covers Shopify Plus scaling, seamless app integrations, and API integrations, followed by post-launch SEO to support visibility from day one.",
-      image: "/assets/images/work/step4.png",
+        "Security measures include secure checkout processes, adherence to data protection compliance, enhanced Shopify Plus security, and robust API security protocols.",
+      image: "/assets/images/work/step3.png",
       alignment: "left",
     },
     {
       id: 9,
       number: "09",
-      title: "Maintenance and Support",
+      title: "Testing and Quality Assurance",
+      description:
+        "We validate mobile responsiveness, ensure performance optimization, and apply conversion rate optimization (CRO) techniques. Thorough error debugging guarantees smooth functionality before launch.",
+      image: "/assets/images/work/step4.png",
+      alignment: "right",
+    },
+    {
+      id: 10,
+      number: "10",
+      title: " Launch and Deployment",
+      description:
+        "Our launch plan covers Shopify Plus scaling, seamless app integrations, and API integrations, followed by post-launch SEO to support visibility from day one.",
+      image: "/assets/images/work/step1.png",
+      alignment: "left",
+    },
+
+    {
+      id: 11,
+      number: "11",
+      title: " Maintenance and Support",
       description:
         "We offer ongoing Shopify support, implement custom Shopify development updates, and conduct regular store monitoring to maintain stability and performance.",
       image: "/assets/images/work/step1.png",
       alignment: "right",
     },
+
+      {
+      id: 12,
+      number: "12",
+      title: " Optimization and Improvements",
+      description:
+        "Our continuous improvement process includes SEO optimization, applying semantic search strategies, refining conversion rate optimization, and delivering headless commerce enhancements to keep your store ahead.",
+      image: "/assets/images/work/step1.png",
+      alignment: "left",
+    },
+
+
   ],
 };
 

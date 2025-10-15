@@ -71,7 +71,7 @@ export const contentWritingServicesBannerData = {
   cta: false,
   image: null,
   formConfig: {
-    buttonText: "Start Winning with Words",
+    buttonText: "Get Your Content Strategy",
     heading: "Get In Touch With Us",
     helpOptions: [
       { value: "white-paper-writing", label: "White Paper Writing Services" },
@@ -250,10 +250,7 @@ export const contentWritingServicesServicesData = [
 export const contentWritingServicesServicesSectionData = {
   heading: "Our Complete Writing Solutions",
   showDescription: false,
-  cta: {
-    href: "#",
-    label: "Get Started Today",
-  },
+  cta: false,
 };
 
 export const contentWritingServicesIndustriesSectionData = {
@@ -329,6 +326,7 @@ export const contentWritingServicesWhyChooseUsSectionData = {
     className: "offer-btn primary",
     show: true,
   },
+ 
 };
 
 export const contentWritingServicesWhyChooseUsCardsData = [
@@ -383,35 +381,40 @@ export const contentWritingServicesWorkflowData = {
       title: "Research & Alignment",
       description:
         "We start by aligning with your business goals, audience, and content strategy. Our team performs in-depth keyword research and competitor analysis to ensure your content hits the mark.",
-      icon: "/assets/images/work/pen-tool.svg",
+      // icon: "/assets/images/work/step1.png",
+      image: "/assets/images/work/step1.png",
     },
     {
       id: 2,
       title: "Brief & Planning",
       description:
         "We create detailed content briefs, finalize your editorial calendar, and lock in the scope before we write a single word.",
-      icon: "/assets/images/work/pen-tool.svg",
+      // icon: "/assets/images/work/pen-tool.svg",
+      image: "/assets/images/work/step2.png",
     },
     {
       id: 3,
       title: "Writing & Editing",
       description:
         "Our writers produce engaging, optimized copy while editors ensure readability, tone of voice, and brand voice stay consistent.",
-      icon: "/assets/images/work/pen-tool.svg",
+      // icon: "/assets/images/work/pen-tool.svg",
+      image: "/assets/images/work/step3.png",
     },
     {
       id: 4,
       title: "Optimization & QA",
       description:
         "Every piece goes through on-page SEO checks, proofreading, and QA to guarantee high performance and conversion-focused content.",
-      icon: "/assets/images/work/pen-tool.svg",
+      // icon: "/assets/images/work/pen-tool.svg",
+      image: "/assets/images/work/step4.png",
     },
     {
       id: 5,
       title: "Delivery & Feedback",
       description:
         "You receive final content on time, with room for revisions based on your feedback—ensuring the end product is exactly what your business needs.",
-      icon: "/assets/images/work/pen-tool.svg",
+      // icon: "/assets/images/work/pen-tool.svg",
+      image: "/assets/images/work/step5.png",
     },
   ],
 };
@@ -455,7 +458,7 @@ export const contentWritingServicesFAQsData = [
     id: 2,
     question: "Can Website Digitals handle both small projects and ongoing content needs?",
     answer:
-      "Yes, we work with businesses of all sizes. Whether you need one-off landing page content writing, a set of blog writing services, or a recurring content writing subscription service, we've built flexible content writing service packages to match your goals and budget.",
+      "Yes,  we work with businesses of all sizes. Whether you need one-off landing page content writing, a set of blog writing services, or a recurring content writing subscription service, we’ve built flexible content writing service packages to match your goals and budget.",
   },
   {
     id: 3,
