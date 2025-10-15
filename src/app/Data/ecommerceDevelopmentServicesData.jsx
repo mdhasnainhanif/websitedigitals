@@ -52,9 +52,9 @@ export const ecommerceDevelopmentBannerData = {
       href: "/web-development/ecommerce-development-company",
     },
   },
-  heading: "Build, [[Grow]], and [[Scale]] with an Ecommerce Development Company",
+  heading: "Build, [[Grow]] & [[Scale]] with an Ecommerce Development Company",
   description: [
-    "Most online stores fail to grow because their websites are slow, hard to manage, and can't adapt to changing customer needs. We solve this by delivering custom ecommerce websites with smooth ecommerce platform integration, mobile optimization, payment gateway integration, and secure ecommerce solutions to ensure your business runs efficiently from day one.\n\nAt Website Digitals, our team of experienced ecommerce developers creates online stores that don't just look professional but are built to sell.\n\nHere's what working with our ecommerce development company means for your business:\n• Online stores built for your customers' journey\n• Scalable solutions that grow without rebuilds\n• Trusted experts in ecommerce platforms",
+    "Most online stores fail to grow because their websites are slow, hard to manage, and can't adapt to changing customer needs.\nWe solve this by delivering custom ecommerce websites with smooth ecommerce platform integration, mobile optimization, payment gateway integration, and secure ecommerce solutions to ensure your business runs efficiently from day one.\nAt Website Digitals, our team of experienced ecommerce developers creates online stores that don't just look professional but are built to sell.\nHere's what working with our ecommerce development company means for your business:\nOnline stores built for your customers' journey\nScalable solutions that grow without rebuilds\nTrusted experts in ecommerce platforms",
   ],
   isCta: true,
   cta: false,
@@ -185,13 +185,6 @@ export const ecommerceDevelopmentServicesData = [
     icon: <BagIcon />,
     isActive: false,
   },
-  {
-    id: 5,
-    title: "Mobile-First Ecommerce Development",
-    description: "We create mobile-optimized ecommerce experiences that drive conversions on smartphones and tablets. Our responsive design approach ensures your store looks and functions perfectly across all devices, with fast loading times and intuitive mobile navigation.",
-    icon: <BagIcon />,
-    isActive: false,
-  },
 ];
 
 // Industries Section Data (Section 6) - for WebBuilderCardSection
@@ -306,8 +299,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
 
 // Why Choose Us Section Data (Section 7)
 export const ecommerceDevelopmentWhyChooseUsSectionData = {
-  heading: "Why Partner With Us for Your Ecommerce Development Needs",
-  description: "When it comes to selecting the best ecommerce development companies, choosing a partner with a proven track record and the right technical capabilities can make all the difference.\n\nOur approach combines innovation, compliance, and performance to deliver ecommerce platforms that not only meet your current needs but also scale with your future growth. Here's what sets us apart:",
+  heading: "Why We're the Right Partner for Your Ecommerce Development",
+  description: "Every online store deserves a development partner that delivers expertise, proven results, and future-ready solutions. Here's what sets us apart.",
 };
 
 // Why Choose Us Data
@@ -325,7 +318,7 @@ export const ecommerceDevelopmentWhyChooseUsData = [
   {
     icon: "fas fa-lock",
     title: "Security & Compliance First",
-    description: "Security is central to our development process. We adhere to PCI DSS compliance for secure payment processing, implement SSL encryption, and offer two-factor authentication for added protection."
+    description: "Security is central to our development process. We adhere to PCI DSS compliance for secure payment processing, implement SSL encryption, and offer two-factor authentication for added protection. For more details, visit the official PCI DSS compliance documentation."
   },
   {
     icon: "fas fa-rocket",
@@ -486,7 +479,7 @@ export const ecommerceDevelopmentFAQsData = [
   },
   {
     question: "What are the benefits of using a Shopify development agency?",
-    answer: "A Shopify development agency provides expertise in creating, customizing, and scaling Shopify stores. Working with certified Shopify Experts ensures your site is optimized for speed, mobile responsiveness, and sales conversion while making full use of Shopify's features."
+    answer: "A Shopify development agency provides expertise in creating, customizing, and scaling Shopify stores. Working with certified Shopify Experts ensures your site is optimized for speed, mobile responsiveness, and sales conversion while making full use of Shopify's features. Learn more through the official Shopify Experts directory."
   },
   {
     question: "How do I choose between Magento vs WooCommerce developers?",
@@ -502,7 +495,7 @@ export const ecommerceDevelopmentFAQsData = [
   },
   {
     question: "What is the best Magento development agency for enterprise projects?",
-    answer: "The best Magento development agencies combine Magento-certified developers, Adobe Commerce expertise, and a portfolio of proven case studies. These teams deliver scalable, secure Magento ecommerce solutions for large organizations."
+    answer: "The best Magento development agencies combine Magento-certified developers, Adobe Commerce expertise, and a portfolio of proven case studies. These teams deliver scalable, secure Magento ecommerce solutions for large organizations. See the Adobe Commerce certification page for more on official credentials."
   },
   {
     question: "Where can I find Clutch ecommerce development companies in the USA?",
@@ -514,7 +507,7 @@ export const ecommerceDevelopmentFAQsData = [
   },
   {
     question: "Who are the top ecommerce development firms in the USA for 2025?",
-    answer: "The top ecommerce development firms in the USA for 2025 deliver scalable ecommerce solutions, exceptional UX and UI design, and secure payment processing. Agencies with consistent client satisfaction, industry certifications, and a proven track record continue to lead the market."
+    answer: "The top ecommerce development firms in the USA for 2025 deliver scalable ecommerce solutions, exceptional UX and UI design, and secure payment processing. Agencies with consistent client satisfaction, industry certifications, and a proven track record, such as those listed on Clutch and GoodFirms, continue to lead the market. Many of these agencies also have certified developers available in key cities across the United States."
   },
   {
     question: "Are there Magento-certified ecommerce developers in Chicago?",
@@ -618,13 +611,17 @@ export const ecommerceDevelopmentBannerData2 = {
       href: "/web-development/ecommerce-development-company",
     },
   },
-  heading: "Start Your Ecommerce Project with Our US-Based Experts",
+  heading: "Build an Ecommerce Brand That Stays in Mind",
   description: [
-    "Hire an ecommerce development company in the USA that delivers custom and scalable ecommerce solutions built for speed, security, and growth. We create stores with enterprise-level scalability, smooth integrations, and compliance-backed security using trusted platforms like Shopify, Magento, and WooCommerce.\n\nWhether you need clarity on ecommerce development services pricing in America or a tailored build ready to launch, we make sure your store is built right the first time and prepared to support your growth for years.",
+    "Your online store won't build itself. The longer you wait, the more sales opportunities you miss. Let our team design, develop, and launch an ecommerce solution built to perform from day one.",
+    "",
+    "Build your online store with experts who understand how to create a platform that sells.",
+    "",
+    "Launch your ecommerce project now and turn visitors into customers.",
   ],
   bullets: [],
   cta: {
-    text: "Get My Tailored Ecommerce Proposal",
+    text: "Launch My Ecommerce Site",
     href: "#",
     className: "offer-btn primary",
     show: true,
