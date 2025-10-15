@@ -63,6 +63,28 @@ import {
   onlineReputationManagementMetadata,
 } from "../../../Data/onlineReputationManagementData";
 
+// Import ASO services data
+import {
+  appStoreOptimizationBannerData,
+  appStoreOptimizationBannerData2,
+  appStoreOptimizationScrollSectionData,
+  appStoreOptimizationServicesData,
+  appStoreOptimizationStatsData,
+  appStoreOptimizationImpactSectionData,
+  appStoreOptimizationImpactCardsData,
+  appStoreOptimizationServicesSectionData,
+  appStoreOptimizationIndustriesSectionData,
+  appStoreOptimizationIndustriesCardsData,
+  appStoreOptimizationWorkflowData,
+  appStoreOptimizationWhyChooseUsSectionData,
+  appStoreOptimizationWhyChooseUsData,
+  appStoreOptimizationTechnologiesSectionData,
+  appStoreOptimizationTechnologiesData,
+  appStoreOptimizationFinalCTAData,
+  appStoreOptimizationFAQsData,
+  appStoreOptimizationMetadata,
+} from "../../../Data/appStoreOptimizationData";
+
 // Import components for ORM services
 import DevelopmentCards from '@/components/LandingPage/DevelopmentCards/DevelopmentCards'
 import DevelopmentCardSlider from '../../../../components/LandingPage/DevelopmentCardSlider/DevelopmentCardSlider'
@@ -116,6 +138,26 @@ const digitalMarketingServiceDataMap = {
     finalCTAData: onlineReputationManagementFinalCTAData,
     faqsData: onlineReputationManagementFAQsData,
     metadata: onlineReputationManagementMetadata,
+  },
+  "app-store-optimization-services": {
+    bannerData: appStoreOptimizationBannerData,
+    bannerData2: appStoreOptimizationBannerData2,
+    scrollSectionData: appStoreOptimizationScrollSectionData,
+    servicesData: appStoreOptimizationServicesData,
+    statsData: appStoreOptimizationStatsData,
+    impactSectionData: appStoreOptimizationImpactSectionData,
+    impactCardsData: appStoreOptimizationImpactCardsData,
+    servicesSectionData: appStoreOptimizationServicesSectionData,
+    industriesSectionData: appStoreOptimizationIndustriesSectionData,
+    industriesCardsData: appStoreOptimizationIndustriesCardsData,
+    workflowData: appStoreOptimizationWorkflowData,
+    whyChooseUsData: appStoreOptimizationWhyChooseUsData,
+    whyChooseUsSectionData: appStoreOptimizationWhyChooseUsSectionData,
+    technologiesSectionData: appStoreOptimizationTechnologiesSectionData,
+    technologiesData: appStoreOptimizationTechnologiesData,
+    finalCTAData: appStoreOptimizationFinalCTAData,
+    faqsData: appStoreOptimizationFAQsData,
+    metadata: appStoreOptimizationMetadata,
   },
 };
 
@@ -224,6 +266,72 @@ const DigitalMarketingServicePage = ({ params }) => {
           />
         )}
         <StepSection sectionData={serviceData.workflowData} />
+        <TestimonialSlider />
+        <WebBanner
+          data={serviceData.finalCTAData || serviceData.bannerData2}
+          className="notHero order2 landingPageBanner2"
+        />
+        <FAQs
+          faqs={serviceData.faqsData}
+          isTwoCol={true}
+          className="landingPageFaqs"
+        />
+        <ContactSection />
+      </div>
+    );
+  }
+
+  // Handle ASO services
+  if (serviceType === "app-store-optimization-services") {
+    return (
+      <div>
+        <WebBanner
+          islandingPage={true}
+          data={serviceData.bannerData}
+          className="withoutImg landingPageBanner"
+          col="col-md-6"
+        />
+        <LandingPageCounter statsData={serviceData.statsData} />
+        <DevelopmentCards
+          sectionData={serviceData.impactSectionData}
+          cardsData={serviceData.impactCardsData}
+        />
+        <OurWorkSection />
+        <DevelopmentCardSlider
+          sectionData={serviceData.servicesSectionData}
+          servicesData={serviceData.servicesData}
+        />
+        <WebBuilderCardSection
+          heading={serviceData.industriesSectionData?.heading}
+          description={serviceData.industriesSectionData?.description}
+          showDescription={serviceData.industriesSectionData?.showDescription}
+          items={serviceData.industriesCardsData || webBuilderCards}
+          columnCount={3}
+          sectionClass={webBuilderSectionClass}
+          button={serviceData.industriesSectionData?.cta?.show || true}
+          buttonText={serviceData.industriesSectionData?.cta?.text || "Get a Tailored ASO Plan"}
+          buttonHref={serviceData.industriesSectionData?.cta?.href || "#"}
+          buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
+        />
+        <ReviewsSlider />
+        <ScrollSection
+          data={serviceData.scrollSectionData}
+          className="landingPageScrollSection"
+          isIconShow={true}
+        />
+        <StepSection sectionData={serviceData.workflowData} />
+        <WebBuilderCardSection
+          heading={serviceData.technologiesSectionData?.heading}
+          description={serviceData.technologiesSectionData?.description}
+          showDescription={serviceData.technologiesSectionData?.showDescription}
+          items={serviceData.technologiesData || []}
+          columnCount={3}
+          sectionClass={webBuilderSectionClass}
+          button={serviceData.industriesSectionData?.cta?.show || true}
+          buttonText={serviceData.industriesSectionData?.cta?.text || "Get a Tailored ASO Plan"}
+          buttonHref={serviceData.industriesSectionData?.cta?.href || "#"}
+          buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
+        />
         <TestimonialSlider />
         <WebBanner
           data={serviceData.finalCTAData || serviceData.bannerData2}
