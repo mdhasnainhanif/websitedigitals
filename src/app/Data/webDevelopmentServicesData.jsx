@@ -93,12 +93,6 @@ export const webDevelopmentServicesData = [
       "We build secure, scalable, and conversion-focused online stores. Our ecommerce website development services cover secure payment integration, online store development, and platforms such as Magento, WooCommerce, and Shopify Plus. Every project meets PCI DSS compliance and includes SSL certificates to ensure safe transactions, helping businesses launch robust, high-performance ecommerce solutions.",
     icon: <BagIcon />,
     isActive: true,
-    button: {
-      text: "Get eCommerce Development",
-      href: "/web-development/ecommerce-development-company",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 2,
@@ -107,12 +101,6 @@ export const webDevelopmentServicesData = [
       "We offer custom WordPress development for businesses of all sizes, including WordPress theme customization, plugin development, and ecommerce builds with WooCommerce. Our team works with the Gutenberg editor, Elementor, and WPBakery to deliver functional, user-friendly websites.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get WordPress Development",
-      href: "/web-development/wordpress-development-company",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 3,
@@ -121,12 +109,6 @@ export const webDevelopmentServicesData = [
       "We deliver complete Shopify store development services, from Shopify theme customization to Shopify app integration. Our expertise includes Shopify Liquid, dropshipping setup, and subscription ecommerce models. Certified Shopify Partner status ensures your store meets the highest standards.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Shopify Development",
-      href: "/web-development/shopify-development-services",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 4,
@@ -135,12 +117,6 @@ export const webDevelopmentServicesData = [
       "Our Wix website development services cater to small businesses, startups, and entrepreneurs looking for flexibility and visual appeal. We offer Wix SEO optimization, Wix ecommerce integration, and customization using the drag-and-drop builder with responsive templates from the Wix App Market integration.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Wix Development",
-      href: "/web-development/wix-development-services",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 5,
@@ -149,12 +125,6 @@ export const webDevelopmentServicesData = [
       "We provide custom Squarespace website builds, Squarespace SEO services, and ecommerce setups using Squarespace templates, CSS customization, and ecommerce add-ons. With experience in Squarespace Circle membership, we design search-optimized sites that perform well in competitive markets.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Squarespace Development",
-      href: "/web-development/squarespace-development-services",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 6,
@@ -163,12 +133,6 @@ export const webDevelopmentServicesData = [
       "We provide custom CMS development, including CMS migration services, enterprise CMS solutions, and builds using Drupal, Joomla, and headless CMS architectures. We also implement content workflow automation and ensure WCAG compliance for accessibility.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get CMS Development",
-      href: "#",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 7,
@@ -177,12 +141,6 @@ export const webDevelopmentServicesData = [
       "We create enterprise web portal development solutions for corporate, B2B, and government clients. Services include B2B portal solutions and client portal creation with features like secure login systems, role-based access, and cloud integration. Our ISO 9001-certified processes ensure every portal is secure, reliable, and built for long-term use.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Web Portal Development",
-      href: "#",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 8,
@@ -191,12 +149,6 @@ export const webDevelopmentServicesData = [
       "Our custom web app development services cover everything from SaaS application development to progressive web app services. We work with React, Angular, Node.js, API integration, and microservices architecture. Every app is built with strong security standards and hosted on compliant cloud platforms.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Web App Development",
-      href: "#",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 9,
@@ -205,12 +157,6 @@ export const webDevelopmentServicesData = [
       "Our website maintenance services include security updates, backup and monitoring, and quick issue resolution. With uptime monitoring, malware removal, and version control, we keep websites secure and running around the clock using trusted monitoring tools.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Web Maintenance",
-      href: "#",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
   {
     id: 10,
@@ -219,12 +165,6 @@ export const webDevelopmentServicesData = [
       "Our speed-up website loading service focuses on website performance tuning and core web vitals optimization for faster browsing. We use lazy loading, image compression, CDN integration, and advanced caching following Google PageSpeed Insights best practices to enhance both speed and user experience.",
     icon: <BagIcon />,
     isActive: false,
-    button: {
-      text: "Get Speed Optimization",
-      href: "#",
-      className: "offer-btn primary",
-      show: true,
-    },
   },
 ];
 
@@ -232,9 +172,7 @@ export const webDevelopmentServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
   heading: "Why Website Development Is Essential for Business Success",
   description: [
-    "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success.",
-    "Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results.",
-    "Below are the key reasons why partnering with a professional web development company or a custom website solutions provider benefits businesses across all industries.",
+    "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success. Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results Below are the key reasons why partnering with a professional web development company or a custom website solutions provider benefits businesses across all industries."
   ],
   items: [
     {
@@ -431,7 +369,7 @@ export const webDevelopmentServicesImpactCardsData = [
 export const webDevelopmentServicesIndustriesData = [
   {
     id: 1,
-    title: "Healthcare",
+    title: "Healthcare..",
     description:
       "HIPAA-compliant web development with secure patient portals, medical data protection, and accessibility features for healthcare providers and medical institutions.",
     icon: "/assets/images/industry/healthcare.svg",
@@ -520,82 +458,76 @@ export const webDevelopmentServicesTechnologiesData = [
 ];
 
 // Industries Cards Data (for WebBuilderCardSection)
+// Industries Cards Data (for WebBuilderCardSection)
 export const webDevelopmentServicesIndustriesCardsData = [
   {
-    title: "Healthcare",
+    title: "Real-time Communication",
     description:
-      "HIPAA-compliant web development with secure patient portals, medical data protection, and accessibility features for healthcare providers and medical institutions.",
+      "Working with US-based developers ensures direct and real-time collaboration without time zone delays or communication gaps. We understand the standards of United States business credibility and keep projects moving smoothly from kickoff to delivery.",
     imgOriginal: `/assets/images/whyChooseUs1.webp`,
     imgWhite: `/assets/images/whyChooseUs2.webp`,
-    alt: "Healthcare Web Development",
+    alt: "Real-time Communication",
     width: 71,
     height: 71,
   },
   {
-    title: "Finance",
+    title: "Certified Developers & Proven Processes",
     description:
-      "Bank-grade security web development with SOC 2 compliance, encrypted data storage, and advanced monitoring for financial institutions and fintech applications.",
+      "Our team includes Microsoft Certified professionals and Google Partner specialists, applying industry-recognized best practices to every project. With structured workflows that minimize risks and maintain quality, we deliver results that are consistent, reliable, and built to last.",
     imgOriginal: `/assets/images/services/thirty-50.webp`,
     imgWhite: `/assets/images/services/thirty-49.webp`,
-    alt: "Finance Web Development",
+    alt: "Certified Developers",
     width: 71,
     height: 71,
   },
   {
-    title: "E-commerce",
+    title: "Transparent Pricing",
     description:
-      "Custom e-commerce solutions with secure checkout, inventory management, payment processing, and mobile-optimized shopping experiences for online businesses.",
+      "From the first proposal to the final invoice, our transparent pricing approach provides a clear breakdown of costs so you can budget with confidence. No hidden fees. Just honest pricing that supports long-term trust.",
     imgOriginal: `/assets/images/services/thirty-56.webp`,
     imgWhite: `/assets/images/services/thirty-55.webp`,
-    alt: "E-commerce Web Development",
+    alt: "Transparent Pricing",
     width: 71,
     height: 71,
   },
   {
-    title: "Education",
+    title: "SEO-Optimized Websites from Day One",
     description:
-      "Scalable web development for educational institutions with LMS integration, student portals, and content delivery networks for seamless online learning experiences.",
+      "Every website is launched with on-page optimization and structured data implemented from the start. This helps search engines properly index your site and gives you an early boost in rankings, following the latest technical SEO best practices.",
     imgOriginal: `/assets/images/services/thirty-54.webp`,
     imgWhite: `/assets/images/services/thirty-53.webp`,
-    alt: "Education Web Development",
+    alt: "SEO-Optimized Websites",
     width: 71,
     height: 71,
   },
   {
-    title: "Media & Entertainment",
+    title: "Expertise Across Industries",
     description:
-      "High-performance web development optimized for media streaming, content delivery, and bandwidth-intensive applications with global CDN integration.",
+      "We have delivered solutions for healthcare, finance, and retail web solutions, adapting strategies to meet each sector’s needs. Our industry experience includes compliance with standards such as HIPAA for healthcare and PCI DSS for secure financial transactions.",
     imgOriginal: `/assets/images/whyChooseUs1.webp`,
     imgWhite: `/assets/images/whyChooseUs2.webp`,
-    alt: "Media Web Development",
-    width: 71,
-    height: 71,
-  },
-  {
-    title: "SaaS Applications",
-    description:
-      "Cloud-native web development for SaaS platforms with auto-scaling, load balancing, and multi-tenant architecture support for growing software businesses.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
-    alt: "SaaS Web Development",
+    alt: "Industry Expertise",
     width: 71,
     height: 71,
   },
 ];
+
 
 // Impact Section Data (for DevelopmentCards component)
 export const webDevelopmentServicesImpactSectionData = {
   heading: "Why Website Development Is Essential for Business Success",
   showDescription: true,
   description:
-    "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success. Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results. Below are the key reasons why partnering with a professional web development company or a custom website solutions provider benefits businesses across all industries.",
+    "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success.\n Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results\n Below are the key reasons why partnering with a professional web development company or a custom website solutions provider benefits businesses across all industries.",
 };
 
 // Workflow Data (for StepSection component)
 export const webDevelopmentServicesWorkflowData = {
   title: "Our Web Development Process",
-  description:
-    "A successful website starts with a clear plan and is built through a structured process that ensures quality at every stage. At Website Digitals, each project follows a proven workflow designed to align with your goals, maintain transparency, and deliver results you can measure. The process we follow includes:",
+  description: [
+    "A successful website starts with a clear plan and is built through a structured process that ensures quality at every stage. At Website Digitals, each project follows a proven workflow designed to align with your goals, maintain transparency, and deliver results you can measure.",
+    "The process we follow includes:"
+  ],
   steps: [
     {
       id: 1,
@@ -771,14 +703,14 @@ export const webDevelopmentServicesWhyChooseUsSectionData = {
 
 // Industries Section Data (Section 6) - for WebBuilderCardSection
 export const webDevelopmentServicesIndustriesSectionData = {
-  heading: "Key Customers Logos",
+  heading: "What Makes Us the Right Web Development Firm",
   description:
-    "We have provided web development services to businesses across various industries, helping them achieve their digital goals and drive growth.",
+    "A strong web development firm does more than deliver code. It understands your goals, maintains clear communication, and builds solutions designed to produce measurable results. \n At Website Digitals, we combine certified expertise with proven processes to complete every project on time, within budget, and ready to perform. \n Here's what makes our approach stand out.",
   cta: {
     text: "Start Building Your Website Today",
     href: "#",
     className: "offer-btn primary",
-    show: true,
+    show: false,
   },
 };
 
@@ -793,8 +725,8 @@ export const webDevelopmentServicesWorkflowSectionData = {
 export const webDevelopmentServicesTechnologiesSectionData = {
   heading: "Technology We Use",
   description:
-    "We leverage cutting-edge technologies and frameworks to build modern, scalable, and high-performing websites. Our technology stack includes:",
-  showDescription: true,
+    "",
+  showDescription: false,
   cta: {
     text: "See Our Technology Stack",
     href: "#",

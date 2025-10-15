@@ -17,9 +17,15 @@ const StepSection = ({ sectionData = null }) => {
                 {data.title}
               </h2>
               {showDescription && data.description && (
-                <p className={`${styles.sectionDescription} mt-3`}>
-                  {data.description}
-                </p>
+                <div className={`${styles.sectionDescription} mt-3`}>
+                  {Array.isArray(data.description) ? (
+                    data.description.map((paragraph, index) => (
+                      <p key={index} className="mb-0">{paragraph}</p>
+                    ))
+                  ) : (
+                    <p>{data.description}</p>
+                  )}
+                </div>
               )}
             </div>
           </div>

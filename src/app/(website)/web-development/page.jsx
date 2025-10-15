@@ -65,7 +65,7 @@ const page = () => {
         showDescription={webDevelopmentServicesIndustriesSectionData?.showDescription}
         items={webDevelopmentServicesIndustriesCardsData || []}
         columnCount={3}
-        button={webDevelopmentServicesIndustriesSectionData?.cta?.show || true}
+        button={webDevelopmentServicesIndustriesSectionData?.cta?.show}
         buttonText={webDevelopmentServicesIndustriesSectionData?.cta?.text || "Start Building Your Website Today"}
         buttonHref={webDevelopmentServicesIndustriesSectionData?.cta?.href || "#"}
         buttonClassName={webDevelopmentServicesIndustriesSectionData?.cta?.className || "offer-btn primary"}
