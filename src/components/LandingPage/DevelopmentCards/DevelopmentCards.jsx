@@ -28,7 +28,7 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
                 {section.heading}
               </h2>
               {section.showDescription && section.description && (
-                <p className="text-muted mx-auto">
+                <p className="text-muted mx-auto" style={{ whiteSpace: 'pre-line' }}>
                   {section.description}
                 </p>
               )}

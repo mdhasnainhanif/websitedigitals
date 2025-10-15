@@ -1,6 +1,5 @@
 import { BagIcon } from "@/icons";
 
-// Metadata for Managed Hosting Services
 export const managedHostingServicesMetadata = {
   title: "Website Digitals | Premium Managed Hosting Services",
   description:
@@ -113,7 +112,6 @@ export const managedHostingServicesBannerData2 = {
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
 };
 
-// Stats Counter Data
 export const managedHostingServicesStatsData = [
   {
     id: 1,
@@ -141,7 +139,6 @@ export const managedHostingServicesStatsData = [
   },
 ];
 
-// Impact Cards Data (for DevelopmentCards component)
 export const managedHostingServicesImpactCardsData = [
   {
     id: 1,
@@ -181,15 +178,11 @@ export const managedHostingServicesImpactCardsData = [
   },
 ];
 
-// Impact Section Data (for DevelopmentCards component)
 export const managedHostingServicesImpactSectionData = {
   heading: "Key Advantages of Managed Hosting Solutions",
-  showDescription: true,
-  description:
-    "Our managed hosting services provide comprehensive solutions that handle all technical aspects of your hosting infrastructure, allowing you to focus on growing your business while we ensure optimal performance, security, and reliability.",
+  showDescription: false,
 };
 
-// Services Data
 export const managedHostingServicesData = [
   {
     id: 1,
@@ -233,7 +226,6 @@ export const managedHostingServicesData = [
   },
 ];
 
-// Industries Data
 export const managedHostingServicesIndustriesData = [
   {
     id: 1,
@@ -272,7 +264,6 @@ export const managedHostingServicesIndustriesData = [
   },
 ];
 
-// Technologies Data
 export const managedHostingServicesTechnologiesData = [
   {
     id: 1,
@@ -318,11 +309,9 @@ export const managedHostingServicesTechnologiesData = [
   },
 ];
 
-// Workflow Data (for StepSection component)
 export const managedHostingServicesWorkflowData = {
   title: "Our End-to-End Hosting Approach",
-  description:
-    "Our comprehensive managed hosting process ensures your website or application receives the highest level of care, from initial consultation to ongoing optimization and support.",
+  showDescription: false,
   steps: [
     {
       id: 1,
@@ -363,7 +352,6 @@ export const managedHostingServicesWorkflowData = {
   ],
 };
 
-// Why Choose Us Data
 export const managedHostingServicesWhyChooseUsData = [
   {
     id: 1,
@@ -402,7 +390,6 @@ export const managedHostingServicesWhyChooseUsData = [
   },
 ];
 
-// FAQ Data
 export const managedHostingServicesFAQsData = [
   {
     id: 1,
@@ -502,15 +489,11 @@ export const managedHostingServicesFAQsData = [
   },
 ];
 
-// Services Section Data (Section 5) - for DevelopmentCardSlider
 export const managedHostingServicesSectionData = {
   heading: "What's Included in Our Managed Hosting Solutions",
-  description:
-    "Our comprehensive managed hosting services cover every aspect of your hosting infrastructure, ensuring optimal performance, security, and reliability without the technical complexity.",
-  showDescription: true,
+  showDescription: false,
 };
 
-// Industries Section Data (Section 6) - for WebBuilderCardSection
 export const managedHostingServicesIndustriesSectionData = {
   heading: "Who We Serve Across Different Industries",
   description:
@@ -523,7 +506,6 @@ export const managedHostingServicesIndustriesSectionData = {
   },
 };
 
-// Industries Cards Data (for WebBuilderCardSection)
 export const managedHostingServicesIndustriesCardsData = [
   {
     title: "Ecommerce",
@@ -577,22 +559,19 @@ export const managedHostingServicesIndustriesCardsData = [
   },
 ];
 
-// Why Choose Us Section Data (Section 7)
 export const managedHostingServicesWhyChooseUsSectionData = {
   heading: "Exclusive Features of Our Managed Hosting..",
   description:
-    "", 
-    isDescription: false,
+    "",
+  isDescription: false,
 };
 
-// Workflow Section Data (Section 8)
 export const managedHostingServicesWorkflowSectionData = {
   heading: "Our End-to-End Hosting Approach",
   description:
     "Our comprehensive managed hosting process ensures your website or application receives the highest level of care, from initial consultation to ongoing optimization and support.",
 };
 
-// Technologies Section Data (Section 9) - for PlatformsSpecialize
 export const managedHostingServicesTechnologiesSectionData = {
   heading: "Tools We Use",
   description:
@@ -606,7 +585,6 @@ export const managedHostingServicesTechnologiesSectionData = {
   },
 };
 
-// Final CTA Section Data (Section 11)
 export const managedHostingServicesFinalCTAData = {
   isBreadcrumb: false,
   breadcrumb: {
@@ -635,15 +613,10 @@ export const managedHostingServicesFinalCTAData = {
   },
 };
 
-// Scroll Section Data
 export const managedHostingServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
   heading: "Exclusive Features of Our Managed Hosting",
-  description: [
-    "Our managed hosting services come with exclusive features that set us apart from the competition, providing you with enterprise-grade infrastructure and comprehensive support.",
-    "",
-    "Our approach combines innovation, compliance, and performance to deliver managed hosting solutions that not only meet your current needs but also scale with your future growth. Here's what sets us apart:",
-  ],
+  showDescription: false,
   items: [
     {
       id: "managed-firstScroller",

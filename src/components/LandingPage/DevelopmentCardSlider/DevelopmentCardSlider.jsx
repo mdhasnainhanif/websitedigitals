@@ -47,7 +47,7 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
                 {section.heading}
               </h2>
               {section.showDescription && section.description && (
-                <p className={styles.sliderDescription}>
+                <p className={styles.sliderDescription} style={{ whiteSpace: 'pre-line' }}>
                   {section.description}
                 </p>
               )}

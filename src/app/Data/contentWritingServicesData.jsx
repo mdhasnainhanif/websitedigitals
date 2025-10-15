@@ -1,6 +1,5 @@
 import { BagIcon } from "@/icons";
 
-// Metadata for Content Writing Services
 export const contentWritingServicesMetadata = {
   title: "Content Writing Services | Hire Skilled Writers Today",
   description:
@@ -52,7 +51,6 @@ export const contentWritingServicesMetadata = {
   },
 };
 
-// Banner Data (Section 1)
 export const contentWritingServicesBannerData = {
   breadcrumb: {
     home: { label: "Home", href: "/" },
@@ -89,7 +87,6 @@ export const contentWritingServicesBannerData = {
   },
 };
 
-// Banner Data 2 (CTA Section)
 export const contentWritingServicesBannerData2 = {
   heading: "Turn Words Into Revenue",
   description: "Partner with Website Digitals for words that engage, convert, and deliver results.",
@@ -105,11 +102,9 @@ export const contentWritingServicesBannerData2 = {
   },
 };
 
-// Impact Section Data (Section 2)
 export const contentWritingServicesImpactSectionData = {
-  heading: "Proven Results That Drive Growth",
-  description: "Our content writing services deliver measurable results that build authority, increase visibility, and drive organic growth for businesses across all industries.",
-  showDescription: true,
+  heading: "The Core Values Driving Our Content Writing Services",
+  showDescription: false,
   cta: {
     href: "#",
     label: "See Our Results",
@@ -119,35 +114,34 @@ export const contentWritingServicesImpactSectionData = {
 export const contentWritingServicesImpactCardsData = [
   {
     id: 1,
-    title: "Content Performance Growth",
-    description: "Average 250% increase in organic traffic and engagement through strategic content writing.",
-    icon: <BagIcon />,
+    title: "Clarity & Readability",
+    description: "Professional content writing ensures your message is easy to read and understand. Well-structured copy, optimized for readability and flow, keeps users engaged and reduces bounce rates.",
     isActive: true,
+    col: "col-12 col-md-6 col-lg-6"
   },
   {
     id: 2,
-    title: "Authority Building",
-    description: "High-quality, plagiarism-free content builds credibility and positions brands as industry leaders.",
-    icon: <BagIcon />,
+    title: "Authority & Trust",
+    description: "High-quality, plagiarism-free content builds credibility and positions a brand as an industry leader. Whether through white papers, case studies, or technical writing services, authoritative content inspires confidence and trust.",
     isActive: false,
+    col: "col-12 col-md-6 col-lg-6"
   },
   {
     id: 3,
-    title: "Brand Voice Consistency",
-    description: "Maintaining clear tone of voice across all content strengthens brand identity and customer experience.",
-    icon: <BagIcon />,
+    title: "Consistency & Brand Voice",
+    description: "Maintaining a clear tone of voice across blogs, landing pages, and campaigns strengthens brand identity and ensures customers have a seamless experience across touchpoints.",
     isActive: false,
+    col: "col-12 col-md-6 col-lg-6"
   },
   {
     id: 4,
-    title: "Scalable Content Production",
-    description: "Structured workflows and editorial calendars enable consistent, high-quality content at scale.",
-    icon: <BagIcon />,
+    title: "Scalability & Efficiency",
+    description: "Structured content workflows and editorial calendars make it possible to scale production without sacrificing quality. Brands can refresh old assets, publish consistently, and meet aggressive deadlines while staying on strategy.",
     isActive: false,
+    col: "col-12 col-md-6 col-lg-6"
   },
 ];
 
-// Stats Counter Data (Section 3)
 export const contentWritingServicesStatsData = [
   {
     id: 1,
@@ -175,7 +169,6 @@ export const contentWritingServicesStatsData = [
   },
 ];
 
-// Why Choose Us Data (Section 4)
 export const contentWritingServicesWhyChooseUsData = {
   heading: "The Core Values Driving Our Content Writing Services",
   description: "Our content writing services are built on four core values that ensure every piece of content we create delivers real business value and measurable results.",
@@ -211,7 +204,6 @@ export const contentWritingServicesWhyChooseUsData = {
   ],
 };
 
-// Services Data (Section 5)
 export const contentWritingServicesServicesData = [
   {
     id: 1,
@@ -255,19 +247,15 @@ export const contentWritingServicesServicesData = [
   },
 ];
 
-// Services Section Data (Section 6)
 export const contentWritingServicesServicesSectionData = {
   heading: "Our Complete Writing Solutions",
-  description:
-    "We provide comprehensive content writing services designed to build authority, increase visibility, and create lasting brand recognition across all digital channels.",
-  showDescription: true,
+  showDescription: false,
   cta: {
     href: "#",
     label: "Get Started Today",
   },
 };
 
-// Industries Section Data (Section 7)
 export const contentWritingServicesIndustriesSectionData = {
   heading: "Who We Write For",
   description:
@@ -331,7 +319,6 @@ export const contentWritingServicesIndustriesCardsData = [
   },
 ];
 
-// Why Choose Us Section Data (Section 8)
 export const contentWritingServicesWhyChooseUsSectionData = {
   heading: "Why Choose Our Content Writing Service",
   description:
@@ -387,11 +374,9 @@ export const contentWritingServicesWhyChooseUsCardsData = [
   },
 ];
 
-// Workflow Data (Section 9)
 export const contentWritingServicesWorkflowData = {
   title: "How We Work With Businesses Like Yours",
-  description:
-    "Our proven content writing process ensures every piece of content we create is strategically aligned with your business goals, optimized for performance, and delivered on time.",
+  showDescription: false,
   steps: [
     {
       id: 1,
@@ -431,7 +416,6 @@ export const contentWritingServicesWorkflowData = {
   ],
 };
 
-// Workflow Section Data (Section 10)
 export const contentWritingServicesWorkflowSectionData = {
   heading: "Our Content Writing Process",
   description:
@@ -443,24 +427,23 @@ export const contentWritingServicesWorkflowSectionData = {
   },
 };
 
-// Final CTA Data (Section 11)
 export const contentWritingServicesFinalCTAData = {
-  heading: "Ready to Transform Your Content?",
-  description:
-    "Let's create content that engages your audience, builds authority, and drives measurable business results.",
+  heading: " Turn Words Into Revenue",
+  description:[
+    "Partner with Website Digitals for words that engage, convert, and deliver results.",],
+  showDescription: true,
   cta: {
     text: "Get Expert Help",
     href: "#",
   },
   image: {
-    src: "/assets/images/scroller/digital-marketing/4.png",
+    src: "/assets/images/everything-you-need.png",
     alt: "Content Writing Services Final CTA",
     width: 1200,
     height: 400,
   },
 };
 
-// FAQs Data (Section 12)
 export const contentWritingServicesFAQsData = [
   {
     id: 1,
@@ -536,21 +519,18 @@ export const contentWritingServicesFAQsData = [
   },
 ];
 
-// Scroll Section Data (Section 13)
 export const contentWritingServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "What Makes Us a Trusted Content Writing Agency",
-  description: [
-    "Selecting the right content writing partner is critical when building authority and visibility that drives growth. Here's what sets us apart:",
-  ],
+  heading: "Why Choose Our Content Writing Service",
+  showDescription: false,
   items: [
     {
       id: "content-firstScroller",
       step: 1,
-      title: "Expert Writing Team",
+      title: "Easy Client Collaboration",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Our team includes subject-matter experts, SEO strategists, and professional editors who ensure every piece of content is publication-ready, optimized for search, and aligned with your brand voice.",
+        "We make working with our content writing firms simple through seamless communication tools, clear content workflow, and editorial calendar planning that keeps you in control.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
@@ -562,14 +542,14 @@ export const contentWritingServicesScrollSectionData = {
     {
       id: "content-secondScroller",
       step: 2,
-      title: "Data-Driven Content Strategy",
+      title: "Transparent Pricing",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Every content piece is backed by comprehensive keyword research, competitor analysis, and audience insights. We identify the right topics, optimal timing, and compelling angles that maximize engagement and search visibility.",
+        "Our content writing service packages come with upfront pricing, making it easy to plan your budget and measure ROI.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/2.png",
-        alt: "Data-Driven Content Strategy",
+        alt: "Transparent Pricing",
         width: 669,
         height: 376,
       },
@@ -577,14 +557,14 @@ export const contentWritingServicesScrollSectionData = {
     {
       id: "content-thirdScroller",
       step: 3,
-      title: "SEO-Optimized Content",
+      title: "ROI-Driven Content",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "We create content that not only engages readers but also performs well in search engines. Our SEO content writing services include keyword optimization, meta descriptions, internal linking, and formatting designed to improve rankings.",
+        "We create content marketing writing that moves the needle. Every project includes measurable KPIs so you can track performance and know you’re getting value.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/3.png",
-        alt: "SEO-Optimized Content",
+        alt: "ROI-Driven Content",
         width: 669,
         height: 376,
       },
@@ -592,14 +572,29 @@ export const contentWritingServicesScrollSectionData = {
     {
       id: "content-fourthScroller",
       step: 4,
-      title: "Quality Assurance & Revisions",
+      title: "Skilled Writing Team",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Every piece of content goes through multiple rounds of editing, proofreading, and quality checks. We guarantee plagiarism-free, error-free content that meets your standards and exceeds your expectations.",
+        "Our professional content writing team includes subject-matter experts, SEO strategists, and editors who ensure every deliverable is publication-ready and plagiarism-free.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "Quality Assurance & Revisions",
+        alt: "Skilled Writing Team",
+        width: 669,
+        height: 376,
+      },
+    },
+    {
+      id: "content-fifthScroller",
+      step: 5,
+      title: "On-Time Delivery",
+      icon: "/assets/images/work/pen-tool.svg",
+      paragraphs: [
+        "Your deadlines matter. Our process guarantees fast turnaround times without compromising quality, perfect for brands with aggressive publishing schedules.",
+      ],
+      image: {
+        src: "/assets/images/scroller/digital-marketing/1.png",
+        alt: "On-Time Delivery",
         width: 669,
         height: 376,
       },
