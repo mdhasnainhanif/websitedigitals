@@ -125,6 +125,28 @@ import {
   customWebDesignAgencyMetadata,
 } from "../../../Data/customWebDesignAgencyData";
 
+// Import Amazon Store Design Services data
+import {
+  amazonStoreDesignServicesBannerData,
+  amazonStoreDesignServicesBannerData2,
+  amazonStoreDesignServicesScrollSectionData,
+  amazonStoreDesignServicesData,
+  amazonStoreDesignServicesStatsData,
+  amazonStoreDesignServicesWorkflowData,
+  amazonStoreDesignServicesWhyChooseUsData,
+  amazonStoreDesignServicesFAQsData,
+  amazonStoreDesignServicesServicesSectionData,
+  amazonStoreDesignServicesWhyChooseUsSectionData,
+  amazonStoreDesignServicesFinalCTAData,
+  amazonStoreDesignServicesImpactCardsData,
+  amazonStoreDesignServicesImpactSectionData,
+  amazonStoreDesignServicesIndustriesSectionData,
+  amazonStoreDesignServicesIndustriesCardsData,
+  amazonStoreDesignServicesTechnologiesSectionData,
+  amazonStoreDesignServicesTechnologiesData,
+  amazonStoreDesignServicesMetadata,
+} from "../../../Data/amazonStoreDesignServicesData";
+
 // Service data mapping
 const serviceDataMap = {
   "landing-page-design-services": {
@@ -226,6 +248,26 @@ const serviceDataMap = {
     finalCTAData: customWebDesignAgencyFinalCTAData,
     faqsData: customWebDesignAgencyFAQsData,
     metadata: customWebDesignAgencyMetadata,
+  },
+  "amazon-store-design-services": {
+    bannerData: amazonStoreDesignServicesBannerData,
+    bannerData2: amazonStoreDesignServicesBannerData2,
+    scrollSectionData: amazonStoreDesignServicesScrollSectionData,
+    servicesData: amazonStoreDesignServicesData,
+    statsData: amazonStoreDesignServicesStatsData,
+    impactSectionData: amazonStoreDesignServicesImpactSectionData,
+    impactCardsData: amazonStoreDesignServicesImpactCardsData,
+    servicesSectionData: amazonStoreDesignServicesServicesSectionData,
+    industriesSectionData: amazonStoreDesignServicesIndustriesSectionData,
+    industriesCardsData: amazonStoreDesignServicesIndustriesCardsData,
+    technologiesSectionData: amazonStoreDesignServicesTechnologiesSectionData,
+    technologiesData: amazonStoreDesignServicesTechnologiesData,
+    workflowData: amazonStoreDesignServicesWorkflowData,
+    whyChooseUsData: amazonStoreDesignServicesWhyChooseUsData,
+    whyChooseUsSectionData: amazonStoreDesignServicesWhyChooseUsSectionData,
+    finalCTAData: amazonStoreDesignServicesFinalCTAData,
+    faqsData: amazonStoreDesignServicesFAQsData,
+    metadata: amazonStoreDesignServicesMetadata,
   },
 };
 
