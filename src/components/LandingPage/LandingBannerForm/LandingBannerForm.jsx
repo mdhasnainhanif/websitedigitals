@@ -44,7 +44,6 @@ const LandingBannerForm = ({
             <Container>
                 <div className={styles.formWrapper}>
                     <h2 className={styles.heading}>{heading}</h2>
-                    <p className="text-center mb-4" style={{color: '#666', fontSize: '1rem'}}>Get in touch with us</p>
 
                     <Form onSubmit={handleSubmit}>
                         <Row className="gy-4">
