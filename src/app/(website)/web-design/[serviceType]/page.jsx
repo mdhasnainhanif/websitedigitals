@@ -81,6 +81,72 @@ import {
   websiteRedesignServicesMetadata,
 } from "../../../Data/websiteRedesignServicesData";
 
+// Import B2B Web Design Agency data
+import {
+  b2bWebDesignAgencyBannerData,
+  b2bWebDesignAgencyBannerData2,
+  b2bWebDesignAgencyScrollSectionData,
+  b2bWebDesignAgencyData,
+  b2bWebDesignAgencyStatsData,
+  b2bWebDesignAgencyWorkflowData,
+  b2bWebDesignAgencyWhyChooseUsData,
+  b2bWebDesignAgencyFAQsData,
+  b2bWebDesignAgencyServicesSectionData,
+  b2bWebDesignAgencyWhyChooseUsSectionData,
+  b2bWebDesignAgencyFinalCTAData,
+  b2bWebDesignAgencyImpactCardsData,
+  b2bWebDesignAgencyImpactSectionData,
+  b2bWebDesignAgencyIndustriesSectionData,
+  b2bWebDesignAgencyIndustriesCardsData,
+  b2bWebDesignAgencyTechnologiesSectionData,
+  b2bWebDesignAgencyTechnologiesData,
+  b2bWebDesignAgencyMetadata,
+} from "../../../Data/b2bWebDesignAgencyData";
+
+// Import Custom Web Design Agency data
+import {
+  customWebDesignAgencyBannerData,
+  customWebDesignAgencyBannerData2,
+  customWebDesignAgencyScrollSectionData,
+  customWebDesignAgencyData,
+  customWebDesignAgencyStatsData,
+  customWebDesignAgencyWorkflowData,
+  customWebDesignAgencyWhyChooseUsData,
+  customWebDesignAgencyFAQsData,
+  customWebDesignAgencyServicesSectionData,
+  customWebDesignAgencyWhyChooseUsSectionData,
+  customWebDesignAgencyFinalCTAData,
+  customWebDesignAgencyImpactCardsData,
+  customWebDesignAgencyImpactSectionData,
+  customWebDesignAgencyIndustriesSectionData,
+  customWebDesignAgencyIndustriesCardsData,
+  customWebDesignAgencyTechnologiesSectionData,
+  customWebDesignAgencyTechnologiesData,
+  customWebDesignAgencyMetadata,
+} from "../../../Data/customWebDesignAgencyData";
+
+// Import Amazon Store Design Services data
+import {
+  amazonStoreDesignServicesBannerData,
+  amazonStoreDesignServicesBannerData2,
+  amazonStoreDesignServicesScrollSectionData,
+  amazonStoreDesignServicesData,
+  amazonStoreDesignServicesStatsData,
+  amazonStoreDesignServicesWorkflowData,
+  amazonStoreDesignServicesWhyChooseUsData,
+  amazonStoreDesignServicesFAQsData,
+  amazonStoreDesignServicesServicesSectionData,
+  amazonStoreDesignServicesWhyChooseUsSectionData,
+  amazonStoreDesignServicesFinalCTAData,
+  amazonStoreDesignServicesImpactCardsData,
+  amazonStoreDesignServicesImpactSectionData,
+  amazonStoreDesignServicesIndustriesSectionData,
+  amazonStoreDesignServicesIndustriesCardsData,
+  amazonStoreDesignServicesTechnologiesSectionData,
+  amazonStoreDesignServicesTechnologiesData,
+  amazonStoreDesignServicesMetadata,
+} from "../../../Data/amazonStoreDesignServicesData";
+
 // Service data mapping
 const serviceDataMap = {
   "landing-page-design-services": {
@@ -143,11 +209,71 @@ const serviceDataMap = {
     faqsData: websiteRedesignServicesFAQsData,
     metadata: websiteRedesignServicesMetadata,
   },
+  "b2b-web-design-agency": {
+    bannerData: b2bWebDesignAgencyBannerData,
+    bannerData2: b2bWebDesignAgencyBannerData2,
+    scrollSectionData: b2bWebDesignAgencyScrollSectionData,
+    servicesData: b2bWebDesignAgencyData,
+    statsData: b2bWebDesignAgencyStatsData,
+    impactSectionData: b2bWebDesignAgencyImpactSectionData,
+    impactCardsData: b2bWebDesignAgencyImpactCardsData,
+    servicesSectionData: b2bWebDesignAgencyServicesSectionData,
+    industriesSectionData: b2bWebDesignAgencyIndustriesSectionData,
+    industriesCardsData: b2bWebDesignAgencyIndustriesCardsData,
+    technologiesSectionData: b2bWebDesignAgencyTechnologiesSectionData,
+    technologiesData: b2bWebDesignAgencyTechnologiesData,
+    workflowData: b2bWebDesignAgencyWorkflowData,
+    whyChooseUsData: b2bWebDesignAgencyWhyChooseUsData,
+    whyChooseUsSectionData: b2bWebDesignAgencyWhyChooseUsSectionData,
+    finalCTAData: b2bWebDesignAgencyFinalCTAData,
+    faqsData: b2bWebDesignAgencyFAQsData,
+    metadata: b2bWebDesignAgencyMetadata,
+  },
+  "custom-web-design-agency": {
+    bannerData: customWebDesignAgencyBannerData,
+    bannerData2: customWebDesignAgencyBannerData2,
+    scrollSectionData: customWebDesignAgencyScrollSectionData,
+    servicesData: customWebDesignAgencyData,
+    statsData: customWebDesignAgencyStatsData,
+    impactSectionData: customWebDesignAgencyImpactSectionData,
+    impactCardsData: customWebDesignAgencyImpactCardsData,
+    servicesSectionData: customWebDesignAgencyServicesSectionData,
+    industriesSectionData: customWebDesignAgencyIndustriesSectionData,
+    industriesCardsData: customWebDesignAgencyIndustriesCardsData,
+    technologiesSectionData: customWebDesignAgencyTechnologiesSectionData,
+    technologiesData: customWebDesignAgencyTechnologiesData,
+    workflowData: customWebDesignAgencyWorkflowData,
+    whyChooseUsData: customWebDesignAgencyWhyChooseUsData,
+    whyChooseUsSectionData: customWebDesignAgencyWhyChooseUsSectionData,
+    finalCTAData: customWebDesignAgencyFinalCTAData,
+    faqsData: customWebDesignAgencyFAQsData,
+    metadata: customWebDesignAgencyMetadata,
+  },
+  "amazon-store-design-services": {
+    bannerData: amazonStoreDesignServicesBannerData,
+    bannerData2: amazonStoreDesignServicesBannerData2,
+    scrollSectionData: amazonStoreDesignServicesScrollSectionData,
+    servicesData: amazonStoreDesignServicesData,
+    statsData: amazonStoreDesignServicesStatsData,
+    impactSectionData: amazonStoreDesignServicesImpactSectionData,
+    impactCardsData: amazonStoreDesignServicesImpactCardsData,
+    servicesSectionData: amazonStoreDesignServicesServicesSectionData,
+    industriesSectionData: amazonStoreDesignServicesIndustriesSectionData,
+    industriesCardsData: amazonStoreDesignServicesIndustriesCardsData,
+    technologiesSectionData: amazonStoreDesignServicesTechnologiesSectionData,
+    technologiesData: amazonStoreDesignServicesTechnologiesData,
+    workflowData: amazonStoreDesignServicesWorkflowData,
+    whyChooseUsData: amazonStoreDesignServicesWhyChooseUsData,
+    whyChooseUsSectionData: amazonStoreDesignServicesWhyChooseUsSectionData,
+    finalCTAData: amazonStoreDesignServicesFinalCTAData,
+    faqsData: amazonStoreDesignServicesFAQsData,
+    metadata: amazonStoreDesignServicesMetadata,
+  },
 };
 
 // Generate metadata for each service page
 export async function generateMetadata({ params }) {
-  const { serviceType } = params;
+  const { serviceType } = await params;
   const serviceData = serviceDataMap[serviceType];
 
   if (!serviceData || !serviceData.metadata) {
@@ -160,8 +286,8 @@ export async function generateMetadata({ params }) {
   return serviceData.metadata;
 }
 
-const WebDesignServicePage = ({ params }) => {
-  const { serviceType } = params;
+const WebDesignServicePage = async ({ params }) => {
+  const { serviceType } = await params;
 
   // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];
