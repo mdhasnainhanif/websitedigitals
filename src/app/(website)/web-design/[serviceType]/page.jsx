@@ -81,6 +81,28 @@ import {
   websiteRedesignServicesMetadata,
 } from "../../../Data/websiteRedesignServicesData";
 
+// Import B2B Web Design Agency data
+import {
+  b2bWebDesignAgencyBannerData,
+  b2bWebDesignAgencyBannerData2,
+  b2bWebDesignAgencyScrollSectionData,
+  b2bWebDesignAgencyData,
+  b2bWebDesignAgencyStatsData,
+  b2bWebDesignAgencyWorkflowData,
+  b2bWebDesignAgencyWhyChooseUsData,
+  b2bWebDesignAgencyFAQsData,
+  b2bWebDesignAgencyServicesSectionData,
+  b2bWebDesignAgencyWhyChooseUsSectionData,
+  b2bWebDesignAgencyFinalCTAData,
+  b2bWebDesignAgencyImpactCardsData,
+  b2bWebDesignAgencyImpactSectionData,
+  b2bWebDesignAgencyIndustriesSectionData,
+  b2bWebDesignAgencyIndustriesCardsData,
+  b2bWebDesignAgencyTechnologiesSectionData,
+  b2bWebDesignAgencyTechnologiesData,
+  b2bWebDesignAgencyMetadata,
+} from "../../../Data/b2bWebDesignAgencyData";
+
 // Service data mapping
 const serviceDataMap = {
   "landing-page-design-services": {
@@ -143,11 +165,31 @@ const serviceDataMap = {
     faqsData: websiteRedesignServicesFAQsData,
     metadata: websiteRedesignServicesMetadata,
   },
+  "b2b-web-design-agency": {
+    bannerData: b2bWebDesignAgencyBannerData,
+    bannerData2: b2bWebDesignAgencyBannerData2,
+    scrollSectionData: b2bWebDesignAgencyScrollSectionData,
+    servicesData: b2bWebDesignAgencyData,
+    statsData: b2bWebDesignAgencyStatsData,
+    impactSectionData: b2bWebDesignAgencyImpactSectionData,
+    impactCardsData: b2bWebDesignAgencyImpactCardsData,
+    servicesSectionData: b2bWebDesignAgencyServicesSectionData,
+    industriesSectionData: b2bWebDesignAgencyIndustriesSectionData,
+    industriesCardsData: b2bWebDesignAgencyIndustriesCardsData,
+    technologiesSectionData: b2bWebDesignAgencyTechnologiesSectionData,
+    technologiesData: b2bWebDesignAgencyTechnologiesData,
+    workflowData: b2bWebDesignAgencyWorkflowData,
+    whyChooseUsData: b2bWebDesignAgencyWhyChooseUsData,
+    whyChooseUsSectionData: b2bWebDesignAgencyWhyChooseUsSectionData,
+    finalCTAData: b2bWebDesignAgencyFinalCTAData,
+    faqsData: b2bWebDesignAgencyFAQsData,
+    metadata: b2bWebDesignAgencyMetadata,
+  },
 };
 
 // Generate metadata for each service page
 export async function generateMetadata({ params }) {
-  const { serviceType } = params;
+  const { serviceType } = await params;
   const serviceData = serviceDataMap[serviceType];
 
   if (!serviceData || !serviceData.metadata) {
@@ -160,8 +202,8 @@ export async function generateMetadata({ params }) {
   return serviceData.metadata;
 }
 
-const WebDesignServicePage = ({ params }) => {
-  const { serviceType } = params;
+const WebDesignServicePage = async ({ params }) => {
+  const { serviceType } = await params;
 
   // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];

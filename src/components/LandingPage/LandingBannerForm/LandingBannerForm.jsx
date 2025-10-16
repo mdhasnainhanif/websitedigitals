@@ -123,8 +123,8 @@ const LandingBannerForm = ({
                                 </Form.Group>
                             </Col>
 
-                            <Col md={12} className="text-center mt-3">
-                                <Button type="submit" className={styles.submitBtn}>
+                            <Col md={12} className="text-center mt-3 link-area">
+                                <Button type="submit" className="offer-btn primary">
                                     {buttonText} &nbsp; <VideoIcon/>
                                 </Button>
                             </Col>
