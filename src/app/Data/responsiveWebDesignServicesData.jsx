@@ -591,9 +591,8 @@ export const responsiveWebDesignFAQsData = [
 // Services Section Data (Section 5) - for DevelopmentCardSlider
 export const responsiveWebDesignServicesSectionData = {
   heading: "Our Comprehensive Responsive Web Design Services",
-  description:
-    "We provide complete responsive web design solutions that cover every aspect of modern web development. Each service is designed to improve performance, enhance user experience, and help you reach your business goals. Our core responsive web design offerings:",
-  showDescription: true,
+ 
+  showDescription: false,
   cta: {
     label: "Explore Design Options",
     href: "#",

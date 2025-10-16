@@ -469,13 +469,9 @@ export const appStoreOptimizationFAQsData = [
     question: "What are the best practices for app listing optimization?",
     answer: "Best practices for an app listing optimization service include keyword research, engaging app titles, optimized screenshots and icons, and localized descriptions. Regular A/B testing and analytics-driven updates help maintain visibility and improve install rates.",
   },
+ 
   {
     id: 16,
-    question: "What is the cost of ASO services per month?",
-    answer: "The cost of a mobile app store optimization service depends on scope, targeted markets, and monitoring levels. Pricing typically ranges from basic monthly packages to full-service management, with advanced plans including A/B testing and competitor analysis.",
-  },
-  {
-    id: 17,
     question: "Why should I hire an expert app store optimization consultant?",
     answer: "An expert app store optimization consultant provides tailored strategies, competitor insights, and data-driven recommendations. With in-depth knowledge of algorithm updates and store mechanics, consultants guide you in achieving measurable ranking improvements and sustained growth.",
   },

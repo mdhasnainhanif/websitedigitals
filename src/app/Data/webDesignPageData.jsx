@@ -18,7 +18,7 @@ export const webDesignBannerData = {
   ],
   
   formConfig: {
-    buttonText: "Design My Website",
+    buttonText: "Let’s Build Your Website",
     heading: "Get In Touch With Us",
     helpOptions: [
       { value: "custom-web-design", label: "Custom Web Design" },
@@ -301,33 +301,33 @@ export const webDesignTechnologiesData = {
   heading: "Technologies We Use",
   categories: [
     {
-      title: "Magento",
-      description: "As the best Magento ecommerce website development company, we create enterprise-ready stores with multi-store support, advanced catalog management, and PCI-compliant checkout to drive growth and handle large-scale operations.",
+      title: "Design & Prototyping Tools",
+      description: "Figma, Adobe XD, Sketch, InVision",
       icon: "/assets/images/technologyIcons.png"
     },
     {
-      title: "WooCommerce",
-      description: "Our WooCommerce ecommerce development agency builds flexible WordPress stores with custom themes, plugin integrations, and SEO-friendly architecture for easy management and better visibility for small to mid-sized businesses.",
+      title: "Front-End Design & Development",
+      description: "HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS",
       icon: "/assets/images/technologyIcons.png"
     },
     {
-      title: "Salesforce",
-      description: "We are a Salesforce Commerce Cloud development firm helping brands deliver personalized shopping journeys powered by Einstein AI, unified CRM data, and seamless omnichannel integrations.",
+      title: "Responsive & UI Frameworks",
+      description: "Bootstrap, Material UI, Flexbox & CSS Grid",
       icon: "/assets/images/technologyIcons.png"
     },
     {
-      title: "Drupal",
-      description: "As a Drupal commerce development company, we build content-rich ecommerce sites with editorial-friendly workflows, custom modules, and robust performance for businesses prioritizing content and commerce together.",
+      title: "Content Management & Web Builders",
+      description: "WordPress, Elementor, Webflow, Shopify",
       icon: "/assets/images/technologyIcons.png"
     },
     {
-      title: "Headless",
-      description: "Our headless ecommerce development company builds lightning-fast, API-first storefronts using React or Vue, enabling omnichannel selling, faster load times, and future-proof scalability.",
+      title: "E-Commerce & Custom Solutions",
+      description: "WooCommerce, Shopify Plus, Headless Commerce (React/Next.js)",
       icon: "/assets/images/technologyIcons.png"
     },
     {
-      title: "Laravel",
-      description: "We are a Laravel ecommerce development company delivering secure, custom-built online stores with clean code architecture, rapid development cycles, and powerful API integrations for complex business needs.",
+      title: "Performance & Accessibility",
+      description: "Core Web Vitals Optimization, Google Lighthouse, ARIA Accessibility Standards",
       icon: "/assets/images/technologyIcons.png"
     }
   ]
@@ -339,7 +339,8 @@ export const webDesignFinalCTAData = {
   description: ["Don't let weak design hold your business back. With a trusted web design company, you get a site that's responsive, search-friendly, and built to convert visitors into clients."],
   cta: {
     text: "Let's Start Building",
-    href: "/contact"
+    href: "/contact",
+    className: "offer-btn primary",
   },
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
@@ -349,11 +350,11 @@ export const webDesignFinalCTAData = {
     height: 400,
   },
   isCta: true,
-  cta: {
-    text: "Launch My Ecommerce Site",
-    href: "#",
-    className: "offer-btn primary",
-  },
+  // cta: {
+  //   text: "Launch My Ecommerce Site",
+  //   href: "#",
+  //   className: "offer-btn primary",
+  // },
 };
 
 // /data/whyChooseData.js
