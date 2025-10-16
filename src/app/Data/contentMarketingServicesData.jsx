@@ -24,7 +24,7 @@ export const contentMarketingServicesBannerData = {
   image: null,
   formConfig: {
     buttonText: "Plan My Content Now",
-    heading: "Ready to Transform Your Content Marketing?",
+    heading: "Get in touch with us",
     helpOptions: [
       { value: "content-strategy", label: "Content Strategy & Planning" },
       { value: "content-creation", label: "Content Creation & Writing" },

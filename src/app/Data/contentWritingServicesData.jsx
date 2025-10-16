@@ -603,8 +603,5 @@ export const contentWritingServicesScrollSectionData = {
       },
     },
   ],
-  cta: {
-    href: "#",
-    label: "Start Your Content Strategy",
-  },
+  cta: false,
 };
