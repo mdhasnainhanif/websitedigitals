@@ -103,6 +103,28 @@ import {
   b2bWebDesignAgencyMetadata,
 } from "../../../Data/b2bWebDesignAgencyData";
 
+// Import Custom Web Design Agency data
+import {
+  customWebDesignAgencyBannerData,
+  customWebDesignAgencyBannerData2,
+  customWebDesignAgencyScrollSectionData,
+  customWebDesignAgencyData,
+  customWebDesignAgencyStatsData,
+  customWebDesignAgencyWorkflowData,
+  customWebDesignAgencyWhyChooseUsData,
+  customWebDesignAgencyFAQsData,
+  customWebDesignAgencyServicesSectionData,
+  customWebDesignAgencyWhyChooseUsSectionData,
+  customWebDesignAgencyFinalCTAData,
+  customWebDesignAgencyImpactCardsData,
+  customWebDesignAgencyImpactSectionData,
+  customWebDesignAgencyIndustriesSectionData,
+  customWebDesignAgencyIndustriesCardsData,
+  customWebDesignAgencyTechnologiesSectionData,
+  customWebDesignAgencyTechnologiesData,
+  customWebDesignAgencyMetadata,
+} from "../../../Data/customWebDesignAgencyData";
+
 // Service data mapping
 const serviceDataMap = {
   "landing-page-design-services": {
@@ -184,6 +206,26 @@ const serviceDataMap = {
     finalCTAData: b2bWebDesignAgencyFinalCTAData,
     faqsData: b2bWebDesignAgencyFAQsData,
     metadata: b2bWebDesignAgencyMetadata,
+  },
+  "custom-web-design-agency": {
+    bannerData: customWebDesignAgencyBannerData,
+    bannerData2: customWebDesignAgencyBannerData2,
+    scrollSectionData: customWebDesignAgencyScrollSectionData,
+    servicesData: customWebDesignAgencyData,
+    statsData: customWebDesignAgencyStatsData,
+    impactSectionData: customWebDesignAgencyImpactSectionData,
+    impactCardsData: customWebDesignAgencyImpactCardsData,
+    servicesSectionData: customWebDesignAgencyServicesSectionData,
+    industriesSectionData: customWebDesignAgencyIndustriesSectionData,
+    industriesCardsData: customWebDesignAgencyIndustriesCardsData,
+    technologiesSectionData: customWebDesignAgencyTechnologiesSectionData,
+    technologiesData: customWebDesignAgencyTechnologiesData,
+    workflowData: customWebDesignAgencyWorkflowData,
+    whyChooseUsData: customWebDesignAgencyWhyChooseUsData,
+    whyChooseUsSectionData: customWebDesignAgencyWhyChooseUsSectionData,
+    finalCTAData: customWebDesignAgencyFinalCTAData,
+    faqsData: customWebDesignAgencyFAQsData,
+    metadata: customWebDesignAgencyMetadata,
   },
 };
 
