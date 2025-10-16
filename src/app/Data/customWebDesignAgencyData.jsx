@@ -417,8 +417,7 @@ export const customWebDesignAgencyTechnologiesData = [
 // Workflow Data (for StepSection component)
 export const customWebDesignAgencyWorkflowData = {
   title: "Our Process Behind Every Custom Website",
-  description:
-    "Every custom website project follows a structured approach that ensures quality, performance, and alignment with business goals. Our proven process delivers results that exceed expectations.",
+  
   steps: [
     {
       id: 1,

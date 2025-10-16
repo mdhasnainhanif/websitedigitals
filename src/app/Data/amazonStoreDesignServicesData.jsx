@@ -128,7 +128,7 @@ export const amazonStoreDesignServicesData = [
 
 export const amazonStoreDesignServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "Why Amazon Store Design Matters",
+  heading: "Why Choose Our Amazon Store Design Services?",
   description: [""],
   showDescription: false,
   items: [
@@ -311,9 +311,8 @@ export const amazonStoreDesignServicesImpactCardsData = [
 // Impact Section Data (for DevelopmentCards component)
 export const amazonStoreDesignServicesImpactSectionData = {
   heading: "Why Amazon Store Design Matters",
-  showDescription: true,
-  description:
-    "A well-designed Amazon store is more than just visual appeal. It's a strategic tool that drives conversions, builds brand trust, and maximizes your marketplace potential through optimized user experience and compliance.",
+  showDescription: false,
+ 
 };
 
 // Industries Data

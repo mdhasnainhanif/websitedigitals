@@ -170,22 +170,22 @@ export const webDevelopmentServicesData = [
 
 export const webDevelopmentServicesScrollSectionData = {
   sectionClass: "scroller-section gray-section",
-  heading: "Why Website Development Is Essential for Business Success",
+  heading: "What Makes Us the Right Web Development Firm",
   description: [
-    "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success. Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results Below are the key reasons why partnering with a professional web development company or a custom website solutions provider benefits businesses across all industries."
+    "A strong web development firm does more than deliver code. It understands your goals, maintains clear communication, and builds solutions designed to produce measurable results. \n  At Website Digitals, we combine certified expertise with proven processes to complete every project on time, within budget, and ready to perform.\n Here’s what makes our approach stand out. "
   ],
   items: [
     {
       id: "webdev-firstScroller",
       step: 1,
-      title: "Supports Your Goals",
+      title: "Real-time Communication",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "An effective website is built to align with your business objectives from day one. Scalable and secure development ensures your platform can expand with your growth while safeguarding sensitive data. By applying responsive design and mobile-first principles, your site stays accessible to users on any device, enabling business expansion without costly rebuilds.",
+        "Working with US-based developers ensures direct and real-time collaboration without time zone delays or communication gaps. We understand the standards of United States business credibility and keep projects moving smoothly from kickoff to delivery.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "Supports Your Goals",
+        alt: "Real-time Communication",
         width: 669,
         height: 376,
       },
@@ -193,10 +193,10 @@ export const webDevelopmentServicesScrollSectionData = {
     {
       id: "webdev-secondScroller",
       step: 2,
-      title: "Builds Trust",
+      title: "Certified Developers & Proven Processes",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Visitors are more likely to engage with brands that offer a fast, secure, and visually consistent online experience. Certified developers who adhere to quality assurance standards, such as ISO 9001 for process reliability and WCAG accessibility guidelines for inclusivity, create platforms that inspire confidence. Beyond technical compliance, being featured in respected directories like Clutch and GoodFirms further reinforces credibility and professionalism.",
+        "Our team includes Microsoft Certified professionals and Google Partner specialists, applying industry-recognized best practices to every project. With structured workflows that minimize risks and maintain quality, we deliver results that are consistent, reliable, and built to last.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/2.png",
@@ -208,14 +208,14 @@ export const webDevelopmentServicesScrollSectionData = {
     {
       id: "webdev-thirdScroller",
       step: 3,
-      title: "Drives Results",
+      title: "Transparent Pricing",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Modern web development goes beyond visual appeal. SEO-driven strategies that prioritize web accessibility, performance optimization, and compliance with search engine best practices make websites easier to find and navigate more quickly. These improvements consistently lead to higher user engagement and increased conversion rates, transforming visitors into customers.",
+        "From the first proposal to the final invoice, our transparent pricing approach provides a clear breakdown of costs so you can budget with confidence. No hidden fees. Just honest pricing that supports long-term trust.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/3.png",
-        alt: "Drives Results",
+        alt: "Transparent Pricing",
         width: 669,
         height: 376,
       },
@@ -223,14 +223,14 @@ export const webDevelopmentServicesScrollSectionData = {
     {
       id: "webdev-fourthScroller",
       step: 4,
-      title: "Leverages Advanced Technologies",
+      title: "SEO-Optimized Websites from Day One",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Staying competitive means choosing the right tools for your needs. Modern frameworks such as React, Angular, and Node.js are the latest technologies that support fast, interactive, and maintainable websites, helping ensure your platform delivers strong performance today while remaining flexible for future advancements.",
+        "Every website is launched with on-page optimization and structured data implemented from the start. This helps search engines properly index your site and gives you an early boost in rankings, following the latest technical SEO best practices.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/4.png",
-        alt: "Leverages Advanced Technologies",
+        alt: "SEO-Optimized Websites from Day One",
         width: 669,
         height: 376,
       },
@@ -238,14 +238,14 @@ export const webDevelopmentServicesScrollSectionData = {
     {
       id: "webdev-fifthScroller",
       step: 5,
-      title: "Creates a Better User Experience",
+      title: "Expertise Across Industries",
       icon: "/assets/images/work/pen-tool.svg",
       paragraphs: [
-        "Professional web development companies carefully consider how every design element, feature, and functionality impacts the end user. This attention to detail results in intuitive navigation, consistent branding, and seamless interaction that encourage visitors to stay longer, explore more, and take meaningful action.",
+        "We have delivered solutions for healthcare, finance, and retail web solutions, adapting strategies to meet each sector’s needs. Our industry experience includes compliance with standards such as HIPAA for healthcare and PCI DSS for secure financial transactions.",
       ],
       image: {
         src: "/assets/images/scroller/digital-marketing/1.png",
-        alt: "Creates a Better User Experience",
+        alt: "Expertise Across Industries",
         width: 669,
         height: 376,
       },
