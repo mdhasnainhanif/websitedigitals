@@ -125,6 +125,8 @@ import {
   squarespaceDevelopmentMetadata,
 } from "../../../Data/squarespaceDevelopmentData";
 
+
+
 // Service data mapping
 const serviceDataMap = {
   "ecommerce-development-company": {
