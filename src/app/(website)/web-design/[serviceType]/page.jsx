@@ -59,6 +59,28 @@ import {
   responsiveWebDesignMetadata,
 } from "../../../Data/responsiveWebDesignServicesData";
 
+// Import Website Redesign Services data
+import {
+  websiteRedesignServicesBannerData,
+  websiteRedesignServicesBannerData2,
+  websiteRedesignServicesScrollSectionData,
+  websiteRedesignServicesData,
+  websiteRedesignServicesStatsData,
+  websiteRedesignServicesWorkflowData,
+  websiteRedesignServicesWhyChooseUsData,
+  websiteRedesignServicesFAQsData,
+  websiteRedesignServicesServicesSectionData,
+  websiteRedesignServicesWhyChooseUsSectionData,
+  websiteRedesignServicesFinalCTAData,
+  websiteRedesignServicesImpactCardsData,
+  websiteRedesignServicesImpactSectionData,
+  websiteRedesignServicesIndustriesSectionData,
+  websiteRedesignServicesIndustriesCardsData,
+  websiteRedesignServicesTechnologiesSectionData,
+  websiteRedesignServicesTechnologiesData,
+  websiteRedesignServicesMetadata,
+} from "../../../Data/websiteRedesignServicesData";
+
 // Service data mapping
 const serviceDataMap = {
   "landing-page-design-services": {
@@ -100,6 +122,26 @@ const serviceDataMap = {
     finalCTAData: responsiveWebDesignFinalCTAData,
     faqsData: responsiveWebDesignFAQsData,
     metadata: responsiveWebDesignMetadata,
+  },
+  "website-redesign-services": {
+    bannerData: websiteRedesignServicesBannerData,
+    bannerData2: websiteRedesignServicesBannerData2,
+    scrollSectionData: websiteRedesignServicesScrollSectionData,
+    servicesData: websiteRedesignServicesData,
+    statsData: websiteRedesignServicesStatsData,
+    impactSectionData: websiteRedesignServicesImpactSectionData,
+    impactCardsData: websiteRedesignServicesImpactCardsData,
+    servicesSectionData: websiteRedesignServicesServicesSectionData,
+    industriesSectionData: websiteRedesignServicesIndustriesSectionData,
+    industriesCardsData: websiteRedesignServicesIndustriesCardsData,
+    technologiesSectionData: websiteRedesignServicesTechnologiesSectionData,
+    technologiesData: websiteRedesignServicesTechnologiesData,
+    workflowData: websiteRedesignServicesWorkflowData,
+    whyChooseUsData: websiteRedesignServicesWhyChooseUsData,
+    whyChooseUsSectionData: websiteRedesignServicesWhyChooseUsSectionData,
+    finalCTAData: websiteRedesignServicesFinalCTAData,
+    faqsData: websiteRedesignServicesFAQsData,
+    metadata: websiteRedesignServicesMetadata,
   },
 };
 
