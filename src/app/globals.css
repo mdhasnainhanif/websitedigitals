@@ -9431,8 +9431,10 @@ span.colorPrimaryDark {
   padding: 1rem 0rem;
 }
 
-.developmentCardSlider .owl-stage {
-  padding-bottom: 0rem;
+.newDevCardSlider .owl-stage {
+  padding-bottom: 0rem !important;
+  display: flex;
+  padding-top: 1rem;
 }
 
 .landingPageScrollSection {

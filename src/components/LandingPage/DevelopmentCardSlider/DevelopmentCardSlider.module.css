@@ -124,6 +124,7 @@
   justify-content: space-between;
   background-color: #001135;
   margin: 0 15px;
+  height: 100%;
 }
 
 .serviceCard::before {
