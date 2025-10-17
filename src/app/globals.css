@@ -9431,6 +9431,10 @@ span.colorPrimaryDark {
   padding: 1rem 0rem;
 }
 
+.developmentCardSlider .owl-stage {
+  padding-bottom: 0rem;
+}
+
 .landingPageScrollSection {
   clip-path: polygon(0 2.5%, 100% 0, 100% 100%, 0% 100%);
   padding-top: 4rem;

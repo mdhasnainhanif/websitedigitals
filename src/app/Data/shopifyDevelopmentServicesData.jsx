@@ -147,7 +147,6 @@ export const shopifyDevelopmentScrollSectionData = {
   heading: "Why Clients Choose Our Shopify Development Services",
   description: [
     "Our Shopify services are built on proven expertise, tailored solutions, and a commitment to measurable results. Each advantage we offer ensures your store is designed, developed, and managed for sustained growth.",
-    "",
     "Here's what sets our Shopify services apart:",
   ],
   items: [

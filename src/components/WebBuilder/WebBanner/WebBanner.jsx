@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LandingBannerForm from "@/components/LandingPage/LandingBannerForm/LandingBannerForm";
-import BannerImageSlider from "@/components/BannerImageSlider/BannerImageSlider";
 import TechnologyNameSlider from "@/components/TechnologyNameSlider/TechnologyNameSlider";
 
 export default function WebBuilderBanner({

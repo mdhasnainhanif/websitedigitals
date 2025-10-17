@@ -312,7 +312,6 @@ export const amazonStoreDesignServicesImpactCardsData = [
 export const amazonStoreDesignServicesImpactSectionData = {
   heading: "Why Amazon Store Design Matters",
   showDescription: false,
- 
 };
 
 // Industries Data
@@ -410,8 +409,7 @@ export const amazonStoreDesignServicesTechnologiesData = [
 // Workflow Data (for StepSection component)
 export const amazonStoreDesignServicesWorkflowData = {
   title: "Our Amazon Store Design Process",
-  description:
-    "",
+  description: "",
   showDescription: false,
   steps: [
     {
