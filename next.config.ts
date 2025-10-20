@@ -4,7 +4,6 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ['jquery', 'owl.carousel'],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",

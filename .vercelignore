@@ -1,0 +1,20 @@
+# Ignore development files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore build artifacts
+.next/
+out/
+
+# Ignore lock files that might cause conflicts
+package-lock.json
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
