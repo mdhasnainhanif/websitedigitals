@@ -262,7 +262,7 @@ a {
 
   /* Logo styling */
   .logo img {
-    height: 40px;
+    height: 30px;
     /* Adjust logo size */
   }
 
@@ -10185,6 +10185,7 @@ ul.count-ul > li::before {
   padding: 0.5rem 0;
   transition: opacity 0.3s;
   color: var(--text-color);
+  display: flex;
 }
 .scroller-item > h3 > span,
 .scroller-list > li > a > span {
@@ -10645,4 +10646,8 @@ ul.count-ul > li::before {
 
 .rowGap2 {
   row-gap: var(--bs-gutter-x);
+}
+
+.section-heading.text-center{
+  margin-bottom: 3rem;
 }

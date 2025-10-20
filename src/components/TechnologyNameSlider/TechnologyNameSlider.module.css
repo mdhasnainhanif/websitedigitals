@@ -8,7 +8,7 @@
 .technologyNameSliderContainer {
   display: flex;
   gap: 4rem;
-  overflow: hidden;
+  overflow-x: hidden;
   width: max-content;
   animation: 20s linear infinite scrollLeft;
   padding: 1rem 0rem;

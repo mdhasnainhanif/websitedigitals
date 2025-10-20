@@ -25,7 +25,7 @@ export default function WebBuilderBanner({
         className={`inner-banner gradient-circle leftCenter-gradient ${className}`}
       >
         <div className="container">
-          <div className="row align-items-center mb-5 justify-content-start">
+          <div className="row align-items-center mb-5 justify-content-start rowGap2">
             {/* Left Column - Content */}
             <div className={`col-md-6 ${col}`}>
               {data?.isBreadcrumb && (
@@ -44,14 +44,7 @@ export default function WebBuilderBanner({
               )}
 
               <div className="inner-bannerHeading landingInnerHeading">
-                <h1 style={{ 
-                  fontFamily: 'BlinkMacSystem, sans-serif',
-                  fontSize: 'clamp(2rem, 5vw, 4rem)',
-                  fontWeight: '700',
-                  lineHeight: '1.2',
-                  margin: '0 0 1rem 0',
-                  color: '#222'
-                }}>
+                <h1>
                   {typeof data?.heading === "string"
                     ? data.heading.split(/(\[\[.*?\]\])/).map((chunk, i) =>
                       chunk.startsWith("[[") && chunk.endsWith("]]") ? (
@@ -136,19 +129,15 @@ export default function WebBuilderBanner({
 
                 {/* Main image */}
                 {data?.image && data?.image !== false && (
-                  <Image
+                  <img
                     className={data?.image?.className || "width-100"}
                     src={
                       data?.image?.src ||
                       "/assets/images-webp/web-builder-Banner.webp"
                     }
-                    width={data?.image?.width || 600}
-                    height={data?.image?.height || 400}
+                    width={data?.image?.width}
+                    height={data?.image?.height}
                     alt={data?.image?.alt || "Default Image"}
-                    priority={true}
-                    loading="eager"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                    style={{ width: '100%', height: 'auto' }}
                   />
                 )}
                 {islandingPage && (

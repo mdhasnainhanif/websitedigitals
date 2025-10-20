@@ -4,6 +4,12 @@
     padding-bottom: 8rem !important;
 }
 
+@media (max-width: 768px) {
+    .section {
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
 .workCard {
     background: #324233;
     padding: 1rem;
@@ -25,4 +31,9 @@
 
 .viewCaseStudyButton {
     font-size: 0.875rem;
+    color: #fff;
+}
+
+.viewCaseStudyButton a{
+    color: #fff !important;
 }

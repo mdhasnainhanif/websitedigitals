@@ -16,7 +16,7 @@
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.highlighted::before {
+/* .highlighted::before {
   content: "";
   position: absolute;
   top: 1rem;
@@ -27,4 +27,4 @@
   background-size: contain;
   opacity: 0.1;
   overflow: hidden;
-}
+} */

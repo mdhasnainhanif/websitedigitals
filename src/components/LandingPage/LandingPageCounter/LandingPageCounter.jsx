@@ -58,7 +58,7 @@ const LandingPageCounter = ({ statsData = null }) => {
     return (
         <div ref={counterRef} className="container text-center my-5">
             <div
-                className="row justify-content-center align-items-center text-white section-padding rounded-4 shadow-sm"
+                className="row rowGap2 justify-content-center align-items-center text-white section-padding rounded-4 shadow-sm"
                 style={{
                     backgroundImage: 'url("../assets/images/counterbg.webp")',
                     backgroundSize: "cover",
