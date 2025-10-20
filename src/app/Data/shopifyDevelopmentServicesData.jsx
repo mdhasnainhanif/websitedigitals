@@ -2,14 +2,14 @@ import { BagIcon } from "@/icons";
 
 // Metadata for Shopify Development Service
 export const shopifyDevelopmentMetadata = {
-  title: "Shopify Development Services to Boost Sales in the USA | Website Digitals",
+  title: "Shopify Development Services to Boost Sales in the USA",
   description:
     "Website Digitals offers Shopify development services that deliver fast, functional, and profitable stores. Get your custom Shopify build today.",
   keywords: "shopify development services, shopify store development, shopify plus development, custom shopify development, shopify development agency",
   canonical:
     "https://www.websitedigitals.com/web-development/shopify-development-services/",
   openGraph: {
-    title: "Shopify Development Services to Boost Sales in the USA | Website Digitals",
+    title: "Shopify Development Services to Boost Sales in the USA",
     description:
       "Website Digitals offers Shopify development services that deliver fast, functional, and profitable stores. Get your custom Shopify build today.",
     url: "https://www.websitedigitals.com/web-development/shopify-development-services/",
@@ -27,7 +27,7 @@ export const shopifyDevelopmentMetadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shopify Development Services to Boost Sales in the USA | Website Digitals",
+    title: "Shopify Development Services to Boost Sales in the USA",
     description:
       "Website Digitals offers Shopify development services that deliver fast, functional, and profitable stores. Get your custom Shopify build today.",
     images: [
