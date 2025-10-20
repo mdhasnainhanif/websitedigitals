@@ -1037,6 +1037,24 @@ input {
   overflow-y: scroll;
 }
 
+.counterBackground{
+  background-color: #003FC4;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.counterBackground::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../public/assets/images/counter-bg.svg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
 @media (max-width: 576px) {
   .landingInnerHeading > h1 {
     font-size: 1.825rem !important;
