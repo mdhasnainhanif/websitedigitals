@@ -11,7 +11,7 @@ const StepSection = ({ sectionData = null }) => {
     <section className={`section-padding ${styles.stepSection}`}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-12">
+          <div className="col-lg-9">
             <div className={`text-center ${styles.sectionHeader}`}>
               <h2 className={styles.sectionTitle}>
                 {data.title}

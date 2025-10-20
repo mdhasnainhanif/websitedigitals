@@ -26,6 +26,7 @@
 .basic_tabs>.nav_tabs>.nav_item>.nav_link {
     position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
     background: var(--background);
     text-align: center;
@@ -625,5 +626,9 @@ ul.count_ul>li::before {
     }
     .single_webPortfolio>.webPortfolio_imageArea>.main_imageArea>.backImage{
         min-width: unset;
+    }
+    .basic_tabs>.nav_tabs{
+        display: flex;
+        justify-content: center;
     }
 }

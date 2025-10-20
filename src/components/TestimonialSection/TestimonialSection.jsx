@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useMemo } from "react";
 import { StarIcon } from "../../icons";
 import styles from "./Testimonial.module.css";
@@ -79,7 +80,7 @@ export default function TestimonialsSection({ data, className }) {
           <div className="col-lg-9 col-md-8">
             <div className="testimonial-carousel">
               <div ref={carouselRef} className="owl-carousel owl-theme">
-                {items.map((t, i) => (
+                {items?.map((t, i) => (
                   <div className="item" key={i}>
                     <div className={styles.single_testimonial}>
                       <div className={styles.testimonial_imageArea}>
