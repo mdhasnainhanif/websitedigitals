@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./OurWorkSection.module.css";
 import { caseStudiesData } from "../../../app/Data/landingPageData";
 import Link from "next/link";
+import Image from "next/image";
 
 const OurWorkSection = () => {
   return (
@@ -29,7 +30,7 @@ const OurWorkSection = () => {
                     <h4 className={styles.workCardTitle}>{item.title}</h4>
                     <p className={styles.workCardTag}>{item.tag}</p>
                   </div>
-                  <img className="my-5 img-fluid" src={item?.image} alt="" />
+                  <Image className="my-5 img-fluid" src={item?.image} alt="Case Study Image" width={370} height={210} />
                   <p className="mt-1">{item.desc}</p>
                   <button className={`btn btn-dark rounded-pill ${styles.viewCaseStudyButton}`}>
                     <Link href={item.href || "#"}>View Case Study</Link>

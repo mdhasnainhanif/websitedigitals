@@ -1038,6 +1038,9 @@ input {
 }
 
 @media (max-width: 576px) {
+  .landingInnerHeading > h1 {
+    font-size: 1.825rem !important;
+  }
   section.homeFaqs {
     padding-top: 0;
   }

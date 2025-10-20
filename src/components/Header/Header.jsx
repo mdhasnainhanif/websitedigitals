@@ -602,7 +602,7 @@ export default function Header() {
                     <li key={label}>
                       <a href="#" onClick={(e)=>{e.preventDefault(); setMobileInner(label)}}>
                         {label}
-                        <RoundRughtIcon />
+                        <RoundRightIcon />
                       </a>
                     </li>
                   ))}

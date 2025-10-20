@@ -63,6 +63,7 @@
 @media (max-width: 768px) {
     .formWrapper {
         padding: 25px;
+        display: none;
     }
 
     .heading {
