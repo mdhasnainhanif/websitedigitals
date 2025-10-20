@@ -10011,7 +10011,7 @@ ul.count-ul > li::before {
 .industries-dropdown {
   position: absolute;
   left: 50%;
-  background: url("../images/menu/industries/bg.png") bottom center no-repeat;
+  background: url("../../public/assets/images/menu/industries/bg.png") bottom center no-repeat;
   background-color: var(--background);
   width: 100%;
   padding: 0.875rem 0 1.25rem;
