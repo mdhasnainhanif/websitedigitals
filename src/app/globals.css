@@ -8538,7 +8538,7 @@ section.home-banner .height-100 {
   font-size: 3.125rem;
   font-weight: 700;
   min-height: 20px;
-  color: #fff;
+  color: #fff !important;
 }
 
 .parallex-effect,
