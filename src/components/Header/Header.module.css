@@ -70,6 +70,8 @@
   flex-direction: row;
   gap: 0 23px;
   padding-top: 10px;
+  margin-bottom: 0rem !important;
+  padding: 0rem;
 }
 
 .new_header .navbar_nav .dropdown_menu {

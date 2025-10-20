@@ -23,7 +23,10 @@ const LandingPageCounter = ({ statsData = null }) => {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.4 }
+            { 
+                threshold: 0.1, // Trigger earlier on mobile
+                rootMargin: '50px' // Start animation before element is visible
+            }
         );
 
         if (counterRef.current) observer.observe(counterRef.current);
@@ -32,28 +35,29 @@ const LandingPageCounter = ({ statsData = null }) => {
     useEffect(() => {
         if (!startCount) return;
 
-        const duration = 2000;
-        const interval = 30;
+        const duration = 1200; // Reduced for mobile
+        const startTime = performance.now();
 
-        counters.forEach((counter, index) => {
-            let start = 0;
-            const end = counter.value;
-            const increment = end / (duration / interval);
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Use easing for smoother animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            
+            setCounts(prev => 
+                prev.map((_, index) => 
+                    Math.floor(counters[index].value * easeOutQuart)
+                )
+            );
 
-            const timer = setInterval(() => {
-                start += increment;
-                if (start >= end) {
-                    start = end;
-                    clearInterval(timer);
-                }
-                setCounts((prev) => {
-                    const updated = [...prev];
-                    updated[index] = Math.floor(start);
-                    return updated;
-                });
-            }, interval);
-        });
-    }, [startCount]);
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+
+        requestAnimationFrame(animate);
+    }, [startCount, counters]);
 
     return (
         <div ref={counterRef} className="container text-center my-5">

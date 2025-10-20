@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
+import ScriptLoader from "../components/ScriptLoader/ScriptLoader";
 
 const wfFont = localFont({
   src: [
@@ -42,11 +43,14 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"          
         />
 
-        <script src="/assets/js/jquery-3.7.1.min.js"></script>
-        <script src="/assets/js/owl.carousel.min.js"></script>
+        {/* Preload critical resources */}
+        <link rel="preload" href="/assets/js/jquery-3.7.1.min.js" as="script" />
+        <link rel="preload" href="/assets/js/owl.carousel.min.js" as="script" />
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
-        {children}
+        <ScriptLoader>
+          {children}
+        </ScriptLoader>
       </body>
     </html>
   );

@@ -1041,6 +1041,8 @@ input {
   background-color: #003FC4;
   padding: 2rem 0;
   position: relative;
+  will-change: auto; 
+  contain: layout style paint;
 }
 
 .counterBackground::before{
@@ -1053,6 +1055,8 @@ input {
   background: url("../../public/assets/images/counter-bg.svg") no-repeat center center;
   background-size: cover;
   opacity: 0.5;
+  will-change: auto;
+  contain: layout style paint;
 }
 
 @media (max-width: 576px) {
@@ -9066,6 +9070,7 @@ section.notHero {
 
 #mobile-menu.open {
   width: 100%;
+  z-index: 1111;
 }
 
 .digitalMarketingCarousel {
@@ -9111,6 +9116,7 @@ section.landingPageBanner {
   color: #fff;
   padding-bottom: 1.44rem;
   position: relative;
+  overflow: hidden;
 }
 
 section.landingPageBanner::before {

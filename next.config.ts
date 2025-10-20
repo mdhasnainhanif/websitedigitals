@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     optimizeCss: true,
+    optimizePackageImports: ['jquery', 'owl.carousel'],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
@@ -12,6 +13,9 @@ const nextConfig: NextConfig = {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60,
   },
+  // Performance optimizations
+  compress: true,
+  poweredByHeader: false,
   async headers() {
     return [
       {
@@ -29,6 +33,15 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/assets/css/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/assets/js/(.*)',
         headers: [
           {
             key: 'Cache-Control',
