@@ -1605,6 +1605,10 @@ ul.scrollable-tabs {
   height: auto;
 }
 
+.scroller-list {
+  padding: 0rem;
+}
+
 .scroller-list>li>a {
   font-size: 1.375rem !important;
 }
@@ -10637,4 +10641,8 @@ ul.count-ul > li::before {
   body header.new_header {
     display: none !important;
   }
+}
+
+.rowGap2 {
+  row-gap: var(--bs-gutter-x);
 }

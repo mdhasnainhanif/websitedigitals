@@ -18,6 +18,9 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial", "sans-serif"],
 });
 
 export const metadata: Metadata = {
@@ -34,16 +37,84 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+        
+        {/* Critical CSS for LCP element */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            body { 
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+              color: #222;
+              font-size: 1.0625rem;
+              font-weight: 400;
+              line-height: 1.3;
+              margin: 0;
+              padding: 0;
+            }
+            h1, h2, h3 { 
+              font-family: BlinkMacSystem, sans-serif;
+              margin: 0;
+            }
+            .banner-heading > h1 {
+              font-size: 4rem;
+              font-weight: 700;
+              line-height: 1.2;
+              color: #fff;
+            }
+            .home-banner {
+              min-height: 100vh;
+              display: flex;
+              align-items: center;
+            }
+            .row {
+              display: flex;
+              flex-wrap: wrap;
+              margin: 0 -15px;
+            }
+            .col-md-6 {
+              flex: 0 0 50%;
+              max-width: 50%;
+              padding: 0 15px;
+            }
+            @media (max-width: 768px) {
+              .col-md-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+              }
+              .banner-heading > h1 {
+                font-size: 2.5rem;
+              }
+            }
+          `
+        }} />
+        
+        {/* Preload critical fonts */}
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          />
+        </noscript>
+        
+        {/* Preload critical CSS */}
+        <link rel="preload" href="/assets/css/style.css" as="style" />
+        <noscript><link rel="stylesheet" href="/assets/css/style.css" /></noscript>
+        
         <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
-
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"          
         />
 
-        <script src="/assets/js/jquery-3.7.1.min.js"></script>
-        <script src="/assets/js/owl.carousel.min.js"></script>
+        <script src="/assets/js/jquery-3.7.1.min.js" defer></script>
+        <script src="/assets/js/owl.carousel.min.js" defer></script>
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}

@@ -44,7 +44,14 @@ export default function WebBuilderBanner({
               )}
 
               <div className="inner-bannerHeading landingInnerHeading">
-                <h1>
+                <h1 style={{ 
+                  fontFamily: 'BlinkMacSystem, sans-serif',
+                  fontSize: 'clamp(2rem, 5vw, 4rem)',
+                  fontWeight: '700',
+                  lineHeight: '1.2',
+                  margin: '0 0 1rem 0',
+                  color: '#222'
+                }}>
                   {typeof data?.heading === "string"
                     ? data.heading.split(/(\[\[.*?\]\])/).map((chunk, i) =>
                       chunk.startsWith("[[") && chunk.endsWith("]]") ? (
@@ -129,15 +136,19 @@ export default function WebBuilderBanner({
 
                 {/* Main image */}
                 {data?.image && data?.image !== false && (
-                  <img
+                  <Image
                     className={data?.image?.className || "width-100"}
                     src={
                       data?.image?.src ||
                       "/assets/images-webp/web-builder-Banner.webp"
                     }
-                    width={data?.image?.width}
-                    height={data?.image?.height}
+                    width={data?.image?.width || 600}
+                    height={data?.image?.height || 400}
                     alt={data?.image?.alt || "Default Image"}
+                    priority={true}
+                    loading="eager"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                    style={{ width: '100%', height: 'auto' }}
                   />
                 )}
                 {islandingPage && (
