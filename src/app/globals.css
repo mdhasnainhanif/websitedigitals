@@ -9114,7 +9114,7 @@ section.notHero {
 section.landingPageBanner {
   background-color: #001135;
   color: #fff;
-  padding-bottom: 1.44rem;
+  padding-bottom: 1.44rem; 
   position: relative;
   overflow: hidden;
 }

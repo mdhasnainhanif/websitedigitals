@@ -24,8 +24,8 @@ const LandingPageCounter = ({ statsData = null }) => {
                 }
             },
             { 
-                threshold: 0.1, // Trigger earlier on mobile
-                rootMargin: '50px' // Start animation before element is visible
+                threshold: 0.1, 
+                rootMargin: '50px' 
             }
         );
 
