@@ -35,8 +35,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/style.css" as="style" onLoad={(e) => {e.currentTarget.onload = null; e.currentTarget.rel = 'stylesheet'}} />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" as="style" onLoad={(e) => {e.currentTarget.onload = null; e.currentTarget.rel = 'stylesheet'}} />
+        <link rel="stylesheet" href="/assets/css/style.css" as="style" />
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" as="style" />
 
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
