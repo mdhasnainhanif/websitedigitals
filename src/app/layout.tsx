@@ -4,6 +4,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
 import Script from "next/script";
+import Image from "next/image";
 
 const wfFont = localFont({
   src: [
@@ -118,14 +119,12 @@ export default function RootLayout({
             justifyContent: "center",
           }}
         >
-          <img
+          <Image
             src="/assets/images-webp/website-digitals.webp"
+            width={150}
+            height={43}
             alt="Loading..."
             className="loading-animation"
-            style={{
-              width: "120px",
-              height: "auto",
-            }}
           />
         </div>
         {children}
