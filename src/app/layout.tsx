@@ -37,7 +37,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-
         {/* Critical CSS inline for above-the-fold content */}
         <style
           dangerouslySetInnerHTML={{
@@ -51,15 +50,15 @@ export default function RootLayout({
           }}
         />
 
-        {/* Non-blocking CSS loading */}
-        <link
-          rel="preload"
-          href="/assets/css/owl.carousel.min.css"
+        {/* Non-blocking CSS loading for Owl Carousel */}
+        <link 
+          rel="preload" 
+          href="/assets/css/owl.carousel.min.css" 
           as="style"
         />
-        <link
-          rel="stylesheet"
-          href="/assets/css/owl.carousel.min.css"
+        <link 
+          rel="stylesheet" 
+          href="/assets/css/owl.carousel.min.css" 
           media="print"
         />
         <script
@@ -71,12 +70,24 @@ export default function RootLayout({
                 link.media = 'all';
               }
             });
+            
+            // Ensure Owl Carousel loads after scripts
+            window.addEventListener('load', function() {
+              if (typeof window.$ !== 'undefined' && window.$.fn.owlCarousel) {
+                console.log('Owl Carousel loaded successfully');
+              } else {
+                console.log('Waiting for Owl Carousel to load...');
+                setTimeout(function() {
+                  if (typeof window.$ !== 'undefined' && window.$.fn.owlCarousel) {
+                    console.log('Owl Carousel loaded after delay');
+                  }
+                }, 1000);
+              }
+            });
           `,
           }}
         />
-        <noscript>
-          <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
-        </noscript>
+          
 
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
@@ -91,8 +102,8 @@ export default function RootLayout({
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
-        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/owl.carousel.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="afterInteractive" />
+        <Script src="/assets/js/owl.carousel.min.js" strategy="afterInteractive" />
       </body>
     </html>
   );

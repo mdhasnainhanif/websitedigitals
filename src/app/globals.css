@@ -712,6 +712,16 @@ li.nav-item:hover.dropdown::after {
 }
 
 @media (max-width: 768px) {
+  div.reviewsSlider{
+    transform: rotate(0deg) !important;
+  }
+  section.landingPageScrollSection {
+    margin-top: 0 !important;
+  }
+  
+  .landingPageScrollSection {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+  }
   .top_header .col-md-8,
   .top_header .col-md-4 {
     width: 100%;
@@ -10376,22 +10386,4 @@ ul {
 .bulletsList li,
 .bulletsList p {
   font-display: swap;
-}
-
-/* Loading animation */
-@keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.loading-animation {
-  animation: zoomInOut 1.5s ease-in-out infinite;
-  filter: invert(1) brightness(100) grayscale(1);
 }
