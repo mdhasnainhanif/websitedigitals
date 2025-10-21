@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true, // Enables SWC compiler minification (faster builds & smaller bundles)
 
   images: {
     formats: ["image/avif", "image/webp"], // Modern formats for faster loading
@@ -14,7 +13,6 @@ const nextConfig: NextConfig = {
   },
 
   experimental: {
-    optimizeCss: true, // Reduces CSS blocking render time
     scrollRestoration: true,
   },
 
@@ -27,6 +25,14 @@ const nextConfig: NextConfig = {
         tls: false,
       };
     }
+
+    // Optimize CSS delivery
+    config.optimization.splitChunks.cacheGroups.styles = {
+      name: 'styles',
+      test: /\.(css|scss)$/,
+      chunks: 'all',
+      enforce: true,
+    };
 
     return config;
   },

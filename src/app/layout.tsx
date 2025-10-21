@@ -35,11 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="/assets/css/owl.carousel.min.css"
-          as="style"
-        />
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
 
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
