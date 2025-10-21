@@ -39,6 +39,7 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
 }
 
 h1,
@@ -53,11 +54,13 @@ input,
 select,
 textarea {
   font-family: var(--wfFont) !important;
+  font-display: swap;
 }
 
 p,
 span {
   font-family: var(--poppins) !important;
+  font-display: swap;
 }
 
 * {
