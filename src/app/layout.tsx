@@ -62,7 +62,30 @@ export default function RootLayout({
           href="/assets/css/owl.carousel.min.css"
           media="print"
         />
-       
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+              const link = document.querySelector('link[href="/assets/css/owl.carousel.min.css"][media="print"]');
+              if (link) {
+                link.media = 'all';
+              }
+            });
+            
+            // Hide initial loader when page is fully loaded
+            window.addEventListener('load', function() {
+              const loader = document.getElementById('initial-loader');
+              if (loader) {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease-out';
+                setTimeout(() => {
+                  loader.style.display = 'none';
+                }, 500);
+              }
+            });
+          `,
+          }}
+        />
         <noscript>
           <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
         </noscript>
@@ -80,6 +103,31 @@ export default function RootLayout({
         />
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
+        <div
+          id="initial-loader"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100vh",
+            background: "#0b1b3a",
+            zIndex: 9999,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src="/assets/images-webp/website-digitals.webp"
+            alt="Loading..."
+            className="loading-animation"
+            style={{
+              width: "120px",
+              height: "auto",
+            }}
+          />
+        </div>
         {children}
         <Script src="/assets/js/jquery-3.7.1.min.js" strategy="lazyOnload" />
         <Script src="/assets/js/owl.carousel.min.js" strategy="lazyOnload" />
