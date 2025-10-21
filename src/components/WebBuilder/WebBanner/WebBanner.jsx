@@ -25,7 +25,7 @@ export default function WebBuilderBanner({
         className={`inner-banner gradient-circle leftCenter-gradient ${className}`}
       >
         <div className="container">
-          <div className="row align-items-center mb-5 justify-content-start">
+          <div className="row align-items-center mb-5 justify-content-start rowGap2">
             {/* Left Column - Content */}
             <div className={`col-md-6 ${col}`}>
               {data?.isBreadcrumb && (
