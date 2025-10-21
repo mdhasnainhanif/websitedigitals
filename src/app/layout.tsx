@@ -78,12 +78,11 @@ export default function RootLayout({
           <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
         </noscript>
 
-        {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 
-        {/* Preconnect to important origins */}
+
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
