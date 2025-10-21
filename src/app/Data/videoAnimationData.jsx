@@ -463,7 +463,7 @@ export const videoAnimationFinalCTAData = {
     className: "offer-btn primary",
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Video Animation Services",
     width: 500,
     height: 400,

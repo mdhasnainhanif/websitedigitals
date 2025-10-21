@@ -35,8 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" /> */}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" />
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
 
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
@@ -50,18 +49,14 @@ export default function RootLayout({
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
-        {/* <Script
+        <Script
           src="/assets/js/jquery-3.7.1.min.js"
           strategy="afterInteractive" defer
         ></Script>
         <Script
           src="/assets/js/owl.carousel.min.js"
           strategy="afterInteractive" defer
-        ></Script> */}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
-        defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" defer></script>
+        ></Script>
       </body>
     </html>
   );

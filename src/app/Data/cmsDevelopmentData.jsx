@@ -235,7 +235,7 @@ export const cmsDevelopmentBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "CMS Development Banner",
     className: "width-100",
   },
@@ -732,7 +732,7 @@ export const cmsDevelopmentFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "CMS Development Services",
     width: 500,
     height: 400,

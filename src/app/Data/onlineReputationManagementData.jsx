@@ -242,7 +242,7 @@ export const onlineReputationManagementBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Online Reputation Management Banner",
     className: "width-100",
   },
@@ -675,7 +675,7 @@ export const onlineReputationManagementFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Online Reputation Management Services",
     width: 500,
     height: 400,

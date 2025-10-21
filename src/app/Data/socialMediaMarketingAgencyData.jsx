@@ -104,7 +104,7 @@ export const socialMediaMarketingAgencyBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Social Media Marketing Agency Banner",
     className: "width-100",
   },
@@ -536,7 +536,7 @@ export const socialMediaMarketingAgencyFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Social Media Marketing Services",
     width: 500,
     height: 400,

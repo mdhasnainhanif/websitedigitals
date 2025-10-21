@@ -490,7 +490,7 @@ export const customGraphicDesignFinalCTAData = {
     "Don't let outdated visuals hold your business back. Our custom graphic design services deliver branding, marketing assets, and creative solutions that attract customers and drive results.",
   ],
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Custom Graphic Design Services",
     width: 500,
     height: 400,

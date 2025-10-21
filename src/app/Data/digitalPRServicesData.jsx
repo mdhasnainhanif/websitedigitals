@@ -434,7 +434,7 @@ export const digitalPRServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "CMS Development Services",
     width: 500,
     height: 400,

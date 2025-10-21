@@ -214,7 +214,7 @@ export const sharedWebHostingServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Shared Web Hosting Services Banner",
     className: "width-100",
   },
@@ -621,7 +621,7 @@ export const sharedWebHostingServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Shared Web Hosting Services",
     width: 500,
     height: 400,

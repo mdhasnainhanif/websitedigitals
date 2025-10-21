@@ -223,7 +223,7 @@ export const payPerClickAgencyBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "PPC Agency Services",
     className: "width-100",
   },
@@ -712,7 +712,7 @@ export const payPerClickAgencyFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "PPC Agency Services",
     width: 500,
     height: 400,

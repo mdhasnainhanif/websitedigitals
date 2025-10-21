@@ -168,7 +168,7 @@ export const digitalMarketingFinalCTAData = {
     className: "offer-btn primary",
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Custom Logo Design Services",
     width: 500,
     height: 400,

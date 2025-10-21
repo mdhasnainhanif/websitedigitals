@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './BlogSection.module.css'
+import Image from 'next/image'
 
 const BlogSection = ({ blogs = [] }) => {
   // Default blog data if none provided
@@ -9,7 +10,7 @@ const BlogSection = ({ blogs = [] }) => {
       title: "10 Must-Have Features for Ecommerce Web...",
       category: "WEB DESIGN",
       readTime: "12 Mins Read",
-      image: "/assets/images/blog1.png",
+      image: "/assets/images/blog1.webp",
       imageAlt: "Webflow vs WP Engine comparison",
       slug: "ecommerce-web-features"
     },
@@ -18,7 +19,7 @@ const BlogSection = ({ blogs = [] }) => {
       title: "10 Must-Have Features for Ecommerce Web...",
       category: "WEB DESIGN", 
       readTime: "12 Mins Read",
-      image: "/assets/images/blog2.png",
+      image: "/assets/images/blog2.webp",
       imageAlt: "Webflow SEO analysis",
       slug: "webflow-seo-analysis"
     },
@@ -27,7 +28,7 @@ const BlogSection = ({ blogs = [] }) => {
       title: "10 Must-Have Features for Ecommerce Web...",
       category: "WEB DESIGN",
       readTime: "12 Mins Read", 
-      image: "/assets/images/blog3.png",
+      image: "/assets/images/blog3.webp",
       imageAlt: "Webflow CMS interface",
       slug: "webflow-cms-guide"
     }
@@ -47,10 +48,13 @@ const BlogSection = ({ blogs = [] }) => {
           {blogData.map((blog, index) => (
             <div key={blog.id} className={styles.blogCard}>
               <div className={styles.imageContainer}>
-                <img 
+                <Image
+                  width={375}
+                  height={200}
                   src={blog.image} 
                   alt={blog.imageAlt}
                   className={styles.blogImage}
+                  loading="lazy"
                 />
               </div>
               

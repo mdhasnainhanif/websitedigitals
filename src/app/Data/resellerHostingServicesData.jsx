@@ -104,7 +104,7 @@ export const resellerHostingServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Reseller Hosting Services Banner",
     className: "width-100",
   },
@@ -648,7 +648,7 @@ export const resellerHostingServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Reseller Hosting Services",
     width: 500,
     height: 400,

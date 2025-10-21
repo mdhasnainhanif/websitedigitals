@@ -496,7 +496,7 @@ export const webApplicationDevelopmentFinalCTAData = {
     "Rely on custom web application development that grows with your needs. Our proven scalable solutions and trusted role as a digital transformation partner give you confidence in every stage of your business journey.",
   ],
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Web Application Development Services",
     width: 500,
     height: 400,

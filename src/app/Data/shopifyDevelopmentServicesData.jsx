@@ -284,7 +284,7 @@ export const shopifyDevelopmentBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Shopify Development Banner",
     className: "width-100",
   },
@@ -902,7 +902,7 @@ export const shopifyDevelopmentFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Shopify Development Services",
     width: 500,
     height: 400,

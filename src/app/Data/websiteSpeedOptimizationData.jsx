@@ -494,7 +494,7 @@ description: [
   "Slow load times cost sales and frustrate visitors. With our professional optimization services, you can improve website load time and keep users engaged from the first click.",
 ],
 image: {
-  src: "/assets/images/everything-you-need.png",
+  src: "/assets/images/everything-you-need.webp",
   alt: "Website Speed Optimization Services",
   width: 500,
   height: 400,

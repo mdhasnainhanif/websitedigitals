@@ -440,7 +440,7 @@ export const contentWritingServicesFinalCTAData = {
     href: "#",
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Content Writing Services Final CTA",
     width: 1200,
     height: 400,

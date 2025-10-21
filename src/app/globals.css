@@ -6420,7 +6420,7 @@ li.nav-item:hover.dropdown::after {
 
 .portfolio-befaft-head > p:nth-child(1) {
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins) !important;
   font-size: 2.5rem;
   margin-bottom: 1.125rem;
   line-height: 1.2;
@@ -6937,7 +6937,7 @@ li.nav-item:hover.dropdown::after {
 }
 
 .basic-tabs > .nav-tabs > .nav-item > .nav-link h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins) !important;
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0;
@@ -7682,7 +7682,7 @@ section.home-banner .height-100 {
 .section-heading.text-center > h2,
 .section-heading > h2 {
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins) !important;
 }
 
 .before-div,
@@ -8079,7 +8079,7 @@ section.home-banner .height-100 {
   color: #222;
   text-align: left;
   padding: 0.75rem 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-poppins) !important;
   z-index: 1;
   background-color: transparent !important;
 }
@@ -9332,7 +9332,7 @@ section.landingPageBanner2 img {
 .progress-container > h3,
 .scroller-list > li > a > h3,
 body {
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-poppins) !important;
 }
 .blog-tags > li,
 .caseStudy-serviceDetail > .bottom > p,
@@ -10021,7 +10021,7 @@ ul.count-ul > li::before {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1.25rem;
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-poppins) !important;
 }
 .partners-rating > li > img {
   width: 7.5rem;

@@ -2,6 +2,7 @@
 "use client";
 
 import { RightArrowIcon } from "@/icons";
+import Image from "next/image";
 import { useEffect } from "react";
 
 export default function ScrollSection({ data, className, isIconShow }) {
@@ -149,10 +150,12 @@ export default function ScrollSection({ data, className, isIconShow }) {
                       <span className="h1 text-dark">
                         {two(it.step ?? i + 1)}
                       </span>
-                      <img
+                      <Image
                         className="scrollIcon"
                         src={it.icon}
                         alt={it.title}
+                        width={65}
+                        height={65}
                       />
                     </div>
                     <h3>

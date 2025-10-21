@@ -246,7 +246,7 @@ export const responsiveWebDesignBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Responsive Web Design Services",
     className: "width-100",
   },
@@ -722,7 +722,7 @@ export const responsiveWebDesignFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Responsive Web Design Services",
     width: 500,
     height: 400,

@@ -233,7 +233,7 @@ export const amazonStoreDesignServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Amazon Store Design Services Banner",
     className: "width-100",
   },
@@ -708,7 +708,7 @@ export const amazonStoreDesignServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Amazon Store Design Services",
     width: 500,
     height: 400,

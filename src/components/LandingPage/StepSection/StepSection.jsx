@@ -3,6 +3,7 @@
 import React from "react";
 import { stepSectionData } from "../../../app/Data/landingPageData";
 import styles from "./StepSection.module.css";
+import Image from "next/image";
 
 const StepSection = ({ sectionData = null }) => {
   const data = sectionData || stepSectionData;
@@ -44,7 +45,9 @@ const StepSection = ({ sectionData = null }) => {
                 </div>
                 <div className={`col-md-6 ${step.alignment === 'right' ? 'order-md-2' : 'order-md-1'}`}>
                   <div className={styles.stepImageContainer}>
-                    <img
+                    <Image
+                      width={380}
+                      height={313}
                       src={step.image}
                       alt={step.title}
                       className={styles.stepImage}
@@ -57,7 +60,9 @@ const StepSection = ({ sectionData = null }) => {
               {/* Arrow between steps */}
               {index < data.steps.length - 1 && (
                 <div className={styles.arrowContainer}>
-                  <img
+                  <Image
+                    width={465}
+                    height={145}
                     src={`/assets/images/work/arrow${index + 1}.svg`}
                     alt="Arrow"
                     className={styles.connectingArrow}

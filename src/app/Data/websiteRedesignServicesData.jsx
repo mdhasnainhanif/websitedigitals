@@ -230,7 +230,7 @@ export const websiteRedesignServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Website Redesign Services Banner",
     className: "width-100",
   },
@@ -763,7 +763,7 @@ export const websiteRedesignServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Website Redesign Services",
     width: 500,
     height: 400,

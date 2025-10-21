@@ -504,7 +504,7 @@ export const webPortalDevelopmentFinalCTAData = {
     "Struggling to keep customers engaged? Build your custom portal solution with a trusted web portal development company. Deliver exclusive experiences and stronger results through expert-driven portal development.",
   ],
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Web Portal Development Services",
     width: 500,
     height: 400,

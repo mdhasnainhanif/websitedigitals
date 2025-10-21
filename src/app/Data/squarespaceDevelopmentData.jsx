@@ -241,7 +241,7 @@ export const squarespaceDevelopmentBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Squarespace Development Banner",
     className: "width-100",
   },
@@ -765,7 +765,7 @@ export const squarespaceDevelopmentFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Squarespace Development Services",
     width: 500,
     height: 400,
