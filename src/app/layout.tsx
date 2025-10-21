@@ -35,7 +35,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+        {/* <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" /> */}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" />
 
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
