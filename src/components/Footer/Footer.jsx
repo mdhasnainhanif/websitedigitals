@@ -193,7 +193,7 @@ export default function Footer() {
                           href="https://www.facebook.com/webdigitals/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Facebook"
+                          aria-label='Facebook'
                         >
                           <FacebookIcon/>
                         </a>
@@ -203,7 +203,7 @@ export default function Footer() {
                           href="https://www.instagram.com/website_digitals/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Instagram"
+                          aria-label='Instagram'
                         >
                           <InstagramIcon/>
                         </a>
@@ -213,7 +213,7 @@ export default function Footer() {
                           href="https://www.pinterest.com/websitedigitals/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Pinterest"
+                          aria-label='Pinterest'
                         >
                           <PinterestIcon/>
                         </a>
@@ -223,7 +223,7 @@ export default function Footer() {
                           href="https://www.linkedin.com/company/website-digitals"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Linkedin"
+                          aria-label='Linkedin'
                         >
                           <LinkedinIcon/>
                         </a>
@@ -233,7 +233,7 @@ export default function Footer() {
                           href="https://www.youtube.com/channel/UCfH5v6yrRLD_mDoAyavM8zg"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Youtube"
+                          aria-label='Youtube'
                         >
                           <YoutubeIcon/>
                         </a>

@@ -7,7 +7,10 @@ import styles from "./Header.module.css";
 import {
   CrossIcon,
   EmailIcon,
+  FacebookIcon,
   HamburgerIcon,
+  InstagramIcon,
+  LinkedinIcon,
   LocationIcon,
   PhoneIcon,
   RoundLeftIcon,
@@ -277,10 +280,9 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -336,10 +338,9 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -384,10 +385,9 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -462,10 +462,9 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -513,10 +512,9 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -559,10 +557,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -637,10 +635,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -693,10 +691,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -744,10 +742,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -822,10 +820,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -872,10 +870,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -1049,10 +1047,10 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          className="logo-img"
+                                          
                                           loading="lazy"
-                                          width={100}
-                                          height={100}
+                                          width={50}
+                                          height={50}
                                         />
                                       </div>
                                       <div className={styles.menu_content1}>
@@ -1099,8 +1097,8 @@ export default function Header() {
               src="/assets/images-webp/website-digitals.webp"
               alt="Logo"
               className="logo-img"
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
           </Link>
         </div>
@@ -1185,12 +1183,12 @@ export default function Header() {
               </li>
               <li>
                 <a href="tel:(646)-222-3598">
-                  <i className="fa-solid fa-phone" /> (646)-222-3598
+                  <PhoneIcon /> (646)-222-3598
                 </a>
               </li>
               <li>
                 <a href="mailto:info@websitedigitals.com">
-                  <i className="fa-solid fa-envelope" />
+                  <EmailIcon />
                   info@websitedigitals.com
                 </a>
               </li>
@@ -1255,10 +1253,9 @@ export default function Header() {
                       <Image
                         src={it.img}
                         alt="Logo"
-                        className="logo-img"
                         loading="lazy"
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                       />
                       {it.label}
                     </a>
@@ -1300,10 +1297,9 @@ export default function Header() {
                       <Image
                         src={it.img}
                         alt="Logo"
-                        className="logo-img"
                         loading="lazy"
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                       />
                       {it.label}
                     </a>
@@ -1356,10 +1352,9 @@ export default function Header() {
                       <Image
                         src={it.img}
                         alt="Logo"
-                        className="logo-img"
                         loading="lazy"
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                       />
                       {it.label}
                     </a>
@@ -1399,10 +1394,9 @@ export default function Header() {
                       <Image
                         src={it.img}
                         alt="Logo"
-                        className="logo-img"
                         loading="lazy"
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                       />
                       {it.label}
                     </a>
@@ -1427,7 +1421,7 @@ export default function Header() {
                         }}
                       >
                         {label}
-                        <RoundRughtIcon />
+                        <RoundRightIcon />
                       </a>
                     </li>
                   ))}
@@ -1553,7 +1547,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-facebook-f text_primary" />
+              <FacebookIcon />
             </a>
             <a
               className="h5"
@@ -1561,7 +1555,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-instagram text_primary" />
+              <InstagramIcon />
             </a>
             <a
               className="h5"
@@ -1569,7 +1563,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-linkedin-in text_primary" />
+              <LinkedinIcon />
             </a>
           </div>
         </nav>
