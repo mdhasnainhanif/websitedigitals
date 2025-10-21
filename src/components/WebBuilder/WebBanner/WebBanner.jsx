@@ -69,7 +69,7 @@ export default function WebBuilderBanner({
                       ));
                     }
                     return (
-                      <p key={idx} className="mb-1">
+                      <p key={idx} className="mb-1 descText">
                         {item?.text || ""}
                         {item?.link && (
                           <Link
@@ -87,7 +87,7 @@ export default function WebBuilderBanner({
 
                 {/* bullets (optional) */}
                 {Array.isArray(data?.bullets) && data.bullets.length > 0 && (
-                  <ul>
+                  <ul className="bulletsList">
                     {data.bullets.map((b, i) => (
                       <li key={`bullet-${i}`}>{b}</li>
                     ))}

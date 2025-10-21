@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
 
   experimental: {
     scrollRestoration: true,
+    optimizeCss: true,
   },
 
   webpack(config, { dev, isServer }) {
