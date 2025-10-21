@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
+import Script from "next/script";
 
 const wfFont = localFont({
   src: [
@@ -34,14 +35,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" as="style" onLoad={(e) => {e.currentTarget.onload = null; e.currentTarget.rel = 'stylesheet'}} />
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" as="style" onLoad={(e) => {e.currentTarget.onload = null; e.currentTarget.rel = 'stylesheet'}} />
 
-        <script src="/assets/js/jquery-3.7.1.min.js"></script>
-        <script src="/assets/js/owl.carousel.min.js"></script>
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
+        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="afterInteractive"></Script>
+        <Script src="/assets/js/owl.carousel.min.js" strategy="afterInteractive"></Script>
       </body>
     </html>
   );
