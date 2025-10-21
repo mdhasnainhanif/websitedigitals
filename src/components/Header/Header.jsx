@@ -1130,8 +1130,8 @@ export default function Header() {
               src="/assets/images-webp/website-digitals.webp"
               alt="Logo"
               className="logo-img"
-              width={150}
-              height={150}
+              width={200}
+              height={56}
             />
             <button
               id="close-menu"

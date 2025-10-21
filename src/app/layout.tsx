@@ -11,9 +11,9 @@ const wfFont = localFont({
       path: "../../public/assets/fonts/wf-visual-sans/WFVisualSansVF.ttf",
       weight: "500",
     },
-  ],  
+  ],
   variable: "--wfFont",
-});  
+});
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -35,13 +35,32 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" as="style" />
+        <link
+          rel="stylesheet"
+          href="/assets/css/owl.carousel.min.css"
+          as="style"
+        />
 
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        {/* Preconnect to important origins */}
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
-        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="afterInteractive"></Script>
-        <Script src="/assets/js/owl.carousel.min.js" strategy="afterInteractive"></Script>
+        <Script
+          src="/assets/js/jquery-3.7.1.min.js"
+          strategy="afterInteractive"
+        ></Script>
+        <Script
+          src="/assets/js/owl.carousel.min.js"
+          strategy="afterInteractive"
+        ></Script>
       </body>
     </html>
   );
