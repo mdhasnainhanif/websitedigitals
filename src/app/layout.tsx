@@ -4,7 +4,6 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
 import Script from "next/script";
-import Image from "next/image";
 
 const wfFont = localFont({
   src: [
@@ -72,18 +71,6 @@ export default function RootLayout({
                 link.media = 'all';
               }
             });
-            
-            // Hide initial loader when page is fully loaded
-            window.addEventListener('load', function() {
-              const loader = document.getElementById('initial-loader');
-              if (loader) {
-                loader.style.opacity = '0';
-                loader.style.transition = 'opacity 0.5s ease-out';
-                setTimeout(() => {
-                  loader.style.display = 'none';
-                }, 500);
-              }
-            });
           `,
           }}
         />
@@ -104,29 +91,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
-        <div
-          id="initial-loader"
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100vh",
-            background: "#0b1b3a",
-            zIndex: 9999,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Image
-            src="/assets/images-webp/website-digitals.webp"
-            width={150}
-            height={43}
-            alt="Loading..."
-            className="loading-animation"
-          />
-        </div>
         {children}
         <Script src="/assets/js/jquery-3.7.1.min.js" strategy="lazyOnload" />
         <Script src="/assets/js/owl.carousel.min.js" strategy="lazyOnload" />
