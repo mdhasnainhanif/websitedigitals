@@ -205,14 +205,14 @@ export default function Header() {
                     src="/assets/images-webp/website-digitals.webp"
                     alt="Website Digitals"
                     width={200}
-                    height={50}
+                    height={56}
                   />
                 </Link>
               </div>
 
               <div className="col-md-7">
                 <ul
-                  className={`${styles.new_header_links} ${styles.navbar_nav} py-0`}
+                  className={`${styles.new_header_links} ${styles.navbar_nav} py-0 mb-0`}
                 >
                   <li className={`${styles.nav_item}`}>
                     <Link
