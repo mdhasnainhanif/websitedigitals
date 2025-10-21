@@ -49,14 +49,18 @@ export default function RootLayout({
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
-        <Script
+        {/* <Script
           src="/assets/js/jquery-3.7.1.min.js"
-          strategy="afterInteractive"
+          strategy="afterInteractive" defer
         ></Script>
         <Script
           src="/assets/js/owl.carousel.min.js"
-          strategy="afterInteractive"
-        ></Script>
+          strategy="afterInteractive" defer
+        ></Script> */}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" defer></script>
       </body>
     </html>
   );
