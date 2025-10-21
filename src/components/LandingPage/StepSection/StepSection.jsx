@@ -3,7 +3,6 @@
 import React from "react";
 import { stepSectionData } from "../../../app/Data/landingPageData";
 import styles from "./StepSection.module.css";
-import Image from "next/image";
 
 const StepSection = ({ sectionData = null }) => {
   const data = sectionData || stepSectionData;
@@ -12,7 +11,7 @@ const StepSection = ({ sectionData = null }) => {
     <section className={`section-padding ${styles.stepSection}`}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-9">
+          <div className="col-12">
             <div className={`text-center ${styles.sectionHeader}`}>
               <h2 className={styles.sectionTitle}>
                 {data.title}
@@ -58,13 +57,11 @@ const StepSection = ({ sectionData = null }) => {
               {/* Arrow between steps */}
               {index < data.steps.length - 1 && (
                 <div className={styles.arrowContainer}>
-                  <Image
+                  <img
                     src={`/assets/images/work/arrow${index + 1}.svg`}
                     alt="Arrow"
                     className={styles.connectingArrow}
                     loading="lazy"
-                    width={380}
-                    height={315}
                   />
                 </div>
               )}

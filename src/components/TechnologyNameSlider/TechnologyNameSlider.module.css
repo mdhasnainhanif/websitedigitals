@@ -3,13 +3,13 @@
   transform: rotate(-2deg);
   position: relative;
   z-index: 999;
-  overflow-x: hidden;
 }
 .technologyNameSliderContainer {
   display: flex;
   gap: 4rem;
-  overflow-x: hidden;
+  overflow: hidden;
   width: max-content;
+  margin-top: 3rem;
   animation: 20s linear infinite scrollLeft;
   padding: 1rem 0rem;
 }

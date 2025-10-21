@@ -81,7 +81,6 @@
     flex-direction: column;
     gap: .75rem;
     font-weight: 300;
-    padding: 0rem;
 }
 .footer_linksArea>ul>li>a {
     font-size: .875rem;

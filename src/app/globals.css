@@ -435,6 +435,7 @@ a {
   gap: 0 15px;
   padding-top: 13px;
   margin-left: -56px;
+  margin-bottom: 0rem;
 }
 
 .link-area>a.primary {
@@ -10491,4 +10492,13 @@ ul.count-ul > li::before {
 
 .section-heading.text-center{
   margin-bottom: 3rem;
+}
+
+/* Global styles for portfolio section */
+.webPortfolio_caseStudyTabsnav_tabs > li > a.active {
+  box-shadow: .3125rem .3125rem 0 0 #3c7cff;
+}
+
+ul{
+  padding-left: 0 !important;
 }

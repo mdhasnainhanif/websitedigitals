@@ -38,6 +38,7 @@ import {
   websiteHostingServicesMetadata,
 } from "../Data/websiteHostingServicesData";
 
+
 export const metadata = websiteHostingServicesMetadata;
 
 const Home = () => {

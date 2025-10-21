@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import styles from './Header.module.css'
 import { CrossIcon, EmailIcon, HamburgerIcon, LocationIcon, PhoneIcon, RoundLeftIcon, RoundRightIcon } from '../../icons'
-import Image from 'next/image'
 
 /**
  * Converted from provided HTML to JSX for Next.js
@@ -128,7 +127,7 @@ export default function Header() {
             <div className="row align-items-center">
               <div className="col-md-3">
                 <Link className={styles.navbar_brand} href="/">
-                  <Image width={200} height={55} loading="lazy" src="/assets/images-webp/website-digitals.webp" alt="Website Digitals" />
+                  <img loading="lazy" src="/assets/images-webp/website-digitals.webp" alt="Website Digitals" />
                 </Link>
               </div>
 
@@ -602,7 +601,7 @@ export default function Header() {
                     <li key={label}>
                       <a href="#" onClick={(e)=>{e.preventDefault(); setMobileInner(label)}}>
                         {label}
-                        <RoundRightIcon />
+                        <RoundRughtIcon />
                       </a>
                     </li>
                   ))}
