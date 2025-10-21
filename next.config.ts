@@ -4,12 +4,12 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   images: {
-    formats: ["image/avif", "image/webp"], // Modern formats for faster loading
-    minimumCacheTTL: 60, // Cache images for at least 60s on CDN
+    formats: ["image/avif", "image/webp"], 
+    minimumCacheTTL: 60, 
   },
 
   compiler: {
-    removeConsole: process.env.NODE_ENV === "production", // Remove console.logs in prod
+    removeConsole: process.env.NODE_ENV === "production", 
   },
 
   experimental: {
@@ -26,12 +26,21 @@ const nextConfig: NextConfig = {
       };
     }
 
-    // Optimize CSS delivery
+    // Optimize CSS delivery - reduce chunk sizes
     config.optimization.splitChunks.cacheGroups.styles = {
       name: 'styles',
       test: /\.(css|scss)$/,
       chunks: 'all',
       enforce: true,
+      maxSize: 20000, // Limit CSS chunk size to 20KB
+    };
+
+    // Add CSS optimization
+    config.optimization.splitChunks.cacheGroups.vendor = {
+      test: /[\\/]node_modules[\\/]/,
+      name: 'vendors',
+      chunks: 'all',
+      maxSize: 100000, // Limit vendor chunks
     };
 
     return config;

@@ -125,6 +125,7 @@
   background-color: #001135;
   margin: 0 15px;
   height: 100%;
+  overflow: hidden;
 }
 
 .serviceCard::before {
@@ -133,7 +134,7 @@
   width: 85%;
   height: 70%;
   position: absolute;
-  top: 0;
+  top: -2rem;
   left: 0;
   background-size: contain;
   background-position: center;

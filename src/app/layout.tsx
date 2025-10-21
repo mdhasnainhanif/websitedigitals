@@ -35,28 +35,61 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+        
+        {/* Critical CSS inline for above-the-fold content */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .header { height: 80px; position: relative; }
+            .logo-img { width: 150px; height: 50px; }
+            .hero-banner { min-height: 100vh; }
+            body { margin: 0; font-family: var(--font-poppins), sans-serif; }
+            * { box-sizing: border-box; }
+          `
+        }} />
+        
+        {/* Non-blocking CSS loading */}
+        <link 
+          rel="preload" 
+          href="/assets/css/owl.carousel.min.css" 
+          as="style"
+        />
+        <link 
+          rel="stylesheet" 
+          href="/assets/css/owl.carousel.min.css" 
+          media="print"
+        />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+              const link = document.querySelector('link[href="/assets/css/owl.carousel.min.css"][media="print"]');
+              if (link) {
+                link.media = 'all';
+              }
+            });
+          `
+        }} />
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+        </noscript>
 
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        
         {/* Preconnect to important origins */}
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
         <Script
           src="/assets/js/jquery-3.7.1.min.js"
-          strategy="afterInteractive" defer
-        ></Script>
+          strategy="afterInteractive"
+        />
         <Script
           src="/assets/js/owl.carousel.min.js"
-          strategy="afterInteractive" defer
-        ></Script>
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
