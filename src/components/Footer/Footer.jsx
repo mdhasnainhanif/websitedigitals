@@ -255,9 +255,12 @@ export default function Footer() {
             <div className="col-md-6">
               <ul className={styles.social_links}>
                 <li>
-                  <img
+                  <Image
                     src={`/assets/images-webp/payment/cards.webp`}
                     alt="Accepted payment methods"
+                    width={320}
+                    height={20}
+                    loading="lazy"
                   />
                 </li>
               </ul>
