@@ -10387,3 +10387,13 @@ ul {
 .bulletsList p {
   font-display: swap;
 }
+.noClipPath{
+  clip-path: none !important;
+}
+.noClipPath .row{
+  margin-bottom: 0rem !important;
+}
+.noRotate .reviewsSlider{
+  transform: rotate(0deg) !important;
+  margin-top: 0rem;
+}

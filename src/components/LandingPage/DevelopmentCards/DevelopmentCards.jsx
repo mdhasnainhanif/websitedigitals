@@ -5,7 +5,7 @@ import { developmentCardsData } from "../../../app/Data/landingPageData";
 import { GoalIcon } from "@/icons";
 import styles from "./DevelopmentCards.module.css";
 
-const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
+const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass = "" }) => {
   const defaultSectionData = {
     heading: "Why Landing Page Design Matters for Business Growth",
     description: "A well-planned website is more than a place to showcase your business. It is the foundation for sustainable growth, earning customer trust, and building long-term success. Expert web development blends design, technology, and strategy to create an online presence that not only looks professional but also drives measurable business results.",
@@ -21,20 +21,22 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null }) => {
   return (
     <section className="py-5 bg-light">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className={`row justify-content-center ${displayClass}`}>
           <div className="col-md-10">
             <div className="text-center mb-5">
-              <h2 className="fw-bolder fs-1">
-                {section.heading}
-              </h2>
-              {section.showDescription && section.description && (
-                <p className="text-muted mx-auto" style={{ whiteSpace: 'pre-line' }}>
-                  {section.description}
+
+             {section.showHeading && section.heading && (
+               <h2 className="fw-bolder fs-1">
+                 {section.heading}
+               </h2>
+             )}
+             {section.showDescription && section.description && (
+               <p className="text-muted mx-auto" style={{ whiteSpace: 'pre-line' }}>
+                 {section.description}
                 </p>
               )}
             </div></div>
         </div>
-
         <div className="row justify-content-center g-0">
           {cards.map((item, index) => {
             const cardId = getCardId(item, index);

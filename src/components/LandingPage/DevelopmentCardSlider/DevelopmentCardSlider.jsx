@@ -5,16 +5,14 @@ import { webDevelopmentServicesData } from "../../../app/Data/landingPageData";
 import { useOwlCarousel } from "../../../app/hooks/useOwlCarousel";
 import styles from "./DevelopmentCardSlider.module.css";
 
-const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
+const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,className = "" }) => {
   const defaultSectionData = {
     heading: "Our Comprehensive Web Development Services to Grow Your Business",
     description: "We provide professional web development solutions for businesses across the United States, combining proven practices, industry certifications, and modern technologies to deliver results that drive growth. Explore our specialized services below.",
     showDescription: true
   };
-  
   const section = sectionData || defaultSectionData;
   const services = servicesData || webDevelopmentServicesData;
-  // Initialize Owl Carousel
   useOwlCarousel(`.${styles.developmentCardSlider}`, {
     items: 3,
     margin: 30,
@@ -38,7 +36,7 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
   });
 
   return (
-    <section className={styles.sliderSection}>
+    <section className={`${styles.sliderSection} ${className}`}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12">
@@ -62,14 +60,11 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
                 <div className={styles.cardIcon}>
                   <div className={styles.iconWrapper}>{service.icon}</div>
                 </div>
-
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{service.title}</h3>
                   <p className={styles.cardDescription}>
                     {service.description}
                   </p>
-                  
-                  {/* Individual Service Button */}
                   {service.button && service.button.show && (
                     <div className="link-area">
                       <a 
@@ -81,7 +76,6 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
                     </div>
                   )}
                 </div>
-
                 <div className={styles.cardPlus}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                     <path
@@ -97,7 +91,6 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
             ))}
           </div>
         </div>
-
         {section.cta && (
           <div className="row justify-content-center mt-5">
             <div className="link-area">
