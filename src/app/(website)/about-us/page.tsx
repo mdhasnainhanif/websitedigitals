@@ -10,7 +10,9 @@ import { testimonialsData } from '@/app/Data';
 import Faqs from '@/components/FAQs/Faqs';
 import { AboutPageFAQs } from '@/components/FAQs/data';
 import ContactSection from '@/components/InnerPageContact/Contact';
-import { roiSectionData } from '@/app/Data/aboutPageData';
+import { aboutPageData, aboutPageStatsData, aboutPageWhoWeAreData } from '@/app/Data/aboutPageData';
+import WebBanner from '@/components/WebBuilder/WebBanner/WebBanner';
+import LandingPageCounter from '@/components/LandingPage/LandingPageCounter/LandingPageCounter';
 
 
 export const metadata = {
@@ -22,8 +24,10 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <AboutHero />
-      <RoiSection data={roiSectionData} />
+      <WebBanner data={aboutPageData} islandingPage={true} className="withoutImg landingPageBanner"
+        col="col-md-6" />
+      <LandingPageCounter statsData={aboutPageStatsData as any} isHeading={true} heading="Our Achievements" />
+      <WebBanner data={aboutPageWhoWeAreData} islandingPage={false} className="notHero order2 landingPageBanner2"/>
       <DesignerSection />
       <TeamSection />
       <SupportSection />
@@ -33,7 +37,6 @@ export default function AboutPage() {
       <Faqs faqs={AboutPageFAQs as any} />
       </div>
       <ContactSection />
-      {/* Add more sections below if needed */}
     </>
   );
 }

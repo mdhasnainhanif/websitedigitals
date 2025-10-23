@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 
-const LandingPageCounter = ({ statsData = null }) => {
+const LandingPageCounter = ({ statsData = null, isHeading, heading}) => {
     const defaultCounters = [
         { id: 1, value: 250, suffix: "+", label: "Pages Built" },
         { id: 2, value: 40, suffix: "%", label: "Conversion Lift" },
@@ -57,6 +57,11 @@ const LandingPageCounter = ({ statsData = null }) => {
 
     return (
         <div ref={counterRef} className="container text-center my-5">
+            {isHeading && (
+                <div className="section-heading">
+                    <h2>{heading}</h2>
+                </div>
+            )}
             <div
                 className="row rowGap2 justify-content-center align-items-center text-white section-padding rounded-4 shadow-sm counterBackground">
                 {counters.map((counter, index) => (
