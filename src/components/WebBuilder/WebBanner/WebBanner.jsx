@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LandingBannerForm from "@/components/LandingPage/LandingBannerForm/LandingBannerForm";
-import BannerImageSlider from "@/components/BannerImageSlider/BannerImageSlider";
 import TechnologyNameSlider from "@/components/TechnologyNameSlider/TechnologyNameSlider";
 
 export default function WebBuilderBanner({
@@ -26,7 +25,7 @@ export default function WebBuilderBanner({
         className={`inner-banner gradient-circle leftCenter-gradient ${className}`}
       >
         <div className="container">
-          <div className="row align-items-center mb-5 justify-content-start">
+          <div className="row align-items-center mb-5 justify-content-start rowGap2">
             {/* Left Column - Content */}
             <div className={`col-md-6 ${col}`}>
               {data?.isBreadcrumb && (
@@ -70,7 +69,7 @@ export default function WebBuilderBanner({
                       ));
                     }
                     return (
-                      <p key={idx} className="mb-1">
+                      <p key={idx} className="mb-1 descText">
                         {item?.text || ""}
                         {item?.link && (
                           <Link
@@ -88,7 +87,7 @@ export default function WebBuilderBanner({
 
                 {/* bullets (optional) */}
                 {Array.isArray(data?.bullets) && data.bullets.length > 0 && (
-                  <ul>
+                  <ul className="bulletsList">
                     {data.bullets.map((b, i) => (
                       <li key={`bullet-${i}`}>{b}</li>
                     ))}

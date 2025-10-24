@@ -216,7 +216,7 @@ export const appStoreOptimizationBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "App Store Optimization Banner",
     className: "width-100",
   },
@@ -651,7 +651,7 @@ export const appStoreOptimizationFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "App Store Optimization Services",
     width: 500,
     height: 400,

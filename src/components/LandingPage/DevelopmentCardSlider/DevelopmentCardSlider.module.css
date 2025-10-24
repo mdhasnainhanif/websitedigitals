@@ -124,6 +124,8 @@
   justify-content: space-between;
   background-color: #001135;
   margin: 0 15px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .serviceCard::before {
@@ -132,10 +134,11 @@
   width: 85%;
   height: 70%;
   position: absolute;
-  top: 0;
+  top: -2rem;
   left: 0;
   background-size: contain;
   background-position: center;
+  z-index: -1;
 }
 
 .serviceCard:hover {
@@ -252,6 +255,13 @@
 }
 
 @media (max-width: 768px) {
+  .sliderSection {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 0;
+  }
+  .cardTitle{
+    margin-top: 1.5rem;
+  }
   .sliderSection {
     padding: 60px 0;
   }

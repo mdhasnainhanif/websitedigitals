@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import styles from './ImageSlideSection.module.css'
+import Image from "next/image";
 
 export default function ImageSlideSection({ imageSlideSectionData = {} , className = "" }) {
   const {
@@ -122,11 +123,11 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
       style={{ background: bgColor }}
     >
       <div className="container">
-        <div className="row">
+        <div className="row rowGap3">
           {/* Left: copy + tabs */}
           <div className="col-lg-6 col-md-6 col-12 my-auto">
             <div className={styles.section_heading}>
-              {headingHTML ? (
+              {headingHTML ? ( 
                 <h2 dangerouslySetInnerHTML={{ __html: headingHTML }} />
               ) : null}
               {description ? <p>{description}</p> : null}
@@ -193,7 +194,7 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
             <div className="tab-content">
               <div className="image-fader">
                 {prevSrc ? (
-                  <img
+                  <Image
                     src={prevSrc}
                     className={`img-fluid fader-img is-prev ${
                       prevShouldFade ? "fade-out" : ""
@@ -202,10 +203,12 @@ export default function ImageSlideSection({ imageSlideSectionData = {} , classNa
                     height={imgDims.h}
                     alt=""
                     aria-hidden="true"
-                  />
-                ) : null}
+                    loading="lazy"
+                    />
+                  ) : null}
                 {currSrc ? (
-                  <img
+                  <Image
+                  loading="lazy"
                     src={currSrc}
                     className={`img-fluid ${styles.fader_img} is-active`}
                     width={imgDims.w}

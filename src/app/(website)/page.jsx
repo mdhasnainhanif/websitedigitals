@@ -1,25 +1,86 @@
-import HeroBanner from "../../components/Home/HeroBanner/HeroBanner";
-import PortfolioSection from "../../components/Home/PortfolioSection/PortfolioSection";
-import TestimonialsSection from "../../components/TestimonialSection/TestimonialSection";
-import ImageSlideSection from "../../components/ui/ImageSlideSection";
-import { imageSlideSectionData, itemsByTab, tabs, testimonialsData } from "../Data";
-import GetStartedCta from "../../components/CTA/cta";
+import React from "react";
+import WebBanner from "@/components/WebBuilder/WebBanner/WebBanner";
+import DevelopmentCards from "@/components/LandingPage/DevelopmentCards/DevelopmentCards";
+import DevelopmentCardSlider from "../../components/LandingPage/DevelopmentCardSlider/DevelopmentCardSlider";
+import OurWorkSection from "../../components/LandingPage/OurWorkSection/OurWorkSection";
+import ScrollSection from "../../components/ScrollSection/ScrollSection";
+import ReviewsSlider from "../../components/LandingPage/ReviewsSlider/ReviewsSlider";
+import StepSection from "../../components/LandingPage/StepSection/StepSection";
+import TechnologiesSlider from "../../components/LandingPage/TechnologySlider/TechnologySlider";
+import TestimonialSlider from "../../components/LandingPage/TestimonialSlider/TestimonialSlider";
 import Faqs from "../../components/FAQs/Faqs";
-import { homePageFAQs } from "../../components/FAQs/data";
-import Blog from "@/components/Blog/Blog";
+import BlogSection from "../../components/LandingPage/BlogSection/BlogSection";
+import ContactSection from "../../components/LandingPage/ContactSection/ContactSection";
+import LandingPageCounter from "../../components/LandingPage/LandingPageCounter/LandingPageCounter";
+import WebBuilderCardSection from "../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection";
+import PlatformsSpecialize from "../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize";
+import LandingBannerForm from "../../components/LandingPage/LandingBannerForm/LandingBannerForm";
+
+import {
+  websiteHostingServicesBannerData,
+  websiteHostingServicesBannerData2,
+  websiteHostingServicesScrollSectionData,
+  websiteHostingServicesData,
+  websiteHostingServicesStatsData,
+  websiteHostingServicesWorkflowData,
+  websiteHostingServicesWhyChooseUsData,
+  websiteHostingServicesFAQsData,
+  websiteHostingServicesSectionData,
+  websiteHostingServicesWhyChooseUsSectionData,
+  websiteHostingServicesWorkflowSectionData,
+  websiteHostingServicesTechnologiesSectionData,
+  websiteHostingServicesTechnologiesData,
+  websiteHostingServicesFinalCTAData,
+  websiteHostingServicesImpactCardsData,
+  websiteHostingServicesImpactSectionData,
+  websiteHostingServicesIndustriesSectionData,
+  websiteHostingServicesIndustriesCardsData,
+  websiteHostingServicesMetadata,
+} from "../Data/websiteHostingServicesData";
 
 
-export default function Home() {
+export const metadata = websiteHostingServicesMetadata;
+
+const Home = () => {
   return (
     <div>
-      <HeroBanner />
-      <ImageSlideSection imageSlideSectionData={imageSlideSectionData} />
-      <PortfolioSection tabs={tabs} itemsByTab={itemsByTab} />
-      <ImageSlideSection imageSlideSectionData={imageSlideSectionData} className="blue-section1" />
-      <TestimonialsSection data={testimonialsData} />
-      <GetStartedCta />
-      <Faqs faqs={homePageFAQs} className="homeFaqs" />
-      <Blog />    
+      <WebBanner
+        islandingPage={true}
+        data={websiteHostingServicesBannerData}
+        className="withoutImg landingPageBanner"
+        col="col-md-6"
+      />
+      <LandingPageCounter statsData={websiteHostingServicesStatsData} />
+      <DevelopmentCards
+        sectionData={websiteHostingServicesImpactSectionData}
+        cardsData={websiteHostingServicesImpactCardsData}
+      />
+      <OurWorkSection />
+      <DevelopmentCardSlider
+        sectionData={websiteHostingServicesSectionData}
+        servicesData={websiteHostingServicesData}
+      />
+      <ReviewsSlider />
+      <ScrollSection 
+        data={websiteHostingServicesScrollSectionData} 
+        className="landingPageScrollSection"
+        isIconShow={true}
+      />
+      <StepSection sectionData={websiteHostingServicesWorkflowData} />
+      <TestimonialSlider />
+      <WebBanner
+        data={websiteHostingServicesFinalCTAData || websiteHostingServicesBannerData2}
+        className="notHero order2 landingPageBanner2"
+      />
+      <Faqs 
+        title="Frequently Asked Questions"
+        faqs={websiteHostingServicesFAQsData} 
+        isTwoCol={true}
+      />
+      <BlogSection />
+      <ContactSection />
     </div>
-  )
-}
+  );
+};
+
+export default Home;

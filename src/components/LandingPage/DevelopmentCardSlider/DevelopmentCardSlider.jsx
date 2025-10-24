@@ -56,7 +56,7 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null }) => {
         </div>
 
         <div className={styles.sliderContainer}>
-          <div className={`owl-carousel owl-theme ${styles.developmentCardSlider}`}>
+          <div className={`owl-carousel owl-theme newDevCardSlider ${styles.developmentCardSlider}`}>
             {services.map((service, index) => (
               <div key={index} className={`item ${styles.serviceCard}`}>
                 <div className={styles.cardIcon}>

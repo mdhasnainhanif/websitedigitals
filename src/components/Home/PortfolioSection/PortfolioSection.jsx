@@ -2,8 +2,14 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./PortfolioSection.module.css";
 import { CrossIcon } from "../../../../src/icons";
+import Link from "next/link";
+import Image from "next/image";
 
-export default function PortfolioSection({ tabs = [], itemsByTab = {} , className }) {
+export default function PortfolioSection({
+  tabs = [],
+  itemsByTab = {},
+  className,
+}) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
   const [openBlock, setOpenBlock] = useState(null); // { tabId, anchorIndex, content }
   const headerHeightRef = useRef(0);
@@ -19,7 +25,11 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
   useEffect(() => {
     if (!openBlock || !injectedRef.current) return;
     const el = injectedRef.current;
-    const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeightRef.current - 12;
+    const y =
+      el.getBoundingClientRect().top +
+      window.pageYOffset -
+      headerHeightRef.current -
+      12;
     window.scrollTo({ top: y, behavior: "smooth" });
   }, [openBlock]);
 
@@ -57,7 +67,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
       if (item.variant === "v2") {
         return (
           <div className={styles.webPortfolio_caseStudyDetailArea}>
-             {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
+            {item.card?.titleImg && <img src={item.card.titleImg} alt="" />}
             <div className={styles.webPortfolio_caseStudyDetail}>
               <p
                 dangerouslySetInnerHTML={{
@@ -65,7 +75,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                 }}
               />
               <div className={styles.linkArea}>
-                <a
+                <Link
                   href="#"
                   className={`${styles.primary} ${styles.offer_btn}`}
                   style={{
@@ -75,7 +85,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                   }}
                 >
                   Get Free Consultation
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -106,7 +116,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
               />
               {item.caseStudy?.beforeAfterHTML && (
                 <div className="view-before-after-div">
-                  <a
+                  <Link
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
@@ -146,7 +156,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                       src="https://www.websitedigitals.com/frontend/assets/images/arrow-blue.png"
                       width="100%"
                     />
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -168,7 +178,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
               item.caseStudy?.links?.briefHref) && (
               <div className={`${styles.linkArea}`}>
                 {item.caseStudy.links.launchHref && (
-                  <a
+                  <Link
                     href={item.caseStudy.links.launchHref}
                     className="primary"
                     style={{
@@ -178,10 +188,10 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                     }}
                   >
                     View Case study
-                  </a>
+                  </Link>
                 )}
                 {item.caseStudy.links.briefHref && (
-                  <a
+                  <Link
                     href={item.caseStudy.links.briefHref}
                     style={{
                       fontSize: "13px",
@@ -191,9 +201,9 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
                       color: "#000",
                     }}
                   >
-                    {item.caseStudy.links.briefLabel || "Let's build website"}{" "}
+                    {item.caseStudy.links.briefLabel || "Let's build website"}
                     <i className="fa-solid fa-angles-right" />
-                  </a>
+                  </Link>
                 )}
               </div>
             )}
@@ -203,62 +213,81 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
     })();
 
     return (
-       <div className={`row ${styles.webPortfolio_caseStudyArea}`}>
+      <div className={`row ${styles.webPortfolio_caseStudyArea}`}>
         <div
-            className={styles.webPortfolio_caseStudyClose}
-            role="button"
-            onClick={closeCaseStudy}
-          >
-            <CrossIcon />
-          </div>
+          className={styles.webPortfolio_caseStudyClose}
+          role="button"
+          onClick={closeCaseStudy}
+        >
+          <CrossIcon />
+        </div>
 
         <div className="col-md-8">
           {/* add a stable hook to scope queries */}
-          <div className={styles.webPortfolio_caseStudyTabsArea} data-case-study>
+          <div
+            className={styles.webPortfolio_caseStudyTabsArea}
+            data-case-study
+          >
             <div className={styles.webPortfolio_caseStudyTabs}>
               <ul className={`nav nav-tabs ${styles.nav_tabs}`}>
                 {tabsThumbs.map((src, i) => (
                   <li className={styles.nav_item} key={`thumb-${i}`}>
-                    <a
-                        href="#"
-                        className={`${styles.nav_link} ${i === 0 ? "active" : ""}`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const area = e.currentTarget.closest('[data-case-study]');
-                          if (!area) return;
+                    <Link
+                      href="#"
+                      className={`${styles.nav_link} ${
+                        i === 0 ? "active" : ""
+                      }`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const area =
+                          e.currentTarget.closest("[data-case-study]");
+                        if (!area) return;
 
-                          const links = area.querySelectorAll(`.${styles.nav_link}`);
-                          const imgs = area.querySelectorAll(`.${styles.tabImg}`);
-                          const panes = area.querySelectorAll(':scope .tab-pane');
+                        const links = area.querySelectorAll(
+                          `.${styles.nav_link}`
+                        );
+                        const imgs = area.querySelectorAll(`.${styles.tabImg}`);
+                        const panes = area.querySelectorAll(":scope .tab-pane");
 
-                          // Reset all
-                          links.forEach((l) => l.classList.remove('active'));
-                          imgs.forEach((img) => img.classList.remove(styles.activeImg));
+                        // Reset all
+                        links.forEach((l) => l.classList.remove("active"));
+                        imgs.forEach((img) =>
+                          img.classList.remove(styles.activeImg)
+                        );
 
-                          // Set current
-                          e.currentTarget.classList.add('active');
-                          e.currentTarget.querySelector('img')?.classList.add(styles.activeImg);
+                        // Set current
+                        e.currentTarget.classList.add("active");
+                        e.currentTarget
+                          .querySelector("img")
+                          ?.classList.add(styles.activeImg);
 
-                          // Show correct pane
-                          panes.forEach((p, idx) => {
-                            p.classList.toggle('active', idx === i);
-                            p.classList.toggle('show', idx === i);
-                          });
-                        }}
-                      >
-                        <img
-                          src={src}
-                          alt=""
-                          className={`${styles.tabImg} ${i === 0 ? styles.activeImg : ""}`}
-                        />
-                      </a>
+                        // Show correct pane
+                        panes.forEach((p, idx) => {
+                          p.classList.toggle("active", idx === i);
+                          p.classList.toggle("show", idx === i);
+                        });
+                      }}
+                    >
+                      <Image
+                        height={800}
+                        width={400}
+                        src={src}
+                        alt="tab thumbnail"
+                        className={`${styles.tabImg} ${
+                          i === 0 ? styles.activeImg : ""
+                        }`}
+                        loading="lazy"
+                      />
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* use the exact CSS-module name that exists in your CSS */}
-            <div className={`${styles.tab_content} ${styles.webPortfolio_caseStudy_content}`}>
+            <div
+              className={`${styles.tab_content} ${styles.webPortfolio_caseStudy_content}`}
+            >
               {tabsThumbs.map((src, i) => (
                 <div
                   key={`pane-${i}`}
@@ -276,7 +305,7 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
         </div>
 
         <div className="col-md-4">{rightSide}</div>
-        </div>
+      </div>
     );
   };
 
@@ -317,28 +346,31 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
               <div className={styles.webPortfolio_imageArea}>
                 <div className={styles.main_imageArea}>
                   <div className={styles.backImage}>
-                    <img
+                    <Image
                       src={item.card.backImage}
                       alt={item.card.title}
-                      width="480"
-                      height="471"
+                      width={480}
+                      height={471}
+                      loading="lazy"
                     />
                   </div>
                   <div className={styles.frontImage}>
-                    <img
+                    <Image
                       src={item.card.frontImage}
                       alt={item.card.title}
-                      width="501"
-                      height="471"
+                      width={501}
+                      height={471}
+                      loading="lazy"
                     />
                   </div>
                 </div>
                 <div className={styles.right_imageArea}>
-                  <img
+                  <Image
                     src={item.card.rightImage}
                     alt={item.card.title}
-                    width="271"
-                    height="457"
+                    width={271}
+                    height={457}
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -347,23 +379,23 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
               <div className={styles.webPortfolio_contentArea}>
                 <div className={styles.webPortfolio_contentTop}>
                   {item.card.titleImg && (
-                    <img
+                    <Image
                       src={item.card.titleImg}
                       alt={item.card.title}
-                      width="279"
-                      height="76"
+                      width={279}
+                      height={76}
                     />
                   )}
                   <h4>{item.card.title}</h4>
                 </div>
                 <div className={styles.webPortfolio_contentBottom}>
                   <p>{item.card.desc}</p>
-                  <a
+                  <Link
                     href={item.card.ctaHref || "javascript:void(0);"}
                     aria-label={item.card.ctaLabel}
                   >
                     <i className="fa fa-arrow-right" aria-hidden="true" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -409,70 +441,88 @@ export default function PortfolioSection({ tabs = [], itemsByTab = {} , classNam
 
   return (
     <>
-      <section className={`${styles.section_padding} section-padding ${className}`}>
-      <div className='container-fluid'>
+      <section
+        className={`${styles.section_padding} section-padding ${className}`}
+      >
+        <div className="container-fluid">
           <div className="container">
-        <div className="row">
-          <div className="col-12">
-          <div className={`${styles.section_heading} ${styles.text_center} section-heading`}>
-              <h2>Proven <span className={`${styles.color_primary} color-primary`}>Success</span> in Every <span className={`${styles.color_primary} color-primary`}> Project</span></h2>
-              <p className={styles.max_54rem}>At Website Digitals, we are dedicated to providing solutions that not only meet but exceed client expectations. Our best DIY website builder is a testament to our commitment 
-              to excellence, enabling users to create professional-grade websites with ease.</p>
-            </div>
-            <div className={`${styles.basic_tabs} ${styles.home_portfolio_tabs}`}>
-              <ul className={`nav ${styles.nav_tabs}`}>
-                {tabs.map((t) => (
-                  <li className={styles.nav_item} key={t.id}>
-                    <a
-                      className={`${styles.nav_link} ${activeTab === t.id ? styles.active : ""}`}
-                      href={`#${t.id}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setActiveTab(t.id);
-                        setOpenBlock(null);
-                      }}
-                    >
-                      {t.whiteIcon && (
-                        <img
-                          src={t.whiteIcon}
-                          alt={t.label}
-                          
-                          className={styles.white_img}
-                        />
-                      )}
-                      {t.colorIcon && (
-                        <img
-                          src={t.colorIcon}
-                          alt={t.label}
-                          
-                        />
-                      )}
-                      <h3>{t.label}</h3>
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            <div className="row">
+              <div className="col-12">
+                <div
+                  className={`${styles.section_heading} ${styles.text_center} section-heading`}
+                >
+                  <h2>
+                    Proven
+                    <span className={`${styles.color_primary} color-primary`}>
+                      Success
+                    </span>
+                    in Every
+                    <span className={`${styles.color_primary} color-primary`}>
+                      Project
+                    </span>
+                  </h2>
+                  <p className={styles.max_54rem}>
+                    At Website Digitals, we are dedicated to providing solutions
+                    that not only meet but exceed client expectations. Our best
+                    DIY website builder is a testament to our commitment to
+                    excellence, enabling users to create professional-grade
+                    websites with ease.
+                  </p>
+                </div>
+                <div
+                  className={`${styles.basic_tabs} ${styles.home_portfolio_tabs}`}
+                >
+                  <ul className={`nav ${styles.nav_tabs}`}>
+                    {tabs.map((t) => (
+                      <li className={styles.nav_item} key={t.id}>
+                        <Link
+                          className={`${styles.nav_link} ${
+                            activeTab === t.id ? styles.active : ""
+                          }`}
+                          href={`#${t.id}`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setActiveTab(t.id);
+                            setOpenBlock(null);
+                          }}
+                        >
+                          {t.whiteIcon && (
+                            <Image
+                            height={160}
+                            width={80}
+                              src={t.whiteIcon}
+                              alt={t.label}
+                              className={styles.white_img}
+                            />
+                          )}
+                          {t.colorIcon && (
+                            <img src={t.colorIcon} alt={t.label} />
+                          )}
+                          <h3>{t.label}</h3>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        </div>
 
-
-        <div className={`tab-content ${styles.web_portfolio_content}`}>
-          {tabs.map((t) => (
-            <div
-              key={t.id}
-              className={`tab-pane fade ${
-                activeTab === t.id ? "active show" : ""
-              }`}
-              id={t.id}
-            >
-              {renderGridWithInjected(t.id)}
-            </div>
-          ))}
+          <div className={`tab-content ${styles.web_portfolio_content}`}>
+            {tabs.map((t) => (
+              <div
+                key={t.id}
+                className={`tab-pane fade ${
+                  activeTab === t.id ? "active show" : ""
+                }`}
+                id={t.id}
+              >
+                {renderGridWithInjected(t.id)}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import localFont from "next/font/local";
+import Script from "next/script";
 
 const wfFont = localFont({
   src: [
@@ -10,14 +11,16 @@ const wfFont = localFont({
       path: "../../public/assets/fonts/wf-visual-sans/WFVisualSansVF.ttf",
       weight: "500",
     },
-  ],  
+  ],
   variable: "--wfFont",
-});  
+  display: "swap",
+});
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -34,19 +37,73 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"          
+        {/* Critical CSS inline for above-the-fold content */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+            .header { height: 80px; position: relative; }
+            .logo-img { width: 150px; height: 50px; }
+            .hero-banner { min-height: 100vh; }
+            body { margin: 0; font-family: var(--font-poppins), sans-serif; }
+            * { box-sizing: border-box; }
+          `,
+          }}
         />
 
-        <script src="/assets/js/jquery-3.7.1.min.js"></script>
-        <script src="/assets/js/owl.carousel.min.js"></script>
+        {/* Non-blocking CSS loading for Owl Carousel */}
+        <link 
+          rel="preload" 
+          href="/assets/css/owl.carousel.min.css" 
+          as="style"
+        />
+        <link 
+          rel="stylesheet" 
+          href="/assets/css/owl.carousel.min.css" 
+          media="print"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+              const link = document.querySelector('link[href="/assets/css/owl.carousel.min.css"][media="print"]');
+              if (link) {
+                link.media = 'all';
+              }
+            });
+            
+            // Ensure Owl Carousel loads after scripts
+            window.addEventListener('load', function() {
+              if (typeof window.$ !== 'undefined' && window.$.fn.owlCarousel) {
+                console.log('Owl Carousel loaded successfully');
+              } else {
+                console.log('Waiting for Owl Carousel to load...');
+                setTimeout(function() {
+                  if (typeof window.$ !== 'undefined' && window.$.fn.owlCarousel) {
+                    console.log('Owl Carousel loaded after delay');
+                  }
+                }, 1000);
+              }
+            });
+          `,
+          }}
+        />
+          
+
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${wfFont.variable} ${poppins.variable}`}>
         {children}
+        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="afterInteractive" />
+        <Script src="/assets/js/owl.carousel.min.js" strategy="afterInteractive" />
       </body>
     </html>
   );

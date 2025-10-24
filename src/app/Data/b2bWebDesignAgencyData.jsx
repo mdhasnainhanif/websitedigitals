@@ -234,7 +234,7 @@ export const b2bWebDesignAgencyBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "B2B Web Design Agency Banner",
     className: "width-100",
   },
@@ -730,7 +730,7 @@ export const b2bWebDesignAgencyFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "B2B Web Design Agency",
     width: 500,
     height: 400,

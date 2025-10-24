@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useEffect } from "react";
 import { useCyclingBlueGradient } from "../../../app/hooks/useCyclingBlueGradient";
 import { useOwlCarousel } from "../../../app/hooks/useOwlCarousel";
 import { useMouseParallax } from "../../../app/hooks/useMouseParallax";
 import styles from "./HeroBanner.module.css";
+import Image from "next/image";
 
 export default function HeroBanner() {
   const IMAGE_BASE = useMemo(() => {
@@ -133,7 +133,7 @@ export default function HeroBanner() {
                 method="GET"
                 id="bannerForm"
               >
-                <img
+                <Image
                   loading="lazy"
                   src={`/assets/images/banner/pencil.png`}
                   width={24}
@@ -152,7 +152,7 @@ export default function HeroBanner() {
 
               {/* Desktop Parallax */}
               <div className={styles.parallexEffect}>
-                <img
+                <Image
                   src={`/assets/images/wd-1/1.webp`}
                   width={798}
                   height={375}
@@ -163,7 +163,7 @@ export default function HeroBanner() {
                   className={`object ${styles.objectOne}`}
                   id="objects"
                 >
-                  <img
+                  <Image
                     src={`/assets/images/wd-1/02.webp`}
                     data-depth="0.1"
                     style={{ width: "100%" }}
@@ -180,7 +180,7 @@ export default function HeroBanner() {
                   className={`object ${styles.objectThree}`}
                   id="objects"
                 >
-                  <img
+                  <Image
                     src={`/assets/images/wd-1/03.webp`}
                     data-depth="0.1"
                     style={{ width: "100%" }}
@@ -196,7 +196,7 @@ export default function HeroBanner() {
 
               {/* Mobile Parallax */}
               <div className={styles.mobileParallexEffect}>
-                <img
+                <Image
                   loading="lazy"
                   src={`/assets/images/wd-1/2.png`}
                   className={styles.leftImg}
@@ -206,7 +206,7 @@ export default function HeroBanner() {
                   height={112}
                   alt="mobile-parallex-effect-left"
                 />
-                <img
+                <Image
                   loading="lazy"
                   src={`/assets/images/wd-1/5.png`}
                   className={styles.rightImg}
@@ -216,7 +216,7 @@ export default function HeroBanner() {
                   height={159}
                   alt="mobile-parallex-effect-right"
                 />
-                <img
+                <Image
                   loading="lazy"
                   src={`/assets/images/wd-1/3.png`}
                   data-depth="0.2"
@@ -233,10 +233,13 @@ export default function HeroBanner() {
                 {[1, 2, 3, 4, 5].map((n) => (
                   <div className="item" key={n}>
                     <div className={styles.smallLogos2}>
-                      <img
+                      <Image
                         loading="lazy"
                         src={`/assets/images-webp/banner/small-logos/${n}.webp`}
                         className="img-fluid"
+                        width={200}
+                        height={40}
+                        unoptimized={n === 3}
                         alt={
                           {
                             1: "ocean-grill",

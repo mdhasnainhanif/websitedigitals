@@ -500,7 +500,7 @@ export const websiteMaintenanceFinalCTAData = {
     "Don't let downtime, slow performance, and hidden threats put your business at risk. Backed by trusted practices and standards, our website support services and dedicated ongoing website care give your site the protection and reliability it needs to perform every day.",
   ],
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Website Maintenance Services",
     width: 500,
     height: 400,

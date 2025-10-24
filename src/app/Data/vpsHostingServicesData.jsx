@@ -222,7 +222,7 @@ export const vpsHostingServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "VPS Hosting Services Banner",
     className: "width-100",
   },
@@ -630,7 +630,7 @@ export const vpsHostingServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "VPS Hosting Services",
     width: 500,
     height: 400,

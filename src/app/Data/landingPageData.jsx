@@ -283,7 +283,7 @@ export const landingPageBannerData2 = {
     show: true
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     // width: 712,
     // height: 428,
     alt: "Website Development Banner",

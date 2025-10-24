@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.contactIcon svg path{
+ fill: #ffffff;
+ color: #ffffff;
+}
+
 .contactSection::before {
   content: "";
   position: absolute;

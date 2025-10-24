@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import styles from './Footer.module.css'
 import { FacebookIcon, InstagramIcon, LinkedinIcon, PinterestIcon, YoutubeIcon } from '../../icons'
+import Image from 'next/image'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -23,7 +24,9 @@ export default function Footer() {
             <div className="col-lg-4">
               <div className={styles.footer_logoArea}>
                 <Link aria-label="Website Digitals" href="/">
-                  <img
+                  <Image
+                    width={200}
+                    height={56}
                     src={`/assets/images-webp/website-digitals-white.webp`}
                     alt="Website Digitals"
                   />
@@ -38,19 +41,21 @@ export default function Footer() {
               <ul className={styles.partners_rating}>
                 <li>
                   <a href="https://clutch.co/profile/website-digitals" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
+                      width={100}
+                      height={30}
                       src={`/assets/images-webp/partners/2.webp`}
                       alt="Clutch"
-                      width="100%"
                     />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.trustpilot.com/review/websitedigitals.com" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
+                      width={150}
+                      height={50}
                       src={`/assets/images-webp/partners/trust-logo.svg`}
                       alt="Trustpilot"
-                      width="100%"
                     />
                   </a>
                 </li>
@@ -80,9 +85,9 @@ export default function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <a href="https://websitedigitals.com/blog" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://websitedigitals.com/blog" target="_blank" rel="noopener noreferrer">
                           <span>Blog</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer">
@@ -188,7 +193,7 @@ export default function Footer() {
                           href="https://www.facebook.com/webdigitals/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Facebook"
+                          aria-label='Facebook'
                         >
                           <FacebookIcon/>
                         </a>
@@ -198,7 +203,7 @@ export default function Footer() {
                           href="https://www.instagram.com/website_digitals/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Instagram"
+                          aria-label='Instagram'
                         >
                           <InstagramIcon/>
                         </a>
@@ -208,7 +213,7 @@ export default function Footer() {
                           href="https://www.pinterest.com/websitedigitals/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Pinterest"
+                          aria-label='Pinterest'
                         >
                           <PinterestIcon/>
                         </a>
@@ -218,7 +223,7 @@ export default function Footer() {
                           href="https://www.linkedin.com/company/website-digitals"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Linkedin"
+                          aria-label='Linkedin'
                         >
                           <LinkedinIcon/>
                         </a>
@@ -228,7 +233,7 @@ export default function Footer() {
                           href="https://www.youtube.com/channel/UCfH5v6yrRLD_mDoAyavM8zg"
                           target="_blank"
                           rel="noopener noreferrer"
-                          data-text="Youtube"
+                          aria-label='Youtube'
                         >
                           <YoutubeIcon/>
                         </a>
@@ -250,9 +255,12 @@ export default function Footer() {
             <div className="col-md-6">
               <ul className={styles.social_links}>
                 <li>
-                  <img
+                  <Image
                     src={`/assets/images-webp/payment/cards.webp`}
                     alt="Accepted payment methods"
+                    width={320}
+                    height={20}
+                    loading="lazy"
                   />
                 </li>
               </ul>

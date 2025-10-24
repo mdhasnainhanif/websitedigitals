@@ -147,7 +147,6 @@ export const shopifyDevelopmentScrollSectionData = {
   heading: "Why Clients Choose Our Shopify Development Services",
   description: [
     "Our Shopify services are built on proven expertise, tailored solutions, and a commitment to measurable results. Each advantage we offer ensures your store is designed, developed, and managed for sustained growth.",
-    "",
     "Here's what sets our Shopify services apart:",
   ],
   items: [
@@ -285,7 +284,7 @@ export const shopifyDevelopmentBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Shopify Development Banner",
     className: "width-100",
   },
@@ -903,7 +902,7 @@ export const shopifyDevelopmentFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Shopify Development Services",
     width: 500,
     height: 400,

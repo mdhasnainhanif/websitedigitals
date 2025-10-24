@@ -241,7 +241,7 @@ export const domainRegistrationBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Domain Registration Banner",
     className: "width-100",
   },
@@ -678,7 +678,7 @@ export const domainRegistrationFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Domain Registration Services",
     width: 500,
     height: 400,

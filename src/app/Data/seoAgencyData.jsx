@@ -240,7 +240,7 @@ export const seoAgencyBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "SEO Agency Services",
     className: "width-100",
   },
@@ -729,7 +729,7 @@ export const seoAgencyFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "SEO Agency Services",
     width: 500,
     height: 400,

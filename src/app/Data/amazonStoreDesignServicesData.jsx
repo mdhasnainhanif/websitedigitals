@@ -233,7 +233,7 @@ export const amazonStoreDesignServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Amazon Store Design Services Banner",
     className: "width-100",
   },
@@ -312,7 +312,6 @@ export const amazonStoreDesignServicesImpactCardsData = [
 export const amazonStoreDesignServicesImpactSectionData = {
   heading: "Why Amazon Store Design Matters",
   showDescription: false,
- 
 };
 
 // Industries Data
@@ -410,8 +409,7 @@ export const amazonStoreDesignServicesTechnologiesData = [
 // Workflow Data (for StepSection component)
 export const amazonStoreDesignServicesWorkflowData = {
   title: "Our Amazon Store Design Process",
-  description:
-    "",
+  description: "",
   showDescription: false,
   steps: [
     {
@@ -710,7 +708,7 @@ export const amazonStoreDesignServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Amazon Store Design Services",
     width: 500,
     height: 400,

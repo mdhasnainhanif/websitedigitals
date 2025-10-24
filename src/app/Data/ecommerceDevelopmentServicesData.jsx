@@ -442,7 +442,7 @@ export const ecommerceDevelopmentFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Ecommerce Development Services",
     width: 500,
     height: 400,
@@ -627,7 +627,7 @@ export const ecommerceDevelopmentBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Ecommerce Development Banner",
     className: "width-100",
   },

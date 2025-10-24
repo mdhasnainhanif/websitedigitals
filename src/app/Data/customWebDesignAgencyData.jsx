@@ -240,7 +240,7 @@ export const customWebDesignAgencyBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Custom Web Design Agency Banner",
     className: "width-100",
   },
@@ -700,7 +700,7 @@ export const customWebDesignAgencyFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Custom Web Design Agency",
     width: 500,
     height: 400,

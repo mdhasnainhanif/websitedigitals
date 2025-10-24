@@ -237,7 +237,7 @@ export const localSEOServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Local SEO Services Banner",
     className: "width-100",
   },
@@ -711,7 +711,7 @@ export const localSEOServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Local SEO Services",
     width: 500,
     height: 400,

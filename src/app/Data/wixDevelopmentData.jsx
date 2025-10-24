@@ -256,7 +256,7 @@ export const wixDevelopmentBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Wix Development Banner",
     className: "width-100",
   },
@@ -793,7 +793,7 @@ export const wixDevelopmentFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Wix Development Services",
     width: 500,
     height: 400,

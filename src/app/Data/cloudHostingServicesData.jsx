@@ -104,7 +104,7 @@ export const cloudHostingServicesBannerData2 = {
     show: true,
   },
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Cloud Hosting Services Banner",
     className: "width-100",
   },
@@ -634,7 +634,7 @@ export const cloudHostingServicesFinalCTAData = {
   ],
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Cloud Hosting Services",
     width: 500,
     height: 400,

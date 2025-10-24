@@ -26,3 +26,13 @@
 .viewCaseStudyButton {
     font-size: 0.875rem;
 }
+
+.viewCaseStudyButton  a{
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .section {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}

@@ -36,7 +36,7 @@ import {
   webDevelopmentServicesIndustriesSectionData,
   webDevelopmentServicesIndustriesCardsData,
   webDevelopmentServicesMetadata,
-} from "../../Data/webDevelopmentServicesData"; 
+} from "../../Data/webDevelopmentServicesData";
 
 export const metadata = webDevelopmentServicesMetadata;
 
@@ -59,23 +59,33 @@ const page = () => {
         sectionData={webDevelopmentServicesSectionData}
         servicesData={webDevelopmentServicesData}
       />
+      <ReviewsSlider />
       <WebBuilderCardSection
         heading={webDevelopmentServicesIndustriesSectionData?.heading}
         description={webDevelopmentServicesIndustriesSectionData?.description}
-        showDescription={webDevelopmentServicesIndustriesSectionData?.showDescription}
+        showDescription={
+          webDevelopmentServicesIndustriesSectionData?.showDescription
+        }
         items={webDevelopmentServicesIndustriesCardsData || []}
         columnCount={3}
         button={webDevelopmentServicesIndustriesSectionData?.cta?.show}
-        buttonText={webDevelopmentServicesIndustriesSectionData?.cta?.text || "Start Building Your Website Today"}
-        buttonHref={webDevelopmentServicesIndustriesSectionData?.cta?.href || "#"}
-        buttonClassName={webDevelopmentServicesIndustriesSectionData?.cta?.className || "offer-btn primary"}
+        buttonText={
+          webDevelopmentServicesIndustriesSectionData?.cta?.text ||
+          "Start Building Your Website Today"
+        }
+        buttonHref={
+          webDevelopmentServicesIndustriesSectionData?.cta?.href || "#"
+        }
+        buttonClassName={
+          webDevelopmentServicesIndustriesSectionData?.cta?.className ||
+          "offer-btn primary"
+        }
       />
-      <ReviewsSlider />
-      <ScrollSection 
-        data={webDevelopmentServicesScrollSectionData} 
+      {/* <ScrollSection
+        data={webDevelopmentServicesScrollSectionData}
         className="landingPageScrollSection"
         isIconShow={true}
-      />
+      /> */}
       <StepSection sectionData={webDevelopmentServicesWorkflowData} />
       <PlatformsSpecialize
         sectionData={webDevelopmentServicesTechnologiesSectionData}
@@ -83,12 +93,15 @@ const page = () => {
       />
       <TestimonialSlider />
       <WebBanner
-        data={webDevelopmentServicesFinalCTAData || webDevelopmentServicesBannerData2}
+        data={
+          webDevelopmentServicesFinalCTAData ||
+          webDevelopmentServicesBannerData2
+        }
         className="notHero order2 landingPageBanner2"
       />
-      <Faqs 
+      <Faqs
         title="Frequently Asked Questions"
-        faqs={webDevelopmentServicesFAQsData} 
+        faqs={webDevelopmentServicesFAQsData}
         isTwoCol={true}
       />
       <BlogSection />

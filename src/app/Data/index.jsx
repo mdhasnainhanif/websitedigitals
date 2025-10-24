@@ -876,7 +876,7 @@ export const testimonialsData = {
   ],
   items: [
     {
-      image: { src: "/assets/images/testimonials/1.jpg", alt: "testimonial1", width: 322, height: 237 },
+      image: { src: "/assets/images/testimonials/1.jpg", alt: "testimonial1", width: 310, height: 237 },
       rating: 5,
       text: "The redesign of our website was exceptional; the new look is sleek and modern. Highly recommended!",
       user: {
@@ -888,7 +888,7 @@ export const testimonialsData = {
       },
     },
     {
-      image: { src: "/assets/images/testimonials/1.webp", alt: "testimonial2", width: 322, height: 237 },
+      image: { src: "/assets/images/testimonials/1.webp", alt: "testimonial2", width: 310, height: 237 },
       rating: 5,
       text: "Outstanding service! The design team was responsive and delivered a website that perfectly fits our brand.",
       user: {
@@ -900,7 +900,7 @@ export const testimonialsData = {
       },
     },
     {
-      image: { src: "/assets/images/testimonials/3.webp", alt: "testimonial3", width: 322, height: 237 },
+      image: { src: "/assets/images/testimonials/3.webp", alt: "testimonial3", width: 310, height: 237 },
       rating: 5,
       text: "Our website now attracts more visitors thanks to the stunning redesign. Excellent work!",
       user: {
@@ -912,7 +912,7 @@ export const testimonialsData = {
       },
     },
     {
-      image: { src: "/assets/images/testimonials/2.jpg", alt: "testimonial4", width: 322, height: 237 },
+      image: { src: "/assets/images/testimonials/2.jpg", alt: "testimonial4", width: 310, height: 237 },
       rating: 5,
       text: "Professional and efficient! The design exceeded our expectations, enhancing both look and functionality.",
       user: {

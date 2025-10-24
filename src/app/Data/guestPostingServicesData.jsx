@@ -465,7 +465,7 @@ export const guestPostingServicesFinalCTAData = {
   },
   // image as object so the WebBanner component can read data.image.src
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Boost Your SEO",
     className: "width-100",
   },

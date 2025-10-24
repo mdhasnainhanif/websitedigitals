@@ -344,7 +344,7 @@ export const webDesignFinalCTAData = {
   },
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
   image: {
-    src: "/assets/images/everything-you-need.png",
+    src: "/assets/images/everything-you-need.webp",
     alt: "Web Design Services",
     width: 500,
     height: 400,

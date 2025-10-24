@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 import styles from './ContactSection.module.css'
+import Image from 'next/image'
+import { PhoneIcon, EmailIcon, LocationIcon } from '@/icons'
 
 const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call" }) => {
   // Default contact data if none provided
@@ -10,7 +12,7 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
     contactInfo: {
       phone: "(646)-222-3598",
       email: "info@websitedigitals.com",
-      address: "175 Pearl Street Dumbo, 1st, 2nd and 3rd Floor, Dumbo, NY 11201"
+      address: "175 Pearl Street Dumbo, 1st, 2nd and 3rd Floor, Dumbo, NY 11201",
     },
     image: "/assets/images/support.png",
     imageAlt: "Customer service team with headsets"
@@ -63,7 +65,9 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
               {/* Image */}
               <div className={styles.imageContainer}>
                 <div className={styles.imageWrapper}>
-                  <img 
+                  <Image
+                    width={570}
+                    height={430}
                     src={data.image} 
                     alt={data.imageAlt}
                     className={styles.contactImage}
@@ -75,7 +79,7 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
-                    <i className="fas fa-phone"></i>
+                    <PhoneIcon />
                   </div>
                   <div className={styles.contactText}>
                     <span className={styles.contactLabel}>Phone Number</span>
@@ -85,7 +89,7 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
 
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
-                    <i className="fas fa-envelope"></i>
+                    <EmailIcon />
                   </div>
                   <div className={styles.contactText}>
                     <span className={styles.contactLabel}>Email</span>
@@ -95,7 +99,7 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
 
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
-                    <i className="fas fa-map-marker-alt"></i>
+                    <LocationIcon />
                   </div>
                   <div className={styles.contactText}>
                     <span className={styles.contactLabel}>Address</span>
