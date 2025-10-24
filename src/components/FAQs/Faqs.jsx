@@ -9,17 +9,13 @@ const FAQ = ({
   sectionClassName = "section-padding gradient-circle rightCenter-gradient",
   isTwoCol = false,
 }) => {
-  const [openItem, setOpenItem] = useState(0); // Track which item is open
-
+  const [openItem, setOpenItem] = useState(0);
   const handleToggle = (index) => {
-    setOpenItem(openItem === index ? -1 : index); // Toggle or close
+    setOpenItem(openItem === index ? -1 : index); 
   };
-
-  // split faqs into 2 columns if isTwoCol true
   const mid = Math.ceil(faqs.length / 2);
   const firstCol = faqs.slice(0, mid);
   const secondCol = faqs.slice(mid);
-
   return (
     <section className={`section-padding ${sectionClassName} ${className}`}>
       <div className="container">
@@ -30,7 +26,6 @@ const FAQ = ({
             </div>
           </div>
         </div>
-
         <div className="row">
           {isTwoCol ? (
             <>
@@ -78,14 +73,13 @@ const FAQ = ({
                   ))}
                 </div>
               </div>
-
               <div className="col-lg-6">
                 <div
                   className={`accordion ${styles.faq_accordion}`}
                   id="faq-accordion-2"
                 >
                   {secondCol.map((faq, index) => {
-                    const realIndex = mid + index; // shift index for toggle
+                    const realIndex = mid + index; 
                     return (
                       <div
                         key={realIndex}

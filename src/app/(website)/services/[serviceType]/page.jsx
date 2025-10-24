@@ -24,7 +24,6 @@ import PlatformsSpecialize from "../../../../components/LandingPage/PlatformsSpe
 import { platformsData } from "../../../Data/landingPageData";
 import LandingBannerForm from "../../../../components/LandingPage/LandingBannerForm/LandingBannerForm";
 
-// Import all service data
 import {
   cmsDevelopmentBannerData,
   cmsDevelopmentBannerData2,

@@ -71,9 +71,9 @@ const imgSlider = [
   },
 ];
 
-const ReviewsSlider = () => {
+const ReviewsSlider = ({ className = "" }) => {
   return (
-    <section className="reviewsSliderMain">
+    <section className={`reviewsSliderMain ${className}`}>
       <div className="imgSlideRow reviewsSlider">
         <div className="imgLeftSlider">
           {imgSlider.map((item, index) => (

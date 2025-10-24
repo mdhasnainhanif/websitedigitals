@@ -4,9 +4,9 @@ import { caseStudiesData } from "../../../app/Data/landingPageData";
 import Link from "next/link";
 import Image from "next/image";
 
-const OurWorkSection = () => {
+const OurWorkSection = ({ className = "" }) => {
   return (
-    <section className={`section-padding ${styles.section}`}>
+    <section className={`section-padding ${styles.section} ${className}`}> 
       <div className="container">
         <div className="row">
           <div className="col-12">
