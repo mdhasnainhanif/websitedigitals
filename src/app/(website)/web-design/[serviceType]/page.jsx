@@ -15,7 +15,62 @@ import LandingPageCounter from "../../../../components/LandingPage/LandingPageCo
 import WebBuilderCardSection from "../../../../components/WebBuilder/WebBuilderCardSection/WebBuilderCardSection";
 import PlatformsSpecialize from "../../../../components/LandingPage/PlatformsSpecialize/PlatformsSpecialize";
 
-// Import Landing Page Design Services data
+import {
+  customGraphicDesignBannerData,
+  customGraphicDesignBannerData2,
+  customGraphicDesignScrollSectionData,
+  customGraphicDesignServicesData,
+  customGraphicDesignStatsData,
+  customGraphicDesignImpactSectionData,
+  customGraphicDesignImpactCardsData,
+  customGraphicDesignServicesSectionData,
+  customGraphicDesignIndustriesSectionData,
+  customGraphicDesignIndustriesCardsData,
+  customGraphicDesignWorkflowData,
+  customGraphicDesignTechnologiesSectionData,
+  customGraphicDesignTechnologiesData,
+  customGraphicDesignFinalCTAData,
+  customGraphicDesignFAQsData,
+  customGraphicDesignMetadata,
+} from "../../../Data/customGraphicDesignData";
+import {
+  videoAnimationBannerData,
+  videoAnimationBannerData2,
+  videoAnimationScrollSectionData,
+  videoAnimationServicesData,
+  videoAnimationStatsData,
+  videoAnimationImpactSectionData,
+  videoAnimationImpactCardsData,
+  videoAnimationServicesSectionData,
+  videoAnimationIndustriesSectionData,
+  videoAnimationIndustriesCardsData,
+  videoAnimationWorkflowData,
+  videoAnimationTechnologiesSectionData,
+  videoAnimationTechnologiesData,
+  videoAnimationFinalCTAData,
+  videoAnimationFAQsData,
+  videoAnimationMetadata,
+} from "../../../Data/videoAnimationData";
+import {
+  customLogoDesignBannerData,
+  customLogoDesignBannerData2,
+  customLogoDesignScrollSectionData,
+  customLogoDesignServicesData,
+  customLogoDesignStatsData,
+  customLogoDesignImpactSectionData,
+  customLogoDesignImpactCardsData,
+  customLogoDesignServicesSectionData,
+  customLogoDesignIndustriesSectionData,
+  customLogoDesignIndustriesCardsData,
+  customLogoDesignWorkflowData,
+  customLogoDesignTechnologiesSectionData,
+  customLogoDesignTechnologiesData,
+  customLogoDesignFinalCTAData,
+  customLogoDesignFAQsData,
+  customLogoDesignWhyChooseUsSectionData,
+  customLogoDesignWhyChooseUsData,
+  customLogoDesignMetadata,
+} from "../../../Data/customLogoDesignData";
 import {
   landingPageDesignServicesBannerData,
   landingPageDesignServicesBannerData2,
@@ -36,8 +91,6 @@ import {
   landingPageDesignServicesTechnologiesData,
   landingPageDesignServicesMetadata,
 } from "../../../Data/landingPageDesignServicesData";
-
-// Import Responsive Web Design Services data
 import {
   responsiveWebDesignBannerData,
   responsiveWebDesignBannerData2,
@@ -58,8 +111,6 @@ import {
   responsiveWebDesignTechnologiesData,
   responsiveWebDesignMetadata,
 } from "../../../Data/responsiveWebDesignServicesData";
-
-// Import Website Redesign Services data
 import {
   websiteRedesignServicesBannerData,
   websiteRedesignServicesBannerData2,
@@ -80,8 +131,6 @@ import {
   websiteRedesignServicesTechnologiesData,
   websiteRedesignServicesMetadata,
 } from "../../../Data/websiteRedesignServicesData";
-
-// Import B2B Web Design Agency data
 import {
   b2bWebDesignAgencyBannerData,
   b2bWebDesignAgencyBannerData2,
@@ -102,8 +151,6 @@ import {
   b2bWebDesignAgencyTechnologiesData,
   b2bWebDesignAgencyMetadata,
 } from "../../../Data/b2bWebDesignAgencyData";
-
-// Import Custom Web Design Agency data
 import {
   customWebDesignAgencyBannerData,
   customWebDesignAgencyBannerData2,
@@ -124,8 +171,6 @@ import {
   customWebDesignAgencyTechnologiesData,
   customWebDesignAgencyMetadata,
 } from "../../../Data/customWebDesignAgencyData";
-
-// Import Amazon Store Design Services data
 import {
   amazonStoreDesignServicesBannerData,
   amazonStoreDesignServicesBannerData2,
@@ -146,9 +191,63 @@ import {
   amazonStoreDesignServicesTechnologiesData,
   amazonStoreDesignServicesMetadata,
 } from "../../../Data/amazonStoreDesignServicesData";
-
-// Service data mapping
 const serviceDataMap = {
+  "custom-graphic-design-services": {
+    bannerData: customGraphicDesignBannerData,
+    bannerData2: customGraphicDesignBannerData2,
+    scrollSectionData: customGraphicDesignScrollSectionData,
+    servicesData: customGraphicDesignServicesData,
+    statsData: customGraphicDesignStatsData,
+    impactSectionData: customGraphicDesignImpactSectionData,
+    impactCardsData: customGraphicDesignImpactCardsData,
+    servicesSectionData: customGraphicDesignServicesSectionData,
+    industriesSectionData: customGraphicDesignIndustriesSectionData,
+    industriesCardsData: customGraphicDesignIndustriesCardsData,
+    workflowData: customGraphicDesignWorkflowData,
+    technologiesSectionData: customGraphicDesignTechnologiesSectionData,
+    technologiesData: customGraphicDesignTechnologiesData,
+    finalCTAData: customGraphicDesignFinalCTAData,
+    faqsData: customGraphicDesignFAQsData,
+    metadata: customGraphicDesignMetadata,
+  },
+  "video-animation-services": {
+    bannerData: videoAnimationBannerData,
+    bannerData2: videoAnimationBannerData2,
+    scrollSectionData: videoAnimationScrollSectionData,
+    servicesData: videoAnimationServicesData,
+    statsData: videoAnimationStatsData,
+    impactSectionData: videoAnimationImpactSectionData,
+    impactCardsData: videoAnimationImpactCardsData,
+    servicesSectionData: videoAnimationServicesSectionData,
+    industriesSectionData: videoAnimationIndustriesSectionData,
+    industriesCardsData: videoAnimationIndustriesCardsData,
+    workflowData: videoAnimationWorkflowData,
+    technologiesSectionData: videoAnimationTechnologiesSectionData,
+    technologiesData: videoAnimationTechnologiesData,
+    finalCTAData: videoAnimationFinalCTAData,
+    faqsData: videoAnimationFAQsData,
+    metadata: videoAnimationMetadata,
+  },
+  "custom-logo-design-services": {
+    bannerData: customLogoDesignBannerData,
+    bannerData2: customLogoDesignBannerData2,
+    scrollSectionData: null,
+    servicesData: customLogoDesignServicesData,
+    statsData: customLogoDesignStatsData,
+    impactSectionData: customLogoDesignImpactSectionData,
+    impactCardsData: customLogoDesignImpactCardsData,
+    servicesSectionData: customLogoDesignServicesSectionData,
+    industriesSectionData: customLogoDesignIndustriesSectionData,
+    industriesCardsData: customLogoDesignIndustriesCardsData,
+    workflowData: customLogoDesignWorkflowData,
+    technologiesSectionData: customLogoDesignTechnologiesSectionData,
+    technologiesData: customLogoDesignTechnologiesData,
+    finalCTAData: customLogoDesignFinalCTAData,
+    faqsData: customLogoDesignFAQsData,
+    whyChooseUsSectionData: customLogoDesignWhyChooseUsSectionData,
+    whyChooseUsData: customLogoDesignWhyChooseUsData,
+    metadata: customLogoDesignMetadata,
+  },
   "landing-page-design-services": {
     bannerData: landingPageDesignServicesBannerData,
     bannerData2: landingPageDesignServicesBannerData2,
@@ -270,34 +369,23 @@ const serviceDataMap = {
     metadata: amazonStoreDesignServicesMetadata,
   },
 };
-
-// Generate metadata for each service page
 export async function generateMetadata({ params }) {
   const { serviceType } = await params;
   const serviceData = serviceDataMap[serviceType];
-
   if (!serviceData || !serviceData.metadata) {
     return {
       title: "Service Not Found | Website Digitals",
       description: "The requested service page could not be found.",
     };
   }
-
   return serviceData.metadata;
 }
-
 const WebDesignServicePage = async ({ params }) => {
   const { serviceType } = await params;
-
-  // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];
-  
-  // Debug logging
   console.log("Service Type:", serviceType);
-  console.log("Service Data:", serviceData);
-
-  // If service type not found, return 404 or redirect
   if (!serviceData) {
+    console.log("Service Data:", serviceData);
     return (
       <div className="container text-center py-5">
         <h1>Service Not Found</h1>
@@ -305,7 +393,6 @@ const WebDesignServicePage = async ({ params }) => {
       </div>
     );
   }
-
   return (
     <div>
       <WebBanner
@@ -336,24 +423,28 @@ const WebDesignServicePage = async ({ params }) => {
         buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
       />
       <ReviewsSlider />
-      <ScrollSection 
-        data={serviceData.scrollSectionData} 
+      <ScrollSection
+        data={serviceData.scrollSectionData}
         className="landingPageScrollSection"
         isIconShow={true}
       />
       <StepSection sectionData={serviceData.workflowData} />
-      <PlatformsSpecialize
-        sectionData={serviceData.technologiesSectionData}
-        data={serviceData.technologiesData}
-      />
+
+      {serviceType !== "video-animation-services" && (
+        serviceType !== "custom-graphic-design-services" &&
+        <PlatformsSpecialize
+          sectionData={serviceData.technologiesSectionData}
+          data={serviceData.technologiesData}
+        />
+      )}
       <TestimonialSlider />
       <WebBanner
         data={serviceData.finalCTAData || serviceData.bannerData2}
         className="notHero order2 landingPageBanner2"
       />
-      <Faqs 
+      <Faqs
         title="Frequently Asked Questions"
-        faqs={serviceData.faqsData} 
+        faqs={serviceData.faqsData}
         isTwoCol={true}
       />
       <BlogSection />

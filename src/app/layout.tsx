@@ -37,7 +37,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* Critical CSS inline for above-the-fold content */}
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -49,17 +48,15 @@ export default function RootLayout({
           `,
           }}
         />
-
-        {/* Non-blocking CSS loading for Owl Carousel */}
-        <link 
-          rel="preload" 
-          href="/assets/css/owl.carousel.min.css" 
+        <link
+          rel="preload"
+          href="/assets/css/owl.carousel.min.css"
           as="style"
         />
-        <link 
-          rel="stylesheet" 
-          href="/assets/css/owl.carousel.min.css" 
-          media="print"
+        <link
+          rel="stylesheet"
+          href="/assets/css/owl.carousel.min.css"
+          media="all"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -87,13 +84,9 @@ export default function RootLayout({
           `,
           }}
         />
-          
-
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-
-
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"

@@ -21,15 +21,10 @@ import Image from "next/image";
 
 export default function Header() {
   const router = useRouter();
-
-  // Mobile menu + nested submenu state
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileLevel1, setMobileLevel1] = useState(null); // e.g., 'web-dev', 'web-design', 'digital-marketing', 'web-hosting', 'web-builder', 'insight'
-  const [mobileInner, setMobileInner] = useState(null); // nested inside Web Builder / Insight
-
-  // Web Builder tab state
+  const [mobileLevel1, setMobileLevel1] = useState(null);
+  const [mobileInner, setMobileInner] = useState(null);
   const [activeIndustryTab, setActiveIndustryTab] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector("header");
@@ -43,8 +38,6 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Industry data for Web Builder tabs
   const industryData = [
     {
       name: "Construction and Real Estate",
@@ -131,7 +124,7 @@ export default function Header() {
   const go = (href) => (e) => {
     e.preventDefault();
     if (!href) return;
-    // For internal routes prefer router; external can use location
+
     if (href.startsWith("http")) {
       window.location.href = href;
     } else {
@@ -141,7 +134,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Header */}
       <div
         className={`${styles.top_header} bg-black text-white py-2 d-none d-md-block`}
       >
@@ -174,8 +166,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-
-            {/* Right Side - Login */}
             <div className="col-lg-3 col-md-4">
               <div className="d-flex justify-content-end align-items-center gap-3">
                 <div className={`${styles.header_social} ms-3`}>
@@ -192,8 +182,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-
-      {/* Desktop Header */}
       <header
         className={`${styles.new_header} d-none d-sm-block`}
         id="main-header"
@@ -201,7 +189,7 @@ export default function Header() {
         <nav className="p-0">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-3">
+              <div className="col-md-2">
                 <Link className={styles.navbar_brand} href="/">
                   <Image
                     loading="lazy"
@@ -212,8 +200,7 @@ export default function Header() {
                   />
                 </Link>
               </div>
-
-              <div className="col-md-7">
+              <div className="col-md-8">
                 <ul
                   className={`${styles.new_header_links} ${styles.navbar_nav} py-0 mb-0`}
                 >
@@ -226,8 +213,6 @@ export default function Header() {
                       Home
                     </Link>
                   </li>
-
-                  {/* Web Development */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
                     <a
                       className={`${styles.nav_link} dropdown-toggle`}
@@ -259,13 +244,13 @@ export default function Header() {
                                     img: "/assets/images/menu/11.webp",
                                     title: "Wordpress Development",
                                     desc: "Custom wordpress sites tailored to your business needs.",
-                                   href: "/web-development/wordpress-development-company",
+                                    href: "/web-development/wordpress-development-company",
                                   },
                                   {
                                     img: "/assets/images/menu/12.webp",
                                     title: "Shopify Development",
                                     desc: "Top-notch Shopify solutions to launch and scale your store.",
-                                     href: "/web-development/shopify-development-services",
+                                    href: "/web-development/shopify-development-services",
                                   },
                                   {
                                     img: "/assets/images/menu/13.webp",
@@ -302,7 +287,6 @@ export default function Header() {
                                 ))}
                               </div>
                             </div>
-
                             <div className="col-md-4 p-0">
                               <div
                                 className={`${styles.vertical_bordersperator} ${styles.p04}`}
@@ -318,19 +302,19 @@ export default function Header() {
                                     img: "/assets/images/menu/15.webp",
                                     title: "CMS Development",
                                     desc: "Smart CMS solutions to simplify content management.",
-                                    href: "/services/cms-development-company",
+                                    href: "/web-development/cms-development-company",
                                   },
                                   {
                                     img: "/assets/images/menu/16.webp",
                                     title: "Web Portal Development",
                                     desc: "Secure, scalable portals for business and communities.",
-                                    href: "/services/web-portal-development-company",
+                                    href: "/web-development/web-portal-development-company",
                                   },
                                   {
                                     img: "/assets/images/menu/17.webp",
                                     title: "Web Application Development",
                                     desc: "Ineractive and custom web apps built to perform.",
-                                    href: "/services/web-application-development-services",
+                                    href: "/web-development/web-application-development-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -361,7 +345,6 @@ export default function Header() {
                                 ))}
                               </div>
                             </div>
-
                             <div className="col-md-4 p-0">
                               <div
                                 className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}
@@ -371,13 +354,13 @@ export default function Header() {
                                     img: "/assets/images/menu/18.webp",
                                     title: "Web Speed Optimization",
                                     desc: "Faster load times, better experience, and higher conversion.",
-                                    href: "/services/website-speed-optimization-services",
+                                    href: "/web-development/website-speed-optimization-services",
                                   },
                                   {
                                     img: "/assets/images/menu/19.png",
                                     title: "Web Maintenance",
                                     desc: "Keep your website secure , updated, and error-free.",
-                                    href: "/services/website-maintenance-services",
+                                    href: "/web-development/website-maintenance-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -413,8 +396,6 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-
-                  {/* Web Design */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
                     <a
                       className={`${styles.nav_link} dropdown-toggle`}
@@ -454,7 +435,7 @@ export default function Header() {
                                     img: "/assets/images/menu/3.png",
                                     title: "Website Redesign",
                                     desc: "Refresh your website for modern appeal and performance.",
-                                     href: "/web-design/website-redesign-services",
+                                    href: "/web-design/website-redesign-services",
                                   },
                                   {
                                     img: "/assets/images/menu/4.png",
@@ -491,7 +472,6 @@ export default function Header() {
                                 ))}
                               </div>
                             </div>
-
                             <div className="col-md-4 p-0">
                               <div
                                 className={`${styles.vertical_bordersperator} ${styles.p04}`}
@@ -513,7 +493,7 @@ export default function Header() {
                                     img: "/assets/images/menu/7.png",
                                     title: "Logo Design",
                                     desc: "Creative logos that define and enhance your brand identity.",
-                                     href: "/services/custom-logo-design-services",
+                                    href: "/web-design/custom-logo-design-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -544,7 +524,6 @@ export default function Header() {
                                 ))}
                               </div>
                             </div>
-
                             <div className="col-md-4 p-0">
                               <div
                                 className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}
@@ -554,13 +533,13 @@ export default function Header() {
                                     img: "/assets/images/menu/8.png",
                                     title: "Video Animation",
                                     desc: "Compelling animations to tell your story with impact.",
-                                     href: "/services/video-animation-services",
+                                    href: "/web-design/video-animation-services",
                                   },
                                   {
                                     img: "/assets/images/menu/9.png",
                                     title: "Graphic Design",
                                     desc: "Visual designs that engage and communicate effectively.",
-                                    href: "/services/custom-graphic-design-services",
+                                    href: "/web-design/custom-graphic-design-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -573,7 +552,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -597,15 +576,13 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-
-                  {/* Digital Marketing */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
                     <a
                       className={`${styles.nav_link} dropdown-toggle`}
                       href="#"
                       role="button"
                       aria-expanded="false"
-                      onClick={go("/services/digital-marketing-company")}
+                      onClick={go("/digital-marketing-company")}
                     >
                       Digital Marketing
                     </a>
@@ -624,25 +601,25 @@ export default function Header() {
                                     img: "/assets/images/menu/20.webp",
                                     title: "Search Engine Optimization (SEO",
                                     desc: "Climb search rankings and attract the right audience.",
-                                      href: "/services/search-engine-optimization-agency",
+                                    href: "/digital-marketing-company/search-engine-optimization-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/21.webp",
                                     title: "Pay Per Click (PPC",
                                     desc: "Targeted ads that deliver measurable ROI.",
-                                      href: "/services/pay-per-click-agency",
+                                    href: "/digital-marketing-company/pay-per-click-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/22.webp",
                                     title: "Social Media Marketing",
                                     desc: "Engage, grow, and convert through social channels.",
-                                      href: "/services/social-media-marketing-agency",
+                                    href: "/digital-marketing-company/social-media-marketing-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/23.webp",
                                     title: "Digital PR",
                                     desc: "Build authority and visibility with impactful PR campaigns.",
-                                      href: "/services/digital-pr-services",
+                                    href: "/digital-marketing-company/digital-pr-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -655,7 +632,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -674,7 +651,6 @@ export default function Header() {
                                 ))}
                               </div>
                             </div>
-
                             <div className="col-md-4 p-0">
                               <div
                                 className={`${styles.vertical_bordersperator} ${styles.p04}`}
@@ -684,25 +660,25 @@ export default function Header() {
                                     img: "/assets/images/menu/24.webp",
                                     title: "Content Writing",
                                     desc: "Engaging content that speaks to your audience.",
-                                    href: "/services/content-writing-services",
+                                    href: "/digital-marketing-company/content-writing-services",
                                   },
                                   {
                                     img: "/assets/images/menu/25.webp",
                                     title: "Content Marketing",
                                     desc: "Valuable content strategies that drive traffic and trust.",
-                                     href: "/services/content-marketing-services",
+                                    href: "/digital-marketing-company/content-marketing-services",
                                   },
                                   {
                                     img: "/assets/images/menu/26.webp",
                                     title: "Guest Post/Outreach",
                                     desc: "Expand reach with strategic guest posting and outreach.",
-                                     href: "/services/guest-posting-services",
+                                    href: "/digital-marketing-company/guest-posting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/27.webp",
                                     title: "Link Building",
                                     desc: "High-quality backlinks to strengthen your SEO.",
-                                     href: "/services/link-building-services",
+                                    href: "/digital-marketing-company/link-building-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -715,7 +691,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -734,7 +710,6 @@ export default function Header() {
                                 ))}
                               </div>
                             </div>
-
                             <div className="col-md-4 p-0">
                               <div
                                 className={`${styles.vertical_bordersperator} ${styles.vertical_bordersperator}2 ${styles.p04}`}
@@ -744,19 +719,19 @@ export default function Header() {
                                     img: "/assets/images/menu/28.webp",
                                     title: "Local SEO",
                                     desc: "Dominate local searches and grow neighborhood visibility.",
-                                    href: "/services/local-seo-services",
+                                    href: "/digital-marketing-company/local-seo-services",
                                   },
                                   {
                                     img: "/assets/images/menu/29.webp",
                                     title: "Online Reputation Management",
                                     desc: "Protect and enhance your brand’s online presence.",
-                                    href: "/digital-marketing/online-reputation-management-services",
+                                    href: "/digital-marketing-company/online-reputation-management-services",
                                   },
                                   {
                                     img: "/assets/images/menu/30.webp",
                                     title: "App Store Optimization",
                                     desc: "Get your app discovered and downloaded more often.",
-                                    href: "/digital-marketing/app-store-optimization-services",
+                                    href: "/digital-marketing-company/app-store-optimization-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -769,7 +744,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -793,8 +768,6 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-
-                  {/* Web Hosting */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
                     <a
                       className={`${styles.nav_link} dropdown-toggle`}
@@ -820,25 +793,25 @@ export default function Header() {
                                     img: "/assets/images/menu/030.webp",
                                     title: "Shared Hosting",
                                     desc: "Affordable hosting with reliable performance for small sites.",
-                                     href: "/website-hosting-services/shared-web-hosting-services",
+                                    href: "/website-hosting-services/shared-web-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/31.webp",
                                     title: "VPS Hosting",
                                     desc: "Flexibility and control with powerful VPS hosting.",
-                                     href: "/website-hosting-services/vps-hosting-services",
+                                    href: "/website-hosting-services/vps-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/32.webp",
                                     title: "Dedicated Hosting",
                                     desc: "Enterprise-level hosting with maximum resources",
-                                     href: "/website-hosting-services/dedicated-hosting-service",
+                                    href: "/website-hosting-services/dedicated-hosting-service",
                                   },
                                   {
                                     img: "/assets/images/menu/33.webp",
                                     title: "Cloud Hosting",
                                     desc: "Scalable cloud hosting built for speed and reliability.",
-                                     href: "/website-hosting-services/cloud-hosting-services",
+                                    href: "/website-hosting-services/cloud-hosting-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -851,7 +824,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -885,13 +858,13 @@ export default function Header() {
                                     img: "/assets/images/menu/35.webp",
                                     title: "Reseller Hosting",
                                     desc: "Grow your business with flexible reseller hosting plans.",
-                                     href: "/website-hosting-services/reseller-hosting-services",
+                                    href: "/website-hosting-services/reseller-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/36.webp",
                                     title: "Domain Registration",
                                     desc: "Secure the perfect domain for your brand identity.",
-                                     href: "/website-hosting-services/domain-registration-services",
+                                    href: "/website-hosting-services/domain-registration-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -904,7 +877,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -928,8 +901,6 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-
-                  {/* Web Builder */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
                     <a
                       className={`${styles.nav_link} dropdown-toggle`}
@@ -953,7 +924,7 @@ export default function Header() {
                                 <p
                                   className={`${styles.megamenu_heading} ${styles.iconNone} text-primary`}
                                 >
-                                  
+
                                   Industries
                                 </p>
                                 <div
@@ -964,11 +935,10 @@ export default function Header() {
                                   {industryData.map((industry, idx) => (
                                     <button
                                       key={idx}
-                                      className={`${styles.nav_link} ${
-                                        idx === activeIndustryTab
-                                          ? "active"
-                                          : ""
-                                      }`}
+                                      className={`${styles.nav_link} ${idx === activeIndustryTab
+                                        ? "active"
+                                        : ""
+                                        }`}
                                       onClick={(e) => {
                                         e.preventDefault();
                                         setActiveIndustryTab(idx);
@@ -989,11 +959,10 @@ export default function Header() {
                                   {industryData.map((industry, idx) => (
                                     <div
                                       key={idx}
-                                      className={`tab-pane ${
-                                        idx === activeIndustryTab
-                                          ? "active"
-                                          : ""
-                                      }`}
+                                      className={`tab-pane ${idx === activeIndustryTab
+                                        ? "active"
+                                        : ""
+                                        }`}
                                       style={{
                                         display:
                                           idx === activeIndustryTab
@@ -1030,8 +999,6 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-
-                  {/* Insight */}
                   <li className={`${styles.nav_item} ${styles.dropdown}`}>
                     <a
                       className={`${styles.nav_link} dropdown-toggle`}
@@ -1081,7 +1048,7 @@ export default function Header() {
                                         <Image
                                           src={item.img}
                                           alt="Logo"
-                                          
+
                                           loading="lazy"
                                           width={50}
                                           height={50}
@@ -1104,7 +1071,6 @@ export default function Header() {
                   </li>
                 </ul>
               </div>
-
               <div className="col-md-2 text-end">
                 <div className="link-area pt-1 contact-btn">
                   <a
@@ -1121,10 +1087,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
-
-      {/* Mobile Header */}
       <header className={`${styles.mobile_header} d-block d-sm-none`}>
-        {/* Logo */}
         <div className="logo">
           <Link href="/">
             <Image
@@ -1136,8 +1099,6 @@ export default function Header() {
             />
           </Link>
         </div>
-
-        {/* Hamburger */}
         <button
           id="menu-toggle"
           className={styles.menu_toggle}
@@ -1150,8 +1111,6 @@ export default function Header() {
         >
           <HamburgerIcon />
         </button>
-
-        {/* Sliding Menu */}
         <nav
           id="mobile-menu"
           className={`${styles.mobile_menu} ${mobileOpen ? "open" : ""}`}
@@ -1167,17 +1126,14 @@ export default function Header() {
             />
             <button
               id="close-menu"
-              className={`${styles.close_menu} filterInvert ${
-                mobileOpen ? "close-menu" : ""
-              }`}
+              className={`${styles.close_menu} filterInvert ${mobileOpen ? "close-menu" : ""
+                }`}
               aria-label="Close menu"
               onClick={() => setMobileOpen(false)}
             >
               <CrossIcon />
             </button>
           </div>
-
-          {/* Level 0 */}
           {!mobileLevel1 && (
             <ul>
               <li>
@@ -1228,8 +1184,6 @@ export default function Header() {
               </li>
             </ul>
           )}
-
-          {/* Level 1 generic list renderer */}
           {mobileLevel1 && !mobileInner && (
             <ul>
               <li>
@@ -1244,8 +1198,6 @@ export default function Header() {
                   &emsp;Back
                 </a>
               </li>
-
-              {/* Render categories based on selected section */}
               {mobileLevel1 === "web-dev" &&
                 [
                   {
@@ -1295,7 +1247,6 @@ export default function Header() {
                     </a>
                   </li>
                 ))}
-
               {mobileLevel1 === "web-design" &&
                 [
                   {
@@ -1394,7 +1345,6 @@ export default function Header() {
                     </a>
                   </li>
                 ))}
-
               {mobileLevel1 === "web-hosting" &&
                 [
                   {
@@ -1436,7 +1386,6 @@ export default function Header() {
                     </a>
                   </li>
                 ))}
-
               {mobileLevel1 === "web-builder" && (
                 <>
                   {[
@@ -1461,7 +1410,6 @@ export default function Header() {
                   ))}
                 </>
               )}
-
               {mobileLevel1 === "insight" && (
                 <>
                   {[
@@ -1488,8 +1436,6 @@ export default function Header() {
               )}
             </ul>
           )}
-
-          {/* Level 2 (inner nested) */}
           {mobileInner && (
             <ul>
               <li>
@@ -1504,7 +1450,6 @@ export default function Header() {
                   &emsp;Back
                 </a>
               </li>
-              {/* Example static items; replace with your routes */}
               {mobileInner === "Services" &&
                 [
                   "eCommerce",
@@ -1572,8 +1517,6 @@ export default function Header() {
                 ))}
             </ul>
           )}
-
-          {/* Socials */}
           <div className={`${styles.header_social} d-block ps-3 mt-2`}>
             <a
               className="h5"

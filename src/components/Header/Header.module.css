@@ -160,7 +160,7 @@
   flex-direction: row;
   gap: 0 15px;
   padding-top: 13px;
-  margin-left: -56px;
+  /* margin-left: -56px; */
 }
 
 .link-area > a.primary {
