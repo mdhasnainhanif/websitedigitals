@@ -75,7 +75,8 @@ export default function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about" target="_blank" rel="noopener noreferrer">
+                       
+                         <Link href="about-us" target="_blank" rel="noopener noreferrer">
                           <span>About Us</span>
                         </Link>
                       </li>
@@ -95,7 +96,8 @@ export default function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                       
+                         <Link href="/terms-conditions" target="_blank" rel="noopener noreferrer">
                           <span>Terms &amp; Conditions</span>
                         </Link>
                       </li>
@@ -114,22 +116,25 @@ export default function Footer() {
                     <p>Services</p>
                     <ul>
                       <li>
-                        <Link href="/services/content-writing" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/content-writing-services" target="_blank" rel="noopener noreferrer">
                           <span>Content Writing</span>
                         </Link>
+                        
                       </li>
                       <li>
-                        <Link href="/services/logo-design" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/custom-logo-design-services" target="_blank" rel="noopener noreferrer">
                           <span>Logo Design</span>
                         </Link>
+
+                        
                       </li>
                       <li>
-                        <Link href="/services/video-animation" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/video-animation-services" target="_blank" rel="noopener noreferrer">
                           <span>Video Animation</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/digital-marketing" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/digital-marketing-company" target="_blank" rel="noopener noreferrer">
                           <span>Digital Marketing</span>
                         </Link>
                       </li>
