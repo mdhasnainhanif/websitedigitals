@@ -253,21 +253,25 @@ export default function Header() {
                                     img: "/assets/images/menu/10.webp",
                                     title: "Ecommerce Development",
                                     desc: "Build impactful online stores that drive sales and growth.",
+                                    href: "/web-development/ecommerce-development-company",
                                   },
                                   {
                                     img: "/assets/images/menu/11.webp",
                                     title: "Wordpress Development",
                                     desc: "Custom wordpress sites tailored to your business needs.",
+                                   href: "/web-development/wordpress-development-company",
                                   },
                                   {
                                     img: "/assets/images/menu/12.webp",
                                     title: "Shopify Development",
-                                    desc: "Top-notch Shopify solutions to launch and scale your stor.",
+                                    desc: "Top-notch Shopify solutions to launch and scale your store.",
+                                     href: "/web-development/shopify-development-services",
                                   },
                                   {
                                     img: "/assets/images/menu/13.webp",
                                     title: "Wix Development",
                                     desc: "Easy-to-manage Wix websites designed for impact.",
+                                    href: "/web-development/wix-development-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -308,6 +312,7 @@ export default function Header() {
                                     img: "/assets/images/menu/14.webp",
                                     title: "Squarespace Development",
                                     desc: "Elegant Squarespace design for modern business.",
+                                    href: "/web-development/squarespace-development-services",
                                   },
                                   {
                                     img: "/assets/images/menu/15.webp",
@@ -435,21 +440,27 @@ export default function Header() {
                                     img: "/assets/images/menu/1.png",
                                     title: "Landing Page Design",
                                     desc: "High-converting landing pages that capture leads.",
+                                    href: "/web-design/landing-page-design-services",
+
                                   },
                                   {
                                     img: "/assets/images/menu/2.png",
                                     title: "Responsive Web Design",
                                     desc: "Smooth browsing across every device and screen size.",
+
+                                    href: "/web-design/responsive-web-design-services",
                                   },
                                   {
                                     img: "/assets/images/menu/3.png",
                                     title: "Website Redesign",
                                     desc: "Refresh your website for modern appeal and performance.",
+                                     href: "/web-design/website-redesign-services",
                                   },
                                   {
                                     img: "/assets/images/menu/4.png",
                                     title: "B2B Web Design",
                                     desc: "Professional B2B designs that build trust and authority.",
+                                    href: "/web-design/b2b-web-design-agency",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -490,16 +501,19 @@ export default function Header() {
                                     img: "/assets/images/menu/5.png",
                                     title: "Custom Web Design",
                                     desc: "Unique and tailor-made designs aligned with your brand.",
+                                    href: "/web-design/custom-web-design-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/6.png",
                                     title: "Amazon Store Setup",
                                     desc: "Optimized Amazon stores to boost your eCommerce success.",
+                                    href: "/web-design/amazon-store-design-services",
                                   },
                                   {
                                     img: "/assets/images/menu/7.png",
                                     title: "Logo Design",
                                     desc: "Creative logos that define and enhance your brand identity.",
+                                     href: "/services/custom-logo-design-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -540,11 +554,13 @@ export default function Header() {
                                     img: "/assets/images/menu/8.png",
                                     title: "Video Animation",
                                     desc: "Compelling animations to tell your story with impact.",
+                                     href: "/services/video-animation-services",
                                   },
                                   {
                                     img: "/assets/images/menu/9.png",
                                     title: "Graphic Design",
                                     desc: "Visual designs that engage and communicate effectively.",
+                                    href: "/services/custom-graphic-design-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -589,7 +605,7 @@ export default function Header() {
                       href="#"
                       role="button"
                       aria-expanded="false"
-                      onClick={go("/digital-marketing")}
+                      onClick={go("/services/digital-marketing-company")}
                     >
                       Digital Marketing
                     </a>
@@ -608,21 +624,25 @@ export default function Header() {
                                     img: "/assets/images/menu/20.webp",
                                     title: "Search Engine Optimization (SEO",
                                     desc: "Climb search rankings and attract the right audience.",
+                                      href: "/services/search-engine-optimization-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/21.webp",
                                     title: "Pay Per Click (PPC",
                                     desc: "Targeted ads that deliver measurable ROI.",
+                                      href: "/services/pay-per-click-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/22.webp",
                                     title: "Social Media Marketing",
                                     desc: "Engage, grow, and convert through social channels.",
+                                      href: "/services/social-media-marketing-agency",
                                   },
                                   {
                                     img: "/assets/images/menu/23.webp",
                                     title: "Digital PR",
                                     desc: "Build authority and visibility with impactful PR campaigns.",
+                                      href: "/services/digital-pr-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -664,21 +684,25 @@ export default function Header() {
                                     img: "/assets/images/menu/24.webp",
                                     title: "Content Writing",
                                     desc: "Engaging content that speaks to your audience.",
+                                    href: "/services/content-writing-services",
                                   },
                                   {
                                     img: "/assets/images/menu/25.webp",
                                     title: "Content Marketing",
                                     desc: "Valuable content strategies that drive traffic and trust.",
+                                     href: "/services/content-marketing-services",
                                   },
                                   {
                                     img: "/assets/images/menu/26.webp",
                                     title: "Guest Post/Outreach",
                                     desc: "Expand reach with strategic guest posting and outreach.",
+                                     href: "/services/guest-posting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/27.webp",
                                     title: "Link Building",
                                     desc: "High-quality backlinks to strengthen your SEO.",
+                                     href: "/services/link-building-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -720,16 +744,19 @@ export default function Header() {
                                     img: "/assets/images/menu/28.webp",
                                     title: "Local SEO",
                                     desc: "Dominate local searches and grow neighborhood visibility.",
+                                    href: "/services/local-seo-services",
                                   },
                                   {
                                     img: "/assets/images/menu/29.webp",
                                     title: "Online Reputation Management",
                                     desc: "Protect and enhance your brand’s online presence.",
+                                    href: "/digital-marketing/online-reputation-management-services",
                                   },
                                   {
                                     img: "/assets/images/menu/30.webp",
                                     title: "App Store Optimization",
                                     desc: "Get your app discovered and downloaded more often.",
+                                    href: "/digital-marketing/app-store-optimization-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -774,7 +801,7 @@ export default function Header() {
                       href="#"
                       role="button"
                       aria-expanded="false"
-                      onClick={go("/web-hosting")}
+                      onClick={go("/website-hosting-services")}
                     >
                       Web Hosting
                     </a>
@@ -793,21 +820,25 @@ export default function Header() {
                                     img: "/assets/images/menu/030.webp",
                                     title: "Shared Hosting",
                                     desc: "Affordable hosting with reliable performance for small sites.",
+                                     href: "/website-hosting-services/shared-web-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/31.webp",
                                     title: "VPS Hosting",
                                     desc: "Flexibility and control with powerful VPS hosting.",
+                                     href: "/website-hosting-services/vps-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/32.webp",
                                     title: "Dedicated Hosting",
                                     desc: "Enterprise-level hosting with maximum resources",
+                                     href: "/website-hosting-services/dedicated-hosting-service",
                                   },
                                   {
                                     img: "/assets/images/menu/33.webp",
                                     title: "Cloud Hosting",
                                     desc: "Scalable cloud hosting built for speed and reliability.",
+                                     href: "/website-hosting-services/cloud-hosting-services",
                                   },
                                 ].map((item, i) => (
                                   <Link
@@ -848,16 +879,19 @@ export default function Header() {
                                     img: "/assets/images/menu/34.webp",
                                     title: "Managed Hosting",
                                     desc: "Worry-free hosting with complete expert management.",
+                                    href: "/website-hosting-services/managed-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/35.webp",
                                     title: "Reseller Hosting",
                                     desc: "Grow your business with flexible reseller hosting plans.",
+                                     href: "/website-hosting-services/reseller-hosting-services",
                                   },
                                   {
                                     img: "/assets/images/menu/36.webp",
                                     title: "Domain Registration",
                                     desc: "Secure the perfect domain for your brand identity.",
+                                     href: "/website-hosting-services/domain-registration-services",
                                   },
                                 ].map((item, i) => (
                                   <Link

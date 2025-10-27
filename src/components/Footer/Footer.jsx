@@ -70,39 +70,38 @@ export default function Footer() {
                     <p>Company</p>
                     <ul>
                       <li>
-                        <Link href="/portfolio" target="_blank" rel="noopener noreferrer">
+                        <Link href="/portfolio" target="" rel="noopener noreferrer">
                           <span>Webfolio</span>
                         </Link>
                       </li>
                       <li>
-                       
-                         <Link href="about-us" target="_blank" rel="noopener noreferrer">
+                        <Link href="/about-us" target="" rel="noopener noreferrer">
                           <span>About Us</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/contact" target="_blank" rel="noopener noreferrer">
+                        <Link href="/contact" target="" rel="noopener noreferrer">
                           <span>Contact Us</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://websitedigitals.com/blog" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://websitedigitals.com/blog" target="" rel="noopener noreferrer">
                           <span>Blog</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+                        <Link href="/privacy-policy" target="" rel="noopener noreferrer">
                           <span>Privacy Policy</span>
                         </Link>
                       </li>
                       <li>
-                       
-                         <Link href="/terms-conditions" target="_blank" rel="noopener noreferrer">
+    
+                        <Link href="/terms-conditions" target="" rel="noopener noreferrer">
                           <span>Terms &amp; Conditions</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/case-study" target="_blank" rel="noopener noreferrer">
+                        <Link href="/case-study" target="" rel="noopener noreferrer">
                           <span>Case Study</span>
                         </Link>
                       </li>
@@ -116,40 +115,40 @@ export default function Footer() {
                     <p>Services</p>
                     <ul>
                       <li>
-                        <Link href="/services/content-writing-services" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/content-writing-services" target="" rel="noopener noreferrer">
                           <span>Content Writing</span>
                         </Link>
                         
                       </li>
                       <li>
-                        <Link href="/services/custom-logo-design-services" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/custom-logo-design-services" target="" rel="noopener noreferrer">
                           <span>Logo Design</span>
                         </Link>
 
                         
                       </li>
                       <li>
-                        <Link href="/services/video-animation-services" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/video-animation-services" target="" rel="noopener noreferrer">
                           <span>Video Animation</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/digital-marketing-company" target="_blank" rel="noopener noreferrer">
+                        <Link href="/services/digital-marketing-company" target="" rel="noopener noreferrer">
                           <span>Digital Marketing</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/custom-website-design" target="_blank" rel="noopener noreferrer">
+                        <Link href="/web-design/custom-web-design-agency" target="" rel="noopener noreferrer">
                           <span>Custom Website Design</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/pricing" target="_blank" rel="noopener noreferrer">
+                        <Link href="/pricing" target="" rel="noopener noreferrer">
                           <span>Pricing</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/sitemap" target="_blank" rel="noopener noreferrer">
+                        <Link href="/sitemap" target="" rel="noopener noreferrer">
                           <span>Sitemap</span>
                         </Link>
                       </li>
@@ -163,7 +162,7 @@ export default function Footer() {
                     <p>Contacts</p>
                     <ul>
                       <li>
-                        <a href="tel:(646)-222-3598" target="_blank" rel="noopener noreferrer">
+                        <a href="tel:(646)-222-3598" target="" rel="noopener noreferrer">
                           <i className="fa fa-phone"></i>
                           <span>(646)-222-3598</span>
                         </a>
@@ -171,7 +170,7 @@ export default function Footer() {
                       <li>
                         <a
                           href="https://www.google.com/maps?q=Street+06,+HA-56+USA,+Florida,+65558&z=15"
-                          target="_blank"
+                          target=""
                           rel="noopener noreferrer"
                         >
                           <i className="fa fa-map-marker-alt"></i>
@@ -185,7 +184,7 @@ export default function Footer() {
                     <p>Inquires</p>
                     <ul>
                       <li>
-                        <a href="mailto:info@websitedigitals.com" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:info@websitedigitals.com" target="" rel="noopener noreferrer">
                           <i className="fa fa-envelope"></i>
                           <span>info@websitedigitals.com</span>
                         </a>
