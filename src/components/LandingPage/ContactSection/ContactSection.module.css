@@ -9,9 +9,9 @@
   align-items: center;
 }
 
-.contactIcon svg path{
- fill: #ffffff;
- color: #ffffff;
+.contactIcon svg path {
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .contactSection::before {
@@ -230,6 +230,20 @@
 }
 
 @media (max-width: 576px) {
+  .contactSection .contactItem {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  section.landingPageBanner {
+    padding-bottom: 1.37rem;
+  }
+
+  .imageWrapper {
+    display: none;
+  }
+
   .mainTitle {
     font-size: 2rem;
   }
@@ -282,6 +296,7 @@
     opacity: 0;
     transform: translateY(1.875rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -298,6 +313,7 @@
 
 /* Pause animation on reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+
   .contactInfoSection,
   .formContainer {
     animation: none;

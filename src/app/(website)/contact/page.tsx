@@ -22,7 +22,7 @@ export default function ContactPage() {
       <ContactBanner />
       <PartnerSection />
       <GlobalDeliverySection />
-        <Faqs faqs={ContactPageFAQs as any} />
+      <Faqs faqs={ContactPageFAQs as any} />
       {/* Add more sections below if needed */}
     </>
   );

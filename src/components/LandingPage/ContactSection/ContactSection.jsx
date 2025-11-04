@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { PhoneIcon, EmailIcon, LocationIcon } from '@/icons'
 
 const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call" }) => {
-  // Default contact data if none provided
   const defaultContactData = {
     title: "Let's create something out of this world together.",
     description: "Have a project in mind? Contact us for expert design and development solutions. Let's discuss how we can help grow your business.",
@@ -17,11 +16,7 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
     image: "/assets/images/support.png",
     imageAlt: "Customer service team with headsets"
   }
-
-  // Use provided data or defaults
   const data = { ...defaultContactData, ...contactData }
-
-  // Form state
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,7 +26,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
     hearAbout: "",
     message: ""
   })
-
   const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({
@@ -39,43 +33,33 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
       [name]: value
     }))
   }
-
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
     console.log('Form submitted:', formData)
   }
-
   return (
     <div className={`section-padding ${styles.contactSection}`}>
       <div className="container">
-        {/* Header Section */}
-        <div className="row mb-5">
+        <div className="row">
           <div className="section-heading text-center col-12 text-center">
             <h2>{data.title}</h2>
             <p>{data.description}</p>
           </div>
         </div>
-
-        {/* Main Content */}
         <div className="row">
-          {/* Left Column - Contact Info & Image */}
           <div className="col-lg-6 col-md-12 mb-4">
             <div className={styles.contactInfoSection}>
-              {/* Image */}
               <div className={styles.imageContainer}>
                 <div className={styles.imageWrapper}>
                   <Image
                     width={570}
                     height={430}
-                    src={data.image} 
+                    src={data.image}
                     alt={data.imageAlt}
                     className={styles.contactImage}
                   />
                 </div>
               </div>
-
-              {/* Contact Details */}
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
@@ -86,7 +70,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                     <span className={styles.contactValue}>{data.contactInfo.phone}</span>
                   </div>
                 </div>
-
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
                     <EmailIcon />
@@ -96,7 +79,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                     <span className={styles.contactValue}>{data.contactInfo.email}</span>
                   </div>
                 </div>
-
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>
                     <LocationIcon />
@@ -109,8 +91,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
               </div>
             </div>
           </div>
-
-          {/* Right Column - Contact Form */}
           <div className="col-lg-6 col-md-12">
             <div className={styles.formContainer}>
               <form onSubmit={handleSubmit} className={styles.contactForm}>
@@ -127,7 +107,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                       required
                     />
                   </div>
-
                   <div className="col-md-6 mb-3">
                     <label className={styles.formLabel}>Email Address</label>
                     <input
@@ -141,7 +120,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                     />
                   </div>
                 </div>
-
                 <div className="row">
                   <div className="col-md-6 mb-3">
                     <label className={styles.formLabel}>How We Can Help?</label>
@@ -159,7 +137,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                       <option value="Consulting">Consulting</option>
                     </select>
                   </div>
-
                   <div className="col-md-6 mb-3">
                     <label className={styles.formLabel}>What's Your Budget?</label>
                     <input
@@ -172,7 +149,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                     />
                   </div>
                 </div>
-
                 <div className="row">
                   <div className="col-md-6 mb-3">
                     <label className={styles.formLabel}>What's Your Project Deadline?*</label>
@@ -186,7 +162,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                       required
                     />
                   </div>
-
                   <div className="col-md-6 mb-3">
                     <label className={styles.formLabel}>How Did You Hear About Us?*</label>
                     <select
@@ -204,7 +179,6 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                     </select>
                   </div>
                 </div>
-
                 <div className="mb-4">
                   <label className={styles.formLabel}>Message</label>
                   <textarea
@@ -216,12 +190,11 @@ const ContactSection = ({ contactData = {}, buttonText = "Submit and Book a call
                     placeholder="Your Message"
                   ></textarea>
                 </div>
-
                 <a className='link-area' href="">
-                <button type="submit" className="offer-btn primary ">
-                  {buttonText}
-                  <i className="fas fa-video ms-2"></i>
-                </button>
+                  <button type="submit" className="offer-btn primary ">
+                    {buttonText}
+                    <i className="fas fa-video ms-2"></i>
+                  </button>
                 </a>
               </form>
             </div>

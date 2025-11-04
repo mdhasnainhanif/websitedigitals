@@ -1,8 +1,6 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
-
 interface ContactFormData {
   fname: string;
   lname: string;
@@ -18,10 +16,8 @@ interface ContactFormData {
   fingerprint: string;
   chat: string;
 }
-
 export default function ContactBanner() {
   const searchParams = useSearchParams();
-  
   const [formData, setFormData] = useState<ContactFormData>({
     fname: '',
     lname: '',
@@ -37,8 +33,6 @@ export default function ContactBanner() {
     fingerprint: '',
     chat: '',
   });
-
-  // Update form data with search params after component mounts
   useEffect(() => {
     if (searchParams) {
       setFormData(prev => ({
@@ -51,10 +45,8 @@ export default function ContactBanner() {
       }));
     }
   }, [searchParams]);
-
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -62,14 +54,11 @@ export default function ContactBanner() {
       [name]: value
     }));
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setShowSuccess(false);
     setShowError(false);
-
     try {
-      // Add your form submission logic here
       console.log('Form submitted:', formData);
       setShowSuccess(true);
     } catch (error) {
@@ -77,12 +66,10 @@ export default function ContactBanner() {
       setShowError(true);
     }
   };
-
   return (
     <section className="inner-banner">
       <div className="container">
         <div className="row rowGap4 col-reverse-mob">
-          {/* Left Column - Contact Form */}
           <div className="col-md-6">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
@@ -94,11 +81,10 @@ export default function ContactBanner() {
                 </li>
               </ol>
             </nav>
-            
-            <form 
-              method="post" 
-              action="" 
-              className="contactPage-formArea" 
+            <form
+              method="post"
+              action=""
+              className="contactPage-formArea"
               id="contactformsec"
               onSubmit={handleSubmit}
             >
@@ -106,7 +92,6 @@ export default function ContactBanner() {
                 <div className="col-12">
                   <h3>Fill Out The Form And We&apos;ll Get in Touch With You Shortly.</h3>
                 </div>
-                
                 <div className="col-md-6">
                   <div className="basic-inputArea">
                     <input
@@ -120,7 +105,6 @@ export default function ContactBanner() {
                     />
                   </div>
                 </div>
-                
                 <div className="col-md-6">
                   <div className="basic-inputArea">
                     <input
@@ -134,7 +118,6 @@ export default function ContactBanner() {
                     />
                   </div>
                 </div>
-                
                 <div className="col-md-6">
                   <div className="basic-inputArea">
                     <input
@@ -148,7 +131,6 @@ export default function ContactBanner() {
                     />
                   </div>
                 </div>
-                
                 <div className="col-md-6">
                   <div className="basic-inputArea">
                     <input
@@ -163,7 +145,6 @@ export default function ContactBanner() {
                     />
                   </div>
                 </div>
-                
                 <div className="col-md-12">
                   <div className="basic-inputArea">
                     <input
@@ -177,7 +158,6 @@ export default function ContactBanner() {
                     />
                   </div>
                 </div>
-                
                 <div className="col-12">
                   <div className="basic-inputArea">
                     <select
@@ -202,7 +182,6 @@ export default function ContactBanner() {
                     </select>
                   </div>
                 </div>
-                
                 <div className="col-12">
                   <div className="basic-inputArea">
                     <textarea
@@ -214,27 +193,23 @@ export default function ContactBanner() {
                     />
                   </div>
                 </div>
-                
                 <div className="col-12">
                   <div className="form-group g-recaptcha-response">
-                    <div 
-                      className="g-recaptcha" 
+                    <div
+                      className="g-recaptcha"
                       data-sitekey={process.env.NEXT_PUBLIC_GOOGLE_CAPTCHA_SITE_KEY}
                     />
                   </div>
                   <span className="validation-error text-danger g-recaptcha-error"></span>
                 </div>
-                
                 <div className="col-12">
                   <div className="basic-inputArea">
-                    {/* Hidden tracking fields */}
                     <input name="gclid" type="hidden" value={formData.gclid} />
                     <input name="fbclid" type="hidden" value={formData.fbclid} />
                     <input name="igclid" type="hidden" value={formData.igclid} />
                     <input name="ttclid" type="hidden" value={formData.ttclid} />
                     <input name="fingerprint" type="hidden" value={formData.fingerprint} />
                     <input name="chat" type="hidden" value={formData.chat} />
-                    
                     <button type="submit" name="submit">
                       Submit Your Request
                     </button>
@@ -242,7 +217,6 @@ export default function ContactBanner() {
                 </div>
               </div>
             </form>
-            
             <div className="contactsecnpagealert mt-3">
               {showSuccess && (
                 <div className="alert alert-success" role="alert">
@@ -256,18 +230,15 @@ export default function ContactBanner() {
               )}
             </div>
           </div>
-
-          {/* Right Column - Contact Info */}
           <div className="col-md-6">
             <div className="contactPage-heading">
               <h1>Talk To An Expert</h1>
               <p>
-                At Website Digitals, we are committed to providing expert guidance and personalized solutions for all your digital needs. 
-                Whether you have questions about our services, need assistance with your project, or seek professional advice, our 
-                team is here to help. Contact us through our contact form, email, or phone, and let us collaborate to bring your 
+                At Website Digitals, we are committed to providing expert guidance and personalized solutions for all your digital needs.
+                Whether you have questions about our services, need assistance with your project, or seek professional advice, our
+                team is here to help. Contact us through our contact form, email, or phone, and let us collaborate to bring your
                 vision to life. Your success is our priority, and we look forward to working with you to achieve your goals.
               </p>
-              
               <ul className="contactPage-list">
                 <li>
                   <i className="fa fa-phone"></i>
