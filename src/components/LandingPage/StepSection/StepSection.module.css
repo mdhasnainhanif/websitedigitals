@@ -166,7 +166,8 @@
   }
 
   .connectingArrow {
-    width: 50px;
+    /* width: 50px; */
+     width: 262px;
   }
 }
 
@@ -208,7 +209,8 @@
   }
 
   .connectingArrow {
-    width: 40px;
+    /* width: 40px; */
+    width: 262px;
   }
 }
 
@@ -239,7 +241,8 @@
   }
 
   .connectingArrow {
-    width: 35px;
+    /* width: 35px; */
+    width: 150px;
   }
 }
 

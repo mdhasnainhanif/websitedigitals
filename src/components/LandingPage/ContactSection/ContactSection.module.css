@@ -187,6 +187,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+.contactSection
+{
+  min-height: unset;
+}
+}
 @media (max-width: 768px) {
   .mainTitle {
     font-size: 2.5rem;

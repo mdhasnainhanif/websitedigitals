@@ -115,25 +115,25 @@ export default function Footer() {
                     <p>Services</p>
                     <ul>
                       <li>
-                        <Link href="/services/content-writing-services" target="" rel="noopener noreferrer">
+                        <Link href="/digital-marketing-company/content-writing-services" target="" rel="noopener noreferrer">
                           <span>Content Writing</span>
                         </Link>
                         
                       </li>
                       <li>
-                        <Link href="/services/custom-logo-design-services" target="" rel="noopener noreferrer">
+                        <Link href="/web-design/custom-logo-design-services" target="" rel="noopener noreferrer">
                           <span>Logo Design</span>
                         </Link>
 
                         
                       </li>
                       <li>
-                        <Link href="/services/video-animation-services" target="" rel="noopener noreferrer">
+                        <Link href="/web-design/video-animation-services" target="" rel="noopener noreferrer">
                           <span>Video Animation</span>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/digital-marketing-company" target="" rel="noopener noreferrer">
+                        <Link href="/digital-marketing-company" target="" rel="noopener noreferrer">
                           <span>Digital Marketing</span>
                         </Link>
                       </li>

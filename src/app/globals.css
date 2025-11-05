@@ -8013,6 +8013,19 @@ section.home-banner .height-100 {
   left: -1rem;
 }
 
+/* partnersSection */
+
+.afterBanner-partnersSection {
+    padding: 1.5rem 0;
+}
+
+.afterBanner-partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .mobile-parallex-effect > .right-img {
   max-width: 34%;
   right: -1rem;
