@@ -644,6 +644,22 @@ li.nav_item:hover.dropdown::after {
   }
 }
 
+@media (max-width: 1024px) {
+ .new_header_links{
+    gap: 0 10px !important;
+  }
+ 
+  .navbar_brand img{
+    max-width: 146px;
+  }
+
+ .new_header_links li:first-child {
+  min-width: auto !important;
+}
+
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .top_header .d-flex {
@@ -654,6 +670,15 @@ li.nav_item:hover.dropdown::after {
   .top_header .header_social {
     margin-left: 0 !important;
   }
+
+ #main-header{
+  display:none !important;
+ }
+
+ .top_header {
+  display:none !important;
+ }
+
 }
 
 @media (max-width: 768px) {
@@ -671,6 +696,7 @@ li.nav_item:hover.dropdown::after {
     margin-bottom: 8px;
   }
 }
+
 .dropdown_menu 
 {
     position: absolute;

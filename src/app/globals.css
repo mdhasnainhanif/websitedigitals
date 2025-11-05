@@ -709,6 +709,14 @@ li.nav-item:hover.dropdown::after {
   .top_header .header-social {
     margin-left: 0 !important;
   }
+  header#main-header {
+    display: none !important;
+  }
+ 
+  .Header-module__ldgnoG__top_header {
+    display: none !important;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -4046,6 +4054,11 @@ li.nav-item:hover.dropdown::after {
   .top_header .header-social {
     margin-left: 0 !important;
   }
+
+  .contentWriting-imageArea{
+    display:none;
+}
+
 }
 
 @media (max-width: 768px) {

@@ -27,7 +27,7 @@ export default function WebBuilderBanner({
         <div className="container">
           <div className="row align-items-center mb-5 justify-content-start rowGap2">
             {/* Left Column - Content */}
-            <div className={`col-md-6 ${col}`}>
+            <div className={`col-md-6 col-sm-12 ${col}`}>
               {data?.isBreadcrumb && (
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -109,7 +109,7 @@ export default function WebBuilderBanner({
             </div>
 
             {/* Right Column - Image + optional decor */}
-            <div className={`col-md-6 ${col}`}>
+            <div className={`col-md-6  ${col}`}>
               <div
                 className={`contentWriting-imageArea position-relative ${colImgClass}`}
               >

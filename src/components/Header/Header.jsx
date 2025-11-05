@@ -182,8 +182,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <header
-        className={`${styles.new_header} d-none d-sm-block`}
+      <header className={`${styles.new_header} d-none d-sm-block `}
         id="main-header"
       >
         <nav className="p-0">
