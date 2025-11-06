@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { EmailIcon, LocationIcon, PhoneIcon } from '@/icons';
 interface ContactFormData {
   fname: string;
   lname: string;
@@ -162,6 +163,7 @@ export default function ContactBanner() {
                   <div className="basic-inputArea">
                     <select
                       name="service"
+                      className='nice-select'
                       id="contactsec_service"
                       value={formData.service}
                       onChange={handleInputChange}
@@ -241,21 +243,21 @@ export default function ContactBanner() {
               </p>
               <ul className="contactPage-list">
                 <li>
-                  <i className="fa fa-phone"></i>
+                  <PhoneIcon />
                   <div className="contactPage-listDetail">
                     <h2>Book a Call</h2>
                     <p>(646)-222-3598</p>
                   </div>
                 </li>
                 <li>
-                  <i className="fa fa-envelope"></i>
+                  <EmailIcon />
                   <div className="contactPage-listDetail">
                     <h2>Email Us</h2>
                     <p>info@websitedigitals.com</p>
                   </div>
                 </li>
                 <li>
-                  <i className="fa fa-map-marker-alt"></i>
+                  <LocationIcon />
                   <div className="contactPage-listDetail">
                     <h2>Location</h2>
                     <p>175 Pearl Street Dumbo, 1st, 2nd and 3rd Floor, Dumbo, NY 11201</p>
