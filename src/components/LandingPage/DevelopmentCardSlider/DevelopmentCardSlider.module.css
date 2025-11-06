@@ -301,6 +301,15 @@
   }
 }
 
+@media (max-width: 1024px){
+  
+.link-area > a.primary,
+.link-area > button.primary {
+  padding: .75rem 1.1rem !important;
+  }
+
+}
+
 @media (max-width: 480px) {
   .sliderTitle {
     font-size: 1.8rem;
