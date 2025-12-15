@@ -1,6 +1,6 @@
 // /data/webBannerData.js
 
-import { BagIcon } from "../../icons";
+import { BagIcon, icon1 } from "../../icons";
 
 export const webDesignBannerData = {
   breadcrumb: {
@@ -111,7 +111,7 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <BagIcon/>
+    icon: <icon1/>
   },
   {
     id: "responsive-web-design",
@@ -123,7 +123,7 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <BagIcon/>
+    icon: <icon1/>
   },
   {
     id: "website-redesign",

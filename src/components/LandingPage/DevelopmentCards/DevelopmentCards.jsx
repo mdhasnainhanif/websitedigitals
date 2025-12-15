@@ -49,7 +49,13 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
                 >
                 <div className="p-4 position-relative">
                   <div className={`${styles.iconCircle} mb-3 mx-auto`}>
-                    <GoalIcon />
+                    {typeof item.icon === 'string' && (item.icon.startsWith('/') || item.icon.includes('.png') || item.icon.includes('.svg') || item.icon.includes('.jpg') || item.icon.includes('.webp')) ? (
+                      <img src={item.icon} alt={item.title} style={{ width: '80px', height: '80px', objectFit: 'contain' }} />
+                    ) : item.icon ? (
+                      item.icon
+                    ) : (
+                      <GoalIcon />
+                    )}
                   </div>
                   <h5 className="fw-bold mb-3">{item.title}</h5>
                   <p className="text-muted mb-0">{item.description}</p>
