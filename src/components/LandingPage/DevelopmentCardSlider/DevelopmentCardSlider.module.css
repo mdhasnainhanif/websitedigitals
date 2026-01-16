@@ -158,6 +158,11 @@
   opacity: 0.7;
 }
 
+div.iconWrapper img {
+  width: 60px !important;
+  height: 60px;
+}
+
 .iconText {
   position: absolute;
   color: #ffffff;

@@ -25,7 +25,7 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
           <div className="col-md-10">
             <div className="text-center mb-5">
 
-             {section.showHeading && section.heading && (
+             {(section.showHeading !== false) && section.heading && (
                <h2 className="fw-bolder fs-1">
                  {section.heading}
                </h2>
@@ -49,7 +49,7 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
                 >
                 <div className="p-4 position-relative">
                   <div className={`${styles.iconCircle} mb-3 mx-auto`}>
-                    <GoalIcon />
+                    {item.image ? <img src={item.image} alt={item.title} className="img-fluid" /> : <GoalIcon />}
                   </div>
                   <h5 className="fw-bold mb-3">{item.title}</h5>
                   <p className="text-muted mb-0">{item.description}</p>

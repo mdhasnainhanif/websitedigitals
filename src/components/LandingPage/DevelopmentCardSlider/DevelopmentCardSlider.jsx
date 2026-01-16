@@ -4,6 +4,7 @@ import React from "react";
 import { webDevelopmentServicesData } from "../../../app/Data/landingPageData";
 import { useOwlCarousel } from "../../../app/hooks/useOwlCarousel";
 import styles from "./DevelopmentCardSlider.module.css";
+import Image from "next/image";
 
 const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,className = "" }) => {
   const defaultSectionData = {
@@ -58,7 +59,9 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,classNa
             {services.map((service, index) => (
               <div key={index} className={`item ${styles.serviceCard}`}>
                 <div className={styles.cardIcon}>
-                  <div className={styles.iconWrapper}>{service.icon}</div>
+                  <div className={styles.iconWrapper}>
+                    {service.image ? <Image className="d-block me-auto w_fit" width={60} height={60} src={service.image} alt={service.title}  /> : service.icon}
+                    </div>
                 </div>
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{service.title}</h3>

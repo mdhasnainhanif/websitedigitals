@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./PlatformsSpecialize.module.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
 
 const PlatformsSpecialize = ({ data, sectionData = null }) => {
     const defaultSectionData = {
@@ -36,7 +37,7 @@ const PlatformsSpecialize = ({ data, sectionData = null }) => {
                         >
                             <div className={styles.platformCard}>
                                 <div className={styles.iconWrapper}>
-                                    <img src={item.icon} alt={item.title} />
+                                    {item.image ? <Image className="d-block me-auto w_fit" width={80} height={80} src={item.image} alt={item.title}  /> : <img src={item.icon} alt={item.title} />}
                                 </div>
                                 <div className={styles.platformCardContent}>
                                     <h3>{item.title}</h3>
