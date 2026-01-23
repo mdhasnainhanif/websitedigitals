@@ -149,6 +149,7 @@ export const cloudHostingServicesImpactCardsData = [
     icon: "reliability",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/cloud-hosting-services/section1/reliability-uptime.svg",
   },
   {
     id: 2,
@@ -158,6 +159,7 @@ export const cloudHostingServicesImpactCardsData = [
     icon: "performance",
     isHighlighted: true,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/cloud-hosting-services/section1/performance-optimization.svg",
   },
   {
     id: 3,
@@ -167,6 +169,7 @@ export const cloudHostingServicesImpactCardsData = [
     icon: "scalability",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/cloud-hosting-services/section1/scalability-on-demand.svg",
   },
   {
     id: 4,
@@ -176,6 +179,7 @@ export const cloudHostingServicesImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/cloud-hosting-services/section1/security-compliance.svg",
   },
   {
     id: 5,
@@ -185,6 +189,7 @@ export const cloudHostingServicesImpactCardsData = [
     icon: "cost-efficiency",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/cloud-hosting-services/section1/cost-efficiency-flexibility.svg",
   },
 ];
 
@@ -204,6 +209,7 @@ export const cloudHostingServicesData = [
     description:
       "Our managed hosting service includes 24/7 monitoring and proactive server management, keeping servers optimized for uptime, security, and smooth operations so you can focus on growing your business.",
     icon: <BagIcon />,
+    image: "/assets/images/cloud-hosting-services/end-cloud-hosting/managed-cloud-hosting.svg",
     isActive: true,
   },
   {
@@ -212,6 +218,7 @@ export const cloudHostingServicesData = [
     description:
       "Choose public cloud hosting for scalability, private cloud hosting for dedicated resources, or hybrid cloud solutions for a mix of both. Our infrastructure supports virtual servers, containerized applications, and disaster recovery planning to maintain stability under any circumstances.",
     icon: <BagIcon />,
+    image: "/assets/images/cloud-hosting-services/end-cloud-hosting/public-private-cloud-options.svg",
     isActive: false,
   },
   {
@@ -220,6 +227,7 @@ export const cloudHostingServicesData = [
     description:
       "From cloud hosting for e-commerce with high-transaction needs to enterprise-grade hosting for large organizations and developer-friendly hosting with cloud-native applications, Kubernetes, and Docker, we offer solutions built for a range of projects and workflows.",
     icon: <BagIcon />,
+    image: "/assets/images/cloud-hosting-services/end-cloud-hosting/cloud-hosting-for-industries.svg",
     isActive: false,
   },
   {
@@ -228,6 +236,7 @@ export const cloudHostingServicesData = [
     description:
       "We use intelligent load balancing to distribute traffic evenly across servers, preventing downtime and keeping response times fast even during peak demand. This ensures consistent website performance and a reliable user experience.",
     icon: <BagIcon />,
+    image: "/assets/images/cloud-hosting-services/end-cloud-hosting/load-balancing-performance-support.svg",
     isActive: false,
   },
 ];
@@ -336,7 +345,7 @@ export const cloudHostingServicesWorkflowData = {
       title: "Consultation & Assessment",
       description:
         "We begin with a detailed cloud readiness assessment to analyze your current infrastructure and needs. Based on the findings, we create a tailored hosting migration plan outlining timelines, dependencies, and risk-mitigation measures.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/cloud-hosting-services/process/consultation-assessment.svg",
       alignment: "right",
     },
     {
@@ -345,7 +354,7 @@ export const cloudHostingServicesWorkflowData = {
       title: "Deployment & Scaling",
       description:
         "Our team handles server provisioning, configures load balancing setup, and performs auto-scaling configuration so resources adjust to changing demand. High-availability architecture and elastic compute capabilities ensure stability and reliable performance during peak traffic periods.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/cloud-hosting-services/process/deployment-scaling.svg",
       alignment: "left",
     },
     {
@@ -354,7 +363,7 @@ export const cloudHostingServicesWorkflowData = {
       title: "Monitoring & Optimization",
       description:
         "Once deployed, we provide continuous performance monitoring, uptime tracking, and resource optimization to keep your site efficient. Regular reviews include disaster recovery planning and updates to your cloud infrastructure to maintain resilience as your business grows.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/cloud-hosting-services/process/monitoring-optimization.svg",
       alignment: "right",
     },
   ],
@@ -532,8 +541,8 @@ export const cloudHostingServicesIndustriesCardsData = [
     title: "Online Stores",
     description:
       "Our cloud hosting services for online stores keep e-commerce websites fast, secure, and scalable. They ensure smooth shopping experiences during flash sales or traffic peaks without downtime.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/cloud-hosting-services/industries/original/online-stores.svg`,
+    imgWhite: `/assets/images/cloud-hosting-services/industries/hover/online-stores.svg`,
     alt: "Online Stores Cloud Hosting",
     width: 71,
     height: 71,
@@ -542,8 +551,8 @@ export const cloudHostingServicesIndustriesCardsData = [
     title: "SaaS",
     description:
       "We provide cloud hosting services for SaaS apps built for high availability, fast scaling, and secure performance. Your users experience consistent speed and reliability at all times.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/cloud-hosting-services/industries/original/saas.svg`,
+    imgWhite: `/assets/images/cloud-hosting-services/industries/hover/saas.svg`,
     alt: "SaaS Cloud Hosting",
     width: 71,
     height: 71,
@@ -552,8 +561,8 @@ export const cloudHostingServicesIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our cloud hosting for healthcare software supports HIPAA compliance, data security, and constant access to patient information. It is ideal for critical healthcare systems that require complete trust.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/cloud-hosting-services/industries/original/healthcare.svg`,
+    imgWhite: `/assets/images/cloud-hosting-services/industries/hover/healthcare.svg`,
     alt: "Healthcare Cloud Hosting",
     width: 71,
     height: 71,
@@ -562,8 +571,8 @@ export const cloudHostingServicesIndustriesCardsData = [
     title: "Financial",
     description:
       "We offer cloud hosting for financial services with PCI DSS-compliant infrastructure, advanced encryption, and real-time resource scaling. It ensures secure banking, fintech, and investment operations.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/cloud-hosting-services/industries/original/financial.svg`,
+    imgWhite: `/assets/images/cloud-hosting-services/industries/hover/financial.svg`,
     alt: "Financial Cloud Hosting",
     width: 71,
     height: 71,
@@ -572,8 +581,8 @@ export const cloudHostingServicesIndustriesCardsData = [
     title: "Schools",
     description:
       "Our cloud hosting services for schools power online learning platforms and virtual classrooms with dependable uptime and secure data management. Students and educators enjoy uninterrupted access.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/cloud-hosting-services/industries/original/schools.svg`,
+    imgWhite: `/assets/images/cloud-hosting-services/industries/hover/schools.svg`,
     alt: "Schools Cloud Hosting",
     width: 71,
     height: 71,
@@ -582,8 +591,8 @@ export const cloudHostingServicesIndustriesCardsData = [
     title: "Game Studios",
     description:
       "We design cloud hosting services for game studios that manage heavy multiplayer traffic and real-time updates with low latency. Players enjoy smooth and continuous gaming performance.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/cloud-hosting-services/industries/original/game-studios.svg`,
+    imgWhite: `/assets/images/cloud-hosting-services/industries/hover/game-studios.svg`,
     alt: "Game Studios Cloud Hosting",
     width: 71,
     height: 71,
@@ -659,7 +668,7 @@ export const cloudHostingServicesScrollSectionData = {
       id: "cloud-firstScroller",
       step: 1,
       title: "Performance-Focused Architecture",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cloud-hosting-services/scroller/performance-focused-architecture.svg",
       paragraphs: [
         "Our infrastructure runs on a low-latency network with a global CDN to deliver consistently fast load times worldwide.",
       ],
@@ -674,7 +683,7 @@ export const cloudHostingServicesScrollSectionData = {
       id: "cloud-secondScroller",
       step: 2,
       title: "Built-In Redundancy",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cloud-hosting-services/scroller/built-in-redundancy.svg",
       paragraphs: [
         "Regular data backup schedules and automated failover systems protect against hardware failures and minimize downtime, helping maintain business continuity with near-99.9% availability targets.",
       ],
@@ -689,7 +698,7 @@ export const cloudHostingServicesScrollSectionData = {
       id: "cloud-thirdScroller",
       step: 3,
       title: "Compliance & Security",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cloud-hosting-services/scroller/compliance-security.svg",
       paragraphs: [
         "We operate PCI DSS–compliant and ISO/IEC 27001–certified data centers, aligning with security controls recommended by the Cloud Security Alliance and NIST frameworks to ensure your data is protected under strict standards.",
       ],
@@ -704,7 +713,7 @@ export const cloudHostingServicesScrollSectionData = {
       id: "cloud-forthScroller",
       step: 4,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cloud-hosting-services/scroller/transparent-pricing.svg",
       paragraphs: [
         "Our predictable pricing model and pay-as-you-go hosting let you control costs with full visibility, paying only for the resources you actually use.",
       ],
@@ -719,7 +728,7 @@ export const cloudHostingServicesScrollSectionData = {
       id: "cloud-fifthScroller",
       step: 5,
       title: "Expert Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cloud-hosting-services/scroller/expert-support.svg",
       paragraphs: [
         "Our certified cloud engineers provide 24/7 live support with fast response times, so expert help is always within reach when issues arise.",
       ],
