@@ -40,7 +40,7 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,classNa
     <section className={`${styles.sliderSection} ${className}`}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-12">
+          <div className="col-lg-9">
             <div className="section-heading text-center text-white">
               <h2 className="mb-0">
                 {section.heading}
