@@ -88,6 +88,7 @@ export const sharedWebHostingServicesData = [
       "Ideal for startups and smaller sites that need a cost-effective beginning. Powered by shared Linux hosting, it's a reliable entry-level web hosting choice for small site hosting with limited bandwidth, giving you a straightforward way to get your first site online.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/shared-web-hosting-services/our-range-of-shared-hosting/basic-shared-hosting.svg",
   },
   {
     id: 2,
@@ -96,6 +97,7 @@ export const sharedWebHostingServicesData = [
       "Built for growing businesses, this plan offers shared hosting for small business websites with SSL included for secure transactions. It also provides a free domain, extra security features, and a performance boost to support higher traffic.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shared-web-hosting-services/our-range-of-shared-hosting/business-shared-hosting.svg",
   },
   {
     id: 3,
@@ -104,6 +106,7 @@ export const sharedWebHostingServicesData = [
       "Created for WordPress users, this shared hosting for WordPress plan is an optimized hosting plan with tuned servers for faster load times. It includes one-click WordPress installation and managed updates to keep your site secure and current.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shared-web-hosting-services/our-range-of-shared-hosting/wordpress-optimized-shared-hosting.svg",
   },
 ];
 
@@ -118,7 +121,7 @@ export const sharedWebHostingServicesScrollSectionData = {
       id: "shared-firstScroller",
       step: 1,
       title: "Superior Server Performance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shared-web-hosting-services/scroller/superior-server-performance.svg",
       paragraphs: [
         "Our optimized hosting environment delivers excellent server performance and website speed optimization for faster load times. Intelligent resource allocation reduces strain during traffic spikes, keeping downtime low and your site responsive.",
       ],
@@ -133,7 +136,7 @@ export const sharedWebHostingServicesScrollSectionData = {
       id: "shared-secondScroller",
       step: 2,
       title: "Robust Security",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shared-web-hosting-services/scroller/robust-security.svg",
       paragraphs: [
         "Your website stays safe with advanced website security features, including an SSL certificate included with every plan. Built-in DDoS protection, automatic malware scanning, and an active firewall work together to safeguard your data and visitors.",
       ],
@@ -148,7 +151,7 @@ export const sharedWebHostingServicesScrollSectionData = {
       id: "shared-thirdScroller",
       step: 3,
       title: "Scalability Options",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shared-web-hosting-services/scroller/scalability-options.svg",
       paragraphs: [
         "Growth should never mean starting over. Our scalable shared hosting lets you add resources or upgrade hosting plan options as traffic increases. Whether you need a VPS upgrade or guided migration, our growth-ready hosting keeps pace with your business.",
       ],
@@ -163,7 +166,7 @@ export const sharedWebHostingServicesScrollSectionData = {
       id: "shared-forthScroller",
       step: 4,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shared-web-hosting-services/scroller/transparent-pricing.svg",
       paragraphs: [
         "With us, you always know what you're paying for. We offer clear hosting prices and detailed shared hosting plan comparison tools to help you choose the right fit. There are no hidden fees, just straightforward pricing that delivers value for money.",
       ],
@@ -178,7 +181,7 @@ export const sharedWebHostingServicesScrollSectionData = {
       id: "shared-fifthScroller",
       step: 5,
       title: "Expert Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shared-web-hosting-services/scroller/expert-support.svg",
       paragraphs: [
         "Our team provides expert hosting support and dependable technical support when you need it most. Access our knowledge base, live chat support, or reach out to our hosting helpdesk for quick answers and practical solutions.",
       ],
@@ -259,6 +262,7 @@ export const sharedWebHostingServicesImpactCardsData = [
     icon: "podcast",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/shared-web-hosting-services/section-1/low-cost.svg",
   },
   {
     id: 2,
@@ -268,6 +272,7 @@ export const sharedWebHostingServicesImpactCardsData = [
     icon: "saas",
     isHighlighted: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/shared-web-hosting-services/section-1/easy-to-setup.svg",
   },
   {
     id: 3,
@@ -276,6 +281,7 @@ export const sharedWebHostingServicesImpactCardsData = [
     icon: "gym",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/shared-web-hosting-services/section-1/no-tech-hassle.svg",
   },
   {
     id: 4,
@@ -284,6 +290,7 @@ export const sharedWebHostingServicesImpactCardsData = [
     icon: "tutoring",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/shared-web-hosting-services/section-1/room-to-grow.svg",
   },
 ];
 
@@ -349,8 +356,8 @@ export const sharedWebHostingServicesIndustriesCardsData = [
     title: "Podcast",
     description:
       "Our shared hosting for a podcast website ensures smooth streaming, fast file delivery, and consistent uptime. With optimized bandwidth and secure hosting, you can focus on growing your audience without worrying about downtime.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/shared-web-hosting-services/sectors-we-cover/original/podcast.svg`,
+    imgWhite: `/assets/images/shared-web-hosting-services/sectors-we-cover/hover/podcast.svg`,
     alt: "Podcast Hosting",
     width: 71,
     height: 71,
@@ -359,8 +366,8 @@ export const sharedWebHostingServicesIndustriesCardsData = [
     title: "SaaS",
     description:
       "Choose shared hosting for SaaS startups that need dependable uptime and scalable resources. Our hosting is built to support app growth, API connections, and customer trust with a secure and affordable foundation.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/shared-web-hosting-services/sectors-we-cover/original/saas.svg`,
+    imgWhite: `/assets/images/shared-web-hosting-services/sectors-we-cover/hover/saas.svg`,
     alt: "SaaS Hosting",
     width: 71,
     height: 71,
@@ -369,8 +376,8 @@ export const sharedWebHostingServicesIndustriesCardsData = [
     title: "Gym",
     description:
       "Promote classes, memberships, and bookings with shared hosting for a gym website. Our platform keeps schedules accessible, payment pages secure, and performance strong across desktop and mobile devices.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/shared-web-hosting-services/sectors-we-cover/original/gym.svg`,
+    imgWhite: `/assets/images/shared-web-hosting-services/sectors-we-cover/hover/gym.svg`,
     alt: "Gym Hosting",
     width: 71,
     height: 71,
@@ -379,8 +386,8 @@ export const sharedWebHostingServicesIndustriesCardsData = [
     title: "Tutoring",
     description:
       "Deliver lessons and resources online with shared hosting for a tutoring business. From video sessions to scheduling tools, our hosting supports e-learning platforms and grows as your student base expands.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/shared-web-hosting-services/sectors-we-cover/original/tutoring.svg`,
+    imgWhite: `/assets/images/shared-web-hosting-services/sectors-we-cover/hover/tutoring.svg`,
     alt: "Tutoring Hosting",
     width: 71,
     height: 71,
@@ -389,8 +396,8 @@ export const sharedWebHostingServicesIndustriesCardsData = [
     title: "Real Estate",
     description:
       "Showcase listings and generate leads with shared hosting for real estate agents. Our hosting supports high-quality image galleries, fast page loads, and secure inquiry forms to help you close deals faster.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/shared-web-hosting-services/sectors-we-cover/original/real-estate.svg`,
+    imgWhite: `/assets/images/shared-web-hosting-services/sectors-we-cover/hover/real-estate.svg`,
     alt: "Real Estate Hosting",
     width: 71,
     height: 71,
@@ -399,8 +406,8 @@ export const sharedWebHostingServicesIndustriesCardsData = [
     title: "Medical",
     description:
       "Improve patient access and trust with shared hosting for a medical clinic. From appointment booking to secure data handling, our hosting ensures compliance-friendly performance and reliable uptime.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/shared-web-hosting-services/sectors-we-cover/original/medical.svg`,
+    imgWhite: `/assets/images/shared-web-hosting-services/sectors-we-cover/hover/medical.svg`,
     alt: "Medical Hosting",
     width: 71,
     height: 71,
@@ -419,7 +426,7 @@ export const sharedWebHostingServicesWorkflowData = {
       title: "Select Your Hosting Plan",
       description:
         "Explore our shared hosting packages and use our clear hosting plan selection tools to compare features and choose the plan that fits your needs.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/shared-web-hosting-services/our-process/select-your-hosting-plan.svg",
       alignment: "right",
     },
     {
@@ -428,7 +435,7 @@ export const sharedWebHostingServicesWorkflowData = {
       title: "Quick Setup",
       description:
         "Once you've chosen your plan, we handle website setup and instant account activation so your site is ready to go quickly.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/shared-web-hosting-services/our-process/quick-setup.svg",
       alignment: "left",
     },
     {
@@ -437,7 +444,7 @@ export const sharedWebHostingServicesWorkflowData = {
       title: "Launch and Grow",
       description:
         "With setup complete, your website launch is just a click away. Use our intuitive hosting management tools to stay in control as your site traffic grows.",
-      image: "/assets/images/work/step3.png",
+        image: "/assets/images/shared-web-hosting-services/our-process/launch-and-grow.svg",
       alignment: "right",
     },
   ],
