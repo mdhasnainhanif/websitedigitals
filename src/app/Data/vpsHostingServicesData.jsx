@@ -139,7 +139,7 @@ export const vpsHostingServicesScrollSectionData = {
         alt: "99.99% Uptime Guarantee",
         width: 669,
         height: 376,
-      },
+      }, 
     },
     {
       id: "vps-secondScroller",
