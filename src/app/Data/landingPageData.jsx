@@ -1,7 +1,7 @@
 import { BagIcon } from "@/icons";
 import { PenToolIcon } from "../../icons";
 
-export const landingPageBannerData = {
+const landingPageBannerData = {
   breadcrumb: {
     home: { label: "Home", href: "/" },
     current: { label: "Landing Page", href: "/landing-page" },
@@ -23,7 +23,7 @@ export const landingPageBannerData = {
   image: null,
 };
 
-export const developmentCardsData = [
+const developmentCardsData = [
   {
     id: 1,
     title: "Supports Your Goals",
@@ -58,7 +58,7 @@ export const developmentCardsData = [
   },
 ];
 
-export const webDevelopmentServicesData = [
+const webDevelopmentServicesData = [
   {
     id: 1,
     title: "Ecommerce Development",
@@ -81,6 +81,52 @@ export const webDevelopmentServicesData = [
     isActive: false
   }
 ];
+
+const stepSectionData = {
+  title: "5 Steps to launch your project",
+  steps: [
+    {
+      id: 1,
+      number: "01",
+      title: "Discovery & Planning",
+      description: "We begin by defining your website goals and understanding your target audience. This stage includes competitor research to identify opportunities and set benchmarks. The outcome is a detailed project plan that guides every decision moving forward.",
+      image: "/assets/images/work/step1.png",
+      alignment: "right"
+    },
+    {
+      id: 2,
+      number: "02",
+      title: "Design & Prototyping",
+      description: "Our design team creates UX/UI design concepts that focus on both aesthetics and usability. We produce responsive layouts to ensure your website looks and functions seamlessly across all devices. Before development begins, you'll see interactive prototypes that bring your vision to life.",
+      image: "/assets/images/work/step2.png",
+      alignment: "left"
+    },
+    {
+      id: 3,
+      number: "03",
+      title: "Development & Integration",
+      description: "Once designs are approved, our developers bring them to life with clean, efficient code. This phase includes API integration for third-party services, database setup, and any required custom features. The result is a fully functional platform tailored to your specifications.",
+      image: "/assets/images/work/step3.png",
+      alignment: "right"
+    },
+    {
+      id: 4,
+      number: "04",
+      title: "Testing & Launch",
+      description: "Before going live, we conduct thorough QA testing to identify and fix any issues. This includes performance checks to ensure fast load times, mobile responsiveness, and browser compatibility. Once testing is complete, we coordinate a smooth, secure launch.",
+      image: "/assets/images/work/step4.png",
+      alignment: "left"
+    },
+    {
+      id: 5,
+      number: "05",
+      title: "Ongoing Support & Optimization",
+      description: "Our relationship doesn't end at launch. We provide site maintenance to keep your website secure, along with regular SEO updates to maintain and improve search rankings. Ongoing performance monitoring ensures your site continues to meet growing user and business needs.",
+      image: "/assets/images/work/step5.png",
+      alignment: "right"
+    }
+  ]
+};
 
 export { landingPageBannerData, developmentCardsData, webDevelopmentServicesData, stepSectionData };
 
@@ -219,51 +265,7 @@ export const landingPageScrollSectionData = {
   cta: null
 };
 
-export const stepSectionData = {
-  title: "5 Steps to launch your project",
-  steps: [
-    {
-      id: 1,
-      number: "01",
-      title: "Discovery & Planning",
-      description: "We begin by defining your website goals and understanding your target audience. This stage includes competitor research to identify opportunities and set benchmarks. The outcome is a detailed project plan that guides every decision moving forward.",
-      image: "/assets/images/work/step1.png",
-      alignment: "right"
-    },
-    {
-      id: 2,
-      number: "02",
-      title: "Design & Prototyping",
-      description: "Our design team creates UX/UI design concepts that focus on both aesthetics and usability. We produce responsive layouts to ensure your website looks and functions seamlessly across all devices. Before development begins, you'll see interactive prototypes that bring your vision to life.",
-      image: "/assets/images/work/step2.png",
-      alignment: "left"
-    },
-    {
-      id: 3,
-      number: "03",
-      title: "Development & Integration",
-      description: "Once designs are approved, our developers bring them to life with clean, efficient code. This phase includes API integration for third-party services, database setup, and any required custom features. The result is a fully functional platform tailored to your specifications.",
-      image: "/assets/images/work/step3.png",
-      alignment: "right"
-    },
-    {
-      id: 4,
-      number: "04",
-      title: "Testing & Launch",
-      description: "Before going live, we conduct thorough QA testing to identify and fix any issues. This includes performance checks to ensure fast load times, mobile responsiveness, and browser compatibility. Once testing is complete, we coordinate a smooth, secure launch.",
-      image: "/assets/images/work/step4.png",
-      alignment: "left"
-    },
-    {
-      id: 5,
-      number: "05",
-      title: "Ongoing Support & Optimization",
-      description: "Our relationship doesn't end at launch. We provide site maintenance to keep your website secure, along with regular SEO updates to maintain and improve search rankings. Ongoing performance monitoring ensures your site continues to meet growing user and business needs.",
-      image: "/assets/images/work/step5.png",
-      alignment: "right"
-    }
-  ]
-};
+
 
 export const landingPageBannerData2 = {
   isBreadcrumb: false,
@@ -291,8 +293,6 @@ export const landingPageBannerData2 = {
   },
   imageWrapperClass: "boxes-bgArea leftBottom web-design-imageArea",
 };
-
-export { landingPageBannerData2 };
 
 export const platformsData = [
   {

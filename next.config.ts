@@ -26,6 +26,17 @@ const nextConfig: NextConfig = {
       };
     }
 
+    // Ensure optimization.splitChunks exists
+    if (!config.optimization) {
+      config.optimization = {};
+    }
+    if (!config.optimization.splitChunks) {
+      config.optimization.splitChunks = {};
+    }
+    if (!config.optimization.splitChunks.cacheGroups) {
+      config.optimization.splitChunks.cacheGroups = {};
+    }
+
     // Optimize CSS delivery - reduce chunk sizes
     config.optimization.splitChunks.cacheGroups.styles = {
       name: 'styles',

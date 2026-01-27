@@ -20,5 +20,3 @@ export const portfolioBannerData = {
     },
     image: null, // no image in this section
   };
-
-  export { portfolioBannerData };

@@ -63,8 +63,8 @@ const DigitalMarketingServicePage = {
     metadata: digitalMarketingMetadata,
   },
 };
-export async function generateMetadata({ params } = {}) {
-  const serviceType = params?.serviceType || "digital-marketing-company";
+export async function generateMetadata() {
+  const serviceType = "digital-marketing-company";
   const serviceData = DigitalMarketingServicePage[serviceType];
   if (!serviceData || !serviceData.metadata) {
     return {
@@ -74,8 +74,8 @@ export async function generateMetadata({ params } = {}) {
   }
   return serviceData.metadata;
 }
-const ServicePage = ({ params } = {}) => {
-  const serviceType = params?.serviceType || "digital-marketing-company";
+const ServicePage = async () => {
+  const serviceType = "digital-marketing-company";
   const serviceData = DigitalMarketingServicePage[serviceType];
   console.log("Service Type:", serviceType);
   console.log("Service Data:", serviceData);

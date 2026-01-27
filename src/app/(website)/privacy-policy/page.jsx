@@ -1,15 +1,14 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 export const metadata = {
     title: 'Website Digitals Privacy Policy',
     description: 'Learn how Website Digitals collects, uses, and protects your personal data across our web, hosting, and digital marketing services.',
     keywords: '',
+    alternates: {
+        canonical: 'https://www.websitedigitals.com/privacy-policy/',
+    },
 };
-
-export const slug = 'https://www.websitedigitals.com/privacy-policy/';
-
-export const canonical = 'https://www.websitedigitals.com/privacy-policy/';
 
 const page = () => {
     return (
@@ -36,7 +35,7 @@ const page = () => {
                         <p>The choice of visiting our Homepage is solely your decision. Any dispute over privacy is subject to this notice and our Conditions of Use. This includes limitations on damages, arbitration of disputes, and the applicable law of the state.</p>
                         <p>If the client has any issues regarding the Privacy Policy, they should contact us at their best convenience. Our customer service team shall be most happy to serve the clients. As our Policies are liable to change at any time, it is recommended that the client review the policy each time they enter the site to purchase or engage our services.</p>
                         <p>The company gathers navigational information about where visitors go on our website and information about the technical efficiencies of our website and service (i.e., time to connect and time to download pages). This information helps us understand which areas of our Website Digitals platform are most visited and improve user experience.</p>
-                        <p>Unless otherwise noted, all materials, including images, code, illustrations, designs, icons, photographs, written text, and other materials that are part of this Site (collectively referred to as the “Contents”) are copyrights, trademarks, trade dress, and other intellectual property owned, controlled, or licensed by Website Digitals.</p>
+                        <p>Unless otherwise noted, all materials, including images, code, illustrations, designs, icons, photographs, written text, and other materials that are part of this Site (collectively referred to as the "Contents") are copyrights, trademarks, trade dress, and other intellectual property owned, controlled, or licensed by Website Digitals.</p>
                         <p>This Site and all its Contents are intended solely for personal and non-commercial use. Clients may download or copy the Contents and other downloadable materials displayed on the Site for personal use only. No right, title, or interest in any downloaded materials or software is transferred to the client as a result of any such downloading or copying. Clients may not reproduce, publish, transmit, distribute, display, modify, create derivatives, sell, or participate in any sale or exploitation of the site, its content, or any related software.</p>
                         <h3>Testimonials</h3>
                         <p>All comments, feedback, reviews, suggestions, or ideas submitted to Website Digitals, whether through our website, email, or other communication channels, shall remain the property of the Company.</p>
@@ -86,7 +85,7 @@ const page = () => {
                         <p>We respect your right to privacy and handle all personal and project data with confidentiality. Website Digitals does not sell or share client names, contact details, or website credentials with unauthorized third parties.</p>
                         <p>Information provided by clients is used solely to understand requirements, deliver services, and improve user experience.</p>
                         <p>We comply with PCI standards and recognized consumer data protection frameworks. Payment data and sensitive credentials are handled exclusively through secure, third-party providers.</p>
-                        <p>Our representatives are not authorized to collect confidential data such as credit card information directly. Any such sharing is at the client’s own risk, and Website Digitals shall not be liable for misuse.</p>
+                        <p>Our representatives are not authorized to collect confidential data such as credit card information directly. Any such sharing is at the client's own risk, and Website Digitals shall not be liable for misuse.</p>
                         <h3>Privacy Policy for Email Address & Mobile Number Collection</h3>
                         <p>This Privacy Policy explains how Website Digitals collects, uses, and protects email addresses and mobile numbers provided by users on our website.</p>
                         <p>Information We Collect:</p>
@@ -127,3 +126,4 @@ const page = () => {
 }
 
 export default page
+

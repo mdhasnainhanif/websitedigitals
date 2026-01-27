@@ -244,7 +244,7 @@ ol.breadcrumb {
     font-weight: 600;
     margin: 0 0 1.125rem;
 }
-.progress_container>h3, .scroller_list>li>a>h3, body {
+.progress_container>h3, .scroller_list>li>a>h3 {
     font-family: Poppins, sans-serif;
 }
 .progress_area.primary {
