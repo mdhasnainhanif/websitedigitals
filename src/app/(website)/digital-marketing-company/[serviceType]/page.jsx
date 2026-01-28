@@ -502,7 +502,7 @@ const DigitalMarketingServicePage = ({ params }) => {
         sectionData={serviceData.servicesSectionData}
         servicesData={serviceData.servicesData}
       />
-      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && serviceType !== "local-seo-services" && serviceType !== "online-reputation-management-services" && (
+      {serviceType !== "digital-marketing-company" && serviceType !== "content-marketing-services" && serviceType !== "guest-posting-services" && serviceType !== "link-building-services" && serviceType !== "local-seo-services" && serviceType !== "online-reputation-management-services" && serviceType !== "app-store-optimization-services" && (
         <WebBuilderCardSection
           heading={
             serviceData.industriesSectionData?.heading || webBuilderHeading
@@ -518,7 +518,7 @@ const DigitalMarketingServicePage = ({ params }) => {
           buttonClassName={serviceData.industriesSectionData?.cta?.className || "offer-btn primary"}
         />
       )}
-      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services" || serviceType === "local-seo-services" || serviceType === "online-reputation-management-services") && (
+      {(serviceType === "content-marketing-services" || serviceType === "guest-posting-services" || serviceType === "link-building-services" || serviceType === "local-seo-services" || serviceType === "online-reputation-management-services" || serviceType === "app-store-optimization-services") && (
         <WebBuilderCardSection
           heading={serviceData.industriesSectionData?.heading}
           description={serviceData.industriesSectionData?.description}
@@ -551,7 +551,8 @@ const DigitalMarketingServicePage = ({ params }) => {
         serviceType !== "link-building-services" &&
         serviceType !== "local-seo-services" &&
         serviceType !== "online-reputation-management-services" &&
-        serviceType !== "content-writing-services" && (
+        serviceType !== "content-writing-services" &&
+        serviceType !== "app-store-optimization-services" && (
           <WebBuilderCardSection
             heading={serviceData.whyChooseUsSectionData?.heading}
             description={serviceData.whyChooseUsSectionData?.description}
