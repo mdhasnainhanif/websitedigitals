@@ -91,6 +91,7 @@ export const onlineReputationManagementServicesData = [
       "We specialize in reputation cleanup to remove negative content from search results whenever possible. When full removal is not available, our reputation restoration methods push harmful results down and highlight accurate, trustworthy content that reflects your brand.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/content-removal-takedown.svg",
   },
   {
     id: 2,
@@ -99,6 +100,7 @@ export const onlineReputationManagementServicesData = [
       "When damaging publicity appears, speed matters. Our crisis reputation management strategies focus on message control, rapid content publishing, and digital image security to stabilize your public presence and restore audience confidence.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/crisis-reputation-management.svg",
   },
   {
     id: 3,
@@ -107,6 +109,7 @@ export const onlineReputationManagementServicesData = [
       "Executives and professionals benefit from customized reputation restoration and profile optimization that showcase their expertise and credibility. This includes efforts to remove harmful or misleading content and create positive digital assets that strengthen personal authority and influence.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/personal-branding-orm.svg",
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ export const onlineReputationManagementServicesData = [
       "Proactive defense keeps your brand safe. Through brand monitoring and early detection, we identify threats before they spread. Our team coordinates legal action and prevention strategies to stop potential damage and maintain a reliable presence.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/online-risk-threat-protection.svg",
   },
   {
     id: 5,
@@ -123,6 +127,7 @@ export const onlineReputationManagementServicesData = [
       "We track competitor activity to uncover reputation risks or malicious tactics that may affect your brand. Using review monitoring, sentiment analysis, and targeted review response strategies, we help you respond strategically and use insights to strengthen your market position.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/competitor-reputation-monitoring.svg",
   },
   {
     id: 6,
@@ -131,6 +136,7 @@ export const onlineReputationManagementServicesData = [
       "Reputation requires continuous attention. Our ongoing program combines review suppression services, active monitoring, and timely updates to keep harmful content suppressed and your brand narrative positive. Regular reporting keeps you informed and ready to act when new issues arise.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/ongoing-orm-maintenance-protection.svg",
   },
 ];
 
@@ -146,7 +152,7 @@ export const onlineReputationManagementScrollSectionData = {
       id: "orm-firstScroller",
       step: 1,
       title: "Data-Driven Reputation Audits",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/online-reputation-management-services/what-makes-our-orm-company-the-right-choice/data-driven-reputation-audits.svg",
       paragraphs: [
         "Every project begins with a detailed reputation audit to evaluate your online presence. Using advanced sentiment analysis and a clear reputation score, we uncover risks and opportunities, then create a targeted roadmap for improvement.",
       ],
@@ -161,7 +167,7 @@ export const onlineReputationManagementScrollSectionData = {
       id: "orm-secondScroller",
       step: 2,
       title: "Transparent & Ethical Strategies",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/online-reputation-management-services/what-makes-our-orm-company-the-right-choice/transparent-ethical-strategies.svg",
       paragraphs: [
         "We strengthen brand trust with strategies that are transparent and compliant with Google guidelines. Our focus on ethical ORM ensures sustainable improvements that align with industry best practices.",
       ],
@@ -176,7 +182,7 @@ export const onlineReputationManagementScrollSectionData = {
       id: "orm-thirdScroller",
       step: 3,
       title: "Proactive Crisis Management",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/online-reputation-management-services/what-makes-our-orm-company-the-right-choice/proactive-crisis-management.svg",
       paragraphs: [
         "Our team acts quickly with tailored crisis communication plans that stop issues from escalating. Through effective damage control and clear messaging, we protect relationships and maintain stakeholder trust during critical moments.",
       ],
@@ -191,7 +197,7 @@ export const onlineReputationManagementScrollSectionData = {
       id: "orm-forthScroller",
       step: 4,
       title: "Personalized Solutions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/online-reputation-management-services/what-makes-our-orm-company-the-right-choice/personalized-solutions.svg",
       paragraphs: [
         "No two reputations are alike. We offer personal reputation management and a custom ORM plan designed around your goals, audience, and industry, ensuring strategies are precise and relevant.",
       ],
@@ -206,7 +212,7 @@ export const onlineReputationManagementScrollSectionData = {
       id: "orm-fifthScroller",
       step: 5,
       title: "Expert-Led Methodology",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/online-reputation-management-services/what-makes-our-orm-company-the-right-choice/expert-led-methodology.svg",
       paragraphs: [
         "Our work is guided by recognized best practices and supported by expert analysis. Each campaign is continually refined through performance reviews and data insights, delivering consistent, measurable outcomes you can rely on.",
       ],
@@ -287,6 +293,7 @@ export const onlineReputationManagementImpactCardsData = [
     icon: "protection",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/online-reputation-management-services/why-your-online-reputation-matters/protect-your-brand-image.svg",
   },
   {
     id: 2,
@@ -296,6 +303,7 @@ export const onlineReputationManagementImpactCardsData = [
     icon: "trust",
     isHighlighted: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/online-reputation-management-services/why-your-online-reputation-matters/increase-customer-trust-conversions.svg",
   },
   {
     id: 3,
@@ -305,6 +313,7 @@ export const onlineReputationManagementImpactCardsData = [
     icon: "monitoring",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/online-reputation-management-services/why-your-online-reputation-matters/monitor-respond-in-real-time.svg",
   },
   {
     id: 4,
@@ -314,6 +323,7 @@ export const onlineReputationManagementImpactCardsData = [
     icon: "growth",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/online-reputation-management-services/why-your-online-reputation-matters/safeguard-long-term-growth.svg",
   },
 ];
 
@@ -380,7 +390,7 @@ export const onlineReputationManagementWorkflowData = {
       title: "Reputation Audit & Analysis",
       description:
         "We begin with a detailed audit to establish your baseline reputation score. Using in-depth brand mentions analysis, we identify what shapes public perception and highlight priority issues that need immediate attention.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/online-reputation-management-services/our-process/reputation-audit-analysis.svg",
       alignment: "right",
     },
     {
@@ -389,7 +399,7 @@ export const onlineReputationManagementWorkflowData = {
       title: "Strategic Plan & Content Creation",
       description:
         "We create a tailored digital reputation strategy that defines suppression tactics, removal opportunities, and positive content promotion. This plan sets a clear roadmap to improve search visibility, enhance trust signals, and restore brand credibility.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/online-reputation-management-services/our-process/strategic-plan-content-creation.svg",
       alignment: "left",
     },
     {
@@ -398,7 +408,7 @@ export const onlineReputationManagementWorkflowData = {
       title: "Implementation & Outreach",
       description:
         "With the plan in place, our team rolls out each tactic systematically, from publishing optimized assets to coordinating outreach campaigns. These actions amplify positive stories and reduce the visibility of harmful content, strengthening your overall brand narrative.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/online-reputation-management-services/our-process/implementation-outreach.svg",
       alignment: "right",
     },
     {
@@ -407,7 +417,7 @@ export const onlineReputationManagementWorkflowData = {
       title: "Ongoing Monitoring & Reporting",
       description:
         "We provide continuous oversight through social listening, review tracking, and active brand monitoring. Regular reporting keeps you informed with clear performance metrics and early alerts for emerging risks.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/online-reputation-management-services/our-process/ongoing-monitoring-reporting.svg",
       alignment: "left",
     },
     {
@@ -416,7 +426,7 @@ export const onlineReputationManagementWorkflowData = {
       title: "Refinement & Long-Term Protection",
       description:
         "Insights from monitoring guide regular strategy refinements and new initiatives. This ongoing process keeps harmful content suppressed, maintains your competitive position, and supports lasting reputation health.",
-      image: "/assets/images/work/step5.png",
+      image: "/assets/images/online-reputation-management-services/our-process/refinement-long-term-protection.svg",
       alignment: "right",
     },
   ],
@@ -587,8 +597,8 @@ export const onlineReputationManagementIndustriesCardsData = [
     title: "Doctors",
     description:
       "Our online reputation management service for doctors manages patient reviews, removes harmful feedback, and highlights expertise to build trust and credibility.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/online-reputation-management-services/business-sectors-we-serve/original/doctors.svg`,
+    imgWhite: `/assets/images/online-reputation-management-services/business-sectors-we-serve/hover/doctors.svg`,
     alt: "Doctors Reputation Management",
     width: 71,
     height: 71,
@@ -597,8 +607,8 @@ export const onlineReputationManagementIndustriesCardsData = [
     title: "Law Firms",
     description:
       "The online reputation management service for law firms protects client confidence, handles negative publicity, and maintains a strong digital presence.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/online-reputation-management-services/business-sectors-we-serve/original/law-firms.svg`,
+    imgWhite: `/assets/images/online-reputation-management-services/business-sectors-we-serve/hover/law-firms.svg`,
     alt: "Law Firms Reputation Management",
     width: 71,
     height: 71,
@@ -607,8 +617,8 @@ export const onlineReputationManagementIndustriesCardsData = [
     title: "Hotels",
     description:
       "Our online reputation management service for hotels boosts guest satisfaction, manages reviews, and improves visibility on travel platforms.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/online-reputation-management-services/business-sectors-we-serve/original/hotels.svg`,
+    imgWhite: `/assets/images/online-reputation-management-services/business-sectors-we-serve/hover/hotels.svg`,
     alt: "Hotels Reputation Management",
     width: 71,
     height: 71,
@@ -617,8 +627,8 @@ export const onlineReputationManagementIndustriesCardsData = [
     title: "Real Estate Agents",
     description:
       "The online reputation management service for real estate agents manages local reviews, promotes success stories, and enhances listing visibility to attract buyers.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/online-reputation-management-services/business-sectors-we-serve/original/real-estate-agents.svg`,
+    imgWhite: `/assets/images/online-reputation-management-services/business-sectors-we-serve/hover/real-estate-agents.svg`,
     alt: "Real Estate Agents Reputation Management",
     width: 71,
     height: 71,
@@ -627,8 +637,8 @@ export const onlineReputationManagementIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "Our online reputation management service for ecommerce strengthens product credibility, manages reviews, and increases customer trust for better conversions.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/online-reputation-management-services/business-sectors-we-serve/original/ecommerce.svg`,
+    imgWhite: `/assets/images/online-reputation-management-services/business-sectors-we-serve/hover/ecommerce.svg`,
     alt: "Ecommerce Reputation Management",
     width: 71,
     height: 71,
@@ -637,8 +647,8 @@ export const onlineReputationManagementIndustriesCardsData = [
     title: "Contractors",
     description:
       "The online reputation management service for contractors promotes quality work, manages client feedback, and protects local reputation to win more projects.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/online-reputation-management-services/business-sectors-we-serve/original/contractors.svg`,
+    imgWhite: `/assets/images/online-reputation-management-services/business-sectors-we-serve/hover/contractors.svg`,
     alt: "Contractors Reputation Management",
     width: 71,
     height: 71,
