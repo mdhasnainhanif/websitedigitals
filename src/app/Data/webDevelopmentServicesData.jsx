@@ -93,6 +93,7 @@ export const webDevelopmentServicesData = [
       "We build secure, scalable, and conversion-focused online stores. Our ecommerce website development services cover secure payment integration, online store development, and platforms such as Magento, WooCommerce, and Shopify Plus. Every project meets PCI DSS compliance and includes SSL certificates to ensure safe transactions, helping businesses launch robust, high-performance ecommerce solutions.",
     icon:  "/assets/images/web-development/comprehensive-web-development-grow/eCommerce-development.svg",
     isActive: true,
+    image: "/assets/images/web-development/comprehensive-web-dev/ecommerce-development.svg",
   },
   {
     id: 2,
@@ -101,6 +102,7 @@ export const webDevelopmentServicesData = [
       "We offer custom WordPress development for businesses of all sizes, including WordPress theme customization, plugin development, and ecommerce builds with WooCommerce. Our team works with the Gutenberg editor, Elementor, and WPBakery to deliver functional, user-friendly websites.  We provide custom WordPress development solutions for businesses of all sizes, including theme customization, plugin development, and WooCommerce-based eCommerce builds. Our team leverages the Gutenberg editor, Elementor, and WPBakery to deliver scalable, high-performing, and user-friendly websites.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/wordpress-development.svg",
      isActive: false,
+     image: "/assets/images/web-development/comprehensive-web-dev/wordpress-development.svg",
   },
   {
     id: 3,
@@ -109,6 +111,7 @@ export const webDevelopmentServicesData = [
       "We deliver complete Shopify store development services, from Shopify theme customization to Shopify app integration. Our expertise includes Shopify Liquid, dropshipping setup, and subscription ecommerce models. Certified Shopify Partner status (if applicable) ensures your store meets the highest standards.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/shopify-development.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/shopify-development.svg",
   },
   {
     id: 4,
@@ -117,6 +120,7 @@ export const webDevelopmentServicesData = [
       "Our Wix website development services cater to small businesses, startups, and entrepreneurs looking for flexibility and visual appeal. We offer Wix SEO optimization, Wix ecommerce integration, and customization using the drag-and-drop builder with responsive templates from the Wix App Market integration. As a certified Wix Partner, we’ve delivered tailored Wix sites for clients across multiple industries.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/wix-development.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/wix-development.svg",
   },
   {
     id: 5,
@@ -125,6 +129,7 @@ export const webDevelopmentServicesData = [
       "We provide custom Squarespace website builds, Squarespace SEO services, and ecommerce setups using Squarespace templates, CSS customization, and ecommerce add-ons. With experience in Squarespace Circle membership, we design search-optimized sites that perform well in competitive markets.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/squarespace-development.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/squarespace-development.svg",
   },
   {
     id: 6,
@@ -133,6 +138,7 @@ export const webDevelopmentServicesData = [
       "We provide custom CMS development, including CMS migration services, enterprise CMS solutions, and builds using Drupal, Joomla, and headless CMS architectures. We also implement content workflow automation and ensure WCAG compliance for accessibility.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/cms-development.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/cms-development.svg",
   },
   {
     id: 7,
@@ -141,6 +147,7 @@ export const webDevelopmentServicesData = [
       "We create enterprise web portal development solutions for corporate, B2B, and government clients. Services include B2B portal solutions and client portal creation with features like secure login systems, role-based access, and cloud integration. Our ISO 9001-certified processes ensure every portal is secure, reliable, and built for long-term use.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/web-portal-development.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/web-portal-development.svg",
   },
   {
     id: 8,
@@ -149,6 +156,7 @@ export const webDevelopmentServicesData = [
       "Our custom web app development services cover everything from SaaS application development to progressive web app services. We work with React, Angular, Node.js, API integration, and microservices architecture. Every app is built with strong security standards and hosted on compliant cloud platforms.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/web-portal-development.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/web-application-development.svg",
   },
   {
     id: 9,
@@ -157,6 +165,7 @@ export const webDevelopmentServicesData = [
       "Our website maintenance services include security updates, backup and monitoring, and quick issue resolution. With uptime monitoring, malware removal, and version control, we keep websites secure and running around the clock using trusted monitoring tools.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/web-maintenance.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/web-maintenance.svg",
   },
   {
     id: 10,
@@ -165,6 +174,7 @@ export const webDevelopmentServicesData = [
       "Our speed-up website loading service focuses on website performance tuning and core web vitals optimization for faster browsing. We use lazy loading, image compression, CDN integration, and advanced caching following Google PageSpeed Insights best practices to enhance both speed and user experience.",
     icon: "/assets/images/web-development/comprehensive-web-development-grow/web-maintenance.svg",
     isActive: false,
+    image: "/assets/images/web-development/comprehensive-web-dev/website-speed-optimization.svg",
   },
 ];
 
@@ -326,6 +336,7 @@ export const webDevelopmentServicesImpactCardsData = [
     icon: "/assets/images/web-development/section-1/supports-your-goals.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/web-development/section-1/supports-your-goals.svg",
   },
   {
     id: 2,
@@ -335,6 +346,7 @@ export const webDevelopmentServicesImpactCardsData = [
     icon: "/assets/images/web-development/section-1/builds-trust.svg",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/web-development/section-1/builds-trust.svg",
   },
   {
     id: 3,
@@ -344,6 +356,7 @@ export const webDevelopmentServicesImpactCardsData = [
     icon: "/assets/images/web-development/section-1/drives-results.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/web-development/section-1/drives-results.svg",
   },
   {
     id: 4,
@@ -353,6 +366,7 @@ export const webDevelopmentServicesImpactCardsData = [
     icon: "/assets/images/web-development/section-1/leverages-advanced-technologies.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/web-development/section-1/leverages-advanced-technologies.svg",
   },
   {
     id: 5,
@@ -362,6 +376,7 @@ export const webDevelopmentServicesImpactCardsData = [
     icon: "/assets/images/web-development/section-1/better-user-experience.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/web-development/section-1/better-user-experience.svg",
   },
 ];
 
@@ -369,7 +384,7 @@ export const webDevelopmentServicesImpactCardsData = [
 export const webDevelopmentServicesIndustriesData = [
   {
     id: 1,
-    title: "Healthcare..",
+    title: "Healthcare",
     description:
       "HIPAA-compliant web development with secure patient portals, medical data protection, and accessibility features for healthcare providers and medical institutions.",
     icon: "/assets/images/industry/healthcare.svg",
@@ -419,6 +434,7 @@ export const webDevelopmentServicesTechnologiesData = [
     description:
       "React, Angular, Vue.js, HTML5/CSS3",
     icon: "/assets/images/technologyIcons.png",
+    image: "/assets/images/web-development/technology/front-end-development.svg",
   },
   {
     id: 2,
@@ -426,6 +442,7 @@ export const webDevelopmentServicesTechnologiesData = [
     description:
       "Node.js, PHP, Laravel, .NET",
     icon: "/assets/images/technologyIcons.png",
+    image: "/assets/images/web-development/technology/back-end-development.svg",
   },
   {
     id: 3,
@@ -433,6 +450,7 @@ export const webDevelopmentServicesTechnologiesData = [
     description:
       "WordPress, Drupal, Joomla, Shopify, Magento, Squarespace",
     icon: "/assets/images/technologyIcons.png",
+    image: "/assets/images/web-development/technology/content-management-systems.svg",
   },
   {
     id: 4,
@@ -440,6 +458,7 @@ export const webDevelopmentServicesTechnologiesData = [
     description:
       "WooCommerce, Shopify Plus, Magento Commerce",
     icon: "/assets/images/technologyIcons.png",
+    image: "/assets/images/web-development/technology/ecommerce-solutions.svg",
   },
   {
     id: 5,
@@ -447,6 +466,7 @@ export const webDevelopmentServicesTechnologiesData = [
     description:
       "MySQL, PostgreSQL, MongoDB",
     icon: "/assets/images/technologyIcons.png",
+    image: "/assets/images/web-development/technology/ecommerce-solutions.svg",
   },
   {
     id: 6,
@@ -454,6 +474,7 @@ export const webDevelopmentServicesTechnologiesData = [
     description:
       "CDN integration, image compression tools, lazy loading, Google PageSpeed Insights",
     icon: "/assets/images/technologyIcons.png",
+    image: "/assets/images/web-development/technology/performance-optimization.svg",
   },
 ];
 
@@ -464,8 +485,8 @@ export const webDevelopmentServicesIndustriesCardsData = [
     title: "Real-time Communication",
     description:
       "Working with US-based developers ensures direct and real-time collaboration without time zone delays or communication gaps. We understand the standards of United States business credibility and keep projects moving smoothly from kickoff to delivery.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/web-development/web-development-firm/original/real-time-communication.svg`,
+    imgWhite: `/assets/images/web-development/web-development-firm/hover/real-time-communication.svg`,
     alt: "Real-time Communication",
     width: 71,
     height: 71,
@@ -474,8 +495,8 @@ export const webDevelopmentServicesIndustriesCardsData = [
     title: "Certified Developers & Proven Processes",
     description:
       "Our team includes Microsoft Certified professionals and Google Partner specialists, applying industry-recognized best practices to every project. With structured workflows that minimize risks and maintain quality, we deliver results that are consistent, reliable, and built to last.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/web-development/web-development-firm/original/certified-developers.svg`,
+    imgWhite: `/assets/images/web-development/web-development-firm/hover/certified-developers.svg`,
     alt: "Certified Developers",
     width: 71,
     height: 71,
@@ -484,8 +505,8 @@ export const webDevelopmentServicesIndustriesCardsData = [
     title: "Transparent Pricing",
     description:
       "From the first proposal to the final invoice, our transparent pricing approach provides a clear breakdown of costs so you can budget with confidence. No hidden fees. Just honest pricing that supports long-term trust.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/web-development/web-development-firm/original/transparent-pricing.svg`,
+    imgWhite: `/assets/images/web-development/web-development-firm/hover/transparent-pricing.svg`,
     alt: "Transparent Pricing",
     width: 71,
     height: 71,
@@ -494,8 +515,8 @@ export const webDevelopmentServicesIndustriesCardsData = [
     title: "SEO-Optimized Websites from Day One",
     description:
       "Every website is launched with on-page optimization and structured data implemented from the start. This helps search engines properly index your site and gives you an early boost in rankings, following the latest technical SEO best practices.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/web-development/web-development-firm/original/seo-optimized-websites.svg`,
+    imgWhite: `/assets/images/web-development/web-development-firm/hover/seo-optimized-websites.svg`,
     alt: "SEO-Optimized Websites",
     width: 71,
     height: 71,
@@ -504,8 +525,8 @@ export const webDevelopmentServicesIndustriesCardsData = [
     title: "Expertise Across Industries",
     description:
       "We have delivered solutions for healthcare, finance, and retail web solutions, adapting strategies to meet each sector’s needs. Our industry experience includes compliance with standards such as HIPAA for healthcare and PCI DSS for secure financial transactions.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/web-development/web-development-firm/original/expertise-across-industries.svg`,
+    imgWhite: `/assets/images/web-development/web-development-firm/hover/expertise-across-industries.svg`,
     alt: "Industry Expertise",
     width: 71,
     height: 71,
@@ -535,7 +556,7 @@ export const webDevelopmentServicesWorkflowData = {
       title: "Discovery & Planning",
       description:
         "We begin by defining your website goals and understanding your target audience. This stage includes competitor research to identify opportunities and set benchmarks. The outcome is a detailed project plan that guides every decision moving forward.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/web-development/development-process/discovery-planning.svg",
       alignment: "right",
     },
     {
@@ -544,7 +565,7 @@ export const webDevelopmentServicesWorkflowData = {
       title: "Design & Prototyping",
       description:
         "Our design team creates UX/UI design concepts that focus on both aesthetics and usability. We produce responsive layouts to ensure your website looks and functions seamlessly across all devices. Before development begins, you'll see interactive prototypes that bring your vision to life.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/web-development/development-process/design-prototyping.svg",
       alignment: "left",
     },
     {
@@ -553,7 +574,7 @@ export const webDevelopmentServicesWorkflowData = {
       title: "Development & Integration",
       description:
         "Once designs are approved, our developers bring them to life with clean, efficient code. This phase includes API integration for third-party services, database setup, and any required custom features. The result is a fully functional platform tailored to your specifications.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/web-development/development-process/development-integration.svg",
       alignment: "right",
     },
     {
@@ -562,7 +583,7 @@ export const webDevelopmentServicesWorkflowData = {
       title: "Testing & Launch",
       description:
         "Before going live, we conduct thorough QA testing to identify and fix any issues. This includes performance checks to ensure fast load times, mobile responsiveness, and browser compatibility. Once testing is complete, we coordinate a smooth, secure launch.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/web-development/development-process/testing-launch.svg",
       alignment: "left",
     },
     {
@@ -571,7 +592,7 @@ export const webDevelopmentServicesWorkflowData = {
       title: "Ongoing Support & Optimization",
       description:
         "Our relationship doesn't end at launch. We provide site maintenance to keep your website secure, along with regular SEO updates to maintain and improve search rankings. Ongoing performance monitoring ensures your site continues to meet growing user and business needs.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/web-development/development-process/ongoing-support-optimization.svg",
       alignment: "right",
     },
   ],

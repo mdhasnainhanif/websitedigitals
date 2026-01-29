@@ -1,18 +1,18 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 export const metadata = {
     title: 'Website Digitals Terms & Conditions',
     description: 'Review Website Digitals Terms & Conditions for our web development, design, hosting, and digital marketing services.',
     keywords: '',
+    alternates: {
+        canonical: 'https://www.websitedigitals.com/terms-conditions/',
+    },
 };
-
-export const slug = 'https://www.websitedigitals.com/terms-conditions/';
-
-export const canonical = 'https://www.websitedigitals.com/terms-conditions/';
 
 const page = () => {
     return (
+        <>
         <section>
             <div className='container-fluid section-padding' style={{ background: '#001135' }}>
                 <div className='row justify-content-center'>
@@ -36,7 +36,7 @@ const page = () => {
                         <p>The choice of visiting our Homepage is solely your decision. Any dispute over these Terms and Conditions is subject to this notice and our Conditions of Use. This includes limitations on damages, arbitration of disputes, and the applicable law of the State of New York, USA.</p>
                         <p>If the client has any issues regarding these Terms, they should contact us at their best convenience. Our customer service team will be happy to assist. As our Terms may change periodically, it is recommended that clients review them each time they access the site or engage our services.</p>
                         <p>Website Digitals gathers navigational information about where visitors go on our website and technical data regarding website performance (e.g., connection time and page load duration). This helps us improve our website and deliver a better experience.</p>
-                        <p>Unless otherwise noted, all materials, including images, code, illustrations, designs, icons, photographs, written text, and other materials that are part of this Site (collectively referred to as the “Contents”) are copyrights, trademarks, trade dress, and other intellectual property owned, controlled, or licensed by Website Digitals.</p>
+                        <p>Unless otherwise noted, all materials, including images, code, illustrations, designs, icons, photographs, written text, and other materials that are part of this Site (collectively referred to as the "Contents") are copyrights, trademarks, trade dress, and other intellectual property owned, controlled, or licensed by Website Digitals.</p>
                         <p>This Site and all its Contents are intended solely for personal and non-commercial use. Clients may download or copy the Contents and other downloadable materials displayed on the Site for personal use only. No right, title, or interest in any downloaded materials or software is transferred to the client as a result of any such downloading or copying. Clients may not reproduce, publish, transmit, distribute, display, modify, create derivatives, sell, or participate in any sale or exploitation of the site, its content, or any related software.</p>
                         <h3>Testimonials</h3>
                         <p>All comments, feedback, reviews, suggestions, or ideas submitted to Website Digitals, whether through our website, email, or other communication channels, shall remain the property of the Company.</p>
@@ -102,7 +102,9 @@ const page = () => {
                 </div>
             </div>
         </section>
+        </>
     );
 }
 
 export default page
+

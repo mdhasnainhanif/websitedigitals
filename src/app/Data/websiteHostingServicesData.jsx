@@ -88,7 +88,7 @@ export const websiteHostingServicesData = [
     title: "Shared Hosting",
     description:
       "Get started with affordable website hosting on shared servers. Our starter hosting plan delivers reliable performance at a cost-effective price, making it a smart choice for blogs, personal projects, and small business websites.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/1.svg",
     isActive: true,
     button: {
       text: "Get Shared Hosting",
@@ -102,7 +102,7 @@ export const websiteHostingServicesData = [
     title: "VPS Hosting",
     description:
       "Scale with confidence using our VPS hosting services. A virtual private server with root access grants you dedicated resources and custom configurations, offering better performance and security as your business grows.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/2.svg",
     isActive: false,
     button: {
       text: "Get VPS Hosting",
@@ -116,7 +116,7 @@ export const websiteHostingServicesData = [
     title: "Dedicated Hosting",
     description:
       "Choose dedicated hosting solutions for unmatched reliability. With full control over dedicated servers, you get enterprise-grade, high-performance hosting designed for e-commerce platforms and high-traffic applications.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/3.svg",
     isActive: false,
     button: {
       text: "Get Dedicated Hosting",
@@ -130,7 +130,7 @@ export const websiteHostingServicesData = [
     title: "Cloud Hosting",
     description:
       "Experience the flexibility of our cloud web hosting, powered by a distributed server network. Scalable hosting allows you to instantly add resources and maintain uptime during traffic spikes, ensuring consistent speed.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/4.svg",
     isActive: false,
     button: {
       text: "Get Cloud Hosting",
@@ -144,7 +144,7 @@ export const websiteHostingServicesData = [
     title: "Managed Hosting",
     description:
       "Focus on your business while we handle updates, backups, and security. Our managed website hosting keeps your site monitored and optimized 24/7, giving you peace of mind and uninterrupted performance.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/5.svg",
     isActive: false,
     button: {
       text: "Get Managed Hosting",
@@ -158,7 +158,7 @@ export const websiteHostingServicesData = [
     title: "Reseller Hosting",
     description:
       "Start your own hosting business with our reseller hosting solutions. Get white-label branding and simple management tools to offer hosting packages to your own clients.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/6.svg",
     isActive: false,
     button: {
       text: "Get Reseller Hosting",
@@ -172,7 +172,7 @@ export const websiteHostingServicesData = [
     title: "Domain Registration",
     description:
       "Secure your online identity with easy domain registration. Find and register the perfect name and keep your brand consistent across your website and email.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services/explore-our-range-of-website-hosting-services/7.svg",
     isActive: false,
     button: {
       text: "Get Domain Registration",
@@ -194,7 +194,7 @@ export const websiteHostingServicesScrollSectionData = {
       id: "hosting-firstScroller",
       step: 1,
       title: "Industry-Leading Uptime",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services/why-businesses-trust-our-web-hosting-company/1.svg",
       paragraphs: [
         "We back every plan with an uptime guarantee and infrastructure designed for 99.9% availability, so visitors can consistently access your website.",
       ],
@@ -209,7 +209,7 @@ export const websiteHostingServicesScrollSectionData = {
       id: "hosting-secondScroller",
       step: 2,
       title: "24/7 Expert Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services/why-businesses-trust-our-web-hosting-company/2.svg",
       paragraphs: [
         "Our team is available around the clock with technical support and live chat hosting help, resolving issues quickly before they affect your business.",
       ],
@@ -224,7 +224,7 @@ export const websiteHostingServicesScrollSectionData = {
       id: "hosting-thirdScroller",
       step: 3,
       title: "Scalable Infrastructure",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services/why-businesses-trust-our-web-hosting-company/3.svg",
       paragraphs: [
         "Our platform delivers cloud hosting scalability to grow with your needs. You can confidently handle traffic surges without downtime or performance loss.",
       ],
@@ -239,7 +239,7 @@ export const websiteHostingServicesScrollSectionData = {
       id: "hosting-fourthScroller",
       step: 4,
       title: "Security-First Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services/why-businesses-trust-our-web-hosting-company/4.svg",
       paragraphs: [
         "Your data and users stay protected with SSL encryption, firewall protection, and ongoing malware monitoring that guard against threats.",
       ],
@@ -254,7 +254,7 @@ export const websiteHostingServicesScrollSectionData = {
       id: "hosting-fifthScroller",
       step: 5,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services/why-businesses-trust-our-web-hosting-company/5.svg",
       paragraphs: [
         "You get clear hosting plans with no hidden fees, so your costs stay predictable and transparent.",
       ],
@@ -335,6 +335,7 @@ export const websiteHostingServicesImpactCardsData = [
     icon: "uptime",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services/section-1/1.svg",
   },
   {
     id: 2,
@@ -344,6 +345,7 @@ export const websiteHostingServicesImpactCardsData = [
     icon: "support",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services/section-1/2.svg",
   },
   {
     id: 3,
@@ -353,6 +355,7 @@ export const websiteHostingServicesImpactCardsData = [
     icon: "scalable",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services/section-1/3.svg",
   },
 ];
 
@@ -532,7 +535,7 @@ export const websiteHostingServicesWorkflowData = {
       title: "Assess Your Needs",
       description:
         "We start by reviewing your website requirements and providing a tailored hosting plan consultation. This ensures you receive the right resources and features to support your goals.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/website-hosting-services/our-process/1.svg",
       alignment: "right",
     },
     {
@@ -541,7 +544,7 @@ export const websiteHostingServicesWorkflowData = {
       title: "Set Up & Secure",
       description:
         "Our team handles server setup, SSL installation, and comprehensive security configurations to protect your data from the outset.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/website-hosting-services/our-process/2.svg",
       alignment: "left",
     },
     {
@@ -550,7 +553,7 @@ export const websiteHostingServicesWorkflowData = {
       title: "Optimize & Monitor",
       description:
         "We focus on performance optimization to boost site speed. With ongoing uptime monitoring and proactive support, we maintain reliability and prevent issues before they affect your visitors.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/website-hosting-services/our-process/3.svg",
       alignment: "right",
     },
   ],
