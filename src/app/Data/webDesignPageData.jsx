@@ -34,8 +34,6 @@ export const webDesignBannerData = {
   },
 };
 
-export { webDesignBannerData };
-
 // Stats Counter Data
 export const webDesignStatsData = [
   {
@@ -390,8 +388,6 @@ export const whyChooseWebDesignData = {
     className: "primary",
   },
 };
-
-export { whyChooseWebDesignData };
 
 export const industryTabsWebDesignData = [
   {

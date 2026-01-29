@@ -148,6 +148,7 @@ export const managedHostingServicesImpactCardsData = [
     icon: "performance",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/managed-hosting-services/section1/optimized-speed-performance.svg",
   },
   {
     id: 2,
@@ -157,6 +158,7 @@ export const managedHostingServicesImpactCardsData = [
     icon: "monitoring",
     isHighlighted: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/managed-hosting-services/section1/proactive-monitoring-support.svg",
   },
   {
     id: 3,
@@ -166,6 +168,7 @@ export const managedHostingServicesImpactCardsData = [
     icon: "speed",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/managed-hosting-services/section1/maximized-website-speed.svg",
   },
   {
     id: 4,
@@ -175,6 +178,7 @@ export const managedHostingServicesImpactCardsData = [
     icon: "migration",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/managed-hosting-services/section1/seamless-migration-integration.svg",
   },
 ];
 
@@ -191,6 +195,7 @@ export const managedHostingServicesData = [
       "Your infrastructure is monitored 24/7 for performance, uptime, and security events. Any irregularities are detected early, allowing for quick resolution before they impact users.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/managed-hosting-services/solutions/server-setup-configuration.svg",
   },
   {
     id: 2,
@@ -199,6 +204,7 @@ export const managedHostingServicesData = [
       "Your infrastructure is monitored 24/7 for performance, uptime, and security events. Any irregularities are detected early, allowing for quick resolution before they impact users.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/managed-hosting-services/solutions/continuous-monitoring-maintenance.svg",
   },
   {
     id: 3,
@@ -207,6 +213,7 @@ export const managedHostingServicesData = [
       "Our team applies firewalls, malware scanning, SSL certificates, and routine security patches. We also ensure compliance with standards like PCI DSS and GDPR to protect sensitive data.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/managed-hosting-services/solutions/security-management-compliance.svg",
   },
   {
     id: 4,
@@ -215,6 +222,7 @@ export const managedHostingServicesData = [
       "We optimize your servers with advanced caching, load balancing, and CDN integration to minimize latency and improve response times, even during traffic spikes.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/managed-hosting-services/solutions/backup-disaster-recovery.svg",
   },
   {
     id: 5,
@@ -223,6 +231,7 @@ export const managedHostingServicesData = [
       "Through caching, database optimization, CDN integration, and scalable architecture, we eliminate bottlenecks and ensure fast, reliable performance, even during high traffic.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/managed-hosting-services/solutions/performance-optimization.svg",
   },
 ];
 
@@ -319,7 +328,7 @@ export const managedHostingServicesWorkflowData = {
       title: "Initial Consultation and Planning",
       description:
         "We start by analyzing your business goals and technical requirements. Our experts design a managed hosting solution tailored to your specific needs, ensuring the right balance of performance, security, and scalability.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/managed-hosting-services/process/initial-consultation-and-planning.svg",
       alignment: "right",
     },
     {
@@ -328,7 +337,7 @@ export const managedHostingServicesWorkflowData = {
       title: "Implementation and Migration",
       description:
         "Once your plan is finalized, we migrate your website or application to our managed hosting platform with zero downtime. The transition is seamless, ensuring business continuity and minimal disruption.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/managed-hosting-services/process/implementation-and-migration.svg",
       alignment: "left",
     },
     {
@@ -337,7 +346,7 @@ export const managedHostingServicesWorkflowData = {
       title: "Ongoing Support and Optimization",
       description:
         "After migration, we provide continuous monitoring and performance tuning. Our team proactively optimizes server resources and resolves potential issues to keep your hosting environment running at peak efficiency.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/managed-hosting-services/process/ongoing-support-and-optimization.svg",
       alignment: "right",
     },
     {
@@ -346,7 +355,7 @@ export const managedHostingServicesWorkflowData = {
       title: "Routine Maintenance and Updates",
       description:
         "We regularly perform updates, apply security patches, and optimize servers to ensure your system stays secure, fast, and fully up to date.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/managed-hosting-services/process/routine-maintenance-and-updates.svg",
       alignment: "left",
     },
   ],
@@ -511,8 +520,8 @@ export const managedHostingServicesIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "Our managed hosting for ecommerce stores delivers secure payment handling, fast checkout performance, and reliable uptime to keep customers shopping without disruption.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/managed-hosting-services/industries/original/ecommerce.svg`,
+    imgWhite: `/assets/images/managed-hosting-services/industries/hover/ecommerce.svg`,
     alt: "Ecommerce Managed Hosting",
     width: 71,
     height: 71,
@@ -521,8 +530,8 @@ export const managedHostingServicesIndustriesCardsData = [
     title: "SaaS",
     description:
       "We provide managed hosting for SaaS companies that demand scalability, seamless integrations, and consistent uptime to support rapid user growth and product reliability.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/managed-hosting-services/industries/original/saas.svg`,
+    imgWhite: `/assets/images/managed-hosting-services/industries/hover/saas.svg`,
     alt: "SaaS Managed Hosting",
     width: 71,
     height: 71,
@@ -531,8 +540,8 @@ export const managedHostingServicesIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our managed hosting for healthcare providers ensures HIPAA and GDPR compliance, safeguarding sensitive patient data while maintaining high system availability.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/managed-hosting-services/industries/original/healthcare.svg`,
+    imgWhite: `/assets/images/managed-hosting-services/industries/hover/healthcare.svg`,
     alt: "Healthcare Managed Hosting",
     width: 71,
     height: 71,
@@ -541,8 +550,8 @@ export const managedHostingServicesIndustriesCardsData = [
     title: "Real Estate",
     description:
       "With managed hosting for real estate businesses, we power fast property database performance, lead capture tools, and seamless listing updates to keep agents and clients connected.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/managed-hosting-services/industries/original/real-estate.svg`,
+    imgWhite: `/assets/images/managed-hosting-services/industries/hover/real-estate.svg`,
     alt: "Real Estate Managed Hosting",
     width: 71,
     height: 71,
@@ -551,8 +560,8 @@ export const managedHostingServicesIndustriesCardsData = [
     title: "Blockchain",
     description:
       "We specialize in managed hosting for blockchain platforms, offering high availability, advanced security, and optimized environments for decentralized applications and digital assets.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/managed-hosting-services/industries/original/blockchain.svg`,
+    imgWhite: `/assets/images/managed-hosting-services/industries/hover/blockchain.svg`,
     alt: "Blockchain Managed Hosting",
     width: 71,
     height: 71,
@@ -622,7 +631,7 @@ export const managedHostingServicesScrollSectionData = {
       id: "managed-firstScroller",
       step: 1,
       title: "Enterprise-Grade Infrastructure",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/managed-hosting-services/scroller/enterprise-grade-infrastructure.svg",
       paragraphs: [
         "Redundant networks and enterprise-class data centers with failover capabilities power our platform. This ensures high availability, minimal downtime, and consistent reliability even during traffic surges or unexpected events.",
       ],
@@ -637,7 +646,7 @@ export const managedHostingServicesScrollSectionData = {
       id: "managed-secondScroller",
       step: 2,
       title: "Full Root Access & Customization",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/managed-hosting-services/scroller/full-root-access-customization.svg",
       paragraphs: [
         "We provide complete root access and SSH control, giving advanced users the flexibility to configure applications, adjust server settings, and deploy custom software, all while we handle continuous monitoring and security updates in the background.",
       ],
@@ -652,7 +661,7 @@ export const managedHostingServicesScrollSectionData = {
       id: "managed-thirdScroller",
       step: 3,
       title: "Compliance-Ready Architecture",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/managed-hosting-services/scroller/compliance-ready-architecture.svg",
       paragraphs: [
         "Our hosting environment is built to meet PCI DSS, HIPAA, and GDPR standards. With secure data handling, encryption protocols, and audit-ready logs, we simplify compliance and reduce risk while ensuring customer data remains protected.",
       ],
@@ -667,7 +676,7 @@ export const managedHostingServicesScrollSectionData = {
       id: "managed-forthScroller",
       step: 4,
       title: "Performance Analytics & Insights",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/managed-hosting-services/scroller/performance-analytics-insights.svg",
       paragraphs: [
         "Gain access to real-time performance monitoring, traffic reports, and resource usage insights. This data helps you make smarter scaling decisions, optimize server configurations, and maintain top-tier website performance over time.",
       ],
@@ -682,7 +691,7 @@ export const managedHostingServicesScrollSectionData = {
       id: "managed-fifthScroller",
       step: 5,
       title: "Data Localization Options",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/managed-hosting-services/scroller/data-localization-options.svg",
       paragraphs: [
         "Select from multiple regional hosting locations to store your data closer to your audience or meet data residency regulations such as GDPR or state-specific privacy laws. This gives you control over compliance and latency reduction simultaneously.",
       ],

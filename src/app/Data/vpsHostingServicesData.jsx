@@ -88,6 +88,7 @@ export const vpsHostingServicesData = [
       "Our managed VPS hosting plans handle the technical work so you can focus on growing your website or business. Each managed server solution includes proactive monitoring, automated updates, and 24/7 support to keep your server optimized and secure without manual effort.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/vps-hosting-service/tailored-to-your-needs/managed-vps-hosting.svg",
   },
   {
     id: 2,
@@ -96,6 +97,7 @@ export const vpsHostingServicesData = [
       "For developers and technical teams, unmanaged VPS hosting offers full control and flexibility. This developer-friendly VPS provides root access, SSH control, and custom configuration options so you can build and deploy applications exactly as needed.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/vps-hosting-service/tailored-to-your-needs/unmanaged-vps-hosting.svg",
   },
   {
     id: 3,
@@ -104,6 +106,7 @@ export const vpsHostingServicesData = [
       "Choose how your VPS is configured with Linux VPS hosting or Windows VPS hosting options. Our flexible VPS plans let you select CPU, RAM, and storage, with control panels like cPanel or Plesk available for easy management and memory customization as your needs grow.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/vps-hosting-service/tailored-to-your-needs/os-resource-customization.svg",
   },
   {
     id: 4,
@@ -112,6 +115,7 @@ export const vpsHostingServicesData = [
       "Enhance any plan with add-ons like extra storage, premium backups, or advanced security tools. Select what you need at checkout for a tailored VPS setup that fits your business.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/vps-hosting-service/tailored-to-your-needs/optional-add-ons-and-upgrades.svg",
   },
 ];
 
@@ -126,7 +130,7 @@ export const vpsHostingServicesScrollSectionData = {
       id: "vps-firstScroller",
       step: 1,
       title: "99.99% Uptime Guarantee",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/vps-hosting-service/scroller/99.99-uptime-guarantee.svg",
       paragraphs: [
         "Our 99.99% uptime guarantee keeps your site available with minimal interruptions. This reliable VPS hosting setup uses network redundancy, proactive monitoring, and failover protection to restore service quickly if issues arise.",
       ],
@@ -135,13 +139,13 @@ export const vpsHostingServicesScrollSectionData = {
         alt: "99.99% Uptime Guarantee",
         width: 669,
         height: 376,
-      },
+      }, 
     },
     {
       id: "vps-secondScroller",
       step: 2,
       title: "High-Performance SSD Storage",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/vps-hosting-service/scroller/high-performance-ssd-storage.svg",
       paragraphs: [
         "Every plan includes SSD VPS hosting for faster data processing and quicker server response. Optimized read/write speeds and lower latency mean faster load times and a smoother user experience.",
       ],
@@ -156,7 +160,7 @@ export const vpsHostingServicesScrollSectionData = {
       id: "vps-thirdScroller",
       step: 3,
       title: "DDoS Protection & Advanced Security",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/vps-hosting-service/scroller/ddos-protection-advanced-security.svg",
       paragraphs: [
         "Our secure VPS hosting uses layered defenses to protect your site. Firewalls, intrusion detection, and continuous malware scanning keep your data safe around the clock.",
       ],
@@ -171,7 +175,7 @@ export const vpsHostingServicesScrollSectionData = {
       id: "vps-forthScroller",
       step: 4,
       title: "24/7 Expert Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/vps-hosting-service/scroller/24-7-expert support.svg",
       paragraphs: [
         "Our VPS hosting support team is available anytime. Get live chat help, proactive issue monitoring, and direct troubleshooting to resolve problems fast.",
       ],
@@ -186,7 +190,7 @@ export const vpsHostingServicesScrollSectionData = {
       id: "vps-fifthScroller",
       step: 5,
       title: "Easy Scalability & Migration",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/vps-hosting-service/scroller/easy-scalability-migration.svg",
       paragraphs: [
         "Scale resources instantly with our scalable VPS solutions with no downtime required. Our VPS migration service makes switching from another provider simple, and cloud scalability is available to support future growth.",
       ],
@@ -267,6 +271,7 @@ export const vpsHostingServicesImpactCardsData = [
     icon: "podcast",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/vps-hosting-service/section1/dedicated-resources.svg",
   },
   {
     id: 2,
@@ -276,6 +281,7 @@ export const vpsHostingServicesImpactCardsData = [
     icon: "saas",
     isHighlighted: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/vps-hosting-service/section1/security-root-access.svg",
   },
   {
     id: 3,
@@ -285,6 +291,7 @@ export const vpsHostingServicesImpactCardsData = [
     icon: "gym",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/vps-hosting-service/section1/scalable-growth.svg",
   },
   {
     id: 4,
@@ -294,6 +301,7 @@ export const vpsHostingServicesImpactCardsData = [
     icon: "tutoring",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/vps-hosting-service/section1/improved-website-stability.svg",
   },
 ];
 
@@ -358,8 +366,8 @@ export const vpsHostingServicesIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "Our VPS hosting for ecommerce sites delivers fast page loads and secure transactions. Scalable resources maintain performance during high-traffic sales and ensure smooth checkout experiences.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/vps-hosting-service/businesses-we-support/original/ecommerce.svg`,
+    imgWhite: `/assets/images/vps-hosting-service/businesses-we-support/hover/ecommerce.svg`,
     alt: "Ecommerce VPS Hosting",
     width: 71,
     height: 71,
@@ -368,8 +376,8 @@ export const vpsHostingServicesIndustriesCardsData = [
     title: "SaaS",
     description:
       "Choose VPS hosting for SaaS companies to ensure stable applications and uninterrupted service. Our infrastructure supports flexible scaling and robust data protection for growing user bases.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/vps-hosting-service/businesses-we-support/original/saas.svg`,
+    imgWhite: `/assets/images/vps-hosting-service/businesses-we-support/hover/saas.svg`,
     alt: "SaaS VPS Hosting",
     width: 71,
     height: 71,
@@ -378,8 +386,8 @@ export const vpsHostingServicesIndustriesCardsData = [
     title: "Real Estate",
     description:
       "With VPS hosting for real estate portals, handle large databases and high-resolution listings efficiently. Reliable uptime and fast performance keep property searches responsive for buyers and agents.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/vps-hosting-service/businesses-we-support/original/real-estate.svg`,
+    imgWhite: `/assets/images/vps-hosting-service/businesses-we-support/hover/real-estate.svg`,
     alt: "Real Estate VPS Hosting",
     width: 71,
     height: 71,
@@ -388,8 +396,8 @@ export const vpsHostingServicesIndustriesCardsData = [
     title: "Fintech",
     description:
       "Our VPS hosting for fintech startups safeguards sensitive data with strong security and compliance features. High-speed performance supports seamless transactions and builds customer trust.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/vps-hosting-service/businesses-we-support/original/fintech.svg`,
+    imgWhite: `/assets/images/vps-hosting-service/businesses-we-support/hover/fintech.svg`,
     alt: "Fintech VPS Hosting",
     width: 71,
     height: 71,
@@ -398,8 +406,8 @@ export const vpsHostingServicesIndustriesCardsData = [
     title: "Gaming",
     description:
       "Use VPS hosting for gaming servers to maintain low latency and consistent uptime. Scalable resources let you expand easily as your player community grows.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/vps-hosting-service/businesses-we-support/original/gaming.svg`,
+    imgWhite: `/assets/images/vps-hosting-service/businesses-we-support/hover/gaming.svg`,
     alt: "Gaming VPS Hosting",
     width: 71,
     height: 71,
@@ -408,8 +416,8 @@ export const vpsHostingServicesIndustriesCardsData = [
     title: "Digital Marketing",
     description:
       "Our VPS hosting for digital marketing supports data-driven campaigns and multiple clients with reliable uptime and flexible storage to keep projects running efficiently.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/vps-hosting-service/businesses-we-support/original/digital-marketing.svg`,
+    imgWhite: `/assets/images/vps-hosting-service/businesses-we-support/hover/digital-marketing.svg`,
     alt: "Digital Marketing VPS Hosting",
     width: 71,
     height: 71,

@@ -173,5 +173,3 @@ export const blogTabs = [
     },
     image: null, // no image in this section
   };
-
-  export { blogBannerData };

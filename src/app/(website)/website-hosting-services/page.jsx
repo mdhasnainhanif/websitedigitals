@@ -71,8 +71,8 @@ const WebsiteHostingServicesPage = () => {
         buttonHref={websiteHostingServicesIndustriesSectionData?.cta?.href || "#"}
         buttonClassName={websiteHostingServicesIndustriesSectionData?.cta?.className || "offer-btn primary"}
       /> */}
-      <ScrollSection 
-        data={websiteHostingServicesScrollSectionData} 
+      <ScrollSection
+        data={websiteHostingServicesScrollSectionData}
         className="landingPageScrollSection"
         isIconShow={true}
       />
@@ -86,9 +86,9 @@ const WebsiteHostingServicesPage = () => {
         data={websiteHostingServicesFinalCTAData || websiteHostingServicesBannerData2}
         className="notHero order2 landingPageBanner2"
       />
-      <Faqs 
+      <Faqs
         title="Frequently Asked Questions"
-        faqs={websiteHostingServicesFAQsData} 
+        faqs={websiteHostingServicesFAQsData}
         isTwoCol={true}
       />
       <BlogSection />

@@ -565,7 +565,7 @@
 ul.count_ul>li::before {
     display: none;
 }
-:global(.webPortfolio_caseStudyTabsnav_tabs > li > a.active) {
+.basic_tabs :global(.webPortfolio_caseStudyTabsnav_tabs > li > a.active) {
   box-shadow: .3125rem .3125rem 0 0 #3c7cff;
 }
 .basic_tabs>.nav_tabs>.nav_item>.nav_link.active>img.white_img,
@@ -612,7 +612,7 @@ ul.count_ul>li::before {
 .anchoractive.active .activeImg {
   box-shadow: .3125rem .3125rem 0 0 #3c7cff;
 }
-:global([data-case-study] .nav-tabs > li > a.active img) {
+.basic_tabs :global([data-case-study] .nav-tabs > li > a.active img) {
   box-shadow: .3125rem .3125rem 0 0 #3c7cff !important;
 }
 @media (max-width: 768px) {

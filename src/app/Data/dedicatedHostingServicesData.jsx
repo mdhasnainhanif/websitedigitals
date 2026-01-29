@@ -87,6 +87,7 @@ export const dedicatedHostingServicesData = [
       "Our managed dedicated server hosting includes updates, patch management, and proactive monitoring. A fully managed hosting plan means 24/7 technical support for configuration and performance tuning, allowing you to focus on your business and not server maintenance.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/dedicated-hosting-service/our-dedicated-hosting-services/managed-dedicated-hosting.svg", 
   },
   {
     id: 2,
@@ -95,6 +96,7 @@ export const dedicatedHostingServicesData = [
       "With unmanaged dedicated hosting, experienced teams get complete autonomy. This bare metal hosting option offers full root-level access for custom server setup, ideal for developers who want total control over software stacks and security policies.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/dedicated-hosting-service/our-dedicated-hosting-services/unmanaged-dedicated-servers.svg", 
   },
   {
     id: 3,
@@ -103,6 +105,7 @@ export const dedicatedHostingServicesData = [
       "Our custom dedicated hosting delivers scalable server solutions with tailored CPU, RAM, SSD storage, and bandwidth allocation. Get a resource plan designed around your workload to maximize performance and reduce unnecessary costs.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/dedicated-hosting-service/our-dedicated-hosting-services/custom-built-server-configurations.svg", 
   },
 ];
 
@@ -117,7 +120,7 @@ export const dedicatedHostingServicesScrollSectionData = {
       id: "dedicated-firstScroller",
       step: 1,
       title: "99.99% Uptime SLA",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/dedicated-hosting-service/scroller/uptime-sla.svg",
       paragraphs: [
         "We back our platform with a guaranteed uptime SLA to keep your business online when it matters most. Our reliable dedicated server hosting uses enterprise-grade redundancy, intelligent failover systems, and continuous monitoring to maintain network stability.",
       ],
@@ -132,7 +135,7 @@ export const dedicatedHostingServicesScrollSectionData = {
       id: "dedicated-secondScroller",
       step: 2,
       title: "Enterprise-Grade Security",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/dedicated-hosting-service/scroller/enterprise-grade-security.svg",
       paragraphs: [
         "Your data stays protected with secure dedicated servers featuring firewalls, malware prevention, and intrusion detection. With DDoS-protected hosting and regularly scheduled encrypted backups, your critical information is safe and recoverable.",
       ],
@@ -147,7 +150,7 @@ export const dedicatedHostingServicesScrollSectionData = {
       id: "dedicated-thirdScroller",
       step: 3,
       title: "24/7 Expert Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/dedicated-hosting-service/scroller/expert-support.svg",
       paragraphs: [
         "Get real-time help from specialists who know dedicated infrastructure inside out. Our dedicated hosting support team provides expert server assistance, troubleshooting, and guidance via live chat or support tickets, backed by experienced network engineers.",
       ],
@@ -162,7 +165,7 @@ export const dedicatedHostingServicesScrollSectionData = {
       id: "dedicated-forthScroller",
       step: 4,
       title: "Scalability on Demand",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/dedicated-hosting-service/scroller/scalability-on-demand.svg",
       paragraphs: [
         "Our scalable dedicated hosting grows with your business. Upgrade server resources on-demand using elastic infrastructure and vertical scaling to handle surges and deliver extra bandwidth when needed.",
       ],
@@ -177,7 +180,7 @@ export const dedicatedHostingServicesScrollSectionData = {
       id: "dedicated-fifthScroller",
       step: 5,
       title: "Complete Root Access",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/dedicated-hosting-service/scroller/complete-root-access.svg",
       paragraphs: [
         "Gain full administrative control with root access hosting, enabling SSH access and advanced server customization. Manage OS-level permissions and configure a hosting environment tailored to your exact needs.",
       ],
@@ -258,6 +261,7 @@ export const dedicatedHostingServicesImpactCardsData = [
     icon: "performance",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/dedicated-hosting-service/section1/superior-performance-reliability.svg", 
   },
   {
     id: 2,
@@ -267,6 +271,7 @@ export const dedicatedHostingServicesImpactCardsData = [
     icon: "security",
     isHighlighted: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/dedicated-hosting-service/section1/advanced-security-compliance.svg", 
   },
   {
     id: 3,
@@ -276,6 +281,7 @@ export const dedicatedHostingServicesImpactCardsData = [
     icon: "control",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/dedicated-hosting-service/section1/full-control-customization.svg", 
   },
   {
     id: 4,
@@ -285,6 +291,7 @@ export const dedicatedHostingServicesImpactCardsData = [
     icon: "scalable",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/dedicated-hosting-service/section1/scalability-when-you-need-it.svg", 
   },
 ];
 
@@ -342,8 +349,8 @@ export const dedicatedHostingServicesIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "Our ecommerce dedicated hosting service ensures fast checkout, PCI compliance, and dependable uptime. It keeps online stores running smoothly during peak shopping periods and supports seamless customer experiences.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/dedicated-hosting-service/industries/original/ecommerce.svg`,
+    imgWhite: `/assets/images/dedicated-hosting-service/industries/hover/ecommerce.svg`,
     alt: "Ecommerce Dedicated Hosting",
     width: 71,
     height: 71,
@@ -352,8 +359,8 @@ export const dedicatedHostingServicesIndustriesCardsData = [
     title: "Gaming",
     description:
       "Our gaming server dedicated hosting delivers high-speed connectivity and low latency. It supports stable multiplayer performance and reliable uptime for competitive online gaming environments.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/dedicated-hosting-service/industries/original/gaming.svg`,
+    imgWhite: `/assets/images/dedicated-hosting-service/industries/hover/gaming.svg`,
     alt: "Gaming Dedicated Hosting",
     width: 71,
     height: 71,
@@ -362,8 +369,8 @@ export const dedicatedHostingServicesIndustriesCardsData = [
     title: "Streaming",
     description:
       "Our media streaming dedicated hosting and video streaming dedicated hosting services handle large bandwidth demands and HD or 4K delivery. It keeps your platform responsive and scalable for global audiences.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/dedicated-hosting-service/industries/original/streaming.svg`,
+    imgWhite: `/assets/images/dedicated-hosting-service/industries/hover/streaming.svg`,
     alt: "Streaming Dedicated Hosting",
     width: 71,
     height: 71,
@@ -372,8 +379,8 @@ export const dedicatedHostingServicesIndustriesCardsData = [
     title: "Fintech",
     description:
       "Our fintech dedicated hosting service safeguards financial data with encryption, secure backups, and compliance-ready infrastructure. It is built for regulated industries that demand reliability and trust.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/dedicated-hosting-service/industries/original/fintech.svg`,
+    imgWhite: `/assets/images/dedicated-hosting-service/industries/hover/fintech.svg`,
     alt: "Fintech Dedicated Hosting",
     width: 71,
     height: 71,
@@ -382,8 +389,8 @@ export const dedicatedHostingServicesIndustriesCardsData = [
     title: "Digital Marketing",
     description:
       "Our digital marketing dedicated hosting enhances campaign speed and analytics performance. It provides scalable resources and consistent uptime for marketing agencies and enterprise platforms.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/dedicated-hosting-service/industries/original/digital-marketing.svg`,
+    imgWhite: `/assets/images/dedicated-hosting-service/industries/hover/digital-marketing.svg`,
     alt: "Digital Marketing Dedicated Hosting",
     width: 71,
     height: 71,
@@ -402,7 +409,7 @@ export const dedicatedHostingServicesWorkflowData = {
       title: "Choose Your Plan",
       description:
         "Begin by using our dedicated hosting plan selection tools to compare server options. Whether you need a single machine or multiple servers, you can review specifications and order dedicated server resources that fit your performance and budget.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/dedicated-hosting-service/process/choose-your-plan.svg",
       alignment: "right",
     },
     {
@@ -411,7 +418,7 @@ export const dedicatedHostingServicesWorkflowData = {
       title: "Configure and Deploy",
       description:
         "After selecting your plan, we handle server configuration to prepare your environment. Our team manages provisioning, OS installation, and control panel setup so your server is ready quickly. You can then deploy dedicated hosting and start running your applications without unnecessary delays.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/dedicated-hosting-service/process/configure-and-deploy.svg",
       alignment: "left",
     },
     {
@@ -420,7 +427,7 @@ export const dedicatedHostingServicesWorkflowData = {
       title: "Monitor and Scale",
       description:
         "Once live, your server is under continuous server monitoring with proactive alerts to catch issues early. Our scalable hosting infrastructure supports effortless resource scaling and ongoing performance tuning, allowing your hosting to grow with your business requirements.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/dedicated-hosting-service/process/monitor-and-scale.svg",
       alignment: "right",
     },
   ],

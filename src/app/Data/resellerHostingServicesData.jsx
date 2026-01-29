@@ -149,6 +149,7 @@ export const resellerHostingServicesImpactCardsData = [
     icon: "white-label",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/hosting-services-reseller/section-1/complete white-label-control.svg",
   },
   {
     id: 2,
@@ -158,6 +159,7 @@ export const resellerHostingServicesImpactCardsData = [
     icon: "infrastructure",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/hosting-services-reseller/section-1/fully-managed-infrastructure.svg",
   },
   {
     id: 3,
@@ -167,6 +169,7 @@ export const resellerHostingServicesImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/hosting-services-reseller/section-1/security-&-compliance-built-In.svg",
   },
   {
     id: 4,
@@ -176,6 +179,7 @@ export const resellerHostingServicesImpactCardsData = [
     icon: "scalability",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/hosting-services-reseller/section-1/easy-scalability-&-resource-allocation.svg",
   },
 ];
 
@@ -194,6 +198,7 @@ export const resellerHostingServicesData = [
       "Every plan includes business email hosting with webmail access, spam filtering, and easy account management. Your clients can run professional email accounts on your hosting platform without relying on third-party providers.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/hosting-services-reseller/whats-included/email-hosting-spam-protection.svg",
   },
   {
     id: 2,
@@ -202,6 +207,7 @@ export const resellerHostingServicesData = [
       "Our platform supports API access for automation and integrates with popular tools like billing software, CDN providers, and analytics dashboards, helping you streamline workflows.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/hosting-services-reseller/whats-included/api-third-party-integrations.svg",
   },
   {
     id: 3,
@@ -210,6 +216,7 @@ export const resellerHostingServicesData = [
       "Each client account is hosted in a secure and isolated environment with separate resources, preventing one compromised site from affecting others on the same server.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/hosting-services-reseller/whats-included/account-isolation-security-layers.svg",
   },
   {
     id: 4,
@@ -218,6 +225,7 @@ export const resellerHostingServicesData = [
       "Real-time monitoring dashboards let you see CPU, memory, and bandwidth usage per client account. This helps you allocate resources efficiently and prevent overuse before it affects performance.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/hosting-services-reseller/whats-included/resource-usage-monitoring.svg",
   },
   {
     id: 5,
@@ -226,6 +234,7 @@ export const resellerHostingServicesData = [
       "Built-in staging environments allow you to test updates and changes before going live. This reduces risk and gives agencies a safe way to deliver high-quality, error-free websites to clients.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/hosting-services-reseller/whats-included/staging-cloning-tools.svg",
   },
 ];
 
@@ -288,7 +297,7 @@ export const resellerHostingServicesScrollSectionData = {
       id: "reseller-firstScroller",
       step: 1,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/hosting-services-reseller/why/transparent-pricing.svg",
       paragraphs: [
         "Many providers lure resellers with low entry prices but add costs for backups, SSL, and account creation. We offer transparent pricing with everything included upfront, ensuring predictable costs and a clear path to profitability.",
       ],
@@ -303,7 +312,7 @@ export const resellerHostingServicesScrollSectionData = {
       id: "reseller-secondScroller",
       step: 2,
       title: "Optimized Server Performance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/hosting-services-reseller/why/optimized-server-performance.svg",
       paragraphs: [
         "Competitors often run overloaded servers that slow websites and hurt client satisfaction. With SSD and NVMe storage, optimized PHP configurations, and server-level caching, every site runs faster and handles higher traffic loads without performance dips.",
       ],
@@ -318,7 +327,7 @@ export const resellerHostingServicesScrollSectionData = {
       id: "reseller-thirdScroller",
       step: 3,
       title: "Free Website Migration & Setup",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/hosting-services-reseller/why/free-website-migration-setup.svg",
       paragraphs: [
         "Moving existing clients to a new provider can be stressful, but our free migration services transfer websites, databases, and emails with zero downtime. This makes it easy to switch and consolidate hosting under one branded platform.",
       ],
@@ -333,7 +342,7 @@ export const resellerHostingServicesScrollSectionData = {
       id: "reseller-forthScroller",
       step: 4,
       title: "Developer-Friendly Hosting Environment",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/hosting-services-reseller/why/developer-friendly-hosting-environment.svg",
       paragraphs: [
         "For developers and agencies managing custom websites, our platform supports multiple PHP versions, SSH access, and Git integration, making it easy to deploy updates and maintain applications without restrictions.",
       ],
@@ -348,7 +357,7 @@ export const resellerHostingServicesScrollSectionData = {
       id: "reseller-fifthScroller",
       step: 5,
       title: "Global Data Center Options",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/hosting-services-reseller/why/global-data-center-options.svg",
       paragraphs: [
         "Most reseller hosting providers offer a single server location, but we provide access to multi-location data centers across the US and internationally. This reduces latency, improves load times, and delivers a better experience for geographically diverse client bases.",
       ],
@@ -376,7 +385,7 @@ export const resellerHostingServicesWorkflowData = {
       title: "Select Your Hosting Plan",
       description:
         "The first step is selecting the right plan based on your projected client base and resource needs. Our plans include disk space, bandwidth allocation, and account limits that can grow with you, ensuring you start with a setup that matches your business goals.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/hosting-services-reseller/hosting-works/select-your-hosting-plan.svg",
       alignment: "right",
     },
     {
@@ -385,7 +394,7 @@ export const resellerHostingServicesWorkflowData = {
       title: "Set Up White-Label Branding",
       description:
         "Once your plan is active, you can customize your hosting environment with private name servers, branded control panels, and custom login pages. This step ensures that all client interactions reflect your business identity, not the upstream provider.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/hosting-services-reseller/hosting-works/setup-white-label-branding.svg",
       alignment: "left",
     },
     {
@@ -394,7 +403,7 @@ export const resellerHostingServicesWorkflowData = {
       title: "Enable Billing & Automation",
       description:
         "Next, integrate billing software like WHMCS or ClientExec to automate invoices, payments, and renewals. This automation reduces manual work, streamlines client onboarding, and provides a professional experience from the very first transaction.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/hosting-services-reseller/hosting-works/enable-billing-automation.svg",
       alignment: "right",
     },
     {
@@ -403,7 +412,7 @@ export const resellerHostingServicesWorkflowData = {
       title: "Create Accounts & Launch Sites",
       description:
         "After setup, you can begin creating client accounts, assigning resources, and deploying sites using one-click installers for WordPress or other CMS platforms. Each account is isolated to maintain security and performance consistency across your entire reseller environment.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/hosting-services-reseller/hosting-works/create-accounts-launchsites.svg",
       alignment: "left",
     },
     {
@@ -412,7 +421,7 @@ export const resellerHostingServicesWorkflowData = {
       title: "Monitor & Scale Easily",
       description:
         "The final step is managing your business day-to-day. Use server monitoring tools to track performance, respond to client requests promptly, and upgrade resources as demand grows. With scalable infrastructure, you can expand seamlessly without downtime or migrations.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/hosting-services-reseller/hosting-works/monitor-scale-easily.svg",
       alignment: "right",
     },
   ],
@@ -560,8 +569,8 @@ export const resellerHostingServicesIndustriesCardsData = [
     title: "Digital Marketing",
     description:
       "Our reseller hosting for digital marketing agencies supports campaign-heavy websites with reliable uptime, private branding, and scalable resources, helping you deliver consistent client experiences and manage multiple projects with ease.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/digital-marketing.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/digital-marketing.svg`,
     alt: "Digital Marketing Reseller Hosting",
     width: 71,
     height: 71,
@@ -570,8 +579,8 @@ export const resellerHostingServicesIndustriesCardsData = [
     title: "Creative Studios",
     description:
       "We provide reseller hosting for creative studios that need staging environments, version control, and fast performance for asset-heavy sites. Manage client portfolios under your brand while ensuring secure, high-quality project delivery.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/creative-studios.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/creative-studios.svg`,
     alt: "Creative Studios Reseller Hosting",
     width: 71,
     height: 71,
@@ -580,8 +589,8 @@ export const resellerHostingServicesIndustriesCardsData = [
     title: "SaaS",
     description:
       "With reseller hosting for SaaS startups, you get stable infrastructure, API integrations, and automated scaling. Deliver reliable hosting to clients, maintain uptime guarantees, and focus on product innovation while we handle the backend.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/saas.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/saas.svg`,
     alt: "SaaS Reseller Hosting",
     width: 71,
     height: 71,
@@ -590,8 +599,8 @@ export const resellerHostingServicesIndustriesCardsData = [
     title: "Startups",
     description:
       "Our reseller hosting for startups offers predictable costs, free migrations, and white-label branding. Launch quickly with ready-to-scale hosting plans, automation tools, and 24/7 support designed to grow with your business.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/startups.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/startups.svg`,
     alt: "Startups Reseller Hosting",
     width: 71,
     height: 71,
@@ -600,8 +609,8 @@ export const resellerHostingServicesIndustriesCardsData = [
     title: "Small Business",
     description:
       "We make reseller hosting for small businesses simple and affordable with bundled essentials like SSL, email hosting, and backups. Offer professional-grade hosting under your brand, helping local businesses go online with confidence.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/small-business.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/small-business.svg`,
     alt: "Small Business Reseller Hosting",
     width: 71,
     height: 71,
@@ -610,8 +619,8 @@ export const resellerHostingServicesIndustriesCardsData = [
     title: "Bloggers",
     description:
       "Our reseller hosting for bloggers includes one-click WordPress installs, backups, and CDN support. Manage multiple blogs securely, handle traffic spikes, and ensure fast load times for readers worldwide.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/bloggers.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/bloggers.svg`,
     alt: "Bloggers Reseller Hosting",
     width: 71,
     height: 71,

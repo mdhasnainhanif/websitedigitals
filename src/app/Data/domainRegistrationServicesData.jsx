@@ -89,7 +89,7 @@ export const domainRegistrationServicesData = [
     title: "Single Domain Registration",
     description:
       "Ideal for individuals and small businesses. Choose from multiple TLDs and register with an ICANN-accredited registrar. Each domain includes DNS management and an option for a domain with free email hosting.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services-domain-registration-services/our-comprehensive-domain-registration-services/1.svg",
     isActive: true,
   },
   {
@@ -97,7 +97,7 @@ export const domainRegistrationServicesData = [
     title: "Bulk & Enterprise Solutions",
     description:
       "Protect your brand with bulk domain registration across multiple extensions. Centralized tools simplify renewals and management while ensuring compliance with global standards and the IANA root zone.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services-domain-registration-services/our-comprehensive-domain-registration-services/2.svg",
     isActive: false,
   },
   {
@@ -105,7 +105,7 @@ export const domainRegistrationServicesData = [
     title: "Premium Domain Registration",
     description:
       "Get memorable, keyword-rich names through premium domain registration to strengthen brand visibility.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services-domain-registration-services/our-comprehensive-domain-registration-services/3.svg",
     isActive: false,
   },
   {
@@ -113,7 +113,7 @@ export const domainRegistrationServicesData = [
     title: "International Domain Registration",
     description:
       "Use international domain registration and ccTLDs to build trust and reach local markets.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services-domain-registration-services/our-comprehensive-domain-registration-services/4.svg",
     isActive: false,
   },
   {
@@ -121,7 +121,7 @@ export const domainRegistrationServicesData = [
     title: "Transfer & Renewal Management",
     description:
       "Our streamlined registrar transfer process minimizes downtime, handles authorization codes, and follows ICANN transfer policy. Auto-renew and reminders keep domains active.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services-domain-registration-services/our-comprehensive-domain-registration-services/5.svg",
     isActive: false,
   },
   {
@@ -129,7 +129,7 @@ export const domainRegistrationServicesData = [
     title: "Privacy & Security Add-Ons",
     description:
       "Enable WHOIS privacy, SSL certificates, registrar locks, and DNS monitoring to protect your domains.",
-    icon: <BagIcon />,
+    image: "/assets/images/website-hosting-services-domain-registration-services/our-comprehensive-domain-registration-services/6.svg",
     isActive: false,
   },
 ];
@@ -145,7 +145,7 @@ export const domainRegistrationScrollSectionData = {
       id: "domain-firstScroller",
       step: 1,
       title: "ICANN-Accredited Trust",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services-domain-registration-services/why-we-are-the-right-partner-for-your-domain-needs/1.svg",
       paragraphs: [
         "We are an ICANN-accredited registrar and follow global domain policies to keep records accurate and compliant. This gives businesses confidence that their online identity is secure and properly managed.",
       ],
@@ -160,7 +160,7 @@ export const domainRegistrationScrollSectionData = {
       id: "domain-secondScroller",
       step: 2,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services-domain-registration-services/why-we-are-the-right-partner-for-your-domain-needs/2.svg",
       paragraphs: [
         "Our pricing is straightforward with no hidden fees. Renewal costs are clear from the start, and renewal alerts help keep your domains active without interruption.",
       ],
@@ -175,7 +175,7 @@ export const domainRegistrationScrollSectionData = {
       id: "domain-thirdScroller",
       step: 3,
       title: "Strong Security Features",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services-domain-registration-services/why-we-are-the-right-partner-for-your-domain-needs/3.svg",
       paragraphs: [
         "We use DNSSEC, two-factor authentication, and registrar lock to protect your domains. Secure payments use encryption, and operations meet ISO 27001 and SOC 2 security standards.",
       ],
@@ -190,7 +190,7 @@ export const domainRegistrationScrollSectionData = {
       id: "domain-forthScroller",
       step: 4,
       title: "24/7 Expert Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services-domain-registration-services/why-we-are-the-right-partner-for-your-domain-needs/4.svg",
       paragraphs: [
         "Our support team is available any time to answer questions, assist with setup, and guide you through configuration and the registrar transfer process when needed.",
       ],
@@ -205,7 +205,7 @@ export const domainRegistrationScrollSectionData = {
       id: "domain-fifthScroller",
       step: 5,
       title: "Scalable for Any Stage",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-hosting-services-domain-registration-services/why-we-are-the-right-partner-for-your-domain-needs/5.svg",
       paragraphs: [
         "Whether registering one domain or many, our platform adapts to your needs. We offer brand protection, portfolio management, and domain auction services for businesses growing their online presence.",
       ],
@@ -286,6 +286,7 @@ export const domainRegistrationImpactCardsData = [
     icon: "brand",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services-domain-registration-services/section-01/1.svg",
   },
   {
     id: 2,
@@ -295,6 +296,7 @@ export const domainRegistrationImpactCardsData = [
     icon: "security",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services-domain-registration-services/section-01/2.svg",
   },
   {
     id: 3,
@@ -304,6 +306,7 @@ export const domainRegistrationImpactCardsData = [
     icon: "planning",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services-domain-registration-services/section-01/3.svg",
   },
   {
     id: 4,
@@ -313,6 +316,7 @@ export const domainRegistrationImpactCardsData = [
     icon: "transfer",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services-domain-registration-services/section-01/4.svg",
   },
   {
     id: 5,
@@ -322,6 +326,7 @@ export const domainRegistrationImpactCardsData = [
     icon: "expand",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-hosting-services-domain-registration-services/section-01/5.svg",
   },
 ];
 
@@ -391,7 +396,7 @@ export const domainRegistrationWorkflowData = {
       title: "Search Your Perfect Domain",
       description:
         "Run a quick domain search with our smart lookup tools. You'll see instant availability results, suggested alternatives, and the option to add WHOIS privacy during registration.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/website-hosting-services-domain-registration-services/how-our-domain-registration-process-works/1.svg",
       alignment: "right",
     },
     {
@@ -400,7 +405,7 @@ export const domainRegistrationWorkflowData = {
       title: "Register in Minutes",
       description:
         "Complete checkout in a few easy steps with instant registration and encrypted payments. Your domain is registered right away, and you can enable privacy protection and auto-renew to avoid missing your grace period.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/website-hosting-services-domain-registration-services/how-our-domain-registration-process-works/2.svg",
       alignment: "left",
     },
     {
@@ -409,7 +414,7 @@ export const domainRegistrationWorkflowData = {
       title: "Manage and Protect",
       description:
         "After registration, manage DNS settings, create a custom email, and enable security measures like registrar lock (change-protection). Automated renewal reminders keep you compliant with registrar change policy and maintain control of your domains.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/website-hosting-services-domain-registration-services/how-our-domain-registration-process-works/3.svg",
       alignment: "right",
     },
     {
@@ -418,7 +423,7 @@ export const domainRegistrationWorkflowData = {
       title: "Transfer When Needed",
       description:
         "When switching providers, follow our clear domain transfer steps based on the ICANN transfer policy for a smooth move with minimal disruption. Authorization codes and verification keep your ownership secure throughout the process.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/website-hosting-services-domain-registration-services/how-our-domain-registration-process-works/4.svg",
       alignment: "left",
     },
   ],
@@ -590,8 +595,8 @@ export const domainRegistrationIndustriesCardsData = [
     title: "Finance",
     description:
       "Boost credibility with domain registration for finance company websites. Our ICANN-accredited service protects your brand, ensures compliance, and gives financial firms a trusted online foundation.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/original/1.svg`,
+    imgWhite: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/hover/1.svg`,
     alt: "Finance Domain Registration",
     width: 71,
     height: 71,
@@ -600,8 +605,8 @@ export const domainRegistrationIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Build patient confidence with domain registration for healthcare provider websites. We offer secure, privacy-focused registration that meets industry standards and keeps sensitive data protected.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/original/2.svg`,
+    imgWhite: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/hover/2.svg`,
     alt: "Healthcare Domain Registration",
     width: 71,
     height: 71,
@@ -610,8 +615,8 @@ export const domainRegistrationIndustriesCardsData = [
     title: "Law Firm",
     description:
       "Show authority online with domain registration for law firm websites. Our secure and professional process safeguards your brand and reinforces client trust.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/original/3.svg`,
+    imgWhite: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/hover/3.svg`,
     alt: "Law Firm Domain Registration",
     width: 71,
     height: 71,
@@ -620,8 +625,8 @@ export const domainRegistrationIndustriesCardsData = [
     title: "Restaurant",
     description:
       "Increase local visibility with domain registration for restaurant businesses. Choose a unique name that helps your restaurant stand out, attract new customers, and protect its online identity.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/original/4.svg`,
+    imgWhite: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/hover/4.svg`,
     alt: "Restaurant Domain Registration",
     width: 71,
     height: 71,
@@ -630,8 +635,8 @@ export const domainRegistrationIndustriesCardsData = [
     title: "Fitness",
     description:
       "Expand your reach with domain registration for fitness brands. We provide professional domains that boost discoverability, support brand growth, and engage wellness audiences.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/original/5.svg`,
+    imgWhite: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/hover/5.svg`,
     alt: "Fitness Domain Registration",
     width: 71,
     height: 71,
@@ -640,8 +645,8 @@ export const domainRegistrationIndustriesCardsData = [
     title: "Consulting",
     description:
       "Build authority and trust when you register a domain for consulting firm websites. Our secure solutions help consultants showcase expertise and scale confidently in new markets.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/original/6.svg`,
+    imgWhite: `/assets/images/website-hosting-services-domain-registration-services/sectors-we-work-with/hover/6.svg`,
     alt: "Consulting Domain Registration",
     width: 71,
     height: 71,
