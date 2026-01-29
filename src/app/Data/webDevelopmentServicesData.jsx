@@ -91,7 +91,7 @@ export const webDevelopmentServicesData = [
     title: "eCommerce Development",
     description:
       "We build secure, scalable, and conversion-focused online stores. Our ecommerce website development services cover secure payment integration, online store development, and platforms such as Magento, WooCommerce, and Shopify Plus. Every project meets PCI DSS compliance and includes SSL certificates to ensure safe transactions, helping businesses launch robust, high-performance ecommerce solutions.",
-    icon: <BagIcon />,
+    icon:  "/assets/images/web-development/comprehensive-web-development-grow/eCommerce-development.svg",
     isActive: true,
     image: "/assets/images/web-development/comprehensive-web-dev/ecommerce-development.svg",
   },
@@ -100,7 +100,7 @@ export const webDevelopmentServicesData = [
     title: "WordPress Development",
     description:
       "We offer custom WordPress development for businesses of all sizes, including WordPress theme customization, plugin development, and ecommerce builds with WooCommerce. Our team works with the Gutenberg editor, Elementor, and WPBakery to deliver functional, user-friendly websites.  We provide custom WordPress development solutions for businesses of all sizes, including theme customization, plugin development, and WooCommerce-based eCommerce builds. Our team leverages the Gutenberg editor, Elementor, and WPBakery to deliver scalable, high-performing, and user-friendly websites.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/wordpress-development.svg",
      isActive: false,
      image: "/assets/images/web-development/comprehensive-web-dev/wordpress-development.svg",
   },
@@ -109,7 +109,7 @@ export const webDevelopmentServicesData = [
     title: "Shopify Development",
     description:
       "We deliver complete Shopify store development services, from Shopify theme customization to Shopify app integration. Our expertise includes Shopify Liquid, dropshipping setup, and subscription ecommerce models. Certified Shopify Partner status (if applicable) ensures your store meets the highest standards.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/shopify-development.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/shopify-development.svg",
   },
@@ -118,7 +118,7 @@ export const webDevelopmentServicesData = [
     title: "Wix Development",
     description:
       "Our Wix website development services cater to small businesses, startups, and entrepreneurs looking for flexibility and visual appeal. We offer Wix SEO optimization, Wix ecommerce integration, and customization using the drag-and-drop builder with responsive templates from the Wix App Market integration. As a certified Wix Partner, we’ve delivered tailored Wix sites for clients across multiple industries.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/wix-development.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/wix-development.svg",
   },
@@ -127,7 +127,7 @@ export const webDevelopmentServicesData = [
     title: "Squarespace Development",
     description:
       "We provide custom Squarespace website builds, Squarespace SEO services, and ecommerce setups using Squarespace templates, CSS customization, and ecommerce add-ons. With experience in Squarespace Circle membership, we design search-optimized sites that perform well in competitive markets.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/squarespace-development.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/squarespace-development.svg",
   },
@@ -136,7 +136,7 @@ export const webDevelopmentServicesData = [
     title: "CMS Development",
     description:
       "We provide custom CMS development, including CMS migration services, enterprise CMS solutions, and builds using Drupal, Joomla, and headless CMS architectures. We also implement content workflow automation and ensure WCAG compliance for accessibility.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/cms-development.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/cms-development.svg",
   },
@@ -145,7 +145,7 @@ export const webDevelopmentServicesData = [
     title: "Web Portal Development",
     description:
       "We create enterprise web portal development solutions for corporate, B2B, and government clients. Services include B2B portal solutions and client portal creation with features like secure login systems, role-based access, and cloud integration. Our ISO 9001-certified processes ensure every portal is secure, reliable, and built for long-term use.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/web-portal-development.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/web-portal-development.svg",
   },
@@ -154,7 +154,7 @@ export const webDevelopmentServicesData = [
     title: "Web Application Development",
     description:
       "Our custom web app development services cover everything from SaaS application development to progressive web app services. We work with React, Angular, Node.js, API integration, and microservices architecture. Every app is built with strong security standards and hosted on compliant cloud platforms.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/web-portal-development.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/web-application-development.svg",
   },
@@ -163,7 +163,7 @@ export const webDevelopmentServicesData = [
     title: "Web Maintenance",
     description:
       "Our website maintenance services include security updates, backup and monitoring, and quick issue resolution. With uptime monitoring, malware removal, and version control, we keep websites secure and running around the clock using trusted monitoring tools.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/web-maintenance.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/web-maintenance.svg",
   },
@@ -172,7 +172,7 @@ export const webDevelopmentServicesData = [
     title: "Website Speed Optimization",
     description:
       "Our speed-up website loading service focuses on website performance tuning and core web vitals optimization for faster browsing. We use lazy loading, image compression, CDN integration, and advanced caching following Google PageSpeed Insights best practices to enhance both speed and user experience.",
-    icon: <BagIcon />,
+    icon: "/assets/images/web-development/comprehensive-web-development-grow/web-maintenance.svg",
     isActive: false,
     image: "/assets/images/web-development/comprehensive-web-dev/website-speed-optimization.svg",
   },
@@ -333,7 +333,7 @@ export const webDevelopmentServicesImpactCardsData = [
     title: "Supports Your Goals",
     description:
       "An effective website is built to align with your business objectives from day one. Scalable and secure development ensures your platform can expand with your growth while safeguarding sensitive data. By applying responsive design and mobile-first principles, your site stays accessible to users on any device, enabling business expansion without costly rebuilds.",
-    icon: "goals",
+    icon: "/assets/images/web-development/section-1/supports-your-goals.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
     image: "/assets/images/web-development/section-1/supports-your-goals.svg",
@@ -343,7 +343,7 @@ export const webDevelopmentServicesImpactCardsData = [
     title: "Builds Trust",
     description:
       "Visitors are more likely to engage with brands that offer a fast, secure, and visually consistent online experience. Certified developers who adhere to quality assurance standards, such as ISO 9001 for process reliability and WCAG accessibility guidelines for inclusivity, create platforms that inspire confidence. Beyond technical compliance, being featured in respected directories like Clutch and GoodFirms further reinforces credibility and professionalism.",
-    icon: "trust",
+    icon: "/assets/images/web-development/section-1/builds-trust.svg",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
     image: "/assets/images/web-development/section-1/builds-trust.svg",
@@ -353,7 +353,7 @@ export const webDevelopmentServicesImpactCardsData = [
     title: "Drives Results",
     description:
       "Modern web development goes beyond visual appeal. SEO-driven strategies that prioritize web accessibility, performance optimization, and compliance with search engine best practices make websites easier to find and navigate more quickly. These improvements consistently lead to higher user engagement and increased conversion rates, transforming visitors into customers.",
-    icon: "results",
+    icon: "/assets/images/web-development/section-1/drives-results.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
     image: "/assets/images/web-development/section-1/drives-results.svg",
@@ -363,7 +363,7 @@ export const webDevelopmentServicesImpactCardsData = [
     title: "Leverages Advanced Technologies",
     description:
       "Staying competitive means choosing the right tools for your needs. Modern frameworks such as React, Angular, and Node.js are the latest technologies that support fast, interactive, and maintainable websites, helping ensure your platform delivers strong performance today while remaining flexible for future advancements.",
-    icon: "technology",
+    icon: "/assets/images/web-development/section-1/leverages-advanced-technologies.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
     image: "/assets/images/web-development/section-1/leverages-advanced-technologies.svg",
@@ -373,7 +373,7 @@ export const webDevelopmentServicesImpactCardsData = [
     title: "Creates a Better User Experience",
     description:
       "Professional web development companies carefully consider how every design element, feature, and functionality impacts the end user. This attention to detail results in intuitive navigation, consistent branding, and seamless interaction that encourage visitors to stay longer, explore more, and take meaningful action.",
-    icon: "ux",
+    icon: "/assets/images/web-development/section-1/better-user-experience.svg",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
     image: "/assets/images/web-development/section-1/better-user-experience.svg",

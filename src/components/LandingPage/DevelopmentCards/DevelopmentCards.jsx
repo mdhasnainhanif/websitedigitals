@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { developmentCardsData } from "../../../app/Data/landingPageData";
 import { GoalIcon } from "@/icons";
 import styles from "./DevelopmentCards.module.css";
