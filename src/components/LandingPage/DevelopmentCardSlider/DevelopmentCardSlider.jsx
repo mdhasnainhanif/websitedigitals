@@ -58,7 +58,22 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,classNa
             {services.map((service, index) => (
               <div key={index} className={`item ${styles.serviceCard}`}>
                 <div className={styles.cardIcon}>
-                  <div className={styles.iconWrapper}>{service.icon}</div>
+                  <div className={styles.iconWrapper}>
+                  {typeof service.icon === 'string' && service.icon.startsWith('/') ? (
+                      <img 
+                        src={service.icon} 
+                        alt={service.title} 
+                        width={50} 
+                        height={50}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : typeof service.icon === 'string' && service.icon === 'target' ? (
+                      <GoalIcon />
+                    ) : React.isValidElement(service.icon) ? (
+                      service.icon
+                    ) : null}
+                  </div>
                 </div>
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{service.title}</h3>

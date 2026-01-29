@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { developmentCardsData } from "../../../app/Data/landingPageData";
 import { GoalIcon } from "@/icons";
 import styles from "./DevelopmentCards.module.css";
@@ -49,7 +50,20 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
                 >
                 <div className="p-4 position-relative">
                   <div className={`${styles.iconCircle} mb-3 mx-auto`}>
-                    <GoalIcon />
+                    {typeof item.icon === 'string' && item.icon.startsWith('/') ? (
+                      <img 
+                        src={item.icon} 
+                        alt={item.title} 
+                        width={50} 
+                        height={50}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : typeof item.icon === 'string' && item.icon === 'target' ? (
+                      <GoalIcon />
+                    ) : React.isValidElement(item.icon) ? (
+                      item.icon
+                    ) : null}
                   </div>
                   <h5 className="fw-bold mb-3">{item.title}</h5>
                   <p className="text-muted mb-0">{item.description}</p>
