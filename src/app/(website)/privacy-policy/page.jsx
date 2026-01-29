@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata = {
-    title: 'Website Digitals Privacy Policy',
+    title: 'Website Digitals Privacy Policy', 
     description: 'Learn how Website Digitals collects, uses, and protects your personal data across our web, hosting, and digital marketing services.',
     keywords: '',
     alternates: {
