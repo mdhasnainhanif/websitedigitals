@@ -4,8 +4,9 @@ import React from "react";
 import { webDevelopmentServicesData } from "../../../app/Data/landingPageData";
 import { useOwlCarousel } from "../../../app/hooks/useOwlCarousel";
 import styles from "./DevelopmentCardSlider.module.css";
+import Image from "next/image";
 
-const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,className = "" }) => {
+const DevelopmentCardSlider = ({ sectionData = null, servicesData = null, className = "" }) => {
   const defaultSectionData = {
     heading: "Our Comprehensive Web Development Services to Grow Your Business",
     description: "We provide professional web development solutions for businesses across the United States, combining proven practices, industry certifications, and modern technologies to deliver results that drive growth. Explore our specialized services below.",
@@ -39,7 +40,7 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,classNa
     <section className={`${styles.sliderSection} ${className}`}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-12">
+          <div className="col-lg-9">
             <div className="section-heading text-center text-white">
               <h2 className="mb-0">
                 {section.heading}
@@ -58,7 +59,22 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,classNa
             {services.map((service, index) => (
               <div key={index} className={`item ${styles.serviceCard}`}>
                 <div className={styles.cardIcon}>
-                  <div className={styles.iconWrapper}>{service.icon}</div>
+                  <div className={styles.iconWrapper}>
+                  {typeof service.icon === 'string' && service.icon.startsWith('/') ? (
+                      <img 
+                        src={service.icon} 
+                        alt={service.title} 
+                        width={50} 
+                        height={50}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : typeof service.icon === 'string' && service.icon === 'target' ? (
+                      <GoalIcon />
+                    ) : React.isValidElement(service.icon) ? (
+                      service.icon
+                    ) : null}
+                  </div>
                 </div>
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{service.title}</h3>
@@ -67,9 +83,9 @@ const DevelopmentCardSlider = ({ sectionData = null, servicesData = null,classNa
                   </p>
                   {service.button && service.button.show && (
                     <div className="link-area">
-                      <a 
-                        href={service.button.href || "#"} 
-                        className={`${service.button.className || "offer-btn primary" } ${styles.cardButton}`}
+                      <a
+                        href={service.button.href || "#"}
+                        className={`${service.button.className || "offer-btn primary"} ${styles.cardButton}`}
                       >
                         {service.button.text}
                       </a>

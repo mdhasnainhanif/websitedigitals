@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { developmentCardsData } from "../../../app/Data/landingPageData";
 import { GoalIcon } from "@/icons";
 import styles from "./DevelopmentCards.module.css";
@@ -25,7 +26,7 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
           <div className="col-md-10">
             <div className="text-center mb-5">
 
-             {section.showHeading && section.heading && (
+             {(section.showHeading !== false) && section.heading && (
                <h2 className="fw-bolder fs-1">
                  {section.heading}
                </h2>
@@ -49,13 +50,20 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
                 >
                 <div className="p-4 position-relative">
                   <div className={`${styles.iconCircle} mb-3 mx-auto`}>
-                    {typeof item.icon === 'string' && (item.icon.startsWith('/') || item.icon.includes('.png') || item.icon.includes('.svg') || item.icon.includes('.jpg') || item.icon.includes('.webp')) ? (
-                      <img src={item.icon} alt={item.title} style={{ width: '80px', height: '80px', objectFit: 'contain' }} />
-                    ) : item.icon ? (
-                      item.icon
-                    ) : (
+                    {typeof item.icon === 'string' && item.icon.startsWith('/') ? (
+                      <img 
+                        src={item.icon} 
+                        alt={item.title} 
+                        width={50} 
+                        height={50}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : typeof item.icon === 'string' && item.icon === 'target' ? (
                       <GoalIcon />
-                    )}
+                    ) : React.isValidElement(item.icon) ? (
+                      item.icon
+                    ) : null}
                   </div>
                   <h5 className="fw-bold mb-3">{item.title}</h5>
                   <p className="text-muted mb-0">{item.description}</p>
