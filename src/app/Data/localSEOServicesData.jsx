@@ -90,6 +90,7 @@ export const localSEOServicesData = [
       "We make your Google Business Profile complete, accurate, and engaging. Alongside managing local listings, we apply schema markup so search engines clearly understand your business.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/local-seo-services/explore-our-proven-local-seo-solutions/google-business-profile-optimization.svg",
   },
   {
     id: 2,
@@ -98,6 +99,7 @@ export const localSEOServicesData = [
       "Our local citation-building services keep your business details consistent across trusted directories. With business directory SEO and a focus on online reviews, we strengthen both credibility and trust.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/local-seo-services/explore-our-proven-local-seo-solutions/citation-directory-management.svg",
   },
   {
     id: 3,
@@ -106,6 +108,7 @@ export const localSEOServicesData = [
       "We use tailored local SEO marketing strategies and research local keywords to attract nearby buyers. Each local content strategy improves visibility and drives qualified traffic.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/local-seo-services/explore-our-proven-local-seo-solutions/local-content-keyword-targeting.svg",
   },
   {
     id: 4,
@@ -114,6 +117,7 @@ export const localSEOServicesData = [
       "Every industry and region requires unique targeting. Whether in retail, services, or professional sectors, we adapt strategies and track results to deliver measurable growth.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/local-seo-services/explore-our-proven-local-seo-solutions/regional-industry-specific-campaigns.svg",
   },
   {
     id: 5,
@@ -122,6 +126,7 @@ export const localSEOServicesData = [
       "We help you build and maintain a strong online reputation through strategic review management, encouraging positive feedback, and addressing customer concerns to boost local credibility.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/local-seo-services/explore-our-proven-local-seo-solutions/online-reviews-reputation-management.svg",
   },
 ];
 
@@ -136,7 +141,7 @@ export const localSEOServicesScrollSectionData = {
       id: "local-seo-firstScroller",
       step: 1,
       title: "Data-Driven Local Strategies",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/data-driven-local-strategies.svg",
       paragraphs: [
         "We apply local SEO ranking factors that directly impact visibility. From accurate citation management to structured data and consistent reputation management, our strategies address what matters most for search performance.",
       ],
@@ -151,7 +156,7 @@ export const localSEOServicesScrollSectionData = {
       id: "local-seo-secondScroller",
       step: 2,
       title: "Optimized for Every Device",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/optimized-for-every-device.svg",
       paragraphs: [
         "With most searches happening on mobile, our campaigns prioritize mobile SEO for local businesses. Through responsive optimization, we make sure your business is easy to find and interact with on every device.",
       ],
@@ -166,7 +171,7 @@ export const localSEOServicesScrollSectionData = {
       id: "local-seo-thirdScroller",
       step: 3,
       title: "Built to Earn Trust",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/built-to-earn-trust.svg",
       paragraphs: [
         "Trust drives conversions. By maintaining NAP consistency, encouraging positive online reviews, and reinforcing credibility with strong trust signals, we help your business stand out locally.",
       ],
@@ -181,7 +186,7 @@ export const localSEOServicesScrollSectionData = {
       id: "local-seo-forthScroller",
       step: 4,
       title: "Transparent Reporting",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/transparent-reporting.svg",
       paragraphs: [
         "You'll always know how your investment performs. Our analytics-driven optimization and search visibility tracking deliver insights that highlight results and reveal opportunities for growth.",
       ],
@@ -196,7 +201,7 @@ export const localSEOServicesScrollSectionData = {
       id: "local-seo-fifthScroller",
       step: 5,
       title: "Expertise Across Industries",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/expertise-across-industries.svg",
       paragraphs: [
         "Local SEO isn't one-size-fits-all. Whether it's SEO for small businesses, strategies tailored to professional services, or service area business SEO, we align campaigns with a tailored local content strategy built for your industry.",
       ],
@@ -282,6 +287,7 @@ export const localSEOServicesImpactCardsData = [
     icon: "search",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/appear-where-customers-search.svg",
   },
   {
     id: 2,
@@ -291,6 +297,7 @@ export const localSEOServicesImpactCardsData = [
     icon: "trust",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/build-trust-with-local-customers.svg",
   },
   {
     id: 3,
@@ -300,6 +307,7 @@ export const localSEOServicesImpactCardsData = [
     icon: "sales",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/drive-more-sales-from-nearby-traffic.svg",
   },
   {
     id: 4,
@@ -309,6 +317,7 @@ export const localSEOServicesImpactCardsData = [
     icon: "growth",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/support-long-term-growth.svg",
   },
 ];
 
@@ -424,7 +433,7 @@ export const localSEOServicesWorkflowData = {
       title: "Local SEO Audit & Strategy",
       description:
         "We begin with a detailed audit of your online presence, checking NAP consistency and analyzing key local ranking factors like proximity, relevance, and prominence. From this, we create a tailored roadmap aligned with your objectives and lead generation goals.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/local-seo-services/our-roadmap/local-seo-audit-strategy.svg",
       alignment: "right",
     },
     {
@@ -433,7 +442,7 @@ export const localSEOServicesWorkflowData = {
       title: "On-Page Optimization",
       description:
         "With the strategy in place, we improve your site from within. This includes on-page SEO for local visibility, implementation of schema markup, and targeting geo-targeted keywords that connect with nearby customers.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/local-seo-services/our-roadmap/on-page-optimization.svg",
       alignment: "left",
     },
     {
@@ -442,7 +451,7 @@ export const localSEOServicesWorkflowData = {
       title: "Citations & Reviews",
       description:
         "Trust and authority are built on consistency. Through citation building, we ensure accurate listings across directories. At the same time, we encourage online reviews and oversee reputation management practices that enhance credibility in local markets.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/local-seo-services/our-roadmap/citations-reviews.svg",
       alignment: "right",
     },
     {
@@ -451,7 +460,7 @@ export const localSEOServicesWorkflowData = {
       title: "Ongoing Optimization & Reporting",
       description:
         "Local SEO requires continuous effort to sustain results. Using analytics-driven optimization and search visibility tracking, we monitor performance and refine strategies to keep your rankings moving upward through continuous improvement.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/local-seo-services/our-roadmap/ongoing-optimization-reporting.svg",
       alignment: "left",
     },
   ],
@@ -609,8 +618,8 @@ export const localSEOServicesIndustriesCardsData = [
     title: "Law Firms",
     description:
       "Boost client trust and visibility with local SEO for law firms. We help your practice appear in Google Maps and local searches so potential clients can find and choose you quickly when they need legal help.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/local-seo-services/businesses-we-help-shine-locally/original/law-firms.svg`,
+    imgWhite: `/assets/images/local-seo-services/businesses-we-help-shine-locally/hover/law-firms.svg`,
     alt: "Law Firms Local SEO",
     width: 71,
     height: 71,
@@ -619,8 +628,8 @@ export const localSEOServicesIndustriesCardsData = [
     title: "Restaurants",
     description:
       "Drive more dine-in visits and online orders with local SEO for restaurants. Your business will appear when nearby customers search for places to eat, helping you grow reservations and takeout sales.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/local-seo-services/businesses-we-help-shine-locally/original/restaurants.svg`,
+    imgWhite: `/assets/images/local-seo-services/businesses-we-help-shine-locally/hover/restaurants.svg`,
     alt: "Restaurants Local SEO",
     width: 71,
     height: 71,
@@ -629,8 +638,8 @@ export const localSEOServicesIndustriesCardsData = [
     title: "Plumbers",
     description:
       "Get found first during urgent home repair searches through local SEO for plumbers. We make sure your business ranks high in local results, bringing in more calls and qualified leads.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/local-seo-services/businesses-we-help-shine-locally/original/plumbers.svg`,
+    imgWhite: `/assets/images/local-seo-services/businesses-we-help-shine-locally/hover/plumbers.svg`,
     alt: "Plumbers Local SEO",
     width: 71,
     height: 71,
@@ -639,8 +648,8 @@ export const localSEOServicesIndustriesCardsData = [
     title: "HVAC Companies",
     description:
       "Reach local customers during high-demand seasons with local SEO for HVAC companies. Our strategies improve visibility for repair, installation, and maintenance services, driving more inquiries and bookings.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/local-seo-services/businesses-we-help-shine-locally/original/hvac-companies.svg`,
+    imgWhite: `/assets/images/local-seo-services/businesses-we-help-shine-locally/hover/hvac-companies.svg`,
     alt: "HVAC Companies Local SEO",
     width: 71,
     height: 71,
@@ -649,8 +658,8 @@ export const localSEOServicesIndustriesCardsData = [
     title: "Chiropractors",
     description:
       "Expand your clinic's reach using local SEO for chiropractors. By improving local search visibility, we help more patients find your practice and schedule appointments with confidence.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/local-seo-services/businesses-we-help-shine-locally/original/chiropractors.svg`,
+    imgWhite: `/assets/images/local-seo-services/businesses-we-help-shine-locally/hover/chiropractors.svg`,
     alt: "Chiropractors Local SEO",
     width: 71,
     height: 71,
@@ -659,8 +668,8 @@ export const localSEOServicesIndustriesCardsData = [
     title: "Contractors",
     description:
       "Increase project opportunities with local SEO for contractors. We enhance your presence in service areas so you attract homeowners and businesses searching for trusted local experts.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/local-seo-services/businesses-we-help-shine-locally/original/contractors.svg`,
+    imgWhite: `/assets/images/local-seo-services/businesses-we-help-shine-locally/hover/contractors.svg`,
     alt: "Contractors Local SEO",
     width: 71,
     height: 71,
