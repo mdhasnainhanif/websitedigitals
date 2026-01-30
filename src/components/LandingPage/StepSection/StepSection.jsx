@@ -51,6 +51,7 @@ const StepSection = ({ sectionData = null }) => {
                       src={step.image}
                       alt={step.title}
                       className={styles.stepImage}
+                      style={data.imageWidth ? { width: data.imageWidth, maxWidth: data.imageWidth } : undefined}
                       loading="lazy"
                     />
                   </div>

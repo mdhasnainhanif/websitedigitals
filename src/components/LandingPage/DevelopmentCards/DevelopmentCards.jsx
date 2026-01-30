@@ -50,7 +50,7 @@ const DevelopmentCards = ({ sectionData = null, cardsData = null, displayClass =
                 >
                 <div className="p-4 position-relative">
                   <div className={`${styles.iconCircle} mb-3 mx-auto`}>
-                    {item.image ? <img src={item.image} alt={item.title} className="img-fluid" /> : <GoalIcon />}
+                    {item.image ? <img src={item.image} alt={item.title} className="img-fluid" style={{ ...(item.imageWidth ? { width: item.imageWidth + "px", height: "auto" } : {}), ...(item.borderRadius ? { borderRadius: item.borderRadius } : {}) }} /> : <GoalIcon />}
                   </div>
                   <h5 className="fw-bold mb-3">{item.title}</h5>
                   <p className="text-muted mb-0">{item.description}</p>

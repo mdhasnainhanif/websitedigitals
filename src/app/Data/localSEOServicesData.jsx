@@ -186,7 +186,7 @@ export const localSEOServicesScrollSectionData = {
       id: "local-seo-forthScroller",
       step: 4,
       title: "Transparent Reporting",
-      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/transparent-reporting.svg",
+      icon: "/assets/images/local-seo-services/what-makes-our-local-seo-agency-the-right-choice/trransparent-reporting.svg",
       paragraphs: [
         "You'll always know how your investment performs. Our analytics-driven optimization and search visibility tracking deliver insights that highlight results and reveal opportunities for growth.",
       ],
@@ -288,6 +288,8 @@ export const localSEOServicesImpactCardsData = [
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
     image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/appear-where-customers-search.svg",
+    imageWidth: 80,
+    borderRadius: "6px",
   },
   {
     id: 2,
@@ -298,6 +300,8 @@ export const localSEOServicesImpactCardsData = [
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
     image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/build-trust-with-local-customers.svg",
+    imageWidth: 80,
+    borderRadius: "6px",
   },
   {
     id: 3,
@@ -308,6 +312,8 @@ export const localSEOServicesImpactCardsData = [
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
     image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/drive-more-sales-from-nearby-traffic.svg",
+    imageWidth: 80,
+    borderRadius: "6px",
   },
   {
     id: 4,
@@ -318,6 +324,8 @@ export const localSEOServicesImpactCardsData = [
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
     image: "/assets/images/local-seo-services/how-local-seo-shapes-customer-decisions/support-long-term-growth.svg",
+    imageWidth: 80,
+    borderRadius: "6px",
   },
 ];
 
@@ -424,6 +432,7 @@ export const localSEOServicesTechnologiesData = [
 // Workflow Data (for StepSection component)
 export const localSEOServicesWorkflowData = {
   title: "Our Roadmap",
+  imageWidth: "27rem",
   description:
     "A structured process ensures every step of local SEO contributes to stronger visibility, higher rankings, and long-term growth. Each stage is built to strengthen credibility and deliver measurable results.",
   steps: [
