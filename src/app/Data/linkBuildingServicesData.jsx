@@ -56,7 +56,7 @@ export const linkBuildingServicesScrollSectionData = {
       id: "link-building-firstScroller",
       step: 1,
       title: "Safe White Hat Link Building",
-      icon: "/assets/images/icons/icon_Services.svg",
+      icon: "/assets/images/link-building-services/why-our-link-building-agency-delivers-long-term-seo-value/safe-white-hat-link-building.svg",
       paragraphs: [
         "We follow Google's Webmaster Guidelines and use only white hat link building practices. By avoiding risky tactics, we deliver sustainable results that protect your brand reputation."
       ],
@@ -71,7 +71,7 @@ export const linkBuildingServicesScrollSectionData = {
       id: "link-building-secondScroller",
       step: 2,
       title: "Authority-Driven Results",
-      icon: "/assets/images/icons/icon_technology.svg",
+      icon: "/assets/images/link-building-services/why-our-link-building-agency-delivers-long-term-seo-value/authority-driven-results.svg",
       paragraphs: [
         "Our strategies focus on strengthening domain authority (DA), building credibility with search engines, and improving overall visibility."
       ],
@@ -86,7 +86,7 @@ export const linkBuildingServicesScrollSectionData = {
       id: "link-building-thirdScroller",
       step: 3,
       title: "Transparent Reporting",
-      icon: "/assets/images/icons/icon_Solutions.svg",
+      icon: "/assets/images/link-building-services/why-our-link-building-agency-delivers-long-term-seo-value/tansparent-reporting.svg",
       paragraphs: [
         "We provide detailed link profile audits, giving you clear insights into backlink quality and measurable SEO impact."
       ],
@@ -101,7 +101,7 @@ export const linkBuildingServicesScrollSectionData = {
       id: "link-building-fourthScroller",
       step: 4,
       title: "Long-Term SEO Value",
-      icon: "/assets/images/icons/icon_Industries.svg",
+      icon: "/assets/images/link-building-services/why-our-link-building-agency-delivers-long-term-seo-value/long-term-seo-value.svg",
       paragraphs: [
         "Our backlinks are built on trusted sources and designed to last, supporting organic rankings and protecting your SEO investment against algorithm updates."
       ],
@@ -116,7 +116,7 @@ export const linkBuildingServicesScrollSectionData = {
       id: "link-building-fifthScroller",
       step: 5,
       title: "Industry Expertise",
-      icon: "/assets/images/icons/icon_Services.svg",
+      icon: "/assets/images/link-building-services/why-our-link-building-agency-delivers-long-term-seo-value/industry-expertise.svg",
       paragraphs: [
         "With years of proven experience in SEO strategy and digital PR, our team applies industry-recognized best practices to deliver link building solutions that meet both search engine requirements and business growth objectives."
       ],
@@ -134,6 +134,7 @@ export const linkBuildingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Blogger Outreach & Guest Posts",
+    image: "/assets/images/link-building-services/our-link-building-services-tailored-to-your-business-needs/blogger-outreach-guest-posts.svg",
     description: "We secure placements on high-authority websites through targeted guest post link building and blogger outreach services. Each placement is carefully selected to provide contextual backlinks that enhance visibility, credibility, and keyword relevance.",
     features: [
       "High-authority website placements",
@@ -145,6 +146,7 @@ export const linkBuildingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "White Hat Backlink Services",
+    image: "/assets/images/link-building-services/our-link-building-services-tailored-to-your-business-needs/white-hat-backlink-services.svg",
     description: "Our white hat link building practices follow Google's Webmaster Guidelines and recognized SEO best practices. By prioritizing ethical methods, we ensure sustainable growth that avoids penalties while strengthening rankings over time.",
     features: [
       "Google-compliant practices",
@@ -156,6 +158,7 @@ export const linkBuildingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Tailored SEO Link Building Packages",
+    image: "/assets/images/link-building-services/our-link-building-services-tailored-to-your-business-needs/tailored-seo-link-building-packages.svg",
     description: "No two businesses are the same. From affordable link building services for small businesses to enterprise SEO link building solutions for large-scale campaigns, our packages are customized to meet specific industry requirements and long-term growth objectives.",
     features: [
       "Customized packages",
@@ -167,6 +170,7 @@ export const linkBuildingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Niche & Regional Link Building",
+    image: "/assets/images/link-building-services/our-link-building-services-tailored-to-your-business-needs/niche-regional-link-building.svg",
     description: "We design strategies for businesses targeting specific industries or geographic markets. Whether it's niche directories, regional publications, or sector-focused blogs, our campaigns deliver relevant backlinks that directly connect with your audience.",
     features: [
       "Industry-specific strategies",
@@ -178,6 +182,7 @@ export const linkBuildingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "E-Commerce & SaaS Link Building",
+    image: "/assets/images/link-building-services/our-link-building-services-tailored-to-your-business-needs/e-commerce-saas-link-building.svg",
     description: "For e-commerce brands and SaaS companies, we craft specialized campaigns aimed at product-driven keywords, software directories, and respected industry reviewers. These backlinks improve visibility in competitive markets where rankings strongly influence conversions.",
     features: [
       "Product-driven keyword focus",
@@ -236,6 +241,7 @@ export const linkBuildingServicesImpactCardsData = [
     description: "With relevant backlinks, your website builds stronger domain authority. As that authority grows, your site gains a higher chance of appearing in organic search results for competitive keywords.",
     col: "col-12 col-md-4 col-lg-4",
     isHighlighted: false,
+    image: "/assets/images/link-building-services/why-backlinks-remain-the-backbone-of-strong-seo-results/improve-search-rankings.svg",
   },
   {
     icon: "/assets/images/icons/icon_technology.svg",
@@ -243,6 +249,7 @@ export const linkBuildingServicesImpactCardsData = [
     description: "Through white hat link building strategies, your site is connected with reputable authority sites. These connections not only strengthen rankings but also improve brand credibility in the eyes of search engines and users alike.",
     col: "col-12 col-md-4 col-lg-4",
     isHighlighted: true,
+    image: "/assets/images/link-building-services/why-backlinks-remain-the-backbone-of-strong-seo-results/build-trust-authority.svg",
   },
   {
     icon: "/assets/images/icons/icon_Solutions.svg",
@@ -250,6 +257,7 @@ export const linkBuildingServicesImpactCardsData = [
     description: "Unlike risky short-term link schemes, sustainable SEO growth comes from consistent practices such as content outreach, guest posting on industry-relevant sites, and earning links from high-quality referring domains. These methods ensure your backlinks remain valuable and penalty-free over time.",
     col: "col-12 col-md-4 col-lg-4",
     isHighlighted: false,
+    image: "/assets/images/link-building-services/why-backlinks-remain-the-backbone-of-strong-seo-results/sustainable-seo-growth.svg",
   },
   {
     icon: "/assets/images/icons/icon_Industries.svg",
@@ -257,6 +265,7 @@ export const linkBuildingServicesImpactCardsData = [
     description: "Links should not only improve rankings but also contribute to conversions. By securing placements that direct qualified traffic, you gain conversion-focused backlinks that support lead generation and sales objectives.",
     col: "col-12 col-md-4 col-lg-4",
     isHighlighted: false,
+    image: "/assets/images/link-building-services/why-backlinks-remain-the-backbone-of-strong-seo-results/support-your-conversion-goals.svg",
   },
   {
     icon: "/assets/images/icons/icon_Services.svg",
@@ -264,6 +273,7 @@ export const linkBuildingServicesImpactCardsData = [
     description: "Effective link building works hand-in-hand with on-page SEO, strengthens content marketing campaigns, and supports ROI from both paid and organic channels. When balanced with a broader digital strategy, it delivers measurable impact across your marketing funnel.",
     col: "col-12 col-md-4 col-lg-4",
     isHighlighted: false,
+    image: "/assets/images/link-building-services/why-backlinks-remain-the-backbone-of-strong-seo-results/balanced-seo-strategy.svg",
   }
 ];
 
@@ -294,8 +304,8 @@ export const linkBuildingServicesIndustriesCardsData = [
     icon: "/assets/images/industry/law.png",
     title: "Law Firms",
     description: "Our link building service for law firms increases visibility in competitive legal markets. We secure backlinks from trusted legal directories and publications that help attorneys rank higher and attract qualified clients.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/link-building-services/businesses-we-serve/original/law-firms.svg`,
+    imgWhite: `/assets/images/link-building-services/businesses-we-serve/hover/law-firms.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -304,8 +314,8 @@ export const linkBuildingServicesIndustriesCardsData = [
     icon: "/assets/images/industry/ecommerce.png",
     title: "E-commerce",
     description: "Our link building service for ecommerce improves product and category page rankings. We earn placements on retail blogs, review platforms, and authority publishers that drive more traffic and sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/link-building-services/businesses-we-serve/original/e-commerce.svg`,
+    imgWhite: `/assets/images/link-building-services/businesses-we-serve/hover/e-commerce.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -314,8 +324,8 @@ export const linkBuildingServicesIndustriesCardsData = [
     icon: "/assets/images/industry/healthcare.png",
     title: "Healthcare",
     description: "Our link building service for healthcare connects providers with reputable medical and wellness websites. Each backlink builds trust, supports patient outreach, and strengthens visibility for health-related keywords.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/link-building-services/businesses-we-serve/original/healthcare.svg`,
+    imgWhite: `/assets/images/link-building-services/businesses-we-serve/hover/healthcare.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -324,8 +334,8 @@ export const linkBuildingServicesIndustriesCardsData = [
     icon: "/assets/images/industry/fintech.png",
     title: "Fintech",
     description: "Our link building service for fintech builds credibility with high-quality links from financial blogs, news outlets, and compliance-focused publishers. This approach improves authority and helps reach valuable investors and users.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/link-building-services/businesses-we-serve/original/fintech.svg`,
+    imgWhite: `/assets/images/link-building-services/businesses-we-serve/hover/fintech.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -334,8 +344,8 @@ export const linkBuildingServicesIndustriesCardsData = [
     icon: "/assets/images/industry/automotive.png",
     title: "Automotive",
     description: "Our link building service for the automotive industry enhances online visibility for dealerships, repair shops, and auto tech companies. We earn backlinks from review sites, associations, and local publishers that boost search rankings and traffic.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/link-building-services/businesses-we-serve/original/automotive.svg`,
+    imgWhite: `/assets/images/link-building-services/businesses-we-serve/hover/automotive.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -344,8 +354,8 @@ export const linkBuildingServicesIndustriesCardsData = [
     icon: "/assets/images/industry/travel.png",
     title: "Travel",
     description: "Our link building service for travel increases exposure for agencies, tour operators, and booking platforms. We secure backlinks from travel blogs, destination sites, and global content publishers that attract engaged travelers.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/link-building-services/businesses-we-serve/original/travel.svg`,
+    imgWhite: `/assets/images/link-building-services/businesses-we-serve/hover/travel.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -360,25 +370,25 @@ export const linkBuildingServicesWorkflowData = {
       number: "01",
       title: "Research & Strategy",
       description: "We begin with a backlink profile audit, reviewing your site's existing links and analyzing competitors. This allows us to identify opportunities for growth and shape a strategy focused on authority and relevance.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/link-building-services/our-link-building-process/research-strategy.svg",
     },
     {
       number: "02",
       title: "Outreach & Relationship Building",
       description: "Our team engages in targeted content outreach and guest posting, building genuine relationships with authority sites. Each partnership is selected carefully to provide backlinks that align with your industry and SEO goals.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/link-building-services/our-link-building-process/outreach-relationship-building.svg",
     },
     {
       number: "03",
       title: "Content Creation & Placement",
       description: "We create optimized content with natural anchor text, ensuring backlinks are embedded within articles that match topic relevance. This strengthens trust signals while supporting both rankings and qualified traffic.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/link-building-services/our-link-building-process/content-creation-placement.svg",
     },
     {
       number: "04",
       title: "Monitoring & Reporting",
       description: "Every referring domain is tracked to assess performance. From domain authority to organic rankings, we provide transparent reporting so you can measure exactly how backlinks are impacting growth.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/link-building-services/our-link-building-process/monitoring-reporting.svg",
     }
   ]
 };
