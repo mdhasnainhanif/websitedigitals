@@ -52,7 +52,7 @@ export const guestPostingServicesScrollSectionData = {
       id: "guest-posting-firstScroller",
       step: 1,
       title: "Editorial Quality Control",
-      icon: "/assets/images/icons/icon_Services.svg",
+      icon: "/assets/images/guest-posting-services/why-choose-our-guest-posting-service/editorial-quality-control.svg",
       paragraphs: [
         "Every guest post goes through strict editorial guidelines and quality checks to ensure it meets publisher standards, uses natural anchor text, and provides real value to readers. This approach increases acceptance rates and ensures your links stay live long-term."
       ],
@@ -67,7 +67,7 @@ export const guestPostingServicesScrollSectionData = {
       id: "guest-posting-secondScroller",
       step: 2,
       title: "Customized Anchor Strategy",
-      icon: "/assets/images/icons/icon_technology.svg",
+      icon: "/assets/images/guest-posting-services/why-choose-our-guest-posting-service/customized-anchor-strategy.svg",
       paragraphs: [
         "We develop a personalized anchor text plan based on your target keywords and backlink profile. This keeps your link-building strategy natural, diversified, and optimized for maximum SEO impact."
       ],
@@ -82,7 +82,7 @@ export const guestPostingServicesScrollSectionData = {
       id: "guest-posting-thirdScroller",
       step: 3,
       title: "Dedicated Campaign Manager",
-      icon: "/assets/images/icons/icon_Solutions.svg",
+      icon: "/assets/images/guest-posting-services/why-choose-our-guest-posting-service/dedicated-campaign-manager.svg",
       paragraphs: [
         "Each campaign is overseen by a dedicated outreach manager who coordinates communication, tracks progress, and ensures your guest posting campaign runs smoothly from start to finish."
       ],
@@ -97,7 +97,7 @@ export const guestPostingServicesScrollSectionData = {
       id: "guest-posting-fourthScroller",
       step: 4,
       title: "Guaranteed Link Replacement",
-      icon: "/assets/images/icons/icon_Industries.svg",
+      icon: "/assets/images/guest-posting-services/why-choose-our-guest-posting-service/guaranteed-link-replacement.svg",
       paragraphs: [
         "If a guest post link is removed or changed within an agreed timeframe, we replace it at no extra cost. This guarantees the backlink equity you paid for and keeps your campaign ROI intact."
       ],
@@ -112,7 +112,7 @@ export const guestPostingServicesScrollSectionData = {
       id: "guest-posting-fifthScroller",
       step: 5,
       title: "Data-Driven Site Selection",
-      icon: "/assets/images/icons/icon_Services.svg",
+      icon: "/assets/images/guest-posting-services/why-choose-our-guest-posting-service/data-driven-site-selection.svg",
       paragraphs: [
         "We use SEO tools like Ahrefs, SEMrush, and Moz to select websites with strong domain metrics, relevant traffic, and healthy backlink profiles, ensuring every guest post placement supports your long-term SEO goals."
       ],
@@ -130,6 +130,7 @@ export const guestPostingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Manual Blogger Outreach",
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/manual-blogger-outreach.svg",
     description: "We run personalized outreach campaigns to connect with real publishers and secure genuine guest post opportunities. Every site is manually vetted for domain authority (DA), organic traffic, and niche relevance, ensuring safe and effective link placements that align with Google's link guidelines.",
     features: [
       "Personalized outreach campaigns",
@@ -141,6 +142,7 @@ export const guestPostingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Niche-Relevant Content Writing",
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/niche-relevant-content-writing.svg",
     description: "Our team produces SEO-optimized guest post content tailored to your industry. Each article includes natural anchor text, follows publisher requirements, and provides value to readers, increasing the chances of long-term link placement and better engagement.",
     features: [
       "SEO-optimized content",
@@ -151,7 +153,8 @@ export const guestPostingServicesServicesData = [
   },
   {
     icon: <BagIcon />,
-    title: "High-Authority Placements",
+    title: "High-Authority Placements", 
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/high-authority-placements.svg",
     description: "We secure guest posts on trusted, high-authority websites with real traffic and strong domain metrics. Each placement is carefully vetted for relevance, credibility, and SEO value, ensuring your backlinks boost rankings, drive referral traffic, and strengthen brand authority.",
     features: [
       "High DA/DR sites",
@@ -163,6 +166,7 @@ export const guestPostingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Link Tracking & Reporting",
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/link-tracking-reporting.svg",
     description: "Every campaign comes with transparent reporting, including live URLs, metrics, and placement status. This ensures you can monitor progress, measure ROI, and see exactly how your guest posting service is impacting your rankings.",
     features: [
       "Transparent reporting",
@@ -174,6 +178,7 @@ export const guestPostingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "White-Label Guest Posting",
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/white-label-guest-posting.svg",
     description: "Agencies can scale effortlessly with our white-label guest posting services, offering fully managed blogger outreach and reporting under your own brand. This helps you deliver value to clients without adding to your in-house workload.",
     features: [
       "White-label solutions",
@@ -229,6 +234,7 @@ export const guestPostingServicesImpactCardsData = [
     icon: "manual-outreach",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/guest-posting-services/why-guest-posting-matters-for-seo/high-authority-backlinks.svg",
   },
   {
     id: 2,
@@ -238,6 +244,7 @@ export const guestPostingServicesImpactCardsData = [
     icon: "pen",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/guest-posting-services/why-guest-posting-matters-for-seo/niche-relevant-placements.svg",
   },
   {
     id: 3,
@@ -247,6 +254,7 @@ export const guestPostingServicesImpactCardsData = [
     icon: "authority",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/guest-posting-services/why-guest-posting-matters-for-seo/white-hat-risk-free-approach.svg",
   },
   {
     id: 4,
@@ -256,6 +264,7 @@ export const guestPostingServicesImpactCardsData = [
     icon: "tracking",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/guest-posting-services/why-guest-posting-matters-for-seo/content-that-converts.svg",
   },
  
 ];
@@ -286,8 +295,8 @@ export const guestPostingServicesIndustriesCardsData = [
     description:
       "Our guest posting service for finance secures backlinks from credible financial publishers, enhancing compliance, improving search visibility, and attracting high-value leads in competitive markets.",
     icon: "/assets/images/industry/finance.png",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/original/finance.svg`,
+    imgWhite: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/hover/finance.svg`,
     alt: "Finance",
     width: 71,
     height: 71,
@@ -297,8 +306,8 @@ export const guestPostingServicesIndustriesCardsData = [
     description:
       "Through our guest posting service for healthcare, we publish on trusted medical and wellness websites to strengthen SEO performance, build credibility, and improve patient engagement.",
     icon: "/assets/images/industry/healthcare.png",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/original/healthcare.svg`,
+    imgWhite: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/hover/healthcare.svg`,
     alt: "Healthcare",
     width: 71,
     height: 71,
@@ -308,8 +317,8 @@ export const guestPostingServicesIndustriesCardsData = [
     description:
       "Our guest posting service for real estate connects your brand with industry-relevant and local platforms, boosting visibility for agents, brokers, and investors while supporting geo-targeted SEO growth.",
     icon: "/assets/images/industry/real-estate.png",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/original/real-estate.svg`,
+    imgWhite: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/hover/real-estate.svg`,
     alt: "Real Estate",
     width: 71,
     height: 71,
@@ -319,8 +328,8 @@ export const guestPostingServicesIndustriesCardsData = [
     description:
       "We offer a guest posting service for ecommerce that places your brand on high-traffic retail and product sites, driving category rankings, increasing conversions, and expanding customer reach.",
     icon: "/assets/images/industry/ecommerce.png",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/original/ecommerce.svg`,
+    imgWhite: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/hover/ecommerce.svg`,
     alt: "Ecommerce",
     width: 71,
     height: 71,
@@ -330,8 +339,8 @@ export const guestPostingServicesIndustriesCardsData = [
     description:
       "Our guest posting service for education helps schools and EdTech companies gain authority on reputable academic platforms, improving visibility, credibility, and enrollment growth.",
     icon: "/assets/images/industry/education.png",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/original/education.svg`,
+    imgWhite: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/hover/education.svg`,
     alt: "Education",
     width: 71,
     height: 71,
@@ -341,8 +350,8 @@ export const guestPostingServicesIndustriesCardsData = [
     description:
       "With our guest posting service for fitness, we secure placements on fitness and lifestyle websites, increasing organic traffic, boosting memberships, and engaging audiences through wellness-focused content.",
     icon: "/assets/images/industry/fitness.png",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/original/fitness.svg`,
+    imgWhite: `/assets/images/guest-posting-services/who-we-help-grow-through-guest-posting/hover/fitness.svg`,
     alt: "Fitness",
     width: 71,
     height: 71,
@@ -357,31 +366,34 @@ export const guestPostingServicesWorkflowData = {
       number: "01",
       title: "Prospecting & Vetting",
       description: "We research and vet websites for niche relevance, domain authority (DA), and organic traffic quality. Using tools like Ahrefs and Moz, we ensure every site is clean, relevant, and trusted,  giving your guest posts maximum SEO impact.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/guest-posting-services/how-our-guest-posting-process-delivers-results/prospecting-vetting.svg",
+      alignment: "right",
     },
     {
       number: "02",
       title: "Personalized Outreach",
       description: "Through manual blogger outreach, we connect with publishers using tailored pitches that secure genuine guest posting opportunities. This approach avoids spam networks and ensures compliance with Google's link guidelines.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/guest-posting-services/how-our-guest-posting-process-delivers-results/personalized-outreach.svg",
     },
     {
       number: "03",
       title: "Content Creation",
       description: "Our writers craft SEO-optimized guest post content with natural anchor text and niche-relevant insights. This improves keyword rankings while engaging readers and building topical authority.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/guest-posting-services/how-our-guest-posting-process-delivers-results/content-creation.svg",
+      alignment: "right",
     },
     {
       number: "04",
       title: "Placement & Verification",
       description: "We confirm every guest post placement, verify link type, and ensure indexing. A detailed placement report with live URLs and metrics keeps you informed and confident.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/guest-posting-services/how-our-guest-posting-process-delivers-results/placement-verification.svg",
     },
     {
       number: "05",
       title: "Performance Tracking",
       description: "Post-placement, we monitor keyword movement and link health, adjusting your guest posting strategy to maximize ROI and support long-term SEO growth.",
-      image: "/assets/images/work/step5.png",
+      image: "/assets/images/guest-posting-services/how-our-guest-posting-process-delivers-results/performance-tracking.svg",
+      alignment: "right",
     }
   ]
 };
@@ -394,7 +406,7 @@ export const guestPostingServicesWhyChooseUsSectionData = {
 
 export const guestPostingServicesWhyChooseUsData = [
   {
-    icon: "/assets/images/icons/icon_Services.svg", 
+    icon: "/assets/images/guest-posting-services/why-choose-our-guest-posting-service/editorial-quality-control.svg", 
     title: "Editorial Quality Control",
     description: "Every guest post goes through strict editorial guidelines and quality checks to ensure it meets publisher standards, uses natural anchor text, and provides real value to readers. This approach increases acceptance rates and ensures your links stay live long-term.",
     features: [
