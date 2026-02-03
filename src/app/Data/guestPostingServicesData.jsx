@@ -394,7 +394,7 @@ export const guestPostingServicesWhyChooseUsSectionData = {
 
 export const guestPostingServicesWhyChooseUsData = [
   {
-    icon: "/assets/images/icons/icon_Services.svg",
+    icon: "/assets/images/icons/icon_Services.svg", 
     title: "Editorial Quality Control",
     description: "Every guest post goes through strict editorial guidelines and quality checks to ensure it meets publisher standards, uses natural anchor text, and provides real value to readers. This approach increases acceptance rates and ensures your links stay live long-term.",
     features: [
