@@ -135,8 +135,9 @@ export const webApplicationDevelopmentImpactCardsData = [
     title: "Business Growth and Market Reach",
     description:
       "An agile development methodology shortens release cycles and adapts to shifting demands. SaaS applications extend access across regions, while responsive web apps ensure usability on every device, supporting wider market reach.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: " /assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/web-application-development-services/why-businesses-invest/business-growth.svg",
   },
   {
     id: 2,
@@ -145,6 +146,7 @@ export const webApplicationDevelopmentImpactCardsData = [
       "Integrated cybersecurity practices and secure API integration protect sensitive data. Cloud-based applications enhance governance and compliance, aligned with standards such as the OWASP Top Ten, NIST, and ISO/IEC 27001.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/web-application-development-services/why-businesses-invest/data-security.svg",
   },
   {
     id: 3,
@@ -153,6 +155,7 @@ export const webApplicationDevelopmentImpactCardsData = [
       "Strong UX/UI design, cross-platform compatibility, and progressive web apps (PWA) deliver consistent, accessible experiences. Adhering to W3C standards further reinforces credibility and competitiveness.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/web-application-development-services/why-businesses-invest/brand-image.svg",
   },
   {
     id: 4,
@@ -161,6 +164,7 @@ export const webApplicationDevelopmentImpactCardsData = [
       "Designing with scalability minimizes redevelopment costs, while cloud-based applications reduce infrastructure expenses. Together, these factors improve efficiency and deliver measurable ROI.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/web-application-development-services/why-businesses-invest/cost-effectiveness.svg",
   },
 ];
 
@@ -184,6 +188,7 @@ export const webApplicationDevelopmentServicesData = [
       "We build bespoke applications aligned with unique workflows and goals. From tailored solutions for small businesses to enterprise-grade web apps, every project is created for measurable impact.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/web-application-development-services/web-app-development-services/custom-web-app-development.svg",
   },
   {
     id: 2,
@@ -192,6 +197,7 @@ export const webApplicationDevelopmentServicesData = [
       "With expertise in frontend and backend development, our team delivers secure and responsive solutions. Using Node.js, React, Angular, and Django, we create applications that perform across devices.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/web-application-development-services/web-app-development-services/full-stack-development.svg",
   },
   {
     id: 3,
@@ -200,6 +206,7 @@ export const webApplicationDevelopmentServicesData = [
       "We develop applications built for the cloud from the start. Leveraging AWS, Azure, and Google Cloud, we deliver cloud-native apps with SaaS integration that scale and adapt with ease.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/web-application-development-services/web-app-development-services/cloud-ready-application-development.svg",
   },
   {
     id: 4,
@@ -208,6 +215,7 @@ export const webApplicationDevelopmentServicesData = [
       "Our API-driven development connects your applications to third-party systems for greater functionality. By ensuring system interoperability within digital ecosystems, we expand capabilities and streamline operations.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/web-application-development-services/web-app-development-services/api-third-party-integration.svg",
   },
 ];
 
@@ -299,7 +307,7 @@ export const webApplicationDevelopmentScrollSectionData = {
       id: "app-firstScroller",
       step: 1,
       title: "End-to-End Expertise",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-application-development-services/what-makes/end-to-end-expertise.svg",
       paragraphs: [
         "We manage the entire software development lifecycle, supported by DevOps practices and agile delivery methods. This ensures projects are delivered efficiently, with continuous improvement and faster time to market.",
       ],
@@ -314,7 +322,7 @@ export const webApplicationDevelopmentScrollSectionData = {
       id: "app-secondScroller",
       step: 2,
       title: "Future-Proof Technology Stack",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-application-development-services/what-makes/future-proof-technology-stack.svg",
       paragraphs: [
         "Our solutions are built using modern frameworks such as React, Angular, Vue.js, and Django. With responsive design principles and progressive web apps, applications remain relevant, adaptable, and aligned with the latest industry standards.",
       ],
@@ -329,7 +337,7 @@ export const webApplicationDevelopmentScrollSectionData = {
       id: "app-thirdScroller",
       step: 3,
       title: "Focus on Security & Compliance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-application-development-services/what-makes/focus-on-security-compliance.svg",
       paragraphs: [
         "We adhere to international benchmarks like ISO/IEC 27001 and apply secure development practices across every project. By delivering compliance-ready solutions, we help businesses meet regulations while protecting sensitive data.",
       ],
@@ -344,7 +352,7 @@ export const webApplicationDevelopmentScrollSectionData = {
       id: "app-forthScroller",
       step: 4,
       title: "Scalable Solutions for Any Business Size",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-application-development-services/what-makes/scalable-solutions-for-any-business-size.svg",
       paragraphs: [
         "From startups to enterprises, our approach to enterprise web development ensures growth without limitations. By leveraging cloud scalability and performance optimization, we deliver solutions that adapt as business needs expand.",
       ],
@@ -359,7 +367,7 @@ export const webApplicationDevelopmentScrollSectionData = {
       id: "app-fifthScroller",
       step: 5,
       title: "User-Centric Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-application-development-services/what-makes/user-centric-approach.svg",
       paragraphs: [
         "Our process starts with a UX-first design that prioritizes usability. Through usability testing and a commitment to digital innovation, we create applications that not only meet business goals but also exceed user expectations.",
       ],
@@ -389,7 +397,7 @@ export const webApplicationDevelopmentWorkflowData = {
       title: "Discovery & Strategy",
       description:
         "We begin with business analysis to understand objectives and challenges, followed by requirements gathering to capture critical functionality. The outcome is a digital transformation roadmap that guides development with clear milestones and priorities.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/web-application-development-services/our-process/discovery-strategy.svg",
       alignment: "right",
     },
     {
@@ -398,7 +406,7 @@ export const webApplicationDevelopmentWorkflowData = {
       title: "Design & Prototyping",
       description:
         "Once the strategy is set, our design team creates intuitive UI/UX design concepts. We prepare wireframes to define structure and deliver responsive prototypes that allow stakeholders to visualize and refine the application before development begins.",
-      image: "/assets/images/work/step2.png",
+        image: "/assets/images/web-application-development-services/our-process/design-prototyping.svg",
       alignment: "left",
     },
     {
@@ -407,7 +415,7 @@ export const webApplicationDevelopmentWorkflowData = {
       title: "Agile Development & Testing",
       description:
         "Development is carried out in iterative sprints, ensuring progress is measurable and adaptable. Through QA testing and optimized DevOps pipelines, every release maintains quality, scalability, and alignment with project goals.",
-      image: "/assets/images/work/step3.png",
+        image: "/assets/images/web-application-development-services/our-process/agile-development.svg",
       alignment: "right",
     },
     {
@@ -416,7 +424,7 @@ export const webApplicationDevelopmentWorkflowData = {
       title: "Deployment & Support",
       description:
         "The final application is prepared for cloud deployment, ensuring performance and scalability from day one. After launch, we provide ongoing maintenance and performance monitoring to keep the application secure, efficient, and ready to grow with your business.",
-      image: "/assets/images/work/step4.png",
+        image: "/assets/images/web-application-development-services/our-process/deployment-support.svg",
       alignment: "left",
     },
   ],

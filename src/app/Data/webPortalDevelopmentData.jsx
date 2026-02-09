@@ -143,6 +143,7 @@ export const webPortalDevelopmentImpactCardsData = [
       "Enterprise web portal development streamlines operations across departments, while business portal development improves workflows for mid-sized companies. Partner portal development enhances vendor and distributor collaboration, and document management portals reduce inefficiencies through structured information sharing.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/webportal-development-company/why-web/driving-business-growth-through-portals.svg",
   },
   {
     id: 2,
@@ -151,6 +152,7 @@ export const webPortalDevelopmentImpactCardsData = [
       "Customer self-service portals reduce support costs and increase satisfaction. eLearning portals deliver accessible education, while healthcare portal development services improve patient communication and record access. Online community portals create spaces for engagement and knowledge sharing.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/webportal-development-company/why-web/enhancing-customer-experience.svg",
   },
   {
     id: 3,
@@ -159,6 +161,7 @@ export const webPortalDevelopmentImpactCardsData = [
       "Cloud-based portal services provide flexibility and cost efficiency. SaaS portals offer continuous updates and scalability. Seamless application integration prevents data silos, supported by robust portal architecture for secure and scalable platforms.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/webportal-development-company/why-web/future-proofing-with-technology.svg",
   },
   {
     id: 4,
@@ -167,6 +170,7 @@ export const webPortalDevelopmentImpactCardsData = [
       "Standards from the W3C ensure accessibility, while OWASP guidelines safeguard against vulnerabilities. Businesses that adopt these frameworks build user trust, maintain compliance, and protect long-term credibility.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/webportal-development-company/why-web/strengthening-trust-and-compliance.svg",
   },
 ];
 
@@ -194,6 +198,7 @@ export const webPortalDevelopmentServicesData = [
       "We create tailored solutions, including multi-tenant and SaaS application portals, designed for scalability, usability, and long-term value.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services/custom-portal-development.svg",
   },
   {
     id: 2,
@@ -202,6 +207,7 @@ export const webPortalDevelopmentServicesData = [
       "Our enterprise portals centralize workflows, enable knowledge sharing, and provide intranet and extranet systems for seamless internal and external collaboration.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services/enterprice-solutions.svg",
   },
   {
     id: 3,
@@ -210,6 +216,7 @@ export const webPortalDevelopmentServicesData = [
       "Our portal integration services connect portals with existing business systems for smooth operations. We implement secure authentication systems to protect sensitive data and leverage cloud hosting services like Google Cloud, AWS, and Azure for performance and reliability.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services/integration-security.svg",
   },
   {
     id: 4,
@@ -218,6 +225,7 @@ export const webPortalDevelopmentServicesData = [
       "We follow ISO/IEC 27001 for security and CMMI certifications for process maturity. These standards ensure every portal is trusted, secure, and compliant with industry regulations.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services/quality-standards-and-compliance.svg",
   },
 ];
 
@@ -310,7 +318,7 @@ export const webPortalDevelopmentScrollSectionData = {
       id: "portal-firstScroller",
       step: 1,
       title: "Proven Track Record",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow/proven-track-record.svg",
       paragraphs: [
         "Recognized as one of the best web portal development firms, we are consistently ranked among the top portal development agencies in the US. Independent reviews highlight our ability to deliver projects on time while maintaining quality and scalability.",
       ],
@@ -325,7 +333,7 @@ export const webPortalDevelopmentScrollSectionData = {
       id: "portal-secondScroller",
       step: 2,
       title: "Security & Compliance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow/security-compliance.svg",
       paragraphs: [
         "We integrate OWASP best practices into every project, align frameworks with the NIST Cybersecurity Framework, and ensure WCAG accessibility compliance so that portals remain secure, inclusive, and reliable.",
       ],
@@ -340,7 +348,7 @@ export const webPortalDevelopmentScrollSectionData = {
       id: "portal-thirdScroller",
       step: 3,
       title: "Innovation & Scalability",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow/innovation-scalability.svg",
       paragraphs: [
         "From implementing cloud-based portal services to designing effective digital transformation strategies, our approach ensures that portals scale as businesses grow. Seamless application integration enables clients to unify systems and maintain efficiency across platforms.",
       ],
@@ -355,12 +363,12 @@ export const webPortalDevelopmentScrollSectionData = {
       id: "portal-forthScroller",
       step: 4,
       title: "Client-Centric Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow/client-centric-approach.svg",
       paragraphs: [
         "The user needs to shape every decision we make. By focusing on user experience for portals, we design platforms that are easy to adopt and manage. Our custom portal development services pricing is structured for flexibility, positioning us among the most affordable web portal developers without compromising on quality.",
       ],
       image: {
-        src: "/assets/images/scroller/digital-marketing/4.png",
+        src: " /assets/images/scroller/digital-marketing/4.png",
         alt: "Client-Centric Approach",
         width: 669,
         height: 376,
@@ -370,7 +378,7 @@ export const webPortalDevelopmentScrollSectionData = {
       id: "portal-fifthScroller",
       step: 5,
       title: "Global Experience with US Market Focus",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow/global-experience-with-us-market-focus.svg",
       paragraphs: [
         "With experience working alongside industry leaders such as IBM, Accenture, Cognizant, and Deloitte, we combine global knowledge with a deep understanding of the U.S. market. Insights from the U.S. Digital Service further strengthen our ability to deliver portals that meet government-level performance and compliance standards.",
       ],
@@ -397,7 +405,7 @@ export const webPortalDevelopmentWorkflowData = {
       title: "Discovery & Strategy",
       description:
         "The journey begins with understanding your requirements and defining the right foundation. Our team focuses on portal design and architecture to ensure stability and scalability from the start. We also plan business process automation portals that align with workflows, reducing manual tasks and improving efficiency.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/discovery-strategy.svg",
       alignment: "right",
     },
     {
@@ -406,7 +414,7 @@ export const webPortalDevelopmentWorkflowData = {
       title: "Design & Development",
       description:
         "Once the strategy is in place, we move into building user-friendly and reliable systems. With a strong focus on user experience design, our solutions are intuitive and easy to navigate. We combine custom software development with modern web application frameworks to deliver portals that are both functional and future-ready.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/design-development.svg",
       alignment: "left",
     },
     {
@@ -415,7 +423,7 @@ export const webPortalDevelopmentWorkflowData = {
       title: "Testing & Deployment",
       description:
         "Before launch, every solution undergoes rigorous testing to ensure reliability and security. We implement secure authentication systems to safeguard sensitive data and use trusted cloud hosting services like AWS, Google Cloud, and Azure to deliver stability, speed, and scalability.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/testing-deployment.svg",
       alignment: "right",
     },
     {
@@ -424,7 +432,7 @@ export const webPortalDevelopmentWorkflowData = {
       title: "Support & Optimization",
       description:
         "Our role doesn't end at deployment. We provide ongoing support to enhance performance and adapt to changing needs. Whether it's upgrading SaaS portals or refining knowledge management portals, we continuously optimize solutions to ensure they deliver long-term value.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/support-optimization.svg",
       alignment: "left",
     },
   ],

@@ -16,6 +16,10 @@
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
+.image{
+  max-width: 4.5rem;
+}
+
 .highlighted{
   position: relative;
 }

@@ -91,6 +91,8 @@ export const shopifyDevelopmentServicesData = [
       "Our Shopify development services include everything from initial configuration to launch. With expert Shopify store development, our team ensures your store is functional, secure, and optimized from day one. As a leading Shopify development agency in the USA, we deliver eCommerce development tailored to your market and customers.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/shopify-store-setup.svg",
+   
   },
   {
     id: 2,
@@ -99,6 +101,7 @@ export const shopifyDevelopmentServicesData = [
       "We create engaging storefronts through professional theme design and development. Our designers produce custom Shopify themes backed by strong UI/UX design principles, while developers use Liquid templating language for precise customization.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/custom-theme-design-development.svg",
   },
   {
     id: 3,
@@ -107,6 +110,7 @@ export const shopifyDevelopmentServicesData = [
       "Our Shopify app development services expand your store's capabilities. We handle API integrations and app integrations to connect essential tools and deliver custom functionality that meets your operational needs.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/app-development-integration.svg",
   },
   {
     id: 4,
@@ -115,6 +119,7 @@ export const shopifyDevelopmentServicesData = [
       "We manage seamless migrations with Shopify Plus development services and custom Shopify development to ensure a smooth transition. Our team uses scalable infrastructure and proven data migration processes to preserve performance and accuracy.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/store-migration.svg",
   },
   {
     id: 5,
@@ -123,6 +128,7 @@ export const shopifyDevelopmentServicesData = [
       "Through SEO optimization, mobile responsiveness, and conversion rate optimization (CRO), we enhance your store's search rankings and user experience. Our performance optimization ensures fast loading times and minimal downtime.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/e-commerce-optimization.svg",
   },
   {
     id: 6,
@@ -131,6 +137,7 @@ export const shopifyDevelopmentServicesData = [
       "We build unique features through custom Shopify development, API integration, and Liquid customization. For complex needs, we deliver enterprise-grade customization that scales with your business.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/custom-functionality.svg",
   },
   {
     id: 7,
@@ -139,6 +146,7 @@ export const shopifyDevelopmentServicesData = [
       "We implement headless commerce solutions with Shopify Plus development to give your store more flexibility. Using API integrations and scalable infrastructure, we create fast, future-ready eCommerce experiences.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/shopify-development-services/our-comprehensive-shopify-services/headless-shopify-development.svg",
   },
 ];
 
@@ -154,7 +162,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-firstScroller",
       step: 1,
       title: "Proven Shopify Experience",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/proven-shopify-experience.svg",
       paragraphs: [
         "As a certified Shopify Partner / Shopify Plus Partner and a trusted Shopify development agency, we provide Shopify development services and Shopify store development backed by years of industry experience and a strong portfolio.",
       ],
@@ -169,7 +177,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-secondScroller",
       step: 2,
       title: "Shopify Custom Store & App Solutions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/shopify-custom-store-app-solutions.svg",
       paragraphs: [
         "We deliver fully custom Shopify development, professional Shopify app development services, and expert theme design and development using Liquid templating language to achieve precise customization.",
       ],
@@ -184,7 +192,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-thirdScroller",
       step: 3,
       title: "SEO & Conversion Optimized",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/seo-conversion-optimized.svg",
       paragraphs: [
         "Our process integrates SEO optimization for Shopify stores, conversion rate optimization (CRO), and performance optimization, supported by semantic search strategies to boost visibility and conversions.",
       ],
@@ -199,7 +207,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-forthScroller",
       step: 4,
       title: "Agile & Transparent Process",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/agile-transparent-process.svg",
       paragraphs: [
         "We build on scalable infrastructure with Shopify Plus development, implementing API integrations and app integrations that keep projects flexible and transparent from start to finish.",
       ],
@@ -214,7 +222,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-fifthScroller",
       step: 5,
       title: "End-to-End Shopify Development Services",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/end-to-end-shopify-development-services.svg",
       paragraphs: [
         "From Shopify store setup to custom functionality, enterprise-grade customization, and headless commerce implementation, we manage the complete development cycle under one roof.",
       ],
@@ -230,7 +238,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-sixthScroller",
       step: 6,
       title: "Bug-Free & High-Quality",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/bug-free-high-quality.svg",
       paragraphs: [
         "We ensure testing and quality assurance at every stage, deliver mobile responsiveness, resolve issues through error debugging, and maintain peak performance through performance optimization.",
       ],
@@ -246,7 +254,7 @@ export const shopifyDevelopmentScrollSectionData = {
       id: "shopify-seventhScroller",
       step: 7,
       title: "24/7 Support & Maintenance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/shopify-development-services/why-clients-choose-our-shopify-development-services/support-maintenance.svg",
       paragraphs: [
         "Our ongoing Shopify support covers everything from post-launch SEO and store monitoring to security implementation, ensuring your store remains secure and fully operational around the clock.",
       ],
@@ -329,6 +337,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "sales",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/increased-sales.svg",
   },
   {
     id: 2,
@@ -338,6 +347,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "experience",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/better-customer-experience.svg",
   },
   {
     id: 3,
@@ -347,6 +357,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "management",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/simplified-store-management.svg",
   },
   {
     id: 4,
@@ -356,6 +367,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "growth",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/room-for-growth.svg",
   },
 ];
 
@@ -471,7 +483,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: "Consultation and Requirement Discussion",
       description:
         "We start with a thorough needs analysis for Shopify development, focusing on your goals, target audience, and technical requirements. Every step is aligned with your business model, so our Shopify development services and eCommerce development provide a strong, future-ready foundation.",
-      image: "/assets/images/work/step1.png",
+        image: "/assets/images/shopify-development-services/the-process-behind-our-shopify-success/consultation-and-requirement.svg",
       alignment: "right",
     },
     {
@@ -480,7 +492,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: "Discovery and Planning",
       description:
         "Our team creates a roadmap based on SEO keyword planning and semantic search insights to maximize visibility. We prepare for growth by designing around scalable infrastructure and incorporating Shopify Plus development strategies from the start.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/shopify-development-services/the-process-behind-our-shopify-success/discovery-and-planning.svg",
       alignment: "left",
     },
     {
@@ -489,7 +501,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: "Design and Prototyping",
       description:
         "We produce custom visuals and layouts through custom Shopify themes, strategic UI/UX design, and professional theme design and development. Using Liquid templating language, we ensure every element aligns with both brand identity and user needs.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/shopify-development-services/the-process-behind-our-shopify-success/design-and-prototyping.svg",
       alignment: "right",
     },
     {
@@ -498,7 +510,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: "Shopify Store Setup",
       description:
         "Our setup process covers complete Shopify store development and Shopify Plus development services. We focus on mobile responsiveness for all devices and integrate essential systems through API integrations.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/shopify-development-services/the-process-behind-our-shopify-success/shopify-store-setup.svg",
       alignment: "left",
     },
     {
@@ -798,8 +810,8 @@ export const shopifyDevelopmentIndustriesCardsData = [
     title: "Fashion Brands",
     description:
       "Our Shopify development for fashion brands creates visually striking, mobile-first stores with smooth navigation and optimized product displays that drive higher engagement and sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/fashion-brands.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/fashion-brands.svg`,
     alt: "Fashion Brands Shopify Development",
     width: 71,
     height: 71,
@@ -808,8 +820,8 @@ export const shopifyDevelopmentIndustriesCardsData = [
     title: "Cosmetic Store",
     description:
       "With our Shopify cosmetics store development services, we design elegant, performance-optimized stores that showcase beauty products with clean, modern layouts and deliver a smooth, trustworthy shopping journey.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/cosmetic-store.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/cosmetic-store.svg`,
     alt: "Cosmetic Store Shopify Development",
     width: 71,
     height: 71,
@@ -818,8 +830,8 @@ export const shopifyDevelopmentIndustriesCardsData = [
     title: "Furniture",
     description:
       "We provide Shopify development for furniture brands, building scalable stores with advanced product filters, room visualization tools, and seamless checkout to enhance the buying experience.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/furniture.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/furniture.svg`,
     alt: "Furniture Shopify Development",
     width: 71,
     height: 71,
@@ -828,8 +840,8 @@ export const shopifyDevelopmentIndustriesCardsData = [
     title: "Accessories",
     description:
       "Our Shopify accessories store development focuses on quick-buy options, curated product collections, and intuitive layouts that encourage impulse purchases and improve customer satisfaction.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/accessories.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/accessories.svg`,
     alt: "Accessories Shopify Development",
     width: 71,
     height: 71,
@@ -838,8 +850,8 @@ export const shopifyDevelopmentIndustriesCardsData = [
     title: "Wholesale Store",
     description:
       "Through our Shopify wholesale store development, we deliver B2B-ready platforms with bulk ordering features, tiered pricing, and secure account management for efficient wholesale operations.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/wholesale-store.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/wholesale-store.svg`,
     alt: "Wholesale Store Shopify Development",
     width: 71,
     height: 71,
@@ -848,8 +860,8 @@ export const shopifyDevelopmentIndustriesCardsData = [
     title: "Electronics",
     description:
       "Our Shopify development for electronics ensures fast, secure stores with product comparison tools, detailed spec pages, and reliable payment gateways for a frictionless purchase experience.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+      imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/electronics.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/electronics.svg`,
     alt: "Electronics Shopify Development",
     width: 71,
     height: 71,

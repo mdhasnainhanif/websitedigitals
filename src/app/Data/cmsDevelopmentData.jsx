@@ -91,6 +91,7 @@ export const cmsDevelopmentServicesData = [
       "We design and build CMS platforms from the ground up to match your business processes and long-term goals. Our CMS design and development approach covers planning, architecture, and deployment, with CMS integration services for third-party tools and smooth content migration that keeps your operations uninterrupted.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/cms-development-company/our-tailored-cms/custom-cms-development.svg",
   },
   {
     id: 2,
@@ -99,6 +100,7 @@ export const cmsDevelopmentServicesData = [
       "For high-traffic websites and complex operations, we deliver enterprise CMS development solutions built to handle advanced permissions, large-scale content structures, and demanding performance needs. Our team implements a microservices CMS architecture for flexibility and scalability as your requirements evolve.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/cms-development-company/our-tailored-cms/enterprice-development.svg",
   },
   {
     id: 3,
@@ -107,6 +109,7 @@ export const cmsDevelopmentServicesData = [
       "Extend your CMS capabilities with plugins built specifically for your needs. We specialize in custom plugin development for trusted CMS hosting and platform providers like WP Engine, Pantheon, and Sitecore, ensuring reliable performance and hassle-free integration.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/cms-development-company/our-tailored-cms/custom-plugin-development.svg",
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ export const cmsDevelopmentServicesData = [
       "We create intuitive, user-friendly CMS interfaces through thoughtful UX/UI design. This ensures administrators can work efficiently while end users enjoy a smooth, consistent digital experience. The result is reduced training time and increased productivity.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/cms-development-company/our-tailored-cms/ux-ui-design-for-cms-platforms.svg",
   },
   {
     id: 5,
@@ -123,6 +127,7 @@ export const cmsDevelopmentServicesData = [
       "Our SEO-ready CMS builds are designed to help your site rank well from the start. We integrate speed optimization, clean code structures, and easy-to-use metadata controls, providing tools that make managing titles, descriptions, and on-page SEO simple for your team.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/cms-development-company/our-tailored-cms/seo-ready-cms-development.svg",
   },
 ];
 
@@ -139,7 +144,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-firstScroller",
       step: 1,
       title: "Security-First Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cms-development-company/why-partner/security-first-approach.svg",
       paragraphs: [
         "Every CMS we develop follows industry-recognized frameworks, including the OWASP guidelines, a globally recognized set of best practices for web application security, to protect against vulnerabilities. From data encryption to role-based access, our process ensures compliance with US security standards while safeguarding sensitive information.",
       ],
@@ -154,7 +159,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-secondScroller",
       step: 2,
       title: "API-First CMS Architecture",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cms-development-company/why-partner/api-first-cms-architecture.svg",
       paragraphs: [
         "By adopting an API-first CMS approach, we enable smooth integration with third-party tools, custom applications, and future technologies. This architecture ensures your CMS remains flexible, compatible, and scalable as your digital needs expand.",
       ],
@@ -169,7 +174,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-thirdScroller",
       step: 3,
       title: "Optimized for Performance and Scalability",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cms-development-company/why-partner/optimized-for-performance-and-scalability.svg",
       paragraphs: [
         "Our builds focus on performance optimization from day one. This includes fast load speeds, efficient database queries for quicker data access, and resource caching to reduce server strain. Combined with infrastructure designed for scalability, your CMS can handle growth without costly rebuilds.",
       ],
@@ -184,7 +189,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-forthScroller",
       step: 4,
       title: "Expertise and Certification",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cms-development-company/why-partner/expertise-and-certification.svg",
       paragraphs: [
         "Our team holds advanced credentials, including TOGAF certification for enterprise architecture, a standard for designing and implementing efficient business systems, and Adobe Certified Expert status, which validates our deep technical knowledge and adherence to industry best practices.",
       ],
@@ -199,7 +204,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-fifthScroller",
       step: 5,
       title: "Smooth Content Migration",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/cms-development-company/why-partner/smooth-content-migration.svg",
       paragraphs: [
         "We manage content migration with precision, ensuring data integrity and minimizing downtime. Your existing content is transferred accurately, optimized for the new system, and ready for immediate use without disrupting your workflows.",
       ],
@@ -280,6 +285,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "scale",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/cms-development-company/what-impact/scale-without-limits.svg",
   },
   {
     id: 2,
@@ -289,6 +295,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "manage",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/cms-development-company/what-impact/manage-content-anywhere.svg",
   },
   {
     id: 3,
@@ -298,6 +305,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "maintenance",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/cms-development-company/what-impact/reduce-maintenance-time.svg",
   },
   {
     id: 4,
@@ -307,6 +315,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "seo",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/cms-development-company/what-impact/improve-search-rankings.svg",
   },
   {
     id: 5,
@@ -316,6 +325,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/cms-development-company/what-impact/keep-your-cms-secure.svg",
   },
 ];
 
@@ -431,7 +441,7 @@ export const cmsDevelopmentWorkflowData = {
       title: "Planning and Architecture",
       description:
         "We start by mapping your CMS structure and features, using TOGAF-certified architecture design to align with workflows and long-term goals. This stage also covers CMS integration services and a strategy for smooth content migration.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/cms-development-company/our-workflow/planning-and-architecture.svg",
       alignment: "right",
     },
     {
@@ -440,7 +450,7 @@ export const cmsDevelopmentWorkflowData = {
       title: "Development and Testing",
       description:
         "Our frontend CMS engineers and backend developers follow the Agile/Scrum methodology for flexibility and transparency. Using OWASP security best practices, we implement plugin development, API integration, and core functions, with rigorous sprint testing for reliability.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/cms-development-company/our-workflow/development-and-testing.svg",
       alignment: "left",
     },
     {
@@ -449,7 +459,7 @@ export const cmsDevelopmentWorkflowData = {
       title: "Content Migration and Optimization",
       description:
         "We transfer content quickly and accurately, optimizing every asset for the new system. The result is a fully manageable platform with no disruption to your operations.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/cms-development-company/our-workflow/content-migration-and-optimization.svg",
       alignment: "right",
     },
     {
@@ -458,7 +468,7 @@ export const cmsDevelopmentWorkflowData = {
       title: "Launch and Support",
       description:
         "We ensure a seamless go-live without downtime, followed by ongoing monitoring and updates. Support includes plugin enhancements, scalability improvements, and user training as needed.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/cms-development-company/our-workflow/launch-and-support.svg",
       alignment: "left",
     },
   ],

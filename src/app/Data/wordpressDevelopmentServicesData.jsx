@@ -119,6 +119,7 @@ export const wordpressDevelopmentImpactCardsData = [
     title: "Tailored Design & Features",
     description: "A custom WordPress website offers flexibility in design and functionality. With WordPress theme customization, brands can adapt layouts and features to their needs. Professional WordPress developers and a WordPress design agency ensure the design reflects business goals.",
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/wordpress-development-company/why-your-business-needs/tailored-design-features.svg",
   },
   {
     id: 2,
@@ -126,6 +127,7 @@ export const wordpressDevelopmentImpactCardsData = [
     title: "Optimized Performance",
     description: "Responsive web design ensures usability across devices, while fast-loading WordPress websites improve rankings and user experience. Performance optimization for WordPress and building mobile-friendly websites keeps visitors engaged.",
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/wordpress-development-company/why-your-business-needs/optimized-performance.svg",
   },
   {
     id: 3,
@@ -133,6 +135,7 @@ export const wordpressDevelopmentImpactCardsData = [
     title: "Scalable Solutions",
     description: "Scalable WordPress development supports growth. A WordPress multisite setup centralizes multiple sites, and WordPress enterprise development enables complex features. Future-proof WordPress solutions remain functional long term.",
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/wordpress-development-company/why-your-business-needs/scalable-solutions.svg",
   },
   {
     id: 4,
@@ -140,6 +143,7 @@ export const wordpressDevelopmentImpactCardsData = [
     title: "Robust Security & Reliability",
     description: "WordPress security services protect against threats, and secure WordPress hosting ensures stability. Malware protection for WordPress and website maintenance services USA keep sites reliable.",
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/wordpress-development-company/why-your-business-needs/robust-security-reliability.svg",
   },
   {
     id: 5,
@@ -147,6 +151,7 @@ export const wordpressDevelopmentImpactCardsData = [
     title: "Ease of Management",
     description: "A content management system (CMS) USA allows quick updates. WordPress admin panel customization simplifies tasks, while user-friendly WordPress websites and Gutenberg block development make content creation easy.",
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/wordpress-development-company/why-your-business-needs/ease-of-management.svg",
   },
 ];
 
@@ -164,6 +169,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "Theme Development",
     description: "Our custom WordPress theme development service delivers a unique and functional design aligned with your brand. Through WordPress theme customization services, we adapt layouts, features, and styling to your exact needs. With our expertise in professional WordPress design, we ensure themes are both visually engaging and technically optimized.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/theme-development.svg",
     button: {
       text: "Start My Theme Design",
       href: "#contact",
@@ -176,6 +182,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "Plugin Development",
     description: "We create secure and scalable tools to expand your site's capabilities. From custom plugin creation for unique features to WooCommerce plugin development for eCommerce, our plugins are built for performance and reliability.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/plugin-development.svg",
     button: {
       text: "Create My Plugin",
       href: "#contact",
@@ -188,6 +195,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "Migration & Updates",
     description: "Our WordPress migration services deliver smooth, downtime-minimized transitions from any platform. We handle website migration to WordPress with precision and offer WordPress upgrade services to keep your site current, secure, and feature-ready.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/migration-update.svg",
     button: {
       text: "Move My Website",
       href: "#contact",
@@ -200,6 +208,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "WordPress Enterprise Solutions",
     description: "Our WordPress enterprise development service is designed for high-traffic, complex builds. We handle corporate WordPress website development and large-scale WordPress projects with a focus on stability, security, and advanced functionality.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/wordpress-enterprice-solution.svg",
     button: {
       text: "Launch My Enterprise Site",
       href: "#contact",
@@ -212,6 +221,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "Headless WordPress",
     description: "Our headless WordPress development solutions give you the flexibility to deliver content across multiple platforms with speed and precision. We specialize in API integration for WordPress and decoupled WordPress architecture for advanced publishing control.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/headless-wordpress.svg",
     button: {
       text: "Start My Headless Build",
       href: "#contact",
@@ -224,6 +234,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "WordPress Maintenance",
     description: "As your ongoing support partner, we provide services as a WordPress maintenance company to keep your site secure, fast, and operational. Regular website backup & updates allow you to focus on your business while we manage the technical details.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/wordpress-maintenance.svg",
     button: {
       text: "Manage My Site",
       href: "#contact",
@@ -236,6 +247,7 @@ export const wordpressDevelopmentServicesData = [
     icon: <BagIcon/>,
     title: "E-Commerce Solutions",
     description: "Our WooCommerce development services create online stores that are conversion-focused and mobile-ready. From WordPress eCommerce website design to complete online store development with WordPress, we build solutions for smooth shopping experiences.",
+    image: "/assets/images/wordpress-development-company/our-expert-wordpress-development-services/e-commerce-solution.svg",
     button: {
       text: "Build My Store",
       href: "#contact",
@@ -264,8 +276,8 @@ export const wordpressDevelopmentIndustriesCardsData = [
     icon: "🏥",
     title: "Healthcare",
     description: "Our WordPress development services for healthcare include patient portals, appointment booking, and HIPAA-aligned privacy features, ensuring smooth user experiences and secure data handling.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/healthcare.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/healthcare.svg`,
     alt: "Healthcare WordPress Development",
     width: 71,
     height: 71,
@@ -275,8 +287,8 @@ export const wordpressDevelopmentIndustriesCardsData = [
     icon: "💳",
     title: "Fintech",
     description: "As a WordPress fintech website development agency, we build secure, high-performance websites with payment gateway integrations, KYC/AML workflows, and compliance-ready architecture.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/fintech.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/fintech.svg`,
     alt: "Fintech WordPress Development",
     width: 71,
     height: 71,
@@ -286,8 +298,8 @@ export const wordpressDevelopmentIndustriesCardsData = [
     icon: "🏠",
     title: "Real Estate",
     description: "Our WordPress development company for real estate creates IDX/MLS-enabled listing websites with map search, saved searches, and lead-capture tools that convert visitors into clients.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/real-estate.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/real-estate.svg`,
     alt: "Real Estate WordPress Development",
     width: 71,
     height: 71,
@@ -297,8 +309,8 @@ export const wordpressDevelopmentIndustriesCardsData = [
     icon: "🏢",
     title: "B2B",
     description: "We are a WordPress B2B website development company crafting scalable sites with gated content, CRM integrations, and lead generation funnels to boost sales and marketing ROI.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/b2b.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/b2b.svg`,
     alt: "B2B WordPress Development",
     width: 71,
     height: 71,
@@ -308,8 +320,8 @@ export const wordpressDevelopmentIndustriesCardsData = [
     icon: "🎪",
     title: "Event Management",
     description: "Our WordPress development for event management companies includes registration forms, ticketing, scheduling, and QR check-in features that simplify event operations.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/event-management.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/event-management.svg`,
     alt: "Event Management WordPress Development",
     width: 71,
     height: 71,
@@ -319,8 +331,8 @@ export const wordpressDevelopmentIndustriesCardsData = [
     icon: "🍽️",
     title: "Restaurant",
     description: "As a WordPress restaurant website development agency, we design mobile-friendly sites with digital menus, table reservations, and online ordering integrations that drive more bookings.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/restaurant.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/restaurant.svg`,
     alt: "Restaurant WordPress Development",
     width: 71,
     height: 71,
@@ -341,6 +353,7 @@ export const wordpressDevelopmentWhyChooseUsData = [
     icon: "🇺🇸",
     title: "US-Based Expert Team",
     description: "Our WordPress developers work closely with you to ensure every project reflects your brand and business goals. As a professional WordPress agency, we combine local market understanding with global best practices to deliver sites that are functional, reliable, and visually engaging.",
+    
   },
   {
     id: 2,
@@ -378,7 +391,7 @@ export const wordpressDevelopmentWorkflowData = {
       number: "01",
       title: "Discovery & Planning",
       description: "We begin with a WordPress project consultation to understand your objectives, audience, and functionality needs. Through a detailed website strategy for WordPress, we create a roadmap that aligns design, development, and business goals before any coding begins.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/wordpress-development-company/our-proven-wordpress-development-process/discovery-planning.svg",
       alignment: "right",
     },
     {
@@ -386,7 +399,7 @@ export const wordpressDevelopmentWorkflowData = {
       number: "02",
       title: "Design & Development",
       description: "Our team crafts a custom WordPress theme that reflects your brand identity and supports usability. Using responsive web design principles, we ensure your site delivers an optimal viewing experience on desktops, tablets, and mobile devices.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/wordpress-development-company/our-proven-wordpress-development-process/design-development.svg",
       alignment: "left",
     },
     {
@@ -394,7 +407,7 @@ export const wordpressDevelopmentWorkflowData = {
       number: "03",
       title: "Testing & Optimization",
       description: "Before launch, we conduct rigorous quality checks to verify functionality, compatibility, and speed. With performance optimization techniques, your site loads quickly, while secure WordPress hosting provides a stable foundation for long-term reliability.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/wordpress-development-company/our-proven-wordpress-development-process/testing-optimization.svg",
       alignment: "right",
     },
     {
@@ -402,7 +415,7 @@ export const wordpressDevelopmentWorkflowData = {
       number: "04",
       title: "Launch & Support",
       description: "Once your site goes live, we provide WordPress maintenance services to keep it secure, functional, and up to date. Regular ongoing website updates ensure content remains fresh and features continue to work seamlessly as your business grows.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/wordpress-development-company/our-proven-wordpress-development-process/launch-support.svg",
       alignment: "left",
     },
   ],
@@ -504,7 +517,7 @@ export const wordpressDevelopmentScrollSectionData = {
       id: "wordpress-firstScroller",
       step: 1,
       title: "US-Based Expert Team",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wordpress-development-company/why-do-businesses-trust-website-digitals-for-wordpress-development/us-based-expert-team.svg",
       paragraphs: [
         "Our WordPress developers work closely with you to ensure every project reflects your brand and business goals. As a professional WordPress agency, we combine local market understanding with global best practices to deliver sites that are functional, reliable, and visually engaging.",
       ],
@@ -519,7 +532,7 @@ export const wordpressDevelopmentScrollSectionData = {
       id: "wordpress-secondScroller",
       step: 2,
       title: "Proven Track Record",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wordpress-development-company/why-do-businesses-trust-website-digitals-for-wordpress-development/proven-track-record.svg",
       paragraphs: [
         "Recognized among the top-rated WordPress development companies, we consistently deliver trusted WordPress services backed by on-time delivery and tangible results. Our portfolio includes projects across the eCommerce, corporate, and creative industries, demonstrating adaptability and a history of client success.",
       ],
@@ -534,7 +547,7 @@ export const wordpressDevelopmentScrollSectionData = {
       id: "wordpress-thirdScroller",
       step: 3,
       title: "Full-Service Solutions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wordpress-development-company/why-do-businesses-trust-website-digitals-for-wordpress-development/full-service-solutions.svg",
       paragraphs: [
         "From strategy and design to technical build and optimization, we provide end-to-end WordPress design and development. Our team also offers WordPress SEO services to ensure your site is search-ready from day one, helping you attract and retain the right audience.",
       ],
@@ -549,7 +562,7 @@ export const wordpressDevelopmentScrollSectionData = {
       id: "wordpress-forthScroller",
       step: 4,
       title: "Latest Technology",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wordpress-development-company/why-do-businesses-trust-website-digitals-for-wordpress-development/latest-technology.svg",
       paragraphs: [
         "We implement the latest advancements, such as headless WordPress development, for enhanced performance and flexibility. Our expertise in Gutenberg block creation allows us to develop custom content blocks that make updates faster and more intuitive for your team.",
       ],
@@ -564,7 +577,7 @@ export const wordpressDevelopmentScrollSectionData = {
       id: "wordpress-fifthScroller",
       step: 5,
       title: "Client-Centric Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wordpress-development-company/why-do-businesses-trust-website-digitals-for-wordpress-development/client-centric-approach.svg",
       paragraphs: [
         "Your objectives guide every project. We deliver custom WordPress solutions that align with your vision and are built with a responsive WordPress design to ensure seamless experiences across all devices. Your feedback shapes each stage of development, ensuring the final product meets your expectations.",
       ],

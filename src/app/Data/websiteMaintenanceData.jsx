@@ -135,6 +135,7 @@ export const websiteMaintenanceImpactCardsData = [
       "Ongoing cybersecurity updates, timely vulnerability patching, and effective malware removal protect websites against threats. A valid SSL certificate combined with continuous security monitoring safeguards data and builds user confidence, supported by standards such as OWASP and ISO 27001.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/website-maintenance-services/why-your-business-needs-website-maintenance-services/security-and-trust.svg",
   },
   {
     id: 2,
@@ -143,6 +144,7 @@ export const websiteMaintenanceImpactCardsData = [
       "Investing in affordable website maintenance prevents costly emergencies. Routine plugin updates, scheduled backups, and timely bug fixes keep expenses predictable, validated by guidance from Google Search Central and case studies on downtime cost.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/website-maintenance-services/why-your-business-needs-website-maintenance-services/cost-efficiency.svg",
   },
   {
     id: 3,
@@ -151,6 +153,7 @@ export const websiteMaintenanceImpactCardsData = [
       "Maintaining strong site performance and fast load speed ensures a smooth user experience. Consistent mobile responsiveness and ongoing technical SEO further enhance visibility and trust, validated by W3C web standards and Google PageSpeed Insights benchmarks.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/website-maintenance-services/why-your-business-needs-website-maintenance-services/brand-image-and-customer-trust.svg",
   },
   {
     id: 4,
@@ -159,6 +162,7 @@ export const websiteMaintenanceImpactCardsData = [
       "Consistent website uptime, proactive server monitoring, and reliable downtime prevention protect against service interruptions. With ongoing website support, businesses maintain availability and safeguard revenue, reinforced by authoritative infrastructure guidelines and recognized cybersecurity frameworks.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/website-maintenance-services/why-your-business-needs-website-maintenance-services/business-continuity.svg",
   },
 ];
 
@@ -184,6 +188,7 @@ export const websiteMaintenanceServicesData = [
       "We prioritize safety with continuous malware scans, regular patch management, and proactive firewall protection. Through real-time uptime monitoring, potential risks are addressed early, keeping your website safe and accessible. Supported by ISO 27001 standards, our processes are built on trust and security.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/website-security-monitoring.svg",
   },
   {
     id: 2,
@@ -192,6 +197,7 @@ export const websiteMaintenanceServicesData = [
       "A reliable website depends on consistent updates and recovery planning. We manage routine CMS updates for platforms like WordPress, Joomla, and Drupal, along with essential plugin updates. Automated data backup and fast recovery solutions protect your content against unexpected issues, following Google Search Central guidance on maintaining site health.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/regular-updates-and-backups.svg",
   },
   {
     id: 3,
@@ -200,6 +206,7 @@ export const websiteMaintenanceServicesData = [
       "A fast site improves both user experience and search ranking. We enhance page speed with advanced caching, resolve technical issues through error resolution, and strengthen stability with load balancing. Every improvement is validated against Google PageSpeed Insights benchmarks.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/perfomance-optimization.svg",
   },
   {
     id: 4,
@@ -208,6 +215,7 @@ export const websiteMaintenanceServicesData = [
       "Accurate, engaging content and consistent design build trust with users. We deliver timely content updates, repair broken links, and apply focused design tweaks guided by usability standards, ensuring your site always reflects your business correctly.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/content-design-support.svg",
   },
   {
     id: 5,
@@ -216,6 +224,7 @@ export const websiteMaintenanceServicesData = [
       "Behind the scenes, our team makes sure search engines can effectively crawl and index your site. We manage crawl error fixes, implement schema markup, and improve indexing for stronger visibility. By adhering to W3C web standards, we keep your website technically compliant and search-ready.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/technical-seo-maintenance.svg",
   },
 ];
 
@@ -306,7 +315,7 @@ export const websiteMaintenanceScrollSectionData = {
       id: "maintenance-firstScroller",
       step: 1,
       title: "Proactive Website Security",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-maintenance-services/reasons-to-choose-our-website-maintenance-company/proactive-website-security.svg",
       paragraphs: [
         "We protect your site with timely vulnerability patching, managed SSL certificates, and comprehensive malware defense. This proactive approach minimizes risks and strengthens trust in your website's stability, supported by security frameworks such as ISO 27001.",
       ],
@@ -321,7 +330,7 @@ export const websiteMaintenanceScrollSectionData = {
       id: "maintenance-secondScroller",
       step: 2,
       title: "Tailored Maintenance Plans",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-maintenance-services/reasons-to-choose-our-website-maintenance-company/tailored-maintenance-plans.svg",
       paragraphs: [
         "We provide flexible solutions that match specific business needs. From affordable website maintenance packages for small businesses to enterprise website support solutions for larger organizations, each plan is structured to deliver consistent care at the right scale.",
       ],
@@ -336,7 +345,7 @@ export const websiteMaintenanceScrollSectionData = {
       id: "maintenance-thirdScroller",
       step: 3,
       title: "Transparent Reporting & Analytics",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-maintenance-services/reasons-to-choose-our-website-maintenance-company/transparent-reporting-analytics.svg",
       paragraphs: [
         "We deliver clarity with detailed uptime reports, regular performance tracking, and integrated Google Analytics insights. These practices ensure you have measurable data, validated by recognized reporting standards, to stay fully informed.",
       ],
@@ -351,7 +360,7 @@ export const websiteMaintenanceScrollSectionData = {
       id: "maintenance-forthScroller",
       step: 4,
       title: "Expert Technical Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-maintenance-services/reasons-to-choose-our-website-maintenance-company/expert-technical-support.svg",
       paragraphs: [
         "We provide fast troubleshooting, accurate bug fixes, and dependable web support to keep your site running without interruptions. Every issue is addressed with a focus on minimizing downtime and maintaining efficiency.",
       ],
@@ -366,7 +375,7 @@ export const websiteMaintenanceScrollSectionData = {
       id: "maintenance-fifthScroller",
       step: 5,
       title: "SEO-Driven Maintenance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-maintenance-services/reasons-to-choose-our-website-maintenance-company/seo-driven-maintenance.svg",
       paragraphs: [
         "We improve visibility through technical SEO updates, ongoing site optimization, and consistent search performance improvement. Guided by industry benchmarks, we ensure your website remains competitive and search-ready.",
       ],
@@ -390,10 +399,10 @@ export const websiteMaintenanceWorkflowData = {
     {
       id: 1,
       number: "01",
-      title: "Assessment & Planning",
+      title: "Assessment & Planning sdf",
       description:
         "We begin with a complete site audit to evaluate current performance, followed by a detailed risk analysis to uncover vulnerabilities. Establishing a clear baseline performance allows us to develop a structured plan that meets both immediate needs and long-term goals.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/website-maintenance-services/our-process-for-reliable-website-maintenance/assessment-planning-ongoing-monitoring-reporting.svg",
       alignment: "right",
     },
     {
@@ -402,7 +411,7 @@ export const websiteMaintenanceWorkflowData = {
       title: "Implementation of Security & Updates",
       description:
         "Once the plan is set, we apply essential patching, manage timely plugin updates, and handle SSL renewal with precision. These actions reinforce your website's defenses and keep it compliant with industry standards such as ISO 27001.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/website-maintenance-services/our-process-for-reliable-website-maintenance/implementation-of-security-updates-ongoing-monitoring-reporting.svg",
       alignment: "left",
     },
     {
@@ -411,7 +420,7 @@ export const websiteMaintenanceWorkflowData = {
       title: "Continuous Monitoring",
       description:
         "Reliability is maintained through round-the-clock server monitoring, proactive uptime checks, and ongoing performance optimization. By addressing issues early, your website continues to operate smoothly for both users and search engines.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/website-maintenance-services/our-process-for-reliable-website-maintenance/continuous-monitoring-ongoing-monitoring-reporting.svg",
       alignment: "right",
     },
     {
@@ -420,7 +429,7 @@ export const websiteMaintenanceWorkflowData = {
       title: "Reporting & Long-Term Improvements",
       description:
         "Progress is made transparent with scheduled analytics review and alignment with SEO best practices from trusted sources like Google Search Central. Each report highlights measurable outcomes and ensures long-term scalability, preparing your site for sustained growth.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/website-maintenance-services/our-process-for-reliable-website-maintenance/reporting-long-term-improvements.svg",
       alignment: "left",
     },
   ],

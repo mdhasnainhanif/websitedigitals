@@ -130,6 +130,7 @@ export const websiteSpeedOptimizationImpactCardsData = [
     "Better site performance reduces frustration and bounce rates. Focused load time reduction keeps visitors active and increases conversions.",
   icon: "/assets/images/work/pen-tool.svg",
   col: "col-12 col-md-6 col-lg-6",
+  image: "/assets/images/website-speed-optimization-services/what-impact-does-website-speed-optimization-make/user-experience.svg",
 },
 {
   id: 2,
@@ -138,6 +139,7 @@ export const websiteSpeedOptimizationImpactCardsData = [
     "Mobile website speed optimization services resolve delays on phones and tablets. With responsive performance and lazy loading, users get fast browsing everywhere.",
   icon: "/assets/images/work/pen-tool.svg",
   col: "col-12 col-md-6 col-lg-6",
+  image: "/assets/images/website-speed-optimization-services/what-impact-does-website-speed-optimization-make/mobile-performance.svg",
 },
 {
   id: 3,
@@ -146,6 +148,7 @@ export const websiteSpeedOptimizationImpactCardsData = [
     "Pages that load quickly meet Core Web Vitals, improve time to first byte (TTFB), and perform better in Google Lighthouse reports, leading to stronger rankings.",
   icon: "/assets/images/work/pen-tool.svg",
   col: "col-12 col-md-6 col-lg-6",
+  image: "/assets/images/website-speed-optimization-services/what-impact-does-website-speed-optimization-make/seo-rankings.svg",
 },
 {
   id: 4,
@@ -154,6 +157,7 @@ export const websiteSpeedOptimizationImpactCardsData = [
     "Optimized speed builds trust, improves conversions, and drives measurable revenue gains across industries.",
   icon: "/assets/images/work/pen-tool.svg",
   col: "col-12 col-md-6 col-lg-6",
+  image: "/assets/images/website-speed-optimization-services/what-impact-does-website-speed-optimization-make/revenue-impact.svg",
 },
 ];
 
@@ -182,6 +186,7 @@ export const websiteSpeedOptimizationServicesData = [
     "With our WordPress speed optimization services, we handle plugin optimization, script minification, and caching to ensure fast-loading, stable sites.",
   icon: <BagIcon />,
   isActive: true,
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/wordpress-speed-optimization.svg",
 },
 {
   id: 2,
@@ -190,6 +195,7 @@ export const websiteSpeedOptimizationServicesData = [
     "Our ecommerce site speed optimization improves sales and reduces drop-offs. We deliver expert Shopify speed optimization services, fixing render-blocking resources and other slowdowns.",
   icon: <BagIcon />,
   isActive: false,
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/ecommerce-performance-solutions.svg",
 },
 {
   id: 3,
@@ -198,6 +204,7 @@ export const websiteSpeedOptimizationServicesData = [
     "A full website performance audit identifies issues using the Google Lighthouse report. We address server response time and other bottlenecks for measurable gains.",
   icon: <BagIcon />,
   isActive: false,
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/full-website-performance-audits.svg",
 },
 {
   id: 4,
@@ -206,6 +213,7 @@ export const websiteSpeedOptimizationServicesData = [
     "We provide continuous tuning and performance monitoring to keep your site optimized as traffic and content grow.",
   icon: <BagIcon />,
   isActive: false,
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/ongoing-monitoring.svg",
 },
 ];
 
@@ -299,7 +307,7 @@ items: [
     id: "speed-firstScroller",
     step: 1,
     title: "Tailored Optimization for Every Platform",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/website-speed-optimization-services/why-choose-our-website-speed-optimization-company/tailored-optimization-for-every-platform.svg",
     paragraphs: [
       "Our approach adapts to each website. We apply caching improvements, code optimization, and image compression to deliver consistent results across platforms.",
     ],
@@ -314,7 +322,7 @@ items: [
     id: "speed-secondScroller",
     step: 2,
     title: "Proven SEO & Performance Results",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/website-speed-optimization-services/why-choose-our-website-speed-optimization-company/proven-seo-performance-results.svg",
     paragraphs: [
       "With a focus on Core Web Vitals, our professional site performance audits identify issues and deliver measurable improvements in search visibility.",
     ],
@@ -329,7 +337,7 @@ items: [
     id: "speed-thirdScroller",
     step: 3,
     title: "Mobile-First & Conversion-Oriented",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/website-speed-optimization-services/why-choose-our-website-speed-optimization-company/mobile-first-conversion-oriented.svg",
     paragraphs: [
       "We prioritize mobile website optimization, ensuring faster load times and responsive browsing that directly supports conversion growth.",
     ],
@@ -344,7 +352,7 @@ items: [
     id: "speed-forthScroller",
     step: 4,
     title: "Transparent Reporting & Audits",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/website-speed-optimization-services/why-choose-our-website-speed-optimization-company/transparent-reporting-audits.svg",
     paragraphs: [
       "Every project includes comprehensive performance audits with Lighthouse testing, giving you clear insight into results.",
     ],
@@ -359,7 +367,7 @@ items: [
     id: "speed-fifthScroller",
     step: 5,
     title: "Scalable for Enterprises & SMEs",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/website-speed-optimization-services/why-choose-our-website-speed-optimization-company/scalable-for-enterprises-smes.svg",
     paragraphs: [
       "Our services grow with your business, offering enterprise-ready performance solutions and cost-effective optimization packages tailored to your goals.",
     ],
@@ -387,7 +395,7 @@ steps: [
     title: "Initial Website Speed Audit",
     description:
       "We begin with a complete website performance audit using site speed testing tools such as GTmetrix and Google Lighthouse. This identifies issues like long load times, unoptimized code, and poor server response time.",
-    image: "/assets/images/work/step1.png",
+    image: "/assets/images/website-speed-optimization-services/how-we-work/initial-website-speed-audit-ongoing-monitoring-reporting.svg",
     alignment: "right",
   },
   {
@@ -396,7 +404,7 @@ steps: [
     title: "Implement Core Fixes",
     description:
       "Next, we address the fundamentals. Through code optimization, improved browser caching, and strategic CDN (Content Delivery Network) setup, we ensure websites run faster and more reliably.",
-    image: "/assets/images/work/step2.png",
+    image: "/assets/images/website-speed-optimization-services/how-we-work/implement-core-fixes-ongoing-monitoring-reporting.svg",
     alignment: "left",
   },
   {
@@ -405,7 +413,7 @@ steps: [
     title: "Advanced Optimization",
     description:
       "We apply advanced techniques, including image compression, lazy loading, and minification of scripts. These enhancements reduce page weight, streamline content delivery, and cut down on loading delays.",
-    image: "/assets/images/work/step3.png",
+    image: "/assets/images/website-speed-optimization-services/how-we-work/advanced-optimization-ongoing-monitoring-reporting.svg",
     alignment: "right",
   },
   {
@@ -414,7 +422,7 @@ steps: [
     title: "Ongoing Monitoring",
     description:
       "Optimization is not a one-time task. We provide regular tracking of Core Web Vitals, site performance metrics, and server response time optimization to maintain long-term speed and efficiency.",
-    image: "/assets/images/work/step4.png",
+    image: "/assets/images/website-speed-optimization-services/how-we-work/ongoing-monitoring-ongoing-monitoring-reporting.svg",
     alignment: "left",
   },
 ],

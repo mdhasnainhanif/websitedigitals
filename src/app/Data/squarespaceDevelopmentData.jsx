@@ -91,6 +91,7 @@ export const squarespaceDevelopmentServicesData = [
       "We deliver custom Squarespace website development using responsive Squarespace templates and the drag-and-drop builder. Our branding and design services create layouts that work across all devices and reflect your brand.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/squarespace-development-services/our-complete-squarespace/custom-theme-develpment.svg"
   },
   {
     id: 2,
@@ -99,6 +100,7 @@ export const squarespaceDevelopmentServicesData = [
       "Our Squarespace ecommerce development covers payment gateway integration, intuitive product pages, and mobile-responsive design. Full domain integration keeps your store consistent and accessible.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/squarespace-development-services/our-complete-squarespace/ecommerce-setup.svg"
   },
   {
     id: 3,
@@ -107,6 +109,7 @@ export const squarespaceDevelopmentServicesData = [
       "We handle social media integration, analytics and tracking setup, Google Analytics integration, and payment gateway integration to connect your site with essential tools.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/squarespace-development-services/our-complete-squarespace/api-third-party-integration.svg"
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ export const squarespaceDevelopmentServicesData = [
       "We build custom Squarespace templates for lead capture, with content management and branding, and design services to maintain a cohesive look. All forms are responsive Squarespace templates for device compatibility.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/squarespace-development-services/our-complete-squarespace/custom-forms.svg"
   },
   {
     id: 5,
@@ -123,6 +127,7 @@ export const squarespaceDevelopmentServicesData = [
       "Our Squarespace migration services move your site with no data loss. We include website launch services, domain integration, and SSL security setup for a smooth transition.",
     icon: <BagIcon />,
     isActive: false,
+   image: "/assets/images/squarespace-development-services/our-complete-squarespace/platform-migration.svg"
   },
   {
     id: 6,
@@ -131,6 +136,7 @@ export const squarespaceDevelopmentServicesData = [
       "With Squarespace SEO optimization services, we follow Google Search Central best practices, track metrics with analytics and tracking setup, and use mobile-responsive design to maintain usability.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/squarespace-development-services/our-complete-squarespace/perfomance-optimization.svg"
   },
 ];
 
@@ -145,7 +151,7 @@ export const squarespaceDevelopmentScrollSectionData = {
       id: "squarespace-firstScroller",
       step: 1,
       title: "US-Based Squarespace Experts",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/squarespace-development-services/why-growing/us-based-squarespace-experts.svg",
       paragraphs: [
         "Our US-based developer team brings hands-on experience and direct knowledge of the market. As a Squarespace Circle membership certification holder, we have access to exclusive tools and updates from the platform. We follow the vision established by Anthony Casalena, Founder of Squarespace, to create professional, high-quality websites that align with best practices.",
       ],
@@ -160,7 +166,7 @@ export const squarespaceDevelopmentScrollSectionData = {
       id: "squarespace-secondScroller",
       step: 2,
       title: "Certified & Recognized in the Industry",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/squarespace-development-services/why-growing/certified-recognized-in-the-industry.svg",
       paragraphs: [
         "We are backed by credentials that strengthen our work quality, including Google Analytics Certification, HubSpot Content Marketing Certification, and Google Ads Certification. These recognitions ensure that every project benefits from data-driven insights, effective content strategies, and compliant advertising practices.",
       ],
@@ -175,7 +181,7 @@ export const squarespaceDevelopmentScrollSectionData = {
       id: "squarespace-thirdScroller",
       step: 3,
       title: "Proven Track Record in Diverse Industries",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/squarespace-development-services/why-growing/proven-track-record-in-diverse-industries.svg",
       paragraphs: [
         "From small businesses to large-scale operations, our portfolio includes client success case references that demonstrate measurable results. We specialize in ecommerce website customization and provide branding and design services tailored to different market segments, ensuring each site reflects its industry's unique demands.",
       ],
@@ -190,7 +196,7 @@ export const squarespaceDevelopmentScrollSectionData = {
       id: "squarespace-forthScroller",
       step: 4,
       title: "Full-Service Approach from Design to Launch",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/squarespace-development-services/why-growing/full-service-approach-from-design-to-launch.svg",
       paragraphs: [
         "Our process covers everything from concept to live deployment. We deliver website launch services that meet W3C web standards compliance, develop custom templates, and implement robust content management solutions so your site remains functional and adaptable.",
       ],
@@ -205,7 +211,7 @@ export const squarespaceDevelopmentScrollSectionData = {
       id: "squarespace-fifthScroller",
       step: 5,
       title: "SEO & Marketing Integration for Growth",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/squarespace-development-services/why-growing/seo-marketing-integration-for-growth.svg",
       paragraphs: [
         "With our team of Google SEO experts, we follow Google Search Central guidelines to boost visibility and traffic. We integrate social media integration features and implement analytics and tracking setup to monitor performance, refine strategies, and support ongoing growth.",
       ],
@@ -292,6 +298,7 @@ export const squarespaceDevelopmentImpactCardsData = [
     icon: "brand",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/revenue-and-growth-focused-design.svg",
   },
   {
     id: 2,
@@ -301,6 +308,7 @@ export const squarespaceDevelopmentImpactCardsData = [
     icon: "seo",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/scalable-e-commerce-solutions.svg"
   },
     {
         id: 3,
@@ -310,7 +318,8 @@ export const squarespaceDevelopmentImpactCardsData = [
         icon: "ecommerce",
         isHighlighted: false,
         col: "col-12 col-md-4 col-lg-6",
-    },
+        image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/brand-authority-and-trust.svg"
+      },
     {
         id: 4,
         title: "Data-Driven Performance",
@@ -319,7 +328,8 @@ export const squarespaceDevelopmentImpactCardsData = [
         icon: "seo",
         isHighlighted: false,
         col: "col-12 col-md-4 col-lg-6",
-    },
+        image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/data-driven-performance.svg"
+      },
 ];
 
 // Impact Section Data (for DevelopmentCards component)
@@ -434,7 +444,7 @@ export const squarespaceDevelopmentWorkflowData = {
       title: "Discovery & Strategy",
       description:
         "We start by clarifying your brand goals, identifying your target audience, and defining the ideal website structure. Our team selects responsive Squarespace templates that provide a strong, scalable foundation for design and functionality.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/squarespace-development-services/our-process/discovery-strategy.svg",
       alignment: "right",
     },
     {
@@ -443,7 +453,7 @@ export const squarespaceDevelopmentWorkflowData = {
       title: "Design & Customization",
       description:
         "We use custom Squarespace templates with professional branding and design services to shape your site's look and feel. Our team fine-tunes layouts in the drag-and-drop builder, ensuring they are intuitive, consistent, and mobile-friendly across all devices.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/squarespace-development-services/our-process/design-customization.svg",
       alignment: "left",
     },
     {
@@ -452,7 +462,7 @@ export const squarespaceDevelopmentWorkflowData = {
       title: "Development & Integration",
       description:
         "Next, we configure ecommerce features, set up secure payment gateway integration, and complete domain integration. We also add social media integration so your site stays connected with your audience and supports engagement.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/squarespace-development-services/our-process/development-integration.svg",
       alignment: "right",
     },
     {
@@ -461,7 +471,7 @@ export const squarespaceDevelopmentWorkflowData = {
       title: "Optimization & Launch",
       description:
         "Before launch, we apply Squarespace SEO optimization services to boost search visibility. SSL security setup protects customer data, and performance optimization improves speed. We finish with analytics and tracking setup to measure success and guide ongoing improvements.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/squarespace-development-services/our-process/optimization-launch.svg",
       alignment: "left",
     },
   ],
@@ -663,8 +673,9 @@ export const squarespaceDevelopmentIndustriesCardsData = [
     title: "Restaurants",
     description:
       "Our Squarespace website development for restaurants highlights your menu, enables reservations, and attracts more diners. We focus on stunning visuals and a smooth user experience that encourages repeat visits.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    
+    imgOriginal: `/assets/images/squarespace-development-services/industries-we-support/orignal/restaurants.svg`,
+    imgWhite: `/assets/images/squarespace-development-services/industries-we-support/hover/restaurants.svg`,
     alt: "Restaurant Squarespace Development",
     width: 71,
     height: 71,
@@ -673,8 +684,8 @@ export const squarespaceDevelopmentIndustriesCardsData = [
     title: "Photographers",
     description:
       "We offer Squarespace site development for photographers that showcases your portfolio with fast-loading, gallery-style layouts. Our designs put your work in the spotlight and make booking sessions effortless.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/squarespace-development-services/industries-we-support/orignal/photographers.svg`,
+    imgWhite: `/assets/images/squarespace-development-services/industries-we-support/hover/photographers.svg`,
     alt: "Photographer Squarespace Development",
     width: 71,
     height: 71,
@@ -683,8 +694,8 @@ export const squarespaceDevelopmentIndustriesCardsData = [
     title: "Law Firms",
     description:
       "Our Squarespace development for law firms builds trust and credibility online. We create clear, professional websites with intuitive navigation and lead capture features to attract new clients.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/squarespace-development-services/industries-we-support/orignal/law-firms.svg`,
+    imgWhite: `/assets/images/squarespace-development-services/industries-we-support/hover/law-firms.svg`,
     alt: "Law Firm Squarespace Development",
     width: 71,
     height: 71,
@@ -693,8 +704,8 @@ export const squarespaceDevelopmentIndustriesCardsData = [
     title: "Fitness",
     description:
       "We deliver Squarespace development for fitness studios featuring class schedules, membership options, and booking functionality. Our solutions keep your community engaged and your business growing.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/squarespace-development-services/industries-we-support/orignal/fitness.svg`,
+    imgWhite: `/assets/images/squarespace-development-services/industries-we-support/hover/fitness.svg`,
     alt: "Fitness Studio Squarespace Development",
     width: 71,
     height: 71,
@@ -703,8 +714,8 @@ export const squarespaceDevelopmentIndustriesCardsData = [
     title: "Education",
     description:
       "Our Squarespace development for education services helps schools, courses, and programs connect with students. We integrate calendars, resources, and enrollment forms to support learning and engagement.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/squarespace-development-services/industries-we-support/orignal/education.svg`,
+    imgWhite: `/assets/images/squarespace-development-services/industries-we-support/hover/education.svg`,
     alt: "Education Squarespace Development",
     width: 71,
     height: 71,
@@ -713,8 +724,8 @@ export const squarespaceDevelopmentIndustriesCardsData = [
     title: "Healthcare",
     description:
       "We provide Squarespace development for healthcare clinics that makes patient interaction simple and secure. From service pages to online booking, we ensure a reliable, HIPAA-conscious experience.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/squarespace-development-services/industries-we-support/orignal/healthcare.svg`,
+    imgWhite: `/assets/images/squarespace-development-services/industries-we-support/hover/healthcare.svg`,
     alt: "Healthcare Squarespace Development",
     width: 71,
     height: 71,

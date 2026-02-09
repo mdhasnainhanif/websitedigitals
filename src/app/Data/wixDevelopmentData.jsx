@@ -91,6 +91,7 @@ export const wixDevelopmentServicesData = [
       "We design and build custom Wix themes that reflect your brand identity and meet your business needs. Every theme is optimized for both visual appeal and functionality, ensuring a consistent user experience.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/wix-development-services/our-comprehensive-services/custom-wix-theme-development.svg",
   },
   {
     id: 2,
@@ -99,6 +100,7 @@ export const wixDevelopmentServicesData = [
       "Through Wix API integration, we connect your website to CRMs, marketing automation platforms, payment systems, and other essential tools. These integrations help streamline workflows and improve site performance.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/wix-development-services/our-comprehensive-services/integrations-with-external-tools.svg",
   },
   {
     id: 3,
@@ -107,6 +109,7 @@ export const wixDevelopmentServicesData = [
       "Our website migration to Wix process is smooth and efficient, minimizing downtime and preserving your existing SEO value. We handle every step, from data transfer to design adaptation, so your site launches on Wix without disruptions.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/wix-development-services/our-comprehensive-services/platforam-migration-service.svg",
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ export const wixDevelopmentServicesData = [
       "With our Wix SEO services, we refine content, structure, and metadata to align with search engine best practices. This includes keyword targeting, internal linking, and compliance with Wix's built-in SEO tools.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/wix-development-services/our-comprehensive-services/onpage-optimization-for-wix.svg",
   },
   {
     id: 5,
@@ -123,6 +127,7 @@ export const wixDevelopmentServicesData = [
       "Our Wix maintenance & support ensures your site remains updated, secure, and fully functional. From routine checks to troubleshooting, we keep your website running at its best.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/wix-development-services/our-comprehensive-services/ongoing-website-care.svg",
   },
   {
     id: 6,
@@ -131,6 +136,7 @@ export const wixDevelopmentServicesData = [
       "We implement mobile optimization for Wix to guarantee your site looks and works perfectly on smartphones, tablets, and desktops. This includes adjustments for touch navigation, responsive layouts, and fast loading speeds.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/wix-development-services/our-comprehensive-services/responsive-and-mobile-ready-design.svg",
   },
 ];
 
@@ -145,7 +151,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-firstScroller",
       step: 1,
       title: "Specialized Developers",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose/specialized-developers.svg",
       paragraphs: [
         "A team of specialized Wix developers in the United States who understand the platform's capabilities and the needs of local audiences. Each project is tailored to connect with the right customers and deliver measurable results.",
       ],
@@ -160,7 +166,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-secondScroller",
       step: 2,
       title: "Complete Solutions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose/complete-solutions.svg",
       paragraphs: [
         "We provide end-to-end Wix development solutions covering planning, design, optimization, and post-launch care. This integrated approach saves time, reduces revisions, and ensures a consistent user experience.",
       ],
@@ -175,7 +181,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-thirdScroller",
       step: 3,
       title: "Proven Success",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose/proven-success.svg",
       paragraphs: [
         "Our portfolio includes Wix projects that have generated measurable growth, with documented increases in organic sessions and revenue. These results, highlighted by credible agencies such as Infidigit, demonstrate the return on investment our clients achieve.",
       ],
@@ -190,7 +196,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-forthScroller",
       step: 4,
       title: "Faster Delivery",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose/faster-delivery.svg",
       paragraphs: [
         "By using Velo by Wix, development timelines are shortened without compromising quality. This allows your website to go live sooner so you can begin attracting visitors and generating leads faster.",
       ],
@@ -205,7 +211,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-fifthScroller",
       step: 5,
       title: "Industry-Specific Customization",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose/industry-specific-customization.svg",
       paragraphs: [
         "We deliver industry-specific Wix customization so your site aligns with the standards and style of your market. This ensures both a professional presentation and functionality that matches your audience's expectations.",
       ],
@@ -220,7 +226,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-sixthScroller",
       step: 6,
       title: "Recognized Expertise",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose/recognized-expertise.svg",
       paragraphs: [
         "As part of the Certified Wix Partner program, our expertise is independently verified. Recognition on trusted platforms such as Clutch and GoodFirms confirms our credibility and consistent performance.",
       ],
@@ -301,6 +307,7 @@ export const wixDevelopmentImpactCardsData = [
       icon: "design",
       isHighlighted: true,
       col: "col-12 col-md-4 col-lg-6",
+      image: "/assets/images/wix-development-services/why-investing-in-wix-development-delivers-results/tailored-design-branding.svg",
     },
     {
       id: 2,
@@ -310,6 +317,7 @@ export const wixDevelopmentImpactCardsData = [
       icon: "functionality",
       isHighlighted: false,
       col: "col-12 col-md-4 col-lg-6",
+      image: "/assets/images/wix-development-services/why-investing-in-wix-development-delivers-results/advanced-functionality.svg",
     },
     {
       id: 3,
@@ -319,6 +327,7 @@ export const wixDevelopmentImpactCardsData = [
       icon: "performance",
       isHighlighted: false,
       col: "col-12 col-md-4 col-lg-6",
+      image: "/assets/images/wix-development-services/why-investing-in-wix-development-delivers-results/better-performance-conversions.svg",
     },
     {
       id: 4,
@@ -328,6 +337,7 @@ export const wixDevelopmentImpactCardsData = [
       icon: "efficiency",
       isHighlighted: false,
       col: "col-12 col-md-4 col-lg-6",
+      image: "/assets/images/wix-development-services/why-investing-in-wix-development-delivers-results/time-cost-efficiency.svg",
     },
   ];
   
@@ -347,7 +357,7 @@ export const wixDevelopmentIndustriesData = [
     title: "Law Firms",
     description:
       "Our custom Wix website development for law firms creates ADA-compliant, professional websites that showcase expertise, build credibility, and drive client inquiries with optimized layouts and conversion-focused design.",
-    icon: "/assets/images/industry/law.svg",
+    icon: "/assets/images//industry/law.svg",
   },
   {
     id: 2,
@@ -444,7 +454,7 @@ export const wixDevelopmentWorkflowData = {
       title: "Consultation",
       description:
         "We begin with a detailed consultation for Wix development to define goals, understand target audiences, and clarify functional requirements. This step sets the scope, identifies essential features, and establishes a clear direction before design and coding start.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/wix-development-services/our-step-by-step-wix-development-process/consultation.svg",
       alignment: "right",
     },
     {
@@ -453,7 +463,7 @@ export const wixDevelopmentWorkflowData = {
       title: "Planning & Wireframing",
       description:
         "Through careful planning and wireframing on Wix Editor, we map the site's structure, navigation flow, and content placement. This ensures the layout, user pathways, and interactions align with your brand identity and support conversion goals.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/wix-development-services/our-step-by-step-wix-development-process/planning-wireframing.svg",
       alignment: "left",
     },
     {
@@ -462,7 +472,7 @@ export const wixDevelopmentWorkflowData = {
       title: "Custom Features",
       description:
         "When advanced capabilities are needed, we handle custom feature integration with Velo by Wix. This can include interactive tools, automation, and third-party connections, built in line with official Wix guidelines to ensure compatibility and stability.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/wix-development-services/our-step-by-step-wix-development-process/custom-features.svg",
       alignment: "right",
     },
     {
@@ -471,7 +481,7 @@ export const wixDevelopmentWorkflowData = {
       title: "Testing & QA",
       description:
         "Every build undergoes thorough testing and quality assurance to verify functionality, responsiveness, and compliance with the SEO integration checklist from Wix's official resources. This stage also checks performance, browser consistency, and mobile usability.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/wix-development-services/our-step-by-step-wix-development-process/testing-qa.svg",
       alignment: "left",
     },
     {
@@ -480,7 +490,7 @@ export const wixDevelopmentWorkflowData = {
       title: "Launch & Support",
       description:
         "After launch, we deliver ongoing Wix support to maintain site performance, apply updates, and resolve technical issues promptly. This ensures your website continues to operate smoothly and meet business objectives long after it goes live.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/wix-development-services/our-step-by-step-wix-development-process/launch-support.svg",
       alignment: "right",
     },
   ],
@@ -689,8 +699,8 @@ export const wixDevelopmentIndustriesCardsData = [
     title: "Law Firms",
     description:
       "Our custom Wix website development for law firms creates ADA-compliant, professional websites that showcase expertise, build credibility, and drive client inquiries with optimized layouts and conversion-focused design.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wix-development-services/who-we-build/orignal/law-firms.svg`,
+    imgWhite: `/assets/images/wix-development-services/who-we-build/hover/law-firms.svg`,
     alt: "Law Firms Wix Development",
     width: 71,
     height: 71,
@@ -699,8 +709,8 @@ export const wixDevelopmentIndustriesCardsData = [
     title: "Healthcare",
     description:
       "We provide secure Wix website development for healthcare clinics, featuring HIPAA-conscious forms, easy appointment booking, and clear service pages that improve patient engagement and trust.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/wix-development-services/who-we-build/orignal/healthcare.svg`,
+    imgWhite: `/assets/images/wix-development-services/who-we-build/hover/healthcare.svg`,
     alt: "Healthcare Wix Development",
     width: 71,
     height: 71,
@@ -709,8 +719,8 @@ export const wixDevelopmentIndustriesCardsData = [
     title: "Real Estate",
     description:
       "Our Wix website development for real estate agents delivers MLS-ready listings, lead capture tools, and mobile-optimized layouts to connect buyers and sellers faster and close more deals.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/wix-development-services/who-we-build/orignal/real-estate.svg`,
+    imgWhite: `/assets/images/wix-development-services/who-we-build/hover/real-estate.svg`,
     alt: "Real Estate Wix Development",
     width: 71,
     height: 71,
@@ -719,8 +729,8 @@ export const wixDevelopmentIndustriesCardsData = [
     title: "Construction",
     description:
       "We offer Wix website development for construction companies that highlight past projects, showcase services with interactive galleries, and generate quality leads through strategic call-to-actions.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/wix-development-services/who-we-build/orignal/construction.svg`,
+    imgWhite: `/assets/images/wix-development-services/who-we-build/hover/construction.svg`,
     alt: "Construction Wix Development",
     width: 71,
     height: 71,
@@ -729,8 +739,8 @@ export const wixDevelopmentIndustriesCardsData = [
     title: "Dentists",
     description:
       "Our Wix website development for dentists makes it easy for patients to book appointments, learn about treatments, and trust your practice through a clean and professional design.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wix-development-services/who-we-build/orignal/dentists.svg`,
+    imgWhite: `/assets/images/wix-development-services/who-we-build/hover/dentists.svg`,
     alt: "Dentists Wix Development",
     width: 71,
     height: 71,
@@ -739,8 +749,8 @@ export const wixDevelopmentIndustriesCardsData = [
     title: "Education",
     description:
       "We create Wix website development for education providers that share resources, support enrollment, and engage students with mobile-friendly, easy-to-navigate websites.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/wix-development-services/who-we-build/orignal/education.svg`,
+    imgWhite: `/assets/images/wix-development-services/who-we-build/hover/education.svg`,
     alt: "Education Wix Development",
     width: 71,
     height: 71,
