@@ -301,7 +301,7 @@ export const vpsHostingServicesImpactCardsData = [
     icon: "tutoring",
     isHighlighted: false,
     col: "col-12 col-md-6 col-lg-6",
-    image: "/assets/images/vps-hosting-service/section1/improved-website-stability.svg",
+    image: "/assets/images/vps-hosting-service/section1/improved-website-stability1.svg",
   },
 ];
 
