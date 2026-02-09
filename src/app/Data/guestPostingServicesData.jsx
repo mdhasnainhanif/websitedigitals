@@ -153,7 +153,7 @@ export const guestPostingServicesServicesData = [
   },
   {
     icon: <BagIcon />,
-    title: "High-Authority Placements", 
+    title: "High-Authority Placements",
     image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/high-authority-placements.svg",
     description: "We secure guest posts on trusted, high-authority websites with real traffic and strong domain metrics. Each placement is carefully vetted for relevance, credibility, and SEO value, ensuring your backlinks boost rankings, drive referral traffic, and strengthen brand authority.",
     features: [
@@ -166,7 +166,7 @@ export const guestPostingServicesServicesData = [
   {
     icon: <BagIcon />,
     title: "Link Tracking & Reporting",
-    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/link-tracking-reporting.svg",
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/tracking-reporting.svg",
     description: "Every campaign comes with transparent reporting, including live URLs, metrics, and placement status. This ensures you can monitor progress, measure ROI, and see exactly how your guest posting service is impacting your rankings.",
     features: [
       "Transparent reporting",
@@ -228,7 +228,7 @@ export const guestPostingServicesImpactSectionData = {
 export const guestPostingServicesImpactCardsData = [
   {
     id: 1,
-    title: "High-Authority Backlinks",
+    title: "High-Authority Backlinks sdf",
     description:
       "Our guest posting services focus on securing high-authority backlinks from real websites. Guest posting earns high-authority backlinks from websites with strong domain authority (DA) and domain rating (DR). Sites are vetted for real traffic and clean link profiles, passing trust signals that boost rankings and improve search visibility.",
     icon: "manual-outreach",
