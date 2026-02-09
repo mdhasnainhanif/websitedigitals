@@ -117,7 +117,7 @@ export const contentWritingServicesImpactCardsData = [
     title: "Clarity & Readability",
     description: "Professional content writing ensures your message is easy to read and understand. Well-structured copy, optimized for readability and flow, keeps users engaged and reduces bounce rates.",
     isActive: true,
-    col: "col-12 col-md-6 col-lg-6"
+    col: "col-12 col-md-6 col-lg-6",
   },
   {
     id: 2,

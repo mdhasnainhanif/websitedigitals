@@ -95,10 +95,11 @@ export const contentMarketingServicesImpactSectionData = {
 export const contentMarketingServicesImpactCardsData = [
   {
     id: 1,
-    title: "Build Brand Authority",
+    title: "Build Brand Authority sdfg",
     description: "Strong brands thrive on consistent messaging that mirrors their values across every channel. Leveraging content governance ensures every blog, video, and email follows a unified brand storytelling strategy that builds trust and credibility.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/content-marketing-services/what-you-gain-from-professional-content-marketing/build-brand-authority.svg",
   },
   {
     id: 2,
@@ -106,6 +107,7 @@ export const contentMarketingServicesImpactCardsData = [
     description: "Content marketing works best when guided by data. Applying predictive analytics and audience behavior research uncovers topics that resonate, helping brands publish content that attracts attention and strengthens authority.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/content-marketing-services/what-you-gain-from-professional-content-marketing/use-data-backed-insights.svg",
   },
   {
     id: 3,
@@ -113,6 +115,7 @@ export const contentMarketingServicesImpactCardsData = [
     description: "Successful campaigns align with every step of the customer journey. Through customer journey mapping and conversion funnel strategy, content delivers the right message at the right time, boosting lead quality and conversions.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/content-marketing-services/what-you-gain-from-professional-content-marketing/map-the-customer-journey.svg",
   },
   {
     id: 4,
@@ -120,6 +123,7 @@ export const contentMarketingServicesImpactCardsData = [
     description: "Personalization drives deeper connections. Using content segmentation and behavioral targeting techniques allows for tailored campaigns that increase engagement and encourage long-term loyalty.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/content-marketing-services/what-you-gain-from-professional-content-marketing/personalize-for-engagement.svg",
   }
 ];
 
@@ -148,6 +152,7 @@ export const contentMarketingServicesServicesData = [
       "Lead generation focus"
     ],
     isActive: true,
+    image: "/assets/images/content-marketing-services/explore-our-content-marketing-services/content-campaign-strategy.svg",
   },
   {
     id: 2,
@@ -161,6 +166,7 @@ export const contentMarketingServicesServicesData = [
       "Brand positioning strategy"
     ],
     isActive: false,
+    image: "/assets/images/content-marketing-services/explore-our-content-marketing-services/audience-competitor-intelligence.svg",
   },
   {
     id: 3,
@@ -174,6 +180,7 @@ export const contentMarketingServicesServicesData = [
       "Conversion optimization"
     ],
     isActive: false,
+    image: "/assets/images/content-marketing-services/explore-our-content-marketing-services/lead-generating-content-assets.svg",
   },
   {
     id: 4,
@@ -187,6 +194,7 @@ export const contentMarketingServicesServicesData = [
       "Multi-platform promotion"
     ],
     isActive: false,
+    image: "/assets/images/content-marketing-services/explore-our-content-marketing-services/content-amplification-outreach.svg",
   },
   {
     id: 5,
@@ -200,6 +208,7 @@ export const contentMarketingServicesServicesData = [
       "Detailed reporting"
     ],
     isActive: false,
+    image: "/assets/images/content-marketing-services/explore-our-content-marketing-services/campaign-reporting-roi-analysis.svg",
   }
 ];
 
@@ -219,8 +228,8 @@ export const contentMarketingServicesIndustriesSectionData = {
 export const contentMarketingServicesIndustriesCardsData = [
   {
     id: 1,
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/content-marketing-services/industries-we-work-with/original/hospitals.svg`,
+    imgWhite: `/assets/images/content-marketing-services/industries-we-work-with/hover/hospitals.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -231,8 +240,8 @@ export const contentMarketingServicesIndustriesCardsData = [
   },
   {
     id: 2,
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/content-marketing-services/industries-we-work-with/original/fintech.svg`,
+    imgWhite: `/assets/images/content-marketing-services/industries-we-work-with/hover/fintech.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -243,8 +252,8 @@ export const contentMarketingServicesIndustriesCardsData = [
   },
   {
     id: 3,
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/content-marketing-services/industries-we-work-with/original/online-store.svg`,
+    imgWhite: `/assets/images/content-marketing-services/industries-we-work-with/hover/online-store.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -255,8 +264,8 @@ export const contentMarketingServicesIndustriesCardsData = [
   },
   {
     id: 4,
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/content-marketing-services/industries-we-work-with/original/real-estate.svg`,
+    imgWhite: `/assets/images/content-marketing-services/industries-we-work-with/hover/real-estate.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -267,8 +276,8 @@ export const contentMarketingServicesIndustriesCardsData = [
   },
   {
     id: 5,
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/content-marketing-services/industries-we-work-with/original/property-management.svg`,
+    imgWhite: `/assets/images/content-marketing-services/industries-we-work-with/hover/property-management.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -279,8 +288,8 @@ export const contentMarketingServicesIndustriesCardsData = [
   },
   {
     id: 6,
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/content-marketing-services/industries-we-work-with/original/education.svg`,
+    imgWhite: `/assets/images/content-marketing-services/industries-we-work-with/hover/education.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -347,15 +356,16 @@ export const contentMarketingServicesWorkflowData = {
       number: "01",
       title: "Discovery & Market Research",
       description: "Every project begins with audience profiling and market analysis to uncover the exact pain points and search intent of your customers. This research stage ensures the campaigns we build are relevant, timely, and positioned to perform from day one.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/content-marketing-services/our-process-for-driving-results/discovery-market-research.svg",
       isActive: true,
+      alignment: "right",
     },
     {
       id: 2,
       number: "02",
       title: "Strategic Roadmapping",
       description: "Next, we create a custom plan using topic modeling to identify core themes and clusters that will attract your target audience. This roadmap defines timelines, content formats, and publishing channels to ensure your campaigns stay consistent and cohesive.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/content-marketing-services/our-process-for-driving-results/strategic-roadmapping.svg",
       isActive: false,
     },
     {
@@ -363,15 +373,16 @@ export const contentMarketingServicesWorkflowData = {
       number: "03",
       title: "Content Production & Optimization",
       description: "With a strategy in place, we produce content designed to rank and convert. Every article, landing page, and asset is refined with on-page SEO optimization techniques, ensuring it meets search engine requirements and delivers value to readers.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/content-marketing-services/our-process-for-driving-results/content-production-optimization.svg",
       isActive: false,
+      alignment: "right",
     },
     {
       id: 4,
       number: "04",
       title: "Promotion & Distribution",
       description: "Content is then shared across the right platforms for maximum reach. We implement multi-channel amplification, combining organic promotion, email campaigns, and outreach efforts to put your message in front of the right people.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/content-marketing-services/our-process-for-driving-results/promotion-distribution.svg",
       isActive: false,
     },
     {
@@ -379,8 +390,9 @@ export const contentMarketingServicesWorkflowData = {
       number: "05",
       title: "Performance Tracking & Refinement",
       description: "Finally, we measure everything. Using conversion analytics, we track engagement, lead quality, and ROI. Insights from this data guide continuous improvements, making each campaign stronger than the last.",
-      image: "/assets/images/work/step5.png",
+      image: "/assets/images/content-marketing-services/our-process-for-driving-results/performance-tracking-refinement.svg",
       isActive: false,
+      alignment: "right",
     }
   ]
 };
@@ -532,7 +544,7 @@ export const contentMarketingServicesScrollSectionData = {
       id: "content-firstScroller",
       step: 1,
       title: "Data-Driven Decision Making",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/content-marketing-services/what-sets-our-content-marketing-agency-apart/data-driven-decision-making.svg",
       paragraphs: [
         "We rely on predictive modeling to plan campaigns that meet audience demand and market trends. This ensures every piece of content is backed by data, not guesswork, leading to higher engagement and better outcomes.",
       ],
@@ -547,7 +559,7 @@ export const contentMarketingServicesScrollSectionData = {
       id: "content-secondScroller",
       step: 2,
       title: "End-to-End Campaign Management",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/content-marketing-services/what-sets-our-content-marketing-agency-apart/end-to-end-campaign-management.svg",
       paragraphs: [
         "From planning to distribution, everything is managed under one roof. Our team creates strategies, produces content, and promotes it through owned media channels so you get a seamless, consistent marketing workflow.",
       ],
@@ -562,7 +574,7 @@ export const contentMarketingServicesScrollSectionData = {
       id: "content-thirdScroller",
       step: 3,
       title: "Transparent Reporting & Insights",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/content-marketing-services/what-sets-our-content-marketing-agency-apart/transparent-reporting-insights.svg",
       paragraphs: [
         "Every campaign comes with clear reporting. Using real-time dashboards, we show you how your content performs across traffic, engagement, and conversions, giving you complete clarity on ROI.",
       ],
@@ -577,7 +589,7 @@ export const contentMarketingServicesScrollSectionData = {
       id: "content-fourthScroller",
       step: 4,
       title: "Scalable Solutions for Any Brand Size",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/content-marketing-services/what-sets-our-content-marketing-agency-apart/scalable-solutions-for-any-brand-size.svg",
       paragraphs: [
         "Whether you are a startup or an enterprise, our process adapts to your needs. By applying content operations frameworks, we streamline production and maintain quality across large-scale campaigns.",
       ],
@@ -592,7 +604,7 @@ export const contentMarketingServicesScrollSectionData = {
       id: "content-fifthScroller",
       step: 5,
       title: "Focus on Long-Term Growth",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/content-marketing-services/what-sets-our-content-marketing-agency-apart/focus-on-long-term-growth.svg",
       paragraphs: [
         "We go beyond short-term wins by building evergreen content libraries that keep driving traffic, leads, and authority for months or even years after publication.",
       ],
