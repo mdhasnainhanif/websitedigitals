@@ -494,7 +494,7 @@ export const guestPostingServicesFAQsData = [
   {
     question: "What makes Website Digitals different from others?",
     answer: "We avoid PBNs and automation, using 100% manual outreach and vetted sites with strong DA/DR. Our process is Google-compliant, includes custom anchor strategies, and offers link replacement guarantees for long-term value."
-  },
+  }, 
   {
     question: "How does Guest Posting work?",
     answer: "Guest posting works by publishing content on other websites within your niche and including a link back to your site. The process usually involves guest post outreach, content creation, and placement on relevant sites with good domain authority to boost SEO."
