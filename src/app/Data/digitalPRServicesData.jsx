@@ -132,6 +132,7 @@ export const digitalPRServicesImpactCardsData = [
     icon: <BagIcon />,
     isActive: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-pr-services/why-digital-pr-services-matter-for-modern-brands/build-credibility-trust.svg",
   },
   {
     id: 2,
@@ -141,6 +142,7 @@ export const digitalPRServicesImpactCardsData = [
     icon: <BagIcon />,
     isActive: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-pr-services/why-digital-pr-services-matter-for-modern-brands/stay-in-control-of-your-reputation.svg",
   },
   {
     id: 3,
@@ -150,6 +152,7 @@ export const digitalPRServicesImpactCardsData = [
     icon: <BagIcon />,
     isActive: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-pr-services/why-digital-pr-services-matter-for-modern-brands/drive-organic-growth.svg",
   },
   {
     id: 4,
@@ -159,6 +162,7 @@ export const digitalPRServicesImpactCardsData = [
     icon: <BagIcon />,
     isActive: false,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-pr-services/why-digital-pr-services-matter-for-modern-brands/track-results-that-matter.svg",
   },
 ];
 
@@ -201,6 +205,7 @@ export const digitalPRServicesServicesData = [
       "Our team connects with journalists and editors to secure meaningful coverage in outlets your audience trusts, boosting credibility, visibility, and brand recognition.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/digital-pr-services/explore-our-full-suite-of-digital-pr-services/media-outreach-press-coverage.svg",
   },
   {
     id: 2,
@@ -209,6 +214,7 @@ export const digitalPRServicesServicesData = [
       "By collaborating with industry influencers and thought leaders, we extend your reach to engaged audiences. These influencer partnerships help create authentic brand conversations that increase recognition and audience trust.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/digital-pr-services/explore-our-full-suite-of-digital-pr-services/influencer-partnerships.svg",
   },
   {
     id: 3,
@@ -217,6 +223,7 @@ export const digitalPRServicesServicesData = [
       "Our team develops newsworthy stories, research reports, and creative campaigns designed to attract organic coverage. These content-driven PR campaigns amplify your brand’s voice and generate lasting attention across digital platforms.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/digital-pr-services/explore-our-full-suite-of-digital-pr-services/content-driven-pr-campaigns.svg",
   },
   {
     id: 4,
@@ -225,6 +232,7 @@ export const digitalPRServicesServicesData = [
       "We craft professional, SEO-optimized press releases that highlight your most important announcements. With targeted press release distribution, your brand news reaches journalists, publications, and online channels that maximize exposure.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/digital-pr-services/explore-our-full-suite-of-digital-pr-services/press-release-distribution-optimization.svg",
   },
   {
     id: 5,
@@ -233,6 +241,7 @@ export const digitalPRServicesServicesData = [
       "Positioning your brand as an industry leader is essential. Through thought leadership campaigns, including expert commentary, guest articles, and interviews, we strengthen your reputation and establish long-term authority.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/digital-pr-services/explore-our-full-suite-of-digital-pr-services/thought-leadership-reputation-building.svg",
   },
 ];
 
@@ -261,48 +270,48 @@ export const digitalPRServicesIndustriesCardsData = [
     title: "Fintech",
     description:
       "Our digital PR services for fintech highlight innovation and compliance to build credibility and investor confidence. We connect your brand with top financial media and industry analysts for stronger authority.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/digital-pr-services/who-we-help-grow/original/fintech.svg`,
+    imgWhite: `/assets/images/digital-pr-services/who-we-help-grow/hover/fintech.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Healthcare",
     description:
       "We offer digital PR services for healthcare that improve patient trust and ensure accurate communication. Our team secures visibility in leading health and wellness publications to enhance brand reputation.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/digital-pr-services/who-we-help-grow/original/healthcare.svg`,
+    imgWhite: `/assets/images/digital-pr-services/who-we-help-grow/hover/healthcare.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Legal Firms",
     description:
       "Our digital PR for legal firms positions attorneys as thought leaders through expert media placements. We boost credibility and recognition across trusted legal and business outlets.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/digital-pr-services/who-we-help-grow/original/legal-firms.svg`,
+    imgWhite: `/assets/images/digital-pr-services/who-we-help-grow/hover/legal-firms.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Real Estate",
     description:
       "We deliver digital PR for real estate that attracts buyers, investors, and community attention. Targeted coverage in property and lifestyle media increases visibility and brand trust.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/digital-pr-services/who-we-help-grow/original/real-estate.svg`,
+    imgWhite: `/assets/images/digital-pr-services/who-we-help-grow/hover/real-estate.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Hospitality",
     description:
       "Our digital PR services for hospitality strengthen guest engagement and showcase brand experiences. We secure placements in travel and lifestyle publications to drive bookings and loyalty.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/digital-pr-services/who-we-help-grow/original/hospitality.svg`,
+    imgWhite: `/assets/images/digital-pr-services/who-we-help-grow/hover/hospitality.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Automotive",
     description:
       "We create digital PR campaigns for automotive brands that emphasize innovation, new launches, and leadership. Coverage in industry and lifestyle media builds awareness and consumer confidence.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/digital-pr-services/who-we-help-grow/original/automotive.svg`,
+    imgWhite: `/assets/images/digital-pr-services/who-we-help-grow/hover/automotive.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
 ];
@@ -374,7 +383,7 @@ export const digitalPRServicesWorkflowData = {
       title: "Research and Media Mapping",
       description:
         "Every campaign begins with media landscape research to identify the right journalists, outlets, and platforms for your brand. This stage ensures data, industry relevance, and audience alignment guide outreach strategies.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/digital-pr-services/how-our-digital-pr-process-works/research-and-media-mapping.svg",
       alignment: "right",
     },
     {
@@ -383,7 +392,7 @@ export const digitalPRServicesWorkflowData = {
       title: "Story Development and Campaign Planning",
       description:
         "We craft compelling narratives and develop a digital PR campaign strategy that connects with target audiences. From press releases to thought leadership opportunities, planning ensures each story has a clear angle that resonates with media and stakeholders.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/digital-pr-services/how-our-digital-pr-process-works/story-development-and-campaign-planning.svg",
       alignment: "left",
     },
     {
@@ -392,7 +401,7 @@ export const digitalPRServicesWorkflowData = {
       title: "Outreach and Media Placement",
       description:
         "Our team executes a structured media outreach process, building relationships with editors, reporters, and online publications. This ensures consistent coverage, brand mentions, and authoritative backlinks in outlets that matter most to your business.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/digital-pr-services/how-our-digital-pr-process-works/outreach-and-media-placement.svg",
       alignment: "right",
     },
     {
@@ -401,7 +410,7 @@ export const digitalPRServicesWorkflowData = {
       title: "Monitoring and Performance Reporting",
       description:
         "PR efforts are tracked using campaign analytics to measure coverage, visibility, and engagement. With ongoing performance reporting, we refine strategies to maximize results, ensuring long-term brand authority and sustained visibility.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/digital-pr-services/how-our-digital-pr-process-works/monitoring-and-performance-reporting.svg",
       alignment: "left",
     },
   ],
@@ -530,7 +539,7 @@ export const digitalPRServicesScrollSectionData = {
       id: "pr-firstScroller",
       step: 1,
       title: "Proven Media Relationships",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-pr-services/why-opt-for-our-digital-pr-agency/proven-media-relationships.svg",
       paragraphs: [
         "Every media outreach strategy is built on long-term relationships with journalists, editors, and industry publications. This ensures consistent placements in outlets that genuinely matter to your audience.",
       ],
@@ -545,7 +554,7 @@ export const digitalPRServicesScrollSectionData = {
       id: "pr-secondScroller",
       step: 2,
       title: "Tailored Campaigns for Every Brand",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-pr-services/why-opt-for-our-digital-pr-agency/pr-integrated-with-marketing-goals.svg",
       paragraphs: [
         "No two businesses are alike, which is why we focus on customized PR solutions that match brand goals, audience expectations, and industry tone. Each campaign is built to reflect your unique story and strengthen your authority in the market.",
       ],
@@ -560,7 +569,7 @@ export const digitalPRServicesScrollSectionData = {
       id: "pr-thirdScroller",
       step: 3,
       title: "Transparent Process and Clear Reporting",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-pr-services/why-opt-for-our-digital-pr-agency/transparent-process-and-clear-reporting.svg",
       paragraphs: [
         "With clear campaign reporting, we show the impact of coverage, links earned, and visibility gained, removing the guesswork and giving you a measurable view of success.",
       ],
@@ -575,7 +584,7 @@ export const digitalPRServicesScrollSectionData = {
       id: "pr-fourthScroller",
       step: 4,
       title: "Consistency That Builds Authority",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-pr-services/why-opt-for-our-digital-pr-agency/consistency-that-builds-authority.svg",
       paragraphs: [
         "We keep your brand relevant in search and media conversations, building authority steadily for lasting recognition.",
       ],
@@ -590,7 +599,7 @@ export const digitalPRServicesScrollSectionData = {
       id: "pr-fifthScroller",
       step: 5,
       title: "PR Integrated With Marketing Goals",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-pr-services/why-opt-for-our-digital-pr-agency/pr-integrated-with-marketing-goals.svg",
       paragraphs: [
         "By ensuring digital marketing alignment, we connect PR campaigns with SEO, content, and brand messaging so that every effort works together to support overall growth.",
       ],
