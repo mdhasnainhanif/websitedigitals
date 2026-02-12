@@ -393,12 +393,12 @@ export const payPerClickAgencyTechnologiesData = [
       "We create and optimize Facebook and Instagram campaigns with advanced audience targeting, creative testing, and conversion tracking for social media advertising success.",
     icon: "/assets/images/pay-per click-agency/tools-we-use/meta-ads-manager.svg",
   },
-  {
+  { 
     id: 4,
     title: "LinkedIn Campaign Manager",
     description:
       "Our LinkedIn advertising strategies target B2B audiences with sponsored content, message ads, and lead generation forms for professional networking success.",
-    icon: "/assets/images/pay-per click-agency/tools-we-use/linkedin-campaign-manager.svg",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/linkedIn-campaign-manager1.svg",
   },
   {
     id: 5,
