@@ -64,7 +64,7 @@ const StepSection = ({ sectionData = null }) => {
                   <Image
                     width={465}
                     height={145}
-                    src={`/assets/images/work/arrow${index + 1}.svg`}
+                    src={`/assets/images/arrows/arrows${index + 1}.svg`}
                     alt="Arrow"
                     className={styles.connectingArrow}
                     loading="lazy"

@@ -405,7 +405,7 @@ export const payPerClickAgencyTechnologiesData = [
     title: "Google Analytics 4",
     description:
       "We use GA4 for comprehensive conversion tracking, audience insights, and attribution modeling to measure and optimize PPC campaign performance.",
-    icon: "/assets/images/pay-per click-agency/tools-we-use/google-analytics.svg",
+    icon: "/assets/images/pay-per click-agency/tool s-we-use/google-analytics.svg",
   },
   {
     id: 6,
