@@ -120,7 +120,7 @@ export const socialMediaMarketingAgencyScrollSectionData = {
       id: "social-firstScroller",
       step: 1,
       title: "Tailored Campaign Strategies",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/social-media marketing-agency/why-clients-trust-our-social-media-agency/tailored-campaign-strategies.svg",
       paragraphs: [
         "Every business is unique, so a one-size-fits-all approach doesn’t work. Through personalized marketing, we design campaigns that align with your goals, audience, and industry, ensuring your message resonates where it matters most.",
       ],
@@ -135,7 +135,7 @@ export const socialMediaMarketingAgencyScrollSectionData = {
       id: "social-secondScroller",
       step: 2,
       title: "Transparent Pricing and Packages",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/social-media marketing-agency/why-clients-trust-our-social-media-agency/transparent-pricing-and-packages.svg",
       paragraphs: [
         "Our agency offers cost-effective solutions with transparent pricing, so you know exactly what you’re investing in and how it impacts your growth.",
       ],
@@ -150,7 +150,7 @@ export const socialMediaMarketingAgencyScrollSectionData = {
       id: "social-thirdScroller",
       step: 3,
       title: "Dedicated Account Management",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/social-media marketing-agency/why-clients-trust-our-social-media-agency/dedicated-account-management.svg",
       paragraphs: [
         "Strong partnerships require clear communication. With dedicated account managers, you receive consistent updates and open client communication that keeps you in control of every campaign decision.",
       ],
@@ -165,7 +165,7 @@ export const socialMediaMarketingAgencyScrollSectionData = {
       id: "social-forthScroller",
       step: 4,
       title: "Proven ROI & Case Studies",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/social-media marketing-agency/why-clients-trust-our-social-media-agency/proven-roi-case-studies.svg",
       paragraphs: [
         "Success in social media marketing comes down to measurable outcomes. Our focus on campaign performance shows in the engagement, leads, and conversions we generate across industries.",
       ],
@@ -180,7 +180,7 @@ export const socialMediaMarketingAgencyScrollSectionData = {
       id: "social-fifthScroller",
       step: 5,
       title: "Long-Term Growth Focus",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/social-media marketing-agency/why-clients-trust-our-social-media-agency/long-term-growth-focus.svg",
       paragraphs: [
         "By implementing sustainable strategies, we help brands build long-lasting visibility, consistent engagement, and loyal customer communities that grow over time.",
       ],
@@ -229,6 +229,7 @@ export const socialMediaMarketingAgencyServicesData = [
       "We design paid social advertising campaigns that reach the right audience without wasting budget. With smart ad spend management, we focus on measurable returns, whether it's boosting sales, generating leads, or growing brand visibility.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/social-media marketing-agency/what-we-offer-in-social-media-marketing-services/paid-social-advertising-campaigns.svg",
   },
   {
     id: 2,
@@ -237,6 +238,7 @@ export const socialMediaMarketingAgencyServicesData = [
       "Our team tracks key performance metrics to measure engagement, conversions, and audience behavior. Detailed social media analytics reports give you clarity on what's working, what needs adjustment, and how each campaign contributes to growth.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/social-media marketing-agency/what-we-offer-in-social-media-marketing-services/social-media-analytics-reporting.svg",
   },
   {
     id: 3,
@@ -245,6 +247,7 @@ export const socialMediaMarketingAgencyServicesData = [
       "Through targeted influencer collaborations, we connect your brand with voices that resonate with your audience. These influencer marketing partnerships build credibility, extend reach, and generate authentic engagement.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/social-media marketing-agency/what-we-offer-in-social-media-marketing-services/influencer-partnerships.svg",
   },
   {
     id: 4,
@@ -253,6 +256,7 @@ export const socialMediaMarketingAgencyServicesData = [
       "Our community engagement approach focuses on meaningful customer interaction that strengthens loyalty. By responding to comments, managing conversations, and fostering dialogue, we help transform followers into long-term advocates.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/social-media marketing-agency/what-we-offer-in-social-media-marketing-services/community-engagement-and-support.svg",
   },
   {
     id: 5,
@@ -261,6 +265,7 @@ export const socialMediaMarketingAgencyServicesData = [
       "With a structured publishing calendar, posts go out at the right time to boost engagement. Our social media content scheduling keeps content consistent across platforms, so your audience stays connected and campaigns run seamlessly.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/social-media marketing-agency/what-we-offer-in-social-media-marketing-services/content-scheduling-optimization.svg",
   },
 ];
 
@@ -273,6 +278,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
     icon: "brand",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/social-media marketing-agency/why-your-business-needs-a-social-media-marketing-agency/stronger-brand-presence.svg",
   },
   {
     id: 2,
@@ -282,6 +288,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
     icon: "engagement",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/social-media marketing-agency/why-your-business-needs-a-social-media-marketing-agency/direct-customer-engagement.svg",
   },
   {
     id: 3,
@@ -291,6 +298,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
     icon: "targeting",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/social-media marketing-agency/why-your-business-needs-a-social-media-marketing-agency/quick-and-targeted-campaigns.svg",
   },
   {
     id: 4,
@@ -300,6 +308,7 @@ export const socialMediaMarketingAgencyImpactCardsData = [
     icon: "viral",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/social-media marketing-agency/why-your-business-needs-a-social-media-marketing-agency/viral-growth-potential.svg",
   },
 ];
 
@@ -358,8 +367,8 @@ export const socialMediaMarketingAgencyIndustriesCardsData = [
     title: "Automotive",
     description:
       "As a social media marketing agency for automotive, we design campaigns that boost brand visibility, generate qualified leads, and convert online engagement into real-world sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/automotive.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/automotive.svg`,
     alt: "Automotive Social Media Marketing",
     width: 71,
     height: 71,
@@ -368,8 +377,8 @@ export const socialMediaMarketingAgencyIndustriesCardsData = [
     title: "Hospitality",
     description:
       "Our social media marketing agency for hospitality helps hotels, restaurants, and resorts attract new guests, strengthen their brand presence, and turn memorable experiences into long-term loyalty.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/hospitality.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/hospitality.svg`,
     alt: "Hospitality Social Media Marketing",
     width: 71,
     height: 71,
@@ -378,8 +387,8 @@ export const socialMediaMarketingAgencyIndustriesCardsData = [
     title: "Fashion",
     description:
       "We are a social media marketing agency for fashion brands, creating trend-driven campaigns that elevate brand identity and inspire audiences to engage and shop with confidence.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/fashion.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/fashion.svg`,
     alt: "Fashion Social Media Marketing",
     width: 71,
     height: 71,
@@ -388,8 +397,8 @@ export const socialMediaMarketingAgencyIndustriesCardsData = [
     title: "B2B",
     description:
       "As a social media marketing agency for B2B companies, we combine authority-building with lead generation to create targeted campaigns that drive meaningful business relationships.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/b2b.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/b2b.svg`,
     alt: "B2B Social Media Marketing",
     width: 71,
     height: 71,
@@ -398,8 +407,8 @@ export const socialMediaMarketingAgencyIndustriesCardsData = [
     title: "Fitness",
     description:
       "Our social media marketing agency for fitness studios increases memberships through engaging campaigns that connect with local communities and motivate audiences toward healthier lifestyles.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/fitness.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/fitness.svg`,
     alt: "Fitness Social Media Marketing",
     width: 71,
     height: 71,
@@ -408,8 +417,8 @@ export const socialMediaMarketingAgencyIndustriesCardsData = [
     title: "Legal",
     description:
       "As a trusted social media marketing agency for legal firms, we build credibility, attract new clients, and position your practice as a reliable authority in the legal industry.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/legal.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/legal.svg`,
     alt: "Legal Social Media Marketing",
     width: 71,
     height: 71,
@@ -482,7 +491,7 @@ export const socialMediaMarketingAgencyWorkflowData = {
       title: "Social Media Audit & Strategy",
       description:
         "Every partnership starts with a deep dive into your current social media presence. We analyze your profiles, audience engagement, and competitors to uncover opportunities and shape a winning content strategy.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/social-media marketing-agency/how-we-deliver-social-media-success/social-media-audit-strategy.svg",
       alignment: "right",
     },
     {
@@ -491,7 +500,7 @@ export const socialMediaMarketingAgencyWorkflowData = {
       title: "Audience & Content Research",
       description:
         "We identify who your ideal audience is and what content they care about most. This ensures every post, reel, and campaign speaks directly to their interests and drives meaningful interaction.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/social-media marketing-agency/how-we-deliver-social-media-success/audience-content-research.svg",
       alignment: "left",
     },
     {
@@ -500,7 +509,7 @@ export const socialMediaMarketingAgencyWorkflowData = {
       title: "Content Production & Optimization",
       description:
         "Our team crafts scroll-stopping visuals, captions, and videos designed to maximize engagement. We optimize posting times, formats, and hashtags to give your content the best reach possible.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/social-media marketing-agency/how-we-deliver-social-media-success/content-production-optimization.svg",
       alignment: "right",
     },
     {
@@ -509,7 +518,7 @@ export const socialMediaMarketingAgencyWorkflowData = {
       title: "Continuous Monitoring & Growth",
       description:
         "We track performance metrics like engagement rate, reach, and conversions to measure success. Then we refine campaigns regularly so your brand keeps growing and stays ahead of the competition.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/social-media marketing-agency/how-we-deliver-social-media-success/continuous-monitoring-growth.svg",
       alignment: "left",
     },
   ],
