@@ -91,7 +91,7 @@ a {
   box-shadow: rgb(159 159 159 / 20%) 0px 2px 8px 0px;
   transition: all 0.3s ease;
   position: relative;
-  z-index: 9;
+  z-index: 999999;
   padding: 0;
 }
 
@@ -10847,4 +10847,10 @@ p:last-child {
   height: 4.625rem;
   width: 7.5rem;
   object-fit: contain;
+}
+
+@media (min-width: 1800px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1500px !important;
+  }
 }
