@@ -89,6 +89,7 @@ export const payPerClickAgencyServicesData = [
       "We manage search ads, display ads, and shopping ads to maximize visibility. Our approach includes match types, negative keywords, and ad extensions to boost relevance and click-through rate. With precise device targeting and dayparting, your ads reach the right people at the right time.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/pay-per click-agency/explore-our full-range-of-ppc-services/google-ads-management.svg",
   },
   {
     id: 2,
@@ -97,6 +98,7 @@ export const payPerClickAgencyServicesData = [
       "Expand beyond Google with Microsoft Advertising, LinkedIn Ads, and Meta Ads. We create targeted campaigns and build custom remarketing lists to re-engage visitors and convert them into qualified leads, turning each channel into a new revenue source.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/pay-per click-agency/explore-our full-range-of-ppc-services/bing-and-social-ads.svg",
   },
   {
     id: 3,
@@ -105,6 +107,7 @@ export const payPerClickAgencyServicesData = [
       "High-performing campaigns depend on optimized landing pages. We improve landing page experience, run structured A/B testing, and refine conversion funnels. A better relevance score lowers cost per click (CPC) and drives more conversions.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/pay-per click-agency/explore-our full-range-of-ppc-services/landing-page-optimization.svg",
   },
   {
     id: 4,
@@ -113,6 +116,7 @@ export const payPerClickAgencyServicesData = [
       "Our pay-per-click marketing agency provides clear reporting and actionable insights. We monitor data in real time, refine bids, and continuously optimize campaigns so ad spend delivers measurable growth.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/pay-per click-agency/explore-our full-range-of-ppc-services/campaign-performance-and-reporting.svg",
   },
 ];
 
@@ -127,7 +131,7 @@ export const payPerClickAgencyScrollSectionData = {
       id: "ppc-firstScroller",
       step: 1,
       title: "Certified PPC Specialists",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/pay-per click-agency/what-makes-our-ppc-agency-the-right-choice/certified-ppc-specialists.svg",
       paragraphs: [
         "Our team includes Google Ads certified professionals, Microsoft Ads certified experts, and specialists with Meta Blueprint credentials. We also hold DMI certifications, align with the Google Partner program, and follow IAB standards with SEMPO recognition, ensuring your campaigns meet industry best practices.",
       ],
@@ -142,7 +146,7 @@ export const payPerClickAgencyScrollSectionData = {
       id: "ppc-secondScroller",
       step: 2,
       title: "Transparent Reporting",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/pay-per click-agency/what-makes-our-ppc-agency-the-right-choice/transparent-reporting.svg",
       paragraphs: [
         "You get full visibility through an easy-to-read reporting dashboard. Each ad performance report shares clicks, spend, and conversion data so you can clearly track campaign performance and make informed decisions.",
       ],
@@ -157,7 +161,7 @@ export const payPerClickAgencyScrollSectionData = {
       id: "ppc-thirdScroller",
       step: 3,
       title: "Proven ROI Focus",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/pay-per click-agency/what-makes-our-ppc-agency-the-right-choice/proven-roi-focus.svg",
       paragraphs: [
         "We work to improve return on ad spend (ROAS), reduce cost per acquisition (CPA), and grow customer lifetime value (LTV). Our account audits uncover opportunities to boost ad relevance and optimize quality metrics, helping budgets produce consistent results.",
       ],
@@ -172,7 +176,7 @@ export const payPerClickAgencyScrollSectionData = {
       id: "ppc-forthScroller",
       step: 4,
       title: "Fraud Protection",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/pay-per click-agency/what-makes-our-ppc-agency-the-right-choice/fraud-protection.svg",
       paragraphs: [
         "We safeguard your investment with invalid click prevention and real-time click fraud monitoring, keeping spend focused on valid traffic and reliable performance data.",
       ],
@@ -187,7 +191,7 @@ export const payPerClickAgencyScrollSectionData = {
       id: "ppc-fifthScroller",
       step: 5,
       title: "Continuous Optimization",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/pay-per click-agency/what-makes-our-ppc-agency-the-right-choice/continuous-optimization.svg",
       paragraphs: [
         "Optimization continues after launch. We refine campaigns with smart bidding, automated bid strategy testing, and quality score improvement so results get better every month.",
       ],
@@ -268,6 +272,7 @@ export const payPerClickAgencyImpactCardsData = [
     icon: "visibility",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/pay-per click-agency/why-paid-search-is-a-growth-engine-for-businesses/immediate-visibility-and-traffic.svg",
   },
   {
     id: 2,
@@ -277,6 +282,7 @@ export const payPerClickAgencyImpactCardsData = [
     icon: "targeting",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/pay-per click-agency/why-paid-search-is-a-growth-engine-for-businesses/targeted-reach-without-waste.svg",
   },
   {
     id: 3,
@@ -286,6 +292,7 @@ export const payPerClickAgencyImpactCardsData = [
     icon: "roi",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/pay-per click-agency/why-paid-search-is-a-growth-engine-for-businesses/cost-control-and-measurable-roi.svg",
   },
   {
     id: 4,
@@ -295,6 +302,7 @@ export const payPerClickAgencyImpactCardsData = [
     icon: "scalability",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/pay-per click-agency/why-paid-search-is-a-growth-engine-for-businesses/flexibility-and-scalability.svg",
   },
   {
     id: 5,
@@ -304,6 +312,7 @@ export const payPerClickAgencyImpactCardsData = [
     icon: "conversion",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/pay-per click-agency/why-paid-search-is-a-growth-engine-for-businesses/improved-on-site-results.svg",
   },
 ];
 
@@ -368,42 +377,42 @@ export const payPerClickAgencyTechnologiesData = [
     title: "Google Ads Platform",
     description:
       "We leverage Google Ads for search, display, shopping, and video campaigns with advanced targeting, automated bidding, and conversion tracking to maximize ROI.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/google-ads-platform.svg",
   },
   {
     id: 2,
     title: "Microsoft Advertising",
     description:
       "Our Microsoft Advertising campaigns reach Bing users with targeted search and shopping ads, expanding your reach beyond Google's network.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/microsoft-advertising.svg",
   },
   {
     id: 3,
     title: "Meta Ads Manager",
     description:
       "We create and optimize Facebook and Instagram campaigns with advanced audience targeting, creative testing, and conversion tracking for social media advertising success.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/meta-ads-manager.svg",
   },
   {
     id: 4,
     title: "LinkedIn Campaign Manager",
     description:
       "Our LinkedIn advertising strategies target B2B audiences with sponsored content, message ads, and lead generation forms for professional networking success.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/linkedin-campaign-manager.svg",
   },
   {
     id: 5,
     title: "Google Analytics 4",
     description:
       "We use GA4 for comprehensive conversion tracking, audience insights, and attribution modeling to measure and optimize PPC campaign performance.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/google-analytics.svg",
   },
   {
     id: 6,
     title: "Conversion Tracking Tools",
     description:
       "We implement advanced conversion tracking with Google Tag Manager, Facebook Pixel, and custom event tracking to measure every interaction and optimize for results.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/conversion-tracking-tools.svg",
   },
 ];
 
@@ -419,7 +428,7 @@ export const payPerClickAgencyWorkflowData = {
       title: "Audit & Strategy",
       description:
         "We conduct a full ad account audit, perform keyword gap analysis, and carry out competitive research. This creates a strategy built to compete effectively in the ad auction and position your campaigns for success.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/pay-per click-agency/our-process/audit-strategy.svg",
       alignment: "right",
     },
     {
@@ -428,7 +437,7 @@ export const payPerClickAgencyWorkflowData = {
       title: "Campaign Build",
       description:
         "We handle the full campaign buildout, including ad group structuring, compelling ad copywriting, and bid strategy setup. Targeting and ad scheduling are tuned to show ads when they have the highest impact.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/pay-per click-agency/our-process/campaign-build.svg",
       alignment: "left",
     },
     {
@@ -437,7 +446,7 @@ export const payPerClickAgencyWorkflowData = {
       title: "Optimization & Scaling",
       description:
         "We refine performance with structured A/B testing, budget adjustments, and remarketing list creation to bring back engaged visitors. This approach helps scale conversions efficiently over time.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/pay-per click-agency/our-process/optimization-scaling.svg",
       alignment: "right",
     },
     {
@@ -446,7 +455,7 @@ export const payPerClickAgencyWorkflowData = {
       title: "Landing Page Optimization",
       description:
         "We focus on landing page optimization to improve relevance, streamline user flow, and apply conversion tracking insights that lift conversion rates and ROI.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/pay-per click-agency/our-process/landing-page-optimization.svg",
       alignment: "left",
     },
     {
@@ -455,7 +464,7 @@ export const payPerClickAgencyWorkflowData = {
       title: "Reporting & Insights",
       description:
         "Transparency is key. We deliver real-time dashboards powered by Google Analytics and use attribution modeling to see which ads drive performance. Clear, concise reports make campaign performance easy to review and act on.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/pay-per click-agency/our-process/reporting-insights.svg",
       alignment: "right",
     },
   ],
@@ -611,8 +620,8 @@ export const payPerClickAgencyIndustriesCardsData = [
     title: "Healthcare Practices",
     description:
       "Our PPC agency for healthcare practices helps clinics attract more patients through HIPAA-compliant campaigns, local targeting, and appointment-focused ads.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/healthcare-practices.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/healthcare-practices.svg`,
     alt: "Healthcare PPC Services",
     width: 71,
     height: 71,
@@ -621,8 +630,8 @@ export const payPerClickAgencyIndustriesCardsData = [
     title: "Attorneys",
     description:
       "As a PPC agency for attorneys, we run high-intent campaigns that connect law firms from personal injury to corporate law with clients actively seeking legal support.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/attorneys.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/attorneys.svg`,
     alt: "Attorney PPC Services",
     width: 71,
     height: 71,
@@ -631,8 +640,8 @@ export const payPerClickAgencyIndustriesCardsData = [
     title: "Realtors",
     description:
       "Our PPC agency for realtors drives qualified leads using hyper-local targeting, MLS-compliant ads, and optimized lead funnels that turn clicks into property showings and sales.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/realtors.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/realtors.svg`,
     alt: "Realtor PPC Services",
     width: 71,
     height: 71,
@@ -641,8 +650,8 @@ export const payPerClickAgencyIndustriesCardsData = [
     title: "Retail Brands",
     description:
       "We help retail brands boost online and in-store sales with optimized shopping feeds, Performance Max campaigns, and dynamic remarketing to increase repeat purchases.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/retail-brands.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/retail-brands.svg`,
     alt: "Retail PPC Services",
     width: 71,
     height: 71,
@@ -651,8 +660,8 @@ export const payPerClickAgencyIndustriesCardsData = [
     title: "Car Dealers",
     description:
       "Our PPC agency for car dealers accelerates sales with VIN-level targeting, local inventory ads, and test-drive funnels that reach buyers ready to purchase.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/car-dealers.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/car-dealers.svg`,
     alt: "Car Dealer PPC Services",
     width: 71,
     height: 71,
@@ -661,8 +670,8 @@ export const payPerClickAgencyIndustriesCardsData = [
     title: "Hotels",
     description:
       "We help hotels increase direct bookings with seasonal bid strategies, branded term protection, and optimized landing pages that compete with OTAs and lift ROI.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/hotels.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/hotels.svg`,
     alt: "Hotel PPC Services",
     width: 71,
     height: 71,
