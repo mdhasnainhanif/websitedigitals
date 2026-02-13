@@ -391,7 +391,7 @@ export const payPerClickAgencyTechnologiesData = [
     title: "Meta Ads Manager",
     description:
       "We create and optimize Facebook and Instagram campaigns with advanced audience targeting, creative testing, and conversion tracking for social media advertising success.",
-    icon: "/assets/images/pay-per click-agency/tools-we-use/meta-ads-manager.svg",
+    icon: "/assets/images/pay-per click-agency/tools-we-use/meta-ads-manager1.svg",
   },
   { 
     id: 4,
