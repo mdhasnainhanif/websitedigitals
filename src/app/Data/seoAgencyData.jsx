@@ -91,6 +91,7 @@ export const seoAgencyServicesData = [
       "Local SEO helps nearby customers find and trust your business. By optimizing your Google Business Profile and managing local citations, your brand appears in maps and local searches, driving foot traffic and credibility.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/search-engine-optimization-agency/our-proven-seo-services-for-every-business-type/local-seo-for-businesses.svg",
   },
   {
     id: 2,
@@ -99,6 +100,7 @@ export const seoAgencyServicesData = [
       "We optimize titles, headings, metadata, images, and internal links to improve search visibility and engagement, making every page work harder to attract and convert traffic.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/search-engine-optimization-agency/our-proven-seo-services-for-every-business-type/on-page-seo-for-maximum-relevance.svg",
   },
   {
     id: 3,
@@ -107,6 +109,7 @@ export const seoAgencyServicesData = [
       "Technical SEO focuses on optimizing site architecture, improving crawlability, and enhancing page speed to make your website search engine-friendly. This ensures that your content is indexed efficiently, provides a seamless user experience, and supports sustainable ranking growth.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/search-engine-optimization-agency/our-proven-seo-services-for-every-business-type/technical-seo-for-higher-rankings.svg",
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ export const seoAgencyServicesData = [
       "Off-page SEO boosts your website's credibility through high-quality backlinks, digital PR, and mentions from trusted sources. This builds domain authority and strengthens your brand's reputation in search results.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/search-engine-optimization-agency/our-proven-seo-services-for-every-business-type/off-page-seo-for-authority-building.svg",
   },
   {
     id: 5,
@@ -123,6 +127,7 @@ export const seoAgencyServicesData = [
       "Enterprises need scalable solutions. Through multi-site optimization and competitive intelligence, national strategies strengthen visibility across regions, ensure consistent messaging, and dominate competitive markets.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/search-engine-optimization-agency/our-proven-seo-services-for-every-business-type/enterprise-and-national-seo-strategies.svg",
   },
   {
     id: 6,
@@ -131,11 +136,12 @@ export const seoAgencyServicesData = [
       "Startups need quick results without wasted spend. Using agile campaigns and tactics that drive early traction, SEO builds visibility fast while creating a foundation for long-term growth.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/search-engine-optimization-agency/our-proven-seo-services-for-every-business-type/startup-and-growth-seo-services.svg",
   },
 ];
 
 export const seoAgencyScrollSectionData = {
-  sectionClass: "scroller-section gray-section",
+  sectionClass: "scroller-section gray-section ",
   heading: "Why Businesses Trust Our SEO Services",
   showDescription: false,
   items: [
@@ -143,7 +149,7 @@ export const seoAgencyScrollSectionData = {
       id: "seo-firstScroller",
       step: 1,
       title: "Transparent SEO Reporting",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/search-engine-optimization-agency/why-businesses-trust-our-seo-services/transparent-seo-reporting.svg",
       paragraphs: [
         "We believe clients should always know where their investment is going. With clear dashboards and ongoing performance tracking, progress is measured against real goals, not vanity metrics.",
       ],
@@ -158,7 +164,7 @@ export const seoAgencyScrollSectionData = {
       id: "seo-secondScroller",
       step: 2,
       title: "Customized SEO Strategies",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/search-engine-optimization-agency/why-businesses-trust-our-seo-services/customized-seo-strategies.svg",
       paragraphs: [
         "No two businesses are the same, and neither are our SEO solutions. Through tailored campaigns designed around your industry and audience, we ensure strategies align with your unique growth objectives.",
       ],
@@ -173,7 +179,7 @@ export const seoAgencyScrollSectionData = {
       id: "seo-thirdScroller",
       step: 3,
       title: "Dedicated Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/search-engine-optimization-agency/why-businesses-trust-our-seo-services/dedicated-support.svg",
       paragraphs: [
         "Every client has access to a client success manager who ensures your SEO campaigns run smoothly. This personalized approach guarantees questions are answered and progress is always on track.",
       ],
@@ -188,7 +194,7 @@ export const seoAgencyScrollSectionData = {
       id: "seo-forthScroller",
       step: 4,
       title: "SEO Built for Conversions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/search-engine-optimization-agency/why-businesses-trust-our-seo-services/seo-built-for-conversions.svg",
       paragraphs: [
         "Rankings mean little without results. Our work goes beyond visibility with conversion optimization built into every strategy, turning search visitors into customers.",
       ],
@@ -203,7 +209,7 @@ export const seoAgencyScrollSectionData = {
       id: "seo-fifthScroller",
       step: 5,
       title: "Sustainable Growth",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/search-engine-optimization-agency/why-businesses-trust-our-seo-services/sustainable-growth.svg",
       paragraphs: [
         "We don’t rely on shortcuts that fade fast. Our approach is centered on sustainable growth, ensuring your rankings, authority, and traffic continue to deliver long after campaigns launch.",
       ],
@@ -285,6 +291,7 @@ export const seoAgencyImpactCardsData = [
     icon: "reporting",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/search-engine-optimization-agency/why-partnering-with-a-trusted-seo-agency-matters/higher-visibility-credibility.svg",
   },
   {
     id: 2,
@@ -294,6 +301,7 @@ export const seoAgencyImpactCardsData = [
     icon: "strategy",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/search-engine-optimization-agency/why-partnering-with-a-trusted-seo-agency-matters/qualified-leads-more-sales.svg",
   },
   {
     id: 3,
@@ -303,6 +311,7 @@ export const seoAgencyImpactCardsData = [
     icon: "support",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/search-engine-optimization-agency/why-partnering-with-a-trusted-seo-agency-matters/cost-effective-growth.svg",
   },
   {
     id: 4,
@@ -312,6 +321,7 @@ export const seoAgencyImpactCardsData = [
     icon: "conversion",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/search-engine-optimization-agency/why-partnering-with-a-trusted-seo-agency-matters/expertise-time-savings.svg",
   },
 ];
 
@@ -425,7 +435,7 @@ export const seoAgencyWorkflowData = {
       title: "Research and Website Audit",
       description:
         "The process begins with a detailed SEO audit that identifies technical issues, keyword opportunities, and gaps in current performance. This research sets the foundation for building a strategy tailored to your goals.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/search-engine-optimization-agency/how-our-seo-process-works/research-and-website-audit.svg",
       alignment: "right",
     },
     {
@@ -434,7 +444,7 @@ export const seoAgencyWorkflowData = {
       title: "Strategy and Keyword Planning",
       description:
         "Next, a data-driven strategy is developed with emphasis on semantic search and user intent. By mapping the right keywords to your business, we create a roadmap that aligns content and optimization with how your audience actually searches.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/search-engine-optimization-agency/how-our-seo-process-works/strategy-and-keyword-planning.svg",
       alignment: "left",
     },
     {
@@ -443,7 +453,7 @@ export const seoAgencyWorkflowData = {
       title: "On-Page Optimization",
       description:
         "With the strategy in place, on-page improvements are applied. From metadata optimization to internal linking and structured content updates, each page is fine-tuned to send the right signals to search engines while improving user experience.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/search-engine-optimization-agency/how-our-seo-process-works/on-page-optimization.svg",
       alignment: "right",
     },
     {
@@ -452,7 +462,7 @@ export const seoAgencyWorkflowData = {
       title: "Off-Page and Link Building",
       description:
         "To strengthen visibility, off-page efforts focus on trusted mentions and quality backlinks. These strategies build domain authority and ensure your business is recognized as a credible source across search engines.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/search-engine-optimization-agency/how-our-seo-process-works/off-page-and-link-building.svg",
       alignment: "left",
     },
     {
@@ -461,7 +471,7 @@ export const seoAgencyWorkflowData = {
       title: "Tracking and Continuous Improvement",
       description:
         "The process doesn't end with implementation. Campaigns are monitored through SEO performance metrics, and adjustments are made regularly to keep results improving over time.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/search-engine-optimization-agency/how-our-seo-process-works/tracking-and-continuous-improvement.svg",
       alignment: "right",
     },
   ],
@@ -471,7 +481,7 @@ export const seoAgencyWorkflowData = {
 export const seoAgencyWhyChooseUsData = [
   {
     id: 1,
-    title: "Transparent SEO Reporting",
+    title: "Transparent SEO Reporting ",
     description:
       "We believe clients should always know where their investment is going. With clear dashboards and ongoing performance tracking, progress is measured against real goals, not vanity metrics.",
     icon: "reporting",
@@ -626,11 +636,11 @@ export const seoAgencyIndustriesSectionData = {
 // Industries Cards Data (for WebBuilderCardSection)
 export const seoAgencyIndustriesCardsData = [
   {
-    title: "eCommerce",
+    title: "eCommerce dsf",
     description:
       "As an SEO agency for eCommerce businesses, we optimize product pages, categories, and schema to boost visibility in search results, improve shopper experience, and drive consistent online sales growth.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/ecommerce.svg`,
+    imgWhite: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/hover/ecommerce.svg`,
     alt: "eCommerce SEO Services",
     width: 71,
     height: 71,
@@ -639,8 +649,8 @@ export const seoAgencyIndustriesCardsData = [
     title: "Medical Practices",
     description:
       "Our SEO agency for medical practices creates compliance-focused strategies, leveraging medical schema and local optimization to help healthcare providers increase patient inquiries and build trust online.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/medical-practices.svg`,
+    imgWhite: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/hover/medical-practices.svg`,
     alt: "Medical Practice SEO Services",
     width: 71,
     height: 71,
@@ -649,8 +659,8 @@ export const seoAgencyIndustriesCardsData = [
     title: "Restaurants",
     description:
       "Known as a trusted partner, we deliver results as the best SEO agency for restaurants by optimizing menus, local listings, and reviews to increase reservations, online visibility, and customer loyalty.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/restaurants.svg`,
+    imgWhite: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/hover/restaurants.svg`,
     alt: "Restaurant SEO Services",
     width: 71,
     height: 71,
@@ -659,8 +669,8 @@ export const seoAgencyIndustriesCardsData = [
     title: "Financial Services",
     description:
       "Our tailored campaigns position us as the best SEO agency for financial services, with strategies that highlight expertise, meet regulatory standards, and attract clients actively searching for trusted advisors.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/financial-services.svg`,
+    imgWhite: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/hover/financial-services.svg`,
     alt: "Financial Services SEO",
     width: 71,
     height: 71,
@@ -669,8 +679,8 @@ export const seoAgencyIndustriesCardsData = [
     title: "Retail Chains",
     description:
       "We specialize in SEO services for retail chains, ensuring multi-location visibility, consistent local pages, and optimized business listings that drive both store visits and online conversions.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/retail-chains.svg`,
+    imgWhite: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/hover/retail-chains.svg`,
     alt: "Retail Chain SEO Services",
     width: 71,
     height: 71,
@@ -679,8 +689,8 @@ export const seoAgencyIndustriesCardsData = [
     title: "Home Improvement",
     description:
       "As an experienced SEO agency for home improvement, we help contractors and service providers rank for local searches, showcase projects effectively, and generate qualified leads for sustained growth.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/home-improvement.svg`,
+    imgWhite: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/hover/home-improvement.svg`,
     alt: "Home Improvement SEO Services",
     width: 71,
     height: 71,
