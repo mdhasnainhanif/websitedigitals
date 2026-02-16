@@ -83,6 +83,7 @@ export const digitalMarketingServicesData = [
     description:
       "Our strategies include in-depth keyword research, on-page optimization, and link-building campaigns that improve rankings and drive consistent results.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/search-engine-optimization.svg",
   },
   {
     id: 2,
@@ -90,6 +91,7 @@ export const digitalMarketingServicesData = [
     description:
       "We craft campaigns that focus on conversion optimization, helping you maximize every dollar spent while reducing wasted ad spend.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/pay-per-click.svg",
   },
   {
     id: 3,
@@ -97,6 +99,7 @@ export const digitalMarketingServicesData = [
     description:
       "Our team creates engaging campaigns that expand reach, build trust, and turn followers into loyal customers.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/social-media-marketing.svg",
   },
   {
     id: 4,
@@ -104,6 +107,7 @@ export const digitalMarketingServicesData = [
     description:
       "Amplify your brand authority with strategic online advertising and digital PR. Our campaigns secure placements that boost your credibility and enhance your reputation in your niche.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/digital-pr.svg",
   },
   {
     id: 5,
@@ -111,6 +115,7 @@ export const digitalMarketingServicesData = [
     description:
       "Our content writing services focus on creating clear, compelling, and search-optimized copy, from blogs and web pages to ad copy and product descriptions.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/content-writing.svg",
   },
   {
     id: 6,
@@ -118,6 +123,7 @@ export const digitalMarketingServicesData = [
     description:
       "Our content marketing strategies go beyond writing; we plan, publish, and promote assets that generate lead generation, nurture prospects, and support conversion optimization.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/local-seo.svg",
   },
   {
     id: 7,
@@ -125,6 +131,7 @@ export const digitalMarketingServicesData = [
     description:
       "We secure high-quality backlinks from trusted sites to improve your search visibility and drive organic traffic that boosts rankings over time.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/guest-post-outreach.svg",
   },
   {
     id: 8,
@@ -132,6 +139,7 @@ export const digitalMarketingServicesData = [
     description:
       "Our team connects your brand with relevant publishers, placing your content in front of new audiences while strengthening credibility and earning referral traffic.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/link-building.svg",
   },
   {
     id: 9,
@@ -139,6 +147,7 @@ export const digitalMarketingServicesData = [
     description:
       "Dominate local search results with targeted inbound marketing strategies designed to put your business in front of nearby customers searching for your services.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/app-store-optimization.svg",
   },
   {
     id: 10,
@@ -146,13 +155,15 @@ export const digitalMarketingServicesData = [
     description:
       "Protect and enhance your brand with proactive customer acquisition strategies, review monitoring, and reputation repair services.",
     icon: <BagIcon />,
-  },
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/online-reputation-management.svg",
+    },
   {
     id: 11,
     title: "App Store Optimization",
     description:
       "Increase your app's visibility and downloads with performance marketing techniques tailored for Google Play and App Store rankings.",
     icon: <BagIcon />,
+    image: "/assets/images/digital-marketing-company/our-digital-marketing-services-designed-to-grow-your-business/app-store-optimization.svg",
   },
 ];
 
@@ -281,6 +292,7 @@ export const digitalMarketingImpactCardsData = [
     description:
       "A strong online branding strategy shapes perception and creates confidence. With proven methods to boost brand credibility, businesses move from being overlooked to being the first choice.",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-marketing-company/why-a-professional-digital-marketing-company-delivers-roi/branding-that-builds-trust.svg",
   },
   {
     id: 2,
@@ -288,6 +300,7 @@ export const digitalMarketingImpactCardsData = [
     description:
       "Generic sites may look nice, but fail to drive growth. Purpose-built conversion-focused websites combined with lead generation marketing turn clicks into qualified customers.",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-marketing-company/why-a-professional-digital-marketing-company-delivers-roi/websites-that-convert.svg",
   },
   {
     id: 3,
@@ -295,6 +308,7 @@ export const digitalMarketingImpactCardsData = [
     description:
       "Unfocused ads waste the budget. Expert digital ad management services powered by a smart paid media strategy expand reach and deliver measurable ROI.",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-marketing-company/why-a-professional-digital-marketing-company-delivers-roi/campaigns-that-reach-more.svg",
   },
   {
     id: 4,
@@ -302,6 +316,7 @@ export const digitalMarketingImpactCardsData = [
     description:
       "Online success depends on constant improvement. With advanced performance tracking tools, businesses gain data-driven insights that reveal opportunities and sustain growth.",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/digital-marketing-company/why-a-professional-digital-marketing-company-delivers-roi/insights-that-fuel-growth.svg",
   },
 ];
 
@@ -449,7 +464,8 @@ export const digitalMarketingWorkflowData = {
       description:
         "Every project begins with a thorough digital market analysis to understand your industry, competitors, and audience. This research shapes a clear foundation for campaigns that align with real opportunities.",
       image: "/assets/images/work/step1.png",
-      alignment: "left",
+      alignment: "right",
+      image: "/assets/images/digital-marketing-company/how-we-build-your-success/in-depth-market-research.svg",
     },
     {
       id: 2,
@@ -458,7 +474,8 @@ export const digitalMarketingWorkflowData = {
       description:
         "We then create a tailored online marketing strategy designed around your goals. This step outlines the channels, messaging, and timelines that guide every campaign toward measurable outcomes.",
       image: "/assets/images/work/step2.png",
-      alignment: "right",
+      alignment: "left",
+      image: "/assets/images/digital-marketing-company/how-we-build-your-success/strategy-development.svg",
     },
     {
       id: 3,
@@ -467,7 +484,8 @@ export const digitalMarketingWorkflowData = {
       description:
         "With a plan in place, we launch integrated digital campaigns that connect across platforms. From search to social, each element works together to maximize reach and consistency.",
       image: "/assets/images/work/step3.png",
-      alignment: "left",
+      alignment: "right",
+      image: "/assets/images/digital-marketing-company/how-we-build-your-success/campaign-execution.svg",
     },
     {
       id: 4,
@@ -476,7 +494,8 @@ export const digitalMarketingWorkflowData = {
       description:
         "Results are tracked and refined through ongoing campaign performance optimization. This ensures strategies stay responsive to trends, delivering stronger outcomes over time.",
       image: "/assets/images/work/step4.png",
-      alignment: "right",
+      alignment: "left",
+      image: "/assets/images/digital-marketing-company/how-we-build-your-success/continuous-optimization.svg",
     },
   ],
 };
@@ -511,7 +530,7 @@ export const digitalMarketingScrollSectionData = {
       id: "digital-case-study-1",
       step: 1,
       title: "Measurable Results",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-marketing-company/what-makes-our-digital-marketing-company-different/measurable-results.svg",
       paragraphs: [
         "Every campaign includes clear marketing performance reports, so you always know what’s working. No hidden data, no vague numbers, just measurable progress you can track.",
       ],
@@ -526,7 +545,7 @@ export const digitalMarketingScrollSectionData = {
       id: "digital-case-study-2",
       step: 2,
       title: "Industry-Focused Strategies",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-marketing-company/what-makes-our-digital-marketing-company-different/industry-focused-strategies.svg",
       paragraphs: [
         "We build industry-specific marketing solutions designed for the challenges and opportunities of your sector, ensuring campaigns are always relevant and effective.",
       ],
@@ -541,7 +560,7 @@ export const digitalMarketingScrollSectionData = {
       id: "digital-case-study-3",
       step: 3,
       title: "Conversion First",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-marketing-company/what-makes-our-digital-marketing-company-different/conversion-first.svg",
       paragraphs: [
         "Our conversion optimization services focus on turning traffic into customers, refining every touchpoint to generate consistent leads and sales.",
       ],
@@ -556,7 +575,7 @@ export const digitalMarketingScrollSectionData = {
       id: "digital-case-study-4",
       step: 4,
       title: "Dedicated Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-marketing-company/what-makes-our-digital-marketing-company-different/dedicated-support.svg",
       paragraphs: [
         "With proactive digital account management, you get a team that understands your goals and keeps campaigns moving forward without delays.",
       ],
@@ -571,7 +590,7 @@ export const digitalMarketingScrollSectionData = {
       id: "digital-case-study-5",
       step: 5,
       title: "Scalable Growth",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/digital-marketing-company/what-makes-our-digital-marketing-company-different/scalable-growth.svg",
       paragraphs: [
         "Through customized digital strategies, we adapt to your growth, whether it’s building local visibility, expanding nationally, or reaching global markets.",
       ],
