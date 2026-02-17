@@ -394,7 +394,7 @@ export const videoAnimationWorkflowData = {
       alignment: "left",
     },
   ],
-};
+}; 
 
 // Technologies Section Data (Section 9)
 export const videoAnimationTechnologiesSectionData = {
