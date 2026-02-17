@@ -123,6 +123,7 @@ export const videoAnimationImpactCardsData = [
       "With brand video animation, businesses can showcase personality, values, and uniqueness in a way that resonates emotionally with their audience. Adding character animation brings a human-like connection that builds trust and memorability.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/video-animation-services/why-brands-invest-in-video-animation-to-tell-their-story/enhanced-brand-storytelling.svg",
   },
   {
     id: 2,
@@ -131,6 +132,7 @@ export const videoAnimationImpactCardsData = [
       "Digital content creation works best when it moves, and animated visuals naturally draw attention. Animated visuals consistently outperform static ads, making them perfect for animated commercials that capture attention and boost interaction across platforms.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/video-animation-services/why-brands-invest-in-video-animation-to-tell-their-story/driving-digital-engagement.svg",
   },
   {
     id: 3,
@@ -139,6 +141,7 @@ export const videoAnimationImpactCardsData = [
       "Through corporate storytelling, animation makes complex information digestible and engaging. With product demo animation, businesses can break down features step by step, ensuring clarity while keeping viewers hooked.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/video-animation-services/why-brands-invest-in-video-animation-to-tell-their-story/simplifying-complex-messages.svg",
   },
   {
     id: 4,
@@ -147,6 +150,7 @@ export const videoAnimationImpactCardsData = [
       "Professional business animation services use structured visuals to present brands with authority. With a custom storyboard design, each frame is crafted intentionally, ensuring consistency and clarity from start to finish.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/video-animation-services/why-brands-invest-in-video-animation-to-tell-their-story/animation-that-builds-confidence.svg",
   },
 ];
 
@@ -166,6 +170,7 @@ export const videoAnimationServicesData = [
       "Simplify complex concepts with explainer videos that connect with your audience. Choose from whiteboard explainer styles, character animation, or minimalistic design to match your brand tone.",
     icon: <BagIcon/>,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/video-animation-services/creative-solutions-for-every-animation-need/explainer-videos.svg",
   },
   {
     id: 2,
@@ -174,6 +179,7 @@ export const videoAnimationServicesData = [
       "Bring presentations, ads, and digital campaigns to life with dynamic motion graphics that grab attention and enhance brand recall.",
     icon: <BagIcon/>,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/video-animation-services/creative-solutions-for-every-animation-need/motion-graphics.svg",
   },
   {
     id: 3,
@@ -182,6 +188,7 @@ export const videoAnimationServicesData = [
       "From clean, flat 2D animation for educational or marketing content to immersive 3D animation for product showcases, we tailor the right visual style for your goals.",
     icon: <BagIcon/>,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/video-animation-services/creative-solutions-for-every-animation-need/2d-3d-animation.svg",
   },
   {
     id: 4,
@@ -190,6 +197,7 @@ export const videoAnimationServicesData = [
       "Every project begins with a custom storyboard design to lock in the creative vision. Our creative video editing ensures smooth pacing, polished transitions, and a professional finish.",
     icon: <BagIcon/>,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/video-animation-services/creative-solutions-for-every-animation-need/storyboarding-editing.svg",
   },
   {
     id: 5,
@@ -198,6 +206,7 @@ export const videoAnimationServicesData = [
       "Stop the scroll with short-form social media animation and compelling animated commercials designed to boost engagement and conversions.",
     icon: <BagIcon/>,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/video-animation-services/creative-solutions-for-every-animation-need/animated-commercials-social-media-content.svg",
   },
 ];
 
@@ -219,8 +228,8 @@ export const videoAnimationIndustriesCardsData = [
     title: "SaaS",
     description:
       "Our SaaS video animation services explain complex software with clarity, helping teams onboard users, highlight product features, and drive adoption faster.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/video-animation-services//who-we-create-animated-videos-for/original/saas.svg`,
+    imgWhite: `/assets/images/video-animation-services/who-we-create-animated-videos-for/hover/saas.svg`,
     alt: "SaaS Video Animation",
     width: 71,
     height: 71,
@@ -229,8 +238,8 @@ export const videoAnimationIndustriesCardsData = [
     title: "Education",
     description:
       "Through education video animation services, we create engaging tutorials and e-learning modules that simplify lessons, improve retention, and support interactive learning.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/video-animation-services/who-we-create-animated-videos-for/original/education.svg`,
+    imgWhite: `/assets/images/video-animation-services/who-we-create-animated-videos-for/hover/education.svg`,
     alt: "Education Video Animation",
     width: 71,
     height: 71,
@@ -239,8 +248,8 @@ export const videoAnimationIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our healthcare video animation services make medical concepts easier to understand, from patient education to staff training, while supporting clear, compliant communication.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/video-animation-services/who-we-create-animated-videos-for/original/healthcare.svg`,
+    imgWhite: `/assets/images/video-animation-services/who-we-create-animated-videos-for/hover/healthcare.svg`,
     alt: "Healthcare Video Animation",
     width: 71,
     height: 71,
@@ -249,8 +258,8 @@ export const videoAnimationIndustriesCardsData = [
     title: "Real Estate",
     description:
       "With real estate video animation services, we craft virtual tours, animated floor plans, and neighborhood walkthroughs that boost property visibility and buyer confidence.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/video-animation-services/who-we-create-animated-videos-for/original/real-estate.svg`,
+    imgWhite: `/assets/images/video-animation-services/who-we-create-animated-videos-for/hover/real-estate.svg`,
     alt: "Real Estate Video Animation",
     width: 71,
     height: 71,
@@ -259,8 +268,8 @@ export const videoAnimationIndustriesCardsData = [
     title: "Automotive",
     description:
       "Our automotive video animation services bring vehicles to life with 3D showcases, feature highlights, and dealership promos that accelerate interest and sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/video-animation-services/who-we-create-animated-videos-for/original/automotive.svg`,
+    imgWhite: `/assets/images/video-animation-services/who-we-create-animated-videos-for/hover/automotive.svg`,
     alt: "Automotive Video Animation",
     width: 71,
     height: 71,
@@ -269,8 +278,8 @@ export const videoAnimationIndustriesCardsData = [
     title: "Travel",
     description:
       "Through travel video animation services, we design destination explainers, itinerary highlights, and promotional videos that inspire bookings and build customer excitement.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/video-animation-services/who-we-create-animated-videos-for/original/travel.svg`,
+    imgWhite: `/assets/images/video-animation-services/who-we-create-animated-videos-for/hover/travel.svg`,
     alt: "Travel Video Animation",
     width: 71,
     height: 71,
@@ -354,7 +363,7 @@ export const videoAnimationWorkflowData = {
       title: "Discovery & Script Development",
       description:
         "The process begins with understanding your brand, audience, and objectives. Through animated storytelling, we translate your message into a clear script that sets the foundation for the animation.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/video-animation-services/how-our-video-animation-process-works/discovery-script-development.svg",
       alignment: "right",
     },
     {
@@ -363,7 +372,7 @@ export const videoAnimationWorkflowData = {
       title: "Storyboarding & Concept Design",
       description:
         "Once the script is finalized, we create detailed frames that show how the story will unfold. A strong visual content strategy ensures that each scene aligns with your goals and captures the right tone.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/video-animation-services/how-our-video-animation-process-works/storyboarding-concept-design.svg",
       alignment: "left",
     },
     {
@@ -372,7 +381,7 @@ export const videoAnimationWorkflowData = {
       title: "Animation Production",
       description:
         "At this stage, ideas are brought to life with motion, graphics, and sound. Using creative video editing, we refine pacing, transitions, and effects to deliver smooth and engaging visuals.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/video-animation-services/how-our-video-animation-process-works/animation-production.svg",
       alignment: "right",
     },
     {
@@ -381,7 +390,7 @@ export const videoAnimationWorkflowData = {
       title: "Review & Refinement",
       description:
         "Before delivery, the animation goes through strict checks for accuracy, flow, and effectiveness. With content quality assurance, we ensure the final video meets both brand standards and audience expectations.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/video-animation-services/how-our-video-animation-process-works/review-refinement.svg",
       alignment: "left",
     },
   ],
@@ -480,7 +489,7 @@ export const videoAnimationScrollSectionData = {
       id: "video-case-study-1",
       step: 1,
       title: "Creative Brand Flexibility",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/video-animation-services/why-businesses-trust-our-animation-services/creative-brand-flexibility.svg",
       paragraphs: [
         "Many providers offer generic animations that feel templated. Our focus is on animated marketing videos built to reflect brand identity, tone, and messaging. Each project is tailored so the final animation feels unique to your business and resonates with the right audience."
       ],
@@ -495,7 +504,7 @@ export const videoAnimationScrollSectionData = {
       id: "video-case-study-2",
       step: 2,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/video-animation-services/why-businesses-trust-our-animation-services/transparent-pricing.svg",
       paragraphs: [
         "Cost often becomes a barrier when businesses look for quality animations. We address this by offering affordable video animation services with clear packages and no hidden charges. This ensures you know exactly what you are investing in while still receiving top-quality results."
       ],
@@ -510,7 +519,7 @@ export const videoAnimationScrollSectionData = {
       id: "video-case-study-3",
       step: 3,
       title: "Faster Turnarounds",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/video-animation-services/why-businesses-trust-our-animation-services/faster-turnarounds.svg",
       paragraphs: [
         "Time matters in digital campaigns, and delays can stall growth. Our workflow for animated video production services is structured to deliver high-quality animations quickly, without cutting corners or affecting creative standards."
       ],
@@ -525,7 +534,7 @@ export const videoAnimationScrollSectionData = {
       id: "video-case-study-4",
       step: 4,
       title: "Full Production Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/video-animation-services/why-businesses-trust-our-animation-services/full-production-support.svg",
       paragraphs: [
         "Instead of outsourcing parts of the process, we handle everything in-house. Our explainer video services include scripting, storyboarding, animation, voiceovers, and final delivery, keeping the process smooth and ensuring consistency at every stage."
       ],
@@ -540,7 +549,7 @@ export const videoAnimationScrollSectionData = {
       id: "video-case-study-5",
       step: 5,
       title: "Industry-Specific Expertise",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/video-animation-services/why-businesses-trust-our-animation-services/industry-specific-expertise.svg",
       paragraphs: [
         "Experience across industries helps us understand how different businesses communicate. Unlike general providers, our team works like specialized animation studios in the US, offering insights that align with sector-specific needs, whether it’s technology, healthcare, or retail."
       ],
