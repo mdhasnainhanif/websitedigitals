@@ -231,7 +231,7 @@ const serviceDataMap = {
   "custom-logo-design-services": {
     bannerData: customLogoDesignBannerData,
     bannerData2: customLogoDesignBannerData2,
-    scrollSectionData: null,
+    scrollSectionData: customLogoDesignScrollSectionData,
     servicesData: customLogoDesignServicesData,
     statsData: customLogoDesignStatsData,
     impactSectionData: customLogoDesignImpactSectionData,
