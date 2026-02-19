@@ -131,6 +131,7 @@ export const customGraphicDesignImpactCardsData = [
       "Strong visual branding builds brand recognition across every channel. A consistent approach to logos, colors, and typography makes businesses instantly memorable and trustworthy.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-graphic-design-services/why-custom-graphic-design-services-build-stronger-brands/unique-visual-identity.svg",
   },
   {
     id: 2,
@@ -139,6 +140,7 @@ export const customGraphicDesignImpactCardsData = [
       "Engaging digital creatives and compelling advertising graphics capture attention, drive engagement, and support meaningful lead generation across digital platforms.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-graphic-design-services/why-custom-graphic-design-services-build-stronger-brands/creative-marketing-assets.svg",
   },
   {
     id: 3,
@@ -147,6 +149,7 @@ export const customGraphicDesignImpactCardsData = [
       "Through graphic storytelling and thoughtful presentation design, complex ideas are simplified and delivered in a way that resonates with audiences and persuades decision-makers.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-graphic-design-services/why-custom-graphic-design-services-build-stronger-brands/strategic-design-communication.svg",
   },
   {
     id: 4,
@@ -155,6 +158,7 @@ export const customGraphicDesignImpactCardsData = [
       "Investing in customized graphics with scalable design packages ensures businesses of every size can access high-quality design without compromising on budget or impact.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-graphic-design-services/why-custom-graphic-design-services-build-stronger-brands/roi-driven-design-solutions.svg",
   },
 ];
 
@@ -174,6 +178,7 @@ export const customGraphicDesignServicesData = [
       "Bring your products to life with custom packaging design, business cards design, brochures, and other marketing materials that stand out on shelves and in customers' hands. We make sure your print design complements your digital strategy for a unified look.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/packaging-design-print-collateral.svg",
   },
   {
     id: 2,
@@ -182,6 +187,7 @@ export const customGraphicDesignServicesData = [
       "From digital illustration to website graphics, we craft visuals that enhance your site experience, guide user actions, and make your brand memorable. Perfect for businesses looking to boost engagement with a modern, creative edge.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/digital-illustration-website-graphics.svg",
   },
   {
     id: 3,
@@ -190,6 +196,7 @@ export const customGraphicDesignServicesData = [
       "Engage your audience with scroll-stopping social media graphics and campaign assets tailored to each platform. Whether you need visual storytelling for ads, posts, or reels, we make sure your message gets noticed.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/social-media-content-graphics.svg",
   },
   {
     id: 4,
@@ -198,6 +205,7 @@ export const customGraphicDesignServicesData = [
       "Transform your ideas into compelling design consultation deliverables, including business presentation design, pitch decks, and sales sheets. We simplify complex information and make every slide look professional and persuasive.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/presentation-marketing-deck-design.svg",
   },
   {
     id: 5,
@@ -206,6 +214,7 @@ export const customGraphicDesignServicesData = [
       "Add originality to your brand with hand-crafted custom graphics and illustrations that tell your brand's story. Whether it's for a campaign, ad, or internal communication, we deliver unique visuals that capture attention and spark interest.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/custom-illustration-visual-storytelling.svg",
   },
 ];
 
@@ -224,7 +233,7 @@ export const customGraphicDesignIndustriesSectionData = {
 
 export const customGraphicDesignIndustriesCardsData = [
   {
-    title: "Real Estate",
+    title: "Real Estate sdf",
     description:
       "We provide custom graphic design services for real estate that showcase properties with striking brochures, branding, and digital assets, helping agents and developers attract buyers and close deals faster.",
     imgOriginal: `/assets/images/whyChooseUs1.webp`,
@@ -296,7 +305,7 @@ export const customGraphicDesignScrollSectionData = {
       id: "graphic-firstScroller",
       step: 1,
       title: "Designs That Match Your Goals",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-graphic-design-services/what-makes-our-graphic-design-different/designs-that-match-your-goals.svg",
       paragraphs: [
         "Through brand-driven graphics, we create designs that not only look appealing but also work as tools for lead generation, sales, and long-term growth.",
       ],
@@ -311,7 +320,7 @@ export const customGraphicDesignScrollSectionData = {
       id: "graphic-secondScroller",
       step: 2,
       title: "Consistency Across Channel",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-graphic-design-services/what-makes-our-graphic-design-different/consistency-across-channel.svg",
       paragraphs: [
         "With multi-platform branding, our designs maintain a unified look and feel across websites, social media, print campaigns, and offline assets.",
       ],
@@ -326,7 +335,7 @@ export const customGraphicDesignScrollSectionData = {
       id: "graphic-thirdScroller",
       step: 3,
       title: "Fast Turnaround with Quality",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-graphic-design-services/what-makes-our-graphic-design-different/fast-turnaround-with-quality.svg",
       paragraphs: [
         "Our process is streamlined to deliver deadline-focused design so campaigns launch on schedule while maintaining attention to detail and professional standards.",
       ],
@@ -341,7 +350,7 @@ export const customGraphicDesignScrollSectionData = {
       id: "graphic-forthScroller",
       step: 4,
       title: "Flexible Packages for Any Budget",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-graphic-design-services/what-makes-our-graphic-design-different/flexible-packages-for-any-budget.svg",
       paragraphs: [
         "With scalable creative solutions, we adapt services to fit startups, mid-sized companies, and enterprises without compromising on design quality.",
       ],
@@ -356,7 +365,7 @@ export const customGraphicDesignScrollSectionData = {
       id: "graphic-fifthScroller",
       step: 5,
       title: "Support Beyond Delivery",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-graphic-design-services/what-makes-our-graphic-design-different/support-beyond-delivery.svg",
       paragraphs: [
         "Through dedicated post-project assistance, we ensure your team has the support, revisions, and guidance needed to implement designs effectively.",
       ],
@@ -383,7 +392,7 @@ export const customGraphicDesignWorkflowData = {
       title: "Initial Consultation and Planning",
       description:
         "The process starts with an in-depth consultation to define requirements and map out a creative strategy. This step sets the direction by aligning design objectives with the brand's overall vision.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/custom-graphic-design-services/the-process-behind-our-custom-design-services/initial-consultation-and-planning.svg",
       alignment: "right",
     },
     {
@@ -392,7 +401,7 @@ export const customGraphicDesignWorkflowData = {
       title: "Market and Brand Research",
       description:
         "Through detailed competitor analysis, the research stage identifies industry standards and creative opportunities. This ensures the designs remain unique while also staying relevant to audience expectations.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/custom-graphic-design-services/the-process-behind-our-custom-design-services/market-and-brand-research.svg",
       alignment: "left",
     },
     {
@@ -401,7 +410,7 @@ export const customGraphicDesignWorkflowData = {
       title: "Concept Drafting and Design Development",
       description:
         "With research insights in place, designers create visual mockups to explore different creative directions. These early drafts provide a foundation for refining the final look and feel of the brand assets.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/custom-graphic-design-services/the-process-behind-our-custom-design-services/concept-drafting-and-design-development.svg",
       alignment: "right",
     },
     {
@@ -410,7 +419,7 @@ export const customGraphicDesignWorkflowData = {
       title: "Delivery and Post-Launch Guidance",
       description:
         "Refinement happens through rounds of collaborative feedback, ensuring each element, color, font, and layout aligns with the client's brand voice and goals. This step guarantees accuracy and consistency before delivery.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/custom-graphic-design-services/the-process-behind-our-custom-design-services/delivery-and-post-launch-guidance.svg",
       alignment: "left",
     },
   ],
