@@ -236,8 +236,8 @@ export const customGraphicDesignIndustriesCardsData = [
     title: "Real Estate",
     description:
       "We provide custom graphic design services for real estate that showcase properties with striking brochures, branding, and digital assets, helping agents and developers attract buyers and close deals faster.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-graphic-design-services/industries-we-support/original/real-estate.svg`,
+    imgWhite: `/assets/images/custom-graphic-design-services/industries-we-support/hover/real-estate.svg`,
     alt: "Real Estate Graphic Design",
     width: 71,
     height: 71,
@@ -246,8 +246,8 @@ export const customGraphicDesignIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our custom graphic design services for healthcare focus on clarity and professionalism, creating patient-friendly visuals for hospitals, clinics, and wellness brands that inspire trust and strengthen communication.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/custom-graphic-design-services/industries-we-support/original/healthcare.svg`,
+    imgWhite: `/assets/images/custom-graphic-design-services/industries-we-support/hover/healthcare.svg`,
     alt: "Healthcare Graphic Design",
     width: 71,
     height: 71,
@@ -256,8 +256,8 @@ export const customGraphicDesignIndustriesCardsData = [
     title: "Restaurant",
     description:
       "Through custom graphic design services for restaurants, we design menus, packaging, and promotional assets that capture your brand's flavor, enhance customer experience, and keep diners coming back.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/custom-graphic-design-services/industries-we-support/original/restaurant.svg`,
+    imgWhite: `/assets/images/custom-graphic-design-services/industries-we-support/hover/restaurant.svg`,
     alt: "Restaurant Graphic Design",
     width: 71,
     height: 71,
@@ -266,8 +266,8 @@ export const customGraphicDesignIndustriesCardsData = [
     title: "Finance",
     description:
       "With custom graphic design services for finance, we simplify complex data into engaging visuals, reports, and brand assets that build client confidence and support credibility in a competitive market.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/custom-graphic-design-services/industries-we-support/original/finance.svg`,
+    imgWhite: `/assets/images/custom-graphic-design-services/industries-we-support/hover/finance.svg`,
     alt: "Finance Graphic Design",
     width: 71,
     height: 71,
