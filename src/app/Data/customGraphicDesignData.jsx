@@ -130,8 +130,8 @@ export const customGraphicDesignImpactCardsData = [
     description:
       "Strong visual branding builds brand recognition across every channel. A consistent approach to logos, colors, and typography makes businesses instantly memorable and trustworthy.",
     icon: "/assets/images/work/pen-tool.svg",
-    col: "col-12 col-md-6 col-lg-6",
-    image: "/assets/images/custom-graphic-design-services/why-custom-graphic-design-services-build-stronger-brands/unique-visual-identity.svg",
+    col: "col-12 col-md-6 col-lg-6",                   
+    image: "/assets/images/custom-graphic-design-services/why-custom-graphic-design-services-build-stronger-brands/unique-visual-Identity1.svg",
   },
   {
     id: 2,
