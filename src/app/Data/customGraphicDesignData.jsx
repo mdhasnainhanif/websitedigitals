@@ -213,8 +213,8 @@ export const customGraphicDesignServicesData = [
     description:
       "Add originality to your brand with hand-crafted custom graphics and illustrations that tell your brand's story. Whether it's for a campaign, ad, or internal communication, we deliver unique visuals that capture attention and spark interest.",
     icon: <BagIcon />,
-    isActive: false,
-    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/custom-illustration-visual-storytelling.svg",
+    isActive: false,  
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/custom-Illustration-visual-storytelling1.svg",
   },
 ];
 
@@ -233,7 +233,7 @@ export const customGraphicDesignIndustriesSectionData = {
 
 export const customGraphicDesignIndustriesCardsData = [
   {
-    title: "Real Estate sdf",
+    title: "Real Estate",
     description:
       "We provide custom graphic design services for real estate that showcase properties with striking brochures, branding, and digital assets, helping agents and developers attract buyers and close deals faster.",
     imgOriginal: `/assets/images/whyChooseUs1.webp`,
@@ -370,6 +370,7 @@ export const customGraphicDesignScrollSectionData = {
         "Through dedicated post-project assistance, we ensure your team has the support, revisions, and guidance needed to implement designs effectively.",
       ],
       image: {
+
         src: "/assets/images/scroller/digital-marketing/1.png",
         alt: "Support Beyond Delivery",
         width: 669,
