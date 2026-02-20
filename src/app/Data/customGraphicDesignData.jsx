@@ -187,8 +187,8 @@ export const customGraphicDesignServicesData = [
       "From digital illustration to website graphics, we craft visuals that enhance your site experience, guide user actions, and make your brand memorable. Perfect for businesses looking to boost engagement with a modern, creative edge.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/digital-illustration-website-graphics.svg",
-  },
+    image: "/assets/images/custom-graphic-design-services/our-custom-graphic-design-services/digital-Illustration-website-graphics1.svg",
+  },                
   {
     id: 3,
     title: "Social Media & Content Graphics",
