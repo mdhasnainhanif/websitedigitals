@@ -91,6 +91,7 @@ export const amazonStoreDesignServicesData = [
       "We create custom storefront templates that are mobile-friendly, visually engaging, and built to support conversion rate optimization.",
     icon: <BagIcon />,
     isActive: true,
+    image:"/assets/images/amazon-store-design-services/amazon-design-services-that-showcase-your-unique-style/store-customization-services.svg",
   },
   {
     id: 2,
@@ -99,6 +100,7 @@ export const amazonStoreDesignServicesData = [
       "Our team designs high-impact product pages with graphics, comparison charts, and storytelling to improve engagement and elevate brand presentation.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/amazon-store-design-services/amazon-design-services-that-showcase-your-unique-style/content-design-services.svg",
   },
   {
     id: 3,
@@ -107,6 +109,7 @@ export const amazonStoreDesignServicesData = [
       "We provide product listing optimization, catalog design, and keyword-rich copywriting to improve search rankings and drive sales. This includes aligning with marketplace optimization strategies for maximum visibility.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/amazon-store-design-services/amazon-design-services-that-showcase-your-unique-style/product-listing-catalog-optimization.svg",
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ export const amazonStoreDesignServicesData = [
       "We focus on e-commerce branding, UX/UI design, and performance analytics. We monitor results and continuously optimize your storefront to keep pace with trends and increase ROI.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/amazon-store-design-services/amazon-design-services-that-showcase-your-unique-style/store-branding-ongoing-optimization.svg",
   },
   {
     id: 5,
@@ -123,6 +127,7 @@ export const amazonStoreDesignServicesData = [
       "Our specialists offer consulting services for storefronts, helping you select the right layout, design elements, and strategy. Whether you're a first-time seller or an established brand, we provide professional help to design your store and streamline the entire selling process.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/amazon-store-design-services/amazon-design-services-that-showcase-your-unique-style/consultation-support.svg",
   },
 ];
 
@@ -136,7 +141,7 @@ export const amazonStoreDesignServicesScrollSectionData = {
       id: "amazon-firstScroller",
       step: 1,
       title: "Data-Driven Store Strategy",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/amazon-store-design-services/why-choose-our-amazon-store-design-services/data-driven-store-strategy.svg",
       paragraphs: [
         "Our process starts with insights, not assumptions. By focusing on conversion funnel optimization, each store design is shaped to guide buyers smoothly from product discovery to checkout, ensuring higher sales consistency.",
       ],
@@ -151,7 +156,7 @@ export const amazonStoreDesignServicesScrollSectionData = {
       id: "amazon-secondScroller",
       step: 2,
       title: "Seamless Brand Integration",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/amazon-store-design-services/why-choose-our-amazon-store-design-services/seamless-brand-integration.svg",
       paragraphs: [
         "Your Amazon storefront should never feel disconnected from the rest of your brand. We create designs that ensure cross-platform consistency, so customers recognize and trust your brand whether they shop on Amazon or your other digital channels.",
       ],
@@ -166,7 +171,7 @@ export const amazonStoreDesignServicesScrollSectionData = {
       id: "amazon-thirdScroller",
       step: 3,
       title: "Scalable Design Solutions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/amazon-store-design-services/why-choose-our-amazon-store-design-services/scalable-design-solutions.svg",
       paragraphs: [
         "Sellers grow, and their storefronts should grow with them. Our modular storefront layouts allow products, categories, and campaigns to expand without the need for a complete redesign, keeping performance intact over time.",
       ],
@@ -181,7 +186,7 @@ export const amazonStoreDesignServicesScrollSectionData = {
       id: "amazon-fourthScroller",
       step: 4,
       title: "Optimized for Buyer Psychology",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/amazon-store-design-services/why-choose-our-amazon-store-design-services/optimized-for-buyer-psychology.svg",
       paragraphs: [
         "Success on Amazon depends on how quickly a shopper connects with a product. We use visual hierarchy design to highlight the right elements at the right time, making decision-making faster and increasing purchase intent.",
       ],
@@ -196,7 +201,7 @@ export const amazonStoreDesignServicesScrollSectionData = {
       id: "amazon-fifthScroller",
       step: 5,
       title: "Compliance-Ready Execution",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/amazon-store-design-services/why-choose-our-amazon-store-design-services/compliance-ready-execution.svg",
       paragraphs: [
         "Amazon’s rules are strict, and a non-compliant storefront risks downtime or penalties. Every design we build follows Amazon policy alignment, giving sellers peace of mind while maintaining a polished buyer experience.",
       ],
@@ -278,6 +283,7 @@ export const amazonStoreDesignServicesImpactCardsData = [
     icon: "conversion",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/amazon-store-design-services/why-amazon-store-design-matters/lead-generating-features-that-convert.svg",
   },
   {
     id: 2,
@@ -287,6 +293,7 @@ export const amazonStoreDesignServicesImpactCardsData = [
     icon: "engagement",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/amazon-store-design-services/why-amazon-store-design-matters/custom-design-that-reflects-your-brand.svg",
   },
   {
     id: 3,
@@ -296,6 +303,7 @@ export const amazonStoreDesignServicesImpactCardsData = [
     icon: "roi",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/amazon-store-design-services/why-amazon-store-design-matters/built-for-visibility-from-the-ground-up.svg",
   },
   {
     id: 4,
@@ -305,6 +313,7 @@ export const amazonStoreDesignServicesImpactCardsData = [
     icon: "trust",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/amazon-store-design-services/why-amazon-store-design-matters/engaging-content-that-builds-trust.svg",
   },
 ];
 
@@ -367,42 +376,42 @@ export const amazonStoreDesignServicesTechnologiesData = [
     title: "AWS",
     description:
       "Our Amazon store is designed with AWS optimization service to enhance reliability, security, and efficiency, helping your storefront integrate with cloud-powered performance that scales seamlessly with customer demand.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/aws.svg",
   },
   {
     id: 2,
     title: "Amazon CloudFront",
     description:
       "Through Amazon storefront design using CloudFront, we accelerate media delivery via a global content delivery network (CDN), ensuring rapid load times and consistent buyer experiences worldwide.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/amazon-cloudfront.svg",
   },
   {
     id: 3,
     title: "Amazon EC2",
     description:
       "We provide Amazon brand store design optimized on AWS EC2, using flexible compute power for product feeds, image processing, and automation that keeps storefronts running smoothly.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/amazon-ec2.svg",
   },
   {
     id: 4,
     title: "Amazon RDS",
     description:
       "Our Amazon storefront design with database support RDS delivers secure, scalable data handling for catalogs and reporting, ensuring product and customer data stays consistent and reliable.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/amazon-rds.svg",
   },
   {
     id: 5,
     title: "Amazon DynamoDB",
     description:
       "With the Amazon store design with DynamoDB integration, we enable real-time lookups and rapid database queries, supporting instant updates and personalized shopping experiences.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/amazon-dynamoDB.svg",
   },
   {
     id: 6,
     title: "AWS Scalability",
     description:
       "We create professional Amazon store designs using AWS scalability features such as Auto Scaling and Load Balancing, ensuring stores adapt effortlessly to traffic spikes and expanding product lines.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/aws-scalability.svg",
   },
 ];
 
@@ -418,7 +427,7 @@ export const amazonStoreDesignServicesWorkflowData = {
       title: "Discovery and Store Analysis",
       description:
         "The process begins with a full review of your brand's presence and category. Through competitor benchmarking, we identify design gaps, analyze strengths, and set clear objectives for your Amazon store.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/amazon-store-design-services/our-amazon-store-design-process/discovery-and-store-analysis.svg",
       alignment: "right",
     },
     {
@@ -427,7 +436,7 @@ export const amazonStoreDesignServicesWorkflowData = {
       title: "Strategy and Planning",
       description:
         "Once the analysis is complete, we create a roadmap tailored to your audience. By applying customer journey mapping, we align design elements with buyer behavior, ensuring every step of the storefront feels intentional and sales-driven.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/amazon-store-design-services/our-amazon-store-design-process/strategy-and-planning.svg",
       alignment: "left",
     },
     {
@@ -436,7 +445,7 @@ export const amazonStoreDesignServicesWorkflowData = {
       title: "Creative Storefront Design",
       description:
         "At this stage, visuals take shape. We design brand-aligned mockups that translate your identity into a professional Amazon storefront. Every layout is crafted for clarity, engagement, and compliance with Amazon's requirements.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/amazon-store-design-services/our-amazon-store-design-process/creative-storefront-design.svg",
       alignment: "right",
     },
     {
@@ -445,7 +454,7 @@ export const amazonStoreDesignServicesWorkflowData = {
       title: "Optimization and Launch",
       description:
         "Before the store goes live, we refine performance through usability testing. From navigation flow to load times, every element is tested, adjusted, and finalized to ensure your storefront delivers a seamless customer experience on launch.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/amazon-store-design-services/our-amazon-store-design-process/optimization-and-launch.svg",
       alignment: "left",
     },
   ],
@@ -613,8 +622,8 @@ export const amazonStoreDesignServicesIndustriesCardsData = [
     title: "Electronics",
     description:
       "Our Amazon electronics store design service highlights tech products with comparison tables, compatibility callouts, and streamlined layouts, making complex choices simple while boosting sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/electronics.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/electronics.svg`,
     alt: "Electronics Amazon Store Design",
     width: 71,
     height: 71,
@@ -623,8 +632,8 @@ export const amazonStoreDesignServicesIndustriesCardsData = [
     title: "Fashion",
     description:
       "Through our Amazon fashion store design services, we create stylish, mobile-first storefronts with size guides, swatches, and engaging lookbooks that elevate product discovery and buyer confidence.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/fashion.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/fashion.svg`,
     alt: "Fashion Amazon Store Design",
     width: 71,
     height: 71,
@@ -633,8 +642,8 @@ export const amazonStoreDesignServicesIndustriesCardsData = [
     title: "Wellness Store",
     description:
       "Our Amazon wellness store design services emphasize clean layouts, ingredient transparency, and certification highlights, building customer trust while showcasing health-focused products effectively.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/wellness-store.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/wellness-store.svg`,
     alt: "Wellness Amazon Store Design",
     width: 71,
     height: 71,
@@ -643,8 +652,8 @@ export const amazonStoreDesignServicesIndustriesCardsData = [
     title: "Auto Parts",
     description:
       "With our Amazon auto parts store design services, we design storefronts that feature Year/Make/Model fitment tools, organized categories, and compatibility-driven navigation for confident purchases.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/auto-parts.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/auto-parts.svg`,
     alt: "Auto Parts Amazon Store Design",
     width: 71,
     height: 71,
@@ -653,8 +662,8 @@ export const amazonStoreDesignServicesIndustriesCardsData = [
     title: "Jewelry",
     description:
       "As an Amazon jewelry store design agency, we craft elegant storefronts with 360° product views, certification displays, and premium layouts that enhance trust and drive luxury sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/Jewelry.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/Jewelry.svg`,
     alt: "Jewelry Amazon Store Design",
     width: 71,
     height: 71,
@@ -663,8 +672,8 @@ export const amazonStoreDesignServicesIndustriesCardsData = [
     title: "Fitness",
     description:
       "Our Amazon fitness store design service focuses on motivating storefronts with demo videos, bundled product promotions, and performance-driven layouts that inspire active buyers to convert.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/fitness.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/fitness.svg`,
     alt: "Fitness Amazon Store Design",
     width: 71,
     height: 71,
