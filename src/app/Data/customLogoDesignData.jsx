@@ -131,6 +131,7 @@ export const customLogoDesignImpactCardsData = [
       "Strong brand recognition doesn't happen by chance. A logo designed with purpose and visual storytelling becomes the symbol customers remember when they think of your business. The more they see it, the stronger the connection.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-logo-design-services/why-a-professional-logo-design-matters-for-your-brand/build-lasting-brand-recognition.svg",
   },
   {
     id: 2,
@@ -139,6 +140,7 @@ export const customLogoDesignImpactCardsData = [
       "Credibility starts with presentation. A polished logo that follows professional design standards shows that your business is reliable and trustworthy. When your visuals look professional, your reputation grows with them.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-logo-design-services/why-a-professional-logo-design-matters-for-your-brand/establish-professional-credibility.svg",
   },
   {
     id: 3,
@@ -147,6 +149,7 @@ export const customLogoDesignImpactCardsData = [
       "Logos must be versatile to succeed. With scalable formats, your design stays sharp whether it's on a website, social media profile, business card, or billboard. One design, endless applications.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-logo-design-services/why-a-professional-logo-design-matters-for-your-brand/create-versatile-designs.svg",   
   },
   {
     id: 4,
@@ -155,6 +158,7 @@ export const customLogoDesignImpactCardsData = [
       "Every detail of your logo should reflect your brand positioning and support your wider identity system. A custom design ensures your values, mission, and market focus are communicated clearly at every level.",
     icon: "/assets/images/work/pen-tool.svg",
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/custom-logo-design-services/why-a-professional-logo-design-matters-for-your-brand/align-with-your-unique-goals.svg",   
   },
 ];
 
@@ -188,6 +192,7 @@ export const customLogoDesignServicesData = [
       "Your business logo needs to look sharp everywhere, from a business card to a billboard. We deliver vector logo files (AI, EPS, SVG) so your brand remains crisp and professional in every format.",
     icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/custom-logo-design-services/custom-logo-design-services-that-fit-your-market/scalable-vector-logo-design.svg",   
   },
   {
     id: 2,
@@ -196,6 +201,7 @@ export const customLogoDesignServicesData = [
       "If your current logo feels dated, we provide a full logo redesign service to modernize your look while retaining the equity your brand has built. This keeps you relevant and appealing to today's market.",
     icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/custom-logo-design-services/custom-logo-design-services-that-fit-your-market/logo-redesign-refresh.svg",   
   },
   {
     id: 3,
@@ -204,6 +210,7 @@ export const customLogoDesignServicesData = [
       "Custom-designed templates and branded assets for Instagram, LinkedIn, and Facebook to ensure your brand identity is instantly recognizable across your digital channels.",
     icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/custom-logo-design-services/custom-logo-design-services-that-fit-your-market/marketing-collateral-design.svg",
   },
   {
     id: 4,
@@ -212,6 +219,7 @@ export const customLogoDesignServicesData = [
       "We create comprehensive brand guidelines that define how your logo, fonts, and colors work together across platforms. This ensures your visual identity design stays consistent, no matter who is creating content for your business.",
     icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/custom-logo-design-services/custom-logo-design-services-that-fit-your-market/brand-guidelines-visual-identity.svg",
   },
   {
     id: 5,
@@ -220,6 +228,7 @@ export const customLogoDesignServicesData = [
       "Beyond logo creation, we prepare ready-to-use assets for both digital design services (social media, websites) and print formats (business cards, brochures). You'll get everything you need for a consistent brand experience.",
     icon: <BagIcon />,
     col: "col-12 col-md-6 col-lg-4",
+    image: "/assets/images/custom-logo-design-services/custom-logo-design-services-that-fit-your-market/digital-print-ready-assets.svg",
   },
 ];
 
@@ -242,8 +251,8 @@ export const customLogoDesignIndustriesCardsData = [
     title: "Restaurant",
     description:
       "Our restaurant custom logo design service creates appetizing visuals that reflect your cuisine and atmosphere. From cafés to fine dining, we design logos that spark interest and keep your brand top of mind.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-logo-design-services/industries-we-serve/original/restaurant.svg`,
+    imgWhite: `/assets/images/custom-logo-design-services/industries-we-serve/hover/restaurant.svg`,
     alt: "Restaurant Logo Design",
     width: 71,
     height: 71,
@@ -252,8 +261,8 @@ export const customLogoDesignIndustriesCardsData = [
     title: "Real Estate",
     description:
       "As a real estate custom logo design agency, we deliver sophisticated visuals that showcase credibility and professionalism. Ideal for agents, brokers, and developers aiming to stand out in competitive property markets.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/custom-logo-design-services/industries-we-serve/original/real-estate.svg`,
+    imgWhite: `/assets/images/custom-logo-design-services/industries-we-serve/hover/real-estate.svg`,
     alt: "Real Estate Logo Design",
     width: 71,
     height: 71,
@@ -262,8 +271,8 @@ export const customLogoDesignIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our healthcare custom logo design service blends innovation with compassion, ensuring your brand inspires trust while highlighting the care and reliability patients expect from medical providers.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/custom-logo-design-services/industries-we-serve/original/healthcare.svg`,
+    imgWhite: `/assets/images/custom-logo-design-services/industries-we-serve/hover/healthcare.svg`,
     alt: "Healthcare Logo Design",
     width: 71,
     height: 71,
@@ -272,8 +281,8 @@ export const customLogoDesignIndustriesCardsData = [
     title: "Apparel",
     description:
       "With apparel brand custom logo design, we craft bold, distinctive visuals that capture your unique style. From streetwear to luxury labels, our logos build recognition and strengthen brand loyalty.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/custom-logo-design-services/industries-we-serve/original/apparel.svg`,
+    imgWhite: `/assets/images/custom-logo-design-services/industries-we-serve/hover/apparel.svg`,
     alt: "Apparel Logo Design",
     width: 71,
     height: 71,
@@ -282,8 +291,8 @@ export const customLogoDesignIndustriesCardsData = [
     title: "Fintech",
     description:
       "Our fintech custom logo design emphasizes innovation and security. We develop sleek, modern visuals that communicate reliability and help financial technology brands earn customer confidence.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-logo-design-services/industries-we-serve/original/fintech.svg`,
+    imgWhite: `/assets/images/custom-logo-design-services/industries-we-serve/hover/fintech.svg`,
     alt: "Fintech Logo Design",
     width: 71,
     height: 71,
@@ -292,8 +301,8 @@ export const customLogoDesignIndustriesCardsData = [
     title: "Travel",
     description:
       "Through travel brand custom logo design, we capture the excitement of exploration and inspire wanderlust. Whether for agencies or tourism brands, our logos strengthen global brand presence and attract adventurers.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/custom-logo-design-services/industries-we-serve/original/fintech.svg`,
+    imgWhite: `/assets/images/custom-logo-design-services/industries-we-serve/hover/fintech.svg`,
     alt: "Travel Logo Design",
     width: 71,
     height: 71,
@@ -377,7 +386,7 @@ export const customLogoDesignWorkflowData = {
       title: "Discovery and Research",
       description:
         "The process begins with understanding your business inside out. Through a detailed brand audit, we explore your values, competitors, and audience expectations. This foundation gives us the insight to design logos that truly reflect your identity.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/custom-logo-design-services/our-custom-logo-design-process/discovery-and-research.svg",
       alignment: "right",
     },
     {
@@ -386,7 +395,7 @@ export const customLogoDesignWorkflowData = {
       title: "Concept Development",
       description:
         "With insights in place, we move to creative direction, exploring themes, shapes, and styles that align with your brand story. Multiple design concepts are drafted, ensuring you have options that balance originality with strategy.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/custom-logo-design-services/our-custom-logo-design-process/concept-development.svg",
       alignment: "left",
     },
     {
@@ -395,7 +404,7 @@ export const customLogoDesignWorkflowData = {
       title: "Refinement and Feedback",
       description:
         "Logos evolve through collaboration. Using structured design iteration, we refine chosen concepts based on your feedback. This step ensures the design not only meets expectations but also feels authentic to your business vision.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/custom-logo-design-services/our-custom-logo-design-process/refinement-and-feedback.svg",
       alignment: "right",
     },
     {
@@ -404,7 +413,7 @@ export const customLogoDesignWorkflowData = {
       title: "Finalization and Delivery",
       description:
         "Once the design is approved, we prepare complete brand assets in multiple formats. This ensures your logo is ready for use across websites, print, social media, and every customer-facing platform without losing quality or consistency.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/custom-logo-design-services/our-custom-logo-design-process/finalization-and-delivery.svg",
       alignment: "left",
     },
   ],
@@ -430,7 +439,7 @@ export const customLogoDesignTechnologiesData = [
     title: "Vector",
     description:
       "Our vector custom logo design service ensures logos scale infinitely without losing clarity. Delivered in AI and EPS formats, they remain press-ready for business cards, signage, packaging, and large-format printing.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/custom-logo-design-services/platform-we-use/vector.svg",
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -438,7 +447,7 @@ export const customLogoDesignTechnologiesData = [
     title: "SVG",
     description:
       "With our SVG logo design service, you receive lightweight, web-optimized assets that load quickly and render sharply on all browsers and devices. Perfect for responsive websites and mobile apps.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/custom-logo-design-services/platform-we-use/SVG1.svg",
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -446,7 +455,7 @@ export const customLogoDesignTechnologiesData = [
     title: "3D Logo",
     description:
       "Through our 3D custom logo design service, we create dimensional treatments and renders using tools like Blender. These add depth and realism, helping brands stand out with modern, impactful visuals.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/custom-logo-design-services/platform-we-use/3D-logo.svg",
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -454,7 +463,7 @@ export const customLogoDesignTechnologiesData = [
     title: "Animated",
     description:
       "Our animated custom logo design service delivers motion-ready files for social media, video intros, and digital ads. Formats such as GIF, MP4, and Lottie are provided with accessibility-friendly options.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/custom-logo-design-services/platform-we-use/animated.svg",
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -462,7 +471,7 @@ export const customLogoDesignTechnologiesData = [
     title: "Monochrome",
     description:
       "We offer monochrome custom logo design service for single-ink applications like embossing, embroidery, and engraving. These versions ensure readability and contrast while maintaining brand strength across all mediums.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/custom-logo-design-services/platform-we-use/monochrome.svg",
     col: "col-12 col-md-6 col-lg-4",
   },
   {
@@ -470,7 +479,7 @@ export const customLogoDesignTechnologiesData = [
     title: "Gradient",
     description:
       "With our gradient custom logo design service, we blend colors seamlessly for vibrant logos. Delivered with CMYK and Pantone-safe options, gradients are optimized to display smoothly across screens and print.",
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/custom-logo-design-services/platform-we-use/gradient.svg",
     col: "col-12 col-md-6 col-lg-4",
   },
 ];
@@ -505,7 +514,7 @@ export const customLogoDesignScrollSectionData = {
       id: "cms-firstScroller",
       step: 1,
       title: "Focus on Brand Differentiation",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-logo-design-services/what-makes-our-custom-logo-design-services-different/focus-on-brand-differentiation.svg",
       paragraphs: [
         "Every logo we create is guided by a clear brand strategy, making sure your business is not just visually appealing but meaningfully different. This approach helps you position your identity against competitors in a way that customers instantly recognize and remember.",
       ],
@@ -520,7 +529,7 @@ export const customLogoDesignScrollSectionData = {
       id: "cms-secondScroller",
       step: 2,
       title: "Data-Driven Design Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-logo-design-services/what-makes-our-custom-logo-design-services-different/data-driven-design-approach.svg",
       paragraphs: [
         "Design decisions should never be guesswork. By incorporating market analysis into our process, we craft logos that reflect current trends, audience behavior, and industry expectations. The result is a design that resonates with your target market instead of blending into the noise.",
       ],
@@ -535,7 +544,7 @@ export const customLogoDesignScrollSectionData = {
       id: "cms-thirdScroller",
       step: 3,
       title: "Commitment to Timely Delivery",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-logo-design-services/what-makes-our-custom-logo-design-services-different/commitment-to-timely-delivery.svg",
       paragraphs: [
         "We understand that speed matters. With a clear process and defined turnaround time, our team ensures that projects move quickly without compromising quality. Your business gets a professional logo exactly when it is needed.",
       ],
@@ -550,7 +559,7 @@ export const customLogoDesignScrollSectionData = {
       id: "cms-forthScroller",
       step: 4,
       title: "Transparent Collaboration",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-logo-design-services/what-makes-our-custom-logo-design-services-different/transparent-collaboration.svg",
       paragraphs: [
         "A logo design journey should be collaborative, not one-sided. By valuing client feedback, we make sure your input is part of every stage. This openness leads to designs that not only meet expectations but feel authentically yours.",
       ],
@@ -565,7 +574,7 @@ export const customLogoDesignScrollSectionData = {
       id: "cms-fifthScroller",
       step: 5,
       title: "Long-Term Brand Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-logo-design-services/what-makes-our-custom-logo-design-services-different/long-term-brand-support.svg",
       paragraphs: [
         "Our work does not end with delivering a logo. We provide guidance and resources to maintain brand consistency across digital and print platforms. This ensures your identity remains strong as your business continues to grow.",
       ],
