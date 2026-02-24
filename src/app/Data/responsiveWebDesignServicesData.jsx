@@ -93,8 +93,9 @@ export const responsiveWebDesignServicesData = [
     title: "E-commerce Design",
     description:
       "We craft responsive online stores with Shopify responsive themes and WooCommerce design solutions that make shopping simple. Optimized multi-device checkout ensures customers can browse and purchase easily across desktops, tablets, and smartphones.",
-    icon: <BagIcon />,
+    icon: <BagIcon />, 
     isActive: true,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/e-commerce-design.svg",
   },
   {
     id: 2,
@@ -103,6 +104,7 @@ export const responsiveWebDesignServicesData = [
       "For consumer-focused brands, we design mobile-first websites with tailored layouts that highlight products and services. By using adaptive elements, we deliver sites that attract, engage, and convert customers on any device. Our experience in local web design services and small business website design also helps regional businesses compete effectively online.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/b2c-website-design.svg",
   },
   {
     id: 3,
@@ -111,6 +113,7 @@ export const responsiveWebDesignServicesData = [
       "Business-to-business websites demand clarity and scalability. Our custom responsive design solutions focus on usability, accessibility, and performance so that your platform can build trust, showcase expertise, and drive qualified leads.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/b2b-website-design.svg",
   },
   {
     id: 4,
@@ -119,6 +122,7 @@ export const responsiveWebDesignServicesData = [
       "We build professional, enterprise-responsive design solutions that support high-traffic environments and complex integrations. Combining modern frameworks with future-ready platforms, your corporate site stays secure, reliable, and scalable.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/corporate-website-design.svg",
   },
   {
     id: 5,
@@ -127,6 +131,7 @@ export const responsiveWebDesignServicesData = [
       "Creative professionals need websites that look great on every device. Our responsive web design for portfolios emphasizes fluid grid layouts and performance optimization to showcase work with clarity and style.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/portfolio-website-design.svg",
   },
   {
     id: 6,
@@ -135,6 +140,7 @@ export const responsiveWebDesignServicesData = [
       "Educational institutions require accessibility and scalability. We specialize in building responsive e-learning platforms, student portals, and websites aligned with WCAG standards, ensuring that schools and training centers can deliver inclusive digital experiences.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/educational-website-design.svg",
   },
 ];
 
@@ -149,7 +155,7 @@ export const responsiveWebDesignScrollSectionData = {
       id: "responsive-firstScroller",
       step: 1,
       title: "Mobile-First Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/responsive-web-design-services/why-rely/mobile-first-approach.svg",
       paragraphs: [
         "Our focus begins with mobile-friendly web design to ensure that your site works flawlessly on every screen. With attention to device compatibility, we make sure your content remains accessible and user-friendly whether visitors arrive on phones, tablets, or desktops.",
       ],
@@ -164,7 +170,7 @@ export const responsiveWebDesignScrollSectionData = {
       id: "responsive-secondScroller",
       step: 2,
       title: "SEO-Integrated Design",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/responsive-web-design-services/why-rely/seo-integrated-design.svg",
       paragraphs: [
         "We build search-optimized websites that improve visibility in search engines and strengthen organic reach. By implementing strategies for a faster page load, your visitors stay engaged, while our structure supports an organic rankings boost that benefits your long-term digital performance.",
       ],
@@ -179,7 +185,7 @@ export const responsiveWebDesignScrollSectionData = {
       id: "responsive-thirdScroller",
       step: 3,
       title: "Accessibility & Compliance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/responsive-web-design-services/why-rely/accessibility-compliance.svg",
       paragraphs: [
         "Every site we create is guided by standards that make it usable for everyone. Through WCAG 2.1 compliance, we ensure web accessibility is not an afterthought but a core feature. With a focus on inclusive design, your business can confidently reach all audiences while meeting global best practices.",
       ],
@@ -194,7 +200,7 @@ export const responsiveWebDesignScrollSectionData = {
       id: "responsive-fourthScroller",
       step: 4,
       title: "Performance & Speed Focused",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/responsive-web-design-services/why-rely/performance-speed-focused.svg",
       paragraphs: [
         "Visitors expect websites that respond quickly. That is why we prioritize fast-loading websites designed to keep bounce rates low. By aligning every project with Core Web Vitals optimization, we strengthen site performance and provide a measurable boost to user experience and search visibility.",
       ],
@@ -209,7 +215,7 @@ export const responsiveWebDesignScrollSectionData = {
       id: "responsive-fifthScroller",
       step: 5,
       title: "Scalable for Growth",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/responsive-web-design-services/why-rely/scalable-for-growth.svg",
       paragraphs: [
         "Businesses that plan need websites that can grow with them. Our approach to enterprise responsive design delivers solutions that adapt to complex needs. By creating future-ready platforms, we give your brand the flexibility to expand features and scale operations without limitations.",
       ],
@@ -291,6 +297,7 @@ export const responsiveWebDesignImpactCardsData = [
     icon: "experience",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/responsive-web-design-services/why-responsive-web-design/deliver-better-user-experience.svg",
   },
   {
     id: 2,
@@ -300,6 +307,7 @@ export const responsiveWebDesignImpactCardsData = [
     icon: "conversions",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/responsive-web-design-services/why-responsive-web-design/drive-conversions-and-engagement.svg",
   },
   {
     id: 3,
@@ -309,6 +317,7 @@ export const responsiveWebDesignImpactCardsData = [
     icon: "future-proof",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/responsive-web-design-services/why-responsive-web-design/future-proof-your-website.svg",
   },
   {
     id: 4,
@@ -318,6 +327,7 @@ export const responsiveWebDesignImpactCardsData = [
     icon: "seo",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/responsive-web-design-services/why-responsive-web-design/boost-search-visibility.svg",
   },
 ];
 
@@ -382,42 +392,42 @@ export const responsiveWebDesignTechnologiesData = [
     title: "WordPress",
     description:
       "Our responsive web design services for WordPress combine SEO-friendly architecture with Gutenberg blocks and WooCommerce compatibility. We create mobile-first, easily managed sites that empower businesses to grow content and commerce with confidence.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/wordpress.svg",
   },
   {
     id: 2,
     title: "Shopify",
     description:
       "We provide responsive web design services for Shopify that optimize checkout performance, support app integrations, and enhance store scalability. Our solutions help brands deliver seamless shopping experiences across devices while leveraging Shopify Plus and Checkout Extensibility.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/shopify.svg",
   },
   {
     id: 3,
     title: "WooCommerce",
     description:
       "Our responsive web design services for WooCommerce enable flexible, mobile-optimized online shops built on WordPress. We integrate secure payment gateways and essential extensions, giving businesses complete control to scale their ecommerce operations smoothly.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/woocommerce.svg",
   },
   {
     id: 4,
     title: "Magento",
     description:
       "We deliver responsive web design services for Magento tailored to enterprise-level needs. From multi-store management to complex catalog rules and ERP integrations, our Magento 2 expertise ensures secure, scalable, and high-performing ecommerce platforms.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/magento.svg",
   },
   {
     id: 5,
     title: "Squarespace",
     description:
       "Our responsive web design services for Squarespace highlight sleek, template-driven sites with built-in ecommerce and scheduling features. Ideal for design-led businesses, we craft mobile-first websites that balance style with functionality and performance.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/squarespace.svg",
   },
   {
     id: 6,
     title: "Wix",
     description:
       "We offer responsive web design services for Wix that empower small businesses with rapid, mobile-ready websites. Using Wix Studio, Editor X, and Velo, we deliver flexible, scalable solutions that grow with your brand's digital needs.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/wix.svg",
   },
 ];
 
@@ -433,7 +443,7 @@ export const responsiveWebDesignWorkflowData = {
       title: "Discovery & Strategy",
       description:
         "Every project starts with a detailed website analysis to identify strengths, gaps, and opportunities. From there, we shape a clear UX strategy that aligns with your audience's needs and business goals, ensuring the foundation is set for measurable results.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/responsive-web-design-services/our-process/discovery-strategy.svg",
       alignment: "right",
     },
     {
@@ -442,7 +452,7 @@ export const responsiveWebDesignWorkflowData = {
       title: "Design & Prototyping",
       description:
         "Our design phase focuses on creativity and usability. Using tools like Adobe XD, Figma, and Sketch, we craft prototypes that capture layout, navigation flow, and brand consistency. This step ensures clarity and collaboration before moving into development.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/responsive-web-design-services/our-process/design-prototyping.svg",
       alignment: "left",
     },
     {
@@ -451,7 +461,7 @@ export const responsiveWebDesignWorkflowData = {
       title: "Development & Testing",
       description:
         "With the design approved, our developers bring the site to life using HTML5 and CSS3 along with modern frameworks. Rigorous cross-browser testing is conducted to confirm that the site looks and functions correctly on every device and platform.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/responsive-web-design-services/our-process/development-testing.svg",
       alignment: "right",
     },
     {
@@ -460,7 +470,7 @@ export const responsiveWebDesignWorkflowData = {
       title: "Launch & Optimization",
       description:
         "Once tested and approved, the site is deployed with best practices in place. We handle SEO integration to support search visibility, conduct PageSpeed testing to maximize performance, and ensure mobile-first indexing compliance so your website stays aligned with search engine requirements.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/responsive-web-design-services/our-process/launch-optimization.svg",
       alignment: "left",
     },
   ],
@@ -620,8 +630,8 @@ export const responsiveWebDesignIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "Our responsive web design services for ecommerce focus on secure checkouts, product filters, and mobile-optimized stores. We help online retailers increase conversions and deliver seamless shopping experiences across all devices.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/responsive-web-design-services/industries-we-specialize/original/ecommerce.svg`,
+    imgWhite: `/assets/images/responsive-web-design-services/industries-we-specialize/hover/ecommerce.svg`,
     alt: "Ecommerce Responsive Web Design",
     width: 71,
     height: 71,
@@ -630,8 +640,8 @@ export const responsiveWebDesignIndustriesCardsData = [
     title: "Healthcare",
     description:
       "We provide responsive web design services for healthcare that prioritize accessibility, HIPAA-friendly features, and patient-focused usability. From appointment scheduling to telemedicine-ready layouts, we help medical providers connect with patients effectively.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/responsive-web-design-services/industries-we-specialize/original/healthcare.svg`,
+    imgWhite: `/assets/images/responsive-web-design-services/industries-we-specialize/hover/healthcare.svg`,
     alt: "Healthcare Responsive Web Design",
     width: 71,
     height: 71,
@@ -640,8 +650,8 @@ export const responsiveWebDesignIndustriesCardsData = [
     title: "Real Estate",
     description:
       "As a responsive web design agency for real estate, we create lead-generating platforms with advanced property search filters, map integrations, and virtual tour features. Our solutions showcase listings clearly while engaging buyers and renters on every screen.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/responsive-web-design-services/industries-we-specialize/original/real-estate.svg`,
+    imgWhite: `/assets/images/responsive-web-design-services/industries-we-specialize/hover/real-estate.svg`,
     alt: "Real Estate Responsive Web Design",
     width: 71,
     height: 71,
@@ -650,8 +660,8 @@ export const responsiveWebDesignIndustriesCardsData = [
     title: "Law Firms",
     description:
       "Our responsive web design services for law firms highlight professionalism and credibility with attorney bios, practice area pages, and client intake forms. We design user-friendly platforms that help firms build trust and attract new clients.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/responsive-web-design-services/industries-we-specialize/original/law-firms.svg`,
+    imgWhite: `/assets/images/responsive-web-design-services/industries-we-specialize/hover/law-firms.svg`,
     alt: "Law Firms Responsive Web Design",
     width: 71,
     height: 71,
@@ -660,8 +670,8 @@ export const responsiveWebDesignIndustriesCardsData = [
     title: "Restaurant",
     description:
       "We deliver responsive web design for restaurants that support mobile menus, reservations, and online ordering integrations. By creating location-friendly, engaging layouts, we help restaurants attract more diners and simplify customer decision-making.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/responsive-web-design-services/industries-we-specialize/original/restaurant.svg`,
+    imgWhite: `/assets/images/responsive-web-design-services/industries-we-specialize/hover/restaurant.svg`,
     alt: "Restaurant Responsive Web Design",
     width: 71,
     height: 71,
@@ -670,8 +680,8 @@ export const responsiveWebDesignIndustriesCardsData = [
     title: "Education",
     description:
       "Our responsive web design services for education empower institutions with scalable e-learning platforms, student dashboards, and exam portals. We ensure accessibility and usability across devices so schools and training centers can deliver inclusive learning experiences.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/responsive-web-design-services/industries-we-specialize/original/education.svg`,
+    imgWhite: `/assets/images/responsive-web-design-services/industries-we-specialize/hover/education.svg`,
     alt: "Education Responsive Web Design",
     width: 71,
     height: 71,
