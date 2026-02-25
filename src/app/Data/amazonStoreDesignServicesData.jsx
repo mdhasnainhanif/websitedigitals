@@ -376,7 +376,7 @@ export const amazonStoreDesignServicesTechnologiesData = [
     title: "AWS",
     description:
       "Our Amazon store is designed with AWS optimization service to enhance reliability, security, and efficiency, helping your storefront integrate with cloud-powered performance that scales seamlessly with customer demand.",
-    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/aws.svg",
+    icon: "/assets/images/amazon-store-design-services/the-tech-behind-our-amazon-stores/aws-01.svg",
   },
   {
     id: 2,
