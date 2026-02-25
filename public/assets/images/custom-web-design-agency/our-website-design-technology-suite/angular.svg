@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 164.13 173.62" style="enable-background:new 0 0 164.13 173.62;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#185AE9;}
+	.st1{fill:#00B0FB;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#00B0FB;}
+	.st3{fill:#00B0FB;fill-opacity:0.4;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#3C7CFF;}
+	.st6{fill:#001135;}
+	.st7{fill:#00769D;}
+	.st8{fill:#8DB849;}
+	.st9{fill:#5A863E;}
+	.st10{fill:#FFFFFE;}
+	.st11{fill:#7F54B3;}
+	.st12{fill:#F26322;}
+	.st13{fill:#009CDE;}
+	.st14{clip-path:url(#SVGID_1_);}
+	.st15{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	.st16{mask:url(#prefix__a_2_);}
+	.st17{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st18{mask:url(#prefix__b_2_);}
+	.st19{fill:url(#SVGID_2_);}
+	.st20{fill:url(#SVGID_3_);}
+	.st21{fill:#FF2D20;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_5_" width="164.13" height="173.62"/>
+	</defs>
+	<clipPath id="SVGID_1_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st14">
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="163.45" height="172.94">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="0" y="0" width="163.45" height="172.94" id="prefix__a_2_">
+			<path class="st15" d="M0,0h164.13v173.62H0V0z"/>
+		</mask>
+		<g class="st16">
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="0" y="0" width="163.45" height="172.94">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="0" y="0" width="163.45" height="172.94" id="prefix__b_2_">
+				<path class="st17" d="M0,0h164.13v173.62H0V0z"/>
+			</mask>
+			<g class="st18">
+				
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="15.1896" y1="-1143.0599" x2="145.2707" y2="-1081.207" gradientTransform="matrix(1 0 0 -1 0 -1029.7184)">
+					<stop  offset="0" style="stop-color:#E40035"/>
+					<stop  offset="0.2" style="stop-color:#F60A48"/>
+					<stop  offset="0.4" style="stop-color:#F20755"/>
+					<stop  offset="0.5" style="stop-color:#DC087D"/>
+					<stop  offset="0.7" style="stop-color:#9717E7"/>
+					<stop  offset="1" style="stop-color:#6C00F5"/>
+				</linearGradient>
+				<path class="st19" d="M163.45,29.16l-6.1,92.24L101.05,0L163.45,29.16z M124.11,148.53l-42.05,24.42l-42.73-24.42l8.14-21.02
+					h68.5L124.11,148.53z M82.06,46.12l21.7,54.26H59.68L82.06,46.12z M6.1,121.4L0,29.16L62.4,0L6.1,121.4z"/>
+				
+					<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="34.0856" y1="-1047.1194" x2="119.2013" y2="-1144.3073" gradientTransform="matrix(1 0 0 -1 0 -1029.7184)">
+					<stop  offset="0" style="stop-color:#FF31D9"/>
+					<stop  offset="1" style="stop-color:#FF5BE1;stop-opacity:0"/>
+				</linearGradient>
+				<path class="st20" d="M163.45,29.16l-6.1,92.24L101.05,0L163.45,29.16z M124.11,148.53l-42.05,24.42l-42.73-24.42l8.14-21.02
+					h68.5L124.11,148.53z M82.06,46.12l21.7,54.26H59.68L82.06,46.12z M6.1,121.4L0,29.16L62.4,0L6.1,121.4z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

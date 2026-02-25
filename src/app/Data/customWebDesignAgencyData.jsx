@@ -98,6 +98,7 @@ export const customWebDesignAgencyData = [
       "We design for mobile first, guaranteeing that your site looks and works perfectly on any device, improving usability, accessibility, and search rankings.",
     icon: <BagIcon />,
     isActive: true,
+    image:"/assets/images/custom-web-design-agency/complete-web-design-services-to-build-your-presence/responsive-mobile-first-design.svg",
   },
   {
     id: 2,
@@ -106,6 +107,7 @@ export const customWebDesignAgencyData = [
       "From CRM and analytics platforms to booking systems and marketing automation, we seamlessly connect your website to the tools you rely on.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/custom-web-design-agency/complete-web-design-services-to-build-your-presence/third-party-integrations.svg",
   },
   {
     id: 3,
@@ -114,6 +116,7 @@ export const customWebDesignAgencyData = [
       "Whether it's WordPress, Webflow, or a custom CMS, we integrate flexible content management solutions that make updating and scaling your site effortless.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/custom-web-design-agency/complete-web-design-services-to-build-your-presence/cms-integration.svg",
   },
   {
     id: 4,
@@ -122,6 +125,7 @@ export const customWebDesignAgencyData = [
       "From product catalogs to payment gateways, we create seamless ecommerce experiences that boost conversions and keep transactions safe.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/custom-web-design-agency/complete-web-design-services-to-build-your-presence/secure-checkout.svg",
   },
   {
     id: 5,
@@ -130,6 +134,7 @@ export const customWebDesignAgencyData = [
       "Our sites are built with clean code, schema markup, and logical URL structures, setting you up for better visibility on Google and long-term search success.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/custom-web-design-agency/complete-web-design-services-to-build-your-presence/seo-optimized-site-architecture.svg",
   },
 ];
 
@@ -143,7 +148,7 @@ export const customWebDesignAgencyScrollSectionData = {
       id: "custom-firstScroller",
       step: 1,
       title: "Tailored Designs for Niche Markets",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-web-design-agency/what-sets-our-custom-web-design-services-apart/tailored-designs-for-niche-markets.svg",
       paragraphs: [
         "We deliver industry-specific web design solutions that go beyond generic templates. From healthcare and finance to real estate and education, each website is designed to meet sector-specific requirements while reflecting the brand’s unique identity.",
       ],
@@ -158,7 +163,7 @@ export const customWebDesignAgencyScrollSectionData = {
       id: "custom-secondScroller",
       step: 2,
       title: "Ongoing Website Maintenance and Support",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-web-design-agency/what-sets-our-custom-web-design-services-apart/ongoing-website-maintenance-and-support.svg",
       paragraphs: [
         "A website’s success does not end at launch. Through our website maintenance services, we provide continuous updates, security monitoring, and performance optimization to keep websites running smoothly while businesses focus on growth.",
       ],
@@ -173,7 +178,7 @@ export const customWebDesignAgencyScrollSectionData = {
       id: "custom-thirdScroller",
       step: 3,
       title: "Optimized for Mobile and Voice Search",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-web-design-agency/what-sets-our-custom-web-design-services-apart/optimized-for-mobile-and-voice-search.svg",
       paragraphs: [
         "User behavior is shifting rapidly toward mobile and smart devices. Our mobile-friendly website design ensures fast, responsive performance across screens while preparing websites for the rise of voice-based search. This creates a seamless experience for today’s audiences.",
       ],
@@ -188,7 +193,7 @@ export const customWebDesignAgencyScrollSectionData = {
       id: "custom-fourthScroller",
       step: 4,
       title: "Futuristic Scalable Technology",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-web-design-agency/what-sets-our-custom-web-design-services-apart/futuristic-scalable-technology.svg",
       paragraphs: [
         "Websites need to grow alongside the business they represent. By building with scalable website solutions, we allow clients to add new features, integrate advanced tools, and adapt to evolving customer demands without the need for a full rebuild.",
       ],
@@ -203,7 +208,7 @@ export const customWebDesignAgencyScrollSectionData = {
       id: "custom-fifthScroller",
       step: 5,
       title: "Transparent Pricing Without Hidden Costs",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/custom-web-design-agency/what-sets-our-custom-web-design-services-apart/transparent-pricing-without-hidden-costs.svg",
       paragraphs: [
         "Our approach to custom website pricing is upfront and easy to understand. Every project comes with a detailed breakdown so clients know exactly what they are paying for. This transparency builds trust and ensures there are no surprises during or after the project.",
       ],
@@ -285,6 +290,7 @@ export const customWebDesignAgencyImpactCardsData = [
     icon: "conversion",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/custom-web-design-agency/why-working-with-a-custom-web-design-agency-pays-off/build-a-strong-brand-identity.svg",
   },
   {
     id: 2,
@@ -294,6 +300,7 @@ export const customWebDesignAgencyImpactCardsData = [
     icon: "engagement",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/custom-web-design-agency/why-working-with-a-custom-web-design-agency-pays-off/improve-user-experience.svg",
   },
   {
     id: 3,
@@ -303,6 +310,7 @@ export const customWebDesignAgencyImpactCardsData = [
     icon: "roi",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/custom-web-design-agency/why-working-with-a-custom-web-design-agency-pays-off/scale-with-business-growth.svg",
   },
   {
     id: 4,
@@ -312,6 +320,7 @@ export const customWebDesignAgencyImpactCardsData = [
     icon: "trust",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image:"/assets/images/custom-web-design-agency/why-working-with-a-custom-web-design-agency-pays-off/outrank-your-competitors.svg",
   },
 ];
 
@@ -375,42 +384,42 @@ export const customWebDesignAgencyTechnologiesData = [
     title: "WordPress",
     description:
       "Our team, as a custom WordPress web design agency, builds SEO-friendly sites with custom post types, Gutenberg blocks, and easy content management, empowering you to update your site without developer support.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/custom-web-design-agency/our-website-design-technology-suite/wordPress.svg",
   },
   {
     id: 2,
     title: "Shopify",
     description:
       "Partnering with a custom Shopify web design agency ensures conversion-optimized online stores, custom themes, and smooth checkout flows that drive higher sales and repeat customers.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/custom-web-design-agency/our-website-design-technology-suite/shopify.svg",
   },
   {
     id: 3,
     title: "Magento",
     description:
       "As an experienced custom Magento web design agency, we deliver enterprise-level eCommerce solutions with multi-store management, advanced product catalogs, and performance tuning for high-traffic sites.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/custom-web-design-agency/our-website-design-technology-suite/magento.svg",
   },
   {
     id: 4,
     title: "Drupal",
     description:
       "Our custom Drupal web design agency builds secure, content-rich websites with advanced permissions, workflows, and integrations, making them ideal for enterprises and organizations with complex needs.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/custom-web-design-agency/our-website-design-technology-suite/drupal.svg",
   },
   {
     id: 5,
     title: "Angular",
     description:
       "As a custom Angular web design agency, we create fast, interactive SPAs and PWAs using Angular Universal for SEO and smooth, app-like user experiences.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/custom-web-design-agency/our-website-design-technology-suite/angular.svg",
   },
   {
     id: 6,
     title: "Laravel",
     description:
       "Our custom Laravel web design agency develops scalable web applications and APIs with clean code, strong security, and performance enhancements like caching and queue management.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/custom-web-design-agency/our-website-design-technology-suite/laravel.svg",
   },
 ];
 
@@ -425,7 +434,7 @@ export const customWebDesignAgencyWorkflowData = {
       title: "Discovery and Strategy",
       description:
         "Every project begins with a website discovery phase where we learn about goals, target audience, and competitors. This stage sets the foundation for a strategy that aligns design decisions with measurable business outcomes.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/custom-web-design-agency/our-process-behind-every-custom-website/discovery-and-strategy.svg",
       alignment: "right",
     },
     {
@@ -434,7 +443,7 @@ export const customWebDesignAgencyWorkflowData = {
       title: "UX and Wireframing",
       description:
         "Next, our team develops wireframes and prototypes focused on user interface design. By mapping user journeys before development, we ensure that the final layout supports both clarity and engagement.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/custom-web-design-agency/our-process-behind-every-custom-website/ux-and-wireframing.svg",
       alignment: "left",
     },
     {
@@ -443,7 +452,7 @@ export const customWebDesignAgencyWorkflowData = {
       title: "Custom Development and Integration",
       description:
         "Once the structure is approved, we move into CMS web development and integrations. This step ensures the website is built on a scalable platform with the flexibility to add features such as eCommerce, booking systems, or CRM tools.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/custom-web-design-agency/our-process-behind-every-custom-website/custom-development-and-integration.svg",
       alignment: "right",
     },
     {
@@ -452,7 +461,7 @@ export const customWebDesignAgencyWorkflowData = {
       title: "Testing and Quality Assurance",
       description:
         "Before launch, each project undergoes rigorous website quality assurance checks. From browser compatibility to page speed, every detail is tested to ensure the site works flawlessly across devices.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/custom-web-design-agency/our-process-behind-every-custom-website/testing-and-quality-assurance.svg",
       alignment: "left",
     },
     {
@@ -461,7 +470,7 @@ export const customWebDesignAgencyWorkflowData = {
       title: "Launch and Ongoing Optimization",
       description:
         "After the launch, we provide continuous website optimization services to refine performance, track user behavior, and apply updates. This keeps the website aligned with evolving business needs and digital trends.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/custom-web-design-agency/our-process-behind-every-custom-website/launch-and-ongoing-optimization.svg",
       alignment: "right",
     },
   ],
@@ -605,8 +614,8 @@ export const customWebDesignAgencyIndustriesCardsData = [
     title: "Law Firms",
     description:
       "Our custom web design agency for law firms builds professional websites with attorney bios, practice-area pages, and intake forms that attract new clients and enhance credibility.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-web-design-agency/sectors-we-help-grow/original/law-firms.svg`,
+    imgWhite: `/assets/images/custom-web-design-agency/sectors-we-help-grow/hover/law-firms.svg`,
     alt: "Law Firms Custom Web Design",
     width: 71,
     height: 71,
@@ -615,8 +624,8 @@ export const customWebDesignAgencyIndustriesCardsData = [
     title: "Healthcare Practices",
     description:
       "As a trusted custom web design agency for healthcare practices, we create patient-focused websites with secure forms, online booking, and provider profiles to boost engagement and trust.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/custom-web-design-agency/sectors-we-help-grow/original/healthcare-practices.svg`,
+    imgWhite: `/assets/images/custom-web-design-agency/sectors-we-help-grow/hover/healthcare-practices.svg`,
     alt: "Healthcare Practices Custom Web Design",
     width: 71,
     height: 71,
@@ -625,8 +634,8 @@ export const customWebDesignAgencyIndustriesCardsData = [
     title: "Real Estate",
     description:
       "Our custom web design agency for real estate delivers IDX-ready websites with property search, map views, and lead capture tools that convert browsers into qualified buyers.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/custom-web-design-agency/sectors-we-help-grow/original/real-estate.svg`,
+    imgWhite: `/assets/images/custom-web-design-agency/sectors-we-help-grow/hover/real-estate.svg`,
     alt: "Real Estate Custom Web Design",
     width: 71,
     height: 71,
@@ -635,8 +644,8 @@ export const customWebDesignAgencyIndustriesCardsData = [
     title: "eCommerce",
     description:
       "We are a custom web design agency for eCommerce, building conversion-focused online stores with seamless checkout, mobile-first design, and product pages optimized for sales.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-web-design-agency/sectors-we-help-grow/original/ecommerce.svg`,
+    imgWhite: `/assets/images/custom-web-design-agency/sectors-we-help-grow/hover/ecommerce.svg`,
     alt: "eCommerce Custom Web Design",
     width: 71,
     height: 71,
@@ -645,8 +654,8 @@ export const customWebDesignAgencyIndustriesCardsData = [
     title: "Restaurants",
     description:
       "Our custom web design agency for restaurants creates menu-driven websites with online ordering, reservations, and integrations that help you fill tables and drive repeat business.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/custom-web-design-agency/sectors-we-help-grow/original/restaurants.svg`,
+    imgWhite: `/assets/images/custom-web-design-agency/sectors-we-help-grow/hover/restaurants.svg`,
     alt: "Restaurants Custom Web Design",
     width: 71,
     height: 71,
@@ -655,8 +664,8 @@ export const customWebDesignAgencyIndustriesCardsData = [
     title: "Construction",
     description:
       "As a custom web design agency for construction, we design scalable sites featuring project portfolios, RFQ forms, and certifications to attract clients and win more bids.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-web-design-agency/sectors-we-help-grow/original/construction.svg`,
+    imgWhite: `/assets/images/custom-web-design-agency/sectors-we-help-grow/hover/construction.svg`,
     alt: "Construction Custom Web Design",
     width: 71,
     height: 71,
