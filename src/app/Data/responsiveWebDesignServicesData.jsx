@@ -480,7 +480,7 @@ export const responsiveWebDesignWorkflowData = {
 export const responsiveWebDesignWhyChooseUsData = [
   {
     id: 1,
-    title: "Mobile-First Approach",
+    title: "Mobile-First Approach ",
     description:
       "Our focus begins with mobile-friendly web design to ensure that your site works flawlessly on every screen. With attention to device compatibility, we make sure your content remains accessible and user-friendly whether visitors arrive on phones, tablets, or desktops.",
     icon: "mobile-first",
