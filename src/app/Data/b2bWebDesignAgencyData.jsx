@@ -91,6 +91,8 @@ export const b2bWebDesignAgencyData = [
       "As a custom B2B web design agency, we build sites tailored to business goals. From content management systems (CMS) to scalable frameworks, every project supports usability and brand alignment.",
     icon: <BagIcon />,
     isActive: true,
+    image:"/assets/images/b2b-web-design-agency/our-comprehensive-b2b-web-design-services-for-growing-firms/custom-b2b-web-design-for-enterprises.svg",
+
   },
   {
     id: 2,
@@ -99,6 +101,7 @@ export const b2bWebDesignAgencyData = [
       "We create enterprise SaaS websites designed to integrate with sales funnels and digital marketing integration, supporting growth and customer engagement.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/b2b-web-design-agency/our-comprehensive-b2b-web-design-services-for-growing-firms/saas-technology-b2b-website-solutions.svg",
   },
   {
     id: 3,
@@ -107,6 +110,7 @@ export const b2bWebDesignAgencyData = [
       "Through regional B2B web solutions, we adapt websites to local markets and industries, ensuring relevance while maintaining consistent design standards.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/b2b-web-design-agency/our-comprehensive-b2b-web-design-services-for-growing-firms/regional-industry-specific-web-development.svg",
   },
   {
     id: 4,
@@ -115,6 +119,7 @@ export const b2bWebDesignAgencyData = [
       "Our responsive corporate websites perform across devices, delivering speed, clear navigation, and user-friendly experiences.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/b2b-web-design-agency/our-comprehensive-b2b-web-design-services-for-growing-firms/responsive-corporate-websites.svg",
   },
   {
     id: 5,
@@ -123,6 +128,7 @@ export const b2bWebDesignAgencyData = [
       "We provide professional website redesign services focused on structure, branding, and usability. Each conversion-focused redesign improves function while reinforcing corporate branding.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/b2b-web-design-agency/our-comprehensive-b2b-web-design-services-for-growing-firms/professional-website-redesign.svg",
   },
 ];
 
@@ -137,7 +143,7 @@ export const b2bWebDesignAgencyScrollSectionData = {
       id: "b2b-firstScroller",
       step: 1,
       title: "Enterprise-Level Quality Assurance",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/b2b-web-design-agency/why-firms-trust-our-b2b-web-design-agency/enterprise-level-quality-assurance.svg",
       paragraphs: [
         "With ISO 9001 certification, every project is handled with precision and consistency. This ensures reliable outcomes and enterprise-focused design strategies that align with corporate requirements.",
       ],
@@ -152,7 +158,7 @@ export const b2bWebDesignAgencyScrollSectionData = {
       id: "b2b-secondScroller",
       step: 2,
       title: "Certified Design & Marketing Expertise",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/b2b-web-design-agency/why-firms-trust-our-b2b-web-design-agency/certified-design-marketing-expertise.svg",
       paragraphs: [
         "Holding Google Partner Certification and HubSpot Partner Certification, we create integration-ready websites that connect seamlessly with broader digital ecosystems while reinforcing authority and trust.",
       ],
@@ -167,7 +173,7 @@ export const b2bWebDesignAgencyScrollSectionData = {
       id: "b2b-thirdScroller",
       step: 3,
       title: "Conversion-Driven Design Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/b2b-web-design-agency/why-firms-trust-our-b2b-web-design-agency/conversion-driven-design-approach.svg",
       paragraphs: [
         "Websites are built with conversion-driven design to support lead generation optimization. The focus is on structure and function that turn engagement into measurable opportunities.",
       ],
@@ -182,7 +188,7 @@ export const b2bWebDesignAgencyScrollSectionData = {
       id: "b2b-fourthScroller",
       step: 4,
       title: "Designed for Complex B2B Journeys",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/b2b-web-design-agency/why-firms-trust-our-b2b-web-design-agency/designed-for-complex-b2b-journeys.svg",
       paragraphs: [
         "As a B2B responsive web design firm, we provide solutions built for scalability and corporate-level support. Each project establishes a future-proof digital presence that adapts to evolving needs.",
       ],
@@ -197,7 +203,7 @@ export const b2bWebDesignAgencyScrollSectionData = {
       id: "b2b-fifthScroller",
       step: 5,
       title: "Growth-Focused Website Development",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/b2b-web-design-agency/why-firms-trust-our-b2b-web-design-agency/growth-focused-website-development.svg",
       paragraphs: [
         "Our growth-focused website design methodology ensures each build supports long-term business objectives. Websites are crafted to strengthen trust, generate leads, and expand digital reach.",
       ],
@@ -279,6 +285,7 @@ export const b2bWebDesignAgencyImpactCardsData = [
     icon: "conversion",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/b2b-web-design-agency/how-professional-b2b-web-design-makes-an-impact/generate-more-qualified-leads.svg",
   },
   {
     id: 2,
@@ -288,6 +295,7 @@ export const b2bWebDesignAgencyImpactCardsData = [
     icon: "engagement",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/b2b-web-design-agency/how-professional-b2b-web-design-makes-an-impact/friendly-enterprise-design.svg",
   },
   {
     id: 3,
@@ -297,6 +305,7 @@ export const b2bWebDesignAgencyImpactCardsData = [
     icon: "roi",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/b2b-web-design-agency/how-professional-b2b-web-design-makes-an-impact/build-mobile-first-scalable-websites.svg",
   },
   {
     id: 4,
@@ -306,6 +315,7 @@ export const b2bWebDesignAgencyImpactCardsData = [
     icon: "trust",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/b2b-web-design-agency/how-professional-b2b-web-design-makes-an-impact/align-design-with-business-goals.svg",
   },
   {
     id: 5,
@@ -315,6 +325,7 @@ export const b2bWebDesignAgencyImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/b2b-web-design-agency/how-professional-b2b-web-design-makes-an-impact/stronger-corporate-presence.svg",
   },
 ];
 
@@ -379,42 +390,42 @@ export const b2bWebDesignAgencyTechnologiesData = [
     title: "WordPress",
     description:
       "Our WordPress b2b web design solutions focus on usability and SEO. We create responsive, content-driven websites with flexible CMS features, empowering businesses to manage pages easily while driving organic visibility and consistent lead generation.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/b2b-web-design-agency/trusted-platforms-we-build-on/wordPress.svg",
   },
   {
     id: 2,
     title: "Drupal",
     description:
       "We deliver drupal b2b web design for enterprises needing robust security and advanced content management. From custom permissions to multi-language support, Drupal provides scalability and reliability for organizations managing complex digital ecosystems.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/b2b-web-design-agency/trusted-platforms-we-build-on/drupal.svg",
   },
   {
     id: 3,
     title: "Magento",
     description:
       "We specialize in magento b2b web design, building enterprise eCommerce platforms with multi-store management, advanced catalog features, and custom integrations. Magento supports complex workflows and high-volume transactions, helping manufacturers and distributors scale effectively.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/b2b-web-design-agency/trusted-platforms-we-build-on/magento.svg",
   },
   {
     id: 4,
     title: "Shopify",
     description:
       "Through shopify b2b web design, we create high-performing online stores optimized for conversion. With Shopify Plus capabilities, our builds support fast deployment, seamless app integrations, and user-friendly dashboards that make enterprise commerce simple and scalable.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/b2b-web-design-agency/trusted-platforms-we-build-on/shopify.svg",
   },
   {
     id: 5,
     title: "React",
     description:
       "Our react b2b web design services deliver fast, app-like experiences for modern enterprises. React enables dynamic interfaces, rapid rendering, and future-ready builds that adapt to evolving customer journeys and complex digital ecosystems.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/b2b-web-design-agency/trusted-platforms-we-build-on/react.svg",
   },
   {
     id: 6,
     title: "Node.js",
     description:
       "We provide node.js b2b web design that powers secure, high-speed backends and real-time applications. Node.js supports API-driven integrations and scalable architectures, ensuring enterprise websites run reliably under heavy traffic and complex data requirements.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/b2b-web-design-agency/trusted-platforms-we-build-on/node1.js.svg",
   },
 ];
 
@@ -430,7 +441,7 @@ export const b2bWebDesignAgencyWorkflowData = {
       title: "Discovery & Strategy",
       description:
         "The process begins with UX research and design thinking to define goals, audiences, and challenges. Insights are translated into an enterprise website development workflow that sets priorities for structure, functionality, and design direction.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/b2b-web-design-agency/our-process/discovery-strategy.svg",
       alignment: "right",
     },
     {
@@ -439,7 +450,7 @@ export const b2bWebDesignAgencyWorkflowData = {
       title: "Wireframing & Prototyping",
       description:
         "Ideas are shaped into wireframing & prototyping, where layouts and user journeys are mapped. This stage ensures the site supports a content-first strategy, balancing usability with enterprise requirements before development begins.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/b2b-web-design-agency/our-process/wireframing-prototyping.svg",
       alignment: "left",
     },
     {
@@ -448,7 +459,7 @@ export const b2bWebDesignAgencyWorkflowData = {
       title: "Design & Development",
       description:
         "With a clear framework in place, our team focuses on visual design, responsive builds, and CMS integration. The responsive development cycle ensures flexibility across devices while keeping scalability in mind for future growth.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/b2b-web-design-agency/our-process/design-development.svg",
       alignment: "right",
     },
     {
@@ -457,7 +468,7 @@ export const b2bWebDesignAgencyWorkflowData = {
       title: "Testing & Optimization",
       description:
         "Every build undergoes rigorous checks, including conversion testing, performance reviews, and usability audits. This step validates lead pathways, navigation, and page speed, making sure the site performs to the standards of a B2B website redesign strategy or new build.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/b2b-web-design-agency/our-process/testing-optimization.svg",
       alignment: "left",
     },
     {
@@ -466,7 +477,7 @@ export const b2bWebDesignAgencyWorkflowData = {
       title: "Launch & Continuous Improvement",
       description:
         "The final phase is not just delivery, but ensuring readiness for market impact. Post-launch, websites are monitored, refined, and adjusted to support ongoing optimization and long-term results.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/b2b-web-design-agency/our-process/launch-continuous-improvement.svg",
       alignment: "right",
     },
   ],
@@ -635,8 +646,8 @@ export const b2bWebDesignAgencyIndustriesCardsData = [
     title: "SaaS",
     description:
       "We provide b2b web design for SaaS companies that accelerate demo bookings, subscription signups, and product adoption. From pricing pages to integration marketplaces, our designs drive conversions and scale with rapid growth.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/saas.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/saas.svg`,
     alt: "SaaS B2B Web Design",
     width: 71,
     height: 71,
@@ -645,8 +656,8 @@ export const b2bWebDesignAgencyIndustriesCardsData = [
     title: "Healthcare",
     description:
       "As a leading b2b web design agency for healthcare, we build HIPAA-compliant, WCAG-accessible websites that inspire trust. Features like patient portals, physician profiles, and locator tools help organizations engage patients and stakeholders seamlessly.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/healthcare.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/healthcare.svg`,
     alt: "Healthcare B2B Web Design",
     width: 71,
     height: 71,
@@ -655,8 +666,8 @@ export const b2bWebDesignAgencyIndustriesCardsData = [
     title: "Manufacturing",
     description:
       "Our b2b web design for manufacturing highlights products with interactive catalogs, downloadable spec sheets, and RFQ forms. We create enterprise-ready platforms that simplify complex sales cycles and strengthen credibility with distributors and procurement teams.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/manufacturing.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/manufacturing.svg`,
     alt: "Manufacturing B2B Web Design",
     width: 71,
     height: 71,
@@ -665,8 +676,8 @@ export const b2bWebDesignAgencyIndustriesCardsData = [
     title: "Telecom",
     description:
       "We deliver b2b web design for telecom companies focused on scalability and engagement. From plan comparison tools to coverage maps and SLA showcases, our websites help providers present services clearly and win enterprise clients.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/telecom.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/telecom.svg`,
     alt: "Telecom B2B Web Design",
     width: 71,
     height: 71,
@@ -675,8 +686,8 @@ export const b2bWebDesignAgencyIndustriesCardsData = [
     title: "Education",
     description:
       "We specialize in b2b web design for educational institutions, supporting enrollment, engagement, and credibility. With program finders, application tracking, and LMS/CRM integrations, our websites enhance user journeys for students, faculty, and administrators.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/education.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/education.svg`,
     alt: "Education B2B Web Design",
     width: 71,
     height: 71,
@@ -685,8 +696,8 @@ export const b2bWebDesignAgencyIndustriesCardsData = [
     title: "Construction",
     description:
       "As a trusted b2b web agency for construction, we design lead-generating platforms that showcase projects, intake RFPs, and build authority. Our solutions help firms present evidence of expertise, comply with industry standards, and win bids confidently.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/construction.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/construction.svg`,
     alt: "Construction B2B Web Design",
     width: 71,
     height: 71,

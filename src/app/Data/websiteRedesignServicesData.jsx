@@ -94,6 +94,7 @@ export const websiteRedesignServicesData = [
       "Our corporate website design and redesign services focus on user experience design that makes navigation intuitive and brand-driven. Using structured wireframes, branding and identity alignment, and customer journey mapping, we follow Nielsen Norman Group research and Adobe best practices to deliver a complete digital presence upgrade.",
     icon: <BagIcon />,
     isActive: true,
+    image:"/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/ux-ui-strategy-design.svg",
   },
   {
     id: 2,
@@ -102,6 +103,7 @@ export const websiteRedesignServicesData = [
       "For a small business website redesign or large-scale project, we optimize content through a content management system (CMS). From rebranding website pages to restructuring copy, we apply HubSpot and Google Search Central insights for SEO-friendly redesign and long-term content governance.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/content-audit-optimization.svg",
   },
   {
     id: 3,
@@ -110,6 +112,7 @@ export const websiteRedesignServicesData = [
       "Our ecommerce website redesign services integrate features that improve usability, while site migration services and custom website redesign solutions ensure smooth transitions. Guided by W3C Web Standards and delivered by an Adobe Certified Expert, we prioritize responsive web redesign and accessibility compliance.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/enhanced-functionality.svg",
   },
   {
     id: 4,
@@ -118,6 +121,7 @@ export const websiteRedesignServicesData = [
       "We build a solid foundation with an SEO-friendly redesign, secure website migration, and HTTPS migration. Using site structure optimization, URL redirection, and canonical tags, we protect rankings while applying standards from Google PageSpeed Insights, OWASP, and Clutch migration reviews.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/enhanced-functionality.svg",
   },
   {
     id: 5,
@@ -126,6 +130,7 @@ export const websiteRedesignServicesData = [
       "Through page speed optimization and performance-driven redesign, we deliver fast, efficient websites. With lightweight frameworks, caching strategies, and image optimization, we align with Google Web Vitals, W3C standards, and insights from Forrester Research.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/performance-optimization.svg",
   },
   {
     id: 6,
@@ -134,6 +139,7 @@ export const websiteRedesignServicesData = [
       "After launch, we refine sites with post-launch monitoring, A/B testing, and conversion rate optimization. Backed by the Nielsen Norman Group and Stanford Web Credibility Research, our process includes usability audits, iterative design, and feedback-driven improvements.",
     icon: <BagIcon />,
     isActive: false,
+    image:"/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/post-launch-QA.svg",
   },
 ];
 
@@ -148,7 +154,7 @@ export const websiteRedesignServicesScrollSectionData = {
       id: "redesign-firstScroller",
       step: 1,
       title: "Expert-Led Approach",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-redesign-services/why-businesses-trust-our-website-redesign-company/expert-led-approach.svg",
       paragraphs: [
         "Our redesigns are guided by certified professionals who bring proven expertise to every project. From the Google UX Design Professional Certificate to recognition as an Adobe Certified Expert, our team applies insights from NNGroup UX studies to ensure usability and design decisions are backed by industry-leading research.",
       ],
@@ -163,7 +169,7 @@ export const websiteRedesignServicesScrollSectionData = {
       id: "redesign-secondScroller",
       step: 2,
       title: "Proven ROI",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-redesign-services/why-businesses-trust-our-website-redesign-company/proven-roi.svg",
       paragraphs: [
         "Every redesign is built with measurable outcomes in mind. Using conversion rate optimization techniques and structured A/B testing, we create websites that increase engagement and drive sales. Independent insights from Forrester Research digital experience studies reinforce the link between thoughtful design and long-term business growth.",
       ],
@@ -178,7 +184,7 @@ export const websiteRedesignServicesScrollSectionData = {
       id: "redesign-thirdScroller",
       step: 3,
       title: "Future-Ready Design",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-redesign-services/why-businesses-trust-our-website-redesign-company/future-ready-design.svg",
       paragraphs: [
         "Websites must adapt to changing user behaviors and technologies. With a focus on mobile-first redesign, seamless responsive design, and integration into broader digital transformation efforts, our approach ensures that your website remains relevant, scalable, and aligned with future needs.",
       ],
@@ -193,7 +199,7 @@ export const websiteRedesignServicesScrollSectionData = {
       id: "redesign-fourthScroller",
       step: 4,
       title: "Credibility & Trust",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/website-redesign-services/why-businesses-trust-our-website-redesign-company/credibility-trust.svg",
       paragraphs: [
         "Trust is central to every online interaction. The Stanford Guidelines for Web Credibility guide our methods, while independent feedback from Clutch agency reviews and Trustpilot ratings highlights the confidence businesses place in our services. These signals of credibility assure clients that they are choosing a partner with proven reliability.",
       ],
@@ -275,6 +281,8 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "conversion",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/improved-user-experience.svg"
+
   },
   {
     id: 2,
@@ -284,6 +292,7 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "engagement",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/modern-and-updated-design.svg"
   },
   {
     id: 3,
@@ -293,6 +302,7 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "roi",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/mobile-responsiveness.svg"
   },
   {
     id: 4,
@@ -302,6 +312,7 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "trust",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/better-performance-and-speed.svg"
   },
   {
     id: 5,
@@ -311,6 +322,7 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/stronger-security.svg"
   },
   {
     id: 6,
@@ -320,6 +332,7 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "goals",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/alignment-with-business-goals.svg"
   },
   {
     id: 7,
@@ -329,6 +342,7 @@ export const websiteRedesignServicesImpactCardsData = [
     icon: "conversion",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image:"/assets/images/website-redesign-services/why-smart-businesses-invest-in-website-redesign-services/improved-conversion-rates.svg"
   },
 ];
 
@@ -393,42 +407,42 @@ export const websiteRedesignServicesTechnologiesData = [
     title: "Shopify",
     description:
       "Our website redesign for Shopify stores focuses on optimized product pages, seamless checkout flows, and integrated apps that boost sales and deliver a smooth ecommerce experience.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/shopify.svg",
   },
   {
     id: 2,
     title: "Drupal",
     description:
       "We provide website redesign for Drupal that strengthens enterprise-level content management, supports modular flexibility, and ensures robust scalability for large, complex websites.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/drupal.svg",
   },
   {
     id: 3,
     title: "Joomla",
     description:
       "With website redesign for Joomla, we modernize sites using multilingual support, customizable templates, and community-driven extensions that improve engagement and reach.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/joomla.svg",
   },
   {
     id: 4,
     title: "Angular",
     description:
       "Our website redesign for Angular applications enhances single-page app performance with real-time updates, dynamic functionality, and sleek UI/UX tailored for modern digital experiences.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/angular.svg",
   },
   {
     id: 5,
     title: "Laravel",
     description:
       "We offer website redesign for Laravel that leverages its MVC structure, API-friendly architecture, and custom integrations to deliver secure, scalable, and efficient platforms.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/laravel.svg",
   },
   {
     id: 6,
     title: "Wix",
     description:
       "Through website redesign for Wix, we deliver fast deployment, drag-and-drop flexibility, and cost-effective solutions that help businesses manage and grow their online presence with ease.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/wix.svg",
   },
 ];
 
@@ -444,7 +458,7 @@ export const websiteRedesignServicesWorkflowData = {
       title: "Discovery",
       description:
         "Every project begins with a tailored website redesign strategy that defines goals and priorities. Through collaborative discussions and research, we align the redesign process with business objectives to create a roadmap for success.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/website-redesign-services/our-step-by-step-website-redesign-process/discovery.svg",
       alignment: "right",
     },
     {
@@ -453,7 +467,7 @@ export const websiteRedesignServicesWorkflowData = {
       title: "Design",
       description:
         "Our next step is a detailed design audit where we review the existing site's layout, branding, and usability. The outcome guides fresh concepts that support rebranding website efforts and ensure the new design reflects your brand identity.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/website-redesign-services/our-step-by-step-website-redesign-process/design.svg",
       alignment: "left",
     },
     {
@@ -462,7 +476,7 @@ export const websiteRedesignServicesWorkflowData = {
       title: "Development",
       description:
         "Once the design is approved, our web development team focuses on functionality, scalability, and adaptability. This stage may also involve website migration, where we move existing data and content into a more efficient, future-ready platform without disrupting performance.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/website-redesign-services/our-step-by-step-website-redesign-process/development.svg",
       alignment: "right",
     },
     {
@@ -471,7 +485,7 @@ export const websiteRedesignServicesWorkflowData = {
       title: "Testing",
       description:
         "Before launch, we conduct extensive UX testing to evaluate navigation, accessibility, and overall usability. This ensures that visitors can engage seamlessly while the site performs reliably across devices.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/website-redesign-services/our-step-by-step-website-redesign-process/testing.svg",
       alignment: "left",
     },
     {
@@ -480,7 +494,7 @@ export const websiteRedesignServicesWorkflowData = {
       title: "Launch",
       description:
         "The final stage is deployment, where the redesigned website goes live. With the groundwork completed, the launch is smooth and supported by post-deployment checks that confirm stability and readiness.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/website-redesign-services/our-step-by-step-website-redesign-process/launch.svg",
       alignment: "right",
     },
   ],
@@ -668,8 +682,8 @@ export const websiteRedesignServicesIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our website redesign services for healthcare enhance patient trust through secure platforms, HIPAA-compliant design, and intuitive interfaces that make accessing care information simple and reliable.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/healthcare.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/healthcare.svg`,
     alt: "Healthcare Website Redesign",
     width: 71,
     height: 71,
@@ -678,8 +692,8 @@ export const websiteRedesignServicesIndustriesCardsData = [
     title: "Real Estate",
     description:
       "With website redesign services for real estate, we build platforms that highlight property listings, integrate lead capture tools, and simplify navigation to connect buyers and sellers seamlessly.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/real-estate.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/real-estate.svg`,
     alt: "Real Estate Website Redesign",
     width: 71,
     height: 71,
@@ -688,8 +702,8 @@ export const websiteRedesignServicesIndustriesCardsData = [
     title: "Finance",
     description:
       "Our website redesign services for finance focus on compliance, security, and transparency, delivering digital experiences that safeguard sensitive data while guiding clients through complex financial services.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/finance.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/finance.svg`,
     alt: "Finance Website Redesign",
     width: 71,
     height: 71,
@@ -698,8 +712,8 @@ export const websiteRedesignServicesIndustriesCardsData = [
     title: "Small Business",
     description:
       "Through small business website redesign services, we create affordable, scalable, and easy-to-manage websites that help startups and local companies compete, attract customers, and grow effectively.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/small-business.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/small-business.svg`,
     alt: "Small Business Website Redesign",
     width: 71,
     height: 71,
@@ -708,8 +722,8 @@ export const websiteRedesignServicesIndustriesCardsData = [
     title: "Education",
     description:
       "Our website redesign services for education improve learning accessibility with WCAG-compliant design, student portals, and interactive layouts that enhance engagement for students, parents, and educators.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/education.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/education.svg`,
     alt: "Education Website Redesign",
     width: 71,
     height: 71,
@@ -718,8 +732,8 @@ export const websiteRedesignServicesIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "We provide website redesign services for ecommerce that reduce cart abandonment, integrate secure payment gateways, and personalize shopping experiences to increase sales and customer loyalty.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/education.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/ecommerce.svg`,
     alt: "Ecommerce Website Redesign",
     width: 71,
     height: 71,
