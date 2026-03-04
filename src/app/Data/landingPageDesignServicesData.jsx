@@ -94,6 +94,7 @@ export const landingPageDesignServicesData = [
       "Our custom landing page design focuses on creating a tailored user experience that aligns with your audience and objectives. Guided by CRO best practices, every page is designed to be visually engaging while driving measurable conversions.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/landing-page-design-services/our-comprehensive-landing-page-design-services/custom-landing-page-design.svg",
   },
   {
     id: 2,
@@ -102,6 +103,7 @@ export const landingPageDesignServicesData = [
       "Our landing page optimization services enhance performance through A/B testing, content refinements, and usability improvements. By reducing bounce rates and improving click-through rate (CTR), we ensure each visit is more likely to convert.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/landing-page-design-services/our-comprehensive-landing-page-design-services/landing-page-optimization.svg",
   },
   {
     id: 3,
@@ -110,6 +112,7 @@ export const landingPageDesignServicesData = [
       "We provide e-commerce landing page design services that highlight products, SaaS landing pages that simplify complex offers, and lead generation pages that convert interest into action. Whether built on WordPress, Shopify, or another CMS, every design prioritizes functionality and results.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/landing-page-design-services/our-comprehensive-landing-page-design-services/landing-pages-for-every-industry.svg",
   },
   {
     id: 4,
@@ -118,6 +121,7 @@ export const landingPageDesignServicesData = [
       "Our regional and campaign-focused designs adapt to local markets with attention to behavior, language, and culture. Whether you're promoting locally or expanding globally, each page is built to deliver relevance and stronger engagement.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/landing-page-design-services/our-comprehensive-landing-page-design-services/regional-campaign-specific-design.svg",
   },
   {
     id: 5,
@@ -126,6 +130,7 @@ export const landingPageDesignServicesData = [
       "We create mobile-friendly landing pages that provide seamless experiences across all devices. Our responsive designs ensure fast loading times and intuitive navigation, maximizing conversions from mobile traffic.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/landing-page-design-services/our-comprehensive-landing-page-design-services/mobile-first-landing-pages.svg",
   },
   {
     id: 6,
@@ -134,6 +139,7 @@ export const landingPageDesignServicesData = [
       "Our CRO services focus on data-driven improvements to increase conversion rates. Through user behavior analysis, A/B testing, and strategic design changes, we help you turn more visitors into customers.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/landing-page-design-services/our-comprehensive-landing-page-design-services/conversion-rate-optimization.svg",
   },
 ];
 
@@ -148,7 +154,7 @@ export const landingPageDesignServicesScrollSectionData = {
       id: "landing-firstScroller",
       step: 1,
       title: "Data-Driven Design Decisions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/landing-page-design-services/why-businesses-trust-our-landing-page-design-company/data-driven-design-decisions.svg",
       paragraphs: [
         "Measurable results guide every choice we make. Through A/B testing, ongoing refinements, and conversion rate optimization, we ensure your landing experience performs better with each change. Backed by usability studies, our process is built on real user behavior, not assumptions.",
       ],
@@ -163,7 +169,7 @@ export const landingPageDesignServicesScrollSectionData = {
       id: "landing-secondScroller",
       step: 2,
       title: "Optimized for Every Device",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/landing-page-design-services/why-businesses-trust-our-landing-page-design-company/optimized-for-every-device.svg",
       paragraphs: [
         "A design should perform flawlessly on any screen. Our work includes responsive landing page design structures and mobile-friendly landing pages so your visitors enjoy consistent performance whether they’re on desktop, tablet, or mobile.",
       ],
@@ -178,7 +184,7 @@ export const landingPageDesignServicesScrollSectionData = {
       id: "landing-thirdScroller",
       step: 3,
       title: "SEO & PPC Friendly",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/landing-page-design-services/why-businesses-trust-our-landing-page-design-company/seo-ppx-friendly.svg",
       paragraphs: [
         "Traffic should never go to waste. With SEO-friendly landing pages, you gain visibility in organic search, while a PPC-ready design ensures paid campaigns convert at the highest possible rate. Each landing experience is built with search intent and ad alignment in mind.",
       ],
@@ -193,7 +199,7 @@ export const landingPageDesignServicesScrollSectionData = {
       id: "landing-fourthScroller",
       step: 4,
       title: "Built to Generate Trust",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/landing-page-design-services/why-businesses-trust-our-landing-page-design-company/built-to-generate-trust.svg",
       paragraphs: [
         "Trust drives conversions. We use clear CTAs, transparent layouts, and a focus on user experience to guide actions without confusion. By incorporating proven trust signals and building strategic lead generation pathways, we help visitors feel confident taking the next step.",
       ],
@@ -208,7 +214,7 @@ export const landingPageDesignServicesScrollSectionData = {
       id: "landing-fifthScroller",
       step: 5,
       title: "Industry Expertise",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/landing-page-design-services/why-businesses-trust-our-landing-page-design-company/industry-expertise.svg",
       paragraphs: [
         "Our experience extends across sectors and strategies. As a full-service provider of digital marketing services, we combine the insights of a web design agency with UX design expertise to deliver solutions that support both immediate campaigns and long-term growth.",
       ],
@@ -290,6 +296,7 @@ export const landingPageDesignServicesImpactCardsData = [
     icon: "conversion",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/landing-page-design-services/why-landing-page-design-matters-for-business-growth/boost-your-conversions.svg",
   },
   {
     id: 2,
@@ -299,6 +306,7 @@ export const landingPageDesignServicesImpactCardsData = [
     icon: "engagement",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/landing-page-design-services/why-landing-page-design-matters-for-business-growth/engage-users-effectively.svg",
   },
   {
     id: 3,
@@ -308,6 +316,7 @@ export const landingPageDesignServicesImpactCardsData = [
     icon: "roi",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/landing-page-design-services/why-landing-page-design-matters-for-business-growth/maximize-marketing-roi.svg",
   },
   {
     id: 4,
@@ -317,6 +326,7 @@ export const landingPageDesignServicesImpactCardsData = [
     icon: "trust",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
+    image: "/assets/images/landing-page-design-services/why-landing-page-design-matters-for-business-growth/build-trust-and-confidence.svg",
   },
 ];
 
@@ -381,42 +391,42 @@ export const landingPageDesignServicesTechnologiesData = [
     title: "WordPress",
     description:
       "Our landing page design services for WordPress focus on custom themes, SEO-friendly layouts, and flexible integrations that help brands scale with ease.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/wordpress.svg",
   },
   {
     id: 2,
     title: "Shopify",
     description:
       "We offer landing page design service for Shopify that optimizes product showcases, checkout experiences, and app integrations to maximize e-commerce conversions.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/shopify.svg",
   },
   {
     id: 3,
     title: "Wix",
     description:
       "Our landing page design services for Wix deliver user-friendly, drag-and-drop pages crafted to engage visitors and help small businesses grow online.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/wix.svg",
   },
   {
     id: 4,
     title: "Squarespace",
     description:
       "We provide landing page design service for Squarespace tailored to creative professionals, ensuring elegant and brand-focused layouts that convert.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/squarespace.svg",
   },
   {
     id: 5,
     title: "Drupal",
     description:
       "Our landing page design services for Drupal emphasize enterprise-level security, advanced integrations, and scalable performance for high-traffic businesses.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/drupal.svg",
   },
   {
     id: 6,
     title: "Elementor",
     description:
       "With our landing page design service for Elementor, businesses gain CRO-focused, drag-and-drop flexibility to create visually dynamic pages that convert.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/elementor.svg",
   },
 ];
 
@@ -432,7 +442,7 @@ export const landingPageDesignServicesWorkflowData = {
       title: "Research & Strategy",
       description:
         "We begin by understanding your audience and campaign objectives. Through analysis of conversion rate trends, user experience insights, and defined lead generation goals, we create a roadmap that aligns design choices with measurable business outcomes.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/landing-page-design-services/our-process/research-strategy.svg",
       alignment: "right",
     },
     {
@@ -441,7 +451,7 @@ export const landingPageDesignServicesWorkflowData = {
       title: "Wireframing & Design",
       description:
         "The next step is mapping out the structure. Our team focuses on custom landing page design that reflects your brand, combined with a call-to-action strategy that directs attention where it matters most. With layouts crafted for responsive design, visitors receive a consistent experience across all devices.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/landing-page-design-services/our-process/wireframing-design.svg",
       alignment: "left",
     },
     {
@@ -450,7 +460,7 @@ export const landingPageDesignServicesWorkflowData = {
       title: "Development & Optimization",
       description:
         "Once the wireframe is approved, we move into build and refine. Using modern tools for landing page development, we implement designs with results in mind. Through A/B testing and careful iteration, we ensure the layout drives action effectively. To strengthen visibility, each page is structured as an SEO-friendly landing page ready for organic traffic growth.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/landing-page-design-services/our-process/development-optimization.svg",
       alignment: "right",
     },
     {
@@ -459,7 +469,7 @@ export const landingPageDesignServicesWorkflowData = {
       title: "Continuous Improvement",
       description:
         "After launch, we continue refining effectiveness. With analytics-driven optimization, we identify opportunities for bounce rate reduction and increased engagement. By applying CRO principles, your landing page adapts to audience behavior and maintains consistent results over time.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/landing-page-design-services/our-process/continuous-improvement.svg",
       alignment: "left",
     },
   ],
@@ -629,8 +639,8 @@ export const landingPageDesignServicesIndustriesCardsData = [
     title: "Ecommerce",
     description:
       "Our landing page design services for ecommerce stores focus on reducing cart abandonment and improving checkout flow. Product showcases, reviews, and seamless navigation drive higher conversions.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/ecommerce.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/ecommerce.svg`,
     alt: "Ecommerce Landing Page Design",
     width: 71,
     height: 71,
@@ -639,8 +649,8 @@ export const landingPageDesignServicesIndustriesCardsData = [
     title: "Healthcare",
     description:
       "We deliver landing page design services for healthcare providers that emphasize patient trust, accessibility, and security. Features like HIPAA-ready forms and appointment scheduling boost engagement.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/healthcare.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/healthcare.svg`,
     alt: "Healthcare Landing Page Design",
     width: 71,
     height: 71,
@@ -649,8 +659,8 @@ export const landingPageDesignServicesIndustriesCardsData = [
     title: "Real Estate",
     description:
       "Our landing page design services for real estate agents showcase properties with IDX/MLS integration, maps, and tour embeds. Designed for credibility, they capture and route quality leads.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/real-estate.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/real-estate.svg`,
     alt: "Real Estate Landing Page Design",
     width: 71,
     height: 71,
@@ -659,8 +669,8 @@ export const landingPageDesignServicesIndustriesCardsData = [
     title: "Fintech",
     description:
       "We provide landing page design services for fintech startups that communicate value while ensuring compliance. Security signals, trust badges, and simple onboarding flows increase sign-ups.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/fintech.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/fintech.svg`,
     alt: "Fintech Landing Page Design",
     width: 71,
     height: 71,
@@ -669,8 +679,8 @@ export const landingPageDesignServicesIndustriesCardsData = [
     title: "B2B",
     description:
       "Our landing page design services for B2B manufacturing highlight technical details with RFQ forms, product specs, and distributor pathways. Pages are built to support long-cycle lead nurturing.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/b2b.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/b2b.svg`,
     alt: "B2B Landing Page Design",
     width: 71,
     height: 71,
@@ -679,8 +689,8 @@ export const landingPageDesignServicesIndustriesCardsData = [
     title: "Dental",
     description:
       "We create landing page design services for dental practices that build patient confidence. Online booking, before/after galleries, and insurance info make it easy to schedule appointments.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/dental.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/dental.svg`,
     alt: "Dental Landing Page Design",
     width: 71,
     height: 71,

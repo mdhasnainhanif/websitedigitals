@@ -75,24 +75,28 @@ export const webDesignWhyChooseData = {
       description: "A website design company ensures your site adapts to smartphones, tablets, and desktops. This means faster load times for stronger SEO, consistent branding across every screen, and a user experience that keeps visitors engaged longer.",
       icon: "/assets/images/icons/responsive-icon.svg",
       col: "col-12 col-md-6 col-lg-6",
+      image: "/assets/images/web-design-company/why-choosing-the-right-web-design-company-matters/responsive-design-that-engages.svg",
     },
     {
       title: "UX That Drives Conversions",
       description: "With smart UX design, businesses benefit from clear navigation that reduces bounce rates, optimized landing page design that turns visitors into leads, and intuitive layouts that guide customers naturally toward action.",
       icon: "/assets/images/icons/ux-icon.svg",
       col: "col-12 col-md-6 col-lg-6",
+      image: "/assets/images/web-design-company/why-choosing-the-right-web-design-company-matters/ux-that-drives-conversions.svg",
     },
     {
       title: "Branding That Builds Trust",
       description: "Your website is often the first impression of your brand. A professional web design agency creates a visual identity that resonates with your audience, blending cohesive design elements, professional aesthetics that inspire credibility, and consistency across all digital platforms.",
       icon: "/assets/images/icons/branding-icon.svg",
       col: "col-12 col-md-6 col-lg-6",
+      image: "/assets/images/web-design-company/why-choosing-the-right-web-design-company-matters/branding-that-builds-trust.svg",
     },
     {
       title: "Scalable Design for Growth",
       description: "A top web design company builds websites that grow with your business. Flexible architecture and easy updates ensure your site stays effective as you add new products, services, or features.",
       icon: "/assets/images/icons/scalable-icon.svg",
       col: "col-12 col-md-6 col-lg-6",
+      image: "/assets/images/web-design-company/why-choosing-the-right-web-design-company-matters/scalable-design-for-growth.svg",
     }
   ]
 };
@@ -109,7 +113,8 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <icon1/>
+    icon: <icon1/>,
+    image: "/assets/images/web-design-company/website-design-services-that-fit-your-business-needs/landing-page-design.svg",
   },
   {
     id: "responsive-web-design",
@@ -121,7 +126,8 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <icon1/>
+    icon: <icon1/>,
+    image: "/assets/images/web-design-company/website-design-services-that-fit-your-business-needs/responsive-web-design.svg",
   },
   {
     id: "website-redesign",
@@ -133,7 +139,8 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <BagIcon/>
+    icon: <BagIcon/>,
+    image: "/assets/images/web-design-company/website-design-services-that-fit-your-business-needs/website-redesign.svg",
   },
   {
     id: "b2b-web-design",
@@ -145,7 +152,8 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <BagIcon/>
+    icon: <BagIcon/>,
+    image: "/assets/images/web-design-company/website-design-services-that-fit-your-business-needs/b2b-web-design.svg",
   },
   {
     id: "custom-web-design",
@@ -157,7 +165,8 @@ export const webDesignServicesData = [
       className: "offer-btn primary",
       show: true
     },
-    icon: <BagIcon/>
+    icon: <BagIcon/>,
+    image: "/assets/images/web-design-company/website-design-services-that-fit-your-business-needs/custom-web-design.svg",
   }
 ];
 
@@ -173,7 +182,7 @@ export const webDesignUSPData = {
       id: "webdesign-firstScroller",
       step: 1,
       title: "Smart UI Design",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/smart-ui-design.svg",
       paragraphs: [
         "Designing a website is not just about aesthetics; it's about usability. With a strong focus on UI design, every page is crafted for clarity, efficiency, and engagement, ensuring visitors can interact with your site without confusion.",
       ],
@@ -188,7 +197,7 @@ export const webDesignUSPData = {
       id: "webdesign-secondScroller",
       step: 2,
       title: "Creative Web Solutions",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/creative-web-solutions.svg",
       paragraphs: [
         "Every business faces different challenges online. Through creative web solutions, websites are built to meet those needs, whether it's lead generation, eCommerce conversions, or strengthening brand visibility.",
       ],
@@ -203,7 +212,7 @@ export const webDesignUSPData = {
       id: "webdesign-thirdScroller",
       step: 3,
       title: "Digital Marketing Integration",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/digital-marketing-integration.svg",
       paragraphs: [
         "Web design does not exist in isolation. By integrating digital marketing strategies from the start, your website is positioned to attract the right audience, convert leads, and support wider growth objectives.",
       ],
@@ -218,7 +227,7 @@ export const webDesignUSPData = {
       id: "webdesign-fourthScroller",
       step: 4,
       title: "Mobile-First Design",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/mobile-first-design.svg",
       paragraphs: [
         "Modern users spend more time on mobile devices than on desktops. That's why every site is built with a mobile-friendly design in mind, ensuring consistent performance and accessibility across all screen sizes.",
       ],
@@ -233,7 +242,7 @@ export const webDesignUSPData = {
       id: "webdesign-fifthScroller",
       step: 5,
       title: "Front-End Expertise",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/front-end-expertise.svg",
       paragraphs: [
         "A seamless user experience depends on the strength of the build. With advanced front-end development, websites load faster, function smoothly, and support the technical requirements needed to scale with your business.",
       ],
@@ -256,7 +265,7 @@ export const webDesignProcessData = {
       number: "01",
       title: "Discovery & Planning",
       description: "At this stage, we gather requirements, define the target audience, and create a roadmap that ensures the approach stays aligned with overall business objectives.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/web-design-company/our-step-by-step-web-design-process/discovery-planning.svg",
       alignment: "right"
     },
     {
@@ -264,7 +273,7 @@ export const webDesignProcessData = {
       number: "02",
       title: "Wireframing & User Experience",
       description: "Wireframes establish structure and flow. By focusing on UX design, the layout is shaped to simplify navigation, reduce friction, and guide users toward conversion.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/web-design-company/our-step-by-step-web-design-process/wireframing-user-experience.svg",
       alignment: "left"
     },
     {
@@ -272,7 +281,7 @@ export const webDesignProcessData = {
       number: "03",
       title: "Creative Design & Visual Identity",
       description: "Concepts take shape in this phase. Using the brand's visual identity, designs are crafted to be visually compelling, user-friendly, and consistent with modern standards.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/web-design-company/our-step-by-step-web-design-process/creative-design-visual-identity.svg",
       alignment: "right"
     },
     {
@@ -280,7 +289,7 @@ export const webDesignProcessData = {
       number: "04",
       title: "Development & Front-End Build",
       description: "With designs approved, coding begins. Through expert web development services, the site becomes fully responsive, optimized for speed, and compatible across devices.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/web-design-company/our-step-by-step-web-design-process/development-front-end-build.svg",
       alignment: "left"
     },
     {
@@ -288,7 +297,7 @@ export const webDesignProcessData = {
       number: "05",
       title: "Testing & Launch",
       description: "Before launch, every function is tested for responsiveness, SEO readiness, and performance. Once approved, the site goes live, delivering a reliable platform to strengthen online presence.",
-      image: "/assets/images/work/step5.png",
+      image: "/assets/images/web-design-company/our-step-by-step-web-design-process/testing-launch.svg",
       alignment: "right"
     }
   ]
@@ -301,32 +310,32 @@ export const webDesignTechnologiesData = {
     {
       title: "Design & Prototyping Tools",
       description: "Figma, Adobe XD, Sketch, InVision",
-      icon: "/assets/images/technologyIcons.png"
+      icon: "/assets/images/web-design-company/technologies-we-use/design-prototyping-tools.svg"
     },
     {
       title: "Front-End Design & Development",
       description: "HTML5, CSS3, JavaScript (ES6+), React, Tailwind CSS",
-      icon: "/assets/images/technologyIcons.png"
+      icon: "/assets/images/web-design-company/technologies-we-use/front-end-design-development.svg"
     },
     {
       title: "Responsive & UI Frameworks",
       description: "Bootstrap, Material UI, Flexbox & CSS Grid",
-      icon: "/assets/images/technologyIcons.png"
+      icon: "/assets/images/web-design-company/technologies-we-use/responsive-ui-frameworks.svg"
     },
     {
       title: "Content Management & Web Builders",
       description: "WordPress, Elementor, Webflow, Shopify",
-      icon: "/assets/images/technologyIcons.png"
+      icon: "/assets/images/web-design-company/technologies-we-use/content-management-web-builders.svg"
     },
     {
       title: "E-Commerce & Custom Solutions",
       description: "WooCommerce, Shopify Plus, Headless Commerce (React/Next.js)",
-      icon: "/assets/images/technologyIcons.png"
+      icon: "/assets/images/web-design-company/technologies-we-use/e-commerce-custom-solutions.svg"
     },
     {
       title: "Performance & Accessibility",
       description: "Core Web Vitals Optimization, Google Lighthouse, ARIA Accessibility Standards",
-      icon: "/assets/images/technologyIcons.png"
+      icon: "/assets/images/web-design-company/technologies-we-use/performance-accessibility.svg"
     }
   ]
 };
