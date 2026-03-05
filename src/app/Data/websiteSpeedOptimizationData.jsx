@@ -186,7 +186,7 @@ export const websiteSpeedOptimizationServicesData = [
     "With our WordPress speed optimization services, we handle plugin optimization, script minification, and caching to ensure fast-loading, stable sites.",
   icon: <BagIcon />,
   isActive: true,
-  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/wordpress-speed-optimization.svg",
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/wordpress-speed-optimization1.svg",
 },
 {
   id: 2,
@@ -195,7 +195,7 @@ export const websiteSpeedOptimizationServicesData = [
     "Our ecommerce site speed optimization improves sales and reduces drop-offs. We deliver expert Shopify speed optimization services, fixing render-blocking resources and other slowdowns.",
   icon: <BagIcon />,
   isActive: false,
-  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/ecommerce-performance-solutions.svg",
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/ecommerce-performance-solutions1.svg",
 },
 {
   id: 3,
@@ -204,7 +204,7 @@ export const websiteSpeedOptimizationServicesData = [
     "A full website performance audit identifies issues using the Google Lighthouse report. We address server response time and other bottlenecks for measurable gains.",
   icon: <BagIcon />,
   isActive: false,
-  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/full-website-performance-audits.svg",
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/full-website-performance-audits1.svg",
 },
 {
   id: 4,
@@ -213,7 +213,7 @@ export const websiteSpeedOptimizationServicesData = [
     "We provide continuous tuning and performance monitoring to keep your site optimized as traffic and content grow.",
   icon: <BagIcon />,
   isActive: false,
-  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/ongoing-monitoring.svg",
+  image: "/assets/images/website-speed-optimization-services/our-end-to-end-website-speed-optimization-services-for-businesses/ongoing-monitoring1.svg",
 },
 ];
 

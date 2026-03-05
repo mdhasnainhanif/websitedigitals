@@ -399,7 +399,7 @@ export const websiteMaintenanceWorkflowData = {
     {
       id: 1,
       number: "01",
-      title: "Assessment & Planning sdf",
+      title: "Assessment & Planning",
       description:
         "We begin with a complete site audit to evaluate current performance, followed by a detailed risk analysis to uncover vulnerabilities. Establishing a clear baseline performance allows us to develop a structured plan that meets both immediate needs and long-term goals.",
       image: "/assets/images/website-maintenance-services/our-process-for-reliable-website-maintenance/assessment-planning-ongoing-monitoring-reporting.svg",
