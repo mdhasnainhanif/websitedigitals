@@ -337,7 +337,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "sales",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
-    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/increased-sales.svg",
+    image: "/assets/images/web-application-development-services/why-businesses-invest/business-growth.svg",
   },
   {
     id: 2,
@@ -347,7 +347,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "experience",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-6",
-    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/better-customer-experience.svg",
+    image: "/assets/images/website-speed-optimization-services/what-impact-does-website-speed-optimization-make/user-experience.svg",
   },
   {
     id: 3,
@@ -357,7 +357,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "management",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
-    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/simplified-store-management.svg",
+    image: "/assets/images/amazon-store-design-services/why-amazon-store-design-matters/custom-design-that-reflects-your-brand.svg",
   },
   {
     id: 4,
@@ -367,7 +367,7 @@ export const shopifyDevelopmentImpactCardsData = [
     icon: "growth",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
-    image: "/assets/images/shopify-development-services/why-your-business-needs-shopify-development-services/room-for-growth.svg",
+    image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/revenue-and-growth-focused-design.svg",
   },
 ];
 
@@ -432,42 +432,42 @@ export const shopifyDevelopmentTechnologiesData = [
     title: "Headless",
     description:
       "Our headless Shopify development service empowers brands with API-driven architecture, enabling omnichannel selling, unique front-end experiences, and seamless scalability without compromising performance.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/headless.svg",
   },
   {
     id: 2,
     title: "Hydrogen",
     description:
       "We build Shopify hydrogen development store setups using Shopify's React-based framework, creating modular, dynamic storefronts that deliver lightning-fast page loads and a tailored user experience.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/hydrogen.webp",
   },
   {
     id: 3,
     title: "Ruby on Rails",
     description:
       "Through our Shopify Ruby on Rails development services, we create robust, secure back-end systems with efficient workflows, advanced API integrations, and enterprise-grade scalability for growing businesses.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/ruby-on-rails.svg",
   },
   {
     id: 4,
     title: "React.js",
     description:
       "Our Shopify React.js storefront development services deliver interactive, responsive UIs that boost engagement and work independently or alongside Hydrogen for greater customization flexibility.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/react-js.svg",
   },
   {
     id: 5,
     title: "JavaScript",
     description:
       "With our Shopify JavaScript customization services, we add dynamic elements like interactive product menus, cart behaviors, and micro-animations that enhance user engagement and improve store usability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/js.svg",
   },
   {
     id: 6,
     title: "MySQL",
     description:
       "Our Shopify MySQL database optimization services speed up data processing, improve inventory accuracy, and support real-time analytics, ensuring consistent performance for large-scale product catalogs.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/mysql.svg",
   },
 ];
 
@@ -519,7 +519,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: "Custom Development",
       description:
         "For unique requirements, we provide custom Shopify development using Liquid coding, advanced app integrations, and dedicated Shopify app development services to deliver tailored functionality.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/squarespace-development-services/our-process/development-integration.svg",
       alignment: "right",
     },
 
@@ -557,7 +557,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: "Testing and Quality Assurance",
       description:
         "We validate mobile responsiveness, ensure performance optimization, and apply conversion rate optimization (CRO) techniques. Thorough error debugging guarantees smooth functionality before launch.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/icons_Testing%20&%20Deployment.svg",
       alignment: "right",
     },
     {
@@ -566,7 +566,7 @@ export const shopifyDevelopmentWorkflowData = {
       title: " Launch and Deployment",
       description:
         "Our launch plan covers Shopify Plus scaling, seamless app integrations, and API integrations, followed by post-launch SEO to support visibility from day one.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/website-redesign-services/our-step-by-step-website-redesign-process/launch.svg",
       alignment: "left",
     },
 

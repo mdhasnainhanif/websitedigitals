@@ -465,7 +465,7 @@ export const webPortalDevelopmentTechnologiesData = [
     title: "Java",
     description:
       "Our Java portal development services deliver cross-platform, high-performance solutions designed for businesses that need reliable, future-proof portals capable of handling enterprise-level workloads.",
-    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/java.svg",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/js.svg",
   },
   {
     id: 3,

@@ -636,7 +636,7 @@ export const seoAgencyIndustriesSectionData = {
 // Industries Cards Data (for WebBuilderCardSection)
 export const seoAgencyIndustriesCardsData = [
   {
-    title: "eCommerce dsf",
+    title: "eCommerce",
     description:
       "As an SEO agency for eCommerce businesses, we optimize product pages, categories, and schema to boost visibility in search results, improve shopper experience, and drive consistent online sales growth.",
     imgOriginal: `/assets/images/search-engine-optimization-agency/industries-we-help-grow/original/ecommerce.svg`,

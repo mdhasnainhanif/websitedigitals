@@ -4,8 +4,12 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   images: {
-    formats: ["image/avif", "image/webp"], 
-    minimumCacheTTL: 60, 
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60,
+    remotePatterns: [
+      { protocol: "https", hostname: "images.unsplash.com", pathname: "/**" },
+      { protocol: "https", hostname: "ui-avatars.com", pathname: "/**" },
+    ],
   },
 
   compiler: {

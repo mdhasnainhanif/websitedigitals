@@ -393,21 +393,21 @@ export const squarespaceDevelopmentTechnologiesData = [
     title: "Custom Template",
     description:
       "Elevate your brand with our Squarespace custom template development service. We design responsive, conversion-focused templates that create a unique structure for your website, helping you stand out and engage visitors effectively.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/squarespace-development-services/our-technology-stack/custom-template.svg",
   },
   {
     id: 2,
     title: "JavaScript",
     description:
       "Enhance interactivity with Squarespace custom JavaScript development. From dynamic sliders to advanced form validation, we add features that improve user experience and keep visitors engaged longer.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/js.svg",
   },
   {
     id: 3,
     title: "CSS",
     description:
       "Perfect your site's look with our Squarespace custom CSS development. We customize layouts, typography, and visual elements for a polished, professional design that reflects your brand identity and improves usability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/squarespace-development-services/our-technology-stack/css.svg",
   },
   {
     id: 4,
@@ -421,14 +421,14 @@ export const squarespaceDevelopmentTechnologiesData = [
     title: "Membership Functionality",
     description:
       "Grow recurring revenue with our Squarespace membership functionality setup service. We create secure, easy-to-navigate member areas, gated content, and subscription features to boost user engagement and retention.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/squarespace-development-services/our-technology-stack/membership-func.svg",
   },
   {
     id: 6,
     title: "Blueprint AI",
     description:
       "Accelerate your launch when you hire a Squarespace Blueprint AI website developer from our team. We combine AI-driven insights with expert design to build smarter, data-backed websites faster.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/squarespace-development-services/our-technology-stack/api.svg",
   },
 ];
 

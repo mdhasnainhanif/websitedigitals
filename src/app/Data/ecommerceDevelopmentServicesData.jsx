@@ -121,6 +121,7 @@ export const ecommerceDevelopmentImpactCardsData = [
     icon: "conversion",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/responsive-web-design-services/why-responsive-web-design/drive-conversions-and-engagement.svg",
   },
   {
     id: 2,
@@ -130,6 +131,7 @@ export const ecommerceDevelopmentImpactCardsData = [
     icon: "scale",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/webportal-development-company/why-web/driving-business-growth-through-portals.svg",
   },
   {
     id: 3,
@@ -139,6 +141,7 @@ export const ecommerceDevelopmentImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
+    image: "/assets/images/website-maintenance-services/why-your-business-needs-website-maintenance-services/security-and-trust.svg",
   },
 ];
 
@@ -163,6 +166,7 @@ export const ecommerceDevelopmentServicesData = [
     description: "We design and build custom ecommerce websites tailored to your brand, audience, and business goals. This includes shopping cart and checkout system development designed for ease of use, fast performance, and higher conversion rates. We also create robust product catalogs and inventory management systems, giving you the tools to run your store efficiently.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/e-commerce-design.svg",
   },
   {
     id: 2,
@@ -170,6 +174,7 @@ export const ecommerceDevelopmentServicesData = [
     description: "From Shopify and Magento to WooCommerce, we handle platform setup and configuration to ensure your store is ready to launch without delays. Our process includes theme customization, store settings, and technical configurations so your platform reflects your brand and meets your operational needs.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/e-commerce-design.svg",
   },
   {
     id: 3,
@@ -177,6 +182,7 @@ export const ecommerceDevelopmentServicesData = [
     description: "Switching ecommerce platforms can be seamless with the right approach. Whether it is a Shopify to Magento migration or a WooCommerce to BigCommerce migration, we manage the transition with zero downtime and secure data transfer. We also integrate third-party APIs, including shipping providers, CRM systems, and ERP software, so every tool in your business ecosystem works together efficiently.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/enhanced-functionality.svg",
   },
   {
     id: 4,
@@ -184,6 +190,7 @@ export const ecommerceDevelopmentServicesData = [
     description: "Beyond development, we provide ecommerce content optimization, keyword targeting, and schema markup for ecommerce to improve search visibility and rankings. By following best practices from Google Search Central and proven strategies from OuterBox, we help increase your visibility and drive high-intent traffic to your store.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/website-redesign-services/our-comprehensive-website-redesign-services-that-drive-growth-and-results/performance-optimization.svg",
   },
 ];
 
@@ -244,8 +251,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
   {
     title: "Retail",
     description: "Our ecommerce development for retail enables smooth omnichannel experiences, from in-store pickup to easy returns, while boosting conversions with fast, intuitive checkouts and smart merchandising tools.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/pay-per click-agency/industries-we-drive-results-for/original/retail-brands.svg`,
+    imgWhite: `/assets/images/pay-per click-agency/industries-we-drive-results-for/hover/retail-brands.svg`,
     alt: "Retail Ecommerce Development",
     width: 71,
     height: 71,
@@ -253,8 +260,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
   {
     title: "Automotive",
     description: "We specialize in ecommerce development for automotive parts, featuring VIN-based fitment search, real-time inventory syncing, and secure checkout to streamline purchasing and reduce returns.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/social-media marketing-agency/industries-we-cover/original/automotive.svg`,
+    imgWhite: `/assets/images/social-media marketing-agency/industries-we-cover/hover/automotive.svg`,
     alt: "Automotive Ecommerce Development",
     width: 71,
     height: 71,
@@ -262,8 +269,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
   {
     title: "Small Business",
     description: "Our ecommerce development services for small businesses deliver scalable, budget-friendly online stores with simple content management, mobile optimization, and built-in tools for local delivery and growth.",
-    imgOriginal: `/assets/images/services/thirty-56.webp`,
-    imgWhite: `/assets/images/services/thirty-55.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/small-business.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/small-business.svg`,
     alt: "Small Business Ecommerce Development",
     width: 71,
     height: 71,
@@ -271,8 +278,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
   {
     title: "Digital Products",
     description: "Our ecommerce development for digital products supports instant downloads, subscription billing, and secure license management, ensuring a smooth user experience and automated fulfillment.",
-    imgOriginal: `/assets/images/services/thirty-54.webp`,
-    imgWhite: `/assets/images/services/thirty-53.webp`,
+    imgOriginal: `/assets/images/hosting-services-reseller/industries/original/digital-marketing.svg`,
+    imgWhite: `/assets/images/hosting-services-reseller/industries/hover/digital-marketing.svg`,
     alt: "Digital Products Ecommerce Development",
     width: 71,
     height: 71,
@@ -280,8 +287,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
   {
     title: "Electronics",
     description: "We offer ecommerce development for electronics with product comparison tools, warranty workflows, and fast-loading product pages to improve decision-making and boost customer confidence.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/shopify-development-services/who-we-build-for/orignal/electronics.svg`,
+    imgWhite: `/assets/images/shopify-development-services/who-we-build-for/hover/electronics.svg`,
     alt: "Electronics Ecommerce Development",
     width: 71,
     height: 71,
@@ -289,8 +296,8 @@ export const ecommerceDevelopmentIndustriesCardsData = [
   {
     title: "Jewelry",
     description: "Our ecommerce development for jewelry features high-resolution galleries, AR try-on, and insured checkout options, helping luxury brands build trust and increase high-value sales.",
-    imgOriginal: `/assets/images/services/thirty-50.webp`,
-    imgWhite: `/assets/images/services/thirty-49.webp`,
+    imgOriginal: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/original/Jewelry.svg`,
+    imgWhite: `/assets/images/amazon-store-design-services/industries-we-help-grow-on-amazon/hover/Jewelry.svg`,
     alt: "Jewelry Ecommerce Development",
     width: 71,
     height: 71,
@@ -339,7 +346,7 @@ export const ecommerceDevelopmentWorkflowData = {
       number: "01",
       title: "Discovery & Strategy",
       description: "We begin with thorough ecommerce project planning and requirements analysis to understand your business model, products, and target customers. This stage focuses on business goals alignment and competitor research to create a roadmap that sets your store up for success.",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/web-application-development-services/our-process/discovery-strategy.svg",
       alignment: "right",
     },
     {
@@ -347,7 +354,7 @@ export const ecommerceDevelopmentWorkflowData = {
       number: "02", 
       title: "Design & Development",
       description: "Our team produces custom ecommerce design tailored to your brand, focusing on UX/UI for online stores that guide customers naturally toward a purchase. Through wireframing and responsive design development, we ensure your site looks and functions flawlessly on all devices.",
-      image: "/assets/images/work/step2.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/design-development.svg",
       alignment: "left",
     },
     {
@@ -355,7 +362,7 @@ export const ecommerceDevelopmentWorkflowData = {
       number: "03",
       title: "Testing & Launch",
       description: "Before your site goes live, we conduct QA testing for ecommerce to detect and resolve any issues. This includes bug fixing before launch, cross-browser testing, and load testing to confirm your store performs consistently under varying traffic conditions.",
-      image: "/assets/images/work/step3.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/testing-deployment.svg",
       alignment: "right",
     },
     {
@@ -363,7 +370,7 @@ export const ecommerceDevelopmentWorkflowData = {
       number: "04",
       title: "Optimization & Support",
       description: "After launch, we provide ongoing ecommerce support and site performance optimization to keep your store running at its best. With analytics tracking and SEO monitoring, we continuously improve site speed, usability, and search visibility to maximize your return on investment.",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/support-optimization.svg",
       alignment: "left",
     }
   ]
@@ -388,37 +395,37 @@ export const ecommerceDevelopmentTechnologiesData = [
     id: 1,
     title: "Magento",
     description: "As the best Magento ecommerce website development company, we create enterprise-ready stores with multi-store support, advanced catalog management, and PCI-compliant checkout to drive growth and handle large-scale operations.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/magento.svg",
   },
   {
     id: 2,
     title: "WooCommerce",
     description: "Our WooCommerce ecommerce development agency builds flexible WordPress stores with custom themes, plugin integrations, and SEO-friendly architecture for easy management and better visibility for small to mid-sized businesses.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/woocommerce.svg",
   },
   {
     id: 3,
     title: "Salesforce",
     description: "We are a Salesforce Commerce Cloud development firm helping brands deliver personalized shopping journeys powered by Einstein AI, unified CRM data, and seamless omnichannel integrations.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/salesforce-icon.svg",
   },
   {
     id: 4,
     title: "Drupal",
     description: "As a Drupal commerce development company, we build content-rich ecommerce sites with editorial-friendly workflows, custom modules, and robust performance for businesses prioritizing content and commerce together.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/drupal.svg",
   },
   {
     id: 5,
     title: "Headless",
     description: "Our headless ecommerce development company builds lightning-fast, API-first storefronts using React or Vue, enabling omnichannel selling, faster load times, and future-proof scalability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/headless.svg",
   },
   {
     id: 6,
     title: "Laravel",
     description: "We are a Laravel ecommerce development company delivering secure, custom-built online stores with clean code architecture, rapid development cycles, and powerful API integrations for complex business needs.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-redesign-services/platforms-we-redesign-on/laravel.svg",
   },
 ];
 
@@ -542,7 +549,7 @@ export const ecommerceDevelopmentScrollSectionData = {
       id: "ecommerce-firstScroller",
       step: 1,
       title: "Certified Ecommerce Experts",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/squarespace-development-services/why-growing/certified-recognized-in-the-industry.svg",
       paragraphs: [
         "Our team includes Magento-certified developers and recognized members of the Shopify Experts program, with deep Adobe Commerce expertise and verified platform certifications. This ensures every project is executed to the highest professional standard.",
       ],
@@ -557,7 +564,7 @@ export const ecommerceDevelopmentScrollSectionData = {
       id: "ecommerce-secondScroller",
       step: 2,
       title: "Proven Track Record",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/wordpress-development-company/why-do-businesses-trust-website-digitals-for-wordpress-development/proven-track-record.svg",
       paragraphs: [
         "We have earned a reputation among the top ecommerce developers in the USA, delivering award-winning ecommerce projects backed by measurable results. Our case studies and project portfolio demonstrate consistent success in helping businesses achieve their online goals.",
       ],
@@ -572,7 +579,7 @@ export const ecommerceDevelopmentScrollSectionData = {
       id: "ecommerce-thirdScroller",
       step: 3,
       title: "Security & Compliance First",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow/security-compliance.svg",
       paragraphs: [
         "Security is central to our development process. We adhere to PCI DSS compliance for secure payment processing, implement SSL encryption, and offer two-factor authentication for added protection. For more details, visit the official PCI DSS compliance documentation.",
       ],
@@ -587,7 +594,7 @@ export const ecommerceDevelopmentScrollSectionData = {
       id: "ecommerce-forthScroller",
       step: 4,
       title: "Future-Ready Technology",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/web-application-development-services/what-makes/future-proof-technology-stack.svg",
       paragraphs: [
         "We develop headless commerce solutions and PWA ecommerce to ensure your store is prepared for evolving trends. With mobile-first indexing and progressive web apps, your site delivers fast, app-like experiences across devices.",
       ],

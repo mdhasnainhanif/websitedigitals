@@ -297,7 +297,7 @@ export const landingPageBannerData2 = {
 export const platformsData = [
   {
     id: 1,
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/wordPress.svg",
     title: "WordPress",
     description:
       "Our landing page design services for WordPress focus on custom themes, SEO-friendly layouts, and flexible integrations that help brands scale with ease.",

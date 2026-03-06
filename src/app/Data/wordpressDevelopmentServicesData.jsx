@@ -438,37 +438,37 @@ export const wordpressDevelopmentTechnologiesSectionData = {
 export const wordpressDevelopmentTechnologiesData = [
   {
     id: 1,
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/headless.svg",
     title: "Headless",
     description: "Our team is a leading headless WordPress development company, building API-first websites that deliver lightning-fast, decoupled experiences across web, mobile, and third-party platforms.",
   },
   {
     id: 2,
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/elementor.svg",
     title: "Elementor",
     description: "We offer expert Elementor WordPress development services, combining drag-and-drop design with custom-coded enhancements for responsive, visually engaging websites that you can easily update.",
   },
   {
     id: 3,
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/php.svg",
     title: "PHP",
     description: "As a skilled WordPress PHP development company, we develop custom plugins, themes, and back-end logic that support complex functionality while keeping your site secure and scalable.",
   },
   {
     id: 4,
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/mysql.svg",
     title: "MySQL",
     description: "Through our WordPress MySQL optimization service, we fine-tune databases for faster queries, reduced load times, and improved performance for high-traffic websites.",
   },
   {
     id: 5,
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/divi.svg",
     title: "Divi",
     description: "Our Divi WordPress development company creates tailored layouts and reusable modules, helping you launch conversion-focused websites that are easy to maintain and performance-optimized.",
   },
   {
     id: 6,
-    icon: "/assets/images/work/pen-tool.svg",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/wpml.svg",
     title: "WPML Multilingual",
     description: "As a WPML multilingual WordPress development agency, we build global-ready sites with seamless translation workflows and localized SEO for a better international user experience.",
   },

@@ -390,42 +390,42 @@ export const cmsDevelopmentTechnologiesData = [
     title: "Drupal",
     description:
       "As a trusted Drupal CMS development company, we build enterprise-grade platforms with custom modules, multilingual support, and seamless third-party integrations. Our Acquia-certified experts ensure long-term scalability and security for complex digital ecosystems.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/landing-page-design-services/platforms-we-specialize-in/drupal.svg",
   },
   {
     id: 2,
     title: "Joomla",
     description:
       "Our Joomla CMS development company creates flexible, user-friendly websites with powerful content control and responsive design. We deliver tailored solutions that support multilingual publishing and optimized workflows for diverse industries.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/joomla.svg",
   },
   {
     id: 3,
     title: "Magento",
     description:
       "As a leading Magento CMS development company, we design high-performance ecommerce stores with secure checkout, advanced inventory management, and SEO-ready architecture. Our certified Magento developers help boost conversions and scale with demand.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/responsive-web-design-services/platforms-we-use/magento.svg",
   },
   {
     id: 4,
     title: "Strapi",
     description:
       "We provide expert Strapi CMS development services for businesses seeking a headless, API-first solution. Our builds enable rapid content delivery, flexible integrations, and seamless omnichannel publishing to engage users across every device.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/content-marketing-services/technology/strapi.svg",
   },
   {
     id: 5,
     title: "Next.js",
     description:
       "Our Next.js headless CMS development combines static site generation with dynamic content for lightning-fast performance and SEO-friendly experiences. Ideal for businesses needing scalable, high-converting websites with modern front-end architecture.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/content-marketing-services/technology/next-js1.svg",
   },
   {
     id: 6,
     title: "Laravel",
     description:
       "As a top Laravel CMS development company, we craft secure, modular platforms with robust API integrations and intuitive admin interfaces. Our Laravel solutions enable rapid deployment and long-term maintainability to support your digital growth.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/laravel.svg",
   },
 ];
 

@@ -403,42 +403,42 @@ export const wixDevelopmentTechnologiesData = [
     title: "JavaScript",
     description:
       "Hire Wix JavaScript developer experts to bring your site to life with interactive features, smooth animations, and dynamic content that keeps visitors engaged and improves user experience.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/js.svg",
   },
   {
     id: 2,
     title: "Node.js",
     description:
       "Our Wix Node.js backend development service enables real-time functionality, API integrations, and scalable server-side logic so your website runs reliably under any traffic load.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/Node-js.svg",
   },
   {
     id: 3,
     title: "Velo",
     description:
       "Partner with our Wix Velo development agency to build custom workflows, automate repetitive tasks, and create advanced features tailored to your business needs — all within the Wix platform.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/shopify-development-services/our-technology-stack/velo.svg",
   },
   {
     id: 4,
     title: "MongoDB",
     description:
       "We integrate Wix websites with MongoDB database solutions for secure, scalable data storage and real-time updates, enabling personalized content delivery and seamless user interactions.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/technology-slider/mongo.svg",
   },
   {
     id: 5,
     title: "React.js",
     description:
       "Our custom Wix React.js development creates modular, reusable components for lightning-fast rendering, ensuring your site remains responsive and easy to maintain as it grows.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/react-js.svg",
   },
   {
     id: 6,
     title: "Next.js",
     description:
       "With our custom Wix Next.js development, we deliver SEO-friendly, server-side rendered websites that load faster, rank higher, and provide users with an exceptional browsing experience.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/content-marketing-services/technology/next-js1.svg",
   },
 ];
 

@@ -329,7 +329,7 @@ export const websiteHostingServicesStatsData = [
 export const websiteHostingServicesImpactCardsData = [
   {
     id: 1,
-    title: "Speed & Performance dsf",
+    title: "Speed & Performance",
     description:
       "Fast website hosting reduces bounce rates and enhances user engagement. Quality web hosting ensures robust server performance and low latency, resulting in faster page load times and improved search rankings. Continuous performance optimization ensures your site operates efficiently as traffic grows.",
     icon: "uptime",
