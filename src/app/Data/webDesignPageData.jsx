@@ -182,7 +182,7 @@ export const webDesignUSPData = {
       id: "webdesign-firstScroller",
       step: 1,
       title: "Smart UI Design",
-      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/smart-ui-design.svg",
+      icon: "/assets/images/web-design-company/why-partner-with-our-web-design-company/smart-uI-design.svg",
       paragraphs: [
         "Designing a website is not just about aesthetics; it's about usability. With a strong focus on UI design, every page is crafted for clarity, efficiency, and engagement, ensuring visitors can interact with your site without confusion.",
       ],
