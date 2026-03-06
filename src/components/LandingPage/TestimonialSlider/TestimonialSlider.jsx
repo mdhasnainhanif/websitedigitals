@@ -21,7 +21,7 @@ const TestimonialSlider = ({ testimonials = [] }) => {
       company: "Digital Solutions",
       rating: 5,
       quote: "I am incredibly impressed with the outstanding service and user-friendly customer support provided by Remap",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+      avatar: "/assets/images/testimonials/client/mollie.jpg"
     },
     {
       id: 3,

@@ -118,27 +118,31 @@ export const contentWritingServicesImpactCardsData = [
     description: "Professional content writing ensures your message is easy to read and understand. Well-structured copy, optimized for readability and flow, keeps users engaged and reduces bounce rates.",
     isActive: true,
     col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/amazon-store-design-services/why-amazon-store-design-matters/engaging-content-that-builds-trust.svg",
   },
   {
     id: 2,
     title: "Authority & Trust",
     description: "High-quality, plagiarism-free content builds credibility and positions a brand as an industry leader. Whether through white papers, case studies, or technical writing services, authoritative content inspires confidence and trust.",
     isActive: false,
-    col: "col-12 col-md-6 col-lg-6"
+    col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/brand-authority-and-trust.svg",
   },
   {
     id: 3,
     title: "Consistency & Brand Voice",
     description: "Maintaining a clear tone of voice across blogs, landing pages, and campaigns strengthens brand identity and ensures customers have a seamless experience across touchpoints.",
     isActive: false,
-    col: "col-12 col-md-6 col-lg-6"
+    col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/search-engine-optimization-agency/why-partnering-with-a-trusted-seo-agency-matters/expertise-time-savings.svg",
   },
   {
     id: 4,
     title: "Scalability & Efficiency",
     description: "Structured content workflows and editorial calendars make it possible to scale production without sacrificing quality. Brands can refresh old assets, publish consistently, and meet aggressive deadlines while staying on strategy.",
     isActive: false,
-    col: "col-12 col-md-6 col-lg-6"
+    col: "col-12 col-md-6 col-lg-6",
+    image: "/assets/images/content-writing/scalability-efficiency.svg",
   },
 ];
 
@@ -212,6 +216,7 @@ export const contentWritingServicesServicesData = [
       "Our white paper writing services establish your authority and attract high-quality leads. We create well-researched, data-backed reports that position your business as an industry leader. Perfect for B2B content writing services where credibility is key.",
     icon: <BagIcon />,
     isActive: true,
+    image: "/assets/images/content-marketing-services/explore-our-content-marketing-services/content-campaign-strategy.svg",
   },
   {
     id: 2,
@@ -220,6 +225,7 @@ export const contentWritingServicesServicesData = [
       "Showcase your success stories with compelling case study writing. We highlight your client results, weaving storytelling with conversion copywriting to build trust and drive new business.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/online-reputation-management-services/what-our-reputation-management-services-include/content-removal-takedown.svg",
   },
   {
     id: 3,
@@ -228,6 +234,7 @@ export const contentWritingServicesServicesData = [
       "Our streamlined content production services handle everything from content briefs to final delivery. We use a structured content workflow with built-in proofreading, editing, and quality control to ensure every piece meets your standards.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/process/icon_Animation%20Production.svg",
   },
   {
     id: 4,
@@ -236,6 +243,7 @@ export const contentWritingServicesServicesData = [
       "Our freelance content writing services let you scale content output without hiring in-house. Ideal for brands that want to keep costs low while maintaining access to top-tier talent.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/link-building-services/our-link-building-services-tailored-to-your-business-needs/blogger-outreach-guest-posts.svg",
   },
   {
     id: 5,
@@ -244,6 +252,7 @@ export const contentWritingServicesServicesData = [
       "Old content can hurt rankings. Our content audit and refresh services analyze your site for gaps, optimize outdated pages, and boost performance with fresh, SEO content writing services.",
     icon: <BagIcon />,
     isActive: false,
+    image: "/assets/images/guest-posting-services/guest-posting-services-that-build-links-traffic-and-trust/niche-relevant-content-writing.svg",
   },
 ];
 
@@ -270,48 +279,48 @@ export const contentWritingServicesIndustriesCardsData = [
     title: "Healthcare",
     description:
       "Our healthcare content writing services focus on patient education, compliance, and wellness, creating clear and trustworthy communication that builds confidence and supports medical brands.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/landing-page-design-services/industries-we-design-for/original/healthcare.svg`,
+    imgWhite: `/assets/images/landing-page-design-services/industries-we-design-for/hover/healthcare.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Finance",
     description:
       "Through finance content writing, we simplify complex topics, maintain compliance accuracy, and craft transparent, client-focused messages that inspire trust.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/finance.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/finance.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Real Estate",
     description:
       "Our real estate content writing services showcase properties, trends, and investment insights with compelling storytelling that attracts leads and serious buyers.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/wordpress-development-company/industries-we-help-grow/original/real-estate.svg`,
+    imgWhite: `/assets/images/wordpress-development-company/industries-we-help-grow/hover/real-estate.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Education",
     description:
       "We create education content writing that engages learners, supports educators, and enhances institutional credibility through effective e-learning and academic materials.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/website-redesign-services/redesign-solutions-by-industry/original/education.svg`,
+    imgWhite: `/assets/images/website-redesign-services/redesign-solutions-by-industry/hover/education.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Automotive",
     description:
       "Our automotive content writing services spotlight innovation, highlight vehicles, and drive dealership success with persuasive, brand-building campaigns.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/custom-graphic-design-services/industries-we-support/original/automotive.svg`,
+    imgWhite: `/assets/images/custom-graphic-design-services/industries-we-support/hover/automotive.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
   {
     title: "Manufacturing",
     description:
       "We deliver manufacturing content writing that simplifies technical concepts, showcases expertise, and strengthens your position as a trusted B2B partner.",
-    imgOriginal: `/assets/images/whyChooseUs1.webp`,
-    imgWhite: `/assets/images/whyChooseUs2.webp`,
+    imgOriginal: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/original/manufacturing.svg`,
+    imgWhite: `/assets/images/b2b-web-design-agency/b2b-industries-we-specialize-in/hover/manufacturing.svg`,
     col: "col-12 col-md-6 col-lg-4",
   },
 ];
@@ -381,40 +390,40 @@ export const contentWritingServicesWorkflowData = {
       title: "Research & Alignment",
       description:
         "We start by aligning with your business goals, audience, and content strategy. Our team performs in-depth keyword research and competitor analysis to ensure your content hits the mark.",
-      // icon: "/assets/images/work/step1.png",
-      image: "/assets/images/work/step1.png",
+      image: "/assets/images/landing-page-design-services/our-process/research-strategy.svg",
+      alignment: "right",
     },
     {
       id: 2,
       title: "Brief & Planning",
       description:
         "We create detailed content briefs, finalize your editorial calendar, and lock in the scope before we write a single word.",
-      // icon: "/assets/images/work/pen-tool.svg",
       image: "/assets/images/work/step2.png",
+      alignment: "left",
     },
     {
       id: 3,
       title: "Writing & Editing",
       description:
         "Our writers produce engaging, optimized copy while editors ensure readability, tone of voice, and brand voice stay consistent.",
-      // icon: "/assets/images/work/pen-tool.svg",
       image: "/assets/images/work/step3.png",
+      alignment: "right",
     },
     {
       id: 4,
       title: "Optimization & QA",
       description:
         "Every piece goes through on-page SEO checks, proofreading, and QA to guarantee high performance and conversion-focused content.",
-      // icon: "/assets/images/work/pen-tool.svg",
-      image: "/assets/images/work/step4.png",
+      image: "/assets/images/webportal-development-company/our-web-portal-development-process/icons_Support%20&%20Optimization.svg",
+      alignment: "left",
     },
     {
       id: 5,
       title: "Delivery & Feedback",
       description:
         "You receive final content on time, with room for revisions based on your feedback—ensuring the end product is exactly what your business needs.",
-      // icon: "/assets/images/work/pen-tool.svg",
       image: "/assets/images/work/step5.png",
+      alignment: "right",
     },
   ],
 };
@@ -531,7 +540,7 @@ export const contentWritingServicesScrollSectionData = {
       id: "content-firstScroller",
       step: 1,
       title: "Easy Client Collaboration",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/webportal-development-company/why-businesses-grow-faster-with-our-web-portal-development-company/client-centric-approach.svg",
       paragraphs: [
         "We make working with our content writing firms simple through seamless communication tools, clear content workflow, and editorial calendar planning that keeps you in control.",
       ],
@@ -546,7 +555,7 @@ export const contentWritingServicesScrollSectionData = {
       id: "content-secondScroller",
       step: 2,
       title: "Transparent Pricing",
-      icon: "/assets/images/work/pen-tool.svg",
+      icon: "/assets/images/steps/thank-you/pricing.svg",
       paragraphs: [
         "Our content writing service packages come with upfront pricing, making it easy to plan your budget and measure ROI.",
       ],

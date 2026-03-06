@@ -228,7 +228,7 @@ export const guestPostingServicesImpactSectionData = {
 export const guestPostingServicesImpactCardsData = [
   {
     id: 1,
-    title: "High-Authority Backlinks sdf",
+    title: "High-Authority Backlinks",
     description:
       "Our guest posting services focus on securing high-authority backlinks from real websites. Guest posting earns high-authority backlinks from websites with strong domain authority (DA) and domain rating (DR). Sites are vetted for real traffic and clean link profiles, passing trust signals that boost rankings and improve search visibility.",
     icon: "manual-outreach",
