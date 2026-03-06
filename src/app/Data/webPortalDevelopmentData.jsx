@@ -198,7 +198,7 @@ export const webPortalDevelopmentServicesData = [
       "We create tailored solutions, including multi-tenant and SaaS application portals, designed for scalability, usability, and long-term value.",
     icon: <BagIcon />,
     isActive: true,
-    image: "/assets/images/webportal-development-company/our-web-portal-development-services/custom-portal-development.svg",
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services-to-scale-your-business/custom-portal-development.svg",
   },
   {
     id: 2,
@@ -207,7 +207,7 @@ export const webPortalDevelopmentServicesData = [
       "Our enterprise portals centralize workflows, enable knowledge sharing, and provide intranet and extranet systems for seamless internal and external collaboration.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/webportal-development-company/our-web-portal-development-services/enterprice-solutions.svg",
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services-to-scale-your-business/enterprice-solutions.svg",
   },
   {
     id: 3,
@@ -216,7 +216,7 @@ export const webPortalDevelopmentServicesData = [
       "Our portal integration services connect portals with existing business systems for smooth operations. We implement secure authentication systems to protect sensitive data and leverage cloud hosting services like Google Cloud, AWS, and Azure for performance and reliability.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/webportal-development-company/our-web-portal-development-services/integration-security.svg",
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services-to-scale-your-business/integration-security.svg",
   },
   {
     id: 4,
@@ -225,7 +225,7 @@ export const webPortalDevelopmentServicesData = [
       "We follow ISO/IEC 27001 for security and CMMI certifications for process maturity. These standards ensure every portal is trusted, secure, and compliant with industry regulations.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/webportal-development-company/our-web-portal-development-services/quality-standards-and-compliance.svg",
+    image: "/assets/images/webportal-development-company/our-web-portal-development-services-to-scale-your-business/quality-standards-and-compliance.svg",
   },
 ];
 

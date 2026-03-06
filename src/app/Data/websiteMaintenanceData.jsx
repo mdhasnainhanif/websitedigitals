@@ -188,7 +188,7 @@ export const websiteMaintenanceServicesData = [
       "We prioritize safety with continuous malware scans, regular patch management, and proactive firewall protection. Through real-time uptime monitoring, potential risks are addressed early, keeping your website safe and accessible. Supported by ISO 27001 standards, our processes are built on trust and security.",
     icon: <BagIcon />,
     isActive: true,
-    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/website-security-monitoring.svg",
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/website-security-monitoring1.svg",
   },
   {
     id: 2,
@@ -197,7 +197,7 @@ export const websiteMaintenanceServicesData = [
       "A reliable website depends on consistent updates and recovery planning. We manage routine CMS updates for platforms like WordPress, Joomla, and Drupal, along with essential plugin updates. Automated data backup and fast recovery solutions protect your content against unexpected issues, following Google Search Central guidance on maintaining site health.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/regular-updates-and-backups.svg",
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/regular-ubdates-and-backups1.svg",
   },
   {
     id: 3,
@@ -206,7 +206,7 @@ export const websiteMaintenanceServicesData = [
       "A fast site improves both user experience and search ranking. We enhance page speed with advanced caching, resolve technical issues through error resolution, and strengthen stability with load balancing. Every improvement is validated against Google PageSpeed Insights benchmarks.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/perfomance-optimization.svg",
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/perfomance-optimization1.svg",
   },
   {
     id: 4,
@@ -215,7 +215,7 @@ export const websiteMaintenanceServicesData = [
       "Accurate, engaging content and consistent design build trust with users. We deliver timely content updates, repair broken links, and apply focused design tweaks guided by usability standards, ensuring your site always reflects your business correctly.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/content-design-support.svg",
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/content-design-support1.svg",
   },
   {
     id: 5,
@@ -224,7 +224,7 @@ export const websiteMaintenanceServicesData = [
       "Behind the scenes, our team makes sure search engines can effectively crawl and index your site. We manage crawl error fixes, implement schema markup, and improve indexing for stronger visibility. By adhering to W3C web standards, we keep your website technically compliant and search-ready.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/technical-seo-maintenance.svg",
+    image: "/assets/images/website-maintenance-services/our-end-to-end-website-maintenance-services-for-your-business/technical-seo-maintenance1.svg",
   },
 ];
 

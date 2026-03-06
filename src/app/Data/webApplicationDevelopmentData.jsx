@@ -188,7 +188,7 @@ export const webApplicationDevelopmentServicesData = [
       "We build bespoke applications aligned with unique workflows and goals. From tailored solutions for small businesses to enterprise-grade web apps, every project is created for measurable impact.",
     icon: <BagIcon />,
     isActive: true,
-    image: "/assets/images/web-application-development-services/web-app-development-services/custom-web-app-development.svg",
+    image: "/assets/images/web-application-development-services/web-app-development-services-we-provide-to-businesses/custom-web-app-development1.svg",
   },
   {
     id: 2,
@@ -197,7 +197,7 @@ export const webApplicationDevelopmentServicesData = [
       "With expertise in frontend and backend development, our team delivers secure and responsive solutions. Using Node.js, React, Angular, and Django, we create applications that perform across devices.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/web-application-development-services/web-app-development-services/full-stack-development.svg",
+    image: "/assets/images/web-application-development-services/web-app-development-services-we-provide-to-businesses/full-stack-development1.svg",
   },
   {
     id: 3,
@@ -206,7 +206,7 @@ export const webApplicationDevelopmentServicesData = [
       "We develop applications built for the cloud from the start. Leveraging AWS, Azure, and Google Cloud, we deliver cloud-native apps with SaaS integration that scale and adapt with ease.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/web-application-development-services/web-app-development-services/cloud-ready-application-development.svg",
+    image: "/assets/images/web-application-development-services/web-app-development-services-we-provide-to-businesses/cloud-ready-application-development1.svg",
   },
   {
     id: 4,
@@ -215,7 +215,7 @@ export const webApplicationDevelopmentServicesData = [
       "Our API-driven development connects your applications to third-party systems for greater functionality. By ensuring system interoperability within digital ecosystems, we expand capabilities and streamline operations.",
     icon: <BagIcon />,
     isActive: false,
-    image: "/assets/images/web-application-development-services/web-app-development-services/api-third-party-integration.svg",
+    image: "/assets/images/web-application-development-services/web-app-development-services-we-provide-to-businesses/api-third-party-integration1.svg",
   },
 ];
 
@@ -450,42 +450,42 @@ export const webApplicationDevelopmentTechnologiesData = [
     title: "React.js",
     description:
       "Achieve lightning-fast, interactive UIs with reusable components. Businesses looking to hire ReactJS web application development services gain optimized performance and a smooth user experience across devices.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/react-js.svg",
   },
   {
     id: 2,
     title: "Angular",
     description:
       "Deliver enterprise-grade single-page apps with powerful architecture and maintainability. When you hire Angular web application development services, you get scalable, secure, and modular solutions built to last.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/angular.svg",
   },
   {
     id: 3,
     title: "Vue.js",
     description:
       "Leverage the flexibility of Vue for lightweight, progressive web apps. Companies that hire Vue.js web application development services benefit from rapid development and streamlined user interfaces.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/vue-js.svg",
   },
   {
     id: 4,
     title: "Node.js",
     description:
       "Power real-time applications and high-traffic platforms with ease. Organizations that hire Node.js web application development services get fast, event-driven backends built for speed and reliability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/node-js.svg",
   },
   {
     id: 5,
     title: ".NET",
     description:
       "Develop secure, enterprise-level applications tailored to complex workflows. Businesses that hire .NET web application development services gain stability, seamless integrations, and long-term scalability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/net.svg",
   },
   {
     id: 6,
     title: "Java Spring Boot",
     description:
       "Build microservice-ready, cloud-friendly solutions quickly and efficiently. Companies that hire Java Spring Boot web application development services benefit from performance-driven apps designed for enterprise growth.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-application-development-services/our-technologies-for-web-apps/java-spring-boot.svg",
   },
 ];
 
