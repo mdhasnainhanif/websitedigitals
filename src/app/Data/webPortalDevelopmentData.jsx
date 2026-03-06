@@ -458,42 +458,42 @@ export const webPortalDevelopmentTechnologiesData = [
     title: "ASP.NET",
     description:
       "As a trusted ASP.NET portal development company, we build enterprise-grade solutions that deliver robust security, seamless integration with Microsoft systems, and exceptional scalability for complex business environments.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/asp-net.svg",
   },
   {
     id: 2,
     title: "Java",
     description:
       "Our Java portal development services deliver cross-platform, high-performance solutions designed for businesses that need reliable, future-proof portals capable of handling enterprise-level workloads.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/java.svg",
   },
   {
     id: 3,
     title: "Angular",
     description:
       "We provide angular portal development services that create responsive, single-page applications with fast load times and smooth user experiences, ideal for modern, interactive portals.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/angular.svg",
   },
   {
     id: 4,
     title: "Mobile Portal",
     description:
       "As a leading mobile portal development company, we design mobile-first portals that ensure secure, on-the-go access to business services, improving engagement and user convenience.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/mobile-portal.svg",
   },
   {
     id: 5,
     title: "PHP",
     description:
       "Recognized as a flexible PHP portal development company, we develop cost-effective, customizable solutions using PHP frameworks like Laravel and CodeIgniter, enabling rapid deployment and easy scalability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/php.svg",
   },
   {
     id: 6,
     title: "API Integrations",
     description:
       "Our expertise in portal development with API integration services allows businesses to connect third-party tools, unify workflows, and enable real-time data exchange for maximum operational efficiency.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/web-portal-development-company/tech-stack-we-rely-on/api-integrations.svg",
   },
 ];
 

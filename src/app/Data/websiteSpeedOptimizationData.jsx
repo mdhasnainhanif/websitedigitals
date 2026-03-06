@@ -448,42 +448,42 @@ export const websiteSpeedOptimizationTechnologiesData = [
   title: "Headless CMS",
   description:
     "Our headless CMS speed optimization service improves content delivery speed and streamlines API performance. This ensures faster load times, smoother user journeys, and more efficient content updates across devices.",
-  icon: "/assets/images/technologyIcons.png",
+  icon: "/assets/images/website-speed-optimization-services/tools-and-technologies-we-utilize/headless-cms.svg",
 },
 {
   id: 2,
   title: "Gatsby",
   description:
     "Our Gatsby site performance optimization reduces build times, improves page load speed, and enhances Core Web Vitals. This leads to better user engagement, stronger SEO rankings, and improved conversion rates.",
-  icon: "/assets/images/technologyIcons.png",
+  icon: "/assets/images/website-speed-optimization-services/tools-and-technologies-we-utilize/gatsby.svg",
 },
 {
   id: 3,
   title: "Shopify Plus",
   description:
     "Our Shopify Plus speed optimization service removes bottlenecks, accelerates checkout flow, and improves store responsiveness. The result is a smoother shopping experience and a higher percentage of completed purchases.",
-  icon: "/assets/images/technologyIcons.png",
+  icon: "/assets/images/website-speed-optimization-services/tools-and-technologies-we-utilize/shopify-plus.svg",
 },
 {
   id: 4,
   title: "Node.js",
   description:
     "Our Node.js performance optimization service reduces server response times, improves API efficiency, and supports high-traffic scalability. This ensures faster, more reliable applications even during peak loads.",
-  icon: "/assets/images/technologyIcons.png",
+  icon: "/assets/images/website-speed-optimization-services/tools-and-technologies-we-utilize/node-js.svg",
 },
 {
   id: 5,
   title: "PHP",
   description:
     "Our PHP website speed optimization service refines code, optimizes database queries, and enhances server response times. Perfect for WordPress and Laravel sites, this helps achieve faster loading and stronger SEO performance.",
-  icon: "/assets/images/technologyIcons.png",
+  icon: "/assets/images/website-speed-optimization-services/tools-and-technologies-we-utilize/php.svg",
 },
 {
   id: 6,
   title: "Angular",
   description:
     "Our Angular performance optimization service minimizes bundle size, improves rendering efficiency, and speeds up single-page applications. This creates a smoother, more interactive user experience and boosts engagement.",
-  icon: "/assets/images/technologyIcons.png",
+  icon: "/assets/images/website-speed-optimization-services/tools-and-technologies-we-utilize/angular.svg",
 },
 ];
 
