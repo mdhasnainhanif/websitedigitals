@@ -455,42 +455,42 @@ export const websiteMaintenanceTechnologiesData = [
     title: "Joomla",
     description:
       "Our Joomla website maintenance services cover core updates, extension management, and template optimization, keeping your site secure, stable, and fully compatible with the latest Joomla ecosystem.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/joomla.svg",
   },
   {
     id: 2,
     title: "Laravel",
     description:
       "We provide Laravel website maintenance services, including version upgrades, API integration support, and artisan command management to ensure smooth performance, security, and long-term scalability.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/laravel.svg",
   },
   {
     id: 3,
     title: "Wix",
     description:
       "Our Wix website maintenance services include regular content refreshes, app market integrations, and mobile responsiveness checks, ensuring your site stays visually consistent and optimized for users.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/wix.svg",
   },
   {
     id: 4,
     title: "Squarespace",
     description:
       "We deliver Squarespace website maintenance services focusing on style editor customization, SEO alignment, and feature updates like scheduling tools to keep your site polished and functional.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/squarespace.svg",
   },
   {
     id: 5,
     title: "Shopify Plus",
     description:
       "Our Shopify Plus website maintenance services include checkout customization, bulk product updates, and integration with third-party apps or ERP/CRM systems, driving seamless ecommerce operations.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/shopify-plus.svg",
   },
   {
     id: 6,
     title: "WooCommerce",
     description:
       "We offer WooCommerce website maintenance services covering plugin updates, payment gateway checks, and cart recovery setup, ensuring a smooth shopping experience and secure transactions.",
-    icon: "/assets/images/technologyIcons.png",
+    icon: "/assets/images/website-maintenance-services/technologies-behind-our-maintenance/woocommerce.svg",
   },
 ];
 
