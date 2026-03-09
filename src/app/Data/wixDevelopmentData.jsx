@@ -151,7 +151,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-firstScroller",
       step: 1,
       title: "Specialized Developers",
-      icon: "/assets/images/wix-development-services/why-clients-choose/specialized-developers.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose-our-wix-development-company-for-their-business/specialized-developers.svg",
       paragraphs: [
         "A team of specialized Wix developers in the United States who understand the platform's capabilities and the needs of local audiences. Each project is tailored to connect with the right customers and deliver measurable results.",
       ],
@@ -166,7 +166,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-secondScroller",
       step: 2,
       title: "Complete Solutions",
-      icon: "/assets/images/wix-development-services/why-clients-choose/complete-solutions.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose-our-wix-development-company-for-their-business/complete-solutions.svg",
       paragraphs: [
         "We provide end-to-end Wix development solutions covering planning, design, optimization, and post-launch care. This integrated approach saves time, reduces revisions, and ensures a consistent user experience.",
       ],
@@ -181,7 +181,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-thirdScroller",
       step: 3,
       title: "Proven Success",
-      icon: "/assets/images/wix-development-services/why-clients-choose/proven-success.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose-our-wix-development-company-for-their-business/proven-success.svg",
       paragraphs: [
         "Our portfolio includes Wix projects that have generated measurable growth, with documented increases in organic sessions and revenue. These results, highlighted by credible agencies such as Infidigit, demonstrate the return on investment our clients achieve.",
       ],
@@ -196,7 +196,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-forthScroller",
       step: 4,
       title: "Faster Delivery",
-      icon: "/assets/images/wix-development-services/why-clients-choose/faster-delivery.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose-our-wix-development-company-for-their-business/faster-delivery.svg",
       paragraphs: [
         "By using Velo by Wix, development timelines are shortened without compromising quality. This allows your website to go live sooner so you can begin attracting visitors and generating leads faster.",
       ],
@@ -211,7 +211,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-fifthScroller",
       step: 5,
       title: "Industry-Specific Customization",
-      icon: "/assets/images/wix-development-services/why-clients-choose/industry-specific-customization.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose-our-wix-development-company-for-their-business/industry-specific-customization.svg",
       paragraphs: [
         "We deliver industry-specific Wix customization so your site aligns with the standards and style of your market. This ensures both a professional presentation and functionality that matches your audience's expectations.",
       ],
@@ -226,7 +226,7 @@ export const wixDevelopmentScrollSectionData = {
       id: "wix-sixthScroller",
       step: 6,
       title: "Recognized Expertise",
-      icon: "/assets/images/wix-development-services/why-clients-choose/recognized-expertise.svg",
+      icon: "/assets/images/wix-development-services/why-clients-choose-our-wix-development-company-for-their-business/recognized-expertise.svg",
       paragraphs: [
         "As part of the Certified Wix Partner program, our expertise is independently verified. Recognition on trusted platforms such as Clutch and GoodFirms confirms our credibility and consistent performance.",
       ],
@@ -357,42 +357,42 @@ export const wixDevelopmentIndustriesData = [
     title: "Law Firms",
     description:
       "Our custom Wix website development for law firms creates ADA-compliant, professional websites that showcase expertise, build credibility, and drive client inquiries with optimized layouts and conversion-focused design.",
-    icon: "/assets/images//industry/law.svg",
+    icon: "/assets/images/wix-development-services/who-we-build-wix-websites-for/original/law-firms.svg",
   },
   {
     id: 2,
     title: "Healthcare",
     description:
       "We provide secure Wix website development for healthcare clinics, featuring HIPAA-conscious forms, easy appointment booking, and clear service pages that improve patient engagement and trust.",
-    icon: "/assets/images/industry/healthcare.svg",
+    icon: "/assets/images/wix-development-services/who-we-build-wix-websites-for/original/healthcare.svg",
   },
   {
     id: 3,
     title: "Real Estate",
     description:
       "Our Wix website development for real estate agents delivers MLS-ready listings, lead capture tools, and mobile-optimized layouts to connect buyers and sellers faster and close more deals.",
-    icon: "/assets/images/industry/real-estate.svg",
+    icon: "/assets/images/wix-development-services/who-we-build-wix-websites-for/original/real-estate.svg",
   },
   {
     id: 4,
     title: "Construction",
     description:
       "We offer Wix website development for construction companies that highlight past projects, showcase services with interactive galleries, and generate quality leads through strategic call-to-actions.",
-    icon: "/assets/images/industry/construction.svg",
+    icon: "/assets/images/wix-development-services/who-we-build-wix-websites-for/original/construction.svg",
   },
   {
     id: 5,
     title: "Dentists",
     description:
       "Our Wix website development for dentists makes it easy for patients to book appointments, learn about treatments, and trust your practice through a clean and professional design.",
-    icon: "/assets/images/industry/healthcare.svg",
+    icon: "/assets/images/wix-development-services/who-we-build-wix-websites-for/original/dentists.svg",
   },
   {
     id: 6,
     title: "Education",
     description:
       "We create Wix website development for education providers that share resources, support enrollment, and engage students with mobile-friendly, easy-to-navigate websites.",
-    icon: "/assets/images/industry/education.svg",
+    icon: "/assets/images/wix-development-services/who-we-build-wix-websites-for/original/education.svg",
   },
 ];
 
