@@ -144,7 +144,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-firstScroller",
       step: 1,
       title: "Security-First Approach",
-      icon: "/assets/images/cms-development-company/why-partner/security-first-approach.svg",
+      icon: "/assets/images/cms-development-company/why-partner-with-us-for-your-cms-development-needs/security-first-approach.svg",
       paragraphs: [
         "Every CMS we develop follows industry-recognized frameworks, including the OWASP guidelines, a globally recognized set of best practices for web application security, to protect against vulnerabilities. From data encryption to role-based access, our process ensures compliance with US security standards while safeguarding sensitive information.",
       ],
@@ -159,7 +159,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-secondScroller",
       step: 2,
       title: "API-First CMS Architecture",
-      icon: "/assets/images/cms-development-company/why-partner/api-first-cms-architecture.svg",
+      icon: "/assets/images/cms-development-company/why-partner-with-us-for-your-cms-development-needs/api-first-cms-architecture.svg",
       paragraphs: [
         "By adopting an API-first CMS approach, we enable smooth integration with third-party tools, custom applications, and future technologies. This architecture ensures your CMS remains flexible, compatible, and scalable as your digital needs expand.",
       ],
@@ -174,7 +174,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-thirdScroller",
       step: 3,
       title: "Optimized for Performance and Scalability",
-      icon: "/assets/images/cms-development-company/why-partner/optimized-for-performance-and-scalability.svg",
+      icon: "/assets/images/cms-development-company/why-partner-with-us-for-your-cms-development-needs/optimized-for-performance-and-scalability.svg",
       paragraphs: [
         "Our builds focus on performance optimization from day one. This includes fast load speeds, efficient database queries for quicker data access, and resource caching to reduce server strain. Combined with infrastructure designed for scalability, your CMS can handle growth without costly rebuilds.",
       ],
@@ -189,7 +189,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-forthScroller",
       step: 4,
       title: "Expertise and Certification",
-      icon: "/assets/images/cms-development-company/why-partner/expertise-and-certification.svg",
+      icon: "/assets/images/cms-development-company/why-partner-with-us-for-your-cms-development-needs/expertise-and-certification.svg",
       paragraphs: [
         "Our team holds advanced credentials, including TOGAF certification for enterprise architecture, a standard for designing and implementing efficient business systems, and Adobe Certified Expert status, which validates our deep technical knowledge and adherence to industry best practices.",
       ],
@@ -204,7 +204,7 @@ export const cmsDevelopmentScrollSectionData = {
       id: "cms-fifthScroller",
       step: 5,
       title: "Smooth Content Migration",
-      icon: "/assets/images/cms-development-company/why-partner/smooth-content-migration.svg",
+      icon: "/assets/images/cms-development-company/why-partner-with-us-for-your-cms-development-needs/smooth-content-migration.svg",
       paragraphs: [
         "We manage content migration with precision, ensuring data integrity and minimizing downtime. Your existing content is transferred accurately, optimized for the new system, and ready for immediate use without disrupting your workflows.",
       ],
@@ -285,7 +285,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "scale",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
-    image: "/assets/images/cms-development-company/what-impact/scale-without-limits.svg",
+    image: "/assets/images/cms-development-company/what-impact-does-cms-development-create/scale-without-limits.svg",
   },
   {
     id: 2,
@@ -295,7 +295,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "manage",
     isHighlighted: true,
     col: "col-12 col-md-4 col-lg-4",
-    image: "/assets/images/cms-development-company/what-impact/manage-content-anywhere.svg",
+    image: "/assets/images/cms-development-company/what-impact-does-cms-development-create/manage-content-anywhere.svg",
   },
   {
     id: 3,
@@ -305,7 +305,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "maintenance",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
-    image: "/assets/images/cms-development-company/what-impact/reduce-maintenance-time.svg",
+    image: "/assets/images/cms-development-company/what-impact-does-cms-development-create/reduce-maintenance-time.svg",
   },
   {
     id: 4,
@@ -315,7 +315,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "seo",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
-    image: "/assets/images/cms-development-company/what-impact/improve-search-rankings.svg",
+    image: "/assets/images/cms-development-company/what-impact-does-cms-development-create/improve-search-rankings.svg",
   },
   {
     id: 5,
@@ -325,7 +325,7 @@ export const cmsDevelopmentImpactCardsData = [
     icon: "security",
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-4",
-    image: "/assets/images/cms-development-company/what-impact/keep-your-cms-secure.svg",
+    image: "/assets/images/cms-development-company/what-impact-does-cms-development-create/keep-your-cms-secure.svg",
   },
 ];
 
