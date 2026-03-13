@@ -141,7 +141,7 @@ export const responsiveWebDesignServicesData = [
     icon: <BagIcon />,
     isActive: false,
     image: "/assets/images/responsive-web-design-services/our-comprehensive-responsive/educational-website-design.svg",
-  },
+  }, 
 ];
 
 export const responsiveWebDesignScrollSectionData = {

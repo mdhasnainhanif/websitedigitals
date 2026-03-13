@@ -299,7 +299,7 @@ export const squarespaceDevelopmentImpactCardsData = [
     isHighlighted: false,
     col: "col-12 col-md-4 col-lg-6",
     image: "/assets/images/squarespace-development-services/why-professional-squarespace-development-matters/revenue-and-growth-focused-design.svg",
-  },
+  },                 
   {
     id: 2,
     title: "Scalable E-Commerce Solutions",
