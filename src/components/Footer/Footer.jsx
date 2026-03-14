@@ -85,7 +85,7 @@ export default function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="https://websitedigitals.com/blog" target="" rel="noopener noreferrer">
+                        <Link href="/blog">
                           <span>Blog</span>
                         </Link>
                       </li>

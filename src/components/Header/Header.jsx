@@ -1032,7 +1032,7 @@ export default function Header() {
                                   {
                                     img: "/assets/images/menu/38.webp",
                                     title: "Blog",
-                                    href: "/blogs",
+                                    href: "/blog",
                                   },
                                 ].map((item, i) => (
                                   <Link

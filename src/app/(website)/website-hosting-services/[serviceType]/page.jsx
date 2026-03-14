@@ -307,9 +307,14 @@ const serviceDataMap = {
   },
 };
 
+export function generateStaticParams() {
+  return Object.keys(serviceDataMap).map((serviceType) => ({ serviceType }));
+}
+
 // Generate metadata for each service page
 export async function generateMetadata({ params }) {
-  const { serviceType } = params;
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = serviceDataMap[serviceType];
 
   if (!serviceData || !serviceData.metadata) {
@@ -322,8 +327,9 @@ export async function generateMetadata({ params }) {
   return serviceData.metadata;
 }
 
-const HostingServicePage = ({ params }) => {
-  const { serviceType } = params;
+const HostingServicePage = async ({ params }) => {
+  const resolved = await params;
+  const { serviceType } = resolved;
 
   // Get service data based on the serviceType parameter
   const serviceData = serviceDataMap[serviceType];

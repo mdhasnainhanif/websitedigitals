@@ -1,0 +1,100 @@
+/* Skeleton placeholders for single blog page */
+
+.line {
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+  border-radius: 0.25rem;
+}
+
+@keyframes skeletonShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.boxTitle {
+  height: 1.25rem;
+  width: 6rem;
+  margin-bottom: 0.75rem;
+}
+
+.summary {
+  height: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.summaryShort {
+  height: 0.875rem;
+  width: 70%;
+}
+
+.tocItem {
+  height: 0.875rem;
+  width: 90%;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+.tocItemShort {
+  height: 0.875rem;
+  width: 60%;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metaLine {
+  display: inline-block;
+  height: 0.875rem;
+  width: 7rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+.pageTitle {
+  height: 2rem;
+  width: 85%;
+  margin-bottom: 1.5rem;
+}
+
+.featuredImage {
+  height: 280px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+.contentLine {
+  height: 0.9375rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+.contentLineShort {
+  height: 0.9375rem;
+  width: 75%;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #e8eaef 25%, #f0f3f8 50%, #e8eaef 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}

@@ -369,6 +369,11 @@ const serviceDataMap = {
     metadata: amazonStoreDesignServicesMetadata,
   },
 };
+
+export function generateStaticParams() {
+  return Object.keys(serviceDataMap).map((serviceType) => ({ serviceType }));
+}
+
 export async function generateMetadata({ params }) {
   const { serviceType } = await params;
   const serviceData = serviceDataMap[serviceType];

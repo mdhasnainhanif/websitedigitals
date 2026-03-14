@@ -25,8 +25,14 @@ import { platformsData } from "../../../Data/landingPageData";
 import LandingBannerForm from "../../../../components/LandingPage/LandingBannerForm/LandingBannerForm";
 const serviceDataMap = { 
 };
+
+export async function generateStaticParams() {
+  return Object.keys(serviceDataMap).map((serviceType) => ({ serviceType }));
+}
+
 export async function generateMetadata({ params }) {
-  const { serviceType } = params;
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = serviceDataMap[serviceType];
   if (!serviceData || !serviceData.metadata) {
     return {
@@ -36,8 +42,9 @@ export async function generateMetadata({ params }) {
   }
   return serviceData.metadata;
 }
-const ServicePage = ({ params }) => {
-  const { serviceType } = params;
+const ServicePage = async ({ params }) => {
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = serviceDataMap[serviceType];
   console.log("Service Type:", serviceType);
   console.log("Service Data:", serviceData);

@@ -405,8 +405,14 @@ const serviceDataMap = {
     metadata: squarespaceDevelopmentMetadata,
   },
 };
+
+export function generateStaticParams() {
+  return Object.keys(serviceDataMap).map((serviceType) => ({ serviceType }));
+}
+
 export async function generateMetadata({ params }) {
-  const { serviceType } = params;
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = serviceDataMap[serviceType];
   if (!serviceData || !serviceData.metadata) {
     return {
@@ -416,8 +422,9 @@ export async function generateMetadata({ params }) {
   }
   return serviceData.metadata;
 }
-const WebDevelopmentServicePage = ({ params }) => {
-  const { serviceType } = params;
+const WebDevelopmentServicePage = async ({ params }) => {
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = serviceDataMap[serviceType];
   console.log("Service Type:", serviceType);
   console.log("Service Data:", serviceData);

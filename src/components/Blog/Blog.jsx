@@ -30,7 +30,7 @@ function truncate(s = '', n = 140) {
 }
 
 const DEFAULT_API =
-  'https://www.websitedigitals.com/blog/wp-json/wp/v2/posts?_embed&per_page=12';
+  'https://www.websitedigitals.com/wordpress-blogs/wp-json/wp/v2/posts?_embed&per_page=12';
 
 export default function BlogCard({
   title = 'Recent Blogs',

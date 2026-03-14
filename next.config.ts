@@ -2,8 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: 'export',
 
   images: {
+    unoptimized: true, // required for output: 'export' (no Image Optimization API on static host)
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,
     remotePatterns: [

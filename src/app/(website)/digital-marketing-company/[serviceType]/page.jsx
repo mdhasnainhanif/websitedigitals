@@ -439,8 +439,14 @@ const digitalMarketingServiceDataMap = {
     metadata: appStoreOptimizationMetadata,
   },
 };
+
+export function generateStaticParams() {
+  return Object.keys(digitalMarketingServiceDataMap).map((serviceType) => ({ serviceType }));
+}
+
 export async function generateMetadata({ params }) {
-  const { serviceType } = params;
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = digitalMarketingServiceDataMap[serviceType];
   if (!serviceData || !serviceData.metadata) {
     return {
@@ -450,8 +456,9 @@ export async function generateMetadata({ params }) {
   }
   return serviceData.metadata;
 }
-const DigitalMarketingServicePage = ({ params }) => {
-  const { serviceType } = params;
+const DigitalMarketingServicePage = async ({ params }) => {
+  const resolved = await params;
+  const { serviceType } = resolved;
   const serviceData = digitalMarketingServiceDataMap[serviceType];
   if (serviceType === "digital-marketing-company") {
     return (

@@ -155,7 +155,7 @@ export const blogTabs = [
   export const blogBannerData = {
     breadcrumb: {
       home: { label: "Home", href: "/" },
-      current: { label: "Blogs", href: "/blogs" },
+      current: { label: "Blog", href: "/blog" },
     },
     heading: "Explore Our Latest Blog",
     description: ["",
